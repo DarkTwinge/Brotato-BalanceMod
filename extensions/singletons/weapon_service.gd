@@ -45,7 +45,7 @@ func init_base_stats(from_stats:WeaponStats, weapon_id:String = "", sets:Array =
 	
 	for effect in effects:
 		if effect is BurningEffect:
-			base_stats.burning_data = BurningData.new(effect.burning_data.chance, effect.burning_data.damage, effect.burning_data.duration, 0)
+			base_stats.burning_data = BurningData.new(effect.burning_data.chance, effect.burning_data.damage, effect.burning_data.duration, effect.burning_data.spread)
 		elif effect is WeaponStackEffect:
 			var nb_same_weapon = 0
 			

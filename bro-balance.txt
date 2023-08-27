@@ -159,7 +159,7 @@ Rock: Price 10/22/45/91 -> 10/20/41/83; Knockback 5/5/5/5 -> 4/6/8/10
 Scissors: Crit Damage x2/x2/x2/x2 -> x2/x2.15/x2.3/x2.5
 Screwdriver: Range 125 -> 135; Cooldown 1.05/1.0/0.97/0.87 -> 0.91/0.86/0.80/0.73
 Spear: Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.53/1.41/1.29/1.22 [Slightly slower attacks at all tiers, but the Range reduction makes tier-4 still slightly faster net]
-Torch: Range 175->200; Melee Damage Scaling 50%(All) -> 75%(All); Base Damage 1(All) -> 2/4/6/8; Burn 3x3/5x4/8x5/12x8 -> 4x4/6x5/9x7/15x9 [Focus on long burn duration, which can combo with high burn damage from Wands.]
+Torch: Range 175->200; Melee Damage Scaling 50%(All) -> 75%(All); Base Damage 1(All) -> 2/4/6/8; Burn 3x3/5x4/8x5/12x8 -> 4x4/6x5/9x7/15x9 [Focus on long burn duration, which can combo with high burn damage from Wands.]; Has 1 snake spread effect at tier 2/3/4
 
 ~Weapons - Ranged~
 Chain-gun: Long Reload Cooldown 2.04s -> 3.59s; Accuracy 80% -> 50% [For reference, White SMG is 70%.]
