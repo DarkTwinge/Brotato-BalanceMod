@@ -364,6 +364,8 @@ func _ready()->void:
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_effect_1.tres")
 	temp.scale = 1.35   # 1.25 (Explosion Size)
 	temp.chance = 0.35  # 0.25 (Proc Chance)
+	temp = load("res://items/all/spicy_sauce/spicy_sauce_stats.tres")
+	temp.crit_chance = 0.01  # 0 (Crit Chance)
 
 	temp = load("res://items/all/white_flag/white_flag_effect_1.tres")
 	temp.value = 6   # 5 (Harvesting)
@@ -431,6 +433,9 @@ func _ready()->void:
 	temp.effects.erase(temp_2) # Remove -Damage%
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/power_generator_2_max_hp_malus.tres")
 	temp.effects.push_back(temp_2) # -1 HP per 5% Speed
+
+	temp = load("items/all/rip_and_tear/rip_and_tear_stats.tres")
+	temp.crit_chance = 0.01  # 0 (Crit Chance)
 	
 	temp = load("res://items/all/shmoop/shmoop_data.tres")
 	temp.value = 65  # 60

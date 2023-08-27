@@ -96,7 +96,7 @@ Riposte: Price 40->36
 Scope: Price 55->52; 25 Range -> 35; -7% Attack Speed -> -6%
 Shady Potion: 20 Luck -> 18
 Snail: -5% Enemy Speed -> -6%; -3% Speed -> -2% Speed
-Spicy Sauce: Price 40->45; 25% Proc Chance -> 35%; Limit 4 -> 3; Explosion Size 125% -> 135%
+Spicy Sauce: Price 40->45; 25% Proc Chance -> 35%; Limit 4 -> 3; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base chance 1%)
 Tentacle: Price 32->35
 Whetstone: Price 40->42
 White Flag: 5 Harvesting -> 6
@@ -112,6 +112,7 @@ Fin: Price 65->69; 10% Speed -> 9%; Luck -8 -> -9
 Glass Canon: Price 75->70
 Poisonous Tonic: 15 Range -> 17
 Power Generator: Price 65->72; -5% Damage -> -1 Max HP Per 5% Speed [Note: Currently the tooltip is slightly wrong, and will claim you're at e.g. -1 HP when your Speed is between 1% and 4% and you're still actually at -0 HP; it only counts every full 5%.]
+Rip and Tear: Can now crit for 1.5x damage (base chance 1%)
 Shmoop: Price 60->65; 2 HP Regen -> 3
 Statue: Price 60->55
 Stone Skin: Price 80->90; -2 Armor -> -4% Speed
@@ -187,7 +188,7 @@ Demon: Materials to 1 HP Ratio 13 -> 14
 Doctor: Harvesting 5 -> 0
 Explorer: No longer favored to find 'Pickup' Items (Metal Detector, Baby Elephant, Cute Monkey, Pickup Range, Material Attract).
 Farmer: Now starts with a Garden; Starting Harvesting 20 -> 15 [Together this breaks even with vanilla Harvesting around Wave 4 and is profitable beyond that, not counting the additional potential fruit value.]; Now also favored to find Gardens in the shop
-Glutton: Now also favored to find Gardens in the shop
+Glutton: Now also favored to find Gardens in the shop; Explosion crit chance now affected by the crit chance stat (base chance is still 3%)
 Jack: Bonus to Bosses 75% -> 80%; Damage from enemies +50% -> +40%
 Knight: 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor; Armor 5 -> 4
 Mage: -100% Engineering Mods -> -33%. [Gives the ability to lean into Sausage+Turret combo more, and means Strange Book actually does something.]
@@ -282,8 +283,6 @@ Burn currently doesn't apply to trees dying in 8 hits, but should -- possible so
 Fix the Revolver/Chain-gun Tooltip lies delivered via get_cooldown_text  [Can it treat it as an actual cooldown amount rather than just doing *8 on the cooldown?]
 
 * Lucky's ability should show damage dealt. (Currently it tracks with Baby Elephant instead of itself)
-
-Bug to Fix: Glutton's Explosion can crit, but the chance can't be increased by the crit stat
 
 Fix the incompatibilty with ToolTipFix
 
