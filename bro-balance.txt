@@ -107,7 +107,7 @@ Alloy: 3 Melee Damage -> 5 ; Dodge -6% -> -5%; Added 'Elemental Damage' Tag
 Baby With a Beard: Price 100->110; Range -50 -> -70
 Candle: Price 65->51; Elemental Damage 4 -> 3; -5% Damage -> -4% Attack Speed
 Chameleon: Price 70->60; %Damage -4% -> -3%
-Fairy: Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items; -2 HP Regeneration Per 1 Unique Tier-4 Item -> -3% Speed Per 1 Unique Tier-4 Item [Currently the tooltip will only count full sets of 3, but the actual effect will count partial amounts, so sometimes the tooltip is off by 1.]
+Fairy: Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items; -2 HP Regeneration Per 1 Unique Tier-4 Item -> -3% Speed Per 1 Unique Tier-4 Item [Currently the tooltip will only count full sets of 3, but the actual effect will count partial amounts, so sometimes the tooltip is off by 1.]; Shows an icon in the shop like renegade to indicate items affecting Fairy you don't have yet
 Fin: Price 65->69; 10% Speed -> 9%; Luck -8 -> -9 
 Glass Canon: Price 75->70
 Poisonous Tonic: 15 Range -> 17
@@ -257,8 +257,6 @@ Fix Weapon Attack Speed Randomization to cap at +/- probably 60% (instead of 120
 Fix Eyes Surgery to up the duration for Blue Turrets (Currently doesn't show in tooltip at least)
 
 Stone Skin should account for armor from Streamer's bonus since it *is* permanent armor
-
-Fairy: Now makes an icon appear next to unbought tier-1 & tier-4 items [modeled after Renegade; Renegade can still use their icon since there's no need for both, so it can be an elseif situation]
 
 Extra Stomach should work on Golem when not at max HP. (Currently they can only ever get 1 max hp at most per wave.)
 

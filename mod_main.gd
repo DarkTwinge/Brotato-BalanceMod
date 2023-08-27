@@ -9,6 +9,9 @@ func _init(modLoader = ModLoader):
 	# Adds version number to title screen
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/pages/main_menu.gd")
 
+	# Adds Fairy icon to common and legendary shop items
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/shop_item.gd")
+
 	# Changes Melee Range scaling from 50% -> 67%
 	# Changes Eyes Surgery to give +1 Duration to burn
 	# Artificer now gets +100% Tool Damage
