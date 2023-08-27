@@ -1,7 +1,7 @@
 {
 	"name": "BalanceMod",
 	"namespace": "DarkTwinge",
-	"version_number": "0.3.2",
+	"version_number": "0.3.3",
 	"description": "Tweaks items, weapons, and more to make the game a more varied and balanced experience.",
 	"website_url": "",
 	"dependencies": [

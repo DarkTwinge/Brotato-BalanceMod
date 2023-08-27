@@ -28,3 +28,28 @@ func update_sets()->void :
 			for effect in set_effects:
 				effect.apply()
 				active_set_effects.push_back([key, effect])
+
+# Makes glutton, spicy sauce, and rip and tear all use the crit stat
+func handle_explosion(key:String, pos:Vector2)->void :
+	if effects[key].size() > 0:
+		var explosion_chance = 0.0
+		
+		for explosion in effects[key]:
+			explosion_chance += explosion.chance
+		
+		if randf() <= explosion_chance:
+			var dmg = 0
+			var crit_chance = 0
+			var first = effects[key][0]
+			var exploding_effect = ExplodingEffect.new()
+			
+			for explosion in effects[key]:
+				var explosion_stats = WeaponService.init_base_stats(explosion.stats, "", [], [exploding_effect])
+				dmg += explosion_stats.damage
+				### Take the highest calculated crit chance from all the separate explosion sources
+				crit_chance = max(crit_chance, explosion_stats.crit_chance)
+				###
+			
+			### Use the newly calculated crit chance
+			var _inst = WeaponService.explode(first, pos, dmg, first.stats.accuracy, crit_chance, first.stats.crit_damage, first.stats.burning_data, false, [], first.tracking_text)
+			###
