@@ -861,6 +861,7 @@ func _ready()->void:
 	temp.cooldown = 21   # 18
 	
 	# Torch
+	var spread_text_effect = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/torch_spread_text.tres")
 	temp = load("res://weapons/melee/torch/1/torch_stats.tres")
 	temp.damage = 2    		# 1
 	##temp.max_range = 200  # 175
@@ -876,8 +877,8 @@ func _ready()->void:
 	temp.damage = 6    		# 5
 	temp.duration = 5  		# 4
 	temp.spread = 1				# 0
-	temp = load("res://weapons/melee/torch/2/torch_2_effect_1.tres")
-	temp.text_key = "effect_burning_spread"
+	temp = load("res://weapons/melee/torch/2/torch_2_data.tres")
+	temp.effects.append(spread_text_effect)
 	temp = load("res://weapons/melee/torch/3/torch_3_stats.tres")
 	temp.damage = 6    		# 1
 	##temp.max_range = 200  # 175
@@ -886,8 +887,8 @@ func _ready()->void:
 	temp.damage = 9    	 	# 8
 	temp.duration = 7  	  # 5
 	temp.spread = 1				# 0
-	temp = load("res://weapons/melee/torch/3/torch_3_effect_1.tres")
-	temp.text_key = "effect_burning_spread"
+	temp = load("res://weapons/melee/torch/3/torch_3_data.tres")
+	temp.effects.append(spread_text_effect)
 	temp = load("res://weapons/melee/torch/4/torch_4_stats.tres")
 	temp.damage = 8   	  # 1
 	##temp.max_range = 200  # 175
@@ -896,8 +897,8 @@ func _ready()->void:
 	temp.damage = 15   		# 12
 	temp.duration = 9  		# 8
 	temp.spread = 1       # 0
-	temp = load("res://weapons/melee/torch/4/torch_4_effect_1.tres")
-	temp.text_key = "effect_burning_spread"
+	temp = load("res://weapons/melee/torch/4/torch_4_data.tres")
+	temp.effects.append(spread_text_effect)
 	
 	# Bokken (Fighting Stick)
 	temp = load("res://weapons/melee/fighting_stick/1/fighting_stick_data.tres")
