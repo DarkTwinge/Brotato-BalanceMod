@@ -47,7 +47,7 @@ func set_item_data(p_item_data:ItemParentData)->void :
 			texture.create_from_image(icon)
 			_take_button.icon = texture	
 	# Add Fairy icon to item crates for unobtained tier-1s & tier-4s
-	elif RunData.get_nb_item("item_fairy") > 0 and item_data is ItemData and (item_data.tier == Tier.COMMON or item_data.tier == Tier.LEGENDARY):
+	elif RunData.get_nb_item("item_fairy", false) > 0 and item_data is ItemData and (item_data.tier == Tier.COMMON or item_data.tier == Tier.LEGENDARY):
 		
 		var already_has_item = false
 

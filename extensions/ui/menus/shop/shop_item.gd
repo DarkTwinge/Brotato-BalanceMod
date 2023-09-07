@@ -56,7 +56,7 @@ func set_shop_item(p_item_data:ItemParentData, p_wave_value:int = RunData.curren
 			texture.create_from_image(icon)
 			color = Color.white	
 	# Replace material icon with fairy for shop items that fairy is affected by
-	elif RunData.get_nb_item("item_fairy") > 0 and item_data is ItemData and (item_data.tier == Tier.COMMON or item_data.tier == Tier.LEGENDARY):
+	elif RunData.get_nb_item("item_fairy", false) > 0 and item_data is ItemData and (item_data.tier == Tier.COMMON or item_data.tier == Tier.LEGENDARY):
 		
 		var already_has_item = false
 
