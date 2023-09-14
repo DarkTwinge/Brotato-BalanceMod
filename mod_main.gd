@@ -21,6 +21,10 @@ func _init(modLoader = ModLoader):
 	# Add Fairy and Renegade icons to item boxes too instead of only shop items
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/upgrades/item_box_ui.gd")
 	
+	# Color in reroll button on level ups that are for a guaranteed rarity
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/reroll_button.gd")
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/ingame/upgrades_ui.gd")
+	
 	# Changes Melee Range scaling from 50% -> 67%
 	# Changes Eyes Surgery to give +1 Duration to burn
 	# Artificer now gets +100% Tool Damage

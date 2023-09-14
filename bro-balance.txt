@@ -54,6 +54,7 @@ Wave 20 has additional small enemies to allow for more synergy for effects that 
 * For consistency, all explosions can now crit (Rip & Tear, Spicy Sauce, and Glutton's crit chance affected).
 * Clarified various tooltips to be more clear. Shortened several character effect descriptions to fit in the box better. Tooltips for Armor and Improved Tools (Gardens) are more precise. Knight's tooltip color-coded properly.
 * Stats now update properly on shop reroll (for Padding & Saver).
+* The reroll button in the level up menu will now be colored in on level ups that have a guaranteed rarity. Level 5, 10, 15, etc.
 Note: Altered and new descriptions will currently not display for non-English languages.
 
 
