@@ -11,4 +11,5 @@ func show_upgrade_options(level:int)->void :
 	_upgrade_ui_2.set_upgrade(upgrades[1])
 	_upgrade_ui_3.set_upgrade(upgrades[2])
 	_upgrade_ui_4.set_upgrade(upgrades[3])
+	_stats_container.update_stats()
 	show()
