@@ -345,7 +345,7 @@ _Note: Altered and new descriptions will currently not display for non-English l
 * **One-armed:** Now gains a 4-Set bonus of whichever weapon they have equipped (except for Legendary). _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave; Now shows reminder icons for item boxes as well.
-* **Solider:** 200% Pickup Range -> 150%
+* **Soldier:** 200% Pickup Range -> 150%
 * **Speedy:** Starting Speed 30% -> 25% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2
 * **Streamer:** Now gets +2 Armor from Pocket Factory; Now favored to find Stand-still Items and Structure Items (All Structures including Garden, and also including Pocket Factory and Improved Tools).
 * **Wildling:** No longer starts with a Stick.
