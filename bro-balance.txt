@@ -1,6 +1,13 @@
 WORKSHOP ID: 3058512152
 
 ~~ CURRENT PONDERINGS ~~
+Up Minigun base damage slightly?  (since it's scaling is even betrter than SMG right?)
+
+Wave 2 seen on Hyph's with 4 weapons?? Is this a bug that's pure vanilla with update now, or?
+
+Does +1 damage from Sausage show up on Blue Turret tooltip, assuming it does add +1?
+
+
 Ugly Tooth -- maybe not -Speed because snail overlap
 smg +25 range (or lower range of other guns more?)
 

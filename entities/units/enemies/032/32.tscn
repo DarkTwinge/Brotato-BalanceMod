@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=1]
 [ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=2]
@@ -9,13 +9,6 @@
 [ext_resource path="res://projectiles/slash/slash_projectile.tscn" type="PackedScene" id=7]
 [ext_resource path="res://entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd" type="Script" id=8]
 [ext_resource path="res://entities/units/enemies/attack_behaviors/charging_attack_behavior.gd" type="Script" id=10]
-[ext_resource path="res://resources/shaders/flash.gdshader" type="Shader" id=11]
-
-[sub_resource type="ShaderMaterial" id=1]
-resource_local_to_scene = true
-shader = ExtResource( 11 )
-shader_param/flash_color = Color( 1, 1, 1, 1 )
-shader_param/flash_modifier = 0.0
 
 [sub_resource type="CircleShape2D" id=4]
 radius = 24.0
@@ -29,11 +22,9 @@ radius = 40.0
 [node name="Boss" instance=ExtResource( 1 )]
 script = ExtResource( 6 )
 stats = ExtResource( 3 )
-outline_shader = null
 can_be_boosted = false
 
 [node name="Sprite" parent="Animation" index="0"]
-material = SubResource( 1 )
 position = Vector2( 0, -64 )
 texture = ExtResource( 4 )
 
@@ -57,8 +48,8 @@ script = ExtResource( 8 )
 projectile_scene = ExtResource( 7 )
 projectile_speed = 600
 cooldown = 1.0
-damage_increase_each_wave = 1.15
 max_cd_randomization = 0
+damage_increase_each_wave = 1.15
 max_range = 99999
 number_projectiles = 3
 projectile_spread = 1.5
@@ -70,13 +61,21 @@ constant_spread = true
 script = ExtResource( 8 )
 projectile_scene = ExtResource( 7 )
 projectile_speed = 600
+projectile_speed_randomization = 0
+speed_change_after_each_projectile = 0
 cooldown = 75.0
+initial_cooldown = 45
+max_cd_randomization = 10
+long_cooldown_every_x_shoots = 0
+long_cooldown = 0
 damage = 1
 damage_increase_each_wave = 1.15
-max_cd_randomization = 10
 min_range = 0
 max_range = 1000
 attack_anim_speed = 1.0
+base_direction_randomization = 0.0
+base_direction_constant_spread = false
+alternate_between_base_direction_spread = false
 random_direction = true
 number_projectiles = 6
 projectile_spread = 1.1
@@ -85,9 +84,9 @@ projectile_spawn_spread = 500
 projectile_spawn_only_on_borders = true
 constant_spread = true
 atleast_one_projectile_on_target = false
-;; Was 45
-initial_cooldown = 15
 shoot_in_unit_direction = false
+shoot_away_from_unit = false
+shoot_from_proj_pos_towards_player = false
 rotate_projectile = true
 delete_projectile_on_death = false
 
@@ -110,8 +109,6 @@ target = 0
 [node name="LifeBar" parent="." index="13"]
 margin_top = -112.0
 margin_bottom = -96.0
-
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 
 [editable path="Hurtbox"]
 [editable path="Hitbox"]

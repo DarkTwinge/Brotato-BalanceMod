@@ -19,6 +19,7 @@ wave_units_data = [ ExtResource( 1 ), ExtResource( 3 ) ]
 is_neutral = false
 is_boss = false
 is_horde = true
+is_loot = false
 min_difficulty = 0
 min_wave = 14
 max_wave = 9999

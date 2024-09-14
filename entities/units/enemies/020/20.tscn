@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=1]
 [ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=2]
@@ -8,13 +8,6 @@
 [ext_resource path="res://entities/units/enemies/020/20.gd" type="Script" id=6]
 [ext_resource path="res://entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd" type="Script" id=8]
 [ext_resource path="res://entities/units/enemies/attack_behaviors/charging_attack_behavior.gd" type="Script" id=10]
-[ext_resource path="res://resources/shaders/flash.gdshader" type="Shader" id=11]
-
-[sub_resource type="ShaderMaterial" id=1]
-resource_local_to_scene = true
-shader = ExtResource( 11 )
-shader_param/flash_color = Color( 1, 1, 1, 1 )
-shader_param/flash_modifier = 0.0
 
 [sub_resource type="CircleShape2D" id=4]
 radius = 24.0
@@ -28,11 +21,9 @@ radius = 40.0
 [node name="Boss" instance=ExtResource( 1 )]
 script = ExtResource( 6 )
 stats = ExtResource( 3 )
-outline_shader = null
 can_be_boosted = false
 
 [node name="Sprite" parent="Animation" index="0"]
-material = SubResource( 1 )
 position = Vector2( 0, -56 )
 texture = ExtResource( 4 )
 
@@ -58,9 +49,9 @@ max_cd_randomization = 0
 min_range = 0
 max_range = 800
 attack_anim_speed = 1.0
-;; Was 1.0
+;; 1.0
 charge_duration = 0.95
-;; Was 900.0
+;; 900.0
 charge_speed = 1150.0
 target = 0
 
@@ -68,8 +59,8 @@ target = 0
 script = ExtResource( 8 )
 projectile_speed = 600
 cooldown = 10.0
-damage_increase_each_wave = 1.15
 max_cd_randomization = 0
+damage_increase_each_wave = 1.15
 max_range = 99999
 number_projectiles = 2
 projectile_spread = 1.0
@@ -80,8 +71,8 @@ shoot_in_unit_direction = true
 script = ExtResource( 8 )
 projectile_speed = 600
 cooldown = 10.0
-damage_increase_each_wave = 1.15
 max_cd_randomization = 0
+damage_increase_each_wave = 1.15
 max_range = 99999
 number_projectiles = 4
 projectile_spread = 2.0
@@ -97,15 +88,13 @@ script = ExtResource( 10 )
 cooldown = 80.0
 max_cd_randomization = 0
 charge_duration = 0.4
-;; Was 1000.0
+;; 1000.0
 charge_speed = 1050.0
 target = 0
 
 [node name="LifeBar" parent="." index="14"]
 margin_top = -152.0
 margin_bottom = -136.0
-
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
 
 [editable path="Hurtbox"]
 [editable path="Hitbox"]

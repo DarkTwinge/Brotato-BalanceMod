@@ -3,15 +3,15 @@ extends Effect
 
 export (String) var counter = ""
 
-func apply()->void :
+func apply(player_index: int)->void :
 	pass
 
 
-func unapply()->void :
+func unapply(player_index: int)->void :
 	pass
 
 
-func get_args()->Array:
+func get_args(player_index: int)->Array:
 	var unique_tier1_items = [ ]
 	for item in RunData.items:
 		if item.tier == Tier.COMMON:
