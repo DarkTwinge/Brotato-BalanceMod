@@ -5,13 +5,18 @@ maybe add a few mummy spawns to the edge on wave 20 to further emphasize knockba
 check the Snail situation (does it already slow charges without my change?)
 further increase Luck's effect on tier-4s
 
-Add/Test new starters:
+Test new starters:
 Lich - Shield/Rock
 Saver-Torch?
-Ranger Shotgun (and remove Pistol probably?)
 Vaga with an Etheral start (Flint?)
 maybe vamp with Hand?
+Explorer with Thief Dagger
+One-armed Fireball
 
+
+if Obliterator needs a small buff, give the projectile more width
+
+thinking Baby might want a small nerf-buff: +1 Harvesting, +5% Shop Price?
 
 prob add some knockback to Couch when neg speed too?
 

@@ -1,104 +1,14 @@
-**!! In-progress updates accounting for new changes to the base game; this list will be inaccurate for either the old or new version during the transition. !!**
+**!! In-progress updates accounting for new changes to the base game; this list will be inaccurate for the old version (and potentially also the new version) during the transition. !!**
 
-# Overview
-Elites are closer in overall difficulty to each other, more weapons feel fun and are worth using, and fewer characters and starting weapons should feel frustrating or unfun. More items are worth using, and fewer choices are overpowered or 'always-picks'. Knockback is less frustrating, the Range stat is better, Luck is more valuable, mixed-weapon builds are easier to manage, and several bugs are fixed.
-
-[The full, detailed list of all changes is here](https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog). Below is a shorter summary of the major changes you should know about.
-# Change Summary
-### Mechanics
-* Range gained from level-ups & items is ~33% larger (both the increases and decreases).
-* Armor is slightly less effective (~7%).
-* Easier to have mixed-weapon builds: Shop weapon-set favoring now accounts for all of your weapons (rather than weighing all your sets equally), and the chances of being offered one of the exact weapons you already have is higher the more weapon types you have.
-* Base item/weapon rarity offered in shops slightly lower; Luck impacts shop rarity more; Tier 2-4 Luck Level-ups better.
-* Small tweaks to other level-ups, notably dropping tier-1 Harvesting to 4 and boosting several weaker tier-4 level-ups to be more worthwhile.
-* Horde Waves give ~8% fewer materials.
-* All explosions can now crit and tooltips now display explosion size.
-* Several tooltips cleaned up to be more clear, hidden mechanics are detailed, & character descriptions take up less room. Additional Quality of Life features such as icons for relevant Fairy & King items. Various vanilla-game bugfixes.
-
-### Weapons
-* Torch, Wand, Crossbow, Plank, Cacti Club, Screwdriver, and Sniper Rifle all receive relevant buffs.
-* Spear, SMG, Lightning Shiv, Flamethrower, and Stick receive nerfs.
-* Rock, Pistol, Chopper, Hatchet, Scissors, Medical Gun, Potato Thrower, and Plasma Sledge receive minor buffs; Flaming Brass Knuckles, Fist, Nuclear Launcher, and Chain-gun receive minor nerfs.
-* Lightning Shiv & Sniper Rifle projectiles now have the same Crit Chance & Crit Damage as the main hit.
-* Hand partially reworked to make tier-3 and 4 worth buying.
-
-### Items
-Tons of items receive small buffs or nerfs: overall more items are worth buying more often and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
-* Esty's Couch, Robot Arm, and Padding have been reworked.
-* Spicy Sauce has a bigger explosion and proc chance.
-* Eyes Surgery also adds +1 burn duration.
-* Weird Food is now Tier-2 (easier to find if you have high Luck).
-* Snail now also slows enemy charges.
-* Power Generator now reduces your HP as it powers up.
-* Tardigrade is no longer wasted by Bloody Hand/Donation.
-* Ricochet is now friendlier with already-piercing weapons.
-* Heavy Bullets now stronger overall but lowers Accuracy.
-* Fairy gives less HP Regen and gives negative speed for tier-4s instead of negative HP Regen.
-* Candle is cheaper, and thus more viable for non-Elemental builds that want fewer enemies.
-* Sifd's Relic much cheaper.
-* Alien Tongue & Mutation significantly buffed.
-* Medikit & Bloody Hand nerfed.
-* Fixed several missing item tags (which make certain characters more likely to find appropriate items).
-
-### Characters
-As with items, the goal is not for characters to be equal strength, as it is more interesting and fun for them to be varied. Instead, we compress the difference from top to bottom a little bit so the easiest options are less 'free' and the hardest are less frustrating/punishing. (For example, Jack is buffed and Masochist is nerfed, but Masochist is still a much easier character.)
-* Jack, One-armed, and Farmer receive moderate buffs.
-* Artificer now deals base damage with Tools (instead of only 1).
-* Knight, Loud, Masochist, Renegade, Bull, Doctor, Cryptid, Demon, King, Gladiator, and Brawler receive modest nerfs.
-* Mage can now run an Engineering build (turrets causing burn via Sausage) and also handles Gun builds better (extra Sausage).
-* Several characters have more sensible tagging (items they are favored to find), e.g. Streamer is now more likely to find structures. Streamer also now gets +2 Armor from Pocket Factory (instead of nothing).
-* Starting weapons overhauled to make more sense and to be more fun for random-weapon runs, with several nonsense picks removed and many new appropriate options added.
-
-### Enemies & Waves
-* Smiley/Croc, Hivemind/Colossus, and Mother Elites nerfed.
-* Gargoyle/Bat, Monk, Chef/Butcher, Mantis, and Rhino Elites buffed.
-* Loot Goblins are easier to kill in early waves.
-* Helmet enemies have more HP.
-* Wave 16 harder. Wave 14/15 Horde waves harder. Wave 12 slightly harder.
-* Wave 20 has additional small enemies, making it slightly harder and allowing for more synergy from effects that rely on killing enemies or picking up materials.
-
-# Support Me
-Tune into my stream where I play a wide variety of indie games: https://www.twitch.tv/darktwinge
-
-If you'd like to financially support my ability to make and maintain mods like this, you can do so on Patreon: http://www.patreon.com/DarkTwinge or directly: https://paypal.me/DarkTwinge
-
-# Other Resources
-Fully unlocked Brotato save file (with blank character completion so you can still track your progress): https://www.darktwinge.com/skip-metaprogression-unlocks/brotato-save-file/
-
-You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/index.php
-
-### Recommended Quality of Life Mods
-* Bait & Egg Reminder: https://steamcommunity.com/sharedfiles/filedetails/?id=3029249900
-* Piggy Bank Reminder: https://steamcommunity.com/sharedfiles/filedetails/?id=3005196583
-* Tooltip Tracking Fix: https://steamcommunity.com/sharedfiles/filedetails/?id=3003583829
-* Advanced Statistics: https://steamcommunity.com/sharedfiles/filedetails/?id=3025488976
-* Revamped Icons: https://steamcommunity.com/sharedfiles/filedetails/?id=3003721761
-
-# Thanks To
-Inschato, ArosRising, Hyphen-ated, Pasha, and everyone else that's assisted with feedback, suggestions, or coding help!
-Also thanks to Blobfish for being generally receptive to feedback and suggestions, implementing many Balance Mod changes directly into the vanilla game.
-
-# License
-You are free to use concepts and code contained within elsewhere, ideally with attribution. E.g. if you want to make a spin-off mod for, say, only the Elite changes, you are welcome and encouraged to do so but I'd appreciate a link back to the Balance Mod and/or to my stream.
 
 # Full Changelog
 ## General Changes
-* Armor is about 7% less effective (you now hit 50% reduction at 16 Armor instead of 15). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
-* Mixed Weapon Sets don't hurt your shop odds as much: The calculation that weighs shop weapons to more often match weapon sets you currently have (15% of the time, more often in the first 5 waves) now factors in how many copies of the set you have rather than weighing them all equally. For example, if you have 5 Thief Daggers (Precise set) and 1 Scissors (Precise & Medical sets): when the shop is picking a tier-1 weapon based on sets, in vanilla this would give you a 1 in 7 chance to be offered a Medical Gun -- now the odds of it picking Medical Gun are only 1 in 32. _[This also means multi-set weapons will inherently be favored slightly more, which helps offset the fact they are pulling in a lot of weapons into the pool from being a part of multiple sets to begin with.]_
-* Additionally, having multiple different weapon types will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25%/26% for having 1/2/3/4/5/6+ different weapon types.
-* Base shop (and level-up) odds for higher tiers is slightly worse, and Luck's potential impact on these odds is now higher. Base Increase-Per-Wave for higher-tier equipment reduced: 6%/2%/0.23% -> 5%/1.85%/0.23%. Base Max Chance for higher-tier equipment -/60%/25%/8% -> -/56.5%/24%/8.5%; this max is now only a softcap, with Luck being able to go to a new potential hardcap of -/65%/27%/- at -/172/224/- Luck (Negative Luck does not reduce the cap).
-* Luck's impact on Tier-4 equipment is now 20% higher than vanilla (both positive and negative Luck; caps at +285 Luck by Wave 15 or +157 by Wave 19). _[Luck affects shop odds significantly less than most players expect and overall has less of an impact than most stats, so this helps align expectations and bring the stat closer to the others.]_
-* When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (previously it just reverted to a random weapon). This makes it a little easier to match-up a starting tier-2+ only weapon (e.g. Potato Thrower or Sword) with something relevant.
-* For consistency, all explosions can now crit (Rip & Tear, Spicy Sauce, and Glutton's crit chance affected). All explosion tooltips now also list their explosion size (weapons, items, and characters).
 * Clarified various tooltips to be more clear. Shortened several character effect descriptions to fit in the box better. Tooltips for Armor and Improved Tools + Gardens are more precise. Knight's tooltip color-coded properly. Fixed Lightning Shiv's bounce count. Fixed Incendiary Turret tooltip's incorrect damage rounding.
-* The reroll button for level-ups is now appropriately colored for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
-* Horde Wave Materials: 65% -> 60% _[This still leaves them as generally more profitable and easier than Elite waves, but now more closely aligned.]_
 
-_Note: Altered and new descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! There's about 50 text keys that are mostly tweaks of vanilla text which already has extant translations to reference.)
+_Other general changes have not been ported yet, as they require more complex code changes to be updated with the beta version — but should be coming soon._
 
 
 ## Standard Enemies
-
 + **Small Charger:** Knockback Resistance 80% -> 75%
 + **Small Viking Charger:** Knockback Resistance 80% -> 75%
 + **Tall Bruiser:** Knockback Resistance 90% -> 85%
@@ -109,9 +19,10 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 
 ## Elites
 * **Hivemind/Colossus Elite:** Phase 2 Cooldown 0.9s -> 1.05s _[Gives a bit more breathing room during the rapid onslaught of Phase 2.]_
+* **Rhino Elite:** Base Speed 250 -> 275; Phase 1 Charge Speed 900->1150 (& Charge Duration 1.0->0.95); Phase 2 Charge Speed 1000->1050
 * **Mantis Elite:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Aiming to differentiate Mantis and Rhino more while making both a bit harder.]_
 * **Chef/Butcher Elite:** Phase 2 Max Range 1200 -> 3500; Phase 3 Max Range 2000 -> 3500 _[These changes make it so you can't get out of range of the slashes, most relevant for Explorer]_; Phase 3 Slice Attack Damage Per Wave 0.75 -> 0.85 _[~1-3 more damage; still less damage than any other Elite attack]_
-* **Rhino Elite:** Base Speed 250 -> 275; Phase 1 Charge Speed 900->1150 (& Charge Duration 1.0->0.95); Phase 2 Charge Speed 1000->1050
+
 
 ## Wave Spawns
 * **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
@@ -157,7 +68,7 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 * **Lumberjack Shirt**: Price 15->13
 * **Mutation**: Price 25->19; -3 Knockback -> -2 _[You rarely want both Elemental and Ranged together, and this is nicely cheap when you do; otherwise still kind of expensive-but-occasionally-worth when you just want one.]_
 * **Propeller Hat**: Price 28->25
-* **Scared Sausage**: Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations]_
+* **Scared Sausage**: Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
 * **Snake**: Price 25 -> 23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion**: Price 15->12
 * **Turret**: Price 15->16 _[Almost always better than Landmines, so they get a mild cost difference.]_
@@ -204,7 +115,7 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 * **Blood Donation**: Price 50->45 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
 * **Bowler Hat**: Price 75->72; 15 Luck -> 17
 * **Candle**: Price 65->50; Elemental Damage 4 -> 3; -5% Damage -> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
-* **Chameleon**: Price 70->56; %Damage -4% -> -3%
+* **Chameleon**: Price 70->56; %Damage -4% -> -3% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support**: Price 75->72
 * **Crown**: Price 70->68
 * **Fairy**: Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items -2 HP Regeneration Per 1 Unique Tier-4 Item -> -3% Speed Per 1 Unique Tier-4 Item
@@ -215,14 +126,14 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 * **Plastic Explosive**: Price 60->55
 * **Poisonous Tonic**: 15 Range -> 27
 * **Power Generator**: Price 65->72; -5% Damage -> -1 Max HP Per 5% Speed; Added '%Damage' Tag
-* **Rip and Tear**: Price: 65->61; Harvesting -12 -> -10; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies
+* **Rip and Tear**: Price: 65->59; Harvesting -12 -> -11; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies
 * **Shackles**: Price 80->86; Range 80 -> 88
 * **Shmoop**: Price 60->65; 2 HP Regen -> 3
 * **Statue**: Price 60->55
 * **Tardigrade**: Price 50->45
 * **Toolbox**: 6 Engineering -> 7; -8% Attack Speed -> -5%
 * **Vigilante Ring**: Price 92->82
-* **Wandering Bot**: Price 60->55
+* **Wandering Bot**: Price 60->53
 * **Wheat**: Price 85->83; Harvesting 10->13
 * **Wings**: Range 30 -> 35
 
@@ -242,7 +153,7 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 * **Regeneration Potion:** HP Regeneration 3 -> 4
 * **Retromation's Hoodie:** +2% Attack Speed for every 1% Dodge -> +3% Attack Speed for every 2% Dodge; -80 Range -> -90 Range
 * **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Laser Turret). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
-* **Spider:** Price 120->112; 6% Attack Speed Per Different Weapon -> 8%; 12% Damage -> 8%
+* **Spider:** Price 120->112; Attack Speed Per Different Weapon 6% -> 8%; 12% Damage -> 8%
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 
 ## Weapons
@@ -279,7 +190,7 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 * **Farmer:** Now starts with a Garden; Now also favored to find Gardens in the shop _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
 * **Gladiator:** -30 Luck -> -40
 * **Glutton:** Now also favored to find Gardens in the shop
-* ~~~Jack~~~ -75% Enemies -> -70% [Probably will change in beta updates]
+* ~~~Jack~~~ -75% Enemies -> -70% [Probably will change in upcoming beta updates]
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor; Armor 3 -> 4 _[Means that an Armor level-up is no longer *strictly* better than Melee Damage.]_
 * **Loud:** -3 Harvesting per Wave -> -4
 * **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat and allows their passive and Baby Elephant to hit different targets. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
@@ -294,13 +205,14 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice actually matter more, preventing the default fall-back option.]_
 
 ### Starting Weapons
+My goal with starting weapon tweaks is to add more variety where possible while removing options that just don't make sense for the character or are especially unfun to hit from a random weapon selection. I also aim to _mostly_ fit items that feel thematically appropriate.
 * **Apprentice:** Added Medical Gun; Removed Pistol
 * **Chonky:** Added Taser, Revolver; Removed Hand
 * **Cyborg:** Removed Crossbow
 * **Demon:** Added Wrench, Potato Thrower
 * **Engineer:** Removed Hammer
-* **Entrepreneur:** Added Ghost Flint, Crossbow, Claw, Plank
-* **Explorer:** Ghost Axe
+* **Entrepreneur:** Added Ghost Flint, Crossbow, Claw, Plank; Removed Wand
+* **Explorer:** Added Ghost Axe
 * **Farmer:** Added Slingshot, Thief Dagger
 * **Fisher:** Added Plank, Pruner, Scissors; Removed Screwdriver
 * **Generalist:** Added Scissors, Ghost Flint, Fist, Shredder, Ghost Scepter; Removed Lighting Shiv, Pistol
@@ -309,7 +221,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Golem:** Added Crossbow, Ghost Scepter
 * **Hunter:** Added Scissors, Shotgun
 * **Jack:** Added Spiky Shield; Removed Pistol, Shuriken
-* **King:** Added Jousting Lance, Rocket Launcher [Rocket Launcher isn't impressive at tier-2 so actually isn't the easiest start, but feels fun and appropriate to me.]
+* **King:** Added Jousting Lance, Rocket Launcher [Rocket Launcher isn't impressive at tier-2 so actually isn't the easiest start, but feels fun and appropriate.]
 * **Knight:** Added Quarterstaff, Pruner, Plank, Rock, Fist, Knife, Scissors, Cacti Club; Removed Spiky Shield
 * **Lich:** Added Lightning Shiv
 * **Loud:** Added Screwdriver; Removed Revolver, Taser, Wand
@@ -321,7 +233,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Old:** Added Revolver
 * **One-armed:** Removed Screwdriver, Ghost Flint, Pistol, Fist, Crossbow, Wand, Chopper, Laser Gun; Added Sword, Hammer, Flaming Brass Knuckles
 * **Pacifist:** Added Scissors, Rock, Spiky Shield
-* **Ranger:** Added Slingshot
+* **Ranger:** Added Shotgun, Slingshot; Removed Pistol
 * **Renegade:** Added Shuriken, Slingshot
 * **Saver:** Added Fist, Stick, Chopper, Pruner
 * **Sick:** Added Cacti Club, Hatchet, Pruner, Ghost Flint; Removed Hand
@@ -329,6 +241,24 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Speedy:** Added Ghost Flint, Pruner; Removed Wrench
 * **Streamer:** Added Ghost Scepter; Removed Quarterstaff, Rock, Jousting Lance, Knife, Lightning Shiv, Claw
 * **Well-rounded:** Added Slingshot
+
+# Support Me
+Tune into my stream where I play a wide variety of indie games: https://www.twitch.tv/darktwinge
+
+If you'd like to financially support my ability to make and maintain mods like this, you can do so on Patreon: http://www.patreon.com/DarkTwinge or directly: https://paypal.me/DarkTwinge
+
+# Other Resources
+Fully unlocked pre-Beta Brotato save file (with blank character completion so you can still track your progress): https://www.darktwinge.com/skip-metaprogression-unlocks/brotato-save-file/
+
+You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/index.php
+
+# Thanks To
+Inschato, ArosRising, Hyphen-ated, Pasha, and everyone else that's assisted with feedback, suggestions, or coding help!
+Also thanks to Blobfish for being generally receptive to feedback and suggestions, implementing many Balance Mod changes directly into the base game.
+
+# License
+You are free to use concepts and code contained within elsewhere, ideally with attribution. E.g. if you want to make a spin-off mod for, say, only the Elite changes, you are welcome and encouraged to do so but I'd appreciate a link back to the Balance Mod and/or to my stream.
+
 
 # Now Included in Vanilla
 These changes were originally made for Balance Mod but are now implemented into the main game:
