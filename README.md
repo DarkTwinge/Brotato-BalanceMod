@@ -205,14 +205,14 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice actually matter more, preventing the default fall-back option.]_
 
 ### Starting Weapons
-My goal with starting weapon tweaks is to add more variety where possible while removing options that just don't make sense for the character or are especially unfun to hit from a random weapon selection. I also aim to _mostly_ fit items that feel thematically appropriate.
+My goal with starting weapon tweaks is to add more variety where possible while removing options that just don't make sense for the character or are especially unfun to hit from a random weapon selection. I also aim to _mostly_ stick with items that feel somewhat thematically appropriate.
 * **Apprentice:** Added Medical Gun; Removed Pistol
 * **Chonky:** Added Taser, Revolver; Removed Hand
 * **Cyborg:** Removed Crossbow
 * **Demon:** Added Wrench, Potato Thrower
 * **Engineer:** Removed Hammer
 * **Entrepreneur:** Added Ghost Flint, Crossbow, Claw, Plank; Removed Wand
-* **Explorer:** Added Ghost Axe
+* **Explorer:** Added Ghost Axe, Thief Dagger
 * **Farmer:** Added Slingshot, Thief Dagger
 * **Fisher:** Added Plank, Pruner, Scissors; Removed Screwdriver
 * **Generalist:** Added Scissors, Ghost Flint, Fist, Shredder, Ghost Scepter; Removed Lighting Shiv, Pistol
@@ -221,9 +221,9 @@ My goal with starting weapon tweaks is to add more variety where possible while 
 * **Golem:** Added Crossbow, Ghost Scepter
 * **Hunter:** Added Scissors, Shotgun
 * **Jack:** Added Spiky Shield; Removed Pistol, Shuriken
-* **King:** Added Jousting Lance, Rocket Launcher [Rocket Launcher isn't impressive at tier-2 so actually isn't the easiest start, but feels fun and appropriate.]
+* **King:** Added Jousting Lance, Rocket Launcher, Fireball
 * **Knight:** Added Quarterstaff, Pruner, Plank, Rock, Fist, Knife, Scissors, Cacti Club; Removed Spiky Shield
-* **Lich:** Added Lightning Shiv
+* **Lich:** Added Lightning Shiv, Rock
 * **Loud:** Added Screwdriver; Removed Revolver, Taser, Wand
 * **Lucky:** Added Jousting Lance, Torch, Pruner
 * **Mage:** Added Wrench
@@ -231,7 +231,7 @@ My goal with starting weapon tweaks is to add more variety where possible while 
 * **Multi-tasker:** Added Ghost Flint
 * **Mutant:** Added Lightning Shiv
 * **Old:** Added Revolver
-* **One-armed:** Removed Screwdriver, Ghost Flint, Pistol, Fist, Crossbow, Wand, Chopper, Laser Gun; Added Sword, Hammer, Flaming Brass Knuckles
+* **One-armed:** Removed Screwdriver, Ghost Flint, Pistol, Fist, Crossbow, Wand, Chopper, Laser Gun; Added Sword, Hammer, Flaming Brass Knuckles, Fireball
 * **Pacifist:** Added Scissors, Rock, Spiky Shield
 * **Ranger:** Added Shotgun, Slingshot; Removed Pistol
 * **Renegade:** Added Shuriken, Slingshot
@@ -240,6 +240,7 @@ My goal with starting weapon tweaks is to add more variety where possible while 
 * **Soldier:** Added Lightning Shiv
 * **Speedy:** Added Ghost Flint, Pruner; Removed Wrench
 * **Streamer:** Added Ghost Scepter; Removed Quarterstaff, Rock, Jousting Lance, Knife, Lightning Shiv, Claw
+* **Vagabond:** Added Ghost Flint
 * **Well-rounded:** Added Slingshot
 
 # Support Me

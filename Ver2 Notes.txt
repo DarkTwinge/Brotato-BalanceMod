@@ -1,4 +1,4 @@
-reconsider jousting lance
+reconsider jousting lance (tho Blob already nerfed it a fair bit)
 sharp bullet giving -Range is an idea
 maybe add a few mummy spawns to the edge on wave 20 to further emphasize knockback value?
 
@@ -6,12 +6,8 @@ check the Snail situation (does it already slow charges without my change?)
 further increase Luck's effect on tier-4s
 
 Test new starters:
-Lich - Shield/Rock
+Lich - Shield
 Saver-Torch?
-Vaga with an Etheral start (Flint?)
-maybe vamp with Hand?
-Explorer with Thief Dagger
-One-armed Fireball
 
 
 if Obliterator needs a small buff, give the projectile more width
@@ -24,14 +20,16 @@ Tooltip Cooldowns don't accurately show the breakpoint stuff, so at high atk spd
 
 weird ghost could  put hp at  3-5 instead for a few more spots it is usable? (e.g. if it works with Bloody Hand sorta thing that's maybe cute?)
 
+possibly fly enemy should have more hp/wave
+
 Sausage should prob proc from Sauce/Rip&Tear since it procs from other explosions
 
 could look at tweaking elite hp so wave 11 has less comparatively and 18 slightly more?
 
 
 
-one-armed could have vaga's no-dupe weapon effect to clean up their shops slightly
-	Maybe makes it TOO easy to switch weapons tho?
+one-armed could have vaga's no-dupe weapon effect to clean up their shops very slightly (makes it slightly easier to swap
+
 
 Fried Rice probably wants a full rework
 
@@ -52,7 +50,11 @@ reinforce steel tweak?  Look into it; +1 Engineering is natural but math it some
 
 look at ways to maybe make Riposte effect actually useful?
 
-maybe make Lich's descript more clear that it is ALL damage types
+make Lich's descript more clear that it is ALL damage types
+
+Fireball - add Explosion Size
+
+When testing Eyes Surgery, try some with One-armed
 
 do some comparisons of xbow vs icecicle
 
@@ -84,7 +86,11 @@ If unfixed, check Sausage tooltip - may only be giving +1s instead of actual dam
 Vampire could scale off *flat* missing hp if that makes more sense
 
 
-evaluate crit of various structures and things with Pile of Books potential; e.g. landmines shouldn't have 1.5x crit damage
+evaluate crit of various structures and things with Pile of Books potential; e.g. landmines shouldn't have 1.5x crit damage [prob at least mostly fixed?]
 
 
 Should  weird food be capped/nerfed more?
+
+
+If not fixed:
+Minor: Display for Fireball's effects are different for different tiers. I'd suggest using the tier-2 ordering (explosion, then burn) for all rather than the tier-3/4 ordering (burn, then explosion).

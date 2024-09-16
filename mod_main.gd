@@ -5,6 +5,12 @@ const BALMOD_DIR_E = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/"
 
 func _init(modLoader = ModLoader):
 
+
+	# Adds another arg to explosions so they can also show the size
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
+	##ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
+
+
 	# Load up new and fixed descriptions
 	ModLoaderMod.add_translation("res://mods-unpacked/DarkTwinge-BalanceMod/translations/BalanceMod.en.translation")
 	
@@ -891,6 +897,11 @@ func _ready()->void:
 	temp = load("res://weapons/ranged/double_barrel_shotgun/4/double_barrel_shotgun_4_stats.tres")
 	temp.accuracy = 0.9    # 1.0
 	
+	# Fireball
+	temp = load("res://weapons/ranged/fireball/fireball_effect.tres")
+	temp.key = "new_effect_explode"
+	temp.effect_sign = 0
+	
 	# Potato Thrower
 	temp = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
 	temp.value = 33      # 36
@@ -955,7 +966,7 @@ func _ready()->void:
 	temp.max_range = 500 # 600
 	temp.accuracy = 0.9  # 1.0
 	temp = load("res://weapons/ranged/rocket_launcher/rocket_launcher_effect.tres")
-	temp.key = "new_effect_explode"	
+	temp.key = "new_effect_explode"
 	temp.effect_sign = 0
 	
 	# Shredder
@@ -1391,7 +1402,6 @@ func _ready()->void:
 	temp = load("res://items/characters/explorer/explorer_data.tres")
 	temp_2 = load("res://weapons/melee/ghost_axe/1/ghost_axe_data.tres")
 	temp.starting_weapons.insert(6, temp_2)
-##Testing
 	temp_2 = load("res://weapons/melee/dagger/1/dagger_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
@@ -1477,6 +1487,8 @@ func _ready()->void:
 	temp.starting_weapons.insert(12, temp_2)
 	temp_2 = load("res://weapons/ranged/rocket_launcher/2/rocket_launcher_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/ranged/fireball/2/fireball_2_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	
 	# Knight
 	temp = load("res://items/characters/knight/knight_data.tres")
@@ -1504,9 +1516,9 @@ func _ready()->void:
 	temp = load("res://items/characters/lich/lich_data.tres")
 	temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
 	temp.starting_weapons.insert(0, temp_2)
-##Testing
 	temp_2 = load("res://weapons/melee/rock/1/rock_data.tres")
 	temp.starting_weapons.push_back(temp_2)
+##Testing
 	temp_2 = load("res://weapons/melee/spiky_shield/1/spiky_shield_data.tres")
 	temp.starting_weapons.push_back(temp_2)	
 	
@@ -1569,7 +1581,6 @@ func _ready()->void:
 	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/melee/flaming_knuckles/2/flaming_knuckles_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
-##Testing
 	temp_2 = load("res://weapons/ranged/fireball/2/fireball_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	# Remove
@@ -1679,15 +1690,8 @@ func _ready()->void:
 
 	# Vagabond
 	temp = load("res://items/characters/vagabond/vagabond_data.tres")
-##Testing
 	temp_2 = load("res://weapons/melee/ghost_flint/1/ghost_flint_data.tres")
 	temp.starting_weapons.push_back(temp_2)
-
-	# Vampire
-	temp = load("res://items/characters/vampire/vampire_data.tres")
-##Testing
-	temp_2 = load("res://weapons/melee/hand/1/hand_data.tres")
-	temp.starting_weapons.push_back(temp_2)	
 	
 	# Well-Rounded
 	temp = load("res://items/characters/well_rounded/well_rounded_data.tres")
