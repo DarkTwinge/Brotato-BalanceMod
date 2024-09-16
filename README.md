@@ -1,36 +1,19 @@
 **!! In-progress updates accounting for new changes to the base game; this list will be inaccurate for the old version (and potentially also the new version) during the transition. !!**
 
+# Overview
+(Will be re-added once things are more stable.)
+
+# Support Me
+Tune into my stream where I play a wide variety of indie games: https://www.twitch.tv/darktwinge
+
+If you'd like to financially support my ability to make and maintain mods like this, you can do so on Patreon: http://www.patreon.com/DarkTwinge or directly: https://paypal.me/DarkTwinge
 
 # Full Changelog
 ## General Changes
 * Clarified various tooltips to be more clear. Shortened several character effect descriptions to fit in the box better. Tooltips for Armor and Improved Tools + Gardens are more precise. Knight's tooltip color-coded properly. Fixed Lightning Shiv's bounce count. Fixed Incendiary Turret tooltip's incorrect damage rounding.
+* {Explosion tooltips}
 
 _Other general changes have not been ported yet, as they require more complex code changes to be updated with the beta version — but should be coming soon._
-
-
-## Standard Enemies
-+ **Small Charger:** Knockback Resistance 80% -> 75%
-+ **Small Viking Charger:** Knockback Resistance 80% -> 75%
-+ **Tall Bruiser:** Knockback Resistance 90% -> 85%
-+ **Tall Armored Bruiser:** Knockback Resistance 90% -> 85%
-+ **Hatched Slasher:** Knockback Resistance 90% -> 85%
-+ **Lamprey Fish:** Knockback Resistance 95% -> 90%
-_[The base game has mostly implemented my tweaks here, but it still felt too difficult for Knockback to be impactful so I go a small step further.]_
-
-## Elites
-* **Hivemind/Colossus Elite:** Phase 2 Cooldown 0.9s -> 1.05s _[Gives a bit more breathing room during the rapid onslaught of Phase 2.]_
-* **Rhino Elite:** Base Speed 250 -> 275; Phase 1 Charge Speed 900->1150 (& Charge Duration 1.0->0.95); Phase 2 Charge Speed 1000->1050
-* **Mantis Elite:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Aiming to differentiate Mantis and Rhino more while making both a bit harder.]_
-* **Chef/Butcher Elite:** Phase 2 Max Range 1200 -> 3500; Phase 3 Max Range 2000 -> 3500 _[These changes make it so you can't get out of range of the slashes, most relevant for Explorer]_; Phase 3 Slice Attack Damage Per Wave 0.75 -> 0.85 _[~1-3 more damage; still less damage than any other Elite attack]_
-
-
-## Wave Spawns
-* **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
-* **Wave 14:** Helmet Spawns 108 -> 85 (Helmets have more HP - this is slightly more total HP); Basics spawns earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
-* **Wave 15:** Helmet Spawns 114 -> 95 (Helmets have more HP; this is moderately more total HP)
-* **Wave 16:** Helmets have more HP but just as many spawn; 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) [Aiming to make them less trivially smashed by melee quickly]; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
-* **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
-* **Wave 14 & 15 Hordes:** Added 6 single Magician spawns alongside 6 single Wizard Hats (Spawners) spread out over the last 2/3rds of the wave; Reduced some of easier enemy spawns so they're less likely to despawn the more-threatening enemies; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map to make them harder to deal with; Made the Horde additions identical for 14/15. _[Aiming to make these Horde waves feel threatening, rather than often easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
 
 ## Level-ups
 * **Range:** 15/30/45/60 -> 20/35/50/70
@@ -39,11 +22,6 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 * **HP Regen** Tier-4: 5->6
 * **Engineering** Tier-4: 5->6
 * **Crit Chance** Tier-4: 9->10
-
-## Weapon Set Bonuses
-* **Blunt:** -2/-4/-6/-8/-10 Speed -> -1/-2/-3/-4/-5 Speed
-* **Primitive:** 3HP Per -> 2HP Per
-* **Guns:** 10/20/30/40/50 Range -> 2/4/6/8/10 Attack Speed _[Guns having a bunch of free Range is part of why they don't care about the stat much at all. Additionally, they're a strong and flexible archetype, so they don't need as many free stats from a Set as other weapons do.]_
 
 ## Items
 ### Tier-1
@@ -157,6 +135,11 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 
 ## Weapons
+### Set Bonuses
+* **Blunt:** -2/-4/-6/-8/-10 Speed -> -1/-2/-3/-4/-5 Speed
+* **Primitive:** 3HP Per -> 2HP Per
+* **Guns:** 10/20/30/40/50 Range -> 2/4/6/8/10 Attack Speed _[Guns having a bunch of free Range is part of why they don't care about the stat much at all. Additionally, they're a strong and flexible archetype, so they don't need as many free stats from a Set as other weapons do.]_
+
 ### Melee
 * **Fist:** Price 10/22/45/91 -> 12/26/52/105; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Ghost Flint:** Tier-1 Damage 6->7; Tier-1 Cooldown 1.23 -> 1.24 _[Helps tier-1 not be so hopelessly behind it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
@@ -176,7 +159,6 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 - **Sniper Gun:** Range 800/1000 -> 550/550; Ranged Damage Scaling 100%(All) -> 200%/250%; Projectile Base Damage 5->4 _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts it still scales worse than a Pistol.]_
 
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0-> ; 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
-
 
 ## Characters
 * **Brawler:** Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw)
@@ -205,7 +187,7 @@ _[The base game has mostly implemented my tweaks here, but it still felt too dif
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice actually matter more, preventing the default fall-back option.]_
 
 ### Starting Weapons
-My goal with starting weapon tweaks is to add more variety where possible while removing options that just don't make sense for the character or are especially unfun to hit from a random weapon selection. I also aim to _mostly_ stick with items that feel somewhat thematically appropriate.
+My goal with starting weapon tweaks is to add more variety where possible while removing options that just don't make sense for the character (e.g., weapons with bad scaling on characters all about damage stats) or are especially unfun to hit from a random weapon selection. I also aim to _mostly_ stick with items that feel somewhat thematically appropriate.
 * **Apprentice:** Added Medical Gun; Removed Pistol
 * **Chonky:** Added Taser, Revolver; Removed Hand
 * **Cyborg:** Removed Crossbow
@@ -243,10 +225,30 @@ My goal with starting weapon tweaks is to add more variety where possible while 
 * **Vagabond:** Added Ghost Flint
 * **Well-rounded:** Added Slingshot
 
-# Support Me
-Tune into my stream where I play a wide variety of indie games: https://www.twitch.tv/darktwinge
+## Enemies
+### Wave Spawns
+* **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
+* **Wave 14:** Helmet Spawns 108 -> 85 (Helmets have more HP - this is slightly more total HP); Basics spawns earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
+* **Wave 15:** Helmet Spawns 114 -> 95 (Helmets have more HP; this is moderately more total HP)
+* **Wave 16:** Helmets have more HP but just as many spawn; 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) [Aiming to make them less trivially smashed by melee quickly]; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
+* **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
+* **Wave 14 & 15 Hordes:** Added 6 single Magician spawns alongside 6 single Wizard Hats (Spawners) spread out over the last 2/3rds of the wave; Reduced some of easier enemy spawns so they're less likely to despawn the more-threatening enemies; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map to make them harder to deal with; Made the Horde additions identical for 14/15. _[Aiming to make these Horde waves feel threatening, rather than often easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
 
-If you'd like to financially support my ability to make and maintain mods like this, you can do so on Patreon: http://www.patreon.com/DarkTwinge or directly: https://paypal.me/DarkTwinge
+### Elites
+* **Hivemind/Colossus Elite:** Phase 2 Cooldown 0.9s -> 1.05s _[Gives a bit more breathing room during the rapid onslaught of Phase 2.]_
+* **Rhino Elite:** Base Speed 250 -> 275; Phase 1 Charge Speed 900->1150 (& Charge Duration 1.0->0.95); Phase 2 Charge Speed 1000->1050
+* **Mantis Elite:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Aiming to differentiate Mantis and Rhino more while making both a bit harder.]_
+* **Chef/Butcher Elite:** Phase 2 Max Range 1200 -> 3500; Phase 3 Max Range 2000 -> 3500 _[These changes make it so you can't get out of range of the slashes, most relevant for Explorer]_; Phase 3 Slice Attack Damage Per Wave 0.75 -> 0.85 _[~1-3 more damage; still less damage than any other Elite attack]_
+
+### Standard Enemies
++ **Small Charger:** Knockback Resistance 80% -> 75%
++ **Small Viking Charger:** Knockback Resistance 80% -> 75%
++ **Tall Bruiser:** Knockback Resistance 90% -> 85%
++ **Tall Armored Bruiser:** Knockback Resistance 90% -> 85%
++ **Hatched Slasher:** Knockback Resistance 90% -> 85%
++ **Lamprey Fish:** Knockback Resistance 95% -> 90%
+_[The base game has mostly implemented my tweaks here, but it still felt too difficult for Knockback to be impactful so I go a small step further.]_
+
 
 # Other Resources
 Fully unlocked pre-Beta Brotato save file (with blank character completion so you can still track your progress): https://www.darktwinge.com/skip-metaprogression-unlocks/brotato-save-file/
@@ -265,11 +267,12 @@ You are free to use concepts and code contained within elsewhere, ideally with a
 These changes were originally made for Balance Mod but are now implemented into the main game:
 - Bugfixed Wave 3 shops so they can now sell more than 1 weapon.
 - Revolver & Chain-gun: Fixed a bug that caused them to instantly reload (skipping their Long Reload's extended cooldown) when used alongside any effect that checks if you're moving (e.g. Solider).
-- Stats now update properly on shop reroll (for Saver).
+- Stats now update properly on shop reroll for Saver.
 - Bugfixed Multi-tasker cooldown randomization so it isn't so extreme.
-
-
 - Knockback now never moves the enemy towards the player.
+- Bugfixed inaccurate long cooldown tooltip for Revolver & Chain-gun.
+- Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy.
+
 
 * **Loot Goblin:** Base HP  50->2; HP/wave 25->30 _[Makes early Loot Goblins far more reasonable to kill and late-game ones slightly harder to kill.]_
 * **Helmet Enemy:** Base HP 8->4; HP/wave 3->4.5  _[Aim is to make them feel like a more meaningful presence on the field, especially for Wave 16 where, when buffed (red outline), they go from 185hp in vanilla to 250hp in Balance Mod.]_
@@ -298,8 +301,7 @@ These changes were originally made for Balance Mod but are now implemented into 
 * **Sifd's Relic:** Price 100->50
 Robot Arm Rework
 
-- Bugfixed inaccurate long cooldown tooltip for Revolver & Chain-gun, which shows the cooldown as much higher than it actually is.
-- Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy.
+
 * **Chain-gun, Gatling Laser, Tier-4 Minigun:** Fixed cooldown to no longer incorrectly display in red (visual change only).
 
 * **Artificer:** Tools Have +100% Damage.
