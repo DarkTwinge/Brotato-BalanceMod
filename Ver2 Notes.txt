@@ -28,6 +28,9 @@ could look at tweaking elite hp so wave 11 has less comparatively and 18 slightl
 
 
 
+reduce cost of tier-4 weapons as a benefit to Luck?
+
+
 one-armed could have vaga's no-dupe weapon effect to clean up their shops very slightly (makes it slightly easier to swap
 
 
@@ -90,7 +93,6 @@ evaluate crit of various structures and things with Pile of Books potential; e.g
 
 
 Should  weird food be capped/nerfed more?
-
 
 If not fixed:
 Minor: Display for Fireball's effects are different for different tiers. I'd suggest using the tier-2 ordering (explosion, then burn) for all rather than the tier-3/4 ordering (burn, then explosion).

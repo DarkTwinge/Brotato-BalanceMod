@@ -173,6 +173,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Gladiator:** -30 Luck -> -40
 * **Glutton:** Now also favored to find Gardens in the shop
 * ~~~Jack~~~ -75% Enemies -> -70% [Probably will change in upcoming beta updates]
+* **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor; Armor 3 -> 4 _[Means that an Armor level-up is no longer *strictly* better than Melee Damage.]_
 * **Loud:** -3 Harvesting per Wave -> -4
 * **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat and allows their passive and Baby Elephant to hit different targets. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_

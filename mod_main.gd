@@ -8,8 +8,26 @@ func _init(modLoader = ModLoader):
 
 	# Adds another arg to explosions so they can also show the size
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
-	##ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
 
+
+
+	# Refreshes shop items when combining weapons (for King)
+	# BROKEN - Can't work until main-game changes AFAIK
+	##ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/shop.gd")
+	
+	# King's new ability tooltip
+	#y New Padding Effect
+	#y New Couche Negative Speed Effect
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/linked_stats.gd")
+	
+	#x This part removed as it seemed naturally fixed now? [Make tooltip for Speed Generator work properly]
+	#y Add new Padding effect
+	# Changes King's ability to work on unique tier-4 weapons
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/gain_stat_for_every_stat_effect.gd")
+
+	# Adds a new enemy-group to Horde waves to spawn Magicians for Wave 14/15
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "zones/wave_manager.gd")
 
 	# Load up new and fixed descriptions
 	ModLoaderMod.add_translation("res://mods-unpacked/DarkTwinge-BalanceMod/translations/BalanceMod.en.translation")
@@ -27,7 +45,6 @@ func _ready()->void:
 	# Changed effects/text
 	Text.keys_needing_operator.new_effect_gain_stat_for_every_different_stat = [0, 4]
 	Text.keys_needing_operator.new_effect_damage_against_bosses = [0]
-	###Text.keys_needing_operator.new_effect_unique_tier_iv_weapon_bonus = [0, 4]
 	Text.keys_needing_operator.effect_bounce_damage = [0]
 	Text.keys_needing_operator.new_effect_item_box_gold = [0]
 	Text.keys_needing_operator.new_effect_on_hit = [0]
@@ -44,6 +61,7 @@ func _ready()->void:
 	###Text.keys_needing_percent.bm_enemy_charge_speed = [0]
 	Text.keys_needing_percent.bm_non_elemental_reduce_stat_gains = [1]
 	###Text.keys_needing_operator.bm_effect_for_negative_speed = [0]
+	Text.keys_needing_operator.bm_effect_unique_tier_iv_weapon_bonus = [0, 4]
 	# This group for making descriptions shorter
 	Text.keys_needing_percent.new_effect_increase_stat_gains = [1]
 	Text.keys_needing_percent.new_effect_reduce_stat_gains = [1]
@@ -1172,6 +1190,17 @@ func _ready()->void:
 	# Jack
 	temp = load("res://items/characters/jack/jack_effect_1.tres")
 	temp.value = -70 # -75 (Reduced enemies)
+
+	# King
+	temp = load("res://items/characters/king/king_data.tres")
+	temp_2 = load("res://items/characters/king/king_effect_1.tres")
+	temp.effects.erase(temp_2)
+	temp_2 = load("res://items/characters/king/king_effect_1b.tres")
+	temp.effects.erase(temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/king_tier4_damage.tres")
+	temp.effects.insert(1, temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/king_tier4_atkspd.tres")
+	temp.effects.insert(2, temp_2)
 	
 	# Knight
 	temp = load("res://items/characters/knight/knight_effect_1.tres")

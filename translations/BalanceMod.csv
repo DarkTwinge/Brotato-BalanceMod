@@ -1,5 +1,5 @@
 key,en
-NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT,{0} {1} for every {2} different {3}[color=#00ff00]s[/color] you have [{4}]
+NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT,{0} {1} for every {2} [color=#ffae40]different[/color] {3}[color=#00ff00]s[/color] you have [{4}]
 BM_INCREASED_BURN_DURATION,Burning Duration lasts {0} tick longer
 NEW_EFFECT_ONE_WEAPON_SLOT_LIMIT,You can only equip one weapon at a time\nYou have a [color=#00ff00]4-Set Bonus[/color] for the weapon you have equipped (excluding Legendary’s penalty)
 NEW_INFO_POS_STAT_RANGE,The max range of your weapons is increased by {0}. Half as effective on melee weapons. (Higher range also slightly increases the cooldown of melee weapons because of the travel distance.)
@@ -12,7 +12,7 @@ NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapo
 NEW_EFFECT_GARDEN,Spawns a garden that creates a fruit an average of every {0} seconds
 NEW_EFFECT_DAMAGE_AGAINST_BOSSES,{0} damage against bosses and elites (multiplicative)
 NEW_SAUSAGE_EFFECT_STARTING_ITEM,You start with {0} {1} (or [color=#00ff00]2[/color] when starting with a Gun)
-NEW_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS,{0} {1} for every [color=#ffae40]different[/color] Tier IV weapon you have [{4}]
+BM_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS,{0} {1} for every [color=#ffae40]different[/color] Tier IV weapon you have [{4}]
 NEW_EFFECT_REDUCE_STAT_GAINS,{0} reduced by {1}
 NEW_EFFECT_INCREASE_STAT_GAINS,{0} increased by {1}
 NEW_EFFECT_GAIN_STAT_FOR_EVERY_TREE,{0} {1} per currently living tree [{4}]
@@ -29,12 +29,12 @@ NEW_SHORT_EFFECT_PIERCING,Projectiles pierce\n{0} additional target
 BM_EFFECT_FAIRY_COUNTER,(Items for next increase: {0})
 BM_EFFECT_RIPSAUCE_CLARIFY,(Additional copies increase both the damage and activation chance.)
 NEW_EFFECT_ITEM_BOX_GOLD,{0} materials when you pick up a crate (including at the end of a wave)
-NEW_EFFECT_EXPLODE_MELEE,{0} chance to explode on hit (Explosion Size: {1})
-NEW_EFFECT_EXPLODE,Projectiles explode on hit (Explosion Size: {1})
-NEW_EFFECT_EXPLODE_CUSTOM,Projectiles have {0} chance to explode on hit (Explosion Size: {1})
-NEW_EFFECT_EXPLODE_ON_CONSUMABLE,Consumables have a {0} chance to explode for {1} ({2}) damage when picked up (Explosion Size: {3})
-NEW_EFFECT_EXPLODE_ON_HIT,You explode for {1} ({2}) damage when you take damage (Explosion Size: {3})
-NEW_EFFECT_EXPLODE_ON_DEATH,Enemies have a {0} chance to explode for {1} ({2}) damage when they die (Explosion Size: {3})
+NEW_EFFECT_EXPLODE_MELEE,{0} chance to explode on hit (Size: {1})
+NEW_EFFECT_EXPLODE,Projectiles explode on hit (Size: {1})
+NEW_EFFECT_EXPLODE_CUSTOM,Projectiles have {0} chance to explode on hit (Size: {1})
+NEW_EFFECT_EXPLODE_ON_CONSUMABLE,Consumables have a {0} chance to explode for {1} ({2}) damage when picked up (Size: {4})
+NEW_EFFECT_EXPLODE_ON_HIT,You explode for {1} ({2}) damage when you take damage (Size: {4})
+NEW_EFFECT_EXPLODE_ON_DEATH,Enemies have a {0} chance to explode for {1} ({2}) damage when they die (Size: {4})
 BM_EFFECT_LANDMINE_SIZE,(Explosion Size: [color=#00ff00]175[/color])
 BM_EFFECT_EXPLOSIVE_TURRET_SIZE,(Explosion Size: [color=#00ff00]100[/color])
 NEW_EFFECT_ON_HIT,{0} {1} each time you take damage until the end of the wave
