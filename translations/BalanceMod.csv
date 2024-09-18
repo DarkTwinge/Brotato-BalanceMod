@@ -6,7 +6,7 @@ NEW_INFO_POS_STAT_RANGE,The max range of your weapons is increased by {0}. Half 
 NEW_INFO_NEG_STAT_RANGE,The max range of your weapons is reduced by {0}. Half as effective on melee weapons. (Lower range also slightly decreases the cooldown of melee weapons because of the travel distance.)
 NEW_EFFECT_NO_HEAL,You can’t heal in any way during waves
 NEW_EFFECT_PACIFIST,Gain {0} material and XP for every living and despawned enemy at the end of a wave 
-NEW_EFFECT_HIT_PROTECTION,Nullifies the the first 2+ damage hit taken each wave
+BM_EFFECT_HIT_PROTECTION,Nullifies the the first 2+ damage hit taken each wave
 NEW_EFFECT_BURN_CHANCE,Attacks have a {0} chance to deal {1}x{2} ({3}) burning damage\nEffects that already burn get +1 burn damage
 NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage; non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
 NEW_EFFECT_GARDEN,Spawns a garden that creates a fruit an average of every {0} seconds
@@ -23,7 +23,6 @@ BM_EFFECT_EXTRA_WEAPON_SLOT_LIMIT,You can equip an additional weapon
 NEW_EFFECT_LIGHTNING_ON_HIT,Hitting an enemy spawns a lightning projectile that deals {1} ({3}) damage and bounces an additional {2} time(s)
 BM_NON_ELEMENTAL_REDUCE_STAT_GAINS,[color=#ff0000]Non-elemental Damage[/color] reduced by {1}
 BM_LEFTOVER_MATERIALS,materials left uncollected from the previous wave
-NEW_WEAPON_PLASMA_SLEDGEHAMMER,Plasma Sledge
 BM_EFFECT_FOR_NEGATIVE_SPEED,"If your Speed is negative, gain {0} {1}"
 NEW_SHORT_EFFECT_PIERCING,Projectiles pierce\n{0} additional target
 BM_EFFECT_FAIRY_COUNTER,(Items for next increase: {0})

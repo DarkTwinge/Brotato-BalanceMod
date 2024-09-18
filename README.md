@@ -163,7 +163,7 @@ _Other general changes have not been ported yet, as they require more complex co
 ## Characters
 * **Brawler:** Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw)
 * **Bull:** Starting HP Regen 15 -> 10
-* **Crazy:** No longer starts with a Knife; Starting Dodge -30% -> -15% _[Silly, but if this isn't going to be -100%, it might as well be an amount you can theoretically pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[To prevent Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
+* **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[Silly, but if this isn't going to be -100%, it might as well be an amount you can theoretically pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[To prevent Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regeneration 5 -> 3; HP Regeneration is Doubled -> HP Regeneration modifications are increased by 100% _[This is mostly the same, but makes it much more clear what your HP Regen is actually at.]_
@@ -191,6 +191,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 My goal with starting weapon tweaks is to add more variety where possible while removing options that just don't make sense for the character (e.g., weapons with bad scaling on characters all about damage stats) or are especially unfun to hit from a random weapon selection. I also aim to _mostly_ stick with items that feel somewhat thematically appropriate.
 * **Apprentice:** Added Medical Gun; Removed Pistol
 * **Chonky:** Added Taser, Revolver; Removed Hand
+* **Crazy:** Added Crossbow
 * **Cyborg:** Removed Crossbow
 * **Demon:** Added Wrench, Potato Thrower
 * **Engineer:** Removed Hammer

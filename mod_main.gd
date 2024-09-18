@@ -7,10 +7,15 @@ func _init(modLoader = ModLoader):
 
 
 	# Adds another arg to explosions so they can also show the size
+	# -->Items side still needs more finishing right? It's wrong for e.g. Sauce?
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
 
 
+
+	# Now applies Crazy's +Range to Crossbow/Sniper
+	# Now applies Brawler's +AttackSpeed to Claw 
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/weapon_service.gd")
 
 	# Refreshes shop items when combining weapons (for King)
 	# BROKEN - Can't work until main-game changes AFAIK
@@ -863,15 +868,11 @@ func _ready()->void:
 	temp.scale = 1.1		 # 0.75
 	temp.key = "new_effect_explode_melee"
 	
-	# Plasma Sledge (Plasma Sledgehammer)
-	temp = load("res://weapons/melee/plasma_sledgehammer/3/plasma_sledgehammer_3_data.tres")
-	temp.name = "NEW_WEAPON_PLASMA_SLEDGEHAMMER"
+	# Plasma Sledge
 	temp = load("res://weapons/melee/plasma_sledgehammer/3/plasma_sledgehammer_3_effect.tres")
 	temp.scale = 1.1     # 1.0
 	temp.chance = 0.33   # 0.25
 	temp.key = "new_effect_explode_melee"
-	temp = load("res://weapons/melee/plasma_sledgehammer/4/plasma_sledgehammer_4_data.tres")
-	temp.name = "NEW_WEAPON_PLASMA_SLEDGEHAMMER"
 	temp = load("res://weapons/melee/plasma_sledgehammer/4/plasma_sledgehammer_4_effect.tres")
 	temp.scale = 1.3     # 1.25
 	temp.key = "new_effect_explode_melee"
@@ -1394,6 +1395,11 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/hand/1/hand_data.tres")
 	temp.starting_weapons.erase(temp_2)
 
+	# Crazy
+	temp = load("res://items/characters/crazy/crazy_data.tres")
+	temp_2 = load("res://weapons/ranged/crossbow/1/crossbow_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	
 	# Cyborg
 	temp = load("res://items/characters/cyborg/cyborg_data.tres")
 	# Remove
