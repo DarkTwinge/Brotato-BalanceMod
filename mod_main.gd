@@ -13,6 +13,16 @@ func _init(modLoader = ModLoader):
 
 
 
+	
+	# Gives One-armed a 4-set Bonus for their weapon
+	# Slightly reduce the strength of armor
+	#x? Makes Glutton, Spicy Sauce, and Rip and Tear all use the crit stat
+	# Gives Gun Mage an extra Sausage
+	# Guarantees Horde Waves for Loud
+	#y (Adds new effects to RunData)
+	#y (Adds new init effects)
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/run_data.gd")
+
 	# Fix Lightning Shiv bounce count
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/projectiles_on_hit_effect.gd")
 
@@ -1251,6 +1261,8 @@ func _ready()->void:
 	temp.effects.push_back(temp_2) # Re-order penalties so Engineering is shown first
 	temp = load("res://items/characters/mage/mage_effect_9.tres")
 	temp.value = -33   # -50 (Engineering Modifications)
+	temp = load("res://items/characters/mage/mage_effect_3b.tres")
+	temp.text_key = "new_sausage_effect_starting_item"
 	
 	# Masochist
 	temp = load("res://items/characters/masochist/masochist_effect_3.tres")
@@ -1260,6 +1272,10 @@ func _ready()->void:
 	temp = load("res://items/characters/masochist/masochist_effect_1.tres")
 	temp.text_key = "new_effect_on_hit"
 
+	# One-armed
+	temp = load("res://items/characters/one_arm/one_arm_effect_3.tres")
+	temp.text_key = "NEW_EFFECT_ONE_WEAPON_SLOT_LIMIT"
+	
 	# Pacifist
 	temp = load("res://items/characters/pacifist/pacifist_effect_2.tres")
 	temp.text_key = "NEW_EFFECT_PACIFIST"

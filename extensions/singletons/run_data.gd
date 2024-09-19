@@ -3,25 +3,29 @@ extends "res://singletons/run_data.gd"
 # Replaced to guarantee Horde Waves for Loud
 func init_elites_spawn(base_wave:int = 10, horde_chance:float = 0.4)->void :
 	elites_spawn = []
-	var diff = get_current_difficulty()
+	var diff = current_difficulty
 	var nb_elites = 0
-	var possible_elites = ItemService.elites.duplicate()
+	var possible_elites = ItemService.get_elites_from_zone(current_zone)
 
-	if current_character != null and current_character.my_id == "character_jack":
-		horde_chance = 0.0
-	### Loud is guaranteed Horde Waves on 11/12 and 14/15
-	elif current_character != null and current_character.my_id == "character_loud":
-		horde_chance = 1.0
-	###
-	
-	if diff < 2:
+	for player_index in get_player_count():
+		var current_character = get_player_character(player_index)
+		if current_character != null and current_character.my_id == "character_jack":
+			horde_chance = 0.0
+		### Loud is guaranteed Horde Waves on 11/12 and 14/15
+		elif current_character != null and current_character.my_id == "character_loud":
+			horde_chance = 1.0
+		##
+
+	if DebugService.spawn_specific_elite != "":
+		nb_elites = 1
+	elif diff < 2:
 		return 
 	elif diff < 4:
 		nb_elites = 1
 	else :
 		nb_elites = 3
 
-	var wave = Utils.get_random_int(base_wave + 1, base_wave + 2)
+	var wave = Utils.randi_range(base_wave + 1, base_wave + 2)
 
 	for i in nb_elites:
 
@@ -32,9 +36,9 @@ func init_elites_spawn(base_wave:int = 10, horde_chance:float = 0.4)->void :
 			wave = DebugService.starting_wave
 
 		if i == 1:
-			wave = Utils.get_random_int(base_wave + 4, base_wave + 5)
+			wave = Utils.randi_range(base_wave + 4, base_wave + 5)
 		elif i == 2:
-			wave = Utils.get_random_int(base_wave + 7, base_wave + 8)
+			wave = Utils.randi_range(base_wave + 7, base_wave + 8)
 			type = EliteType.ELITE
 
 		var elite_id = Utils.get_rand_element(possible_elites).my_id if type == EliteType.ELITE else ""
@@ -51,34 +55,47 @@ func init_elites_spawn(base_wave:int = 10, horde_chance:float = 0.4)->void :
 
 
 
+
+
 # Added set bonus for One-armed
-func update_sets()->void :
-	
+func update_sets(player_index:int)->void :
+	var player_data = players_data[player_index]
+	var active_set_effects = player_data.active_set_effects
+	var active_sets = player_data.active_sets
+
 	for effect in active_set_effects:
-		effect[1].unapply()
-	
-	active_set_effects = []
-	active_sets = {}
-	
+		effect[1].unapply(player_index)
+
+	active_sets.clear()
+	active_set_effects.clear()
+
+	var weapons: = get_player_weapons(player_index)
 	for weapon in weapons:
 		for set in weapon.sets:
-			if active_sets.has(set.my_id):
+			if get_player_effect_bool("all_weapons_count_for_sets", player_index):
+				active_sets[set.my_id] = weapons.size()
+			elif active_sets.has(set.my_id):
 				active_sets[set.my_id] += 1
 			else :
 				active_sets[set.my_id] = 1
 				### Treats One-armed as having a 4-set Bonus, except for Legendary weapons
-				if RunData.current_character.name == "CHARACTER_ONE_ARM" and not set.my_id == "set_legendary":
+				var current_character = get_player_character(player_index)
+				print(current_character)
+				print(current_character.my_id)
+				print(set.my_id)
+				if current_character.my_id == "character_one_arm" and not set.my_id == "set_legendary":
 					active_sets[set.my_id] = 4	
-				###
-	
+				##
+
 	for key in active_sets:
 		if active_sets[key] >= 2:
 			var set = ItemService.get_set(key)
 			var set_effects = set.set_bonuses[min(active_sets[key] - 2, set.set_bonuses.size() - 1)]
-			
+
 			for effect in set_effects:
-				effect.apply()
+				effect.apply(player_index)
 				active_set_effects.push_back([key, effect])
+
 
 
 # Slightly reduce the effect of armor
@@ -91,70 +108,20 @@ func get_armor_coef(armor:int)->float:
 	return percent_dmg_taken
 
 
-# Makes Glutton, Spicy Sauce, and Rip and Tear all use the crit stat
-func handle_explosion(key:String, pos:Vector2)->void :
-	if effects[key].size() > 0:
-		var explosion_chance = 0.0
-		
-		for explosion in effects[key]:
-			explosion_chance += explosion.chance
-		
-		if Utils.get_chance_success(explosion_chance):
-			var dmg = 0
-			###
-			var crit_chance = 0
-			###
-			var first = effects[key][0]
-			var exploding_effect = ExplodingEffect.new()
-			
-			for explosion in effects[key]:
-				var explosion_stats = WeaponService.init_base_stats(explosion.stats, "", [], [exploding_effect])
-				dmg += explosion_stats.damage
-				### Take the highest calculated crit chance from all the separate explosion sources
-				crit_chance = max(crit_chance, explosion_stats.crit_chance)
-				###
-			
-			### Use the newly calculated crit chance
-			var _inst = WeaponService.explode(first, pos, dmg, first.stats.accuracy, crit_chance, first.stats.crit_damage, first.stats.burning_data, false, [], first.tracking_text)
-			#var _inst = WeaponService.explode(first, pos, dmg, first.stats.accuracy, first.stats.crit_chance, first.stats.crit_damage, first.stats.burning_data, false, [], first.tracking_text)
-			###
 
 # Gives an extra starting Sausage for Gun Mage
 func add_starting_items_and_weapons()->void :
 	.add_starting_items_and_weapons()
-	
-	# Same as vanilla loop to add starting items, but doesn't add the normal items
-	if effects["starting_item"].size() > 0:
-		for item_id in effects["starting_item"]:
-			for i in item_id[1]:
-				var item = ItemService.get_element(ItemService.items, item_id[0])
-				### If adding a starting Sausage, add a 2nd if the starting weapon is an SMG or Shotgun
-				if item_id[0] == "item_scared_sausage":
-					if RunData.weapons[0].my_id == "weapon_double_barrel_shotgun_1" or RunData.weapons[0].my_id == "weapon_smg_1":
-						add_item(item)
-				##
 
-
-# Add new effects to RunData dictionary
-func init_effects()->Dictionary:
-	var new_effects = {
-		"bm_enemy_charge_speed":0,
-		"bm_lucky_dmg_when_pickup_gold":[],
-		"bm_leftover_materials":0,
-		"bm_stats_for_negative_speed":[],
-		"bm_increased_burn_duration":0
-	}
-	var all_effects = .init_effects()
-	
-	all_effects.merge(new_effects)
-	return all_effects
-
-# Add new damage-tracked effects
-func init_tracked_effects()->Dictionary:
-	var new_effects = {
-		"character_lucky":0
-	}
-	var all_effects = .init_tracked_effects()
-	
-	all_effects.merge(new_effects)
-	return all_effects	
+	for player_index in players_data.size():
+		var effects: = get_player_effects(player_index)
+		if effects["starting_item"].size() > 0:
+			for item_id in effects["starting_item"]:
+				for i in item_id[1]:
+					var item = ItemService.get_element(ItemService.items, item_id[0])
+					### If adding a starting Sausage, add a 2nd if the starting weapon is an SMG or Shotgun
+					if item_id[0] == "item_scared_sausage":
+						var weapons = RunData.get_player_weapons(player_index)
+						if weapons[0].my_id == "weapon_double_barrel_shotgun_1" or weapons[0].my_id == "weapon_smg_1":
+							add_item(item, player_index)
+					##

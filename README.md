@@ -10,7 +10,7 @@ If you'd like to financially support my ability to make and maintain mods like t
 
 # Full Changelog
 ## General Changes
-* Clarified various tooltips to be more clear. Shortened several character effect descriptions to fit in the box better. Tooltips for Armor and Improved Tools + Gardens are more precise. Knight's tooltip color-coded properly. Fixed Lightning Shiv's bounce count. Fixed Incendiary Turret tooltip's incorrect damage rounding.
+* Armor is about 7% less effective (Each point is +6.25% Effective HP instead of +6.67%). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
 * {Explosion tooltips}
 
 _Other general changes have not been ported yet, as they require more complex code changes to be updated with the beta version — but should be coming soon._
@@ -176,10 +176,11 @@ _Other general changes have not been ported yet, as they require more complex co
 * ~~~Jack~~~ -75% Enemies -> -70% [Probably will change in upcoming beta updates]
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor _[Modest nerf to a strong character, and means that an Armor level-up is no longer *strictly* better than Melee Damage.]_
-* **Loud:** -3 Harvesting per Wave -> -4
+* **Loud:** -3 Harvesting per Wave -> -4; Now guaranteed to have Horde Waves on 11/12 and 14/15 (Still gets an Elite on 17/18)
 * **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat and allows their passive and Baby Elephant to hit different targets. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
-* **Mage:** -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but 50% is still oppressive for making this alt built work, while 33% is more in the hard-but-manageable range.]_
+* **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but 50% is still oppressive for making this alt built work, while 33% is more in the hard-but-manageable range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5 _[Modest nerfs to a very strong character.]_
+* **One-armed:** Now gains a 4-Set bonus of whichever weapon they have equipped (except for Legendary). _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
 * **Soldier:** 200% Pickup Range -> 150% _[Gives Soldier reason to care about Pickup Range items a bit.]_
