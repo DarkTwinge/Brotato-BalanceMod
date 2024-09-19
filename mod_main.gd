@@ -13,6 +13,9 @@ func _init(modLoader = ModLoader):
 
 
 
+	# Fix Lightning Shiv bounce count
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/projectiles_on_hit_effect.gd")
+
 	# Now applies Crazy's +Range to Crossbow/Sniper
 	# Now applies Brawler's +AttackSpeed to Claw 
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/weapon_service.gd")
@@ -839,6 +842,22 @@ func _ready()->void:
 	temp.max_range = 135 # 125	
 
 	# Lightning Shiv
+	temp = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_stats.tres")
+	temp.cooldown = 28      # 27
+	##temp = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_projectile.tres")
+	##temp.damage = 5		    # 5
+	temp = load("res://weapons/melee/lightning_shiv/2/lightning_shiv_2_stats.tres")
+	temp.cooldown = 24      # 22
+	temp = load("res://weapons/melee/lightning_shiv/2/lightning_shiv_projectile_2.tres")
+	temp.damage = 6		      # 8
+	temp = load("res://weapons/melee/lightning_shiv/3/lightning_shiv_3_stats.tres")
+	temp.cooldown = 20      # 18
+	temp = load("res://weapons/melee/lightning_shiv/3/lightning_shiv_projectile_3.tres")
+	temp.damage = 8		      # 12
+	temp = load("res://weapons/melee/lightning_shiv/4/lightning_shiv_4_stats.tres")
+	temp.cooldown = 15      # 13
+	temp = load("res://weapons/melee/lightning_shiv/4/lightning_shiv_projectile_4.tres")
+	temp.damage = 11	      # 15
 	temp = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_effect_1.tres")
 	temp.key = "NEW_EFFECT_LIGHTNING_ON_HIT"
 	temp = load("res://weapons/melee/lightning_shiv/2/lightning_shiv_2_effect_1.tres")
@@ -1207,8 +1226,6 @@ func _ready()->void:
 	temp = load("res://items/characters/knight/knight_effect_1.tres")
 	temp.value = 3  # 2
 	temp.nb_stat_scaled = 2 # 1 (2 melee per 1 armor -> 3 melee per 2 armor)
-	temp = load("res://items/characters/knight/knight_effect_2.tres")
-	temp.value = 4  # 3 (Armor)
 	temp = load("res://items/characters/knight/knight_effect_4.tres")
 	temp.text_key = "new_effect_min_weapon_tier" # Hard-coded to fix the color being red when it should be green
 	
@@ -1538,8 +1555,6 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/fist/2/fist_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/melee/scissors/2/scissors_2_data.tres")
-	temp.starting_weapons.push_back(temp_2)
-	temp_2 = load("res://weapons/melee/pruner/2/pruner_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/melee/cactus_mace/2/cactus_mace_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
