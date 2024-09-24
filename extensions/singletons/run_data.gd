@@ -80,9 +80,6 @@ func update_sets(player_index:int)->void :
 				active_sets[set.my_id] = 1
 				### Treats One-armed as having a 4-set Bonus, except for Legendary weapons
 				var current_character = get_player_character(player_index)
-				print(current_character)
-				print(current_character.my_id)
-				print(set.my_id)
 				if current_character.my_id == "character_one_arm" and not set.my_id == "set_legendary":
 					active_sets[set.my_id] = 4	
 				##

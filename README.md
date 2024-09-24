@@ -11,6 +11,9 @@ If you'd like to financially support my ability to make and maintain mods like t
 # Full Changelog
 ## General Changes
 * Armor is about 7% less effective (Each point is +6.25% Effective HP instead of +6.67%). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
+
+* Having multiple different weapon types will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different weapon types.
+* When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (previously it just reverted to a random weapon). This makes it a little easier to match-up a starting tier-2+ only weapon (e.g. Potato Thrower or Sword) with something relevant.
 * {Explosion tooltips}
 
 _Other general changes have not been ported yet, as they require more complex code changes to be updated with the beta version — but should be coming soon._
@@ -108,6 +111,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Shackles**: Price 80->86; Range 80 -> 88
 * **Shmoop**: Price 60->65; 2 HP Regen -> 3
 * **Statue**: Price 60->55
+* **Strange Book**: Price 70->65
 * **Tardigrade**: Price 50->45
 * **Toolbox**: 6 Engineering -> 7; -8% Attack Speed -> -5%
 * **Vigilante Ring**: Price 92->82
@@ -141,6 +145,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Guns:** 10/20/30/40/50 Range -> 2/4/6/8/10 Attack Speed _[Guns having a bunch of free Range is part of why they don't care about the stat much at all. Additionally, they're a strong and flexible archetype, so they don't need as many free stats from a Set as other weapons do.]_
 
 ### Melee
+* **Chopper:** HP Scaling 20%(All) -> 20%/20%/25%/25%; Base Damage 6/12/18/30 -> 6/12/16/28 _[Similar damage at medium HP, more damage at high HP.]_
 * **Fist:** Price 10/22/45/91 -> 12/26/52/105; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Ghost Flint:** Tier-1 Damage 6->7; Tier-1 Cooldown 1.23 -> 1.24 _[Helps tier-1 not be so hopelessly behind it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
 * **Hand:** Price 10/22/45/91 -> 9/19/33/63; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it worth upgrading past Blue-tier, which is broadly a mistake in vanilla.]_

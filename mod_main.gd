@@ -13,6 +13,13 @@ func _init(modLoader = ModLoader):
 
 
 
+
+	
+	#y Increases Luck's effect on higher-tier equipment/level-ups
+	#y Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
+	# Adjusts shop weapon pick odds based on number of weapon types held
+	# Turns exact-weapon picks into weapon-set picks if it can't find an exact-pick
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
 	# Gives One-armed a 4-set Bonus for their weapon
 	# Slightly reduce the strength of armor
@@ -570,6 +577,9 @@ func _ready()->void:
 	temp = load("res://items/all/statue/statue_data.tres")
 	temp.value = 55  # 60
 
+	temp = load("res://items/all/strange_book/strange_book_data.tres")
+	temp.value = 65  # 70
+	
 	temp = load("res://items/all/tardigrade/tardigrade_data.tres")
 	temp.value = 45  # 50
 
@@ -800,6 +810,14 @@ func _ready()->void:
 	
 	
 	## WEAPONS - MELEE ##
+	# Chopper
+	temp = load("res://weapons/melee/chopper/3/chopper_3_stats.tres")
+	temp.damage = 16     # 18
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ], [ "stat_max_hp", 0.25 ] ]
+	temp = load("res://weapons/melee/chopper/4/chopper_4_stats.tres")
+	temp.damage = 28     # 30
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ], [ "stat_max_hp", 0.25 ] ]
+	
 	# Fist
 	temp = load("res://weapons/melee/fist/1/fist_data.tres")
 	temp.value = 12      # 10
@@ -1136,6 +1154,13 @@ func _ready()->void:
 	
 
 	## CHARACTERS ##
+	# Baby
+## Testing
+	temp = load("res://items/characters/baby/effects/baby_effect_0a.tres")
+	temp.value = 14  # 12 (Harvesting)
+	temp = load("res://items/characters/baby/effects/baby_effect_0b.tres")
+	temp.value = -15 # -20 (Item Price)
+
 	# Brawler
 	temp = load("res://items/characters/brawler/brawler_effect_1.tres")
 	temp.value = 40  # 50 (Unarmed AtkSpd Bonus)
@@ -1266,11 +1291,16 @@ func _ready()->void:
 	
 	# Masochist
 	temp = load("res://items/characters/masochist/masochist_effect_3.tres")
-	temp.value = 15 # 20 (HP Regen)
+	temp.value = 15   # 20 (HP Regen)
 	temp = load("res://items/characters/masochist/masochist_effect_4.tres")
-	temp.value = 5 # 8 (Armor)
+	temp.value = 5    # 8 (Armor)
 	temp = load("res://items/characters/masochist/masochist_effect_1.tres")
 	temp.text_key = "new_effect_on_hit"
+
+	# Mutant
+##Testing
+	temp = load("res://items/characters/mutant/mutant_effect_1.tres")
+	temp.value = -60  # -66 (XP Needed for Level-up)
 
 	# One-armed
 	temp = load("res://items/characters/one_arm/one_arm_effect_3.tres")

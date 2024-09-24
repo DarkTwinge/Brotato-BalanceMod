@@ -37,6 +37,9 @@ speedy prob doesn't want tooth starter
 Check if Glutton, Spicy Sauce, and Rip and Tear  can all already crit with other beta changes
 
 
+ENGINEER items could be more common if youre stat is higher than the wave
+
+
 one-armed could have vaga's no-dupe weapon effect to clean up their shops very slightly (makes it slightly easier to swap
 
 
@@ -47,11 +50,11 @@ Honey needs tweaking or possibly reworking; unsure yet
 There's now a fruit tag on garden; evaluate if that makes more sense than adding a new tag
 
 
-recycling machine tooltip "+35%" maybe should specify additive?
+recycling machine tooltip "+35%" should specify additive with base 25%?
 
 re-order barricade benefits
 
-if slow tag is to exist, wandering bot too?
+if slow tag is to exist, wandering bot too?  maybe just remove that from old tho?
 
 could add commas to damage numbers 5+ digits
 
