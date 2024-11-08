@@ -8,7 +8,7 @@ NEW_EFFECT_NO_HEAL,You can’t heal in any way during waves
 NEW_EFFECT_PACIFIST,Gain {0} material and XP for every living and despawned enemy at the end of a wave 
 BM_EFFECT_HIT_PROTECTION,Nullifies the the first 2+ damage hit taken each wave
 NEW_EFFECT_BURN_CHANCE,Attacks have a {0} chance to deal {1}x{2} ({3}) burning damage\nEffects that already burn get +1 burn damage
-NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage; non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
+NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage. Non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
 NEW_EFFECT_GARDEN,Spawns a garden that creates a fruit an average of every {0} seconds
 NEW_EFFECT_DAMAGE_AGAINST_BOSSES,{0} damage against bosses and elites (multiplicative)
 NEW_SAUSAGE_EFFECT_STARTING_ITEM,You start with {0} {1} (or [color=#00ff00]2[/color] when starting with a Gun)
@@ -33,7 +33,7 @@ NEW_EFFECT_EXPLODE,Projectiles explode on hit (Size: {1})
 NEW_EFFECT_EXPLODE_CUSTOM,Projectiles have {0} chance to explode on hit (Size: {1})
 NEW_EFFECT_EXPLODE_ON_CONSUMABLE,Consumables have a {0} chance to explode for {1} ({2}) damage when picked up (Size: {4})
 NEW_EFFECT_EXPLODE_ON_HIT,You explode for {1} ({2}) damage when you take damage (Size: {4})
-NEW_EFFECT_EXPLODE_ON_DEATH,Enemies have a {0} chance to explode for {1} ({2}) damage when they die (Size: {4})
+NEW_EFFECT_EXPLODE_ON_DEATH,Enemies have a {0} chance to explode for {1} ({2}) damage when they die (Size: {5})
 BM_EFFECT_LANDMINE_SIZE,(Explosion Size: [color=#00ff00]175[/color])
 BM_EFFECT_EXPLOSIVE_TURRET_SIZE,(Explosion Size: [color=#00ff00]100[/color])
 NEW_EFFECT_ON_HIT,{0} {1} each time you take damage until the end of the wave

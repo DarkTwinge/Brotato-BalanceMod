@@ -17,6 +17,7 @@ thinking Baby might want a small nerf-buff: +1 Harvesting, +5% Shop Price?
 prob add some knockback to Couch when neg speed too?
 
 Tooltip Cooldowns don't accurately show the breakpoint stuff, so at high atk spd can be inaccurate
+	have a parenthetical show amount to next breakpoint if possible?
 
 weird ghost could  put hp at  3-5 instead for a few more spots it is usable? (e.g. if it works with Bloody Hand sorta thing that's maybe cute?)
 
@@ -26,12 +27,20 @@ Sausage should prob proc from Sauce/Rip&Tear since it procs from other explosion
 
 could look at tweaking elite hp so wave 11 has less comparatively and 18 slightly more?
 
+cyborg switch sound -> more unique and louder
 
+remove sharp tooth from wildling
+speedy prob doesn't want tooth starter
+
+
+could be cute to have tooltips show hgiehst stat reached for previous round for e.g. Cryptid and also lowest for e.g. Triangle of Power
+
+Currently combining weapons doesn't update shop (e.g. Multitasker) - unsure if I'm breaking this or natural
 
 reduce cost of tier-4 weapons as a benefit to Luck?
 change Luck pop-up description probably, de-emphasize rarity?
 
-speedy prob doesn't want tooth starter
+
 
 
 Check if Glutton, Spicy Sauce, and Rip and Tear  can all already crit with other beta changes
@@ -105,3 +114,40 @@ Should  weird food be capped/nerfed more?
 
 If not fixed:
 Minor: Display for Fireball's effects are different for different tiers. I'd suggest using the tier-2 ordering (explosion, then burn) for all rather than the tier-3/4 ordering (burn, then explosion).
+
+~~~~~~
+Beta/DLC
+~~~~~~
+
+Celery Tea buff
+[Immortel suggested Wave 20 regular enemy ramp up late wave]
+Rework Druid
+Black Flag Curse -> 5  (maybe with increasing the price back up some?)
+Bone Dice prolly still needs more than the price drop, but we'll see
+Sickle non-harvesting-scaling buff
+
+
+Chunky - Sickle (but only if alongside other buffs to the weapon)
+Cryptid - Flute
+Entrepreneur - Hiking Pole, Lute
+Explorer - Lute, Javelin
+Farmer - Lute
+Fisher - Javelin
+Generalist - Javelin
+Glutton - Lute
+Hunter - Javelin
+Jack - Brick, Spoon
+King - Javelin
+Knight - Mace, Anchor
+Loud - Javelin
+Multi-tasker - Lute
+Renegade - Javelin; Flute [Is it TOO easy?]
+Romantic - Jousting Lance, Remove Fist
+Saver - Sickle, Lute
+Sick - Sickle, Javelin
+Soldier - Javelin
+Speedy - Javelin
+Streamer - Javelin
+Vagabond - Lute
+Vampire - Javelin, Sickle
+Wildling - Javelin

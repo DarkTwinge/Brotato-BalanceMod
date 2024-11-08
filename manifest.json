@@ -1,7 +1,7 @@
 {
 	"name": "BalanceMod",
 	"namespace": "DarkTwinge",
-	"version_number": "2.0.8",
+	"version_number": "2.0.12",
 	"description": "A full overhaul offering a more balanced & varied experience while still feeling like the vanilla game.",
 	"website_url": "https://www.twitch.tv/darktwinge",
 	"dependencies": [
@@ -9,8 +9,6 @@
 	"extra": {
 		"godot": {
 			"incompatibilities": [
-				"LexLooter-SelfDamageHitProtection",
-				"Tianjing-ViolenceAesthetics"
 			],
 			"authors": ["DarkTwinge"],
 			"compatible_mod_loader_version": ["6.0.0"],

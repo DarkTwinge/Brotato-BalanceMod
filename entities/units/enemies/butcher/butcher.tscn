@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=1]
-[ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=2]
-[ext_resource path="res://entities/units/enemies/021/21_stats.tres" type="Resource" id=3]
-[ext_resource path="res://entities/units/enemies/021/21.png" type="Texture" id=4]
-[ext_resource path="res://entities/units/enemies/boss/boss_state.tscn" type="PackedScene" id=5]
+[ext_resource path="res://entities/units/enemies/butcher/butcher.png" type="Texture" id=1]
+[ext_resource path="res://projectiles/slash/slash_projectile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://entities/units/movement_behaviors/target_rand_pos_around_player_movement_behavior.gd" type="Script" id=3]
+[ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=4]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=5]
 [ext_resource path="res://entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd" type="Script" id=6]
 [ext_resource path="res://entities/units/enemies/boss/boss_state.gd" type="Script" id=7]
-[ext_resource path="res://projectiles/slash/slash_projectile.tscn" type="PackedScene" id=8]
-[ext_resource path="res://entities/units/movement_behaviors/target_rand_pos_around_player_movement_behavior.gd" type="Script" id=9]
+[ext_resource path="res://entities/units/enemies/boss/boss_state.tscn" type="PackedScene" id=8]
+[ext_resource path="res://entities/units/enemies/butcher/butcher_stats.tres" type="Resource" id=9]
 
 [sub_resource type="CircleShape2D" id=4]
 radius = 24.0
@@ -19,13 +19,15 @@ radius = 40.0
 [sub_resource type="CircleShape2D" id=2]
 radius = 40.0
 
-[node name="Boss" instance=ExtResource( 1 )]
-stats = ExtResource( 3 )
+[node name="Boss" instance=ExtResource( 4 )]
 can_be_boosted = false
+stats = ExtResource( 9 )
+enemy_id = "butcher"
+is_elite = true
 
 [node name="Sprite" parent="Animation" index="0"]
 position = Vector2( 0, -64 )
-texture = ExtResource( 4 )
+texture = ExtResource( 1 )
 
 [node name="Collision" parent="." index="1"]
 position = Vector2( 0, 0 )
@@ -40,15 +42,15 @@ position = Vector2( 0, -16 )
 shape = SubResource( 2 )
 
 [node name="AnimationPlayer" parent="." index="4"]
-anims/shoot = ExtResource( 2 )
+anims/shoot = ExtResource( 5 )
 
 [node name="AttackBehavior" parent="." index="7"]
 script = ExtResource( 6 )
-projectile_scene = ExtResource( 8 )
+projectile_scene = ExtResource( 2 )
 projectile_speed = 0
 projectile_speed_randomization = 0
 speed_change_after_each_projectile = 0
-cooldown = 75.0
+cooldown = 60.0
 initial_cooldown = 45
 max_cd_randomization = 0
 long_cooldown_every_x_shoots = 0
@@ -67,27 +69,30 @@ projectile_spread = 0.0
 spawn_projectiles_on_target = true
 projectile_spawn_spread = 350
 projectile_spawn_only_on_borders = true
+specific_degrees_spawns = [  ]
 constant_spread = true
+constant_spread_rand_base_pos = 0.0
 atleast_one_projectile_on_target = false
+shoot_towards_unit = false
 shoot_in_unit_direction = false
 shoot_away_from_unit = false
 shoot_from_proj_pos_towards_player = false
 rotate_projectile = true
 delete_projectile_on_death = false
 
-[node name="State1" parent="States" index="0" instance=ExtResource( 5 )]
+[node name="State1" parent="States" index="0" instance=ExtResource( 8 )]
 hp_start = 0.7
 timer_start = 20.0
 
 [node name="AttackBehavior" parent="States/State1" index="1"]
-projectile_scene = ExtResource( 8 )
+projectile_scene = ExtResource( 2 )
 projectile_speed = 0
 max_cd_randomization = 0
 damage_increase_each_wave = 1.15
 ;; 1200
-max_range = 3500
+max_range = 2300
 random_direction = true
-number_projectiles = 8
+number_projectiles = 9
 spawn_projectiles_on_target = true
 projectile_spawn_spread = 1000
 atleast_one_projectile_on_target = true
@@ -98,18 +103,17 @@ hp_start = 0.4
 timer_start = 40.0
 
 [node name="MovementBehavior" type="Node2D" parent="States/State2" index="0"]
-script = ExtResource( 9 )
+script = ExtResource( 3 )
 range_randomization = 0
 
 [node name="AttackBehavior" type="Node2D" parent="States/State2" index="1"]
 script = ExtResource( 6 )
-projectile_scene = ExtResource( 8 )
+projectile_scene = ExtResource( 2 )
 projectile_speed = 0
-cooldown = 45.0
-;; 0.75
-damage_increase_each_wave = 0.85
+cooldown = 35.0
+damage_increase_each_wave = 0.75
 ;; 2000
-max_range = 3500
+max_range = 2800
 attack_anim_speed = 3.0
 random_direction = true
 number_projectiles = 3

@@ -9,16 +9,14 @@ func init_elites_spawn(base_wave:int = 10, horde_chance:float = 0.4)->void :
 
 	for player_index in get_player_count():
 		var current_character = get_player_character(player_index)
-		if current_character != null and current_character.my_id == "character_jack":
+		if current_character != null and (current_character.my_id == "character_jack" or current_character.my_id == "character_gangster"):
 			horde_chance = 0.0
 		### Loud is guaranteed Horde Waves on 11/12 and 14/15
 		elif current_character != null and current_character.my_id == "character_loud":
 			horde_chance = 1.0
 		##
 
-	if DebugService.spawn_specific_elite != "":
-		nb_elites = 1
-	elif diff < 2:
+	if diff < 2:
 		return 
 	elif diff < 4:
 		nb_elites = 1
@@ -34,6 +32,9 @@ func init_elites_spawn(base_wave:int = 10, horde_chance:float = 0.4)->void :
 		if DebugService.spawn_specific_elite != "":
 			type = EliteType.ELITE
 			wave = DebugService.starting_wave
+		elif DebugService.spawn_horde:
+			type = EliteType.HORDE
+			wave = DebugService.starting_wave
 
 		if i == 1:
 			wave = Utils.randi_range(base_wave + 4, base_wave + 5)
@@ -48,12 +49,7 @@ func init_elites_spawn(base_wave:int = 10, horde_chance:float = 0.4)->void :
 				possible_elites.erase(elite)
 				break
 
-		if DebugService.spawn_specific_elite != "":
-			elite_id = DebugService.spawn_specific_elite
-
 		elites_spawn.push_back([wave, type, elite_id])
-
-
 
 
 
@@ -82,7 +78,7 @@ func update_sets(player_index:int)->void :
 				var current_character = get_player_character(player_index)
 				if current_character.my_id == "character_one_arm" and not set.my_id == "set_legendary":
 					active_sets[set.my_id] = 4	
-				##
+				##				
 
 	for key in active_sets:
 		if active_sets[key] >= 2:

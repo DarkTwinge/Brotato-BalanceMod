@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=1]
-[ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=2]
-[ext_resource path="res://entities/units/enemies/028/28_stats.tres" type="Resource" id=3]
-[ext_resource path="res://entities/units/enemies/028/28.png" type="Texture" id=4]
-[ext_resource path="res://entities/units/enemies/boss/boss_state.tscn" type="PackedScene" id=5]
-[ext_resource path="res://entities/units/enemies/028/28.gd" type="Script" id=6]
-[ext_resource path="res://projectiles/pillar_enemy/pillar_projectile.tscn" type="PackedScene" id=7]
-[ext_resource path="res://entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd" type="Script" id=8]
-[ext_resource path="res://entities/units/movement_behaviors/target_rand_pos_movement_behavior.gd" type="Script" id=9]
+[ext_resource path="res://projectiles/pillar_enemy/pillar_projectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://entities/units/enemies/colossus/colossus.png" type="Texture" id=2]
+[ext_resource path="res://entities/units/enemies/colossus/colossus_stats.tres" type="Resource" id=3]
+[ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=4]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=5]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd" type="Script" id=6]
+[ext_resource path="res://entities/units/enemies/boss/boss_state.tscn" type="PackedScene" id=7]
+[ext_resource path="res://entities/units/movement_behaviors/target_rand_pos_movement_behavior.gd" type="Script" id=8]
+[ext_resource path="res://entities/units/enemies/colossus/colossus.gd" type="Script" id=9]
 
 [sub_resource type="CircleShape2D" id=4]
 radius = 40.0
@@ -19,14 +19,15 @@ radius = 48.0
 [sub_resource type="CircleShape2D" id=2]
 radius = 48.0
 
-[node name="Boss" instance=ExtResource( 1 )]
-script = ExtResource( 6 )
-stats = ExtResource( 3 )
+[node name="Boss" instance=ExtResource( 4 )]
+script = ExtResource( 9 )
 can_be_boosted = false
+stats = ExtResource( 3 )
+is_elite = true
 
 [node name="Sprite" parent="Animation" index="0"]
 position = Vector2( 0, -52 )
-texture = ExtResource( 4 )
+texture = ExtResource( 2 )
 
 [node name="Collision" parent="." index="1"]
 position = Vector2( 0, -16 )
@@ -47,11 +48,11 @@ position = Vector2( 0, -16 )
 shape = SubResource( 2 )
 
 [node name="AnimationPlayer" parent="." index="4"]
-anims/shoot = ExtResource( 2 )
+anims/shoot = ExtResource( 5 )
 
 [node name="AttackBehavior" parent="." index="7"]
-script = ExtResource( 8 )
-projectile_scene = ExtResource( 7 )
+script = ExtResource( 6 )
+projectile_scene = ExtResource( 1 )
 projectile_speed = 150
 projectile_speed_randomization = 0
 speed_change_after_each_projectile = 0
@@ -74,26 +75,30 @@ projectile_spread = 0.0
 spawn_projectiles_on_target = false
 projectile_spawn_spread = 1000
 projectile_spawn_only_on_borders = false
+specific_degrees_spawns = [  ]
 constant_spread = false
+constant_spread_rand_base_pos = 0.0
 atleast_one_projectile_on_target = true
+shoot_towards_unit = false
 shoot_in_unit_direction = true
 shoot_away_from_unit = false
 shoot_from_proj_pos_towards_player = false
+random_rotation = 0.0
 rotate_projectile = false
 delete_projectile_on_death = true
 
-[node name="State1" parent="States" index="0" instance=ExtResource( 5 )]
+[node name="State1" parent="States" index="0" instance=ExtResource( 7 )]
 hp_start = 0.6
 timer_start = 25.0
 
 [node name="MovementBehavior" parent="States/State1" index="0"]
-script = ExtResource( 9 )
+script = ExtResource( 8 )
 
 [node name="AttackBehavior" parent="States/State1" index="1"]
-projectile_scene = ExtResource( 7 )
+projectile_scene = ExtResource( 1 )
 projectile_speed = 300
 ;; 30.0
-cooldown = 39.0
+cooldown = 37.0
 initial_cooldown = 30
 max_cd_randomization = 0
 max_range = 3000
