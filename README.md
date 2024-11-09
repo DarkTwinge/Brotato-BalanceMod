@@ -158,7 +158,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Ghost Flint:** Tier-1 Damage 6->7; Tier-1 Cooldown 1.23 -> 1.24 _[Helps tier-1 not be so hopelessly behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
 * **Hand:** Price 10/22/45/91 -> 9/19/33/63; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it worth upgrading past Blue-tier, which is broadly a mistake in vanilla.]_
 * **Hatchet:** Range 125->135
-* **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; (Fixed tooltip bounce count) _[Most of my nerfs for this were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
+* **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; Fixed tooltip bounce count _[Most of my nerfs for this were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledgehammer:** Explosion Size 100%/125% -> 110%/130%; Explosion Chance 25%/50% -> 33%/50%
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.53/1.41/1.32/1.25 (Accounting for the new lower starting Range)
@@ -187,7 +187,7 @@ _Other general changes have not been ported yet, as they require more complex co
 ~~* **Glutton:** Now also favored to find Gardens in the shop
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
-* **Loud:** -3 Harvesting per Wave -> -4; Now guaranteed to have Horde Waves on 11/12 and 14/15 (Still gets an Elite on 17/18)
+* **Loud:** -3 Harvesting per Wave -> -4
 ~~* **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat and allows their passive and Baby Elephant to hit different targets. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
 * **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt built work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5 _[Modest nerfs to a very strong character.]_

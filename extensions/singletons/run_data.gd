@@ -1,58 +1,5 @@
 extends "res://singletons/run_data.gd"
 
-# Replaced to guarantee Horde Waves for Loud
-func init_elites_spawn(base_wave:int = 10, horde_chance:float = 0.4)->void :
-	elites_spawn = []
-	var diff = current_difficulty
-	var nb_elites = 0
-	var possible_elites = ItemService.get_elites_from_zone(current_zone)
-
-	for player_index in get_player_count():
-		var current_character = get_player_character(player_index)
-		if current_character != null and (current_character.my_id == "character_jack" or current_character.my_id == "character_gangster"):
-			horde_chance = 0.0
-		### Loud is guaranteed Horde Waves on 11/12 and 14/15
-		elif current_character != null and current_character.my_id == "character_loud":
-			horde_chance = 1.0
-		##
-
-	if diff < 2:
-		return 
-	elif diff < 4:
-		nb_elites = 1
-	else :
-		nb_elites = 3
-
-	var wave = Utils.randi_range(base_wave + 1, base_wave + 2)
-
-	for i in nb_elites:
-
-		var type = EliteType.HORDE if Utils.get_chance_success(horde_chance) else EliteType.ELITE
-
-		if DebugService.spawn_specific_elite != "":
-			type = EliteType.ELITE
-			wave = DebugService.starting_wave
-		elif DebugService.spawn_horde:
-			type = EliteType.HORDE
-			wave = DebugService.starting_wave
-
-		if i == 1:
-			wave = Utils.randi_range(base_wave + 4, base_wave + 5)
-		elif i == 2:
-			wave = Utils.randi_range(base_wave + 7, base_wave + 8)
-			type = EliteType.ELITE
-
-		var elite_id = Utils.get_rand_element(possible_elites).my_id if type == EliteType.ELITE else ""
-
-		for elite in possible_elites:
-			if elite.my_id == elite_id:
-				possible_elites.erase(elite)
-				break
-
-		elites_spawn.push_back([wave, type, elite_id])
-
-
-
 # Added set bonus for One-armed
 func update_sets(player_index:int)->void :
 	var player_data = players_data[player_index]
@@ -90,6 +37,35 @@ func update_sets(player_index:int)->void :
 				active_set_effects.push_back([key, effect])
 
 
+# Changes effect of King's abilities to be unique weapons
+func update_tier_iv_weapon_bonuses(player_index:int)->void :
+	var effects: = get_player_effects(player_index)
+	var tier_iv_weapon_effects = players_data[player_index].tier_iv_weapon_effects
+
+	for effect in tier_iv_weapon_effects:
+		effects[effect[0]] -= effect[1]
+
+	tier_iv_weapon_effects.clear()
+
+	var weapons: = get_player_weapons(player_index)
+	###
+	var unique_tier4_weapon_ids = []
+	for weapon in weapons:
+		if weapon.tier >= Tier.LEGENDARY:
+			# Keep track of duplicate weapons
+			if not unique_tier4_weapon_ids.has(weapon.weapon_id):
+				unique_tier4_weapon_ids.push_back(weapon.weapon_id)
+				for effect in effects["tier_iv_weapon_effects"]:
+					effects[effect[0]] += effect[1]
+					tier_iv_weapon_effects.push_back([effect[0], effect[1]])
+	##
+	#for weapon in weapons:
+	#	if weapon.tier >= Tier.LEGENDARY:
+	#		for effect in effects["tier_iv_weapon_effects"]:
+	#			effects[effect[0]] += effect[1]
+	#			tier_iv_weapon_effects.push_back([effect[0], effect[1]])
+
+				
 
 # Slightly reduce the effect of armor
 func get_armor_coef(armor:int)->float:

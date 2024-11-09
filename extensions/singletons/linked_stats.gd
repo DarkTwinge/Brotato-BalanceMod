@@ -2,7 +2,7 @@ extends "res://singletons/linked_stats.gd"
 
 #y New Padding effect
 #y Esty's Couch Negative Speed effect
-# King's changed ability
+# OBSOLETE? King's changed ability
 func reset_player(player_index:int)->void :
 	.reset_player(player_index)
 

@@ -70,7 +70,6 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 			# ...When there's none, look for a same-set weapon instead
 			if nb_potential_same_weapons == 0:
 				rand_wanted = 0.3
-				print("no weapon matches")
 		##
 
 		for item in pool:
@@ -212,5 +211,8 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 
 	if DebugService.force_item_in_shop != "" and randf() < 0.5:
 		elt = get_element(items, DebugService.force_item_in_shop)
+	
+	if elt.my_id == "item_axolotl" and elt.effects.size() > 0 and "stats_swapped" in elt.effects[0]:
+		elt.effects[0].stats_swapped = []
 		
 	return apply_item_effect_modifications(elt, player_index)

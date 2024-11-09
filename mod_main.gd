@@ -12,8 +12,6 @@ func _init(modLoader = ModLoader):
 ###	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
 
 
-
-
 	
 	#y Increases Luck's effect on higher-tier equipment/level-ups
 	#y Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
@@ -25,26 +23,20 @@ func _init(modLoader = ModLoader):
 	# Slightly reduce the strength of armor
 	#x? Makes Glutton, Spicy Sauce, and Rip and Tear all use the crit stat
 	# Gives Gun Mage an extra Sausage
-	# Guarantees Horde Waves for Loud
 	#y (Adds new effects to RunData)
 	#y (Adds new init effects)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/run_data.gd")
-
-	# Fix Lightning Shiv bounce count
-	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/projectiles_on_hit_effect.gd")
 
 	# Now applies Crazy's +Range to Crossbow/Sniper
 	# Now applies Brawler's +AttackSpeed to Claw 
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/weapon_service.gd")
 
-	# Refreshes shop items when combining weapons (for King)
-	# BROKEN - Can't work until main-game changes AFAIK
-	##ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/shop.gd")
-	
-	# King's new ability tooltip
+	# Fix Lightning Shiv bounce count
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/projectiles_on_hit_effect.gd")
+
 	#y New Padding Effect
-	#y New Couche Negative Speed Effect
-	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/linked_stats.gd")
+	#y New Couch Negative Speed Effect
+##	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/linked_stats.gd")
 	
 	#x This part removed as it seemed naturally fixed now? [Make tooltip for Speed Generator work properly]
 	#y Add new Padding effect
@@ -58,7 +50,6 @@ func _init(modLoader = ModLoader):
 
 	# Load up new and fixed descriptions
 	ModLoaderMod.add_translation("res://mods-unpacked/DarkTwinge-BalanceMod/translations/BalanceMod.en.translation")
-	
 	
 
 
@@ -88,7 +79,7 @@ func _ready()->void:
 	###Text.keys_needing_percent.bm_enemy_charge_speed = [0]
 	Text.keys_needing_percent.bm_non_elemental_reduce_stat_gains = [1]
 	###Text.keys_needing_operator.bm_effect_for_negative_speed = [0]
-	Text.keys_needing_operator.bm_effect_unique_tier_iv_weapon_bonus = [0, 4]
+	Text.keys_needing_operator.bm_effect_unique_tier_iv_weapon_bonus = [0, 2]
 	# This group for making descriptions shorter
 	Text.keys_needing_percent.new_effect_increase_stat_gains = [1]
 	Text.keys_needing_percent.new_effect_reduce_stat_gains = [1]
@@ -1178,15 +1169,12 @@ func _ready()->void:
 	temp.text_key = "new_effect_no_heal"
 	
 	# King
-###	temp = load("res://items/characters/king/king_data.tres")
-###	temp_2 = load("res://items/characters/king/king_effect_1.tres")
-###	temp.effects.erase(temp_2)
-###	temp_2 = load("res://items/characters/king/king_effect_1b.tres")
-###	temp.effects.erase(temp_2)
-###	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/king_tier4_damage.tres")
-###	temp.effects.insert(1, temp_2)
-###	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/king_tier4_atkspd.tres")
-###	temp.effects.insert(2, temp_2)
+	temp = load("res://items/characters/king/king_effect_1.tres")
+	temp.value = 20 	# 25 (Damage%)
+	temp.text_key = "BM_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS"
+	temp = load("res://items/characters/king/king_effect_1b.tres")
+	temp.value = 20 	# 25 (AtkSpd)
+	temp.text_key = "BM_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS"	
 	
 	# Knight
 	temp = load("res://items/characters/knight/knight_effect_1.tres")

@@ -12,7 +12,7 @@ NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapo
 NEW_EFFECT_GARDEN,Spawns a garden that creates a fruit an average of every {0} seconds
 NEW_EFFECT_DAMAGE_AGAINST_BOSSES,{0} damage against bosses and elites (multiplicative)
 NEW_SAUSAGE_EFFECT_STARTING_ITEM,You start with {0} {1} (or [color=#00ff00]2[/color] when starting with a Gun)
-BM_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS,{0} {1} for every [color=#ffae40]different[/color] Tier IV weapon you have [{4}]
+BM_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS,{0} {1} for every [color=#ffae40]different[/color] Tier IV weapon you have [{2}]
 NEW_EFFECT_REDUCE_STAT_GAINS,{0} reduced by {1}
 NEW_EFFECT_INCREASE_STAT_GAINS,{0} increased by {1}
 NEW_EFFECT_GAIN_STAT_FOR_EVERY_TREE,{0} {1} per currently living tree [{4}]
