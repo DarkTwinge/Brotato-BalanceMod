@@ -40,9 +40,7 @@ func _init(modLoader = ModLoader):
 	
 	#x This part removed as it seemed naturally fixed now? [Make tooltip for Speed Generator work properly]
 	#y Add new Padding effect
-	# Changes King's ability to work on unique tier-4 weapons
-###TODO-now done differently
-####  	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/gain_stat_for_every_stat_effect.gd")
+##	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/gain_stat_for_every_stat_effect.gd")
 
 	# Adds a new enemy-group to Horde waves to spawn Magicians for Wave 14/15
 ### TODO Check if this affects Abyss
@@ -51,6 +49,8 @@ func _init(modLoader = ModLoader):
 	# Load up new and fixed descriptions
 	ModLoaderMod.add_translation("res://mods-unpacked/DarkTwinge-BalanceMod/translations/BalanceMod.en.translation")
 	
+	# All DLC Changes are here
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/progress_data.gd")
 
 
 func _ready()->void:
@@ -212,7 +212,7 @@ func _ready()->void:
 	temp.value = 2  # 1 (Knockback)	
 
 	temp = load("res://items/all/baby_gecko/baby_gecko_effect_0.tres")
-	temp.value = 13   # 10 (Range)
+	temp.value = 12   # 10 (Range)
 
 	temp = load("res://items/all/bag/bag_data.tres")
 	temp.value = 16   # 15
@@ -309,7 +309,7 @@ func _ready()->void:
 	temp.max_nb = 3  # -1	
 
 	temp = load("res://items/all/terrified_onion/terrified_onion_data.tres")
-	temp.value = 14  # 15
+	temp.value = 13  # 15
 	
 	temp = load("res://items/all/turret/turret_data.tres")
 	temp.value = 16  # 15	
@@ -463,7 +463,7 @@ func _ready()->void:
 	temp.value = 43  # 50
 	
 	temp = load("res://items/all/bowler_hat/bowler_hat_data.tres")
-	temp.value = 71  # 75
+	temp.value = 70  # 75
 	temp = load("res://items/all/bowler_hat/bowler_hat_effect_1.tres")
 	temp.value = 17  # 15 (Luck)
 	
@@ -476,7 +476,7 @@ func _ready()->void:
 	temp.value = -4  # -5 (Damage -> Attack Speed)
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
-	temp.value = 56  # 70
+	temp.value = 55  # 70
 	temp = load("res://items/all/chameleon/chameleon_effect_2.tres")
 	temp.value = -3  # -4 (%Damage)
 
@@ -570,12 +570,15 @@ func _ready()->void:
 	temp.value = 45  # 60
 	
 	temp = load("res://items/all/wheat/wheat_data.tres")
-	temp.value = 83  # 85
+	temp.value = 82  # 85
 	temp = load("res://items/all/wheat/wheat_effect_3.tres")
 	temp.value = 13  # 10 (Harvesting)
 	
 	temp = load("res://items/all/wings/wings_effect_2.tres")
 	temp.value = 35  # 30 (Range)
+	
+	temp = load("res://items/all/wisdom/wisdom_data.tres")
+	temp.value = 82  # 85
 	
 
 	## TIER-4 ITEMS ##
@@ -632,6 +635,8 @@ func _ready()->void:
 	temp.value = -1  # -2 (Armor)
 
 	# Mammoth
+	temp = load("res://items/all/mammoth/mammoth_data.tres")
+	temp.value = 115 # 110
 	temp = load("res://items/all/mammoth/mammoth_effect_1.tres")
 	temp.value = 17  # 20 (Melee Damage)
 	temp = load("res://items/all/mammoth/mammoth_effect_2.tres")
@@ -763,6 +768,14 @@ func _ready()->void:
 	
 	## WEAPONS ##
 	## WEAPONS - MELEE ##
+	# Chopper
+	temp = load("res://weapons/melee/chopper/1/chopper_stats.tres")
+	temp.damage = 7			 # 6
+	temp = load("res://weapons/melee/chopper/3/chopper_3_stats.tres")
+	temp.damage = 17     # 18
+	temp = load("res://weapons/melee/chopper/4/chopper_4_stats.tres")
+	temp.damage = 27     # 30
+	
 	# Fist
 	temp = load("res://weapons/melee/fist/1/fist_data.tres")
 	temp.value = 12      # 10
@@ -882,9 +895,11 @@ func _ready()->void:
 	
 	## WEAPONS - RANGED ##
 	# Chain-gun
+	temp = load("res://weapons/ranged/chain_gun/4/chain_gun_4_data.tres")
+	temp.value = 280  		 # 300
 	temp = load("res://weapons/ranged/chain_gun/4/chain_gun_4_stats.tres")
-	temp.accuracy = 0.55	 # 0.8
-	temp.additional_cooldown_multiplier = 110.0 # 60.0
+	temp.accuracy = 0.65	 # 0.8
+	temp.additional_cooldown_multiplier = 104.0 # 60.0
 
 	# Double-barrel Shotgun
 	temp = load("res://weapons/ranged/double_barrel_shotgun/2/double_barrel_shotgun_2_stats.tres")
@@ -998,9 +1013,16 @@ func _ready()->void:
 	temp.max_range = 550 # 800
 	temp.scaling_stats = [ [ "stat_ranged_damage", 2.0 ], [ "stat_range", 0.2 ] ]  # 1.0 / 0.2
 	temp = load("res://weapons/ranged/sniper_gun/4/sniper_gun_4_stats.tres")
-	temp.max_range = 550 # 1000
+	temp.max_range = 600 # 1000
 	temp.scaling_stats = [ [ "stat_ranged_damage", 2.5 ], [ "stat_range", 0.3 ] ]  # 1.0 / 0.3
 
+	# Wand
+	temp = load("res://weapons/ranged/wand/1/wand_stats.tres")
+	temp.cooldown = 38 # 40
+	temp = load("res://weapons/ranged/wand/2/wand_2_stats.tres")
+	temp.cooldown = 34 # 35	
+	temp = load("res://weapons/ranged/wand/3/wand_3_stats.tres")
+	temp.cooldown = 29 # 30
 	
 
 	## SET BONUSES ##
@@ -1432,36 +1454,3 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/torch/1/torch_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 
-
-
-	### DLC CHANGES ###
-	
-	##Move inside func load_dlc_pcks()
-	#if RunData.enabled_dlcs.has("abyssal_terrors"):
-	
-	# Items: Tier-1
-	temp = load("res://dlcs/dlc_1/items/corrupted_shard/corrupted_shard_data.tres")
-	temp.value = 13   # 12
-	temp = load("res://dlcs/dlc_1/items/corrupted_shard/effects/corrupted_shard_effect_1.tres")
-	temp.value = 2		# 1 (Curse)
-	
-	# Items: Tier-2
-	temp = load("res://dlcs/dlc_1/items/bone_dice/bone_dice_data.tres")
-	temp.value = 25   # 30
-	temp = load("res://dlcs/dlc_1/items/bone_dice/effects/bone_dice_effect_0.tres")
-	temp.value2 = 60	# 50 (Chance to proc +1% Damage)
-
-	temp = load("res://dlcs/dlc_1/items/cauldron/effects/cauldron_effect_1.tres")
-	temp.value = 25   # 20 (Temp Damage%)
-	temp.value2 = 3		# 2 (Seconds of Duration)
-	
-	temp = load("res://dlcs/dlc_1/items/eyepatch/effects/eyepatch_effect_1.tres")
-	temp.value = 5		# 3 (Crit Chance)
-	
-	# Items: Tier-3
-	temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
-	temp.value = 18   # 23	
-	
-	# Items: Tier-4
-	temp = load("res://dlcs/dlc_1/items/krakens_eye/krakens_eye_data.tres")
-	temp.value = 90		# 110

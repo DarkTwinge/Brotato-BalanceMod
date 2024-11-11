@@ -50,20 +50,16 @@ func update_tier_iv_weapon_bonuses(player_index:int)->void :
 	var weapons: = get_player_weapons(player_index)
 	###
 	var unique_tier4_weapon_ids = []
+	##
 	for weapon in weapons:
 		if weapon.tier >= Tier.LEGENDARY:
-			# Keep track of duplicate weapons
+			### Keep track of duplicate weapons
 			if not unique_tier4_weapon_ids.has(weapon.weapon_id):
 				unique_tier4_weapon_ids.push_back(weapon.weapon_id)
+			##
 				for effect in effects["tier_iv_weapon_effects"]:
 					effects[effect[0]] += effect[1]
 					tier_iv_weapon_effects.push_back([effect[0], effect[1]])
-	##
-	#for weapon in weapons:
-	#	if weapon.tier >= Tier.LEGENDARY:
-	#		for effect in effects["tier_iv_weapon_effects"]:
-	#			effects[effect[0]] += effect[1]
-	#			tier_iv_weapon_effects.push_back([effect[0], effect[1]])
 
 				
 
