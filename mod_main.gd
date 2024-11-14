@@ -94,10 +94,10 @@ func _ready()->void:
 	# Butcher range increase
 	# Insect buff
 	var elite_scenes = {
-		"elite_colossus":"res://mods-unpacked/DarkTwinge-BalanceMod/entities/units/enemies/colossus/colossus.tscn",
-##		"elite_rhino":"res://mods-unpacked/DarkTwinge-BalanceMod/entities/units/enemies/rhino/rhino.tscn",
-		"elite_butcher":"res://mods-unpacked/DarkTwinge-BalanceMod/entities/units/enemies/butcher/butcher.tscn",
-##		"elite_insect":"res://mods-unpacked/DarkTwinge-BalanceMod/entities/units/enemies/mantis/mantis.tscn"
+		"elite_colossus":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/colossus.tscn",
+##		"elite_rhino":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/rhino.tscn",
+		"elite_butcher":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/butcher.tscn",
+##		"elite_insect":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/mantis.tscn"
 	}
 	for elite in ItemService.elites:
 		if elite.my_id in elite_scenes.keys():
@@ -118,19 +118,19 @@ func _ready()->void:
 		
 	# Tall Bruiser
 	temp = load("res://entities/units/enemies/bruiser/bruiser_stats.tres")
-	temp.knockback_resistance = 0.85		 # 0.9
+	temp.knockback_resistance = 0.87		 # 0.9
 
 	# Tall Armored Bruiser
 	temp = load("res://entities/units/enemies/horned_bruiser/horned_bruiser_stats.tres")
-	temp.knockback_resistance = 0.85		 # 0.9
+	temp.knockback_resistance = 0.87		 # 0.9
 
 	# Hatched Slasher
 	temp = load("res://entities/units/enemies/slasher/slasher_stats.tres")
-	temp.knockback_resistance = 0.85		 # 0.9
+	temp.knockback_resistance = 0.87		 # 0.9
 	
 	# Lamprey Fish
 	temp = load("res://entities/units/enemies/lamprey/lamprey_stats.tres")
-	temp.knockback_resistance = 0.92		 # 0.95
+	temp.knockback_resistance = 0.93		 # 0.95
 	
 	
 	## WAVE SPAWNS ##
@@ -1239,7 +1239,6 @@ func _ready()->void:
 	temp.text_key = "new_effect_on_hit"
 
 	# Mutant
-##Testing
 	temp = load("res://items/characters/mutant/mutant_effect_1.tres")
 	temp.value = -60  # -66 (XP Needed for Level-up)
 
@@ -1403,7 +1402,7 @@ func _ready()->void:
 	temp.starting_weapons.erase(temp_2)
 	
 	# Jack
-#	temp = load("res://items/characters/jack/jack_data.tres")
+	temp = load("res://items/characters/jack/jack_data.tres")
 	# Remove
 	temp_2 = load("res://weapons/ranged/shuriken/1/shuriken_data.tres")
 	temp.starting_weapons.erase(temp_2)	
@@ -1443,6 +1442,7 @@ func _ready()->void:
 	
 	# Ranger
 	# Remove
+	temp = load("res://items/characters/ranger/ranger_data.tres")
 	temp_2 = load("res://weapons/ranged/pistol/1/pistol_data.tres")
 	temp.starting_weapons.erase(temp_2)	
 	

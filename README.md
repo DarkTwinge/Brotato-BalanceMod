@@ -195,7 +195,7 @@ _Other general changes have not been ported yet, as they require more complex co
 ~~* **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
 * **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt built work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5 _[Moderate nerfs to a very strong character.]_
-[Mutant testing 66%->60%]
+* **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
 * **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary). _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
@@ -204,6 +204,37 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Streamer:** Now also favored to find Stand-still Items.
 * **Wildling:** No longer starts with a Stick.
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice actually matter more, preventing the default fall-back option.]_
+
+## Enemies
+### Wave Spawns: Crazh Zone
+* **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
+* **Wave 14:** Helmet Spawns 108 -> 85 (Helmets have more HP - this is slightly more total HP); Basics spawns earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
+* **Wave 15:** Helmet Spawns 114 -> 95 (Helmets have more HP; this is moderately more total HP)
+* **Wave 16:** Helmets have more HP but just as many spawn; 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) [Aiming to make them less trivially smashed by melee quickly]; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
+* **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
+* **Wave 14 & 15 Hordes:** Added 6 single Magician spawns alongside 6 single Wizard Hats (Spawners) spread out over the last 2/3rds of the wave; Reduced some of easier enemy spawns so they're less likely to despawn the more-threatening enemies; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map to make them harder to deal with; Made the Horde additions identical for 14/15. _[Aiming to make these Horde waves feel threatening, rather than often easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
+
+### Elites
+#### Crash Zone
+* **Hivemind/Colossus:** Phase 2 Cooldown 0.9s -> 1.02s _[Gives a bit more breathing room during the rapid onslaught of Phase 2.]_
+* **Rhino:** Base Speed 250 -> 275; Phase 1 Charge Speed 900->1150 (& Charge Duration 1.0->0.95); Phase 2 Charge Speed 1000->1050
+* **Mantis:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Aiming to differentiate Mantis and Rhino more while making both a bit harder.]_
+* **Chef/Butcher:** Phase 2 & 3 Max Range Increased _[Makes it so you can't so easily get out of range of the slashes; most relevant for Explorer.]_
+#### The Abyss
+* **Turtle:** Time Before First Attack 2s -> 0.5s
+
+### Standard Enemies
++ **Small Charger:** Knockback Resistance 80% -> 75%
++ **Small Viking Charger:** Knockback Resistance 80% -> 75%
++ **Tall Bruiser:** Knockback Resistance 90% -> 87%
++ **Tall Armored Bruiser:** Knockback Resistance 90% -> 87%
++ **Hatched Slasher:** Knockback Resistance 90% -> 87%
++ **Lamprey Fish:** Knockback Resistance 95% -> 93%
+_[The base game has mostly implemented my tweaks here, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
+#### DLC Enemies
++ **Stargazer:** Boosted HP When You Destroy Their Vat 150% -> 200%
++ **Narwhal:** HP Per Wave 8.0 -> 8.75; Knockback Resistance 90% -> 87%
++ **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
 ### Starting Weapons
 * **Crazy:** Added Crossbow
@@ -217,36 +248,14 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Pacifist:** Added Scissors, Rock, Spiky Shield
 * **Ranger:** Removed Pistol
 * **Saver:** Added Stick
-_[My other starting weapon tweaks were implemented into the game directly.]_
-
-## Enemies
-### Wave Spawns: Crazh Zone
-* **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
-* **Wave 14:** Helmet Spawns 108 -> 85 (Helmets have more HP - this is slightly more total HP); Basics spawns earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
-* **Wave 15:** Helmet Spawns 114 -> 95 (Helmets have more HP; this is moderately more total HP)
-* **Wave 16:** Helmets have more HP but just as many spawn; 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) [Aiming to make them less trivially smashed by melee quickly]; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
-* **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
-* **Wave 14 & 15 Hordes:** Added 6 single Magician spawns alongside 6 single Wizard Hats (Spawners) spread out over the last 2/3rds of the wave; Reduced some of easier enemy spawns so they're less likely to despawn the more-threatening enemies; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map to make them harder to deal with; Made the Horde additions identical for 14/15. _[Aiming to make these Horde waves feel threatening, rather than often easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
-
-### Elites
-#### Crash Zone
-* **Hivemind/Colossus Elite:** Phase 2 Cooldown 0.9s -> 1.02s _[Gives a bit more breathing room during the rapid onslaught of Phase 2.]_
-* **Rhino Elite:** Base Speed 250 -> 275; Phase 1 Charge Speed 900->1150 (& Charge Duration 1.0->0.95); Phase 2 Charge Speed 1000->1050
-* **Mantis Elite:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Aiming to differentiate Mantis and Rhino more while making both a bit harder.]_
-* **Chef/Butcher Elite:** Phase 2 & 3 Max Range Increased _[Makes it so you can't so easily get out of range of the slashes, most relevant for Explorer]_
-
-### Standard Enemies
-+ **Small Charger:** Knockback Resistance 80% -> 75%
-+ **Small Viking Charger:** Knockback Resistance 80% -> 75%
-+ **Tall Bruiser:** Knockback Resistance 90% -> 85%
-+ **Tall Armored Bruiser:** Knockback Resistance 90% -> 85%
-+ **Hatched Slasher:** Knockback Resistance 90% -> 85%
-+ **Lamprey Fish:** Knockback Resistance 95% -> 92%
-_[The base game has mostly implemented my tweaks here, but it still felt too difficult for Knockback to be impactful so I go a small step further.]_
-
+#### DLC Starting Weapons
+* **Explorer:** Added Lute, Javelin
+* **Romantic:** Added Jousting Lance; Removed Fist
+* **Sick:** Added Javelin
+* **Vampire:** Added Javelin
 
 # Other Resources
-Fully unlocked Brotato save file (with blank character completion so you can still track your progress): https://www.darktwinge.com/skip-metaprogression-unlocks/brotato-save-file/
+Fully unlocked Brotato (& DLC) save file (with blank character completion so you can still track your progress): https://www.darktwinge.com/skip-metaprogression-unlocks/brotato-save-file/
 
 You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/index.php
 

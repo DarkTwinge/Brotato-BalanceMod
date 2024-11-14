@@ -90,3 +90,11 @@ func add_starting_items_and_weapons()->void :
 						if weapons[0].my_id == "weapon_double_barrel_shotgun_1" or weapons[0].my_id == "weapon_smg_1":
 							add_item(item, player_index)
 					##
+
+# Debug stuff
+#func reset(restart:bool = false)->void :
+#	.reset(restart)
+#	current_wave = 16
+#	invulnerable = true
+#	temp = load("res://weapons/ranged/double_barrel_shotgun/4/double_barrel_shotgun_4_data.tres")
+#	players_data[0].weapons.push_back(temp)

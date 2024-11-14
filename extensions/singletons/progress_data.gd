@@ -1,5 +1,7 @@
 extends "res://singletons/progress_data.gd"
 
+const BALMOD_DIR_DLCE = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/dlcs/dlc_1/"
+
 ### ALL BASELINE DLC CHANGES ###
 func add_all_dlcs()->void :
 	.add_all_dlcs()
@@ -7,6 +9,42 @@ func add_all_dlcs()->void :
 	## This theoretically should check for DLC presence but doesn't seem to work here
 	##if RunData.enabled_dlcs.has("abyssal_terrors"):
 	var temp
+	var temp_2
+
+	### ENEMIES ###
+	# Turtle buff
+	var elite_scenes = {
+		"elite_turtle":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/turtle.tscn"
+	}
+	for dlc in available_dlcs:
+		for elite in dlc.elites:
+			if elite.my_id in elite_scenes.keys():
+				elite.scene = load(elite_scenes[elite.my_id])
+
+	
+	# Regular enemies
+	temp = load("res://dlcs/dlc_1/enemies/walrus/walrus_stats.tres")
+	temp.health = 45											# 40
+	temp.knockback_resistance = 0.87			# 0.9
+	
+	temp = load("res://dlcs/dlc_1/enemies/narwhal/narwhal_stats.tres")
+	temp.health_increase_each_wave = 8.75	# 8.0
+	temp.knockback_resistance = 0.87			# 0.9
+	
+	## WAVE CHANGES ##
+	# Find all waves with Stargazers and replace them with my version
+	for dlc in available_dlcs:
+		for zone in dlc.zones:
+			for wave in zone.waves_data:
+				for group in wave.groups_data:
+					for unit in group.wave_units_data:
+						if unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/stargazer/stargazer.tscn":
+							unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
+			for unit in zone.endless_enemy_scenes:
+				if unit.get_path() == "res://dlcs/dlc_1/enemies/stargazer/stargazer.tscn":
+					unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
+		
+
 
 	### ITEMS ###
 	# Items: Tier-1
@@ -66,3 +104,45 @@ func add_all_dlcs()->void :
 
 
 	### WEAPONS ###
+
+
+
+	### STARTING WEAPONS ###
+	# Chunky
+#	temp = load("res://items/characters/chunky/chunky_data.tres")
+#	temp_2 = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
+#	temp.starting_weapons.push_back(temp_2)
+	
+	# Cryptid
+## Not working??
+	temp = load("res://items/characters/cryptid/cryptid_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
+	temp.starting_weapons.push_back(temp_2)	
+
+	# Explorer
+	temp = load("res://items/characters/explorer/explorer_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/weapons/ranged/javelin/1/javelin_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://dlcs/dlc_1/weapons/melee/lute/1/lute_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	
+	# Romantic
+	temp = load("res://dlcs/dlc_1/characters/romantic/romantic_data.tres")
+	temp_2 = load("res://weapons/melee/jousting_lance/1/jousting_lance_data.tres")
+	temp.starting_weapons.push_back(temp_2)	
+## Not working??
+	temp_2 = load("res://weapons/melee/claw/1/claw_data.tres")
+	temp.starting_weapons.push_back(temp_2)	
+	# Remove
+	temp_2 = load("res://weapons/melee/fist/1/fist_data.tres")
+	temp.starting_weapons.erase(temp_2)
+
+	# Sick
+	temp = load("res://items/characters/sick/sick_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/weapons/ranged/javelin/1/javelin_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+
+	# Vampire
+	temp = load("res://items/characters/vampire/vampire_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/weapons/ranged/javelin/1/javelin_data.tres")
+	temp.starting_weapons.push_back(temp_2)

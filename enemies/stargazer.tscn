@@ -1,0 +1,69 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://dlcs/dlc_1/enemies/stargazer/stargazer.png" type="Texture" id=1]
+[ext_resource path="res://entities/units/enemies/enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://dlcs/dlc_1/enemies/stargazer/stargazer_stats.tres" type="Resource" id=3]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/spawning_attack_behavior.gd" type="Script" id=4]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=5]
+[ext_resource path="res://dlcs/dlc_1/enemies/stargazer/stargazer_movement_behavior.gd" type="Script" id=6]
+[ext_resource path="res://dlcs/dlc_1/enemies/iron_lung/iron_lung.tscn" type="PackedScene" id=7]
+[ext_resource path="res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.gd" type="Script" id=8]
+[ext_resource path="res://entities/units/movement_behaviors/follow_player_movement_behavior.gd" type="Script" id=9]
+[ext_resource path="res://dlcs/dlc_1/enemies/stargazer/zombie_voice_general_emote_02.wav" type="AudioStream" id=10]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 26.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 39.0128
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 32.0156
+
+[node name="Enemy" instance=ExtResource( 2 )]
+script = ExtResource( 8 )
+get_entity_spawner_ref_on_spawn = true
+stats = ExtResource( 3 )
+enemy_id = "stargazer"
+angry_sound = ExtResource( 10 )
+
+[node name="Sprite" parent="Animation" index="0"]
+position = Vector2( -6, -12 )
+texture = ExtResource( 1 )
+
+[node name="Collision" parent="." index="1"]
+position = Vector2( 0, -2 )
+shape = SubResource( 2 )
+
+[node name="Collision" parent="Hurtbox" index="0"]
+position = Vector2( 0, 1 )
+shape = SubResource( 3 )
+
+[node name="Collision" parent="Hitbox" index="0"]
+position = Vector2( 1, -8 )
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" parent="." index="4"]
+anims/shoot = ExtResource( 5 )
+
+[node name="MovementBehavior" parent="." index="6"]
+script = ExtResource( 6 )
+
+[node name="AttackBehavior" parent="." index="7"]
+script = ExtResource( 4 )
+enemy_to_spawn = ExtResource( 7 )
+cooldown = 30.0
+max_cd_randomization = 0
+attack_anim_speed = 1.0
+nb_to_spawn = 1
+spawn_at_random_pos = true
+spawn_in_radius_around_unit = -1
+max_nb_of_spawns = 1
+
+[node name="OnTriggeredMovementBehavior" type="Node2D" parent="." index="11"]
+script = ExtResource( 9 )
+
+[connection signal="wanted_to_spawn_an_enemy" from="AttackBehavior" to="." method="_on_AttackBehavior_wanted_to_spawn_an_enemy"]
+
+[editable path="Hurtbox"]
+[editable path="Hitbox"]
