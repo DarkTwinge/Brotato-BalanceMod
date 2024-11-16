@@ -15,6 +15,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * Having multiple different weapon types will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different weapon types.
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (previously it just reverted to a random weapon). This makes it a little easier to match-up a starting tier-2+ only weapon (e.g. Potato Thrower or Sword) with something relevant.
 * Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up and have slightly more logical progression.
+* The reroll button for level-ups is now appropriately colored for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
 * {Explosion tooltips; Items broken}
 
 _Other general changes have not been ported yet, as they require more complex code changes to be updated with the beta version — but should be coming soon._
@@ -29,23 +30,23 @@ _Other general changes have not been ported yet, as they require more complex co
 
 ## Items
 ### Tier-1
-* **Alien Tongue:** +30% Pickup Range -> +40%; +1 Knockback -> +2; Price 25->23
+* **Alien Tongue:** +30% Pickup Range -> +35%; +1 Knockback -> +2; Price 25->22
 * **Baby Gecko:** Range 10->12
-* **Bag:** Price 15->16
+* **Bag:** Price 15->17
 * **Beanie:** -6 Range -> -7
 * **Book:** Price 8->7
 * **Boxing Glove:** +3 Knockback -> +4
 * **Broken Mouth:** Price 25->26
 * **Cake:** Price 15->16
 * **Coupon:** Price 15->19
-* **Cute Monkey:** Price 25->34; Proc Chance 8%->10%; Limit 13->10
+* **Cute Monkey:** Price 25->34; Proc Chance 8%->10%; Limit 13->10 _[Cleaner numbers, and also more viable to take the -Ranged hit if you really want the supplemental healing.]_
 * **Duct Tape:** Price 20->15
 * **Fertilizer:** Price 15->17; Harvesting 8->7
 * **Glasses:** Range 20 -> 22
 * **Head Injury:** Price: 25->24; 6% Damage -> 7%; -8 Range -> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->25
 * **Helmet:** Price 15->19; -2% Speed -> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
-* **Landmines:** Price 15->14
+* **Landmines:** Price 15->13
 * **Lens:** -5 Range -> -10
 * **Lost Duck:** Luck 8->9
 * **Lumberjack Shirt:** Price 15->13
@@ -74,7 +75,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Leather Vest:** Price 45->48
 * **Little Frog:** Price 45->43; +20% Pickup Range -> +35%
 * **Little Muscley Dude:** Range -15 -> -18
-* **Lure:** Price 34->37
+* **Lure:** Price 34->38
 * **Medal:** Price 55->60; -4% Crit Chance -> -3%
 * **Metal Detector:** -5% Damage -> -4%
 * **Metal Plate:** Price 40->42
@@ -101,13 +102,13 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Alien Magic:** Price 85->82
 * **Alloy:** 3 Melee Damage -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
-* **Blood Donation:** Price 50->43 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
-* **Bowler Hat:** Price 75->70; 15 Luck -> 17
+* **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
+* **Bowler Hat:** Price 75->70; 15 Luck -> 18
 * **Candle:** Price 65->50; Elemental Damage 4 -> 3; -5% Damage -> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
 * **Chameleon:** Price 70->55; %Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support:** Price 75->72
 * **Crown:** Price 70->68
-* **Fairy:** Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items; -3 HP Regeneration Per 1 Unique Tier-4 Item -> -3% Speed Per 1 Unique Tier-4 Item
+* **Fairy:** Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items; -3 HP Regeneration Per 1 Unique Tier-4 Item -> -4% Speed Per 1 Unique Tier-4 Item
 * **Fin:** 10% Speed -> 9%; Luck -8 -> -9 
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
@@ -129,6 +130,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Wisdom:** Price 85->82
 #### DLC
 * **Goldfish:** Price 23->17 _[I'd prefer a more interesting buff than this if I have time to create one, but this will help a weak item for now.]_
+* **Honey:** Explosion Size 5% -> 10%; -3% Dodge -> No penalty
 
 ### Tier-4
 * **Diploma:** Price 90->85
@@ -167,7 +169,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; Price 18/36/66/142 -> 18/36/68/125; Fixed tooltip bounce count _[Most of my nerfs for this were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%; Price -/-/136/272 -> -/-/122/218
-* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 ->  0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, it feels like Screwdrivers are a good fit to actually care about that crit.]_
+* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 ->  0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 -> 4 seconds; _[Maxes at 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, it feels like Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.53/1.41/1.32/1.25 (Accounting for the lowered starting Range)
 * **Thief Dagger:** Tier-4 Crit Chance 40% -> 35%
 #### DLC
@@ -199,6 +201,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
+~~ * **Baby:** Harvesting 12 -> 14; Shop Price -20% -> -15% 
 * **Brawler:** Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw)
 * **Bull:** Starting HP Regen 15 -> 10
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[Silly, but if this isn't going to be -100%, it might as well be an amount you can theoretically pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[To prevent Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
@@ -207,24 +210,23 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regeneration 5 -> 3
 * **Engineer:** No longer starts with a Wrench; Starting Engineering 10 -> 5; Elemental Damage Penalty -50% -> -20% _[Allows Engineer to lean into a mixed Engineering+Elemental build if desired, and makes more sense for Plank as a starting weapon.]_
 * **Explorer:** Starting Trees: 12 -> 11
-~~* **Farmer:** Now starts with a Garden; Now also favored to find Gardens in the shop _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
+* **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
 * **Gladiator:** -30 Luck -> -40
-~~* **Glutton:** Now also favored to find Gardens in the shop
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
-* **Loud:** -3 Harvesting per Wave -> -4
-~~* **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
+* **Loud:** -3 Harvesting per Wave -> -5
+* **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
 * **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt built work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5 _[Moderate nerfs to a very strong character.]_
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
 * **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary). _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
-* **Soldier:** 200% Pickup Range -> 125% _[Gives Soldier reason to care about Pickup Range items a bit.]_
-* **Speedy:** Starting Speed 30% -> 25% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2
+* **Soldier:** 200% Pickup Range -> 125% _[Gives them some reason to care about Pickup Range items.]_
+* **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2
 * **Streamer:** Now also favored to find Stand-still Items.
 * **Wildling:** No longer starts with a Stick.
-_[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice actually matter more, preventing the default fall-back option.]_
+_[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
 ~~ * **Druid:**
 
@@ -235,7 +237,6 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Wave 15:** Helmet Spawns 114 -> 95 (Helmets have more HP; this is moderately more total HP)
 * **Wave 16:** Helmets have more HP but just as many spawn; 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) [Aiming to make them less trivially smashed by melee quickly]; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
 * **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
-~~ * **Wave 14 & 15 Hordes:** Added 6 single Magician spawns alongside 6 single Wizard Hats (Spawners) spread out over the last 2/3rds of the wave; Reduced some of easier enemy spawns so they're less likely to despawn the more-threatening enemies; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map to make them harder to deal with; Made the Horde additions identical for 14/15. _[Aiming to make these Horde waves feel threatening, rather than often easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
 
 ### Elites
 #### Crash Zone
@@ -255,7 +256,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 + **Lamprey Fish:** Knockback Resistance 95% -> 93%
 _[The base game has mostly implemented my tweaks here, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
-+ **Stargazer:** Boosted HP When You Destroy Their Incubator 150% -> 200%; Boosted Speed 250% -> 275%
++ **Stargazer:** Boosted HP When You Destroy Their Incubator 150% -> 200%; Boosted Speed 250% -> 275% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Narwhal:** HP Per Wave 8.0 -> 8.75; Knockback Resistance 90% -> 87%
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
@@ -318,7 +319,7 @@ Elite Rework of: Gargoyle/Bat
 
 * **Cyborg:** No longer favored to find Engineering Items - now favored to find Structure Items specifically.
 
-
+Farmer & Glutton now favored to find Gardens in the shop
 
 Power gen Added '%Damage' Tag; Alloy elemental tag
 Explorer No longer favored to find 'Pickup' Items (Metal Detector, Baby Elephant, Cute Monkey, Pickup Range, Material Attract).

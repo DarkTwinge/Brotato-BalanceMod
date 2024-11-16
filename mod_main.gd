@@ -33,7 +33,11 @@ func _init(modLoader = ModLoader):
 
 	# Fix Lightning Shiv bounce count
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/projectiles_on_hit_effect.gd")
-
+	
+	# Color in reroll button on level ups that are for a guaranteed rarity
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/reroll_button.gd")
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/ingame/upgrades_ui_player_container.gd")
+		
 	#y New Padding Effect
 	#y New Couch Negative Speed Effect
 ##	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/linked_stats.gd")
@@ -90,12 +94,10 @@ func _ready()->void:
 	## ENEMIES ##
 	# Elite scenes to change behavior:
 	# Hivemind Phase 2 cooldown nerf
-	# Rhino buff	
 	# Butcher range increase
-	# Insect buff
+	# Insect tweak
 	var elite_scenes = {
 		"elite_colossus":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/colossus.tscn",
-##		"elite_rhino":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/rhino.tscn",
 		"elite_butcher":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/butcher.tscn",
 		"elite_insect":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/mantis.tscn"
 	}
@@ -133,7 +135,7 @@ func _ready()->void:
 	temp.knockback_resistance = 0.93		 # 0.95
 	
 	
-	## WAVE SPAWNS ##
+	### WAVE SPAWNS ###
 	# Wave 12
 	temp = load("res://zones/zone_1/012/d1_group_1.tres") # Healers
 	temp_2 = load("res://zones/zone_1/012/unit_2.tres")
@@ -179,35 +181,35 @@ func _ready()->void:
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/wave20_fin.tres")
 	temp.groups_data.push_back(temp_2)
 
-	# Wave 14 & 15 Horde
-	# Basics 26x4 & Chasers 26x4 -> 0 & 0 for Wave 14/15
-	temp = load("res://zones/zone_1/000_hordes/group_3b.tres")
-	temp.max_wave = 13    # Groups of 4 Chasers + 4 Basics in 2nd half removed for 14+15 to make more room for others
-	temp = load("res://zones/zone_1/000_hordes/group_4.tres")
-	# Helmets 33x8.5 -> 31x6
-	temp.repeating_interval = 3 
-	temp.spawn_edge_of_map = true
-	temp = load("res://zones/zone_1/000_hordes/unit_3.tres") # Helmet
-	temp.min_number = 5   # 8
-	temp.max_number = 7   # 9
-	temp = load("res://zones/zone_1/000_hordes/group_5.tres")
-	temp.min_wave = 13		# 15
-	temp.spawn_edge_of_map = true
-	# Basic 28x4 & Chaser 28x4 -> 0
-	temp_2 = load("res://zones/zone_1/000_hordes/unit_1.tres") # Basic
-	temp.wave_units_data.erase(temp_2) 
-	temp_2 = load("res://zones/zone_1/000_hordes/unit_2.tres") # Chaser
-	temp.wave_units_data.erase(temp_2)
-	# (Leaving only 28x6.5 Fins)
+#### Currently disabled because of the new priority despawning; needs to be re-evaluated
+#	# Wave 14 & 15 Horde
+#	# Basics 26x4 & Chasers 26x4 -> 0 & 0 for Wave 14/15
+#	temp = load("res://zones/zone_1/000_hordes/group_3b.tres")
+#	temp.max_wave = 13    # Groups of 4 Chasers + 4 Basics in 2nd half removed for 14+15 to make more room for others
+#	temp = load("res://zones/zone_1/000_hordes/group_4.tres")
+#	# Helmets 33x8.5 -> 31x6
+#	temp.repeating_interval = 3 
+#	temp.spawn_edge_of_map = true
+#	temp = load("res://zones/zone_1/000_hordes/unit_3.tres") # Helmet
+#	temp.min_number = 5   # 8
+#	temp.max_number = 7   # 9
+#	temp = load("res://zones/zone_1/000_hordes/group_5.tres")
+#	temp.min_wave = 13		# 15
+#	temp.spawn_edge_of_map = true
+#	# Basic 28x4 & Chaser 28x4 -> 0
+#	temp_2 = load("res://zones/zone_1/000_hordes/unit_1.tres") # Basic
+#	temp.wave_units_data.erase(temp_2) 
+#	temp_2 = load("res://zones/zone_1/000_hordes/unit_2.tres") # Chaser
+#	temp.wave_units_data.erase(temp_2)
+#	# (Leaving only 28x6.5 Fins)
 	
-		
 
 
 	## TIER-1 ITEMS ##
 	temp = load("res://items/all/alien_tongue/alien_tongue_data.tres")
-	temp.value = 23  # 25
+	temp.value = 22  # 25
 	temp = load("res://items/all/alien_tongue/alien_tongue_effect_1.tres")
-	temp.value = 40  # 30 (Pickup Range)
+	temp.value = 35  # 30 (Pickup Range)
 	temp = load("res://items/all/alien_tongue/alien_tongue_effect_2.tres")
 	temp.value = 2  # 1 (Knockback)	
 
@@ -215,7 +217,7 @@ func _ready()->void:
 	temp.value = 12   # 10 (Range)
 
 	temp = load("res://items/all/bag/bag_data.tres")
-	temp.value = 16   # 15
+	temp.value = 17   # 15
 	temp = load("res://items/all/bag/bag_effect_1.tres")
 	temp.text_key = "new_effect_item_box_gold"
 	
@@ -272,7 +274,7 @@ func _ready()->void:
 	temp.value = -10 # -2 Speed -> -10 Range
 	
 	temp = load("res://items/all/landmines/landmines_data.tres")
-	temp.value = 14  # 15
+	temp.value = 13  # 15
 	## THIS TOOLTIP IS HARDCODED
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/landmine_size_text.tres")
 	temp.effects.push_back(temp_2) # Add explosion size text
@@ -377,7 +379,7 @@ func _ready()->void:
 	temp.value = -18  # -15 (Range)
 
 	temp = load("res://items/all/lure/lure_data.tres")
-	temp.value = 37  # 34
+	temp.value = 38  # 34
 			
 	temp = load("res://items/all/medal/medal_data.tres")
 	temp.value = 60  # 55
@@ -460,12 +462,12 @@ func _ready()->void:
 	temp.weapon_stats = temp_2 # Ranged Damage scaling 100% -> 75%
 
 	temp = load("res://items/all/blood_donation/blood_donation_data.tres")
-	temp.value = 43  # 50
+	temp.value = 42  # 50
 	
 	temp = load("res://items/all/bowler_hat/bowler_hat_data.tres")
 	temp.value = 70  # 75
 	temp = load("res://items/all/bowler_hat/bowler_hat_effect_1.tres")
-	temp.value = 17  # 15 (Luck)
+	temp.value = 18  # 15 (Luck)
 	
 	temp = load("res://items/all/candle/candle_data.tres")
 	temp.value = 50  # 65
@@ -482,7 +484,6 @@ func _ready()->void:
 
 	temp = load("res://items/all/community_support/community_support_data.tres")
 	temp.value = 72  # 75
-	temp.tags.push_back("stat_attack_speed")
 	
 	temp = load("res://items/all/crown/crown_data.tres")
 	temp.value = 68  # 70
@@ -498,7 +499,7 @@ func _ready()->void:
 	temp.text_key = "NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT"
 	temp = load("res://items/all/fairy/fairy_effect_2.tres")
 	temp.key = "stat_speed"
-	temp.value = -3  # (-2 HP Regen -> -3 Speed)
+	temp.value = -4  # (-2 HP Regen -> -3 Speed)
 
 	temp = load("res://items/all/fin/fin_effect_1.tres")
 	temp.value = 9   # 10 (Speed)
@@ -507,6 +508,12 @@ func _ready()->void:
 
 	temp = load("res://items/all/glass_cannon/glass_cannon_data.tres")
 	temp.value = 70  # 75
+	
+	temp = load("res://items/all/honey/honey_data.tres")
+	temp_2 = load("res://items/all/honey/effects/honey_effect_4.tres")
+	temp.effects.erase(temp_2) # Remove Dodge penalty
+	temp = load("res://items/all/honey/effects/honey_effect_2.tres")
+	temp.value = 10	 # 5 (Explosion Size)
 	
 	temp = load("res://items/all/hunting_trophy/hunting_trophy_data.tres")
 	temp.value = 60  # 55
@@ -525,8 +532,6 @@ func _ready()->void:
 	temp.effects.erase(temp_2) # Remove -Damage%
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/power_generator_2_max_hp_malus.tres")
 	temp.effects.push_back(temp_2) # -1 HP per 5% Speed
-##temp = load("res://items/all/power_generator/power_generator_effect_1.tres")
-##temp.text_key = "EFFECT_GAIN_STAT_FOR_EVERY_STAT" # Change to all Speed instead of Perm only
 
 	temp = load("items/all/rip_and_tear/rip_and_tear_data.tres")
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/rip_sauce_clarify_effect.tres")
@@ -612,7 +617,7 @@ func _ready()->void:
 	temp = load("res://items/all/gnome/gnome_effect_2.tres")
 	temp.value = 8    # 10 (Elemental Damage)
 	temp = load("res://items/all/gnome/gnome_effect_3.tres")
-	temp.value = -25    # -20 (Range)
+	temp.value = -25  # -20 (Range)
 	
 	# Heavy Bullets
 	temp = load("res://items/all/heavy_bullets/heavy_bullets_data.tres")
@@ -630,7 +635,7 @@ func _ready()->void:
 	temp = load("res://items/all/jetpack/jetpack_data.tres")
 	temp.value = 92  # 100
 	temp = load("res://items/all/jetpack/jetpack_effect_3.tres")
-	temp.value = -3  # -5
+	temp.value = -3  # -5 (HP)
 
 	# Lucky Coin
 	temp = load("res://items/all/lucky_coin/lucky_coin_data.tres")
@@ -973,6 +978,8 @@ func _ready()->void:
 	temp.cooldown = 14   		# 20
 	temp.crit_chance = 0.20 # 30
 	temp.crit_damage = 3.0 	# 2.0
+	temp = load("res://weapons/melee/screwdriver/4/screwdriver_4_effect.tres")
+	temp.spawn_cooldown = 4 # 3 (Landmine spawn rate)
 	
 	# Scythe
 	temp = load("res://weapons/melee/scythe/4/scythe_effect_2.tres")
@@ -1321,7 +1328,6 @@ func _ready()->void:
 
 	## CHARACTERS ##
 	# Baby
-## Testing
 	temp = load("res://items/characters/baby/effects/baby_effect_0a.tres")
 	temp.value = 14  # 12 (Harvesting)
 	temp = load("res://items/characters/baby/effects/baby_effect_0b.tres")
@@ -1382,7 +1388,6 @@ func _ready()->void:
 
 	# Farmer
 	temp = load("res://items/characters/farmer/farmer_data.tres")
-	###temp.wanted_tags = [ "garden" ] # Add new Garden Tag
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/farmer_starting_garden.tres")
 	temp.effects.push_back(temp_2) # Starts with Garden
 	temp_2 = load("res://items/characters/farmer/farmer_effect_3.tres")
@@ -1394,8 +1399,6 @@ func _ready()->void:
 	temp.value = -40  # -30
 
 	# Glutton
-	temp = load("res://items/characters/glutton/glutton_data.tres")
-	temp.wanted_tags = [ "garden" ] # Add new Garden Tag
 	temp = load("res://items/characters/glutton/glutton_effect_2.tres")
 	temp.text_key = "new_effect_explode_on_consumable"
 
@@ -1420,7 +1423,7 @@ func _ready()->void:
 	
 	# Loud
 	temp = load("res://items/characters/loud/loud_effect_3.tres")
-	temp.value = -4	# -3 (Harvesting per Wave)
+	temp.value = -5	# -3 (Harvesting per Wave)
 
 	# Lucky
 	temp = load("res://items/characters/lucky/lucky_effect_1.tres")
@@ -1481,7 +1484,7 @@ func _ready()->void:
 	
 	# Speedy
 	temp = load("res://items/characters/speedy/speedy_effect_1.tres")
-	temp.value = 25  # 30 (Speed)
+	temp.value = 20  # 30 (Speed)
 	temp = load("res://items/characters/speedy/speedy_effect_4.tres")
 	temp.value = -2  # -3 (Armor)
 	
