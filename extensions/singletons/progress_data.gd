@@ -68,12 +68,12 @@ func add_all_dlcs()->void :
 	temp.value = 5		# 3 (Crit Chance)
 
 	temp = load("res://dlcs/dlc_1/items/saltwater/effects/saltwater_effect_1.tres")
-	temp.value = 15		# 10 (Extra Speed when hit)
+	temp.value = 20		# 10 (Extra Speed when hit)
 
 
 	# Items: Tier-3
 	temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
-	temp.value = 18   # 23	
+	temp.value = 17   # 23	
 
 
 	# Items: Tier-4
@@ -104,8 +104,116 @@ func add_all_dlcs()->void :
 
 
 	### WEAPONS ###
+	## MELEE WEAPONS ##
+	# Anchor
+	temp = load("res://dlcs/dlc_1/weapons/melee/anchor/4/anchor_4_data.tres")
+	temp.value = 168		# 190
+	
+	# Brick
+	temp = load("res://dlcs/dlc_1/weapons/melee/brick/4/brick_4_data.tres")
+	temp.value = 36			# 40
+	
+	# Captain's Sword
+	temp = load("res://dlcs/dlc_1/weapons/melee/captains_sword/4/captains_sword_4_data.tres")
+	temp.value = 198		# 210
+	
+	# Chainsaw
+	temp = load("res://dlcs/dlc_1/weapons/melee/chainsaw/4/chainsaw_4_data.tres")
+	temp.value = 210		# 242
+	
+	# Hiking Pole
+	temp = load("res://dlcs/dlc_1/weapons/melee/hiking_stick/4/hiking_stick_4_data.tres")
+	temp.value = 120		# 130
+	
+	# Lute
+	temp = load("res://dlcs/dlc_1/weapons/melee/lute/4/lute_4_data.tres")
+	temp.value = 111		# 122
 
-
+	# Mace
+	temp = load("res://dlcs/dlc_1/weapons/melee/mace/2/mace_2_data.tres")
+	temp.value = 43			# 46
+	temp = load("res://dlcs/dlc_1/weapons/melee/mace/2/mace_2_stats.tres")
+	temp.cooldown	= 43	# 50
+	temp = load("res://dlcs/dlc_1/weapons/melee/mace/3/mace_3_data.tres")
+	temp.value = 81			# 92
+	temp = load("res://dlcs/dlc_1/weapons/melee/mace/3/mace_3_stats.tres")
+	temp.cooldown	= 36	# 45
+	temp = load("res://dlcs/dlc_1/weapons/melee/mace/4/mace_4_data.tres")
+	temp.value = 142		# 185
+	temp = load("res://dlcs/dlc_1/weapons/melee/mace/4/mace_4_stats.tres")
+	temp.cooldown	= 30	# 40
+	
+	# Sickle
+	temp = load("res://dlcs/dlc_1/weapons/melee/sickle/4/sickle_4_data.tres")
+	temp.value = 111		# 122
+	
+	# Spoon
+	temp = load("res://dlcs/dlc_1/weapons/melee/spoon/4/spoon_4_data.tres")
+	temp.value = 111		# 122
+	
+	# Trident
+	temp = load("res://dlcs/dlc_1/weapons/melee/trident/2/trident_2_data.tres")
+	temp.value = 51			#	52
+	temp = load("res://dlcs/dlc_1/weapons/melee/trident/3/trident_3_data.tres")
+	temp.value = 95			#	96
+	temp = load("res://dlcs/dlc_1/weapons/melee/trident/4/trident_4_data.tres")
+	temp.value = 168		#	200
+	
+	# War Hammer
+	temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/3/war_hammer_3_data.tres")
+	temp.value = 119				#	130
+	temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/3/war_hammer_3_stats.tres")
+	temp.crit_damage = 1.75	# 1.5
+	temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_data.tres")
+	temp.value = 209				#	255
+	temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_stats.tres")
+	temp.crit_damage = 1.75	# 1.5
+	
+	## RANGED WEAPONS ##
+	# Blunderbuss
+	temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/2/blunderbuss_2_data.tres")
+	temp.value = 46					# 45
+	temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/3/blunderbuss_3_data.tres")
+	temp.value = 90					# 95
+	temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/4/blunderbuss_4_data.tres")
+	temp.value = 160				# 192
+	
+	# Flute
+	temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
+	temp.value = 19					# 20
+	temp = load("res://dlcs/dlc_1/weapons/ranged/flute/2/flute_2_data.tres")
+	temp.value = 41					# 45
+	temp = load("res://dlcs/dlc_1/weapons/ranged/flute/3/flute_3_data.tres")
+	temp.value = 81					# 80
+	temp = load("res://dlcs/dlc_1/weapons/ranged/flute/4/flute_4_data.tres")
+	temp.value = 150				# 165
+	
+	# Grenade Launcher
+	temp = load("res://dlcs/dlc_1/weapons/ranged/grenade_launcher/4/grenade_launcher_4_data.tres")
+	temp.value = 191				# 212
+	
+	# Harpoon Gun
+	temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/2/harpoon_gun_2_data.tres")
+	temp.value = 46					# 50
+	temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/2/harpoon_gun_2_stats.tres")
+	temp.max_range = 750		# 800
+	temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_melee_damage", 0.8 ] ]	# 1.0, 1.0
+	temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/3/harpoon_gun_3_data.tres")
+	temp.value = 90					# 105
+	temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/3/harpoon_gun_3_stats.tres")
+	temp.max_range = 825		# 850
+	temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_melee_damage", 0.9 ] ]	# 1.0, 1.0
+	temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/4/harpoon_gun_4_data.tres")
+	temp.value = 160				# 220
+	temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/4/harpoon_gun_4_stats.tres")
+	temp.piercing = 6				# 5
+	
+	# Javelin
+	temp = load("res://dlcs/dlc_1/weapons/ranged/javelin/3/javelin_3_data.tres")
+	temp.value = 68					# 66
+	temp = load("res://dlcs/dlc_1/weapons/ranged/javelin/4/javelin_4_data.tres")
+	temp.value = 125				# 140
+	
 
 	### STARTING WEAPONS ###
 	# Chunky

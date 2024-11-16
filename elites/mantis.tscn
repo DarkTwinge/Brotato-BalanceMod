@@ -1,14 +1,14 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=1]
-[ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=2]
-[ext_resource path="res://entities/units/enemies/032/32_stats.tres" type="Resource" id=3]
-[ext_resource path="res://entities/units/enemies/032/32.png" type="Texture" id=4]
-[ext_resource path="res://entities/units/enemies/boss/boss_state.tscn" type="PackedScene" id=5]
-[ext_resource path="res://entities/units/enemies/032/32.gd" type="Script" id=6]
-[ext_resource path="res://projectiles/slash/slash_projectile.tscn" type="PackedScene" id=7]
-[ext_resource path="res://entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd" type="Script" id=8]
-[ext_resource path="res://entities/units/enemies/attack_behaviors/charging_attack_behavior.gd" type="Script" id=10]
+[ext_resource path="res://projectiles/slash/slash_projectile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://entities/units/enemies/mantis/mantis.png" type="Texture" id=2]
+[ext_resource path="res://entities/units/enemies/mantis/mantis.gd" type="Script" id=3]
+[ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=4]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/enemy_charge_prep_animation.tres" type="Animation" id=5]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/shooting_attack_behavior.gd" type="Script" id=6]
+[ext_resource path="res://entities/units/enemies/boss/boss_state.tscn" type="PackedScene" id=7]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/charging_attack_behavior.gd" type="Script" id=8]
+[ext_resource path="res://entities/units/enemies/mantis/mantis_stats.tres" type="Resource" id=9]
 
 [sub_resource type="CircleShape2D" id=4]
 radius = 24.0
@@ -19,14 +19,16 @@ radius = 40.0
 [sub_resource type="CircleShape2D" id=2]
 radius = 40.0
 
-[node name="Boss" instance=ExtResource( 1 )]
-script = ExtResource( 6 )
-stats = ExtResource( 3 )
+[node name="Boss" instance=ExtResource( 4 )]
+script = ExtResource( 3 )
 can_be_boosted = false
+stats = ExtResource( 9 )
+enemy_id = "mantis"
+is_elite = true
 
 [node name="Sprite" parent="Animation" index="0"]
 position = Vector2( 0, -64 )
-texture = ExtResource( 4 )
+texture = ExtResource( 2 )
 
 [node name="Collision" parent="." index="1"]
 position = Vector2( 0, 0 )
@@ -41,11 +43,11 @@ position = Vector2( 0, -16 )
 shape = SubResource( 2 )
 
 [node name="AnimationPlayer" parent="." index="4"]
-anims/shoot = ExtResource( 2 )
+anims/shoot = ExtResource( 5 )
 
 [node name="ChargingShootProjectilesBehavior" type="Node2D" parent="." index="6"]
-script = ExtResource( 8 )
-projectile_scene = ExtResource( 7 )
+script = ExtResource( 6 )
+projectile_scene = ExtResource( 1 )
 projectile_speed = 600
 cooldown = 1.0
 max_cd_randomization = 0
@@ -58,8 +60,8 @@ projectile_spawn_only_on_borders = true
 constant_spread = true
 
 [node name="AttackBehavior" parent="." index="8"]
-script = ExtResource( 8 )
-projectile_scene = ExtResource( 7 )
+script = ExtResource( 6 )
+projectile_scene = ExtResource( 1 )
 projectile_speed = 600
 projectile_speed_randomization = 0
 speed_change_after_each_projectile = 0
@@ -82,20 +84,23 @@ projectile_spread = 1.1
 spawn_projectiles_on_target = false
 projectile_spawn_spread = 500
 projectile_spawn_only_on_borders = true
+specific_degrees_spawns = [  ]
 constant_spread = true
+constant_spread_rand_base_pos = 0.0
 atleast_one_projectile_on_target = false
+shoot_towards_unit = false
 shoot_in_unit_direction = false
 shoot_away_from_unit = false
 shoot_from_proj_pos_towards_player = false
 rotate_projectile = true
 delete_projectile_on_death = false
 
-[node name="State1" parent="States" index="0" instance=ExtResource( 5 )]
+[node name="State1" parent="States" index="0" instance=ExtResource( 7 )]
 hp_start = 0.6
 timer_start = 25.0
 
 [node name="AttackBehavior" parent="States/State1" index="1"]
-script = ExtResource( 10 )
+script = ExtResource( 8 )
 ;; 80.0
 cooldown = 75.0
 max_cd_randomization = 0
@@ -104,7 +109,11 @@ max_range = 2000
 charge_duration = 0.85
 ;; 800.0
 charge_speed = 740.0
+target_calculation_timing = 0
 target = 0
+rand_target_size = -1
+only_positions_in_target_direction = false
+scale_charge_duration_with_range = false
 
 [node name="LifeBar" parent="." index="13"]
 margin_top = -112.0

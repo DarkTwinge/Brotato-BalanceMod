@@ -14,7 +14,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 * Having multiple different weapon types will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different weapon types.
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (previously it just reverted to a random weapon). This makes it a little easier to match-up a starting tier-2+ only weapon (e.g. Potato Thrower or Sword) with something relevant.
-* {Explosion tooltips}
+* Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up and have slightly more logical progression.
+* {Explosion tooltips; Items broken}
 
 _Other general changes have not been ported yet, as they require more complex code changes to be updated with the beta version — but should be coming soon._
 
@@ -93,17 +94,17 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Bone Dice:** Price 30->25; Chance to proc +1 Damage% 50%->60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
 * **Eyepatch:** 3% Crit Chance -> 5%
-* **Saltwater:** 10% Extra Speed When Hit -> 15%
+* **Saltwater:** 10% Extra Speed When Hit -> 20%
 
 ### Tier-3
 * **Adrenaline:** Price 60->57
 * **Alien Magic:** Price 85->82
-* **Alloy:** 3 Melee Damage -> 5 ; Dodge -6% -> -5%
+* **Alloy:** 3 Melee Damage -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
 * **Blood Donation:** Price 50->43 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
 * **Bowler Hat:** Price 75->70; 15 Luck -> 17
 * **Candle:** Price 65->50; Elemental Damage 4 -> 3; -5% Damage -> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
-* **Chameleon:** Price 70->55; %Damage -4% -> -3% _[The least-reliable and most awkward stand-still item made more accessible.]
+* **Chameleon:** Price 70->55; %Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support:** Price 75->72
 * **Crown:** Price 70->68
 * **Fairy:** Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items; -3 HP Regeneration Per 1 Unique Tier-4 Item -> -3% Speed Per 1 Unique Tier-4 Item
@@ -111,7 +112,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
 * **Lucky Charm:** Price 75->70
-* **Plastic Explosive:** Price 60->55
+* **Plastic Explosive:** Price 60->53
 * **Poisonous Tonic:** 15 Range -> 27
 * **Power Generator:** -5% Damage -> -1 Max HP Per 5% Speed
 ~~ * **Rip and Tear:** Crit Chance 0% -> 1%; Clarified effect of having multiple copies
@@ -119,18 +120,18 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Shmoop:** Price 60->65; 2 HP Regen -> 3
 * **Statue:** Price 60->55
 * **Strange Book:** Price 70->65
-* **Tardigrade:** Price 50->45
-* **Toolbox:** 6 Engineering -> 7; -8% Attack Speed -> -5%
-* **Vigilante Ring:** Price 92->82
-* **Wandering Bot:** Price 60->45
-* **Wheat:** Price 85->82; Harvesting 10->13
+* **Tardigrade:** Price 50->42
+* **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
+* **Vigilante Ring:** Price 92->80
+* **Wandering Bot:** Price 60->43
+* **Wheat:** Price 85->81; Harvesting 10 -> 13
 * **Wings:** Range 30 -> 35
 * **Wisdom:** Price 85->82
 #### DLC
-* **Goldfish:** Price 23->18 _[I'd prefer a more interesting buff than this if I have time to create one, but this will help a weak item for now.]_
+* **Goldfish:** Price 23->17 _[I'd prefer a more interesting buff than this if I have time to create one, but this will help a weak item for now.]_
 
 ### Tier-4
-* **Diploma:**
+* **Diploma:** Price 90->85
 * **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; -15% Damage -> -7% Damage _[So it fits in more reasonably with mixed builds, and with a little more emphasis on the more-unique size rather than just damage.]_
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** 10 Melee Damage -> 12; 10 Elemental Damage -> 8; Range -20 -> -25
@@ -158,24 +159,44 @@ _Other general changes have not been ported yet, as they require more complex co
 
 ### Melee
 * **Chopper:** Base Damage 6/12/18/30 -> 7/12/17/27 _[The new vanilla Chopper *heavily* focuses its power on the Tier-4 version; this smooths out the curve a smidge.]_
-* **Fist:** Price 10/22/45/91 -> 12/26/52/105; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
+* **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Ghost Flint:** Tier-1 Damage 6->7; Tier-1 Cooldown 1.23 -> 1.24 _[Helps tier-1 not be so hopelessly behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
-* **Hand:** Price 10/22/45/91 -> 9/19/33/63; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
+* **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
 * **Hatchet:** Range 125->135
-* **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; Fixed tooltip bounce count _[Most of my nerfs for this were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
+* **Jousting Lance:** Price 20/36/72/132 -> 20/36/71/128
+* **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; Price 18/36/66/142 -> 18/36/68/125; Fixed tooltip bounce count _[Most of my nerfs for this were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
-* **Plasma Sledgehammer:** Explosion Size 100%/125% -> 110%/130%; Explosion Chance 25%/50% -> 33%/50%
-* **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.53/1.41/1.32/1.25 (Accounting for the new lower starting Range)
+* **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%; Price -/-/136/272 -> -/-/122/218
+* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 ->  0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, it feels like Screwdrivers are a good fit to actually care about that crit.]_
+* **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.53/1.41/1.32/1.25 (Accounting for the lowered starting Range)
+* **Thief Dagger:** Tier-4 Crit Chance 40% -> 35%
+#### DLC
+* **Mace:** Cooldown -/1.39/1.31/1.23 -> -/1.28/1.16/1.06; Price -/46/92/185 -> -/43/81/142
+* **Trident:** Price 52/96/200 -> 51/95/168
+* **War Hammer:** Crit Damage 1.5x -> 1.75x; Price -/-/130/255 -> -/-/119/209
+
+- **Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hammer: 190 -> 168; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133 (Fist, Hand, Jousting Lance, Screwdriver, Mace, Trident, War Hammer listed above.)
 
 ### Ranged
-- **Chain-gun:** Price 300->280; Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65% _[For reference, Tier-1 SMG is 70% Accuracy.]_
-- **Potato Thrower:** Added to the Blunt Weapon Set; Price 36/69/139 -> 33/65/118; Base Damage 1(All) -> 2/3/4 _[Allows it to find some synergy options when picked as a starting weapon.]_
-- **Revolver:** Tier-1 Price 20 -> 18; Range 450 -> 425
+- **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%; Price 300->280 _[For reference, Tier-1 SMG is 70% Accuracy.]_
+- **Crossbow:** Price 16/34/62/132 -> 16/32/61/107
+- **Fireball:** Price -/36/66/140 -> -/36/68/125
+- **Icicle:** Price 18/36/66/140 -> 18/36/68/125
+- **Minigun:** Price -/-/127/255 -> -/-/122/218
+- **Obliterator:** Projectile Hitbox Width +25%; Price -/-/127/255 -> -/-/122/218
+- **Potato Thrower:** Added to the Blunt Weapon Set; Base Damage 1(All) -> 2/3/4; Price -/36/69/139 -> -/33/64/114 _[Blunt Set allows it to find some synergy options when picked as a starting weapon.]_
+- **Revolver:** Range 450 -> 425; Price 20/34/70/130 -> 18/36/68/125
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
 - **Sniper Gun:** Range 800/1000 -> 550/600; Ranged Damage Scaling 100%(All) -> 200%/250% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much Range to begin with that more is irrelevant.]_
 - **Wand:** Cooldown 0.87/0.78/0.70/0.53 -> 0.83/0.77/0.68/0.53 _[The slight cooldown buff lets you get 1 extra kill on Wave 1.]_
+#### DLC
+- **Blunderbuss:** Price -/45/95/192 -> -/46/90/160
+- **Flute:** Price 20/45/80/165 -> 19/41/81/150
+- **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 80%/90%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price -/50/105/220 -> -/46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
+- **Javelin:** Price 18/36/66/140 -> 18/36/68/125
 
-~~ * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0-> ; 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
+* **Tier-4 Price Reductions:** Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Nuclear Launcher: 289 -> 256; Particle Accelerator: 289 -> 256; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 105 -> 95 (Crossbow, Minigun, Obliterator, Potato Thrower, Revolver, Blunderbuss, Fireball, Flute, Harpoon Gun, Icicle, Javelin listed above.)
+* **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
 * **Brawler:** Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw)
@@ -204,6 +225,8 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Streamer:** Now also favored to find Stand-still Items.
 * **Wildling:** No longer starts with a Stick.
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice actually matter more, preventing the default fall-back option.]_
+### DLC
+~~ * **Druid:**
 
 ## Enemies
 ### Wave Spawns: Crazh Zone
@@ -212,14 +235,14 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Wave 15:** Helmet Spawns 114 -> 95 (Helmets have more HP; this is moderately more total HP)
 * **Wave 16:** Helmets have more HP but just as many spawn; 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) [Aiming to make them less trivially smashed by melee quickly]; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
 * **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
-* **Wave 14 & 15 Hordes:** Added 6 single Magician spawns alongside 6 single Wizard Hats (Spawners) spread out over the last 2/3rds of the wave; Reduced some of easier enemy spawns so they're less likely to despawn the more-threatening enemies; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map to make them harder to deal with; Made the Horde additions identical for 14/15. _[Aiming to make these Horde waves feel threatening, rather than often easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
+~~ * **Wave 14 & 15 Hordes:** Added 6 single Magician spawns alongside 6 single Wizard Hats (Spawners) spread out over the last 2/3rds of the wave; Reduced some of easier enemy spawns so they're less likely to despawn the more-threatening enemies; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map to make them harder to deal with; Made the Horde additions identical for 14/15. _[Aiming to make these Horde waves feel threatening, rather than often easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
 
 ### Elites
 #### Crash Zone
 * **Hivemind/Colossus:** Phase 2 Cooldown 0.9s -> 1.02s _[Gives a bit more breathing room during the rapid onslaught of Phase 2.]_
-* **Rhino:** Base Speed 250 -> 275; Phase 1 Charge Speed 900->1150 (& Charge Duration 1.0->0.95); Phase 2 Charge Speed 1000->1050
-* **Mantis:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Aiming to differentiate Mantis and Rhino more while making both a bit harder.]_
-* **Chef/Butcher:** Phase 2 & 3 Max Range Increased _[Makes it so you can't so easily get out of range of the slashes; most relevant for Explorer.]_
+* **Rhino:** Base Speed 250 -> 275
+* **Mantis:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Aiming to differentiate Mantis and Rhino more.]_
+* **Butcher:** Phase 2 & 3 Max Range Increased _[Makes it so you can't so easily get out of range of the slashes; most relevant for Explorer.]_
 #### The Abyss
 * **Turtle:** Time Before First Attack 2s -> 0.5s
 
@@ -231,8 +254,8 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 + **Hatched Slasher:** Knockback Resistance 90% -> 87%
 + **Lamprey Fish:** Knockback Resistance 95% -> 93%
 _[The base game has mostly implemented my tweaks here, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
-#### DLC Enemies
-+ **Stargazer:** Boosted HP When You Destroy Their Vat 150% -> 200%
+#### DLC
++ **Stargazer:** Boosted HP When You Destroy Their Incubator 150% -> 200%; Boosted Speed 250% -> 275%
 + **Narwhal:** HP Per Wave 8.0 -> 8.75; Knockback Resistance 90% -> 87%
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
@@ -248,7 +271,7 @@ _[The base game has mostly implemented my tweaks here, but it still felt difficu
 * **Pacifist:** Added Scissors, Rock, Spiky Shield
 * **Ranger:** Removed Pistol
 * **Saver:** Added Stick
-#### DLC Starting Weapons
+#### DLC
 * **Explorer:** Added Lute, Javelin
 * **Romantic:** Added Jousting Lance; Removed Fist
 * **Sick:** Added Javelin
@@ -266,9 +289,8 @@ Also thanks to Blobfish for being generally receptive to feedback and suggestion
 # License
 You are free to use concepts and code contained within elsewhere, ideally with attribution. E.g. if you want to make a spin-off mod for, say, only the Item changes, you are welcome to do so but I'd appreciate a link back to the Balance Mod and/or to my stream.
 
-
 # Now Included in Vanilla
-These changes were originally made for Balance Mod but are now implemented into the main game (either directly or similar enough to obsolete my version):
+These changes were originally made for Balance Mod but are now implemented into the main game (either directly or similarly enough to obsolete my version):
 - Knockback now never moves the enemy towards the player.
 - Bugfixed Wave 3 shops so they can now sell more than 1 weapon.
 - Revolver & Chain-gun: Fixed a bug that caused them to instantly reload when used alongside effects that check if you're moving (e.g. Solider). Also bugfixed inaccurate long cooldown tooltip
@@ -280,7 +302,6 @@ These changes were originally made for Balance Mod but are now implemented into 
 - HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.
 - Fighting Stick & Plasma Sledgehammer renamed.
 
-
 Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand
 Item Buffs to: Sifd's Relic, Wisdom, Gambling Token, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
 Item Tweaks to: Stone Skin, Tyler
@@ -289,14 +310,14 @@ Weapon Nerfs to: Lightning Shiv
 Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Wand, Chopper, Medical Gun, Rock, Hammer
 Character Buffs to: Artificer, Jack, Streamer
 Character Tweaks to: Doctor, Mutant
-Enemy Rework of: Gargoyle/Bat Elite
+Elite Nerfs to: Croc, Mother
+Elite Buffs to: Rhino
+Elite Rework of: Gargoyle/Bat
 
 * **Eyes Surgery:** Price 60->47; New Additional Effect: Also adds +1 duration to all burn effects; -10 Range -> No Downside
 
 * **Cyborg:** No longer favored to find Engineering Items - now favored to find Structure Items specifically.
 
-* **Smiley/Croc Elite:** Contact Damage Per Wave 1.5 -> 1.3 _[~2-5 less damage]_; Phase 2 Circle Size 450->480; Phase 2 Cooldown 0.75s -> 0.85s
-* **Mother Elite:** Phase 1 Initial Cooldown 2s->1.67s; Phase 2 now switches between a) summoning rapidly (9 Fins per second, vanilla behavior) but slicing half the time, and b) summoning slowly (3 Fins per second) and slicing constantly (vanilla behavior)
 
 
 Power gen Added '%Damage' Tag; Alloy elemental tag
