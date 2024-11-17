@@ -10,6 +10,12 @@ func add_all_dlcs()->void :
 	##if RunData.enabled_dlcs.has("abyssal_terrors"):
 	var temp
 	var temp_2
+	
+	### TEXT KEYS ###
+	Text.keys_needing_operator.bm_effect_stat_on_poison_fruit = [0]
+	Text.keys_needing_percent.bm_effect_stat_on_poison_fruit = [2]
+	Text.keys_needing_percent.new_effect_poisoned_fruit = [0]
+	
 
 	### ENEMIES ###
 	# Turtle buff
@@ -47,14 +53,14 @@ func add_all_dlcs()->void :
 
 
 	### ITEMS ###
-	# Items: Tier-1
+	# Items: Tier-1 #
 	temp = load("res://dlcs/dlc_1/items/corrupted_shard/corrupted_shard_data.tres")
 	temp.value = 13   # 12
 	temp = load("res://dlcs/dlc_1/items/corrupted_shard/effects/corrupted_shard_effect_1.tres")
 	temp.value = 2		# 1 (Curse)
 
 
-	# Items: Tier-2
+	# Items: Tier-2 #
 	temp = load("res://dlcs/dlc_1/items/bone_dice/bone_dice_data.tres")
 	temp.value = 25   # 30
 	temp = load("res://dlcs/dlc_1/items/bone_dice/effects/bone_dice_effect_0.tres")
@@ -71,12 +77,12 @@ func add_all_dlcs()->void :
 	temp.value = 20		# 10 (Extra Speed when hit)
 
 
-	# Items: Tier-3
+	# Items: Tier-3 #
 	temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 	temp.value = 17   # 23	
 
 
-	# Items: Tier-4
+	# Items: Tier-4 #
 	temp = load("res://dlcs/dlc_1/items/krakens_eye/krakens_eye_data.tres")
 	temp.value = 90		# 110
 
@@ -213,6 +219,23 @@ func add_all_dlcs()->void :
 	temp.value = 68					# 66
 	temp = load("res://dlcs/dlc_1/weapons/ranged/javelin/4/javelin_4_data.tres")
 	temp.value = 125				# 140
+	
+	### CHARACTERS ###
+	# Druid
+	temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0.tres")
+	temp_2.value = 8				# 5 (Starting HP)
+	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0b.tres")
+	temp.effects.erase(temp_2) # Remove starting 15 Luck
+	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_1.tres")
+	temp_2.value = 2
+	temp_2.value2 = 100
+	temp_2.custom_key = "bm_stats_on_poison_fruit"
+	temp_2.text_key = "BM_EFFECT_STAT_ON_POISON_FRUIT"
+	temp.effects.erase(temp_2)
+	temp.effects.insert(3, temp_2) # Reposition so it appears after you see what poison fruit are
+	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_3.tres")
+	temp_2.text_key = "NEW_EFFECT_POISONED_FRUIT"
 	
 
 	### STARTING WEAPONS ###

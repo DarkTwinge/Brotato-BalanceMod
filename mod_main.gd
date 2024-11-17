@@ -4,8 +4,12 @@ const BALMOD_DIR = "res://mods-unpacked/DarkTwinge-BalanceMod/"
 const BALMOD_DIR_E = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/"
 
 func _init(modLoader = ModLoader):
+	# (Adds new init effects)
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/player_run_data.gd")
 
-
+	# Adds version number to title screen
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/pages/main_menu.gd")
+	
 	# Adds another arg to explosions so they can also show the size
 	# -->TODO Items side still needs more finishing right? It's wrong for e.g. Sauce?
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
@@ -37,6 +41,9 @@ func _init(modLoader = ModLoader):
 	# Color in reroll button on level ups that are for a guaranteed rarity
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/reroll_button.gd")
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/ingame/upgrades_ui_player_container.gd")
+	
+	# Add new Druid poisoned-fruit-only effect
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/player/player.gd")
 		
 	#y New Padding Effect
 	#y New Couch Negative Speed Effect

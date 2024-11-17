@@ -228,7 +228,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Wildling:** No longer starts with a Stick.
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
-~~ * **Druid:**
+~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Starting HP 5 -> 8; Starting Luck 15 -> 0
 
 ## Enemies
 ### Wave Spawns: Crazh Zone

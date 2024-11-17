@@ -37,3 +37,5 @@ NEW_EFFECT_EXPLODE_ON_DEATH,Enemies have a {0} chance to explode for {1} ({2}) d
 BM_EFFECT_LANDMINE_SIZE,(Explosion Size: [color=#00ff00]175[/color])
 BM_EFFECT_EXPLOSIVE_TURRET_SIZE,(Explosion Size: [color=#00ff00]100[/color])
 NEW_EFFECT_ON_HIT,{0} {1} each time you take damage until the end of the wave
+BM_EFFECT_STAT_ON_POISON_FRUIT,{0} {1} when you pick up a [color=#bb576b]poisoned[/color] fruit
+NEW_EFFECT_POISONED_FRUIT,{0} of fruits are poisoned and hurt you (ignores defenses)
