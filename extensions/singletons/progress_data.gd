@@ -20,7 +20,8 @@ func add_all_dlcs()->void :
 	### ENEMIES ###
 	# Turtle buff
 	var elite_scenes = {
-		"elite_turtle":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/turtle.tscn"
+		"elite_turtle":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/turtle.tscn",
+		"elite_spider_crab":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/spider_crab.tscn"
 	}
 	for dlc in available_dlcs:
 		for elite in dlc.elites:
@@ -195,8 +196,14 @@ func add_all_dlcs()->void :
 	temp.value = 150				# 165
 	
 	# Grenade Launcher
+	temp = load("res://dlcs/dlc_1/weapons/ranged/grenade_launcher/2/grenade_launcher_2_effect_0.tres")
+	temp.key = "new_effect_explode"
+	temp = load("res://dlcs/dlc_1/weapons/ranged/grenade_launcher/3/grenade_launcher_3_effect_0.tres")
+	temp.key = "new_effect_explode"
 	temp = load("res://dlcs/dlc_1/weapons/ranged/grenade_launcher/4/grenade_launcher_4_data.tres")
 	temp.value = 191				# 212
+	temp = load("res://dlcs/dlc_1/weapons/ranged/grenade_launcher/4/grenade_launcher_4_effect_0.tres")
+	temp.key = "new_effect_explode"
 	
 	# Harpoon Gun
 	temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/2/harpoon_gun_2_data.tres")

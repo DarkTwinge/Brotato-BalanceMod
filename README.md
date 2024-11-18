@@ -121,7 +121,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Shmoop:** Price 60->65; 2 HP Regen -> 3
 * **Statue:** Price 60->55
 * **Strange Book:** Price 70->65
-* **Tardigrade:** Price 50->42
+* **Tardigrade:** Price 50->42; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Vigilante Ring:** Price 92->80
 * **Wandering Bot:** Price 60->43
@@ -245,6 +245,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Mantis:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Aiming to differentiate Mantis and Rhino more.]_
 * **Butcher:** Phase 2 & 3 Max Range Increased _[Makes it so you can't so easily get out of range of the slashes; most relevant for Explorer.]_
 #### The Abyss
+* Spider Crab:**: Phase 1 Crab Summoning Cooldown 2s -> 1.85s; Summoning Radius 600 -> 750; HP to switch to 2nd Phase 85% -> 82%; Time to switch to 2nd Phase 12s -> 13s _[Aiming to make the initial summoning phase more noticeable and interesting; this causes one extra summoning before switching phases from time.]_
 * **Turtle:** Time Before First Attack 2s -> 0.5s
 
 ### Standard Enemies
@@ -256,7 +257,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 + **Lamprey Fish:** Knockback Resistance 95% -> 93%
 _[The base game has mostly implemented my tweaks here, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
-+ **Stargazer:** Boosted HP When You Destroy Their Incubator 150% -> 200%; Boosted Speed 250% -> 275% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
++ **Stargazer:** Boosted HP When You Destroy Their Incubator 150% -> 200%; Boosted Speed 250% -> 280% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Narwhal:** HP Per Wave 8.0 -> 8.75; Knockback Resistance 90% -> 87%
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
@@ -293,44 +294,29 @@ You are free to use concepts and code contained within elsewhere, ideally with a
 # Now Included in Vanilla
 These changes were originally made for Balance Mod but are now implemented into the main game (either directly or similarly enough to obsolete my version):
 - Knockback now never moves the enemy towards the player.
-- Bugfixed Wave 3 shops so they can now sell more than 1 weapon.
-- Revolver & Chain-gun: Fixed a bug that caused them to instantly reload when used alongside effects that check if you're moving (e.g. Solider). Also bugfixed inaccurate long cooldown tooltip
 - Over 100 starting weapon changes.
-- Stats now update properly on shop reroll for Saver.
-- Bugfixed Multi-tasker cooldown randomization so it isn't so extreme.
-- Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy.
-- Fixed cooldown visual for the fastest weapons.
+- Bugfixed Wave 3 shops so they can now sell more than 1 weapon.
 - HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.
-- Fighting Stick & Plasma Sledgehammer renamed.
+- Fairy & King show icons for relevant items in shops; Renegade now also shows icons for crates.
+- Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand
+- Item Buffs to: Sifd's Relic, Wisdom, Gambling Token, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
+- Item Tweaks to: Stone Skin, Tyler
+- Item Rework of: Robot Arm
+- Weapon Nerfs to: Lightning Shiv
+- Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Wand, Chopper, Medical Gun, Rock, Hammer
+- Fighting Stick & Plasma Sledgehammer renamed
+- Character Buffs to: Artificer, Jack
+- Character Nerfs to: Knight
+- Character Tweaks to: Doctor, Mutant
+- Elite Nerfs to: Croc, Mother
+- Elite Buffs to: Rhino
+- Elite Buff+Rework of: Gargoyle
+- Fixed Tagging for: Silver Bullet, Triangle of Power, Improved Tools, Alloy, Power Generator, Explorer, Streamer, Cyborg, Farmer, Glutton
+- Revolver & Chain-gun: Fixed a bug that caused them to instantly reload when used alongside effects that check if you're moving (e.g. Solider). Also bugfixed inaccurate long cooldown tooltip.
+- Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy. Fixed cooldown visual for the fastest weapons.
+- Bugfixed Multi-tasker cooldown randomization so it isn't so extreme.
+- Stats now update properly on shop reroll for Saver.
 
-Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand
-Item Buffs to: Sifd's Relic, Wisdom, Gambling Token, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
-Item Tweaks to: Stone Skin, Tyler
-Item Rework of: Robot Arm
-Weapon Nerfs to: Lightning Shiv
-Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Wand, Chopper, Medical Gun, Rock, Hammer
-Character Buffs to: Artificer, Jack, Streamer
-Character Tweaks to: Doctor, Mutant
-Elite Nerfs to: Croc, Mother
-Elite Buffs to: Rhino
-Elite Rework of: Gargoyle/Bat
 
 * **Eyes Surgery:** Price 60->47; New Additional Effect: Also adds +1 duration to all burn effects; -10 Range -> No Downside
-
-* **Cyborg:** No longer favored to find Engineering Items - now favored to find Structure Items specifically.
-
-Farmer & Glutton now favored to find Gardens in the shop
-
-Power gen Added '%Damage' Tag; Alloy elemental tag
-Explorer No longer favored to find 'Pickup' Items (Metal Detector, Baby Elephant, Cute Monkey, Pickup Range, Material Attract).
-
-
 * **Rip and Tear:** Price: 65->59; Harvesting -12 -> -11; Can now crit for 1.5x damage (base Crit Chance 1%); [Does it crit in vanilla now?]
-[Test new Lich starter: Spiky, Thief Dagger]
-[Test Jack w/ Wrench]
-[Test Loud w/ Pruner]
-Saver-Torch
-Test/Consider Captain-Quarterstaff, Screwdriver, Chopper
-Jack-Flute
-
-Try Minigun with low recoil value

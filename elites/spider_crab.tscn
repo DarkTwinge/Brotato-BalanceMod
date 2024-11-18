@@ -1,0 +1,128 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://entities/units/enemies/boss/boss.tscn" type="PackedScene" id=1]
+[ext_resource path="res://dlcs/dlc_1/enemies/spider_crab/spider_crab.png" type="Texture" id=2]
+[ext_resource path="res://dlcs/dlc_1/enemies/spider_crab/spider_crab_stats.tres" type="Resource" id=3]
+[ext_resource path="res://dlcs/dlc_1/enemies/spider_crab/spider_crab.gd" type="Script" id=4]
+[ext_resource path="res://entities/units/enemies/attack_behaviors/spawning_attack_behavior.gd" type="Script" id=5]
+[ext_resource path="res://dlcs/dlc_1/enemies/crab/crab.tscn" type="PackedScene" id=6]
+[ext_resource path="res://entities/units/movement_behaviors/target_rand_pos_around_player_movement_behavior.gd" type="Script" id=7]
+[ext_resource path="res://entities/units/enemies/boss/boss_state.tscn" type="PackedScene" id=9]
+[ext_resource path="res://projectiles/slash/slash_projectile.tscn" type="PackedScene" id=10]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 56.0
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 40.0125
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 40.0
+
+[node name="Boss" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+can_be_boosted = false
+stats = ExtResource( 3 )
+enemy_id = "spider_crab"
+is_elite = true
+
+[node name="Sprite" parent="Animation" index="0"]
+position = Vector2( 0, -24 )
+texture = ExtResource( 2 )
+
+[node name="Collision" parent="." index="1"]
+position = Vector2( 0, -24 )
+shape = SubResource( 1 )
+
+[node name="Collision" parent="Hurtbox" index="0"]
+shape = SubResource( 2 )
+
+[node name="Collision" parent="Hitbox" index="0"]
+position = Vector2( 0, -8 )
+shape = SubResource( 3 )
+
+[node name="MovementBehavior" parent="." index="6"]
+script = ExtResource( 7 )
+range_around_player = 300
+range_randomization = 0
+update_every_x_frames = -1
+
+[node name="AttackBehavior" parent="." index="7"]
+script = ExtResource( 5 )
+enemy_to_spawn = ExtResource( 6 )
+;; 60.0
+cooldown = 51.0
+max_cd_randomization = 0
+attack_anim_speed = 1.0
+nb_to_spawn = 6
+spawn_at_random_pos = false
+;; 600
+spawn_in_radius_around_unit = 750
+max_nb_of_spawns = -1
+
+[node name="State1" parent="States" index="0" instance=ExtResource( 9 )]
+;; 0.85
+hp_start = 0.82
+;; 12.0
+timer_start = 13.0
+
+[node name="MovementBehavior" parent="States/State1" index="0"]
+script = ExtResource( 7 )
+range_around_player = 300
+range_randomization = 0
+update_every_x_frames = 120
+
+[node name="AttackBehavior" parent="States/State1" index="1"]
+projectile_scene = ExtResource( 10 )
+projectile_speed = 1000
+cooldown = 20.0
+max_cd_randomization = 0
+long_cooldown_every_x_shoots = 12
+long_cooldown = 120
+damage_increase_each_wave = 1.15
+max_range = 1000
+attack_anim_speed = 3.0
+projectile_spawn_spread = 500
+shoot_from_proj_pos_towards_player = true
+
+[node name="State2" parent="States" index="1" instance=ExtResource( 9 )]
+hp_start = 0.5
+timer_start = 35.0
+
+[node name="MovementBehavior" parent="States/State2" index="0"]
+script = ExtResource( 7 )
+range_around_player = 300
+range_randomization = 0
+update_every_x_frames = 60
+
+[node name="AttackBehavior" parent="States/State2" index="1"]
+projectile_scene = ExtResource( 10 )
+projectile_speed = 500
+cooldown = 10.0
+initial_cooldown = 60
+max_cd_randomization = 0
+long_cooldown_every_x_shoots = 2
+long_cooldown = 60
+damage_increase_each_wave = 1.15
+max_range = 600
+attack_anim_speed = 3.0
+random_direction = true
+number_projectiles = 4
+spawn_projectiles_on_target = true
+projectile_spawn_spread = 700
+projectile_spawn_only_on_borders = true
+constant_spread = true
+constant_spread_rand_base_pos = 3.14
+shoot_from_proj_pos_towards_player = true
+random_rotation = 0.3
+
+[node name="LifeBar" parent="." index="12"]
+margin_top = -120.0
+margin_bottom = -104.0
+
+[connection signal="wanted_to_spawn_an_enemy" from="AttackBehavior" to="." method="_on_AttackBehavior_wanted_to_spawn_an_enemy"]
+
+[editable path="Hurtbox"]
+[editable path="Hitbox"]
+[editable path="States/State1"]
+[editable path="States/State2"]

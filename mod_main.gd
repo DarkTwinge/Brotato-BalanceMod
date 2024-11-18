@@ -18,7 +18,7 @@ func _init(modLoader = ModLoader):
 
 	
 	#y Increases Luck's effect on higher-tier equipment/level-ups
-	#y Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
+	#y TODO? Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
 	# Adjusts shop weapon pick odds based on number of weapon types held
 	# Turns exact-weapon picks into weapon-set picks if it can't find an exact-pick
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
@@ -43,6 +43,7 @@ func _init(modLoader = ModLoader):
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/ingame/upgrades_ui_player_container.gd")
 	
 	# Add new Druid poisoned-fruit-only effect
+	# Tardigrade no longer used for 1-damage hits
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/player/player.gd")
 		
 	#y New Padding Effect
@@ -566,6 +567,9 @@ func _ready()->void:
 	
 	temp = load("res://items/all/tardigrade/tardigrade_data.tres")
 	temp.value = 42  # 50
+	temp.tags.push_back("stat_dodge")
+	temp = load("res://items/all/tardigrade/tardigrade_effect_1.tres")
+	temp.text_key = "bm_effect_hit_protection"
 
 	temp = load("res://items/all/toolbox/toolbox_effect_1.tres")
 	temp.value = 7   # 6 (Engineering)
