@@ -321,9 +321,6 @@ func _ready()->void:
 	temp = load("res://items/all/terrified_onion/terrified_onion_data.tres")
 	temp.value = 13  # 15
 	
-	temp = load("res://items/all/turret/turret_data.tres")
-	temp.value = 16  # 15	
-	
 	temp = load("res://items/all/weird_food/weird_food_data.tres")
 	temp.value = 24  # 20
 		
@@ -419,6 +416,9 @@ func _ready()->void:
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/recycling_machine_attack_speed_malus.tres")
 	temp.effects.push_back(temp_2) # -2 Attack Speed
 	
+	temp = load("res://items/all/reinforced_steel/effects/reinforced_steel_effect_1.tres")
+	temp.value = 4	 # 3 (Engineering)
+	
 	temp = load("res://items/all/riposte/riposte_data.tres")
 	temp.value = 34  # 40
 	
@@ -499,15 +499,15 @@ func _ready()->void:
 	# Fairy
 	temp = load("res://items/all/fairy/fairy_data.tres")
 	temp.value = 90  # 85
-	###temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/fairy_count_tier1s.tres")
-	###temp.effects.insert(1, temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/fairy_count_tier1s.tres")
+	temp.effects.insert(1, temp_2)
 	temp = load("res://items/all/fairy/fairy_effect_1.tres")
 	temp.value = 2   # 1 (HP Regen Gained)
 	temp.nb_stat_scaled = 3 # 1 (Items Required)
 	temp.text_key = "NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT"
 	temp = load("res://items/all/fairy/fairy_effect_2.tres")
 	temp.key = "stat_speed"
-	temp.value = -4  # (-2 HP Regen -> -3 Speed)
+	temp.value = -4  # (-2 HP Regen -> -4 Speed)
 
 	temp = load("res://items/all/fin/fin_effect_1.tres")
 	temp.value = 9   # 10 (Speed)
@@ -528,6 +528,9 @@ func _ready()->void:
 	
 	temp = load("res://items/all/lucky_charm/lucky_charm_data.tres")
 	temp.value = 70  # 75
+
+	temp = load("res://items/all/pile_of_books/effects/pile_of_books_effect_1.tres")
+	temp.value = 5	 # 3 (Crit Chance)
 	
 	temp = load("res://items/all/plastic_explosive/plastic_explosive_data.tres")
 	temp.value = 53  # 60
@@ -1027,6 +1030,8 @@ func _ready()->void:
 	# Sword
 	temp = load("res://weapons/melee/sword/4/sword_4_data.tres")
 	temp.value = 168		 # 190
+	temp = load("res://weapons/melee/sword/4/sword_4_stats.tres")
+	temp.cooldown = 18	 # 22
 	
 	# Thief Dagger
 	temp = load("res://weapons/melee/dagger/4/dagger_4_data.tres")

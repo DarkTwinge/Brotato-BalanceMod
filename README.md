@@ -11,14 +11,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 # Full Changelog
 ## General Changes
 * Armor is about 7% less effective (Each point is +6.25% Effective HP instead of +6.67%). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
-
 * Having multiple different weapon types will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different weapon types.
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (previously it just reverted to a random weapon). This makes it a little easier to match-up a starting tier-2+ only weapon (e.g. Potato Thrower or Sword) with something relevant.
-* Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up and have slightly more logical progression.
+* Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up to be more consistent and have a slightly more logical progression.
 * The reroll button for level-ups is now appropriately colored for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
 * {Explosion tooltips; Items broken}
-
-_Other general changes have not been ported yet, as they require more complex code changes to be updated with the beta version — but should be coming soon._
 
 ## Level-ups
 * **Range:** 15/30/45/60 -> 20/35/50/70
@@ -55,7 +52,6 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
 * **Snake:** Price 25 -> 23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->13
-* **Turret:** Price 15->16 _[Almost always better than Landmines, so they get a mild cost difference.]_
 * **Weird Food:** Price 20->24
 #### DLC
 * **Corrupted Shard:** Price 12->13; Curse 1->2 _[Now a bit more of an actual entry-point into curse rather than incidental.]_
@@ -83,6 +79,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Pocket Factory:** 2 Engineering -> 3 _[Many people like this item, but if you look at its actual damage output in practice it tends to be very lackluster for its cost outside of best-case scenarios.]_
 * **Pumpkin:** -2% Damage -> No Penalty; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No downside -> -2% Attack Speed
+* **Reinforced Steel:** Engineering 3 -> 4
 * **Riposte:** Price 40->34
 * **Ritual:** Price 60->57
 * **Scope:** 25 Range -> 40
@@ -108,11 +105,12 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Chameleon:** Price 70->55; %Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support:** Price 75->72
 * **Crown:** Price 70->68
-* **Fairy:** Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items; -3 HP Regeneration Per 1 Unique Tier-4 Item -> -4% Speed Per 1 Unique Tier-4 Item
+* **Fairy:** Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regeneration Per 1 Unique Tier-4 Item -> -4% Speed Per 1 Unique Tier-4 Item
 * **Fin:** 10% Speed -> 9%; Luck -8 -> -9 
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
 * **Lucky Charm:** Price 75->70
+* **Pile of Books:**: Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
 * **Plastic Explosive:** Price 60->53
 * **Poisonous Tonic:** 15 Range -> 27
 * **Power Generator:** -5% Damage -> -1 Max HP Per 5% Speed
@@ -171,6 +169,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%; Price -/-/136/272 -> -/-/122/218
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 ->  0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 -> 4 seconds; _[Maxes at 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, it feels like Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.53/1.41/1.32/1.25 (Accounting for the lowered starting Range)
+* **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Tier-4 Crit Chance 40% -> 35%
 #### DLC
 * **Mace:** Cooldown -/1.39/1.31/1.23 -> -/1.28/1.16/1.06; Price -/46/92/185 -> -/43/81/142
@@ -228,7 +227,7 @@ _Other general changes have not been ported yet, as they require more complex co
 * **Wildling:** No longer starts with a Stick.
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
-~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Starting HP 5 -> 8; Starting Luck 15 -> 0
+~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Starting HP 5 -> 8; Starting Luck 15 -> 0 _[This gives a risk/reward element to the poisoned fruit, making them a more interesting unique aspect to interact with.]_
 
 ## Enemies
 ### Wave Spawns: Crazh Zone
