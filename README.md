@@ -49,6 +49,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lumberjack Shirt:** Price 15->13
 * **Mutation:** Price 25->20; -3 Knockback -> -2 _[You rarely want both Elemental and Ranged together, and this is nicely cheap when you do; otherwise still kind of expensive-but-occasionally-worth when you just want one.]_
 * **Propeller Hat:** Price 28->25
+* **Scar:** Price 25->24; Range -8 -> -11
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
 * **Snake:** Price 25 -> 23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->13
@@ -167,12 +168,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; Price 18/36/66/142 -> 18/36/68/125; Fixed tooltip bounce count _[Most of my nerfs for this were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%; Price -/-/136/272 -> -/-/122/218
-* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 ->  0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 -> 4 seconds; _[Maxes at 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, it feels like Screwdrivers are a good fit to actually care about that crit.]_
+* **Scissors:** Tier 3/4 Cooldown 0.94/0.86 -> 0.89/0.78 _[Makes higher tier versions more worth using, and buffing cooldown helps their potential as a healing add-in to a Precise build.]_
+* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 -> 4 seconds; _[Maxes at 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, it feels like Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.53/1.41/1.32/1.25 (Accounting for the lowered starting Range)
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Tier-4 Crit Chance 40% -> 35%
 #### DLC
 * **Mace:** Cooldown -/1.39/1.31/1.23 -> -/1.28/1.16/1.06; Price -/46/92/185 -> -/43/81/142
+* **Sickle:** Melee Damage Scaling 80%(All) -> 90%(All); Harvesting Scaling 10%/15%/20%/25% -> 10%/14%/17%/20%; Cooldown 0.87/0.82/0.77/0.70 -> 0.85/0.78/0.72/0.65 _[Leans away from this weapon *only* making any sense in builds with obscene amounts of Harvesting.]_
 * **Trident:** Price 52/96/200 -> 51/95/168
 * **War Hammer:** Crit Damage 1.5x -> 1.75x; Price -/-/130/255 -> -/-/119/209
 
@@ -256,6 +259,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 + **Lamprey Fish:** Knockback Resistance 95% -> 93%
 _[The base game has mostly implemented my tweaks here, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
++ **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
 + **Stargazer:** Boosted HP When You Destroy Their Incubator 150% -> 200%; Boosted Speed 250% -> 280% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Narwhal:** HP Per Wave 8.0 -> 8.75; Knockback Resistance 90% -> 87%
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
@@ -269,7 +273,7 @@ _[The base game has mostly implemented my tweaks here, but it still felt difficu
 * **Jack:** Removed Shuriken
 * **Mage:** Added Wrench
 * **One-armed:** Added Sword, Hammer, Flaming Brass Knuckles, Fireball
-* **Pacifist:** Added Scissors, Rock, Spiky Shield
+* **Pacifist:** Added Scissors, Rock
 * **Ranger:** Removed Pistol
 * **Saver:** Added Stick
 #### DLC
@@ -292,30 +296,41 @@ You are free to use concepts and code contained within elsewhere, ideally with a
 
 # Now Included in Vanilla
 These changes were originally made for Balance Mod but are now implemented into the main game (either directly or similarly enough to obsolete my version):
-- Knockback now never moves the enemy towards the player.
-- Over 100 starting weapon changes.
-- Bugfixed Wave 3 shops so they can now sell more than 1 weapon.
-- HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.
-- Fairy & King show icons for relevant items in shops; Renegade now also shows icons for crates.
-- Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand
-- Item Buffs to: Sifd's Relic, Wisdom, Gambling Token, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
+- Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand, Extra Stomach
+- Item Buffs to: Sifd's Relic, Eyes Surgery, Wisdom, Gambling Token, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
 - Item Tweaks to: Stone Skin, Tyler
 - Item Rework of: Robot Arm
-- Weapon Nerfs to: Lightning Shiv
-- Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Wand, Chopper, Medical Gun, Rock, Hammer
-- Fighting Stick & Plasma Sledgehammer renamed
+- Weapon Nerfs to: Lightning Shiv, Flamethrower, Stick
+- Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Scissors, Chopper, Medical Gun, Wand, Rock, Pistol, Hammer
 - Character Buffs to: Artificer, Jack
 - Character Nerfs to: Knight
 - Character Tweaks to: Doctor, Mutant
 - Elite Nerfs to: Croc, Mother
 - Elite Buffs to: Rhino
 - Elite Buff+Rework of: Gargoyle
-- Fixed Tagging for: Silver Bullet, Triangle of Power, Improved Tools, Alloy, Power Generator, Explorer, Streamer, Cyborg, Farmer, Glutton
+- Fixed Tagging for: Baby Gecko, Silver Bullet, Triangle of Power, Improved Tools, Alloy, Community Support, Power Generator, Octopus, Explorer, Streamer, Cyborg, Farmer, Glutton
+- Over 100 starting weapon changes.
+- Knockback now always moves the enemy away from the player.
+- Bugfixed Wave 3 shops so they can sell more than 1 weapon.
+- HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.
+- Fairy & King show icons for relevant items in shops; Renegade now also shows icons for crates.
 - Revolver & Chain-gun: Fixed a bug that caused them to instantly reload when used alongside effects that check if you're moving (e.g. Solider). Also bugfixed inaccurate long cooldown tooltip.
-- Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy. Fixed cooldown visual for the fastest weapons.
+- Garden cooldowns now show a decimal when applicable. Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy. Fixed cooldown visual for the fastest weapons.
 - Bugfixed Multi-tasker cooldown randomization so it isn't so extreme.
 - Stats now update properly on shop reroll for Saver.
+- Fighting Stick & Plasma Sledgehammer renamed.
 
 
-* **Eyes Surgery:** Price 60->47; New Additional Effect: Also adds +1 duration to all burn effects; -10 Range -> No Downside
 * **Rip and Tear:** Price: 65->59; Harvesting -12 -> -11; Can now crit for 1.5x damage (base Crit Chance 1%); [Does it crit in vanilla now?]
+
+TO DO FOR WORKSHOP RELEASE
+- Fix or turn off explosion size tooltip for items
+- go over original change list again and see if anyhting important missing
+	-- delete still-unused extensions/effect files
+- re-skim original list for other changes implemented into main
+- tweak down reroll change and/or extra same-weapon early change
+- Figure out if/how to work without DLC installed/active
+- Fishhook
+- Legendary weapon price drops
+- re-compile overview details
+- make new workshop-page images

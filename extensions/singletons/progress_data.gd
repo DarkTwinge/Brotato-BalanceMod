@@ -39,17 +39,22 @@ func add_all_dlcs()->void :
 	temp.knockback_resistance = 0.87			# 0.9
 	
 	## WAVE CHANGES ##
-	# Find all waves with Stargazers and replace them with my version
+	# Find all waves with Stargazers Pufferfish and replace them with my versions
 	for dlc in available_dlcs:
 		for zone in dlc.zones:
 			for wave in zone.waves_data:
 				for group in wave.groups_data:
 					for unit in group.wave_units_data:
+						print(unit.unit_scene.get_path())
 						if unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/stargazer/stargazer.tscn":
 							unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
+						elif unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/pufferfish/pufferfish.tscn":
+							unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/pufferfish.tscn")
 			for unit in zone.endless_enemy_scenes:
 				if unit.get_path() == "res://dlcs/dlc_1/enemies/stargazer/stargazer.tscn":
 					unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
+				elif unit.get_path() == "res://dlcs/dlc_1/enemies/pufferfish/pufferfish.tscn":
+					unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/pufferfish.tscn")
 		
 
 
@@ -151,8 +156,20 @@ func add_all_dlcs()->void :
 	temp.cooldown	= 30	# 40
 	
 	# Sickle
+	temp = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_stats.tres")
+	temp.cooldown = 19	# 20
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.1 ] ]  # 0.8, 0.1	
+	temp = load("res://dlcs/dlc_1/weapons/melee/sickle/2/sickle_2_stats.tres")
+	temp.cooldown = 15	# 17
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.14 ] ] # 0.8, 0.15	
+	temp = load("res://dlcs/dlc_1/weapons/melee/sickle/3/sickle_3_stats.tres")
+	temp.cooldown = 11	# 14
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.17 ] ] # 0.8, 0.2
 	temp = load("res://dlcs/dlc_1/weapons/melee/sickle/4/sickle_4_data.tres")
 	temp.value = 111		# 122
+	temp = load("res://dlcs/dlc_1/weapons/melee/sickle/4/sickle_4_stats.tres")
+	temp.cooldown = 7		# 10
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.2 ] ]  # 0.8, 0.25
 	
 	# Spoon
 	temp = load("res://dlcs/dlc_1/weapons/melee/spoon/4/spoon_4_data.tres")

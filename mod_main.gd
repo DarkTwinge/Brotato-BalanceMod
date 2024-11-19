@@ -962,8 +962,12 @@ func _ready()->void:
 	temp.value = 81				# 91	
 	
 	# Scissors
+	temp = load("res://weapons/melee/scissors/3/scissors_3_stats.tres")
+	temp.cooldown = 20		# 23
 	temp = load("res://weapons/melee/scissors/4/scissors_4_data.tres")
 	temp.value = 111			# 122
+	temp = load("res://weapons/melee/scissors/4/scissors_4_stats.tres")
+	temp.cooldown = 13		# 18
 	
 	# Screwdriver
 	temp = load("res://weapons/melee/screwdriver/1/screwdriver_data.tres")
@@ -1668,8 +1672,6 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/rock/1/rock_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/melee/scissors/1/scissors_data.tres")
-	temp.starting_weapons.push_back(temp_2)
-	temp_2 = load("res://weapons/melee/spiky_shield/1/spiky_shield_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
 	# Ranger
