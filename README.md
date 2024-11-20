@@ -68,6 +68,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was already quite strong priced at 35.]_
 * **Energy Bracelet:** 4% Crit Chance -> 5%
 * **Gambling Token:** 8% Dodge -> 9%
+* **Garden:** Price 50->48
 * **Incendiary Turret:** Price 40->42; 33% Engineering Scaling -> 35% _[Makes the rounding less abysmal.]_
 * **Leather Vest:** Price 45->48
 * **Little Frog:** Price 45->43; +20% Pickup Range -> +35%
@@ -93,6 +94,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Bone Dice:** Price 30->25; Chance to proc +1 Damage% 50%->60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
 * **Eyepatch:** 3% Crit Chance -> 5%
+* **Pearl:** Price 60->55; Chance for free Pearl in crate 3% -> 4%
 * **Saltwater:** 10% Extra Speed When Hit -> 20%
 
 ### Tier-3
@@ -103,8 +105,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
 * **Bowler Hat:** Price 75->70; 15 Luck -> 18
 * **Candle:** Price 65->50; Elemental Damage 4 -> 3; -5% Damage -> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
-* **Chameleon:** Price 70->55; %Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
-* **Community Support:** Price 75->72
+* **Chameleon:** Price 70->54; %Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
+* **Community Support:** Price 75->71
 * **Crown:** Price 70->68
 * **Fairy:** Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item -> 2 HP Regeneration Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regeneration Per 1 Unique Tier-4 Item -> -4% Speed Per 1 Unique Tier-4 Item
 * **Fin:** 10% Speed -> 9%; Luck -8 -> -9 
@@ -112,7 +114,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Hunting Trophy:** Price 55->60
 * **Lucky Charm:** Price 75->70
 * **Pile of Books:**: Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
-* **Plastic Explosive:** Price 60->53
+* **Plastic Explosive:** Price 60->52
 * **Poisonous Tonic:** 15 Range -> 27
 * **Power Generator:** -5% Damage -> -1 Max HP Per 5% Speed
 ~~ * **Rip and Tear:** Crit Chance 0% -> 1%; Clarified effect of having multiple copies
@@ -122,7 +124,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Strange Book:** Price 70->65
 * **Tardigrade:** Price 50->42; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
-* **Vigilante Ring:** Price 92->80
+* **Vigilante Ring:** Price 92->77
 * **Wandering Bot:** Price 60->43
 * **Wheat:** Price 85->81; Harvesting 10 -> 13
 * **Wings:** Range 30 -> 35
@@ -179,10 +181,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Trident:** Price 52/96/200 -> 51/95/168
 * **War Hammer:** Crit Damage 1.5x -> 1.75x; Price -/-/130/255 -> -/-/119/209
 
-- **Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hammer: 190 -> 168; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133 (Fist, Hand, Jousting Lance, Screwdriver, Mace, Trident, War Hammer listed above.)
+- **Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 300; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hammer: 190 -> 168; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 265; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133 (Fist, Hand, Jousting Lance, Screwdriver, Mace, Trident, War Hammer listed above.)
 
 ### Ranged
-- **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%; Price 300->280 _[For reference, Tier-1 SMG is 70% Accuracy.]_
+- **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%; Price 300->275 _[For reference, Tier-1 SMG is 70% Accuracy.]_
 - **Crossbow:** Price 16/34/62/132 -> 16/32/61/107
 - **Fireball:** Price -/36/66/140 -> -/36/68/125
 - **Icicle:** Price 18/36/66/140 -> 18/36/68/125
@@ -199,7 +201,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 80%/90%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price -/50/105/220 -> -/46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
 - **Javelin:** Price 18/36/66/140 -> 18/36/68/125
 
-* **Tier-4 Price Reductions:** Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Nuclear Launcher: 289 -> 256; Particle Accelerator: 289 -> 256; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 105 -> 95 (Crossbow, Minigun, Obliterator, Potato Thrower, Revolver, Blunderbuss, Fireball, Flute, Harpoon Gun, Icicle, Javelin listed above.)
+* **Tier-4 Price Reductions:** Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 270; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Nuclear Launcher: 289 -> 256; Particle Accelerator: 289 -> 256; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 105 -> 95 (Crossbow, Minigun, Obliterator, Potato Thrower, Revolver, Blunderbuss, Fireball, Flute, Harpoon Gun, Icicle, Javelin listed above.)
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
@@ -233,13 +235,6 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 ~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Starting HP 5 -> 8; Starting Luck 15 -> 0 _[This gives a risk/reward element to the poisoned fruit, making them a more interesting unique aspect to interact with.]_
 
 ## Enemies
-### Wave Spawns: Crazh Zone
-* **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
-* **Wave 14:** Helmet Spawns 108 -> 85 (Helmets have more HP - this is slightly more total HP); Basics spawns earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
-* **Wave 15:** Helmet Spawns 114 -> 95 (Helmets have more HP; this is moderately more total HP)
-* **Wave 16:** Helmets have more HP but just as many spawn; 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) [Aiming to make them less trivially smashed by melee quickly]; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
-* **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
-
 ### Elites
 #### Crash Zone
 * **Hivemind/Colossus:** Phase 2 Cooldown 0.9s -> 1.02s _[Gives a bit more breathing room during the rapid onslaught of Phase 2.]_
@@ -264,12 +259,22 @@ _[The base game has mostly implemented my tweaks here, but it still felt difficu
 + **Narwhal:** HP Per Wave 8.0 -> 8.75; Knockback Resistance 90% -> 87%
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
-### Starting Weapons
+### Wave Spawns: Crazh Zone
+* **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
+* **Wave 14:** Helmet Spawns 108 -> 85 (Helmets have more HP - this is slightly more total HP); Basics spawns earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
+* **Wave 15:** Helmet Spawns 114 -> 95 (Helmets have more HP; this is moderately more total HP)
+* **Wave 16:** Helmets have more HP but just as many spawn; 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) [Aiming to make them less trivially smashed by melee quickly]; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
+* **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
+### Wave Spawns: The Abyss
+* **Wave 14:** Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
+
+## Starting Weapons
 * **Crazy:** Added Crossbow
 * **Cyborg:** Removed Crossbow
 * **Demon:** Added Potato Thrower
 * **Engineer:** Removed Hammer
 * **Generalist:** Removed Lighting Shiv
+* **Gladiator:** Removed Sharp Tooth
 * **Jack:** Removed Shuriken
 * **Mage:** Added Wrench
 * **One-armed:** Added Sword, Hammer, Flaming Brass Knuckles, Fireball
@@ -296,12 +301,12 @@ You are free to use concepts and code contained within elsewhere, ideally with a
 
 # Now Included in Vanilla
 These changes were originally made for Balance Mod but are now implemented into the main game (either directly or similarly enough to obsolete my version):
-- Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand, Extra Stomach
-- Item Buffs to: Sifd's Relic, Eyes Surgery, Wisdom, Gambling Token, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
+- Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand, Extra Stomach, Lure
+- Item Buffs to: Sifd's Relic, Eyes Surgery, Spicy Sauce, Snail, Wisdom, Gambling Token, Little Frog, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
 - Item Tweaks to: Stone Skin, Tyler
 - Item Rework of: Robot Arm
 - Weapon Nerfs to: Lightning Shiv, Flamethrower, Stick
-- Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Scissors, Chopper, Medical Gun, Wand, Rock, Pistol, Hammer
+- Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Scissors, Chopper, Crossbow, Medical Gun, Wand, Rock, Pistol, Hammer
 - Character Buffs to: Artificer, Jack
 - Character Nerfs to: Knight
 - Character Tweaks to: Doctor, Mutant
@@ -315,8 +320,8 @@ These changes were originally made for Balance Mod but are now implemented into 
 - HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.
 - Fairy & King show icons for relevant items in shops; Renegade now also shows icons for crates.
 - Revolver & Chain-gun: Fixed a bug that caused them to instantly reload when used alongside effects that check if you're moving (e.g. Solider). Also bugfixed inaccurate long cooldown tooltip.
-- Garden cooldowns now show a decimal when applicable. Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy. Fixed cooldown visual for the fastest weapons.
-- Bugfixed Multi-tasker cooldown randomization so it isn't so extreme.
+- Garden cooldowns now show a decimal when applicable. Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy. Fixed cooldown visual for the fastest weapons. Bugfixed Multi-tasker cooldown randomization so it isn't so extreme.
+- Pocket Factory now counts as a Structure. Fixed Incendiary Turret tooltip's incorrect damage rounding.
 - Stats now update properly on shop reroll for Saver.
 - Fighting Stick & Plasma Sledgehammer renamed.
 
@@ -325,12 +330,15 @@ These changes were originally made for Balance Mod but are now implemented into 
 
 TO DO FOR WORKSHOP RELEASE
 - Fix or turn off explosion size tooltip for items
-- go over original change list again and see if anyhting important missing
+- go over original change list again and see if anything important missing
 	-- delete still-unused extensions/effect files
-- re-skim original list for other changes implemented into main
 - tweak down reroll change and/or extra same-weapon early change
 - Figure out if/how to work without DLC installed/active
 - Fishhook
-- Legendary weapon price drops
 - re-compile overview details
 - make new workshop-page images
+- Horde Wave materials?
+- Flaming Brass Knuckles nerf?  (match atk spd with Fist anyway or?)
+- Nuke Launcher small nerf
+- Figure out Explosion crit situation (Rip & Tear, Spicy Sauce, and Glutton)
+- Crossbow -- with Range being ~17% more available, is it too strong?

@@ -359,7 +359,7 @@ func _ready()->void:
 	
 	# Garden
 	temp = load("res://items/all/garden/garden_data.tres")
-	temp.tags.push_back("garden")
+	temp.value = 48  # 50
 	temp = load("res://items/all/garden/garden_effect_1.tres")
 	temp.text_key = "new_effect_garden"
 
@@ -486,12 +486,12 @@ func _ready()->void:
 	temp.value = -4  # -5 (Damage -> Attack Speed)
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
-	temp.value = 55  # 70
+	temp.value = 54  # 70
 	temp = load("res://items/all/chameleon/chameleon_effect_2.tres")
 	temp.value = -2  # -4 (%Damage)
 
 	temp = load("res://items/all/community_support/community_support_data.tres")
-	temp.value = 72  # 75
+	temp.value = 71  # 75
 	
 	temp = load("res://items/all/crown/crown_data.tres")
 	temp.value = 68  # 70
@@ -533,7 +533,7 @@ func _ready()->void:
 	temp.value = 5	 # 3 (Crit Chance)
 	
 	temp = load("res://items/all/plastic_explosive/plastic_explosive_data.tres")
-	temp.value = 53  # 60
+	temp.value = 52  # 60
 	
 	temp = load("res://items/all/poisonous_tonic/poisonous_tonic_effect_3.tres")
 	temp.value = 27  # 15 (Range)
@@ -583,7 +583,7 @@ func _ready()->void:
 	temp.text_key = "new_effect_on_hit"
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
-	temp.value = 80  # 92
+	temp.value = 77  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
 	temp.value = 43  # 60
@@ -811,7 +811,19 @@ func _ready()->void:
 	
 	# Claw
 	temp = load("res://weapons/melee/claw/4/claw_4_data.tres")
-	temp.value = 100		 # 110	
+	temp.value = 100		 # 110
+	
+	# DEX-troyer
+	temp = load("res://weapons/melee/dextroyer/4/dextroyer_4_data.tres")
+	temp.value = 300		 # 315
+
+	# Drill
+	temp = load("res://weapons/melee/drill/4/drill_4_data.tres")
+	temp.value = 240		 # 250
+	
+	# Excalibur
+	temp = load("res://weapons/melee/excalibur/4/excalibur_4_data.tres")
+	temp.value = 215		 # 230	
 	
 	# Flaming Brass Knuckles
 	temp = load("res://weapons/melee/flaming_knuckles/4/flaming_knuckles_4_data.tres")
@@ -1000,6 +1012,8 @@ func _ready()->void:
 	temp.spawn_cooldown = 4 # 3 (Landmine spawn rate)
 	
 	# Scythe
+	temp = load("res://weapons/melee/scythe/4/scythe_4_data.tres")
+	temp.value = 265				# 285
 	temp = load("res://weapons/melee/scythe/4/scythe_effect_2.tres")
 	temp.text_key = "new_effect_on_hit"
 	
@@ -1059,7 +1073,7 @@ func _ready()->void:
 	## WEAPONS - RANGED ##
 	# Chain-gun
 	temp = load("res://weapons/ranged/chain_gun/4/chain_gun_4_data.tres")
-	temp.value = 280  		 # 300
+	temp.value = 275  		 # 300
 	temp = load("res://weapons/ranged/chain_gun/4/chain_gun_4_stats.tres")
 	temp.accuracy = 0.65	 # 0.8
 	temp.additional_cooldown_multiplier = 104.0 # 60.0
@@ -1094,6 +1108,10 @@ func _ready()->void:
 	# Flamethrower
 	temp = load("res://weapons/ranged/flamethrower/4/flamethrower_4_data.tres")
 	temp.value = 185				#	207
+	
+	# Gatling Laser
+	temp = load("res://weapons/ranged/gatling_laser/4/gatling_laser_4_data.tres")
+	temp.value = 270				#	290
 	
 	# Ghost Scepter
 	temp = load("res://weapons/ranged/ghost_scepter/4/ghost_scepter_4_data.tres")
@@ -1636,6 +1654,12 @@ func _ready()->void:
 	# Remove
 	temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
 	temp.starting_weapons.erase(temp_2)
+	
+	# Gladiator
+	temp = load("res://items/characters/gladiator/gladiator_data.tres")
+	# Remove
+	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
+	temp.starting_weapons.erase(temp_2)	
 	
 	# Jack
 	temp = load("res://items/characters/jack/jack_data.tres")

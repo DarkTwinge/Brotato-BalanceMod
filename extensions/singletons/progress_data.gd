@@ -39,7 +39,7 @@ func add_all_dlcs()->void :
 	temp.knockback_resistance = 0.87			# 0.9
 	
 	## WAVE CHANGES ##
-	# Find all waves with Stargazers Pufferfish and replace them with my versions
+	# Find all waves with Stargazers & Pufferfish and replace them with my versions
 	for dlc in available_dlcs:
 		for zone in dlc.zones:
 			for wave in zone.waves_data:
@@ -55,7 +55,10 @@ func add_all_dlcs()->void :
 					unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
 				elif unit.get_path() == "res://dlcs/dlc_1/enemies/pufferfish/pufferfish.tscn":
 					unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/pufferfish.tscn")
-		
+	
+	# Wave 13 - Spawn single Egglord sooner
+	temp = load("res://dlcs/dlc_1/zones/abyss/013/d5_group_1.tres")
+	temp.spawn_timing = 34			# 40
 
 
 	### ITEMS ###
@@ -78,6 +81,11 @@ func add_all_dlcs()->void :
 
 	temp = load("res://dlcs/dlc_1/items/eyepatch/effects/eyepatch_effect_1.tres")
 	temp.value = 5		# 3 (Crit Chance)
+
+	temp = load("res://dlcs/dlc_1/items/pearl/pearl_data.tres")
+	temp.value = 55   # 60
+	temp = load("res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres")
+	temp.value = 4		# 3 (Chance to find an extra Pearl)
 
 	temp = load("res://dlcs/dlc_1/items/saltwater/effects/saltwater_effect_1.tres")
 	temp.value = 20		# 10 (Extra Speed when hit)
@@ -247,17 +255,17 @@ func add_all_dlcs()->void :
 	### CHARACTERS ###
 	# Druid
 	temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")
-	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0.tres")
-	temp_2.value = 8				# 5 (Starting HP)
-	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0b.tres")
-	temp.effects.erase(temp_2) # Remove starting 15 Luck
+##	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0.tres")
+##	temp_2.value = 8				# 5 (Starting HP)
+##	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0b.tres")
+##	temp.effects.erase(temp_2) # Remove starting 15 Luck
 	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_1.tres")
 	temp_2.value = 2
 	temp_2.value2 = 100
 	temp_2.custom_key = "bm_stats_on_poison_fruit"
 	temp_2.text_key = "BM_EFFECT_STAT_ON_POISON_FRUIT"
 	temp.effects.erase(temp_2)
-	temp.effects.insert(3, temp_2) # Reposition so it appears after you see what poison fruit are
+	temp.effects.insert(4, temp_2) # Reposition so it appears after you see what poison fruit are
 	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_3.tres")
 	temp_2.text_key = "NEW_EFFECT_POISONED_FRUIT"
 	
