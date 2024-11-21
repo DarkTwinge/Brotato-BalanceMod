@@ -10,6 +10,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 # Full Changelog
 ## General Changes
+* Reroll costs are increased by about 30%. This leaves rerolls cheaper than they were in v1.0 (when they were ~85% more expensive than present), but makes it so you can't as readily just reroll for what you want.
 * Armor is about 7% less effective (Each point is +6.25% Effective HP instead of +6.67%). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
 * Having multiple different weapon types will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different weapon types.
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (previously it just reverted to a random weapon). This makes it a little easier to match-up a starting tier-2+ only weapon (e.g. Potato Thrower or Sword) with something relevant.
@@ -163,6 +164,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Melee
 * **Chopper:** Base Damage 6/12/18/30 -> 7/12/17/27 _[The new vanilla Chopper *heavily* focuses its power on the Tier-4 version; this smooths out the curve a smidge.]_
 * **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
+* **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Ghost Flint:** Tier-1 Damage 6->7; Tier-1 Cooldown 1.23 -> 1.24 _[Helps tier-1 not be so hopelessly behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
 * **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
 * **Hatchet:** Range 125->135
@@ -189,6 +191,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Fireball:** Price -/36/66/140 -> -/36/68/125
 - **Icicle:** Price 18/36/66/140 -> 18/36/68/125
 - **Minigun:** Price -/-/127/255 -> -/-/122/218
+- **Nuclear Launcher:** Cooldown 2.12 -> 2.20; Base Damage 60/120 -> 50/100; Range 800 -> 650; Ranged Scaling 100%/100% -> 125%/125%; Elemental Scaling 100%/100% -> 150%/150% _[Similar strength in Elemental builds, a touch weaker otherwise.]_
 - **Obliterator:** Projectile Hitbox Width +25%; Price -/-/127/255 -> -/-/122/218
 - **Potato Thrower:** Added to the Blunt Weapon Set; Base Damage 1(All) -> 2/3/4; Price -/36/69/139 -> -/33/64/114 _[Blunt Set allows it to find some synergy options when picked as a starting weapon.]_
 - **Revolver:** Range 450 -> 425; Price 20/34/70/130 -> 18/36/68/125
@@ -256,7 +259,7 @@ _[The base game has mostly implemented my tweaks here, but it still felt difficu
 #### DLC
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
 + **Stargazer:** Boosted HP When You Destroy Their Incubator 150% -> 200%; Boosted Speed 250% -> 280% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
-+ **Narwhal:** HP Per Wave 8.0 -> 8.75; Knockback Resistance 90% -> 87%
++ **Narwhal:** Knockback Resistance 90% -> 87%
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
 ### Wave Spawns: Crazh Zone
@@ -332,13 +335,10 @@ TO DO FOR WORKSHOP RELEASE
 - Fix or turn off explosion size tooltip for items
 - go over original change list again and see if anything important missing
 	-- delete still-unused extensions/effect files
-- tweak down reroll change and/or extra same-weapon early change
 - Figure out if/how to work without DLC installed/active
-- Fishhook
 - re-compile overview details
 - make new workshop-page images
 - Horde Wave materials?
-- Flaming Brass Knuckles nerf?  (match atk spd with Fist anyway or?)
 - Nuke Launcher small nerf
 - Figure out Explosion crit situation (Rip & Tear, Spicy Sauce, and Glutton)
 - Crossbow -- with Range being ~17% more available, is it too strong?

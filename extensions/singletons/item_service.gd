@@ -216,3 +216,16 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 		elt.effects[0].stats_swapped = []
 		
 	return apply_item_effect_modifications(elt, player_index)
+
+
+# Partially reverts reroll price change
+func get_reroll_price(wave:int, reroll_count:int, player_index:int)->Array:
+	# Original 0.5; Live 0.33
+	var delta: = int(max(1.0, (0.4 * wave * pow(1.0 + RunData.get_endless_factor(wave), 0.5))))
+	# Original 'wave'; Live 'wave / 2'
+	var normal_price: = wave / 1.5 + delta + delta * reroll_count
+	var reroll_price_amount:int = RunData.get_player_effect("reroll_price", player_index)
+	var reroll_price_factor:float = max(0.1, 1.0 + reroll_price_amount / 100.0)
+	var discounted_price: = ceil(normal_price * reroll_price_factor) as int
+	
+	return [discounted_price, normal_price - discounted_price]

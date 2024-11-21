@@ -35,7 +35,6 @@ func add_all_dlcs()->void :
 	temp.knockback_resistance = 0.87			# 0.9
 	
 	temp = load("res://dlcs/dlc_1/enemies/narwhal/narwhal_stats.tres")
-	temp.health_increase_each_wave = 8.75	# 8.0
 	temp.knockback_resistance = 0.87			# 0.9
 	
 	## WAVE CHANGES ##

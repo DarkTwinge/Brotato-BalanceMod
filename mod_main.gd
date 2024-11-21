@@ -21,6 +21,7 @@ func _init(modLoader = ModLoader):
 	#y TODO? Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
 	# Adjusts shop weapon pick odds based on number of weapon types held
 	# Turns exact-weapon picks into weapon-set picks if it can't find an exact-pick
+	# Increases reroll prices
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
 	# Gives One-armed a 4-set Bonus for their weapon
@@ -826,8 +827,14 @@ func _ready()->void:
 	temp.value = 215		 # 230	
 	
 	# Flaming Brass Knuckles
+	temp = load("res://weapons/melee/flaming_knuckles/2/flaming_knuckles_2_stats.tres")
+	temp.cooldown = 11   # 10
+	temp = load("res://weapons/melee/flaming_knuckles/3/flaming_knuckles_3_stats.tres")
+	temp.cooldown = 9    # 8
 	temp = load("res://weapons/melee/flaming_knuckles/4/flaming_knuckles_4_data.tres")
 	temp.value = 151		 # 173
+	temp = load("res://weapons/melee/flaming_knuckles/4/flaming_knuckles_4_stats.tres")
+	temp.cooldown = 3    # 2
 	
 	# Fist
 	temp = load("res://weapons/melee/fist/1/fist_data.tres")
@@ -1146,11 +1153,21 @@ func _ready()->void:
 	temp.value = 218				# 255
 	
 	# Nuclear Launcher
+	temp = load("res://weapons/ranged/nuclear_launcher/3/nuclear_launcher_3_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 1.25 ], [ "stat_elemental_damage", 1.5 ] ] # 1.0/1.0
+	temp.cooldown = 115  # 110
+	temp.damage = 50		 # 60
+	temp.max_range = 650 # 800
 	temp = load("res://weapons/ranged/nuclear_launcher/3/nuclear_launcher_3_effect.tres")
 	temp.key = "new_effect_explode"
 	temp.effect_sign = 0
 	temp = load("res://weapons/ranged/nuclear_launcher/4/nuclear_launcher_4_data.tres")
 	temp.value = 256				# 289
+	temp = load("res://weapons/ranged/nuclear_launcher/4/nuclear_launcher_4_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 1.25 ], [ "stat_elemental_damage", 1.5 ] ] # 1.0/1.0
+	temp.cooldown = 115  # 110
+	temp.damage = 100    # 120
+	temp.max_range = 650 # 800	
 	temp = load("res://weapons/ranged/nuclear_launcher/4/nuclear_launcher_4_effect.tres")
 	temp.key = "new_effect_explode"
 	temp.effect_sign = 0
