@@ -10,26 +10,17 @@ func _init(modLoader = ModLoader):
 	# Adds version number to title screen
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/pages/main_menu.gd")
 	
-	# Adds another arg to explosions so they can also show the size
-	# -->TODO Items side still needs more finishing right? It's wrong for e.g. Sauce?
-	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
-###	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
-
-
-	
 	#y Increases Luck's effect on higher-tier equipment/level-ups
 	#y TODO? Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
 	# Adjusts shop weapon pick odds based on number of weapon types held
 	# Turns exact-weapon picks into weapon-set picks if it can't find an exact-pick
-	# Increases reroll prices
+	#xx Increases reroll prices (Implemented into vanilla in 1.1.7)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
 	# Gives One-armed a 4-set Bonus for their weapon
 	# Slightly reduce the strength of armor
-	#x? Makes Glutton, Spicy Sauce, and Rip and Tear all use the crit stat
+	# Makes Glutton, Spicy Sauce, and Rip and Tear all use the crit stat
 	# Gives Gun Mage an extra Sausage
-	#y (Adds new effects to RunData)
-	#y (Adds new init effects)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/run_data.gd")
 
 	# Now applies Crazy's +Range to Crossbow/Sniper
@@ -51,14 +42,21 @@ func _init(modLoader = ModLoader):
 	#y New Couch Negative Speed Effect
 ##	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/linked_stats.gd")
 	
-	#x This part removed as it seemed naturally fixed now? [Make tooltip for Speed Generator work properly]
 	#y Add new Padding effect
 ##	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/gain_stat_for_every_stat_effect.gd")
 
 	# Adds a new enemy-group to Horde waves to spawn Magicians for Wave 14/15
 ### TODO Check if this affects Abyss
 ###	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "zones/wave_manager.gd")
+	
+	# Reduced Horde Wave profits
+	#y Save mats for new Padding effect
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "main.gd")
 
+	# Adds another arg to explosions so they can also show the size
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
+	
 	# Load up new and fixed descriptions
 	ModLoaderMod.add_translation("res://mods-unpacked/DarkTwinge-BalanceMod/translations/BalanceMod.en.translation")
 	
@@ -1162,7 +1160,7 @@ func _ready()->void:
 	temp.key = "new_effect_explode"
 	temp.effect_sign = 0
 	temp = load("res://weapons/ranged/nuclear_launcher/4/nuclear_launcher_4_data.tres")
-	temp.value = 256				# 289
+	temp.value = 256		 # 289
 	temp = load("res://weapons/ranged/nuclear_launcher/4/nuclear_launcher_4_stats.tres")
 	temp.scaling_stats = [ [ "stat_ranged_damage", 1.25 ], [ "stat_elemental_damage", 1.5 ] ] # 1.0/1.0
 	temp.cooldown = 115  # 110

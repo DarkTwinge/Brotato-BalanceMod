@@ -10,13 +10,13 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 # Full Changelog
 ## General Changes
-* Reroll costs are increased by about 30%. This leaves rerolls cheaper than they were in v1.0 (when they were ~85% more expensive than present), but makes it so you can't as readily just reroll for what you want.
 * Armor is about 7% less effective (Each point is +6.25% Effective HP instead of +6.67%). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
 * Having multiple different weapon types will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different weapon types.
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (previously it just reverted to a random weapon). This makes it a little easier to match-up a starting tier-2+ only weapon (e.g. Potato Thrower or Sword) with something relevant.
 * Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up to be more consistent and have a slightly more logical progression.
 * The reroll button for level-ups is now appropriately colored for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
-* {Explosion tooltips; Items broken}
+* Horde Wave Materials: 65% -> 60% _[This still leaves them as generally more profitable and easier than Elite waves, but now more closely aligned.]_
+* All explosions can now crit (Rip & Tear, Spicy Sauce, and Glutton affected). All explosion tooltips now also list their explosion size (weapons, items, and characters).
 
 ## Level-ups
 * **Range:** 15/30/45/60 -> 20/35/50/70
@@ -87,7 +87,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ritual:** Price 60->57
 * **Scope:** 25 Range -> 40
 * **Shady Potion:** 20 Luck -> 19
-~~ * **Spicy Sauce:** Price 40->41; 33% Proc Chance -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies _[The small bump to 35% removes the 1% chance it fails when you have all 3.]_
+* **Spicy Sauce:** Price 40->41; 33% Proc Chance -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies _[The small bump to 35% removes the 1% chance it fails when you have all 3.]_
 * **Wheelbarrow:** Price 40->37
 * **Whetstone:** Price 40->42
 * **White Flag:** 5 Harvesting -> 6
@@ -118,7 +118,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Plastic Explosive:** Price 60->52
 * **Poisonous Tonic:** 15 Range -> 27
 * **Power Generator:** -5% Damage -> -1 Max HP Per 5% Speed
-~~ * **Rip and Tear:** Crit Chance 0% -> 1%; Clarified effect of having multiple copies
+* **Rip and Tear:** Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies
 * **Shackles:** Price 80->86; Range 80 -> 88
 * **Shmoop:** Price 60->65; 2 HP Regen -> 3
 * **Statue:** Price 60->55
@@ -133,6 +133,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 * **Goldfish:** Price 23->17 _[I'd prefer a more interesting buff than this if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Explosion Size 5% -> 10%; -3% Dodge -> No penalty
+* **Sunken Bell:** Price 65->60; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Diploma:** Price 90->85
@@ -219,6 +220,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Explorer:** Starting Trees: 12 -> 11
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
 * **Gladiator:** -30 Luck -> -40
+* **Glutton:** Explosion crit chance now properly affected by your Crit Chance stat (base chance is still 3% and damage is still 1.5x)
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
 * **Loud:** -3 Harvesting per Wave -> -5
@@ -235,7 +237,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wildling:** No longer starts with a Stick.
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
-~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Starting HP 5 -> 8; Starting Luck 15 -> 0 _[This gives a risk/reward element to the poisoned fruit, making them a more interesting unique aspect to interact with.]_
+~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, making them a more interesting unique aspect to interact with.]_
 
 ## Enemies
 ### Elites
@@ -329,16 +331,11 @@ These changes were originally made for Balance Mod but are now implemented into 
 - Fighting Stick & Plasma Sledgehammer renamed.
 
 
-* **Rip and Tear:** Price: 65->59; Harvesting -12 -> -11; Can now crit for 1.5x damage (base Crit Chance 1%); [Does it crit in vanilla now?]
 
 TO DO FOR WORKSHOP RELEASE
-- Fix or turn off explosion size tooltip for items
 - go over original change list again and see if anything important missing
 	-- delete still-unused extensions/effect files
 - Figure out if/how to work without DLC installed/active
 - re-compile overview details
 - make new workshop-page images
-- Horde Wave materials?
-- Nuke Launcher small nerf
-- Figure out Explosion crit situation (Rip & Tear, Spicy Sauce, and Glutton)
 - Crossbow -- with Range being ~17% more available, is it too strong?

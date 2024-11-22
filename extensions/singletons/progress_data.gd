@@ -15,10 +15,12 @@ func add_all_dlcs()->void :
 	Text.keys_needing_operator.bm_effect_stat_on_poison_fruit = [0]
 	Text.keys_needing_percent.bm_effect_stat_on_poison_fruit = [2]
 	Text.keys_needing_percent.new_effect_poisoned_fruit = [0]
+	Text.keys_needing_percent.new_effect_explode_when_below_hp = [5]
 	
 
 	### ENEMIES ###
 	# Turtle buff
+	# Spider Crab buff
 	var elite_scenes = {
 		"elite_turtle":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/turtle.tscn",
 		"elite_spider_crab":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/spider_crab.tscn"
@@ -92,8 +94,14 @@ func add_all_dlcs()->void :
 
 	# Items: Tier-3 #
 	temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
-	temp.value = 17   # 23	
-
+	temp.value = 17   # 23
+	
+	temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
+	temp.value = 60		# 65
+	temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
+	temp.scale = 7.5	# 6.0
+	temp.text_key = "new_effect_explode_when_below_hp"
+	
 
 	# Items: Tier-4 #
 	temp = load("res://dlcs/dlc_1/items/krakens_eye/krakens_eye_data.tres")

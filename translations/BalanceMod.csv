@@ -23,16 +23,17 @@ BM_LEFTOVER_MATERIALS,materials left uncollected from the previous wave
 BM_EFFECT_FOR_NEGATIVE_SPEED,"If your Speed is negative, gain {0} {1}"
 NEW_SHORT_EFFECT_PIERCING,Projectiles pierce\n{0} additional target
 BM_EFFECT_FAIRY_COUNTER,(Items until increase: {0})
-BM_EFFECT_RIPSAUCE_CLARIFY,(Additional copies increase both the damage and activation chance.)
+BM_EFFECT_RIPSAUCE_CLARIFY,(Additional copies increase both damage and activation chance.)
 NEW_EFFECT_ITEM_BOX_GOLD,{0} materials when you pick up a crate (including at the end of a wave)
 NEW_EFFECT_EXPLODE_MELEE,{0} chance to explode on hit (Size: {1})
 NEW_EFFECT_EXPLODE,Projectiles explode on hit (Size: {1})
 NEW_EFFECT_EXPLODE_CUSTOM,Projectiles have {0} chance to explode on hit (Size: {1})
 NEW_EFFECT_EXPLODE_ON_CONSUMABLE,Consumables have a {0} chance to explode for {1} ({2}) damage when picked up (Size: {4})
 NEW_EFFECT_EXPLODE_ON_HIT,You explode for {1} ({2}) damage when you take damage (Size: {4})
-NEW_EFFECT_EXPLODE_ON_DEATH,Enemies have a {0} chance to explode for {1} ({2}) damage when they die (Size: {5})
+NEW_EFFECT_EXPLODE_ON_DEATH,Enemies have a {0} chance to explode for {1} ({2}) damage when they die (Size: {4})
 BM_EFFECT_LANDMINE_SIZE,(Explosion Size: [color=#00ff00]175[/color])
 BM_EFFECT_EXPLOSIVE_TURRET_SIZE,(Explosion Size: [color=#00ff00]100[/color])
 NEW_EFFECT_ON_HIT,{0} {1} each time you take damage until the end of the wave
 BM_EFFECT_STAT_ON_POISON_FRUIT,{0} {1} when you pick up a [color=#bb576b]poisoned[/color] fruit
 NEW_EFFECT_POISONED_FRUIT,{0} of fruits are poisoned and hurt you (ignores defenses)
+NEW_EFFECT_EXPLODE_WHEN_BELOW_HP,"Once per wave, you explode for {1} ({2}) damage when you fall below {5} health (Size: {4})"

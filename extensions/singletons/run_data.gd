@@ -73,6 +73,53 @@ func get_armor_coef(armor:int)->float:
 	return percent_dmg_taken
 
 
+# Makes Glutton, Spicy Sauce, and Rip and Tear all use the crit stat
+func handle_explode_effect(key:String, position:Vector2, player_index:int)->void :
+	var effects: = get_player_effects(player_index)
+
+	var explosion_chance: = 0.0
+	for explosion in effects[key]:
+		explosion_chance += explosion.chance
+	if not Utils.get_chance_success(explosion_chance):
+		return 
+
+	var dmg = 0
+	###
+	var crit_chance = 0
+	##
+	var exploding_effect = ExplodingEffect.new()
+	for explosion in effects[key]:
+		var args: = WeaponServiceInitStatsArgs.new()
+		args.effects = [exploding_effect]
+		var explosion_stats = WeaponService.init_base_stats(explosion.stats, player_index, args)
+		dmg += explosion_stats.damage
+		### Take the highest calculated crit chance from all the separate explosion sources
+		crit_chance = max(crit_chance, explosion_stats.crit_chance)
+		##
+
+	var first_effect = effects[key][0]
+	var first_stats = first_effect.stats
+
+	if first_effect is ItemExplodingAndBurnEffect:
+		first_stats.burning_data = first_effect.burning_data
+
+	
+	position = Utils.get_random_offset_position(position, 10)
+
+	var args: = WeaponServiceExplodeArgs.new()
+	args.pos = position
+	args.damage = dmg
+	args.accuracy = first_stats.accuracy
+	### Use the newly calculated crit chance
+	args.crit_chance = crit_chance
+	#args.crit_chance = first_stats.crit_chance
+	##
+	args.crit_damage = first_stats.crit_damage
+	args.burning_data = first_stats.burning_data
+	args.damage_tracking_key = first_effect.tracking_key
+	args.from_player_index = player_index
+	var _inst = WeaponService.explode(first_effect, args)
+
 
 # Gives an extra starting Sausage for Gun Mage
 func add_starting_items_and_weapons()->void :
