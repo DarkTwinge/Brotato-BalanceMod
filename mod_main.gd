@@ -14,6 +14,7 @@ func _init(modLoader = ModLoader):
 	#y TODO? Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
 	# Adjusts shop weapon pick odds based on number of weapon types held
 	# Turns exact-weapon picks into weapon-set picks if it can't find an exact-pick
+	# Changes stat tooltip text to be more accurate (+extra decimal place for Armor)
 	#xx Increases reroll prices (Implemented into vanilla in 1.1.7)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
@@ -67,8 +68,6 @@ func _init(modLoader = ModLoader):
 func _ready()->void:
 	var temp
 	var temp_2
-	var temp_find
-
 
 	## TEXT KEYS ##
 	# Changed effects/text
@@ -78,24 +77,35 @@ func _ready()->void:
 	Text.keys_needing_operator.new_effect_item_box_gold = [0]
 	Text.keys_needing_operator.new_effect_on_hit = [0]
 	Text.keys_needing_percent.new_effect_damage_against_bosses = [0]
-	###Text.keys_needing_percent.new_effect_burning_cooldown_reduction = [0]
 	Text.keys_needing_percent.new_effect_burn_chance = [0]
 	Text.keys_needing_percent.effect_bounce_damage = [0]
 	Text.keys_needing_percent.new_effect_explode_melee = [0]
 	Text.keys_needing_percent.new_effect_explode_custom = [0]
 	Text.keys_needing_percent.new_effect_explode_on_consumable = [0]
 	Text.keys_needing_percent.new_effect_explode_on_death = [0]
+	Text.keys_needing_percent.new_effect_recycling_gains = [0]
+	Text.keys_needing_percent.new_info_pos_stat_lifesteal = [0] 
+	Text.keys_needing_percent.new_info_neg_stat_lifesteal = [0] 
+	Text.keys_needing_percent.new_info_pos_stat_percent_damage = [0] 
+	Text.keys_needing_percent.new_info_neg_stat_percent_damage = [0] 
+	Text.keys_needing_percent.new_info_pos_stat_attack_speed = [0] 
+	Text.keys_needing_percent.new_info_neg_stat_attack_speed = [0]
+	Text.keys_needing_percent.new_info_pos_stat_luck = [0] 
+	Text.keys_needing_percent.new_info_neg_stat_luck = [0] 
+	Text.keys_needing_percent.new_info_pos_stat_armor = [0] 
+	Text.keys_needing_percent.new_info_neg_stat_armor = [0] 
 	
 	# New effects
-	###Text.keys_needing_percent.bm_enemy_charge_speed = [0]
 	Text.keys_needing_percent.bm_non_elemental_reduce_stat_gains = [1]
-	###Text.keys_needing_operator.bm_effect_for_negative_speed = [0]
 	Text.keys_needing_operator.bm_effect_unique_tier_iv_weapon_bonus = [0, 2]
 	# This group for making descriptions shorter
 	Text.keys_needing_percent.new_effect_increase_stat_gains = [1]
 	Text.keys_needing_percent.new_effect_reduce_stat_gains = [1]
 	Text.keys_needing_operator.new_effect_gain_stat_for_every_tree = [0, 4]
 	Text.keys_needing_percent.new_effect_convert_stat_temp_half_wave = [0]
+	Text.keys_needing_operator.new_next_level_xp_needed = [0]
+	Text.keys_needing_percent.new_next_level_xp_needed = [0]
+	Text.keys_needing_operator.new_effect_consumable_stat_while_max = [0]
 	
 	
 	## ENEMIES ##
@@ -142,7 +152,7 @@ func _ready()->void:
 	temp.knockback_resistance = 0.93		 # 0.95
 	
 	
-	### WAVE SPAWNS ###
+	### WAVE SPAWNS - CRASH ZONE ###
 	# Wave 12
 	temp = load("res://zones/zone_1/012/d1_group_1.tres") # Healers
 	temp_2 = load("res://zones/zone_1/012/unit_2.tres")
@@ -293,7 +303,7 @@ func _ready()->void:
 	temp.value = 9  # 8 (Luck)
 	
 	temp = load("res://items/all/lumberjack_shirt/lumberjack_shirt_data.tres")
-	temp.value = 13  # 15
+	temp.value = 12  # 15
 
 	temp = load("res://items/all/mutation/mutation_data.tres")
 	temp.value = 20  # 25
@@ -375,9 +385,9 @@ func _ready()->void:
 	temp.value = 48  # 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
-	temp.value = 43  # 45
+	temp.value = 41  # 45
 	temp = load("res://items/all/little_frog/little_frog_effect_1.tres")
-	temp.value = 35  # 20 (Pickup Range)
+	temp.value = 30  # 20 (Pickup Range)
 	
 	temp = load("res://items/all/little_muscley_dude/little_muscley_dude_effect_3.tres")
 	temp.value = -18  # -15 (Range)
@@ -414,6 +424,8 @@ func _ready()->void:
 	temp = load("res://items/all/recycling_machine/recycling_machine_data.tres")
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/recycling_machine_attack_speed_malus.tres")
 	temp.effects.push_back(temp_2) # -2 Attack Speed
+	temp = load("res://items/all/recycling_machine/recycling_machine_effect_1.tres")
+	temp.text_key = "new_effect_recycling_gains"
 	
 	temp = load("res://items/all/reinforced_steel/effects/reinforced_steel_effect_1.tres")
 	temp.value = 4	 # 3 (Engineering)
@@ -431,7 +443,6 @@ func _ready()->void:
 	temp.value = 19  # 20 (Luck)
 
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_data.tres")
-	temp.value = 41  # 40
 	temp.max_nb = 3  # 4 (Limit)
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/rip_sauce_clarify_effect.tres")
 	temp.effects.append(temp_2)	
@@ -565,7 +576,7 @@ func _ready()->void:
 	temp.value = 55  # 60
 
 	temp = load("res://items/all/strange_book/strange_book_data.tres")
-	temp.value = 65  # 70
+	temp.value = 62  # 70
 	
 	temp = load("res://items/all/tardigrade/tardigrade_data.tres")
 	temp.value = 42  # 50
@@ -610,7 +621,7 @@ func _ready()->void:
 	temp = load("res://items/all/explosive_shells/explosive_shells_effect_1b.tres")
 	temp.value = 20   # 15 (Explosion Size)	
 	temp = load("res://items/all/explosive_shells/explosive_shells_effect_2.tres")
-	temp.value = -7   # -15 (Damage%)
+	temp.value = -5   # -15 (Damage%)
 	
 	# Explosive Turret
 	temp = load("res://items/all/turret_rocket/turret_rocket_data.tres")
@@ -1029,18 +1040,18 @@ func _ready()->void:
 	# Spear
 	temp = load("res://weapons/melee/spear/1/spear_stats.tres")
 	temp.max_range = 325 # 350
-	temp.cooldown = 49   # 45
+	temp.cooldown = 50   # 45
 	temp = load("res://weapons/melee/spear/2/spear_2_stats.tres")
 	temp.max_range = 350 # 375
-	temp.cooldown = 39   # 36
+	temp.cooldown = 40   # 36
 	temp = load("res://weapons/melee/spear/3/spear_3_stats.tres")
 	temp.max_range = 375 # 400
-	temp.cooldown = 31   # 27
+	temp.cooldown = 32   # 27
 	temp = load("res://weapons/melee/spear/4/spear_4_data.tres")
 	temp.value = 133		 # 149
 	temp = load("res://weapons/melee/spear/4/spear_4_stats.tres")
 	temp.max_range = 450 # 500
-	temp.cooldown = 22   # 18
+	temp.cooldown = 23   # 18
 	
 	# Spiky Shield
 	temp = load("res://weapons/melee/spiky_shield/4/spiky_shield_4_data.tres")
@@ -1583,7 +1594,9 @@ func _ready()->void:
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
 	temp = load("res://items/characters/cyborg/cyborg_effect_4.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
-	
+
+	temp = load("res://items/characters/doctor/doctor_effect_4b.tres")
+	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"	
 	temp = load("res://items/characters/doctor/doctor_effect_6.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
 	
@@ -1596,6 +1609,16 @@ func _ready()->void:
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
 	temp = load("res://items/characters/entrepreneur/entrepreneur_effect_4.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"	
+	
+	temp = load("res://items/characters/fisherman/fisherman_data.tres")
+	temp_2 = load("res://items/characters/fisherman/fisherman_effect_4a.tres")
+	temp.effects.erase(temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/fisherman_effect_4a-newtext.tres")
+	temp.effects.insert(5,temp_2)
+	
+# TODO Not working, make like Fisher above and use a new effect; Also do for Vaga below
+	##temp = load("res://items/characters/glutton/glutton_effect_1.tres")
+	##temp.key = "NEW_EFFECT_CONSUMABLE_STAT_WHILE_MAX"
 	
 	temp = load("res://items/characters/golem/golem_effect_2.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
@@ -1639,7 +1662,28 @@ func _ready()->void:
 	
 	temp = load("res://items/characters/renegade/renegade_effect_5.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
-			
+	
+	
+	temp = load("res://items/characters/baby/effects/baby_effect_4.tres")
+	temp.key = "NEW_NEXT_LEVEL_XP_NEEDED"
+
+	temp = load("res://items/characters/technomage/effects/technomage_effect_2.tres")
+	temp.key = "NEW_NEXT_LEVEL_XP_NEEDED"
+	temp = load("res://items/characters/technomage/effects/technomage_effect_3.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+	temp = load("res://items/characters/technomage/effects/technomage_effect_4.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+	
+	temp = load("res://items/characters/vagabond/effects/vagabond_effect_0b.tres")
+	temp.key = "NEW_EFFECT_NO_DUPLICATE_WEAPONS"	
+	temp = load("res://items/characters/vagabond/effects/vagabond_effect_1b.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+	temp = load("res://items/characters/vagabond/effects/vagabond_effect_2.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+
+	temp = load("res://items/characters/vampire/effects/vampire_effect_2.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+
 	
 	## STARTING WEAPONS ##
 	# Crazy

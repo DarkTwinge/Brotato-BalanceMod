@@ -17,6 +17,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * The reroll button for level-ups is now appropriately colored for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
 * Horde Wave Materials: 65% -> 60% _[This still leaves them as generally more profitable and easier than Elite waves, but now more closely aligned.]_
 * All explosions can now crit (Rip & Tear, Spicy Sauce, and Glutton affected). All explosion tooltips now also list their explosion size (weapons, items, and characters).
+* Several tooltips cleaned up to be more clear, hidden mechanics are detailed, & character descriptions take up less room.
 
 ## Level-ups
 * **Range:** 15/30/45/60 -> 20/35/50/70
@@ -47,7 +48,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Landmines:** Price 15->13
 * **Lens:** -5 Range -> -10
 * **Lost Duck:** Luck 8->9
-* **Lumberjack Shirt:** Price 15->13
+* **Lumberjack Shirt:** Price 15->12
 * **Mutation:** Price 25->20; -3 Knockback -> -2 _[You rarely want both Elemental and Ranged together, and this is nicely cheap when you do; otherwise still kind of expensive-but-occasionally-worth when you just want one.]_
 * **Propeller Hat:** Price 28->25
 * **Scar:** Price 25->24; Range -8 -> -11
@@ -72,7 +73,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Garden:** Price 50->48
 * **Incendiary Turret:** Price 40->42; 33% Engineering Scaling -> 35% _[Makes the rounding less abysmal.]_
 * **Leather Vest:** Price 45->48
-* **Little Frog:** Price 45->43; +20% Pickup Range -> +35%
+* **Little Frog:** Price 45->41; +20% Pickup Range -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
 * **Lure:** Price 34->38
 * **Medal:** Price 55->60; -4% Crit Chance -> -3%
@@ -87,7 +88,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ritual:** Price 60->57
 * **Scope:** 25 Range -> 40
 * **Shady Potion:** 20 Luck -> 19
-* **Spicy Sauce:** Price 40->41; 33% Proc Chance -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies _[The small bump to 35% removes the 1% chance it fails when you have all 3.]_
+* **Spicy Sauce:** 33% Proc Chance -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies _[The small bump to 35% removes the 1% chance it fails when you have all 3.]_
 * **Wheelbarrow:** Price 40->37
 * **Whetstone:** Price 40->42
 * **White Flag:** 5 Harvesting -> 6
@@ -122,7 +123,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Shackles:** Price 80->86; Range 80 -> 88
 * **Shmoop:** Price 60->65; 2 HP Regen -> 3
 * **Statue:** Price 60->55
-* **Strange Book:** Price 70->65
+* **Strange Book:** Price 70->62
 * **Tardigrade:** Price 50->42; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Vigilante Ring:** Price 92->77
@@ -137,7 +138,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Tier-4
 * **Diploma:** Price 90->85
-* **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; -15% Damage -> -7% Damage _[So it fits in more reasonably with mixed builds, and with a little more emphasis on the more-unique size rather than just damage.]_
+* **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; -15% Damage -> -5% Damage _[So it fits in more reasonably with mixed builds, and with a little more emphasis on the more-unique size rather than just damage.]_
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** 10 Melee Damage -> 12; 10 Elemental Damage -> 8; Range -20 -> -25
 * **Heavy Bullets:** Price 100->95; +10 Range -> +5% Crit Chance; -5% Crit Chance -> -30% Accuracy; (Replaced 'Range' tag with 'Crit Chance') _[Also see below in the Ranged Weapons section for a few Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
@@ -170,12 +171,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
 * **Hatchet:** Range 125->135
 * **Jousting Lance:** Price 20/36/72/132 -> 20/36/71/128
-* **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; Price 18/36/66/142 -> 18/36/68/125; Fixed tooltip bounce count _[Most of my nerfs for this were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
+* **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; Price 18/36/66/142 -> 18/36/68/125; (Fixed tooltip bounce count) _[Most of my nerfs for this were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%; Price -/-/136/272 -> -/-/122/218
 * **Scissors:** Tier 3/4 Cooldown 0.94/0.86 -> 0.89/0.78 _[Makes higher tier versions more worth using, and buffing cooldown helps their potential as a healing add-in to a Precise build.]_
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 -> 4 seconds; _[Maxes at 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, it feels like Screwdrivers are a good fit to actually care about that crit.]_
-* **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.53/1.41/1.32/1.25 (Accounting for the lowered starting Range)
+* **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.58/1.44/1.34/1.27 (Accounting for the lowered starting Range)
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Tier-4 Crit Chance 40% -> 35%
 #### DLC
@@ -333,7 +334,7 @@ These changes were originally made for Balance Mod but are now implemented into 
 
 
 TO DO FOR WORKSHOP RELEASE
-- go over original change list again and see if anything important missing
+
 	-- delete still-unused extensions/effect files
 - Figure out if/how to work without DLC installed/active
 - re-compile overview details

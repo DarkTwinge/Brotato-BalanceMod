@@ -2,8 +2,26 @@ key,en
 NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT,{0} {1} for every {2} [color=#ffae40]different[/color] {3}[color=#00ff00]s[/color] you have [{4}]
 NEW_EFFECT_BURN_CHANCE,Attacks have a {0} chance to deal {1}x{2} ({3}) burning damage\nEffects that already burn get +1 burn damage
 NEW_EFFECT_ONE_WEAPON_SLOT_LIMIT,You can only equip one weapon at a time\nYou have a [color=#00ff00]4-Set Bonus[/color] for the weapon you have equipped (excluding Legendary’s penalty)
-NEW_INFO_POS_STAT_RANGE,The max range of your weapons is increased by {0}. Half as effective on melee weapons. (Higher range also slightly increases the cooldown of melee weapons because of the travel distance.)
-NEW_INFO_NEG_STAT_RANGE,The max range of your weapons is reduced by {0}. Half as effective on melee weapons. (Lower range also slightly decreases the cooldown of melee weapons because of the travel distance.)
+NEW_INFO_POS_STAT_RANGE,The max range of your weapons is increased by {0}. Half as effective on melee weapons. (Higher range also slightly increases cooldown of melee weapons because of the travel distance.)
+NEW_INFO_NEG_STAT_RANGE,The max range of your weapons is reduced by {0}. Half as effective on melee weapons. (Lower range also slightly decreases cooldown of melee weapons because of the travel distance.)
+NEW_INFO_POS_STAT_ARMOR,You take {0} less damage. (+6.25% Effective HP per point of armor.)
+NEW_INFO_NEG_STAT_ARMOR,"You take {0} more damage. (Negative armor has diminishing returns, so has less impact the more negative you are.)"
+NEW_INFO_POS_STAT_ATTACK_SPEED,Your weapons attack {0} faster.
+NEW_INFO_NEG_STAT_ATTACK_SPEED,Your weapons attack {0} slower.
+NEW_INFO_POS_STAT_MELEE_DAMAGE,Increases power of melee damage by {0}.
+NEW_INFO_NEG_STAT_MELEE_DAMAGE,Decreases power of melee damage by {0}.
+NEW_INFO_POS_STAT_RANGED_DAMAGE,Increases power of ranged damage by {0}.
+NEW_INFO_NEG_STAT_RANGED_DAMAGE,Decreases power of ranged damage by {0}.
+NEW_INFO_POS_STAT_ELEMENTAL_DAMAGE,Increases power of elemental damage by {0}.
+NEW_INFO_NEG_STAT_ELEMENTAL_DAMAGE,Decreases power of elemental damage by {0}.
+NEW_INFO_POS_STAT_PERCENT_DAMAGE,Your weapons and items deal {0} additional damage.
+NEW_INFO_NEG_STAT_PERCENT_DAMAGE,Your weapons and items deal {0} less damage.
+NEW_INFO_POS_STAT_LUCK,You have {0} more chance of finding items or consumables when you kill enemies. Also slightly increases the rarity of items in the shop and level upgrades.
+NEW_INFO_NEG_STAT_LUCK,You have {0} less chance of finding items or consumables when you kill enemies. Also slightly reduces the rarity of items in the shop and level upgrades.
+NEW_INFO_POS_STAT_HP_REGENERATION,You regenerate {0} HP every {1} seconds ({2} HP / second)
+NEW_INFO_NEG_STAT_HP_REGENERATION,You do not automatically regenerate HP.
+NEW_INFO_POS_STAT_LIFESTEAL,Your weapon attacks have a {0} chance to heal you for 1 HP. Max: {1} HP / second
+NEW_INFO_NEG_STAT_LIFESTEAL,Your weapon attacks have a 0% chance to heal you for 1 HP. Max: {1} HP / second
 NEW_EFFECT_NO_HEAL,You [color=#ff0000]can’t heal[/color] in any way during waves
 NEW_EFFECT_PACIFIST,Gain {0} material and XP for every living and despawned enemy at the end of a wave 
 BM_EFFECT_HIT_PROTECTION,Nullifies the the first 2+ damage hit taken each wave
@@ -20,7 +38,6 @@ NEW_EFFECT_MIN_WEAPON_TIER,You are only offered [color=#00ff00]Tier II[/color] w
 NEW_EFFECT_LIGHTNING_ON_HIT,Hitting an enemy spawns a lightning projectile that deals {1} ({3}) damage and bounces an additional {2} time(s)
 BM_NON_ELEMENTAL_REDUCE_STAT_GAINS,[color=#ff0000]Non-elemental Damage[/color] reduced by {1}
 BM_LEFTOVER_MATERIALS,materials left uncollected from the previous wave
-BM_EFFECT_FOR_NEGATIVE_SPEED,"If your Speed is negative, gain {0} {1}"
 NEW_SHORT_EFFECT_PIERCING,Projectiles pierce\n{0} additional target
 BM_EFFECT_FAIRY_COUNTER,(Items until increase: {0})
 BM_EFFECT_RIPSAUCE_CLARIFY,(Additional copies increase both damage and activation chance.)
@@ -36,4 +53,8 @@ BM_EFFECT_EXPLOSIVE_TURRET_SIZE,(Explosion Size: [color=#00ff00]100[/color])
 NEW_EFFECT_ON_HIT,{0} {1} each time you take damage until the end of the wave
 BM_EFFECT_STAT_ON_POISON_FRUIT,{0} {1} when you pick up a [color=#bb576b]poisoned[/color] fruit
 NEW_EFFECT_POISONED_FRUIT,{0} of fruits are poisoned and hurt you (ignores defenses)
+NEW_EFFECT_UPGRADED_BAITS,"Baits make Lampreys spawn during all future waves (Extras at 15, 20, 30, 40, 45... total Baits)"
 NEW_EFFECT_EXPLODE_WHEN_BELOW_HP,"Once per wave, you explode for {1} ({2}) damage when you fall below {5} health (Size: {4})"
+NEW_EFFECT_RECYCLING_GAINS,Gain {0} more materials from recycling items (additive with the 25% base recycling rate)
+NEW_EFFECT_NO_DUPLICATE_WEAPONS,"You can't equip two of the same weapon"
+NEW_NEXT_LEVEL_XP_NEEDED,{0} XP needed to level up

@@ -229,3 +229,70 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 #	var discounted_price: = ceil(normal_price * reroll_price_factor) as int
 #	
 #	return [discounted_price, normal_price - discounted_price]
+
+
+# Add a decimal to armor tooltip for more accuracy
+func get_stat_description_text(stat_name:String, value:int, player_index:int)->String:
+	stat_name = stat_name.to_upper()
+	var stat_sign = "POS_" if value >= 0 else "NEG_"
+	var key = "INFO_" + stat_sign + stat_name
+	
+	print(key)
+	print(stat_name)
+	
+	if stat_name == "STAT_ARMOR":
+		### Now shows one decimal place; also extra clarification text
+		key = "NEW_" + key
+		return Text.text(key, [str(abs(stepify((1.0 - RunData.get_armor_coef(value)) * 100.0, 0.1)))])
+		#return Text.text(key, [str(abs(round((1.0 - RunData.get_armor_coef(value)) * 100.0)))])
+		##
+	elif stat_name == "STAT_HARVESTING":
+		if value >= 0:key += "_LIMITED"
+		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect("harvesting_growth", player_index)), str(RunData.nb_of_waves), str(RunData.ENDLESS_HARVESTING_DECREASE)])
+	elif stat_name == "STAT_LIFESTEAL":
+		### Clarity text change
+		key = "NEW_" + key
+		##
+		return Text.text(key, [str(abs(value)), "10"])
+	elif stat_name == "STAT_HP_REGENERATION":
+		### Clarity text change
+		key = "NEW_" + key
+		##
+		var val = RunData.get_hp_regeneration_timer(value)
+		var amount = 1
+		var amount_per_sec = 1 / val
+		return Text.text(key, [str(amount), str(stepify(val, 0.01)), str(stepify(amount_per_sec, 0.01))])
+	elif stat_name == "STAT_DODGE":
+		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect("dodge_cap", player_index)) + "%"])
+	elif stat_name == "STAT_CRIT_CHANCE":
+		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect("crit_chance_cap", player_index)) + "%"])
+	elif stat_name == "STAT_CURSE":
+		var chance = 0.0
+		for dlc_data in ProgressData.available_dlcs:
+			if "max_curse_item_chance" in dlc_data:
+				chance = dlc_data.max_curse_item_chance
+				break
+		var enemy_curse_chance = stepify(abs(Utils.get_curse_factor(value) / 2.0), 0.1)
+		var item_curse_chance = stepify(abs(Utils.get_curse_factor(value, chance * 100.0)), 0.1)
+
+		return Text.text(key, [str(enemy_curse_chance), str(item_curse_chance)])
+	### Changed text for better clarity
+	elif stat_name == "STAT_RANGE":
+		key = "NEW_" + key
+	elif stat_name == "STAT_ATTACK_SPEED":
+		key = "NEW_" + key
+	elif stat_name == "STAT_MELEE_DAMAGE":
+		key = "NEW_" + key
+	elif stat_name == "STAT_RANGED_DAMAGE":
+		key = "NEW_" + key
+	elif stat_name == "STAT_ELEMENTAL_DAMAGE":
+		key = "NEW_" + key
+	elif stat_name == "STAT_PERCENT_DAMAGE":
+		key = "NEW_" + key
+	elif stat_name == "STAT_LUCK":
+		key = "NEW_" + key
+	##
+	
+	print(key)
+	
+	return Text.text(key, [str(abs(value))])
