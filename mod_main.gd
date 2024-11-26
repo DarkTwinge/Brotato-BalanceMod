@@ -100,7 +100,9 @@ func _ready()->void:
 	Text.keys_needing_operator.bm_effect_unique_tier_iv_weapon_bonus = [0, 2]
 	# This group for making descriptions shorter
 	Text.keys_needing_percent.new_effect_increase_stat_gains = [1]
+	Text.keys_needing_percent.new_effect_increase_stat_gains_all = [1]
 	Text.keys_needing_percent.new_effect_reduce_stat_gains = [1]
+	Text.keys_needing_percent.new_effect_reduce_stat_gains_all = [1]
 	Text.keys_needing_operator.new_effect_gain_stat_for_every_tree = [0, 4]
 	Text.keys_needing_percent.new_effect_convert_stat_temp_half_wave = [0]
 	Text.keys_needing_operator.new_next_level_xp_needed = [0]
@@ -356,7 +358,10 @@ func _ready()->void:
 	temp.value = 46   # 40
 	temp = load("res://items/all/campfire/campfire_effect_2.tres")
 	temp.value = 3    # 2 (HP Regen)
-
+	
+	temp = load("res://items/all/celery_tea/celery_tea_data.tres")
+	temp.value = 32   # 35
+	
 	temp = load("res://items/all/cyclops_worm/cyclops_worm_effect_2.tres")
 	temp.value = -16  # -12 (Range)
 	
@@ -411,6 +416,8 @@ func _ready()->void:
 	temp = load("res://items/all/missile/missile_effect_1.tres")
 	temp.value = 11  # 10 (Damage%)
 	
+	temp = load("res://items/all/pocket_factory/pocket_factory_data.tres")
+	temp.value = 72  # 75
 	temp = load("res://items/all/pocket_factory/pocket_factory_effect_0.tres")
 	temp.value = 3   # 2 (Engineering)
 	
@@ -611,6 +618,10 @@ func _ready()->void:
 	
 
 	## TIER-4 ITEMS ##
+	# Big Arms
+	temp = load("res://items/all/big_arms/big_arms_data.tres")
+	temp.value = 100  # 105
+	
 	# Diploma
 	temp = load("res://items/all/diploma/diploma_data.tres")
 	temp.value = 85   # 90
@@ -1534,13 +1545,20 @@ func _ready()->void:
 	temp = load("res://items/characters/ranger/ranger_data.tres")
 	temp_2 = load("res://items/characters/ranger/ranger_effect_3.tres")
 	temp.effects.erase(temp_2) # Remove starting Pistol
+	temp = load("res://items/characters/ranger/ranger_effect_5.tres")
+	temp.text_key = "new_effect_no_melee_weapons"
 
 	# Renegade
 	temp = load("res://items/characters/renegade/renegade_data.tres")
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/renegade_increasing_shop_prices.tres")
-	temp.effects.push_back(temp_2) # +2% Shop Price Per Wave
+	temp.effects.insert(4,temp_2) # +2% Shop Price Per Wave
+	temp_2 = load("res://items/characters/renegade/renegade_effect_5.tres")
+	temp.effects.erase(temp_2)
+	temp.effects.insert(5,temp_2) # Re-order Damage% Penalty
 	temp = load("res://items/characters/renegade/renegade_effect_0a.tres")
 	temp.text_key = "NEW_SHORT_EFFECT_PIERCING"
+	temp = load("res://items/characters/renegade/renegade_effect_2.tres")
+	temp.text_key = "new_effect_no_melee_weapons"
 	
 	# Soldier
 	temp = load("res://items/characters/soldier/soldier_effect_3.tres")
@@ -1571,6 +1589,8 @@ func _ready()->void:
 	
 	temp = load("res://items/characters/bull/bull_effect_3b.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
+	temp = load("res://items/characters/bull/bull_effect_5.tres")
+	temp.text_key = "new_effect_no_weapons"
 	
 	temp = load("res://items/characters/chunky/chunky_effect_2.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
@@ -1608,17 +1628,22 @@ func _ready()->void:
 	temp = load("res://items/characters/entrepreneur/entrepreneur_effect_1.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
 	temp = load("res://items/characters/entrepreneur/entrepreneur_effect_4.tres")
-	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"	
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS_ALL"	
 	
 	temp = load("res://items/characters/fisherman/fisherman_data.tres")
 	temp_2 = load("res://items/characters/fisherman/fisherman_effect_4a.tres")
 	temp.effects.erase(temp_2)
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/fisherman_effect_4a-newtext.tres")
 	temp.effects.insert(5,temp_2)
+
+	temp = load("res://items/characters/gladiator/gladiator_effect_3.tres")
+	temp.text_key = "new_effect_no_ranged_weapons"
 	
-# TODO Not working, make like Fisher above and use a new effect; Also do for Vaga below
-	##temp = load("res://items/characters/glutton/glutton_effect_1.tres")
-	##temp.key = "NEW_EFFECT_CONSUMABLE_STAT_WHILE_MAX"
+	temp = load("res://items/characters/glutton/glutton_data.tres")
+	temp_2 = load("res://items/characters/glutton/glutton_effect_1.tres")
+	temp.effects.erase(temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/glutton_effect_1-newtext.tres")
+	temp.effects.insert(1,temp_2)
 	
 	temp = load("res://items/characters/golem/golem_effect_2.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
@@ -1636,9 +1661,11 @@ func _ready()->void:
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
 	temp = load("res://items/characters/knight/knight_effect_7.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+	temp = load("res://items/characters/knight/knight_effect_3.tres")
+	temp.text_key = "new_effect_no_ranged_weapons"
 	
 	temp = load("res://items/characters/lich/lich_effect_3.tres")
-	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS_ALL"
 	
 	temp = load("res://items/characters/lucky/lucky_effect_2.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
@@ -1651,9 +1678,12 @@ func _ready()->void:
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
 	temp = load("res://items/characters/mage/mage_effect_9.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+
+	temp = load("res://items/characters/mutant/mutant_effect_1.tres")
+	temp.text_key = "NEW_NEXT_LEVEL_XP_NEEDED"
 	
 	temp = load("res://items/characters/one_arm/one_arm_effect_2.tres")
-	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
+	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS_ALL"
 	
 	temp = load("res://items/characters/ranger/ranger_effect_4.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
@@ -1665,17 +1695,15 @@ func _ready()->void:
 	
 	
 	temp = load("res://items/characters/baby/effects/baby_effect_4.tres")
-	temp.key = "NEW_NEXT_LEVEL_XP_NEEDED"
+	temp.text_key = "NEW_NEXT_LEVEL_XP_NEEDED"
 
 	temp = load("res://items/characters/technomage/effects/technomage_effect_2.tres")
-	temp.key = "NEW_NEXT_LEVEL_XP_NEEDED"
+	temp.text_key = "NEW_NEXT_LEVEL_XP_NEEDED"
 	temp = load("res://items/characters/technomage/effects/technomage_effect_3.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
 	temp = load("res://items/characters/technomage/effects/technomage_effect_4.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
 	
-	temp = load("res://items/characters/vagabond/effects/vagabond_effect_0b.tres")
-	temp.key = "NEW_EFFECT_NO_DUPLICATE_WEAPONS"	
 	temp = load("res://items/characters/vagabond/effects/vagabond_effect_1b.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
 	temp = load("res://items/characters/vagabond/effects/vagabond_effect_2.tres")

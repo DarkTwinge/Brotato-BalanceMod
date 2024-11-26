@@ -66,6 +66,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blindfold:** -15 Range -> -18
 * **Blood Leech:** Price 45->41
 * **Campfire:** Price 40->46; HP Regen 2 -> 3 _[The idea here is to make it buyable for either stat and good if you want both stats.]_
+* **Celery Tea:** Price 35->32
 * **Cyclops Worm:** -12 Range -> -16
 * **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was already quite strong priced at 35.]_
 * **Energy Bracelet:** 4% Crit Chance -> 5%
@@ -80,7 +81,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Metal Detector:** -5% Damage -> -4%
 * **Metal Plate:** Price 40->42
 * **Missile:** Price 45->43; 10% Damage -> 11%
-* **Pocket Factory:** 2 Engineering -> 3 _[Many people like this item, but if you look at its actual damage output in practice it tends to be very lackluster for its cost outside of best-case scenarios.]_
+* **Pocket Factory:** Price 75->72; 2 Engineering -> 3 _[Many people like this item, but if you look at its actual damage output in practice it tends to be very lackluster for its cost outside of best-case scenarios.]_
 * **Pumpkin:** -2% Damage -> No Penalty; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No downside -> -2% Attack Speed
 * **Reinforced Steel:** Engineering 3 -> 4
@@ -137,6 +138,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Sunken Bell:** Price 65->60; Explosion Size 600% -> 750%
 
 ### Tier-4
+* **Big Arms:** Price 105->100
 * **Diploma:** Price 90->85
 * **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; -15% Damage -> -5% Damage _[So it fits in more reasonably with mixed builds, and with a little more emphasis on the more-unique size rather than just damage.]_
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
@@ -335,7 +337,7 @@ These changes were originally made for Balance Mod but are now implemented into 
 
 TO DO FOR WORKSHOP RELEASE
 
-	-- delete still-unused extensions/effect files
+- delete still-unused extensions/effect files
 - Figure out if/how to work without DLC installed/active
 - re-compile overview details
 - make new workshop-page images

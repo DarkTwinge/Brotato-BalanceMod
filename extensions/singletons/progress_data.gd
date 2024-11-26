@@ -16,6 +16,8 @@ func add_all_dlcs()->void :
 	Text.keys_needing_percent.bm_effect_stat_on_poison_fruit = [2]
 	Text.keys_needing_percent.new_effect_poisoned_fruit = [0]
 	Text.keys_needing_percent.new_effect_explode_when_below_hp = [5]
+	Text.keys_needing_operator.new_effect_gain_stat_for_every_different_stat_short = [0, 4]
+	Text.keys_needing_percent.new_effect_stronger_loot_aliens_on_kill = [0]
 	
 
 	### ENEMIES ###
@@ -93,6 +95,9 @@ func add_all_dlcs()->void :
 
 
 	# Items: Tier-3 #
+	temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")
+	temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
+	
 	temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 	temp.value = 17   # 23
 	
@@ -276,6 +281,65 @@ func add_all_dlcs()->void :
 	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_3.tres")
 	temp_2.text_key = "NEW_EFFECT_POISONED_FRUIT"
 	
+	## OTHER CHARACTER TXT TWEAKS ##
+	temp = load("res://dlcs/dlc_1/characters/builder/builder_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/characters/builder/effects/builder_effect_1.tres")
+	temp.effects.erase(temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/builder_effect_1-newtext.tres")
+	temp.effects.insert(1,temp_2)
+	temp = load("res://dlcs/dlc_1/characters/builder/effects/builder_effect_2.tres")
+	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
+	temp = load("res://dlcs/dlc_1/characters/builder/effects/builder_effect_3.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS_ALL"
+	
+	temp = load("res://dlcs/dlc_1/characters/captain/effects/captain_effect_4.tres")
+	temp.text_key = "NEW_NEXT_LEVEL_XP_NEEDED"
+	
+	temp = load("res://dlcs/dlc_1/characters/chef/effects/chef_effect_4.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+	temp = load("res://dlcs/dlc_1/characters/chef/effects/chef_effect_2b.tres")
+	temp.text_key = "NEW_EFFECT_EXPLODE_AND_BURN_ON_CONSUMABLE"
+
+	temp = load("res://dlcs/dlc_1/characters/curious/curious_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/characters/curious/effects/curious_effect_2.tres")
+	temp.effects.erase(temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/curious_effect_2-newtext.tres")
+	temp.effects.insert(1,temp_2)
+	temp = load("res://dlcs/dlc_1/characters/curious/curious_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/characters/curious/effects/curious_effect_1.tres")
+	temp.effects.erase(temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/curious_effect_1-newtext.tres")
+	temp.effects.insert(3,temp_2)
+	
+	temp = load("res://dlcs/dlc_1/characters/diver/diver_data.tres")
+	temp_2 = load("res://dlcs/dlc_1/characters/diver/effects/diver_effect_0.tres")
+	temp.effects.erase(temp_2)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/diver_effect_0-newtext.tres")
+	temp.effects.insert(0,temp_2)
+	temp = load("res://dlcs/dlc_1/characters/diver/effects/diver_effect_1c.tres")
+	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"	
+
+	temp = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_6.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+
+	temp = load("res://dlcs/dlc_1/characters/dwarf/effects/dwarf_effect_3.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+	temp = load("res://dlcs/dlc_1/characters/dwarf/effects/dwarf_effect_1a.tres")
+	temp.text_key = "new_effect_no_ranged_weapons"
+	
+	# NOTE ELITE INCREASES IN TOOLTIP HARD-CODED
+	temp = load("res://dlcs/dlc_1/characters/gangster/effects/gangster_effect_1.tres")
+	temp.text_key = "new_effect_stronger_elites_on_kill"
+	
+	temp = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_2.tres")
+	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"	
+
+	temp = load("res://dlcs/dlc_1/characters/ogre/effects/ogre_effect_2.tres")
+	temp.text_key = "new_effect_no_ranged_weapons"
+	
+	temp = load("res://dlcs/dlc_1/characters/sailor/effects/sailor_effect_6.tres")
+	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+
 
 	### STARTING WEAPONS ###
 	# Chunky

@@ -1,0 +1,33 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://effects/items/effect_with_sub_effects.gd" type="Script" id=1]
+[ext_resource path="res://dlcs/dlc_1/characters/builder/effects/builder_effect_1c.tres" type="Resource" id=2]
+[ext_resource path="res://dlcs/dlc_1/characters/builder/effects/builder_effect_1b.tres" type="Resource" id=3]
+[ext_resource path="res://items/global/custom_arg.gd" type="Script" id=4]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+arg_index = 6
+arg_sign = 0
+arg_value = 0
+arg_format = 0
+arg_key = ""
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 4 )
+arg_index = 7
+arg_sign = 2
+arg_value = 0
+arg_format = 0
+arg_key = ""
+
+[resource]
+script = ExtResource( 1 )
+key = "convert_bonus_gold"
+text_key = "NEW_EFFECT_CONVERT_BONUS_GOLD_TWO"
+value = 5
+custom_key = ""
+storage_method = 0
+effect_sign = 3
+custom_args = [ SubResource( 1 ), SubResource( 2 ) ]
+sub_effects = [ ExtResource( 3 ), ExtResource( 2 ) ]
