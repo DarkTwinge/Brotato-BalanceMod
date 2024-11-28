@@ -284,7 +284,7 @@ func _ready()->void:
 	temp.value = -2  # -8 Range -> -2 Speed
 	
 	temp = load("res://items/all/hedgehog/hedgehog_data.tres")
-	temp.value = 25  # 30
+	temp.value = 24  # 30
 
 	temp = load("res://items/all/helmet/helmet_data.tres")
 	temp.value = 19  # 15
@@ -308,7 +308,7 @@ func _ready()->void:
 	temp.value = 12  # 15
 
 	temp = load("res://items/all/mutation/mutation_data.tres")
-	temp.value = 20  # 25
+	temp.value = 21  # 25
 	temp = load("res://items/all/mutation/mutation_effect_3.tres")
 	temp.value = -2  # -3 (Knockback)
 
@@ -490,7 +490,7 @@ func _ready()->void:
 	temp.value = 42  # 50
 	
 	temp = load("res://items/all/bowler_hat/bowler_hat_data.tres")
-	temp.value = 70  # 75
+	temp.value = 69  # 75
 	temp = load("res://items/all/bowler_hat/bowler_hat_effect_1.tres")
 	temp.value = 18  # 15 (Luck)
 	
@@ -620,11 +620,11 @@ func _ready()->void:
 	## TIER-4 ITEMS ##
 	# Big Arms
 	temp = load("res://items/all/big_arms/big_arms_data.tres")
-	temp.value = 100  # 105
+	temp.value = 98  # 105
 	
 	# Diploma
 	temp = load("res://items/all/diploma/diploma_data.tres")
-	temp.value = 85   # 90
+	temp.value = 83   # 90
 	
 	# Explosive Shells
 	temp = load("res://items/all/explosive_shells/explosive_shells_effect_1.tres")
@@ -1151,6 +1151,8 @@ func _ready()->void:
 	temp.value = 125				# 140
 	
 	# Laser Gun
+	temp = load("res://weapons/ranged/laser_gun/1/laser_gun_stats.tres")
+	temp.cooldown = 93			# 95
 	temp = load("res://weapons/ranged/laser_gun/4/laser_gun_4_data.tres")
 	temp.value = 111				#	122
 	
@@ -1537,10 +1539,6 @@ func _ready()->void:
 	temp = load("res://items/characters/one_arm/one_arm_effect_3.tres")
 	temp.text_key = "NEW_EFFECT_ONE_WEAPON_SLOT_LIMIT"
 	
-	# Pacifist
-	temp = load("res://items/characters/pacifist/pacifist_effect_2.tres")
-	temp.text_key = "NEW_EFFECT_PACIFIST"
-	
 	# Ranger
 	temp = load("res://items/characters/ranger/ranger_data.tres")
 	temp_2 = load("res://items/characters/ranger/ranger_effect_3.tres")
@@ -1581,11 +1579,11 @@ func _ready()->void:
 
 
 	## OTHER CHARACTER TEXT TWEAKS ##
+	temp = load("res://items/characters/arms_dealer/arms_dealer_effect_1b.tres")
+	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS_ALL"
+	
 	temp = load("res://items/characters/artificer/artificer_effect_3.tres")
 	temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
-	
-	temp = load("res://items/characters/arms_dealer/arms_dealer_effect_1b.tres")
-	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
 	
 	temp = load("res://items/characters/bull/bull_effect_3b.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
@@ -1669,6 +1667,9 @@ func _ready()->void:
 	
 	temp = load("res://items/characters/lucky/lucky_effect_2.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"
+
+	temp = load("res://items/characters/pacifist/pacifist_effect_2.tres")
+	temp.text_key = "NEW_EFFECT_PACIFIST"
 	
 	temp = load("res://items/characters/mage/mage_effect_2.tres")
 	temp.key = "NEW_EFFECT_INCREASE_STAT_GAINS"

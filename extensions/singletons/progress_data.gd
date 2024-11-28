@@ -18,6 +18,7 @@ func add_all_dlcs()->void :
 	Text.keys_needing_percent.new_effect_explode_when_below_hp = [5]
 	Text.keys_needing_operator.new_effect_gain_stat_for_every_different_stat_short = [0, 4]
 	Text.keys_needing_percent.new_effect_stronger_loot_aliens_on_kill = [0]
+	Text.keys_needing_percent.new_effect_chance_explode_on_hit = [0]
 	
 
 	### ENEMIES ###
@@ -67,7 +68,9 @@ func add_all_dlcs()->void :
 	### ITEMS ###
 	# Items: Tier-1 #
 	temp = load("res://dlcs/dlc_1/items/corrupted_shard/corrupted_shard_data.tres")
-	temp.value = 13   # 12
+	temp.value = 14   # 12
+	temp = load("res://dlcs/dlc_1/items/corrupted_shard/effects/corrupted_shard_effect_0.tres")
+	temp.value = 4		#	3 (%Damage)
 	temp = load("res://dlcs/dlc_1/items/corrupted_shard/effects/corrupted_shard_effect_1.tres")
 	temp.value = 2		# 1 (Curse)
 
@@ -102,7 +105,7 @@ func add_all_dlcs()->void :
 	temp.value = 17   # 23
 	
 	temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-	temp.value = 60		# 65
+	temp.value = 57		# 65
 	temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
 	temp.scale = 7.5	# 6.0
 	temp.text_key = "new_effect_explode_when_below_hp"
@@ -111,6 +114,8 @@ func add_all_dlcs()->void :
 	# Items: Tier-4 #
 	temp = load("res://dlcs/dlc_1/items/krakens_eye/krakens_eye_data.tres")
 	temp.value = 90		# 110
+	temp = load("res://dlcs/dlc_1/items/krakens_eye/effects/krakens_eye_effect_0.tres")
+	temp.text_key = "new_effect_chance_explode_on_hit"
 
 	# Ricochet-related tweaks
 	temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/2/blunderbuss_2_stats.tres")
@@ -281,7 +286,7 @@ func add_all_dlcs()->void :
 	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_3.tres")
 	temp_2.text_key = "NEW_EFFECT_POISONED_FRUIT"
 	
-	## OTHER CHARACTER TXT TWEAKS ##
+	## OTHER CHARACTER TEXT TWEAKS ##
 	temp = load("res://dlcs/dlc_1/characters/builder/builder_data.tres")
 	temp_2 = load("res://dlcs/dlc_1/characters/builder/effects/builder_effect_1.tres")
 	temp.effects.erase(temp_2)

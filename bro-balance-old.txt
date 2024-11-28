@@ -3,11 +3,6 @@ WORKSHOP ID: 3058512152
 ~~ CURRENT PONDERINGS ~~
 Up Minigun base damage slightly?  (since it's scaling is even betrter than SMG right?)
 
-Wave 2 seen on Hyph's with 4 weapons?? Is this a bug that's pure vanilla with update now, or?
-
-Does +1 damage from Sausage show up on Blue Turret tooltip, assuming it does add +1?
-
-
 Ugly Tooth -- maybe not -Speed because snail overlap
 smg +25 range (or lower range of other guns more?)
 
@@ -20,10 +15,6 @@ should Saver start with Slingshot
 try making Robot Arm give Generalist a random +1 to their cap
 
 "different" other tooltips also color-coded for emphasis?  (Like done for King)
-
-** Violence Aesthetics mod
--- Try out Isaac Mod
--- "i've been playing with removing and reinstalling the mods removing Exetatonian, VA, Elemento, Flotato, Lazuli, Diversified, Patamods Eientei, the new Elites and it still didn't let me select a dificulty. It only started to work when i disabled the signalAPI mod, but then when i tried to reinstall the other mods, it went back to not running."
 
 Could Pruner-spawned Gardens get a color highlight around them?
 
@@ -57,11 +48,6 @@ Likewise Chonky doesn't see Stone Skin HP
 
 should potato be tagged for all its stuff rather than an arbitrary subset? (Was there a reason like, as far as having at least 1 red item for each of those tags or?)
 
-Explorer _could_ be tagged for Speed (but would make Bags a touch harder to find.)
-
-Multitasker Weapons slot UI 2x3 -> 3x4??
-	Make it switch whenever you have more than 6 weapons to also work for Robot Arm
-	
 Rework Riposte
 
 jousting lance progression looks sus, esp. purple; try it with some more chars
@@ -92,8 +78,6 @@ Could there be a change to make it easier to find matching tier-2 weapons when y
 	
 Burn currently doesn't apply to trees dying in 8 hits, but should -- possible solution would be having a separate check for burn to kill the tree after 5-6 ticks; alternatively could apply all duration ticks to the hit-count immediately when it gets hit (or half+1 or whatever seems sensible)
 
-Make Jack's EnemyDamage and EnemyHP multiplicative, so it works more correctly for lower Danger Levels & Accessibility Settings.  E.g. 'change it to +175% HP, and +35% Damage' [Difficult since DangerLevel is the same value as Jack's bonus so is inherently additive; works for Accessibility but that'd be only a half fix...]
-
 Soldier: "Melee Weapons sometimes don’t benefit from the +50% damage, which shouldn’t be the case, since you shouldn’t be able to attack if you’re moving. I think the issue stems from attack animation, if the check deciding if you’re allowed to attack happens before the damage of the attack is calculated, then there is a timing window where you could begin to move."
 
 Sausage appears to be having some of its damage counted on weapons *instead*.  Also had Alien Eyes, Burn Turrents, Tyler, Eyes Surgery x3, regular turret if any of that matters
@@ -113,8 +97,6 @@ Fix the "x2" material popup to say the correct x## amount?
 
 Lucky Coin: Should this scale Luck off two axies instead of only Crit?  Seems overly situational; possibly retooled as a purple-tier
 
-prolly fix lifesteal tooltip to be accurate to how it actually works
-
 bull should report damage
 bull's tooltip should prob include crit chance if not too hard
 
@@ -132,14 +114,9 @@ weapon preference could also have part it based on damage types; e.g. 5-10% of t
 
 chameleon arguably better to _not_ be tagged for dodge [probably leaving tho]
 
-Smoothed enemy spawns from -Enemies (like Trees) would probably be good, rather than random (so e.g. Jack would get 1 or 2 fish from a Bait, never randomly 4) [This is messy and changes the current spawn amounts significantly; it'd require kind of a weird rework to be implemented]
-
 [?]Doctor: -100% Attack Speed -> -50%; +200% Attack Speed with Medical Weapons -> +150%
 
 Luck could maybe affect your same-weapon-finding shop bonus slightly too? 
-
-Could slightly lower Laser Gun's cooldown (and probably also base damage?) to let it get 1 extra shot off Wave 1 and 2, so it doesn't get quite as bad of a starting economy hit
-	--> would have to be 105->93 cooldown, below current purple-tier, so probably a no-go; just means you're out ~8mats wave 1
 
 Rebalancing Elemental over a 2-per-levelup ratio may ultimately end up making more sense, letting burn damage keep up with the pace of the game better
 
@@ -157,12 +134,10 @@ Elemental set bonus could give a Snake effect for 4or5 in a set?
 
 Red weapons could perhaps not contribute to 'increased weapon find chance'
 
-One-armed, Arms Dealer, Engineer, Entrepreneur, Lich: Description should say "All Damage" to be more clear it applies to every Damage type.
 
 * Bounces (e.g. from Lightning Shiv) should be able to target Bosses like they do other enemies.
 * The game should fully stop recognizing the mouse while using controller. (Currently, it will highlight whatever the mouse would be hovering over, so it can look like an option is selected when it isn't.)
 * Tooltips for capped stats incorrectly report on your stats, e.g. it can imply your movement speed is faster than it actually is when you have Shackles. [Ideally the tooltip should change to clarify "you would be moving X% faster/slower, but your speed is capped at Y%"]
-* Dangerous Bunny: If the current shop already costs 0 to reroll, 
 
 Knockback: Now also reduces speed of enemies charging at you rather than those enemies being completely immune. A starting concept (obviously may need tweaks after testing and further adjustments to weapon knockback values): Enemy charges are now slowed by attacks based on the attack's Knockback stat. Each hit additively reduces the speed of a charge until it hits a minimum speed (and it starts over for every new charge).
 	A charge reaches it's cap (maximum speed reduction) when attacks totaling 50 have been applied, with each attack applying it's Knockback stat - 2 (min 0). The maximum reduction is: -50% for Charger, Horned Charger, & Lamprey; -40% for Bruiser & Horned Bruiser; -30% for Elites. For example, a Charger that is hit by a Wrench (Knockback 20) while charging would have the speed of that charge reduced to 82% of its normal speed for the remaining duration of the charge.
@@ -202,17 +177,14 @@ Loot Alien more stand out
 
 
 ~~~ TO TEST~~~
-Test: Verify Incindiary Turret is a different kind of burn that stacks with regular burn (Edit turret page with this if so)
 Test: DPS variance for melee from more range (lots of speed to just circle a wave 9 or something)
-Test: Snake meaingful effect (maybe Wand and Flamethrower?)
+Test: Snake meaningful effect (maybe Wand and Flamethrower?)
 Test: Landmines random clear (compare mat counts?)
 Does Metal Detector give you extra consumeables for Extra Stomach??
 More precise elite pattern speed breakpoints
 Test money gained from gentle alien [Also on Pacifist, Jack specifically]
 Check if Jack gets extra consumeable drops to make up for their low enemy count (code implies there's no such effect)
 Piercing med turret do anything?
-Sausage wtf didn't register any damage why 
-code look does blue turret actually stack with fire
 Cute MOnkey/Lucky proc one or multi times from a x2+ material?  [Edit Monkey to be 100% test at non-full HP]
 Peacock + Negative Armor stacking?
 Ugly Tooth doesn't get applied from Burn/Lucky?  (verify)
