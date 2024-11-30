@@ -332,6 +332,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 
 ## Starting Weapons
 * **Crazy:** Added Crossbow
+* **Cryptid:** Added Flute
 * **Cyborg:** Removed Crossbow
 * **Demon:** Added Potato Thrower
 * **Engineer:** Removed Hammer
