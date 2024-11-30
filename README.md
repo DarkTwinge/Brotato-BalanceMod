@@ -5,15 +5,15 @@ More items are worth using and fewer choices are overpowered. The Range and Luck
 
 (Dozens of changes from the original Balance Mod have now been implemented directly into the base game. A summary of those prior changes is at the end of the full changelog.)
 
-_Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! There's about 75 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
+_Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! There are about 75 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
 ## Change Summary
 ### Mechanics
 * Easier to have mixed-weapon builds: The chances of being offered one of the exact weapons you already have is higher the more weapon types you have.
-* Horde Waves give ~8% fewer materials.
 * All explosions can now crit and tooltips display explosion sizes.
 * Armor is slightly less effective (~7% worse).
 * Range gained from level-ups & items is ~15% higher (both increases and decreases).
 * Small tweaks to other level-ups: Tier 2-4 Luck is stronger; Tier-1 Harvesting dropped to 4; weaker Tier-4 level-ups are more worthwhile.
+* Horde Waves give ~8% fewer materials.
 * Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are now color-coded.
 
 ### Weapons
@@ -21,24 +21,24 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Tier-4 weapons are cheaper across the board (also a small indirect Luck buff). Other weapon prices slightly tweaked for more logical/consistent progression.
 * Hand partially reworked to make Tier-3/4 worth buying.
 * Screwdriver partially reworked+buffed so it cares more about Crit.
-* Sickle recieves a minor rework so that it works better for builds with less extreme Harvesting amounts.
+* Sickle receives a minor rework so that it works better for builds with less extreme Harvesting amounts.
 * Spear is nerfed; Mace is buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, and War Hammer receive minor buffs.
 * Chain-gun, Flaming Brass Knuckles, Fist, Lightning Shiv, Nuclear Launcher, Revolver, and Thief Dagger receive minor nerfs.
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
-Tons of items receive small buffs or nerfs: overall more items are worth buying more often and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
+Tons of items receive small buffs or nerfs: overall more items are worth buying more often, and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
 
 * Tardigrade is no longer wasted by Bloody Hand/Donation.
 * Ricochet is now friendlier with already-piercing weapons.
 * Power Generator now reduces your HP as it powers up.
 * Fairy gives less HP Regen and gives negative speed for Tier-4s instead of negative HP Regen.
-* Candle is cheaper and thus more viable for non-Elemental builds that want fewer enemies.
 * Utility Crit items (Pile of Books, Eyepatch) come with more Crit Chance to work better as speculative picks.
+* Candle is cheaper and thus more viable for non-Elemental builds that want fewer enemies.
 * Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are moderately better (as you have much less time to profit from them).
-* Chameleon, Wandering Bot, and Lucky Coin significantly cheaper. Hedgehod, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
+* Chameleon, Wandering Bot, and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
 ### Characters
@@ -48,10 +48,10 @@ As with items, the goal is not for characters to be equal strength, as it is mor
 * Baby can more reliably hit Level 2 after Wave 1.
 * Mage can better run an Engineering build (turrets causing burn via Sausage) and also handles Gun builds better (extra Sausage). Engineer can better combo with Elemental Damage.
 * Lucky and Speedy now care more about raising their thematic stats. Soldier cares more about Pickup Range.
-* Crazy now works with Crossbows properly; Brawler now works with Claw properly.
+* Crazy now works with Crossbows properly; Brawler works with Claw properly.
 * One-armed and Farmer receive moderate buffs.
 * Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Explorer, Demon, King, Mutant, Gladiator, Engineer, and Brawler receive modest nerfs.
-* Automatic weapons to start (e.g. Wildling, Crazy) are mostly removed in order to make those characters more varied and your starting weapon choice more impactful.
+* Many automatic starting weapons (e.g. Wildling, Crazy) are removed in order to make those characters more varied and your chosen starting weapon more meaningful.
 
 ### Enemies & Waves
 * (DLC) Pufferfish now spawns 4 projectiles when killed by a melee attack (instead of 0).
@@ -71,7 +71,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ## General Changes
 * Armor is about 7% less effective (Each point is +6.25% Effective HP instead of +6.67%). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
 * Having different weapons will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different types of weapons.
-* When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (instead of a fully random weapon). This makes it a little easier to match-up a starting tier-2+ only weapon (e.g. Potato Thrower) with something relevant.
+* When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (instead of a fully random weapon). This makes it a little easier to match up a starting tier-2+ only weapon (e.g. Potato Thrower) with something relevant.
 * Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up to be more consistent and have a slightly more logical progression.
 * The reroll button for level-ups is now color-coded for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
 * All explosions can now crit (Rip & Tear, Spicy Sauce, and Glutton affected). All explosion tooltips now also list their explosion size (weapons, items, and characters).
@@ -108,7 +108,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
 * **Lumberjack Shirt:** Price 15->12
-* **Mutation:** Price 25->21; Knockback -3 -> -2 _[You rarely want both Elemental and Ranged together, and this is nicely cheap when you do; otherwise still kind of expensive-but-occasionally-worth when you just want one.]_
+* **Mutation:** Price 25->22; Knockback -3 -> -2
 * **Propeller Hat:** Price 28->25
 * **Scar:** Price 25->24; Range -8 -> -11
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
@@ -116,7 +116,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Terrified Onion:** Price 15->13
 * **Weird Food:** Price 20->24
 #### DLC
-* **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into curse rather than incidental.]_
+* **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 
 ### Tier-2
 * **Acid:** Price 65->63
@@ -140,7 +140,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->42
 * **Missile:** Price 45->43; Damage 10% -> 11%
-* **Pocket Factory:** Price 75->72; Engineering 2 -> 3 _[Many people like this item, but if you look at its actual damage output in practice it tends to be very lackluster for its cost outside of best-case scenarios.]_
+* **Pocket Factory:** Price 75->72; Engineering 2 -> 3 _[Many people like this item, but if you look at its actual damage output in practice, it tends to be very lackluster for its cost outside of best-case scenarios.]_
 * **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -2% Attack Speed
 * **Reinforced Steel:** Engineering 3 -> 4
@@ -171,7 +171,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Community Support:** Price 75->71
 * **Crown:** Price 70->68
 * **Fairy:** Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item --> 2 HP Regeneration Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regeneration Per 1 Unique Tier-4 Item --> -4% Speed Per 1 Unique Tier-4 Item
-* **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
+* **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
 * **Lucky Charm:** Price 75->70
@@ -255,7 +255,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Potato Thrower:** Added to the Blunt Weapon Set; Base Damage 1(All) -> 2/3/4 _[Blunt Set allows it to find some synergy options when picked as a starting weapon.]_
 - **Revolver:** Range 450 -> 425; Price 20/34/70/130 -> 18/36/68/125
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
-- **Sniper Gun:** Range 800/1000 -> 550/600; Ranged Damage Scaling 100%(All) -> 200%/250% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much Range to begin with that more is irrelevant.]_
+- **Sniper Gun:** Range 800/1000 -> 550/600; Ranged Damage Scaling 100%(All) -> 200%/250% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much Range to begin with that more is irrelevant.]_
 - **Wand:** Cooldown 0.87/0.78/0.70/0.53 -> 0.83/0.77/0.68/0.53 _[The slight cooldown buff lets you get 1 extra kill on Wave 1.]_
 #### DLC
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 80%/90%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
@@ -280,8 +280,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
 * **Loud:** -3 Harvesting per Wave -> -5
-* **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
-* **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt built work, while -33% is more in the 'hard-but-manageable' range.]_
+* **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
+* **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
 * **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary). _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_
@@ -293,7 +293,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wildling:** No longer starts with a Stick.
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
-~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more interesting & unique aspect to interact with.]_
+~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
 
 ## Enemies
 ### Elites
@@ -365,7 +365,7 @@ Inschato, ArosRising, Hyphen-ated, Pasha, WL, and everyone else that's assisted 
 Also thanks to Blobfish for being generally receptive to feedback and suggestions, implementing many previous Balance Mod changes directly into the base game.
 
 # License
-You are free to use concepts and code contained within elsewhere, with attribution. E.g. if you want to make a spin-off mod for, say, only the Character changes, you are welcome to do so - just link back to the Balance Mod and/or to my Twitch stream.
+You are free to use concepts and code contained within elsewhere, with attribution. E.g. if you want to make a spin-off mod with only some of the changes, you are welcome to do so - just link back to the Balance Mod and/or to my Twitch stream.
 
 # Now Included in Vanilla
 These changes were originally made for Balance Mod but are now implemented into the main game (either directly or similarly enough to obsolete my version):
@@ -392,12 +392,3 @@ These changes were originally made for Balance Mod but are now implemented into 
 - Garden cooldowns now show a decimal when applicable. Weapons with very low cooldowns (such as SMG or Minigun) now show an extra decimal place in their cooldown for better accuracy. Fixed cooldown visual for the fastest weapons. Bugfixed Multi-tasker cooldown randomization so it isn't so extreme.
 - Stats now update properly on shop reroll for Saver.
 - Fighting Stick & Plasma Sledgehammer renamed.
-
-
-
-TO DO FOR WORKSHOP RELEASE
-
-- Figure out if/how to work without DLC installed/active
-- re-compile overview details
-- make new workshop-page images
-- Crossbow -- with Range being ~17% more available, is it too strong?

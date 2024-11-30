@@ -22,6 +22,7 @@ func _init(modLoader = ModLoader):
 	# Slightly reduce the strength of armor
 	# Makes Glutton, Spicy Sauce, and Rip and Tear all use the crit stat
 	# Gives Gun Mage an extra Sausage
+	# Fixes rounding for Fairy tooltip
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/run_data.gd")
 
 	# Now applies Crazy's +Range to Crossbow/Sniper
@@ -308,7 +309,7 @@ func _ready()->void:
 	temp.value = 12  # 15
 
 	temp = load("res://items/all/mutation/mutation_data.tres")
-	temp.value = 21  # 25
+	temp.value = 22  # 25
 	temp = load("res://items/all/mutation/mutation_effect_3.tres")
 	temp.value = -2  # -3 (Knockback)
 
