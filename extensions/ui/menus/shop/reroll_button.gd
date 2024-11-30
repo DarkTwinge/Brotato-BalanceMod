@@ -2,10 +2,9 @@ extends "res://ui/menus/shop/reroll_button.gd"
 
 # Default level to 1 so the shop's reroll button stays normal
 func init(value:int, player_index:int, level:int=1)->void :
-	set_value(value, RunData.get_player_gold(player_index))
-	set_text((tr("REROLL") + " - " + str(value)).to_upper())
+	.init(value, player_index)
 
-	### Set the color of the reroll button to indicate the reroll will have a guaranteed rarity
+	# Set the color of the reroll button to indicate the reroll will have a guaranteed rarity
 	var tier = 0
 	if level == 5:
 		tier = Tier.UNCOMMON
@@ -25,4 +24,3 @@ func init(value:int, player_index:int, level:int=1)->void :
 		add_stylebox_override("normal", stylebox_color)
 	else:
 		remove_stylebox_override("normal")
-	##
