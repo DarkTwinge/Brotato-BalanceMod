@@ -14,7 +14,7 @@ func _ready():
 	boost_args.hp_boost = 200
 	boost_args.damage_boost = 25
 	##boost_args.speed_boost = 250
-	boost_args.speed_boost = 280
+	boost_args.speed_boost = 300
 
 
 func on_enemy_spawned(enemy:Entity)->void :

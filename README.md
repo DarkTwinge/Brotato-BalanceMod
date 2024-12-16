@@ -8,7 +8,7 @@ More items are worth using and fewer choices are overpowered. The Range and Luck
 _Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! There are about 75 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
 ## Change Summary
 ### Mechanics
-* Easier to have mixed-weapon builds: The chances of being offered one of the exact weapons you already have is higher the more weapon types you have.
+* Easier to have mixed-weapon builds: The chances of being offered one of the exact weapons you already have is higher the more weapon types you have. Additionally, shop weapon set favoring is now based on how many of that set you have (so a single off-set weapon doesn't impact your weapon pool as much).
 * All explosions can now crit and tooltips display explosion sizes.
 * Armor is slightly less effective (~7% worse).
 * Range gained from level-ups & items is ~15% higher (both increases and decreases).
@@ -71,6 +71,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ## General Changes
 * Armor is about 7% less effective (Each point is +6.25% Effective HP instead of +6.67%). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
 * Having different weapons will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different types of weapons.
+* Mixed Weapon Sets don't hurt your shop odds as much: The calculation that weighs shop weapons to more often match weapon sets you currently have (15% of the time, more often in the first 5 waves) now factors in how many copies of the set you have rather than weighing them all equally. For example, if you have 5 Thief Daggers (Precise set) and 1 Scissors (Precise & Medical sets): when the shop is picking a tier-1 weapon based on sets, in vanilla this would give you a 1 in 7 chance to be offered a Medical Gun -- now the odds of it picking Medical Gun are only 1 in 32. _[This also means multi-set weapons will inherently be favored slightly more, which helps offset the fact they are pulling in a lot of weapons into the pool from being a part of multiple sets to begin with.]_
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (instead of a fully random weapon). This makes it a little easier to match up a starting tier-2+ only weapon (e.g. Potato Thrower) with something relevant.
 * Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up to be more consistent and have a slightly more logical progression.
 * The reroll button for level-ups is now color-coded for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
@@ -240,12 +241,13 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Tier-4 Crit Chance 40% -> 35%
 #### DLC
+* **Brick:** Can no longer break during Wave 1.
 * **Mace:** Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Melee Damage Scaling 80%(All) -> 90%(All); Harvesting Scaling 10%/15%/20%/25% -> 10%/14%/17%/20%; Cooldown 0.87/0.82/0.77/0.70 -> 0.85/0.78/0.72/0.65 _[Leans away from this weapon *only* making any sense in builds with obscene amounts of Harvesting.]_
 * **War Hammer:** Crit Damage 1.5x -> 1.75x
 
 - **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Mace 46/92/185 -> 43/81/142; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
-- **Other Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 300; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hammer: 190 -> 168; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 265; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133
+- **Other Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hammer: 190 -> 168; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65% _[For reference, Tier-1 SMG is 70% Accuracy.]_
@@ -261,7 +263,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 80%/90%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
 
 * **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Minigun: 127/255 -> 122/218; Obliterator 127/255 -> 122/218; Potato Thrower: 36/69/139 -> 33/64/114. Blunderbuss: 45/95/192 -> 46/90/160; Flute: 20/45/80/165 -> 19/41/81/150; Javelin: 18/36/66/140 -> 18/36/68/125
-* **Other Tier-4 Price Reductions:** Chain-gun: 300->275; Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 270; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Nuclear Launcher: 289 -> 256; Particle Accelerator: 289 -> 256; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 105 -> 95
+* **Other Tier-4 Price Reductions:** Chain-gun: 300->265; Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 260; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Nuclear Launcher: 289 -> 251; Particle Accelerator: 289 -> 251; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 105 -> 95
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
@@ -293,7 +295,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wildling:** No longer starts with a Stick.
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
-~~ * **Druid:** 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
+~~ * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
 
 ## Enemies
 ### Elites
@@ -317,7 +319,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 _[The base game mostly implemented my tweaks here, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
-+ **Stargazer:** Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 280% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
++ **Stargazer:** Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 300% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Narwhal:** Knockback Resistance 90% -> 87%
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
@@ -345,7 +347,12 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Ranger:** Removed Pistol
 * **Saver:** Added Stick
 #### DLC
+* **Baby:** Added Lute
+* **Buccaneer:** Added Wrench
+* **Demon:** Added Mace
+* **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin
+* **One-armed:** Added Harpoon Gun
 * **Romantic:** Added Jousting Lance; Removed Fist
 * **Sick:** Added Javelin
 * **Vampire:** Added Javelin

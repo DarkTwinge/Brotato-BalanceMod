@@ -16,6 +16,7 @@ func _init(modLoader = ModLoader):
 	# Turns exact-weapon picks into weapon-set picks if it can't find an exact-pick
 	# Changes stat tooltip text to be more accurate (+extra decimal place for Armor)
 	#xx Increases reroll prices (Implemented into vanilla in 1.1.7)
+	# Remove King's smiley indicator for Tier-4 weapons you already have
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
 	# Gives One-armed a 4-set Bonus for their weapon
@@ -28,7 +29,10 @@ func _init(modLoader = ModLoader):
 	# Now applies Crazy's +Range to Crossbow/Sniper
 	# Now applies Brawler's +AttackSpeed to Claw 
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/weapon_service.gd")
-
+	
+	# Bricks no longer break Wave 1
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "weapons/weapon.gd")
+	
 	# Fix Lightning Shiv bounce count
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/projectiles_on_hit_effect.gd")
 	
@@ -837,7 +841,7 @@ func _ready()->void:
 	
 	# DEX-troyer
 	temp = load("res://weapons/melee/dextroyer/4/dextroyer_4_data.tres")
-	temp.value = 300		 # 315
+	temp.value = 285		 # 315
 
 	# Drill
 	temp = load("res://weapons/melee/drill/4/drill_4_data.tres")
@@ -1041,7 +1045,7 @@ func _ready()->void:
 	
 	# Scythe
 	temp = load("res://weapons/melee/scythe/4/scythe_4_data.tres")
-	temp.value = 265				# 285
+	temp.value = 260				# 285
 	temp = load("res://weapons/melee/scythe/4/scythe_effect_2.tres")
 	temp.text_key = "new_effect_on_hit"
 	
@@ -1101,7 +1105,7 @@ func _ready()->void:
 	## WEAPONS - RANGED ##
 	# Chain-gun
 	temp = load("res://weapons/ranged/chain_gun/4/chain_gun_4_data.tres")
-	temp.value = 275  		 # 300
+	temp.value = 265  		 # 300
 	temp = load("res://weapons/ranged/chain_gun/4/chain_gun_4_stats.tres")
 	temp.accuracy = 0.65	 # 0.8
 	temp.additional_cooldown_multiplier = 104.0 # 60.0
@@ -1139,7 +1143,7 @@ func _ready()->void:
 	
 	# Gatling Laser
 	temp = load("res://weapons/ranged/gatling_laser/4/gatling_laser_4_data.tres")
-	temp.value = 270				#	290
+	temp.value = 260				#	290
 	
 	# Ghost Scepter
 	temp = load("res://weapons/ranged/ghost_scepter/4/ghost_scepter_4_data.tres")
@@ -1185,7 +1189,7 @@ func _ready()->void:
 	temp.key = "new_effect_explode"
 	temp.effect_sign = 0
 	temp = load("res://weapons/ranged/nuclear_launcher/4/nuclear_launcher_4_data.tres")
-	temp.value = 256		 # 289
+	temp.value = 251		 # 289
 	temp = load("res://weapons/ranged/nuclear_launcher/4/nuclear_launcher_4_stats.tres")
 	temp.scaling_stats = [ [ "stat_ranged_damage", 1.25 ], [ "stat_elemental_damage", 1.5 ] ] # 1.0/1.0
 	temp.cooldown = 115  # 110
@@ -1207,7 +1211,7 @@ func _ready()->void:
 	
 	# Particle Accelerator
 	temp = load("res://weapons/ranged/particle_accelerator/4/particle_accelerator_4_data.tres")
-	temp.value = 256				# 289
+	temp.value = 251				# 289
 	
 	# Pistol
 	temp = load("res://weapons/ranged/pistol/4/pistol_4_data.tres")

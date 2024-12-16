@@ -167,19 +167,20 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 		pool = remove_element_by_id(pool, item)
 
 	### Replace original pool of only-set items with new weighted pool
-#	if is_a_set_pick == true:
-#
-#		# Gathers all sets from all weapons
-#		print("all sets:")
-#		var all_sets_from_weapons = []
-#		for weapon in held_weapons:
-#			for set in weapon.sets:
-#				all_sets_from_weapons.push_back(set)
-#				print(set.my_id)
-#
-#		var newpool = []
-#		for set in all_sets_from_weapons:
-#			for weapon in pool:
+	if is_a_set_pick == true:
+
+		# Gathers all sets from all weapons
+		print("all sets:")
+		var all_sets_from_weapons = []
+		for weapon in held_weapons:
+			for set in weapon.sets:
+				all_sets_from_weapons.push_back(set)
+				print(set.my_id)
+
+		var newpool = []
+		var newpool_queue = []
+		for set in all_sets_from_weapons:
+			for weapon in pool:
 #				print("weapon sets:")
 #				print(set.my_id)
 #				print(weapon.sets[0].my_id)
@@ -187,14 +188,25 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 #					print(weapon.sets[1].my_id)
 #				print(weapon.sets)
 #				print(set)
-#				if weapon.sets.has(set):
-#					newpool.push_back(weapon)
-#					print("yeah")
-#
+				if weapon.sets.has(set):
+					newpool.push_back(weapon)
+##					if newpool_queue.has(
+##					newpool_queue.push_back(weapon)
+##			newpool.push_back(newpool_queue)
+##			newpool_queue = []
+
+		
+#		var wepstring = ""
 #		print("pools:")
-#		print(pool)
-#		print(newpool)
-#		pool = newpool
+#		for wep in pool:
+#			wepstring = wepstring + ", " + wep.my_id
+#		print(wepstring)
+#		wepstring = ""
+#		for wep in newpool:
+#			wepstring = wepstring + ", " + wep.my_id
+#		print(wepstring)
+		
+		pool = newpool
 	##
 
 	var elt
@@ -296,3 +308,22 @@ func get_stat_description_text(stat_name:String, value:int, player_index:int)->S
 	print(key)
 	
 	return Text.text(key, [str(abs(value))])
+
+# Fix King's smiley-face indicator for tier-4 weapons
+func get_icon_for_duplicate_shop_item(character:CharacterData, player_items:Array, player_weapons:Array, shop_item:ItemParentData, player_index:int)->Texture:
+	var orig_result = .get_icon_for_duplicate_shop_item(character, player_items, player_weapons, shop_item, player_index)
+	
+	# Original loop, run again to re-check
+	var same_tier_copies = 0
+	if shop_item is WeaponData:
+		for weapon in player_weapons:
+			if weapon.my_id == shop_item.my_id:
+				same_tier_copies += 1
+	var already_has_it = same_tier_copies > 0
+	
+	if character.my_id == "character_king" and (shop_item is WeaponData and already_has_it) and shop_item.tier == Tier.LEGENDARY:
+		return null
+	else:
+		return orig_result
+	
+	

@@ -19,6 +19,7 @@ func add_all_dlcs()->void :
 		Text.keys_needing_operator.new_effect_gain_stat_for_every_different_stat_short = [0, 4]
 		Text.keys_needing_percent.new_effect_stronger_loot_aliens_on_kill = [0]
 		Text.keys_needing_percent.new_effect_chance_explode_on_hit = [0]
+		Text.keys_needing_percent.new_effect_break_on_hit = [0]
 		
 
 		### ENEMIES ###
@@ -147,6 +148,14 @@ func add_all_dlcs()->void :
 		temp.value = 168		# 190
 		
 		# Brick
+		temp = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_effect_0.tres")
+		temp.text_key = "new_effect_break_on_hit"
+		temp = load("res://dlcs/dlc_1/weapons/melee/brick/2/brick_2_effect_0.tres")
+		temp.text_key = "new_effect_break_on_hit"
+		temp = load("res://dlcs/dlc_1/weapons/melee/brick/3/brick_3_effect_0.tres")
+		temp.text_key = "new_effect_break_on_hit"
+		temp = load("res://dlcs/dlc_1/weapons/melee/brick/4/brick_4_effect_0.tres")
+		temp.text_key = "new_effect_break_on_hit"
 		temp = load("res://dlcs/dlc_1/weapons/melee/brick/4/brick_4_data.tres")
 		temp.value = 36			# 40
 		
@@ -272,17 +281,15 @@ func add_all_dlcs()->void :
 		### CHARACTERS ###
 		# Druid
 		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")
-	##	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0.tres")
-	##	temp_2.value = 8				# 5 (Starting HP)
-	##	temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0b.tres")
-	##	temp.effects.erase(temp_2) # Remove starting 15 Luck
+		temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0.tres")
+		temp.effects.erase(temp_2)		# Remove +5 Starting HP
 		temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_1.tres")
 		temp_2.value = 2
 		temp_2.value2 = 100
 		temp_2.custom_key = "bm_stats_on_poison_fruit"
 		temp_2.text_key = "BM_EFFECT_STAT_ON_POISON_FRUIT"
 		temp.effects.erase(temp_2)
-		temp.effects.insert(4, temp_2) # Reposition so it appears after you see what poison fruit are
+		temp.effects.insert(3, temp_2) # Reposition so it appears after you see what poison fruit are
 		temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_3.tres")
 		temp_2.text_key = "NEW_EFFECT_POISONED_FRUIT"
 		
@@ -347,6 +354,16 @@ func add_all_dlcs()->void :
 
 
 		### STARTING WEAPONS ###
+		# Baby
+		temp = load("res://items/characters/baby/baby_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/weapons/melee/lute/1/lute_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		
+		# Buccaneer
+		temp = load("res://dlcs/dlc_1/characters/buccaneer/buccaneer_data.tres")
+		temp_2 = load("res://weapons/melee/wrench/1/wrench_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+
 		# Chunky
 	#	temp = load("res://items/characters/chunky/chunky_data.tres")
 	#	temp_2 = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
@@ -357,11 +374,26 @@ func add_all_dlcs()->void :
 		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
 		temp.starting_weapons.push_back(temp_2)	
 
+		# Demon
+		temp = load("res://items/characters/demon/demon_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/weapons/melee/mace/2/mace_2_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		
+		# Entrepreneur
+		temp = load("res://items/characters/entrepreneur/entrepreneur_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		
 		# Explorer
 		temp = load("res://items/characters/explorer/explorer_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/javelin/1/javelin_data.tres")
 		temp.starting_weapons.push_back(temp_2)
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/lute/1/lute_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+
+		# One-armed
+		temp = load("res://items/characters/one_arm/one_arm_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/2/harpoon_gun_2_data.tres")
 		temp.starting_weapons.push_back(temp_2)
 		
 		# Romantic
