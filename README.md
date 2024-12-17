@@ -28,7 +28,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
-Tons of items receive small buffs or nerfs: overall more items are worth buying more often, and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
+Tons of items receive small buffs or nerfs: overall a wider variety items are worth buying more often, and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
 
 * Tardigrade is no longer wasted by Bloody Hand/Donation.
 * Ricochet is now friendlier with already-piercing weapons.
@@ -91,7 +91,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Tier-1
 * **Alien Tongue:** Pickup Range +30% -> +35%; Knockback +1 -> +2; Price 25->22
 * **Baby Gecko:** Range 10 -> 12
-* **Bag:** Price 15->17
+* **Bag:** Price 15->18
 * **Beanie:** Range -6 -> -7
 * **Book:** Price 8->7
 * **Boxing Glove:** Knockback +3 -> +4
@@ -102,14 +102,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Duct Tape:** Price 20->15
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
 * **Glasses:** Range 20 -> 22
-* **Head Injury:** Price: 25->24; Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
+* **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->24
 * **Helmet:** Price 15->19; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
 * **Landmines:** Price 15->13
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
 * **Lumberjack Shirt:** Price 15->12
-* **Mutation:** Price 25->22; Knockback -3 -> -2
+* **Mutation:** Price 25->23; Knockback -3 -> -2
 * **Propeller Hat:** Price 28->25
 * **Scar:** Price 25->24; Range -8 -> -11
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
@@ -120,11 +120,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 
 ### Tier-2
-* **Acid:** Price 65->63
+* **Acid:** Price 65->62
 * **Alien Eyes:** Price 50->53; No Downside --> -8 Range
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Range -15 -> -18
-* **Blood Leech:** Price 45->41
+* **Blood Leech:** Price 50->46
+* **Blood Leech:** Price 45->40
 * **Campfire:** Price 40->46; HP Regen 2 -> 3 _[The idea here is to make it buyable for either stat and good if you want both stats.]_
 * **Celery Tea:** Price 35->32
 * **Cyclops Worm:** Range -12 -> -16
@@ -134,14 +135,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Garden:** Price 50->48
 * **Incendiary Turret:** Price 40->42; Engineering Scaling 33% -> 35% _[Makes the rounding less abysmal.]_
 * **Leather Vest:** Price 45->48
-* **Little Frog:** Price 45->41; Pickup Range +20% -> +30%
+* **Little Frog:** Price 45->40; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
 * **Lure:** Price 34->38
 * **Medal:** Price 55->60; Crit Chance -4% -> -3%
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->42
 * **Missile:** Price 45->43; Damage 10% -> 11%
-* **Pocket Factory:** Price 75->72; Engineering 2 -> 3 _[Many people like this item, but if you look at its actual damage output in practice, it tends to be very lackluster for its cost outside of best-case scenarios.]_
+* **Pocket Factory:** Price 75->70; Engineering 2 -> 3 _[Many people like this item, but if you look at its actual damage output in practice, it tends to be very lackluster for its cost outside of best-case scenarios.]_
 * **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -2% Attack Speed
 * **Reinforced Steel:** Engineering 3 -> 4
@@ -154,7 +155,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Whetstone:** Price 40->42
 * **White Flag:** Harvesting 5 -> 6
 #### DLC
-* **Bone Dice:** Price 30->25; Chance to proc +1 Damage% 50% -> 60%
+* **Bone Dice:** Price 30->26; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
 * **Eyepatch:** Crit Chance 3% -> 5%
 * **Pearl:** Price 60->55; Chance for free Pearl in crate 3% -> 4%
@@ -182,24 +183,24 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Power Generator:** -5% Damage --> -1 Max HP Per 5% Speed
 * **Rip and Tear:** Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies
 * **Shackles:** Price 80->86; Range 80 -> 88
-* **Shmoop:** Price 60->65; HP Regen 2 -> 3
+* **Shmoop:** Price 60->66; HP Regen 2 -> 3
 * **Statue:** Price 60->55
 * **Strange Book:** Price 70->62
-* **Tardigrade:** Price 50->42; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
+* **Tardigrade:** Price 50->41; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Vigilante Ring:** Price 92->77
 * **Wandering Bot:** Price 60->43
 * **Wheat:** Price 85->81; Harvesting 10 -> 13
-* **Wings:** Range 30 -> 35
-* **Wisdom:** Price 85->82
+* **Wings:** Range 30 -> 33
+* **Wisdom:** Price 85->81
 #### DLC
-* **Goldfish:** Price 23->17 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
+* **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Explosion Size 5% -> 10%; -3% Dodge --> No Penalty
-* **Sunken Bell:** Price 65->57; Explosion Size 600% -> 750%
+* **Sunken Bell:** Price 65->55; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Big Arms:** Price 105->98
-* **Diploma:** Price 90->83
+* **Diploma:** Price 90->81
 * **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; Damage -15% -> -5% _[Lets it fit in more reasonably with mixed builds, and gives a little more emphasis on the more-unique size factor rather than just damage.]_
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
@@ -346,6 +347,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Pacifist:** Added Scissors, Rock
 * **Ranger:** Removed Pistol
 * **Saver:** Added Stick
+* **Wildling:** Removed Sharp Tooth _[Doesn't benefit from Wildling's ability.]_
 #### DLC
 * **Baby:** Added Lute
 * **Buccaneer:** Added Wrench

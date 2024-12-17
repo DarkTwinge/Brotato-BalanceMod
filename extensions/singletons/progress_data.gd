@@ -78,7 +78,7 @@ func add_all_dlcs()->void :
 
 		# Items: Tier-2 #
 		temp = load("res://dlcs/dlc_1/items/bone_dice/bone_dice_data.tres")
-		temp.value = 25   # 30
+		temp.value = 26   # 30
 		temp = load("res://dlcs/dlc_1/items/bone_dice/effects/bone_dice_effect_0.tres")
 		temp.value2 = 60	# 50 (Chance to proc +1% Damage)
 
@@ -103,10 +103,10 @@ func add_all_dlcs()->void :
 		temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
-		temp.value = 17   # 23
+		temp.value = 15   # 23
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-		temp.value = 57		# 65
+		temp.value = 55		# 65
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
 		temp.scale = 7.5	# 6.0
 		temp.text_key = "new_effect_explode_when_below_hp"

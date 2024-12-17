@@ -140,21 +140,22 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 				if tag_to_remove in item.tags:
 					items_to_remove.append(item)
 
-		if player_character.banned_item_groups.size() > 0:
-			for banned_item_group in player_character.banned_item_groups:
+		if RunData.current_wave < RunData.nb_of_waves:
+			if player_character.banned_item_groups.size() > 0:
+				for banned_item_group in player_character.banned_item_groups:
 
-				if not banned_item_group in item_groups:
-					print(str(banned_item_group) + " does not exist in ItemService.item_groups")
-					continue
+					if not banned_item_group in item_groups:
+						print(str(banned_item_group) + " does not exist in ItemService.item_groups")
+						continue
 
+					for item in pool:
+						if item_groups[banned_item_group].has(item.my_id):
+							items_to_remove.append(item)
+
+			if player_character.banned_items.size() > 0:
 				for item in pool:
-					if item_groups[banned_item_group].has(item.my_id):
+					if player_character.banned_items.has(item.my_id):
 						items_to_remove.append(item)
-
-		if player_character.banned_items.size() > 0:
-			for item in pool:
-				if player_character.banned_items.has(item.my_id):
-					items_to_remove.append(item)
 
 	var limited_items = get_limited_items(args.owned_and_shop_items)
 

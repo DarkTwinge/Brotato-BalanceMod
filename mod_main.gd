@@ -241,7 +241,7 @@ func _ready()->void:
 	temp.value = 12   # 10 (Range)
 
 	temp = load("res://items/all/bag/bag_data.tres")
-	temp.value = 17   # 15
+	temp.value = 18   # 15
 	temp = load("res://items/all/bag/bag_effect_1.tres")
 	temp.text_key = "new_effect_item_box_gold"
 	
@@ -280,8 +280,6 @@ func _ready()->void:
 	temp = load("res://items/all/glasses/glasses_effect_1.tres")
 	temp.value = 22  # 20 (Range)
 	
-	temp = load("res://items/all/head_injury/head_injury_data.tres")
-	temp.value = 24  # 25
 	temp = load("res://items/all/head_injury/head_injury_effect_1.tres")
 	temp.value = 7   # 6 (Damage%)
 	temp = load("res://items/all/head_injury/head_injury_effect_2.tres")
@@ -313,7 +311,7 @@ func _ready()->void:
 	temp.value = 12  # 15
 
 	temp = load("res://items/all/mutation/mutation_data.tres")
-	temp.value = 22  # 25
+	temp.value = 23  # 25
 	temp = load("res://items/all/mutation/mutation_effect_3.tres")
 	temp.value = -2  # -3 (Knockback)
 
@@ -343,7 +341,7 @@ func _ready()->void:
 
 	## TIER-2 ITEMS ##
 	temp = load("res://items/all/acid/acid_data.tres")
-	temp.value = 63   # 65
+	temp.value = 62   # 65
 
 	temp = load("res://items/all/alien_eyes/alien_eyes_data.tres")
 	temp.value = 53   # 50
@@ -355,9 +353,12 @@ func _ready()->void:
 		
 	temp = load("res://items/all/blindfold/blindfold_effect_3.tres")
 	temp.value = -18  # -15 (Range)
+
+	temp = load("res://items/all/black_belt/black_belt_data.tres")
+	temp.value = 46   # 50
 	
 	temp = load("res://items/all/blood_leech/blood_leech_data.tres")
-	temp.value = 41   # 45	
+	temp.value = 40   # 45	
 
 	temp = load("res://items/all/campfire/campfire_data.tres")
 	temp.value = 46   # 40
@@ -395,7 +396,7 @@ func _ready()->void:
 	temp.value = 48  # 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
-	temp.value = 41  # 45
+	temp.value = 40  # 45
 	temp = load("res://items/all/little_frog/little_frog_effect_1.tres")
 	temp.value = 30  # 20 (Pickup Range)
 	
@@ -422,7 +423,7 @@ func _ready()->void:
 	temp.value = 11  # 10 (Damage%)
 	
 	temp = load("res://items/all/pocket_factory/pocket_factory_data.tres")
-	temp.value = 72  # 75
+	temp.value = 70  # 75
 	temp = load("res://items/all/pocket_factory/pocket_factory_effect_0.tres")
 	temp.value = 3   # 2 (Engineering)
 	
@@ -580,7 +581,7 @@ func _ready()->void:
 	temp.value = 88  # 80 (Range)
 
 	temp = load("res://items/all/shmoop/shmoop_data.tres")
-	temp.value = 65  # 60
+	temp.value = 66  # 60
 	temp = load("res://items/all/shmoop/shmoop_effect_2.tres")
 	temp.value = 3   # 2 (HP Regen)
 	
@@ -591,7 +592,7 @@ func _ready()->void:
 	temp.value = 62  # 70
 	
 	temp = load("res://items/all/tardigrade/tardigrade_data.tres")
-	temp.value = 42  # 50
+	temp.value = 41  # 50
 	temp.tags.push_back("stat_dodge")
 	temp = load("res://items/all/tardigrade/tardigrade_effect_1.tres")
 	temp.text_key = "bm_effect_hit_protection"
@@ -616,10 +617,10 @@ func _ready()->void:
 	temp.value = 13  # 10 (Harvesting)
 	
 	temp = load("res://items/all/wings/wings_effect_2.tres")
-	temp.value = 35  # 30 (Range)
+	temp.value = 33  # 30 (Range)
 	
 	temp = load("res://items/all/wisdom/wisdom_data.tres")
-	temp.value = 82  # 85
+	temp.value = 81  # 85
 	
 
 	## TIER-4 ITEMS ##
@@ -629,7 +630,7 @@ func _ready()->void:
 	
 	# Diploma
 	temp = load("res://items/all/diploma/diploma_data.tres")
-	temp.value = 83   # 90
+	temp.value = 81   # 90
 	
 	# Explosive Shells
 	temp = load("res://items/all/explosive_shells/explosive_shells_effect_1.tres")
@@ -1804,4 +1805,9 @@ func _ready()->void:
 ##Testing
 	temp_2 = load("res://weapons/melee/torch/1/torch_data.tres")
 	temp.starting_weapons.push_back(temp_2)
-
+	
+	# Wildling
+	# Remove
+	temp = load("res://items/characters/wildling/wildling_data.tres")
+	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
+	temp.starting_weapons.erase(temp_2)

@@ -1,18 +1,96 @@
+WORKSHOP ID: 3058512152
+
+~~~Removed Text Keys~~~~~
+BM_ENEMY_CHARGE_SPEED	{0} Enemy Charge Speed
+BM_EFFECT_EXTRA_WEAPON_SLOT_LIMIT	You can equip an additional weapon
+BM_INCREASED_BURN_DURATION	Burning Duration lasts {0} tick longer
+BM_EFFECT_FOR_NEGATIVE_SPEED	If your Speed is negative, gain {0} {1}
+
+
+~Challenge Run Ideas~
+One-weapon Captain
+PaciFIST (Has to kill final bosses; possibly earlier elites tho 11 seems very sus)
+Un-Unarmed Brawler
+Im-Precise Crazy
+Sausage Lord Mage (no direct Elemental weapons)
+All-Brick Mutant
+Buy Every Weapon Multi-tasker (is this fun?  Require recycler to be pleasant or?)
+Un-Primitive Wildling
+Harvest-less Entreprenuer? (Crossbow?)
+Gunless Cyborg
+1HP Apprentice
+Anti-Lorax Cryptid (Hunt down all trees aggressively)
+One-weapon-type Gladiator
+Wall-Camping Speedy
+Baitless Fisher
+Elemental Knight?
+Minimum-sets Vagabond
+Baby-Screwdriver
+Armorless Knight (Only items, or level-ups too?)
+xxPure-Shotgun Renegade
+xxAlways-moving Streamer (Fist, Stick, Spear? Screwdriver? Medigun/Scissors?)
+xxHiker Goes For a Walk (Buy all Speed, pure Hiking Pole)
+xxAggressively Curious (always has to kill at least 2 Looters)
+
+`(Requires editing)`
+Pure-Pistol Ranger
+Generalist - Harpoon Gun Only
+
+Starters to test:
+Ghost Scepter Ranger?
+Soldier-Flute
+Lich  Spiky, Thief Dagger
+Jack w/ Wrench, Flute
+Loud w/ Pruner
+Saver-Torch
+Test/Consider Captain-Quarterstaff, Screwdriver, Chopper
+Spoon on Mage?
+Entre-Revolver?
+
+~Other starters to maybe test or add:~
+~~Maybes - test first~~
+Lich - Brick (can still do dmg if breaks); Flute
+Buccaneer - Plank?
+dwarf spear/joust
+Druid - Spiky Shield?
+Hiker - Slingshot?
+King - Blunderbuss?  Trident?
+Loud - Flute??
+Ogre - Knife, Spear
+Mage - Spoon?
+Romantic - Plank, Screwdriver
+Captain SMG & slingshot
+
+Apprentice - [Harpoon Gun]
+Builder - Shuriken??
+Captain - Ghost Axe??
+Demon - Flute?, Brick
+Explorer - Brick
+Fisher - maaaaybe Hiking Stick, [Trident], [[Harpoon Gun???]]
+Gladiator - Brick, (Lute), [Mace]
+Golem - Spoon??
+Hiker - Ghost Axe?, Spear
+Hunter - [Harpoon Gun]
+King - Harpoon Gun??, Spoon??, Anchor?
+Knight - Spoon??
+Lucky - Brick (cute thematic fit)
+Maso - Spoon?
+Multitasker - Brick, Spoon
+Ogre -  Ghost Axe??
+Old - Brick?
+One-armed - Brick; Javelin?; [Grenade Launcher]
+Renegade - [Harpoon Gun]
+Romantic - Ghost Flint? (depends if charming counts as a proc for it), Thief Dagger? (same quesiton as Flint), Torch? (does burn ticks proc their effect?)
+Streamer - Brick, Flute??
+Technomage - Spoon??
+
+~~~
 reconsider jousting lance (tho Blob already nerfed it a fair bit)
 sharp bullet giving -Range is an idea
 maybe add a few mummy spawns to the edge on wave 20 to further emphasize knockback value?
 
 check the Snail situation (does it already slow charges without my change?)
-further increase Luck's effect on tier-4s
 
-Test new starters:
-Lich - Shield
-Saver-Torch?
-
-
-if Obliterator needs a small buff, give the projectile more width
-
-thinking Baby might want a small nerf-buff: +1 Harvesting, +5% Shop Price?
 
 prob add some knockback to Couch when neg speed too?
 
@@ -29,125 +107,234 @@ could look at tweaking elite hp so wave 11 has less comparatively and 18 slightl
 
 cyborg switch sound -> more unique and louder
 
-remove sharp tooth from wildling
-speedy prob doesn't want tooth starter
 
 
-could be cute to have tooltips show hgiehst stat reached for previous round for e.g. Cryptid and also lowest for e.g. Triangle of Power
-
-Currently combining weapons doesn't update shop (e.g. Multitasker) - unsure if I'm breaking this or natural
-
-reduce cost of tier-4 weapons as a benefit to Luck?
-change Luck pop-up description probably, de-emphasize rarity?
+could be cute to have tooltips show highest stat reached for previous round for e.g. Cryptid and also lowest for e.g. Triangle of Power
 
 
 
-
-Check if Glutton, Spicy Sauce, and Rip and Tear  can all already crit with other beta changes
-
-
-ENGINEER items could be more common if youre stat is higher than the wave
-
+ENGINEER items could be more common if your stat is higher than the wave
 
 one-armed could have vaga's no-dupe weapon effect to clean up their shops very slightly (makes it slightly easier to swap
 
-
 Fried Rice probably wants a full rework
 
-Honey needs tweaking or possibly reworking; unsure yet
-
-There's now a fruit tag on garden; evaluate if that makes more sense than adding a new tag
-
-
-recycling machine tooltip "+35%" should specify additive with base 25%?
-
-re-order barricade benefits
 
 if slow tag is to exist, wandering bot too?  maybe just remove that from old tho?
 
-could add commas to damage numbers 5+ digits
-
-reinforce steel tweak?  Look into it; +1 Engineering is natural but math it some
-
-look at ways to maybe make Riposte effect actually useful?
-
-make Lich's descript more clear that it is ALL damage types
-
-Fireball - add Explosion Size
-
 When testing Eyes Surgery, try some with One-armed
 
-do some comparisons of xbow vs icecicle
+do some comparisons of xbow vs icicle
 
 Could have Mom/Monk have lower HP scaling?
-
-do I change Fisher's name slightly?
-
-Golem should color 'no healing' red
-
-prob drop xbow cost just slightly alongside the other buffs?  to 16 at tier-1, maybe Lance pricing or?
-
-
 make Monk phase 1 move a bit faster but keep their reduced hp?
 
 more ranged set options for better mixing and more varied vaga options?
 
 
-
-what if Technomage only had the price increase for non-Engineering items?  [Obviously play Techo more and sus out if there's a problem that needs fixing first]
-
-
-
-test Baby-Taser, Icicle -- can they get first level up reliably?  Pistol?
-
-check structure tag for IMproved Tools, Garden.... maybe Wasp?
-
 If unfixed, check Sausage tooltip - may only be giving +1s instead of actual damage or somesuch?
 
-Vampire could scale off *flat* missing hp if that makes more sense
 
 
-evaluate crit of various structures and things with Pile of Books potential; e.g. landmines shouldn't have 1.5x crit damage [prob at least mostly fixed?]
-
-
-Should  weird food be capped/nerfed more?
-
-If not fixed:
-Minor: Display for Fireball's effects are different for different tiers. I'd suggest using the tier-2 ordering (explosion, then burn) for all rather than the tier-3/4 ordering (burn, then explosion).
+Try Minigun with low recoil value
 
 ~~~~~~
 Beta/DLC
 ~~~~~~
 
-Celery Tea buff
-[Immortel suggested Wave 20 regular enemy ramp up late wave]
-Rework Druid
-Black Flag Curse -> 5  (maybe with increasing the price back up some?)
-Bone Dice prolly still needs more than the price drop, but we'll see
-Sickle non-harvesting-scaling buff
+
+Consider re-buffing Croc a little bit; Phase 2 might be too easy now
+Re-eval Mantis v Rhino differences again with the Rhino cooldown changes
+Watch if Mom is even hard any more
 
 
-Chunky - Sickle (but only if alongside other buffs to the weapon)
-Cryptid - Flute
-Entrepreneur - Hiking Pole, Lute
-Explorer - Lute, Javelin
-Farmer - Lute
-Fisher - Javelin
-Generalist - Javelin
-Glutton - Lute
-Hunter - Javelin
-Jack - Brick, Spoon
-King - Javelin
-Knight - Mace, Anchor
-Loud - Javelin
-Multi-tasker - Lute
-Renegade - Javelin; Flute [Is it TOO easy?]
-Romantic - Jousting Lance, Remove Fist
-Saver - Sickle, Lute
-Sick - Sickle, Javelin
-Soldier - Javelin
-Speedy - Javelin
-Streamer - Javelin
-Vagabond - Lute
-Vampire - Javelin, Sickle
-Wildling - Javelin
+Sailor -- Tier 2 is colored red, should it be green?
+
+Goldfish should clarify doesn't affect locked
+GF could give free reroll, or make the next shop's items cheaper
+
+Dwarf: Counter for Engineering gained
+Definitely awkward, tbd if overly niche or such
+
+Gangster: Controller down on items can go over to stats not weapons from rightmost only
+
+
+Tier-4 Brick could no longer destroy itself but instead cause 1 mat to drop each attack
+
+treasure map should have some visual/audio cue when procs
+	may also want some light base stats of some kind
+
+Spiked Shark run-away Elite may want to switch phase ar 40s instead of 35s since it's so difficult to hit while it's running away early?  Not strong
+
+Sailor-Knight differentiate more?
+	sailor cursed weapons could count too? (and reduce bonus)
+Javelin/seashell text 'every 2nd attack' maybe clearer if accurate?
+
+
+romantic's bonus range apply to hiking stick
+
+
+maybe add new turret, prob blue tier
+	Or perhaps act like Engineering tag if have enough of the stat?  (How often is this a bad thing?)
+
+
+
+Spoon - Even-out HP Scaling (so 0.25 at all tiers), making melee scaling still poor but less awful with 50%->60% (all tiers), and then changing the base damage from 8/12/16/20 -> 7/12/18/24
+
+
+sound effect entering vat = could be louder, often doesn't play
+
+
+~~~~~
+ogre - too many waves with plankton/fins/shrimp
+Red Screwdriver w/ Ball & Chain showed Cooldown of 0.73
+
+
+Wave 20 Abyss may be too sparse
+	--now fixed?
+
+super-speed on wall edge sometimes
+
+
+
+baby octopus kinda unnecessary
+maybe something else with -hp regen
+
+
+
+~investigate mace hitbox
+
+~~~
+bm-maybe put spyglass back at t1
+
+Flutes could increase enemy damage both to you and for charmed enemies vs other enemies
+
+BM-Lute shouldn't do extra damage itself from the Lute bonus
+
+
+~~~~
+~1:58 into stream, what healed me, monkey number wrong or goblet from shop or what
+prisoner elite -- 2nd phase either too much delay between attacks or doesn't attack from far enough away
+
+Scissors higher tiers still pretty awkward with too little reason to upgrade
+
+small fish -- is it multiplicative, if so add to tooltip
+
+check curse special cases, and make sure anything I rework doesn't get extra silly (heavy bullets right now maybe?  couch down the line.)
+~~
+keep an eye on plasma sledge; seeming pretty sad when it struggles to outpace planks
+
+naval gun maybe shouldn't have gun tag (rename harpoon launcher ir something); try it in gun build to see if it makes ANY sense
+
+hiking poles are sometimes resetting stat counts????
+
+stargazer sfx - louder, always play, only play when it enters vat
+
+~
+~If reworking things like e.g. Baby Squid, make sure they are removed/added to the lists in item_service for specific-character bans
+~
+~~~
+Engineer halving explosion damage is kinda weird
+
+fishhook slightly cheaper  OR could come with some base generic stats
+
+prisoner range for phase 2/3 probably too low; explorer easily stays away
+	tho it also switches phases really fast, which is maybe fine but a bit threatening for sure
+
+Cauldron - does it stack at all?
+
+---
+small fish - change descript to say multiplic (and verify)
+
+do something to honey
+	maybe lessen downside and also gives some elemental dmg?
+
+1-3 tier-3/4 item that reduces curse
+	maybe wait for bugfix to negative curse issues
+
+~
+Wave reminder: 17 vampires, 7/14 walrus, 15 krakens
+
+vamp squid max range up slightly?  (test)
+
+~
+Does Shuriken want a small buff to its early game?
+
+Padding could maybe have both the hp per saved mats AND the hp per mats left on ground effects?  With a small -AtkSpd?
+
+~
+Cacti -- slightly cheaper or spike base damage+1 ?  test more
+
+Curse tooltip description more details?
+
+Saltwater speedup more useful for Ranged, could maybe have it less focused on melee?  (but maybe that's fine to make it about equally useful for both?)
+
+Consider reverting Cute Monkey changes - appropriate amount of Healing for a Tier-1?
+Do some direct Stick comparisons with my previous BM nerfs (Damage Scaling 100%(All) -> 75%/80%/85%/90%; Flat Damager Per Stick 4/6/8/10 -> 3/5/7/9) and the live nerfs
+How worth upgrading is it for Flamethrower?  Gets duration on purple and range on red I guess?
+
+Gladiator maybe could go to -50 Luck?
+
+[Does Chef have extra Sausages banned? may be fixed in a vanilla update]
+
+
+re-order barricade benefits
+Wave 13 pretty sparse first 15s [probably changed now?]
+
+
+
+Still consider revert early-exact-weapon changes and perhaps making them set instead
+
+bug with 3rd shop slot moving up -- mirror and other modifier things e.g. curious, fairy
+
+`~`Aros reported issues at 1.1.7 - verify before implementing any`~`
+Treasure Map - Should be tagged for exploration.
+Extra Stomach and Spicy Sauce should be tagged for Consumable instead of luck.
+Dwarf – I don’t find myself buying engineering - Maybe Dwarf shouldn’t be tagged for engineering, just structures.
+Chef – Ban Eyes Surgery
+Chef – Remove Plank - Since it is an elemental weapon.
+Chef – Remove Stick - Chef should in theory want to have a fire weapon. So having one of the stronger starting weapons be stick puts you into a situation where you’re playing 6 sticks.
+Chef - I don't think chef needs the Elemental damage restriction on +200% bonus damage. It could be -100% elemetal damage modification along with burn not being able to do +200%
+Chainsaw's text says cooldown is ... every 40th Shot. - It isn't a ranged weapon, so the text should say attack instead of shot.
+--Should set_hitbox_damage_modifier for harpoon puling long distances be using MIN instead of MAX?
+
+(reported bug: Rip & Tear is currently scaling with Frozen Heart.)
+Reported-Turrets don't benefit from Eyepatch
+~~
+Pufferfish for Wave 16 crash zone instead of Flys probably makes sense
+
+
+
+Builder tooltip maybe 'Can't find more structures'?
+	Build Turret "base stats" -> base attributes" ?
+Baby/Techno/Captain (/more?) -- XP _needed_ to level up?
+"the end of a wave" -> end of wave (Creature...)
+
+
+whistle - track extras given
+whistle could make a sfx when looter spawns
+^^These both seem kinda hard.  Would be neat tho.
+
+--adv stats mod
+loot alien count definitely wrong
+recycling count maybe wrong? (arms dealer run)
+~~
+
+Check the new effect for tooltip mods I made; was I just doing key instead of text_key so they don't need new files?
+
+
+Should Sick not be tagged for Lifesteal?
+
+- Crossbow -- with Range being ~17% more available, is it too strong?
+	Still like the thematic-fit idea of better Crossbows getting slower
+	
+
+Landmines themselves could maybe have more Crit Damage
+Healer & Hermit kinda weird -- healer is faster and has more hp, hermit has knockback resistance (likely making it *easier* to kill) and a tiny bit of armor.  
+
+Tweak Pencil to not be -Crit
+
+Ghost Axe could possibly be lower range (which would help Flints get more kills)
+Probably re-look at Wands, maybe direct compare with Icicle (could increase cost of icicles if that makes sense to spread them out more)
+
+BM Set Weighting: maybe don't double-count same weapons?
