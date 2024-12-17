@@ -28,7 +28,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
-Tons of items receive small buffs or nerfs: overall a wider variety items are worth buying more often, and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
+Tons of items receive small buffs or nerfs: overall more items are useful in more situations, and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
 
 * Tardigrade is no longer wasted by Bloody Hand/Donation.
 * Ricochet is now friendlier with already-piercing weapons.
@@ -124,7 +124,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alien Eyes:** Price 50->53; No Downside --> -8 Range
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Range -15 -> -18
-* **Blood Leech:** Price 50->46
+* **Blackbelt:** Price 50->46
 * **Blood Leech:** Price 45->40
 * **Campfire:** Price 40->46; HP Regen 2 -> 3 _[The idea here is to make it buyable for either stat and good if you want both stats.]_
 * **Celery Tea:** Price 35->32
