@@ -8,32 +8,26 @@ BM_EFFECT_FOR_NEGATIVE_SPEED	If your Speed is negative, gain {0} {1}
 
 
 ~Challenge Run Ideas~
-One-weapon Captain
 PaciFIST (Has to kill final bosses; possibly earlier elites tho 11 seems very sus)
-Un-Unarmed Brawler
 Im-Precise Crazy
 Sausage Lord Mage (no direct Elemental weapons)
 All-Brick Mutant
 Buy Every Weapon Multi-tasker (is this fun?  Require recycler to be pleasant or?)
 Un-Primitive Wildling
-Harvest-less Entreprenuer? (Crossbow?)
 Gunless Cyborg
-1HP Apprentice
-Anti-Lorax Cryptid (Hunt down all trees aggressively)
 One-weapon-type Gladiator
 Wall-Camping Speedy
 Baitless Fisher
-Elemental Knight?
+Bull: Seeing Red (Buy all Red Things)
+Im-Precise Diver?  (and/or no Ranged)
 Minimum-sets Vagabond
 Baby-Screwdriver
+Solo Co-op
 Armorless Knight (Only items, or level-ups too?)
-xxPure-Shotgun Renegade
-xxAlways-moving Streamer (Fist, Stick, Spear? Screwdriver? Medigun/Scissors?)
-xxHiker Goes For a Walk (Buy all Speed, pure Hiking Pole)
-xxAggressively Curious (always has to kill at least 2 Looters)
 
 `(Requires editing)`
 Pure-Pistol Ranger
+One Punch Ogre (Single Fist weapon)
 Generalist - Harpoon Gun Only
 
 Starters to test:
@@ -103,21 +97,19 @@ possibly fly enemy should have more hp/wave
 
 Sausage should prob proc from Sauce/Rip&Tear since it procs from other explosions
 
-could look at tweaking elite hp so wave 11 has less comparatively and 18 slightly more?
+could tweak elite hp so wave 18 has slightly more?
 
 cyborg switch sound -> more unique and louder
 
 
 
-could be cute to have tooltips show highest stat reached for previous round for e.g. Cryptid and also lowest for e.g. Triangle of Power
+could be cute to have tooltips show highest stat reached for previous round for e.g. Cryptid and also lowest for e.g. Triangle of Power (Fried Rice...)
 
 
 
 ENGINEER items could be more common if your stat is higher than the wave
 
-one-armed could have vaga's no-dupe weapon effect to clean up their shops very slightly (makes it slightly easier to swap
-
-Fried Rice probably wants a full rework
+one-armed could have vaga's no-dupe weapon effect to clean up their shops very slightly (makes it slightly easier to swap)
 
 
 if slow tag is to exist, wandering bot too?  maybe just remove that from old tho?
@@ -130,9 +122,6 @@ Could have Mom/Monk have lower HP scaling?
 make Monk phase 1 move a bit faster but keep their reduced hp?
 
 more ranged set options for better mixing and more varied vaga options?
-
-
-If unfixed, check Sausage tooltip - may only be giving +1s instead of actual damage or somesuch?
 
 
 
@@ -154,12 +143,13 @@ Goldfish should clarify doesn't affect locked
 GF could give free reroll, or make the next shop's items cheaper
 
 Dwarf: Counter for Engineering gained
-Definitely awkward, tbd if overly niche or such
+Definitely awkward char, tbd if overly niche or such
 
 Gangster: Controller down on items can go over to stats not weapons from rightmost only
 
 
 Tier-4 Brick could no longer destroy itself but instead cause 1 mat to drop each attack
+	or it could give you a Tier-1 Brick when it breaks
 
 treasure map should have some visual/audio cue when procs
 	may also want some light base stats of some kind
@@ -168,10 +158,11 @@ Spiked Shark run-away Elite may want to switch phase ar 40s instead of 35s since
 
 Sailor-Knight differentiate more?
 	sailor cursed weapons could count too? (and reduce bonus)
-Javelin/seashell text 'every 2nd attack' maybe clearer if accurate?
-
+J
+avelin/seashell text 'every 2nd attack' maybe clearer if accurate?
 
 romantic's bonus range apply to hiking stick
+	^Seemed surprisingly hard to implement, but would still like to
 
 
 maybe add new turret, prob blue tier
@@ -190,9 +181,6 @@ ogre - too many waves with plankton/fins/shrimp
 Red Screwdriver w/ Ball & Chain showed Cooldown of 0.73
 
 
-Wave 20 Abyss may be too sparse
-	--now fixed?
-
 super-speed on wall edge sometimes
 
 
@@ -205,22 +193,18 @@ maybe something else with -hp regen
 ~investigate mace hitbox
 
 ~~~
-bm-maybe put spyglass back at t1
-
 Flutes could increase enemy damage both to you and for charmed enemies vs other enemies
 
 BM-Lute shouldn't do extra damage itself from the Lute bonus
 
 
 ~~~~
-~1:58 into stream, what healed me, monkey number wrong or goblet from shop or what
 prisoner elite -- 2nd phase either too much delay between attacks or doesn't attack from far enough away
 
-Scissors higher tiers still pretty awkward with too little reason to upgrade
-
-small fish -- is it multiplicative, if so add to tooltip
+small fish -- verify multiplicative, add to tooltip
 
 check curse special cases, and make sure anything I rework doesn't get extra silly (heavy bullets right now maybe?  couch down the line.)
+ ^Verify it is affecting -1accuracy correctly; probably should be since Eyepatch exists but?
 ~~
 keep an eye on plasma sledge; seeming pretty sad when it struggles to outpace planks
 
@@ -236,7 +220,9 @@ stargazer sfx - louder, always play, only play when it enters vat
 ~~~
 Engineer halving explosion damage is kinda weird
 
-fishhook slightly cheaper  OR could come with some base generic stats
+fishhook could come with some base generic stats
+could be true for treasure map as well
+^^Idea would just be to have generic stats more accessible, but given cheaper rerolls probably isn't needed any more?
 
 prisoner range for phase 2/3 probably too low; explorer easily stays away
 	tho it also switches phases really fast, which is maybe fine but a bit threatening for sure
@@ -244,13 +230,11 @@ prisoner range for phase 2/3 probably too low; explorer easily stays away
 Cauldron - does it stack at all?
 
 ---
-small fish - change descript to say multiplic (and verify)
-
 do something to honey
 	maybe lessen downside and also gives some elemental dmg?
 
-1-3 tier-3/4 item that reduces curse
-	maybe wait for bugfix to negative curse issues
+1-3 tier-3/4 items that reduces curse
+	(verify negative curse doesn't break things)
 
 ~
 Wave reminder: 17 vampires, 7/14 walrus, 15 krakens
@@ -266,8 +250,6 @@ Padding could maybe have both the hp per saved mats AND the hp per mats left on 
 Cacti -- slightly cheaper or spike base damage+1 ?  test more
 
 Curse tooltip description more details?
-
-Saltwater speedup more useful for Ranged, could maybe have it less focused on melee?  (but maybe that's fine to make it about equally useful for both?)
 
 Consider reverting Cute Monkey changes - appropriate amount of Healing for a Tier-1?
 Do some direct Stick comparisons with my previous BM nerfs (Damage Scaling 100%(All) -> 75%/80%/85%/90%; Flat Damager Per Stick 4/6/8/10 -> 3/5/7/9) and the live nerfs
@@ -318,6 +300,7 @@ whistle could make a sfx when looter spawns
 --adv stats mod
 loot alien count definitely wrong
 recycling count maybe wrong? (arms dealer run)
+"burn" on planks in adv stats for planks, is it ice cube or explosion or
 ~~
 
 Check the new effect for tooltip mods I made; was I just doing key instead of text_key so they don't need new files?
@@ -332,9 +315,14 @@ Should Sick not be tagged for Lifesteal?
 Landmines themselves could maybe have more Crit Damage
 Healer & Hermit kinda weird -- healer is faster and has more hp, hermit has knockback resistance (likely making it *easier* to kill) and a tiny bit of armor.  
 
-Tweak Pencil to not be -Crit
-
 Ghost Axe could possibly be lower range (which would help Flints get more kills)
 Probably re-look at Wands, maybe direct compare with Icicle (could increase cost of icicles if that makes sense to spread them out more)
 
 BM Set Weighting: maybe don't double-count same weapons?
+
+Possible Laser turret should have a small base damage boost?  (do a few comparison points vs burn turrets and explosion ones)
+
+Romantic + Flute is bugged?
+
+
+consider increasing Thief Dagger price slighty

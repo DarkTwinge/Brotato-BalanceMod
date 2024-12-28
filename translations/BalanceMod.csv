@@ -24,8 +24,10 @@ NEW_INFO_POS_STAT_LIFESTEAL,"Your weapon attacks have a {0} chance to heal you f
 NEW_INFO_NEG_STAT_LIFESTEAL,"Your weapon attacks have a 0% chance to heal you for 1 HP. (Capped at 1 HP every 0.1 seconds.)"
 NEW_EFFECT_NO_HEAL,You [color=#ff0000]can’t heal[/color] in any way during waves
 NEW_EFFECT_PACIFIST,Gain {0} material and XP for every living and despawned enemy at the end of a wave 
-BM_EFFECT_HIT_PROTECTION,Nullifies the the first 2+ damage hit taken each wave
+BM_EFFECT_HIT_PROTECTION,Nullifies the the first hit (of 2 or more damage) taken each wave
+BM_EFFECT_HIT_PROTECTION_PLURAL,"Nullifies the first {0} hits (of 2 or more damage) taken each wave"
 NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage; Non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
+NEW_EFFECT_BOUNCING_PLURAL,Your projectiles gain {0} bounces.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage; Non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
 NEW_EFFECT_GARDEN,Spawns a garden that creates a fruit an average of every {0} seconds
 NEW_EFFECT_DAMAGE_AGAINST_BOSSES,{0} damage against bosses and elites (multiplicative)
 NEW_SAUSAGE_EFFECT_STARTING_ITEM,You start with {0} {1} (or [color=#00ff00]2[/color] when starting with a Gun)

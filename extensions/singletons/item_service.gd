@@ -179,7 +179,7 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 				print(set.my_id)
 
 		var newpool = []
-		var newpool_queue = []
+#		var newpool_queue = []
 		for set in all_sets_from_weapons:
 			for weapon in pool:
 #				print("weapon sets:")

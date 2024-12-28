@@ -1,15 +1,23 @@
 extends "res://singletons/progress_data.gd"
 
-const BALMOD_DIR_DLCE = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/dlcs/dlc_1/"
+const BM_DIR_DLCE = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/dlcs/dlc_1/"
 
 ### ALL BASELINE DLC CHANGES ###
 func add_all_dlcs()->void :
+	# Checks if the DLC exists before it is loaded
+	if File.new().file_exists("res://dlcs/dlc_1/dlc_data.tres"):
+		ModLoaderMod.install_script_extension(BM_DIR_DLCE + "dlc_1_data.gd")
+	
+	# Run the normal function to load DLCs
 	.add_all_dlcs()
 	
-	# Checks if DLC is available before replacing any DLC data
+	# Checks if DLC is available and loaded before replacing any DLC data
 	if ProgressData.is_dlc_available("abyssal_terrors"):
 		var temp
 		var temp_2
+		
+		#
+		
 		
 		### TEXT KEYS ###
 		Text.keys_needing_operator.bm_effect_stat_on_poison_fruit = [0]
@@ -78,7 +86,7 @@ func add_all_dlcs()->void :
 
 		# Items: Tier-2 #
 		temp = load("res://dlcs/dlc_1/items/bone_dice/bone_dice_data.tres")
-		temp.value = 26   # 30
+		temp.value = 27   # 30
 		temp = load("res://dlcs/dlc_1/items/bone_dice/effects/bone_dice_effect_0.tres")
 		temp.value2 = 60	# 50 (Chance to proc +1% Damage)
 
@@ -86,8 +94,10 @@ func add_all_dlcs()->void :
 		temp.value = 25   # 20 (Temp Damage%)
 		temp.value2 = 3		# 2 (Seconds of Duration)
 
+		temp = load("res://dlcs/dlc_1/items/eyepatch/eyepatch_data.tres")
+		temp.value = 63		# 55
 		temp = load("res://dlcs/dlc_1/items/eyepatch/effects/eyepatch_effect_1.tres")
-		temp.value = 5		# 3 (Crit Chance)
+		temp.value = 7		# 3 (Crit Chance)
 
 		temp = load("res://dlcs/dlc_1/items/pearl/pearl_data.tres")
 		temp.value = 55   # 60
@@ -106,7 +116,7 @@ func add_all_dlcs()->void :
 		temp.value = 15   # 23
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-		temp.value = 55		# 65
+		temp.value = 52		# 65
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
 		temp.scale = 7.5	# 6.0
 		temp.text_key = "new_effect_explode_when_below_hp"
@@ -390,7 +400,16 @@ func add_all_dlcs()->void :
 		temp.starting_weapons.push_back(temp_2)
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/lute/1/lute_data.tres")
 		temp.starting_weapons.push_back(temp_2)
-
+		
+		# King
+		temp = load("res://items/characters/king/king_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/weapons/melee/spoon/2/spoon_2_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/2/harpoon_gun_2_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/2/blunderbuss_2_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		
 		# One-armed
 		temp = load("res://items/characters/one_arm/one_arm_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/2/harpoon_gun_2_data.tres")

@@ -89,7 +89,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ## Items
 ### Tier-1
-* **Alien Tongue:** Pickup Range +30% -> +35%; Knockback +1 -> +2; Price 25->22
+* **Alien Tongue:** Pickup Range +30% -> +35%; Knockback +1 -> +2; Price 25->23
 * **Baby Gecko:** Range 10 -> 12
 * **Bag:** Price 15->18
 * **Beanie:** Range -6 -> -7
@@ -98,18 +98,19 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Broken Mouth:** Price 25->26
 * **Cake:** Price 15->16
 * **Coupon:** Price 15->19
-* **Cute Monkey:** Price 25->34; Proc Chance 8% -> 10%; Limit 13->10 _[Cleaner numbers, and also more viable to take the -RangedDamage hit if you really want the supplemental healing.]_
+* **Cute Monkey:** Price 25->35; Proc Chance 8% -> 10%; Limit 13->10 _[Cleaner numbers, and also more viable to take the -RangedDamage hit if you really want the supplemental healing.]_
 * **Duct Tape:** Price 20->15
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
 * **Glasses:** Range 20 -> 22
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->24
-* **Helmet:** Price 15->19; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
+* **Helmet:** Price 15->18; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
 * **Landmines:** Price 15->13
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
 * **Lumberjack Shirt:** Price 15->12
-* **Mutation:** Price 25->23; Knockback -3 -> -2
+* **Mutation:** Price 25->24; Knockback -3 -> -2
+* **Pencil:** Price 15->14; -1 Crit --> -2 Luck _[Leaning away from Engineering with Crit penalties to work better with Pile of Books and new Screwdriver.]_
 * **Propeller Hat:** Price 28->25
 * **Scar:** Price 25->24; Range -8 -> -11
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
@@ -127,9 +128,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blackbelt:** Price 50->46
 * **Blood Leech:** Price 45->40
 * **Campfire:** Price 40->46; HP Regen 2 -> 3 _[The idea here is to make it buyable for either stat and good if you want both stats.]_
-* **Celery Tea:** Price 35->32
+* **Celery Tea:** Extra Enemy HP +100% -> +75%
 * **Cyclops Worm:** Range -12 -> -16
-* **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was already strong priced at 35, and remains so with the now-cheaper rerolls.]_
+* **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was very strong priced at 35, and remains so with the now-cheaper rerolls.]_
 * **Energy Bracelet:** Crit Chance 4% -> 5%
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
@@ -137,7 +138,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Leather Vest:** Price 45->48
 * **Little Frog:** Price 45->40; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
-* **Lure:** Price 34->38
+* **Lure:** Price 34->39
 * **Medal:** Price 55->60; Crit Chance -4% -> -3%
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->42
@@ -155,9 +156,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Whetstone:** Price 40->42
 * **White Flag:** Harvesting 5 -> 6
 #### DLC
-* **Bone Dice:** Price 30->26; Chance to proc +1 Damage% 50% -> 60%
+* **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
-* **Eyepatch:** Crit Chance 3% -> 5%
+* **Eyepatch:** Price 55->63; Crit Chance 3% -> 7% _[Now works better as an entry point into Crit.]
 * **Pearl:** Price 60->55; Chance for free Pearl in crate 3% -> 4%
 * **Saltwater:** Extra Speed When Hit 10% -> 20%
 
@@ -167,7 +168,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
-* **Bowler Hat:** Price 75->69; Luck 15 -> 18
+* **Bowler Hat:** Price 75->69; Luck 15 -> 20
 * **Candle:** Price 65->50; Elemental Damage 4 -> 3; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
 * **Chameleon:** Price 70->54; Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support:** Price 75->71
@@ -186,21 +187,21 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Shmoop:** Price 60->66; HP Regen 2 -> 3
 * **Statue:** Price 60->55
 * **Strange Book:** Price 70->62
-* **Tardigrade:** Price 50->41; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
+* **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
-* **Vigilante Ring:** Price 92->77
-* **Wandering Bot:** Price 60->43
-* **Wheat:** Price 85->81; Harvesting 10 -> 13
+* **Vigilante Ring:** Price 92->76
+* **Wandering Bot:** Price 60->42
+* **Wheat:** Price 85->82; Harvesting 10 -> 14
 * **Wings:** Range 30 -> 33
 * **Wisdom:** Price 85->81
 #### DLC
 * **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Explosion Size 5% -> 10%; -3% Dodge --> No Penalty
-* **Sunken Bell:** Price 65->55; Explosion Size 600% -> 750%
+* **Sunken Bell:** Price 65->52; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Big Arms:** Price 105->98
-* **Diploma:** Price 90->81
+* **Diploma:** Price 90->80
 * **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; Damage -15% -> -5% _[Lets it fit in more reasonably with mixed builds, and gives a little more emphasis on the more-unique size factor rather than just damage.]_
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
@@ -227,20 +228,21 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Guns:** 10/20/30/40/50 Range -> 2/4/6/8/10 Attack Speed _[Helps Guns care about the Range stat more often.]_
 
 ### Melee
+* **Cacti Club:** Base Projectile Damage 1->2 (All Tiers)
 * **Chopper:** Base Damage 6/12/18/30 -> 7/12/17/27 _[The new vanilla Chopper focuses its power on the Tier-4 version and this smooths out the curve a smidge.]_
 * **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
-* **Ghost Flint:** Tier-1 Damage 6->7; Tier-1 Cooldown 1.23 -> 1.24 _[Helps tier-1 not be so behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
+* **Ghost Flint:** Tier-1 Damage 6->7 _[Helps tier-1 not be so behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
 * **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
 * **Hatchet:** Range 125->135
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; (Fixed tooltip bounce count) _[Most of my Shiv nerfs were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%
 * **Scissors:** Tier-3/4 Cooldown 0.94/0.86 -> 0.89/0.78 _[Makes higher tier versions more worth using, and buffing cooldown helps their potential as a healing add-in to a Precise build.]_
-* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Maxes at 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
+* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.58/1.44/1.34/1.27 (Accounts for the lowered starting Range)
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
-* **Thief Dagger:** Tier-4 Crit Chance 40% -> 35%
+* **Thief Dagger:** Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
 * **Brick:** Can no longer break during Wave 1.
 * **Mace:** Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
@@ -268,7 +270,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
-* **Baby:** Harvesting 12 -> 14; Shop Price -20% -> -15% _[The extra Harvesting allows them to get their first Level-up after Wave 1 reliably.]_
+* **Baby:** Harvesting 12 -> 15; Shop Price -20% -> -15% _[The extra Harvesting allows them to get their first Level-up after Waves 1 and 2 reliably.]_
 * **Brawler:** Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw)
 * **Bull:** Starting HP Regen 15 -> 10
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[To prevent Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
@@ -320,7 +322,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 _[The base game mostly implemented my tweaks here, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
-+ **Stargazer:** Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 300% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
++ **Stargazer:** Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 325% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Narwhal:** Knockback Resistance 90% -> 87%
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
@@ -342,6 +344,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Generalist:** Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth
 * **Jack:** Removed Shuriken
+* **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle
 * **Mage:** Added Wrench
 * **One-armed:** Added Sword, Hammer, Flaming Brass Knuckles, Fireball
 * **Pacifist:** Added Scissors, Rock
@@ -354,6 +357,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Demon:** Added Mace
 * **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin
+* **King:** Added Blunderbuss, Harpoon Gun, Spoon
 * **One-armed:** Added Harpoon Gun
 * **Romantic:** Added Jousting Lance; Removed Fist
 * **Sick:** Added Javelin
