@@ -51,8 +51,11 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/enemies/narwhal/narwhal_stats.tres")
 		temp.knockback_resistance = 0.87			# 0.9
 		
+		temp = load("res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid_stats.tres")
+		temp.health_increase_each_wave = 6.0	# 5.0
+		
 		## WAVE CHANGES ##
-		# Find all waves with Stargazers & Pufferfish and replace them with my versions
+		# Find all waves with Stargazers, Pufferfish, and Vampire Squid to replace them with my versions
 		for dlc in available_dlcs:
 			for zone in dlc.zones:
 				for wave in zone.waves_data:
@@ -63,11 +66,15 @@ func add_all_dlcs()->void :
 								unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
 							elif unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/pufferfish/pufferfish.tscn":
 								unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/pufferfish.tscn")
+							elif unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid.tscn":
+								unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/vampire_squid.tscn")
 				for unit in zone.endless_enemy_scenes:
 					if unit.get_path() == "res://dlcs/dlc_1/enemies/stargazer/stargazer.tscn":
 						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
 					elif unit.get_path() == "res://dlcs/dlc_1/enemies/pufferfish/pufferfish.tscn":
 						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/pufferfish.tscn")
+					elif unit.get_path() == "res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid.tscn":
+						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/vampire_squid.tscn")
 		
 		# Wave 13 - Spawn single Egglord sooner
 		temp = load("res://dlcs/dlc_1/zones/abyss/013/d5_group_1.tres")
@@ -106,6 +113,9 @@ func add_all_dlcs()->void :
 
 		temp = load("res://dlcs/dlc_1/items/saltwater/effects/saltwater_effect_1.tres")
 		temp.value = 20		# 10 (Extra Speed when hit)
+		
+		temp = load("res://dlcs/dlc_1/items/treasure_map/treasure_map_data.tres")
+		temp.tags = [ "stat_luck", "exploration" ]	# Luck only -> Luck & Explore
 
 
 		# Items: Tier-3 #
@@ -289,6 +299,8 @@ func add_all_dlcs()->void :
 		temp.value = 125				# 140
 		
 		### CHARACTERS ###
+
+		
 		# Druid
 		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0.tres")
@@ -304,6 +316,9 @@ func add_all_dlcs()->void :
 		temp_2.text_key = "NEW_EFFECT_POISONED_FRUIT"
 		
 		## OTHER CHARACTER TEXT TWEAKS ##
+		# Builder
+		temp = load("res://dlcs/dlc_1/characters/builder/effects/builder_effect_2b.tres")
+		temp.text_key = "NEW_EFFECT_NO_STRUCTURES"		
 		temp = load("res://dlcs/dlc_1/characters/builder/builder_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/characters/builder/effects/builder_effect_1.tres")
 		temp.effects.erase(temp_2)
@@ -373,7 +388,15 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/characters/buccaneer/buccaneer_data.tres")
 		temp_2 = load("res://weapons/melee/wrench/1/wrench_data.tres")
 		temp.starting_weapons.push_back(temp_2)
-
+		
+		# Chef
+		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
+		# Remove
+		temp_2 = load("res://weapons/melee/plank/1/plank_data.tres")
+		temp.starting_weapons.erase(temp_2)	
+		temp_2 = load("res://weapons/melee/stick/1/stick_data.tres")
+		temp.starting_weapons.erase(temp_2)
+		
 		# Chunky
 	#	temp = load("res://items/characters/chunky/chunky_data.tres")
 	#	temp_2 = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")

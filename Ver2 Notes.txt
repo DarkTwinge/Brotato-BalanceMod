@@ -124,9 +124,6 @@ make Monk phase 1 move a bit faster but keep their reduced hp?
 more ranged set options for better mixing and more varied vaga options?
 
 
-
-Try Minigun with low recoil value
-
 ~~~~~~
 Beta/DLC
 ~~~~~~
@@ -135,6 +132,7 @@ Beta/DLC
 Consider re-buffing Croc a little bit; Phase 2 might be too easy now
 Re-eval Mantis v Rhino differences again with the Rhino cooldown changes
 Watch if Mom is even hard any more
+	--Seems pretty trivial to survive?  Still kinda hard to kill at least with short range melee?
 
 
 Sailor -- Tier 2 is colored red, should it be green?
@@ -158,8 +156,7 @@ Spiked Shark run-away Elite may want to switch phase ar 40s instead of 35s since
 
 Sailor-Knight differentiate more?
 	sailor cursed weapons could count too? (and reduce bonus)
-J
-avelin/seashell text 'every 2nd attack' maybe clearer if accurate?
+Javelin/seashell text 'every 2nd attack' maybe clearer if accurate?
 
 romantic's bonus range apply to hiking stick
 	^Seemed surprisingly hard to implement, but would still like to
@@ -184,7 +181,6 @@ Red Screwdriver w/ Ball & Chain showed Cooldown of 0.73
 super-speed on wall edge sometimes
 
 
-
 baby octopus kinda unnecessary
 maybe something else with -hp regen
 
@@ -196,7 +192,7 @@ maybe something else with -hp regen
 Flutes could increase enemy damage both to you and for charmed enemies vs other enemies
 
 BM-Lute shouldn't do extra damage itself from the Lute bonus
-
+	How does it stack? does the extra damage refresh on each hit, or is each tracked separately
 
 ~~~~
 prisoner elite -- 2nd phase either too much delay between attacks or doesn't attack from far enough away
@@ -207,8 +203,6 @@ check curse special cases, and make sure anything I rework doesn't get extra sil
  ^Verify it is affecting -1accuracy correctly; probably should be since Eyepatch exists but?
 ~~
 keep an eye on plasma sledge; seeming pretty sad when it struggles to outpace planks
-
-naval gun maybe shouldn't have gun tag (rename harpoon launcher ir something); try it in gun build to see if it makes ANY sense
 
 hiking poles are sometimes resetting stat counts????
 
@@ -230,34 +224,28 @@ prisoner range for phase 2/3 probably too low; explorer easily stays away
 Cauldron - does it stack at all?
 
 ---
-do something to honey
-	maybe lessen downside and also gives some elemental dmg?
 
 1-3 tier-3/4 items that reduces curse
 	(verify negative curse doesn't break things)
 
 ~
 Wave reminder: 17 vampires, 7/14 walrus, 15 krakens
-
-vamp squid max range up slightly?  (test)
-
 ~
+
 Does Shuriken want a small buff to its early game?
 
 Padding could maybe have both the hp per saved mats AND the hp per mats left on ground effects?  With a small -AtkSpd?
 
 ~
-Cacti -- slightly cheaper or spike base damage+1 ?  test more
 
 Curse tooltip description more details?
 
 Consider reverting Cute Monkey changes - appropriate amount of Healing for a Tier-1?
-Do some direct Stick comparisons with my previous BM nerfs (Damage Scaling 100%(All) -> 75%/80%/85%/90%; Flat Damager Per Stick 4/6/8/10 -> 3/5/7/9) and the live nerfs
+
 How worth upgrading is it for Flamethrower?  Gets duration on purple and range on red I guess?
 
 Gladiator maybe could go to -50 Luck?
 
-[Does Chef have extra Sausages banned? may be fixed in a vanilla update]
 
 
 re-order barricade benefits
@@ -270,15 +258,10 @@ Still consider revert early-exact-weapon changes and perhaps making them set ins
 bug with 3rd shop slot moving up -- mirror and other modifier things e.g. curious, fairy
 
 `~`Aros reported issues at 1.1.7 - verify before implementing any`~`
-Treasure Map - Should be tagged for exploration.
-Extra Stomach and Spicy Sauce should be tagged for Consumable instead of luck.
 Dwarf – I don’t find myself buying engineering - Maybe Dwarf shouldn’t be tagged for engineering, just structures.
 Chef – Ban Eyes Surgery
-Chef – Remove Plank - Since it is an elemental weapon.
-Chef – Remove Stick - Chef should in theory want to have a fire weapon. So having one of the stronger starting weapons be stick puts you into a situation where you’re playing 6 sticks.
 Chef - I don't think chef needs the Elemental damage restriction on +200% bonus damage. It could be -100% elemetal damage modification along with burn not being able to do +200%
 Chainsaw's text says cooldown is ... every 40th Shot. - It isn't a ranged weapon, so the text should say attack instead of shot.
---Should set_hitbox_damage_modifier for harpoon puling long distances be using MIN instead of MAX?
 
 (reported bug: Rip & Tear is currently scaling with Frozen Heart.)
 Reported-Turrets don't benefit from Eyepatch
@@ -287,7 +270,6 @@ Pufferfish for Wave 16 crash zone instead of Flys probably makes sense
 
 
 
-Builder tooltip maybe 'Can't find more structures'?
 	Build Turret "base stats" -> base attributes" ?
 Baby/Techno/Captain (/more?) -- XP _needed_ to level up?
 "the end of a wave" -> end of wave (Creature...)
@@ -310,6 +292,7 @@ Should Sick not be tagged for Lifesteal?
 
 - Crossbow -- with Range being ~17% more available, is it too strong?
 	Still like the thematic-fit idea of better Crossbows getting slower
+	One play at least indicated thy weren't super OP or anything, still needs more testing
 	
 
 Landmines themselves could maybe have more Crit Damage
@@ -317,6 +300,7 @@ Healer & Hermit kinda weird -- healer is faster and has more hp, hermit has knoc
 
 Ghost Axe could possibly be lower range (which would help Flints get more kills)
 Probably re-look at Wands, maybe direct compare with Icicle (could increase cost of icicles if that makes sense to spread them out more)
+	^Wand direct damage was kind of impressive on a Mage run...
 
 BM Set Weighting: maybe don't double-count same weapons?
 
@@ -326,3 +310,11 @@ Romantic + Flute is bugged?
 
 
 consider increasing Thief Dagger price slighty
+
+brawler nerf -- either basic 5% dodge, or partially lock in negative range like with Dwarf, e.g. 50% mods and -120
+crash zone - add the early wave 4-5 guaranteed curse goblin?
+abyss - remove ~1 plankton wave 1?
+
+possibly curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse?
+
+add note about knockback piercing to minigun's tooltip

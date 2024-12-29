@@ -21,6 +21,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Tier-4 weapons are cheaper across the board (also a small indirect Luck buff). Other weapon prices slightly tweaked for more logical/consistent progression.
 * Hand partially reworked to make Tier-3/4 worth buying.
 * Screwdriver partially reworked+buffed so it cares more about Crit.
+* Minigun has better base damage and now has Knockback Piercing, meaning its Knockback is more effective against resistant enemies like Chargers.
 * Sickle receives a minor rework so that it works better for builds with less extreme Harvesting amounts.
 * Spear is nerfed; Mace is buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, and War Hammer receive minor buffs.
@@ -136,7 +137,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Garden:** Price 50->48
 * **Incendiary Turret:** Price 40->42; Engineering Scaling 33% -> 35% _[Makes the rounding less abysmal.]_
 * **Leather Vest:** Price 45->48
-* **Little Frog:** Price 45->40; Pickup Range +20% -> +30%
+* **Little Frog:** Price 45->38; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
 * **Lure:** Price 34->39
 * **Medal:** Price 55->60; Crit Chance -4% -> -3%
@@ -151,8 +152,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ritual:** Price 60->57
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
-* **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies _[The small bump to 35% removes the 1% chance it fails when you have all 3.]_
-* **Wheelbarrow:** Price 40->37
+* **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies; Now tagged for 'consumables' instead of 'luck'. _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
+* **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
 * **White Flag:** Harvesting 5 -> 6
 #### DLC
@@ -161,6 +162,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Eyepatch:** Price 55->63; Crit Chance 3% -> 7% _[Now works better as an entry point into Crit.]
 * **Pearl:** Price 60->55; Chance for free Pearl in crate 3% -> 4%
 * **Saltwater:** Extra Speed When Hit 10% -> 20%
+* **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
 
 ### Tier-3
 * **Adrenaline:** Price 60->57
@@ -203,6 +205,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Big Arms:** Price 105->98
 * **Diploma:** Price 90->80
 * **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; Damage -15% -> -5% _[Lets it fit in more reasonably with mixed builds, and gives a little more emphasis on the more-unique size factor rather than just damage.]_
+* **Extra Stomach:** Now tagged for 'consumables' instead of 'luck'.
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
 * **Heavy Bullets:** Price 100->95; +10 Range --> +5% Crit Chance; -5% Crit Chance --> -25% Accuracy; (Replaced 'Range' tag with 'Crit Chance') _[Also see below in the Ranged Weapons section for a few Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
@@ -255,6 +258,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65% _[For reference, Tier-1 SMG is 70% Accuracy.]_
 - **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95 _[Allows 1 extra shot Wave 1, so you're less behind when starting with it.]_
+- **Minigun:** Base Damage 1/3 -> 2/4; Now has 25%/35% Knockback Piercing, making its knockback more effective against resistant enemies such as Chargers. _[Often a more-expensive but worse SMG in vanilla, this gives it some unique utility. Build additional Knockback to really notice the effect.]_
 - **Nuclear Launcher:** Cooldown 2.12 -> 2.20; Base Damage 60/120 -> 50/100; Range 800 -> 650; Ranged Scaling 100%/100% -> 125%/125%; Elemental Scaling 100%/100% -> 150%/150% _[Similar strength in Elemental builds, a touch weaker otherwise.]_
 - **Obliterator:** Projectile Hitbox Width +25%
 - **Potato Thrower:** Added to the Blunt Weapon Set; Base Damage 1(All) -> 2/3/4 _[Blunt Set allows it to find some synergy options when picked as a starting weapon.]_
@@ -324,6 +328,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
 + **Stargazer:** Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 325% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Narwhal:** Knockback Resistance 90% -> 87%
++ **Vampire Squid:** Initial Cooldown 1.17s -> 1.05s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 6 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
 ### Wave Spawns: Crazh Zone
@@ -354,6 +359,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 #### DLC
 * **Baby:** Added Lute
 * **Buccaneer:** Added Wrench
+* **Chef:** Removed Plank, Stick
 * **Demon:** Added Mace
 * **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin

@@ -73,6 +73,8 @@ NEW_EFFECT_STRONGER_ELITES_ON_KILL,"All future elites/bosses become stronger whe
 NEW_EFFECT_NO_MELEE_WEAPONS,"Can't find melee weapons"
 NEW_EFFECT_NO_RANGED_WEAPONS,"Can't find ranged weapons"
 NEW_EFFECT_NO_WEAPONS,"Can't find any weapons"
+NEW_EFFECT_NO_STRUCTURES,"Can't find more structures"
 NEW_EFFECT_LOST_ON_HIT,"Bonus resets when taking damage"
 NEW_EFFECT_CHANCE_EXPLODE_ON_HIT,"You have a {0} chance to explode for {1} ({2}) damage when you get hit" (Size: {4})
 NEW_EFFECT_BREAK_ON_HIT,"Has a {0} chance to break and drop {2} materials on hit (Won't break during Wave 1)"
+BM_KB_PIERCE,"Pierces"

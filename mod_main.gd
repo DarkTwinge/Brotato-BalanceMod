@@ -33,6 +33,9 @@ func _init(modLoader = ModLoader):
 	# Bricks no longer break Wave 1
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "weapons/weapon.gd")
 	
+	# Adds Knockpack Piercing to the tooltip (for Minigun, also Harpoon)
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "weapons/weapon_stats/weapon_stats.gd")
+	
 	# Fix Lightning Shiv bounce count
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/projectiles_on_hit_effect.gd")
 	
@@ -402,7 +405,7 @@ func _ready()->void:
 	temp.value = 48  # 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
-	temp.value = 40  # 45
+	temp.value = 38  # 45
 	temp = load("res://items/all/little_frog/little_frog_effect_1.tres")
 	temp.value = 30  # 20 (Pickup Range)
 	
@@ -462,7 +465,7 @@ func _ready()->void:
 	temp.value = 19  # 20 (Luck)
 
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_data.tres")
-	temp.max_nb = 3  # 4 (Limit)
+	temp.tags = [ "stat_max_hp", "consumable", "explosive" ]	# (Luck -> Consumables)
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/rip_sauce_clarify_effect.tres")
 	temp.effects.append(temp_2)	
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_effect_1.tres")
@@ -473,7 +476,7 @@ func _ready()->void:
 	temp.crit_chance = 0.01  # 0 (Crit Chance)
 
 	temp = load("res://items/all/wheelbarrow/wheelbarrow_data.tres")
-	temp.value = 37  # 40	
+	temp.value = 38  # 40	
 	
 	temp = load("res://items/all/whetstone/whetstone_data.tres")
 	temp.value = 42  # 40
@@ -651,6 +654,10 @@ func _ready()->void:
 	## THIS TOOLTIP IS HARDCODED
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/explosive_turret_size_text.tres")
 	temp.effects.push_back(temp_2) # Add explosion size text
+	
+	# Extra Stomach
+	temp = load("res://items/all/extra_stomach/extra_stomach_data.tres")
+	temp.tags = [ "stat_max_hp", "consumable" ]	# (HP & Luck -> HP & Consumables)
 	
 	# Focus
 	temp = load("res://items/all/focus/focus_data.tres")
@@ -1197,8 +1204,13 @@ func _ready()->void:
 	temp.value = 122				# 127
 	temp = load("res://weapons/ranged/minigun/3/minigun_3_stats.tres")
 	temp.accuracy = 0.8			# 0.85
+	temp.damage = 2					# 1
+	temp.knockback_piercing = 0.25	# 0
 	temp = load("res://weapons/ranged/minigun/4/minigun_4_data.tres")
 	temp.value = 218				# 255
+	temp = load("res://weapons/ranged/minigun/4/minigun_4_stats.tres")
+	temp.damage = 4					# 3
+	temp.knockback_piercing = 0.35	# 0
 	
 	# Nuclear Launcher
 	temp = load("res://weapons/ranged/nuclear_launcher/3/nuclear_launcher_3_stats.tres")
