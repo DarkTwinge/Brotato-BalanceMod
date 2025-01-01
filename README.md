@@ -21,7 +21,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Tier-4 weapons are cheaper across the board (also a small indirect Luck buff). Other weapon prices slightly tweaked for more logical/consistent progression.
 * Hand partially reworked to make Tier-3/4 worth buying.
 * Screwdriver partially reworked+buffed so it cares more about Crit.
-* Minigun has better base damage and now has Knockback Piercing, meaning its Knockback is more effective against resistant enemies like Chargers.
+* Minigun now has Knockback Piercing, meaning its Knockback is more effective against resistant enemies like Chargers.
 * Sickle receives a minor rework so that it works better for builds with less extreme Harvesting amounts.
 * Spear is nerfed; Mace is buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, and War Hammer receive minor buffs.
@@ -38,7 +38,7 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Utility Crit items (Pile of Books, Eyepatch) come with more Crit Chance to work better as speculative picks.
 * Candle is cheaper and thus more viable for non-Elemental builds that want fewer enemies.
 * Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
-* Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are moderately better (as you have much less time to profit from them).
+* Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are better (as you have much less time to profit from them).
 * Chameleon, Wandering Bot, and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
@@ -58,6 +58,7 @@ As with items, the goal is not for characters to be equal strength, as it is mor
 * (DLC) Pufferfish now spawns 4 projectiles when killed by a melee attack (instead of 0).
 * (DLC) Stargazers are now stronger when you kill their Incubators first.
 * (DLC) Spider Crab summons are a bit harder to deal with. Turtle Elite starts attacking sooner.
+* (DLC) A few Seapigs now spawn early on Crash Zone, letting you more easily get Curse.
 * Hivemind/Colossus Elite slightly nerfed.
 * Mantis Elite tweaked to be more unique and slightly harder. Butcher Elite attacks are harder to run from.
 * Crash Zone: Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and allowing for more synergy from effects that rely on killing enemies or picking up materials.
@@ -111,14 +112,15 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lost Duck:** Luck 8 -> 9
 * **Lumberjack Shirt:** Price 15->12
 * **Mutation:** Price 25->24; Knockback -3 -> -2
-* **Pencil:** Price 15->14; -1 Crit --> -2 Luck _[Leaning away from Engineering with Crit penalties to work better with Pile of Books and new Screwdriver.]_
+* **Pencil:** -1 Crit --> -1 Luck _[Leaning away from Engineering with Crit penalties to work better with Pile of Books and new Screwdriver.]_
 * **Propeller Hat:** Price 28->25
 * **Scar:** Price 25->24; Range -8 -> -11
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
-* **Terrified Onion:** Price 15->13
+* **Terrified Onion:** Price 15->12
 * **Weird Food:** Price 20->24
 #### DLC
+* **Feather:** Price 18->19
 * **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 
 ### Tier-2
@@ -126,7 +128,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alien Eyes:** Price 50->53; No Downside --> -8 Range
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Range -15 -> -18
-* **Blackbelt:** Price 50->46
+* **Blackbelt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->40
 * **Campfire:** Price 40->46; HP Regen 2 -> 3 _[The idea here is to make it buyable for either stat and good if you want both stats.]_
 * **Celery Tea:** Extra Enemy HP +100% -> +75%
@@ -146,7 +148,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Missile:** Price 45->43; Damage 10% -> 11%
 * **Pocket Factory:** Price 75->70; Engineering 2 -> 3 _[Many people like this item, but if you look at its actual damage output in practice, it tends to be very lackluster for its cost outside of best-case scenarios.]_
 * **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
-* **Recycling Machine:** No Downside --> -2% Attack Speed
+* **Recycling Machine:** No Downside --> -1 HP Regen
 * **Reinforced Steel:** Engineering 3 -> 4
 * **Riposte:** Price 40->34
 * **Ritual:** Price 60->57
@@ -155,11 +157,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies; Now tagged for 'consumables' instead of 'luck'. _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
-* **White Flag:** Harvesting 5 -> 6
+* **White Flag:** Price 40->38; Harvesting 5 -> 6
 #### DLC
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
-* **Eyepatch:** Price 55->63; Crit Chance 3% -> 7% _[Now works better as an entry point into Crit.]
+* **Clockwork Wasp:** Price 45->47
+* **Eyepatch:** Price 55->66; Crit Chance 3% -> 7% _[Now works better as an entry point into Crit.]
 * **Pearl:** Price 60->55; Chance for free Pearl in crate 3% -> 4%
 * **Saltwater:** Extra Speed When Hit 10% -> 20%
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
@@ -172,38 +175,40 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 20
 * **Candle:** Price 65->50; Elemental Damage 4 -> 3; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
-* **Chameleon:** Price 70->54; Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
+* **Chameleon:** Price 70->50; Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support:** Price 75->71
 * **Crown:** Price 70->68
-* **Fairy:** Price 85->90; 1 HP Regeneration Per 1 Unique Tier-1 Item --> 2 HP Regeneration Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regeneration Per 1 Unique Tier-4 Item --> -4% Speed Per 1 Unique Tier-4 Item
+* **Fairy:** Price 85->90; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
 * **Lucky Charm:** Price 75->70
+* **Peacock:** Price 50->47
 * **Pile of Books:**: Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
 * **Plastic Explosive:** Price 60->52
 * **Poisonous Tonic:** Range 15 -> 27
 * **Power Generator:** -5% Damage --> -1 Max HP Per 5% Speed
 * **Rip and Tear:** Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies
 * **Shackles:** Price 80->86; Range 80 -> 88
-* **Shmoop:** Price 60->66; HP Regen 2 -> 3
+* **Shmoop:** Price 60->65; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
 * **Statue:** Price 60->55
 * **Strange Book:** Price 70->62
 * **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
-* **Vigilante Ring:** Price 92->76
+* **Vigilante Ring:** Price 92->75
 * **Wandering Bot:** Price 60->42
 * **Wheat:** Price 85->82; Harvesting 10 -> 14
 * **Wings:** Range 30 -> 33
-* **Wisdom:** Price 85->81
+* **Wisdom:** Price 85->80
 #### DLC
+* **Goblet:** Price 70->72
 * **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Explosion Size 5% -> 10%; -3% Dodge --> No Penalty
 * **Sunken Bell:** Price 65->52; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Big Arms:** Price 105->98
-* **Diploma:** Price 90->80
+* **Diploma:** XP Gain +50% -> +60%
 * **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; Damage -15% -> -5% _[Lets it fit in more reasonably with mixed builds, and gives a little more emphasis on the more-unique size factor rather than just damage.]_
 * **Extra Stomach:** Now tagged for 'consumables' instead of 'luck'.
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
@@ -216,9 +221,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Night Goggles:** Price 95->87; Crit Chance 15% -> 14%; Range 50 -> 80; -3 HP --> -4% Speed _[Now more worthwhile if you mostly care about the range.]_
 * **Octopus:** Price 105->110
 * **Potato:** Price 95->100
-* **Regeneration Potion:** HP Regeneration 3 -> 4
+* **Regeneration Potion:** HP Regen 3 -> 4
 * **Retromation's Hoodie:** +2% Attack Speed for every 1% Dodge --> +3% Attack Speed for every 2% Dodge
 * **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
+* **Robot Arm:** Price 100->95
 * **Spider:** Attack Speed Per Different Weapon 6% -> 8%; Damage 12% -> 8%
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 #### DLC
@@ -243,7 +249,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%
 * **Scissors:** Tier-3/4 Cooldown 0.94/0.86 -> 0.89/0.78 _[Makes higher tier versions more worth using, and buffing cooldown helps their potential as a healing add-in to a Precise build.]_
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
-* **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.58/1.44/1.34/1.27 (Accounts for the lowered starting Range)
+* **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (Accounts for the lowered starting Range)
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
@@ -280,7 +286,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[To prevent Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
-* **Doctor:** Harvesting 5 -> 0; Starting HP Regeneration 5 -> 3
+* **Doctor:** Harvesting 5 -> 0; Starting HP Regen 5 -> 3
 * **Engineer:** No longer starts with a Wrench; Starting Engineering 10 -> 5; Elemental Damage Penalty -50% -> -20% _[Allows Engineer to lean into a mixed Engineering+Elemental build if desired, and makes more sense for Plank as a starting weapon.]_
 * **Explorer:** Starting Trees: 12 -> 11
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
@@ -296,6 +302,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary). _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
+* **Sick:** No longer favored to find Lifesteal items in the shop.
 * **Soldier:** 200% Pickup Range -> 125% _[Gives them some reason to care about Pickup Range items.]_
 * **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2
 * **Streamer:** Now also favored to find Stand-still Items.
@@ -332,6 +339,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
 ### Wave Spawns: Crazh Zone
+* **(DLC) Waves 3, 6, and 13:** Now have guaranteed Seapig spawns (similar to Waves 4, 5, and 16 on The Abyss), giving more opportunity to opt into Curse on this map.
 * **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
 * **Wave 14:** Helmet Spawns 108 -> 85; Basics spawns earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
 * **Wave 15:** Helmet Spawns 114 -> 95

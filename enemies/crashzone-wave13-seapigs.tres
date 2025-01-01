@@ -1,0 +1,24 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://zones/wave_group_data.gd" type="Script" id=1]
+[ext_resource path="res://dlcs/dlc_1/zones/abyss/016/d1_unit_1b.tres" type="Resource" id=2]
+
+[resource]
+script = ExtResource( 1 )
+spawn_chance = 1.0
+spawn_timing = 41
+repeating = 999
+repeating_interval = 6
+reduce_repeating_interval = 0
+min_repeating_interval = 1
+area = 300
+spawn_dist_away_from_edges = 0
+spawn_edge_of_map = true
+wave_units_data = [ ExtResource( 2 ) ]
+is_neutral = false
+is_boss = false
+is_horde = false
+is_loot = false
+min_difficulty = 1
+min_wave = 0
+max_wave = 9999

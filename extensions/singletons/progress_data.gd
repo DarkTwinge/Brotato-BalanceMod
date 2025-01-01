@@ -79,6 +79,19 @@ func add_all_dlcs()->void :
 		# Wave 13 - Spawn single Egglord sooner
 		temp = load("res://dlcs/dlc_1/zones/abyss/013/d5_group_1.tres")
 		temp.spawn_timing = 34			# 40
+		
+		## Crash Zone - Adds single Curse Goblins to Waves 3 and 6
+		temp = load("res://zones/zone_1/003/wave_3.tres")
+		temp_2 = load("res://dlcs/dlc_1/zones/abyss/004/group_4b.tres")
+		temp.groups_data.push_back(temp_2)
+		temp = load("res://zones/zone_1/006/wave_6.tres")
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/crashzone-wave6-seapigs.tres")		
+		temp.groups_data.push_back(temp_2)
+		
+		# Adds three pairs of Curse Goblins to Wave 13
+		temp = load("res://zones/zone_1/013/wave_13.tres")
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/crashzone-wave13-seapigs.tres")
+		temp.groups_data.push_back(temp_2)
 
 
 		### ITEMS ###
@@ -90,6 +103,8 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/items/corrupted_shard/effects/corrupted_shard_effect_1.tres")
 		temp.value = 2		# 1 (Curse)
 
+		temp = load("res://dlcs/dlc_1/items/feather/feather_data.tres")
+		temp.value = 19   # 18
 
 		# Items: Tier-2 #
 		temp = load("res://dlcs/dlc_1/items/bone_dice/bone_dice_data.tres")
@@ -102,7 +117,7 @@ func add_all_dlcs()->void :
 		temp.value2 = 3		# 2 (Seconds of Duration)
 
 		temp = load("res://dlcs/dlc_1/items/eyepatch/eyepatch_data.tres")
-		temp.value = 63		# 55
+		temp.value = 66		# 55
 		temp = load("res://dlcs/dlc_1/items/eyepatch/effects/eyepatch_effect_1.tres")
 		temp.value = 7		# 3 (Crit Chance)
 
@@ -121,6 +136,9 @@ func add_all_dlcs()->void :
 		# Items: Tier-3 #
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")
 		temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
+
+		temp = load("res://dlcs/dlc_1/items/goblet/goblet_data.tres")
+		temp.value = 72		# 70
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 		temp.value = 15   # 23

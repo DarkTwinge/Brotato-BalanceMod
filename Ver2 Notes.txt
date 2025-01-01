@@ -240,8 +240,6 @@ Padding could maybe have both the hp per saved mats AND the hp per mats left on 
 
 Curse tooltip description more details?
 
-Consider reverting Cute Monkey changes - appropriate amount of Healing for a Tier-1?
-
 How worth upgrading is it for Flamethrower?  Gets duration on purple and range on red I guess?
 
 Gladiator maybe could go to -50 Luck?
@@ -288,8 +286,6 @@ recycling count maybe wrong? (arms dealer run)
 Check the new effect for tooltip mods I made; was I just doing key instead of text_key so they don't need new files?
 
 
-Should Sick not be tagged for Lifesteal?
-
 - Crossbow -- with Range being ~17% more available, is it too strong?
 	Still like the thematic-fit idea of better Crossbows getting slower
 	One play at least indicated thy weren't super OP or anything, still needs more testing
@@ -317,4 +313,24 @@ abyss - remove ~1 plankton wave 1?
 
 possibly curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse?
 
-add note about knockback piercing to minigun's tooltip
+blunderbuss tooltip should clarify 1 per mat
+
+diploma could swap to -hp regen
+exoskeleton could lose the -2lifesteal
+maybe scarf
+spider could be -regen instead of either
+weird food or jerky are possiblities
+
+
+
+could slightly reducing the damage of a wave 11/12 elite be sensible? (keep in mind gangster for lower waves or whatever)
+
+should seashell be made to work for structures too?
+
+Could make it so Fisher doesn't see Bait in Crates (would adding it as a banned item work?)  [this is kinda funny so maybe leave it]
+
+
+COuld see a mild Ogre nerf
+Entre could maybe get a bit less recycle bonus?  or maybe only -20% items pirce?  (how easy are they with their worst weapons?)
+
+
