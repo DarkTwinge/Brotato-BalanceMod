@@ -4,7 +4,7 @@ const BM_DIR_DLCE = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/dlcs/d
 
 ### ALL BASELINE DLC CHANGES ###
 func add_all_dlcs()->void :
-	# Checks if the DLC exists before it is loaded
+	# Checks if the DLC exists before loading script extensions
 	if File.new().file_exists("res://dlcs/dlc_1/dlc_data.tres"):
 		ModLoaderMod.install_script_extension(BM_DIR_DLCE + "dlc_1_data.gd")
 	
@@ -15,9 +15,7 @@ func add_all_dlcs()->void :
 	if ProgressData.is_dlc_available("abyssal_terrors"):
 		var temp
 		var temp_2
-		
-		#
-		
+
 		
 		### TEXT KEYS ###
 		Text.keys_needing_operator.bm_effect_stat_on_poison_fruit = [0]
@@ -28,6 +26,8 @@ func add_all_dlcs()->void :
 		Text.keys_needing_percent.new_effect_stronger_loot_aliens_on_kill = [0]
 		Text.keys_needing_percent.new_effect_chance_explode_on_hit = [0]
 		Text.keys_needing_percent.new_effect_break_on_hit = [0]
+		Text.keys_needing_percent.new_effect_loot_alien_chance = [0]
+		Text.keys_needing_operator.new_effect_loot_alien_chance = [0]
 		
 
 		### ENEMIES ###
@@ -85,15 +85,23 @@ func add_all_dlcs()->void :
 		temp_2 = load("res://dlcs/dlc_1/zones/abyss/004/group_4b.tres")
 		temp.groups_data.push_back(temp_2)
 		temp = load("res://zones/zone_1/006/wave_6.tres")
-		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/crashzone-wave6-seapigs.tres")		
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/crashzone-wave6-seapigs.tres")		
 		temp.groups_data.push_back(temp_2)
 		
 		# Adds three pairs of Curse Goblins to Wave 13
 		temp = load("res://zones/zone_1/013/wave_13.tres")
-		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/crashzone-wave13-seapigs.tres")
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/crashzone-wave13-seapigs.tres")
 		temp.groups_data.push_back(temp_2)
-
-
+		
+		# Wave 16: Replace the added '2 Flies' with 1 Fly and 1 Pufferfish
+		temp = load("res://zones/zone_1/016/group_1.tres") # Helmets + Buffers
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/wave16_fly.tres")
+		temp.wave_units_data.erase(temp_2)
+		temp_2 =load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/DLC-wave16_pufferfish.tres")
+		temp.wave_units_data.push_back(temp_2)
+		temp_2 =load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/DLC-wave16_fly.tres")
+		temp.wave_units_data.push_back(temp_2)
+		
 		### ITEMS ###
 		# Items: Tier-1 #
 		temp = load("res://dlcs/dlc_1/items/corrupted_shard/corrupted_shard_data.tres")
@@ -105,7 +113,11 @@ func add_all_dlcs()->void :
 
 		temp = load("res://dlcs/dlc_1/items/feather/feather_data.tres")
 		temp.value = 19   # 18
-
+		
+		temp = load("res://dlcs/dlc_1/items/whistle/effects/whistle_effect_0.tres")
+		temp.value = 60   # 50 (Extra Loot Goblins)
+		temp.text_key = "NEW_EFFECT_LOOT_ALIEN_CHANCE"
+		
 		# Items: Tier-2 #
 		temp = load("res://dlcs/dlc_1/items/bone_dice/bone_dice_data.tres")
 		temp.value = 27   # 30
@@ -317,7 +329,9 @@ func add_all_dlcs()->void :
 		temp.value = 125				# 140
 		
 		### CHARACTERS ###
-
+		# Chef
+		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
+		temp.banned_items = [ "item_frozen_heart", "item_eyes_surgery" ]
 		
 		# Druid
 		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")

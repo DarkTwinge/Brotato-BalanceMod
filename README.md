@@ -120,8 +120,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Terrified Onion:** Price 15->12
 * **Weird Food:** Price 20->24
 #### DLC
-* **Feather:** Price 18->19
 * **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
+* **Feather:** Price 18->19
+* **Whistle:** Extra Loot Goblins +50% -> +60% _[This still leaves it as a worse economy item than Coupon or Bag on average.]_
 
 ### Tier-2
 * **Acid:** Price 65->62
@@ -130,8 +131,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blindfold:** Range -15 -> -18
 * **Blackbelt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->40
-* **Campfire:** Price 40->46; HP Regen 2 -> 3 _[The idea here is to make it buyable for either stat and good if you want both stats.]_
-* **Celery Tea:** Extra Enemy HP +100% -> +75%
+* **Campfire:** Price 40->39
+* **Celery Tea:** Price 35->33; Extra Enemy HP +100% -> +75%
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was very strong priced at 35, and remains so with the now-cheaper rerolls.]_
 * **Energy Bracelet:** Crit Chance 4% -> 5%
@@ -283,6 +284,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby:** Harvesting 12 -> 15; Shop Price -20% -> -15% _[The extra Harvesting allows them to get their first Level-up after Waves 1 and 2 reliably.]_
 * **Brawler:** Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw)
 * **Bull:** Starting HP Regen 15 -> 10
+* **Chef:** Can no longer be offered Eyes Surgery.
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[To prevent Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
@@ -343,7 +345,8 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
 * **Wave 14:** Helmet Spawns 108 -> 85; Basics spawns earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
 * **Wave 15:** Helmet Spawns 114 -> 95
-* **Wave 16:** 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->700) _[Aiming to make them less trivially smashed by melee quickly]_; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
+* **Wave 16:** 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->725) _[Aiming to make them less trivially smashed by melee quickly]_; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
+* **(DLC) Wave 16:** One of the added Flies is replaced with a Pufferfish.
 * **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
 ### Wave Spawns: The Abyss
 * **Wave 14:** Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_

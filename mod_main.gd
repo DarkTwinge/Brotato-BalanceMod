@@ -191,7 +191,7 @@ func _ready()->void:
 	# Wave 16
 	# Add 2 Fly alongside the Helmets + Buffers
 	temp = load("res://zones/zone_1/016/group_1.tres") # Helmets + Buffers
-	temp.area = 700 # 500
+	temp.area = 725 # 500
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/wave16_fly.tres")
 	temp.wave_units_data.push_back(temp_2)
 	# Adds 2 more groups of Bruisers starting earlier in the wave
@@ -367,10 +367,10 @@ func _ready()->void:
 	temp.value = 40   # 45	
 
 	temp = load("res://items/all/campfire/campfire_data.tres")
-	temp.value = 46   # 40
-	temp = load("res://items/all/campfire/campfire_effect_2.tres")
-	temp.value = 3    # 2 (HP Regen)
+	temp.value = 39   # 40
 	
+	temp = load("res://items/all/celery_tea/celery_tea_data.tres")
+	temp.value = 33   # 35
 	temp = load("res://items/all/celery_tea/effects/celery_tea_effect_1.tres")
 	temp.value = 75		# 100 (Extra Enemy HP)
 
@@ -502,7 +502,12 @@ func _ready()->void:
 	temp = load("res://items/all/baby_with_a_beard/baby_with_a_beard_effect_1.tres")
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/weapons/baby_beard_weapon_stats.tres")
 	temp.weapon_stats = temp_2 # Ranged Damage scaling 100% -> 75%
-
+	
+	temp = load("res://items/all/barricade/barricade_data.tres")
+	temp_2 = load("res://items/all/barricade/barricade_effect_0.tres")
+	temp.effects.erase(temp_2)
+	temp.effects.insert(1, temp_2)
+	
 	temp = load("res://items/all/blood_donation/blood_donation_data.tres")
 	temp.value = 42  # 50
 	

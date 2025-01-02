@@ -230,6 +230,7 @@ Cauldron - does it stack at all?
 
 ~
 Wave reminder: 17 vampires, 7/14 walrus, 15 krakens
+wave 6 puffers
 ~
 
 Does Shuriken want a small buff to its early game?
@@ -246,9 +247,6 @@ Gladiator maybe could go to -50 Luck?
 
 
 
-re-order barricade benefits
-Wave 13 pretty sparse first 15s [probably changed now?]
-
 
 
 Still consider revert early-exact-weapon changes and perhaps making them set instead
@@ -257,15 +255,12 @@ bug with 3rd shop slot moving up -- mirror and other modifier things e.g. curiou
 
 `~`Aros reported issues at 1.1.7 - verify before implementing any`~`
 Dwarf – I don’t find myself buying engineering - Maybe Dwarf shouldn’t be tagged for engineering, just structures.
-Chef – Ban Eyes Surgery
 Chef - I don't think chef needs the Elemental damage restriction on +200% bonus damage. It could be -100% elemetal damage modification along with burn not being able to do +200%
 Chainsaw's text says cooldown is ... every 40th Shot. - It isn't a ranged weapon, so the text should say attack instead of shot.
 
 (reported bug: Rip & Tear is currently scaling with Frozen Heart.)
 Reported-Turrets don't benefit from Eyepatch
 ~~
-Pufferfish for Wave 16 crash zone instead of Flys probably makes sense
-
 
 
 	Build Turret "base stats" -> base attributes" ?
@@ -311,10 +306,11 @@ brawler nerf -- either basic 5% dodge, or partially lock in negative range like 
 crash zone - add the early wave 4-5 guaranteed curse goblin?
 abyss - remove ~1 plankton wave 1?
 
-possibly curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse?
+curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse? [And lower the cap for odds of getting stuff cursed for lots of curse, or make it further away]
 
 blunderbuss tooltip should clarify 1 per mat
 
+~(other hp regen tweak possibilities if needed)~
 diploma could swap to -hp regen
 exoskeleton could lose the -2lifesteal
 maybe scarf
@@ -334,3 +330,7 @@ COuld see a mild Ogre nerf
 Entre could maybe get a bit less recycle bonus?  or maybe only -20% items pirce?  (how easy are they with their worst weapons?)
 
 
+could possibly increase the material-drop-off-for-later-waves effect slightly if there is desire for just slightly less money in general
+
+
+pocket factory could give the explorer effect of earlier tree spawns
