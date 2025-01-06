@@ -28,6 +28,7 @@ func add_all_dlcs()->void :
 		Text.keys_needing_percent.new_effect_break_on_hit = [0]
 		Text.keys_needing_percent.new_effect_loot_alien_chance = [0]
 		Text.keys_needing_operator.new_effect_loot_alien_chance = [0]
+		Text.keys_needing_percent.new_sf_effect_bonus_damage_against_targets_above_hp = [0, 2]
 		
 
 		### ENEMIES ###
@@ -113,6 +114,9 @@ func add_all_dlcs()->void :
 
 		temp = load("res://dlcs/dlc_1/items/feather/feather_data.tres")
 		temp.value = 19   # 18
+		
+		temp = load("res://dlcs/dlc_1/items/small_fish/effects/small_fish_effect_0.tres")
+		temp.text_key = "NEW_SF_EFFECT_BONUS_DAMAGE_AGAINST_TARGETS_ABOVE_HP"
 		
 		temp = load("res://dlcs/dlc_1/items/whistle/effects/whistle_effect_0.tres")
 		temp.value = 60   # 50 (Extra Loot Goblins)

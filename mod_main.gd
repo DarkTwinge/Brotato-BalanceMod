@@ -1041,12 +1041,16 @@ func _ready()->void:
 	temp.value = 81				# 91	
 	
 	# Scissors
+	temp = load("res://weapons/melee/scissors/2/scissors_2_stats.tres")
+	temp.crit_chance = 0.15	# 0.12
 	temp = load("res://weapons/melee/scissors/3/scissors_3_stats.tres")
-	temp.cooldown = 20		# 23
+	temp.cooldown = 22		# 23
+	temp.crit_chance = 0.2	# 0.15
 	temp = load("res://weapons/melee/scissors/4/scissors_4_data.tres")
 	temp.value = 111			# 122
 	temp = load("res://weapons/melee/scissors/4/scissors_4_stats.tres")
-	temp.cooldown = 13		# 18
+	temp.cooldown = 16		# 18
+	temp.crit_chance = 0.25	# 0.2
 	
 	# Screwdriver
 	temp = load("res://weapons/melee/screwdriver/1/screwdriver_data.tres")
@@ -1130,6 +1134,7 @@ func _ready()->void:
 	temp = load("res://weapons/melee/dagger/4/dagger_4_stats.tres")
 	temp.knockback = 0			# 2
 	temp.crit_chance = 0.35	# 0.4
+	temp.damage = 27
 	
 	# Thunder Sword
 	temp = load("res://weapons/melee/thunder_sword/4/thunder_sword_4_data.tres")
@@ -1510,6 +1515,10 @@ func _ready()->void:
 	temp.effects.push_back(temp_2) # Add lower -20% Elemental Damage malus
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/engineer_non-elemental_damage_malus.tres")
 	temp.effects.push_back(temp_2) # Re-add other Damage types still at -50%
+	
+	# Entrepreneur
+	temp = load("res://items/characters/entrepreneur/entrepreneur_effect_0.tres")
+	temp.value = -20	# -25
 	
 	# Explorer
 	temp = load("res://items/characters/explorer/explorer_effect_1.tres")

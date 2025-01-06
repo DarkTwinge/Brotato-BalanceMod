@@ -20,8 +20,8 @@ NEW_INFO_POS_STAT_LUCK,You have {0} more chance of finding items or consumables 
 NEW_INFO_NEG_STAT_LUCK,You have {0} less chance of finding items or consumables when you kill enemies. Also slightly reduces the rarity of items in the shop and level upgrades.
 NEW_INFO_POS_STAT_HP_REGENERATION,You regenerate {0} HP every {1} seconds ({2} HP / second)
 NEW_INFO_NEG_STAT_HP_REGENERATION,You do not automatically regenerate HP.
-NEW_INFO_POS_STAT_LIFESTEAL,"Your weapon attacks have a {0} chance to heal you for 1 HP. (Capped at 1 HP every 0.1 seconds.)"
-NEW_INFO_NEG_STAT_LIFESTEAL,"Your weapon attacks have a 0% chance to heal you for 1 HP. (Capped at 1 HP every 0.1 seconds.)"
+NEW_INFO_POS_STAT_LIFESTEAL,"Your weapon attacks have a {0} chance to heal you for 1 HP. (Capped at 1 HP every 0.1 seconds. Explosions cannot lifesteal.)"
+NEW_INFO_NEG_STAT_LIFESTEAL,"Your weapon attacks have a 0% chance to heal you for 1 HP. (Capped at 1 HP every 0.1 seconds. Explosions cannot lifesteal.)"
 NEW_EFFECT_NO_HEAL,You [color=#ff0000]can’t heal[/color] in any way during waves
 NEW_EFFECT_PACIFIST,Gain {0} material and XP for every living and despawned enemy at the end of a wave 
 BM_EFFECT_HIT_PROTECTION,Nullifies the the first hit (of 2 or more damage) taken each wave
@@ -79,3 +79,4 @@ NEW_EFFECT_CHANCE_EXPLODE_ON_HIT,"You have a {0} chance to explode for {1} ({2})
 NEW_EFFECT_BREAK_ON_HIT,"Has a {0} chance to break and drop {2} materials on hit (Won't break during Wave 1)"
 BM_KB_PIERCE,"Pierces"
 NEW_EFFECT_LOOT_ALIEN_CHANCE,"{0} chance for randomly spawned loot aliens to appear"
+NEW_SF_EFFECT_BONUS_DAMAGE_AGAINST_TARGETS_ABOVE_HP,"{0} damage against targets above {2} health.\n(Multiplicative; works on structures.)"

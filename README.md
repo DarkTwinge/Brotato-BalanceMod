@@ -1,11 +1,12 @@
 # Overview
 More items are worth using and fewer choices are overpowered. The Range and Luck stats are better. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and to encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is relatively similar, with the easiest runs made a bit harder and the hardest runs made a bit easier.
 
-[The full, detailed list of all changes is here](https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog) - Below is a shorter summary of the major changes you should know about.
+The full list of all changes is here: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog - Below is a summary of the major changes you should know about.
 
 (Dozens of changes from the original Balance Mod have now been implemented directly into the base game. A summary of those prior changes is at the end of the full changelog.)
 
-_Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! There are about 75 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
+_Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! ~75 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
+
 ## Change Summary
 ### Mechanics
 * Easier to have mixed-weapon builds: The chances of being offered one of the exact weapons you already have is higher the more weapon types you have. Additionally, shop weapon set favoring is now based on how many of that set you have (so a single off-set weapon doesn't impact your weapon pool as much).
@@ -43,7 +44,7 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
 ### Characters
-As with items, the goal is not for characters to be equal strength, as it is more fun for them to be varied. The focus is instead on making the easiest options less 'free', as well as tweaks to make decisions more interesting and characters more variable.
+As with items, the goal is not for characters to be equal strength. The focus is instead on making the easiest options less 'free', as well as tweaks to make decisions more interesting and characters more variable.
 
 * (DLC) Druid partially reworked to care more about poisoned fruit.
 * Baby can more reliably hit Level 2 after Wave 1.
@@ -58,7 +59,7 @@ As with items, the goal is not for characters to be equal strength, as it is mor
 * (DLC) Pufferfish now spawns 4 projectiles when killed by a melee attack (instead of 0).
 * (DLC) Stargazers are now stronger when you kill their Incubators first.
 * (DLC) Spider Crab summons are a bit harder to deal with. Turtle Elite starts attacking sooner.
-* (DLC) A few Seapigs now spawn early on Crash Zone, letting you more easily get Curse.
+* (DLC) A few guaranteed Seapigs now spawn on Crash Zone, letting you more easily get Curse.
 * Hivemind/Colossus Elite slightly nerfed.
 * Mantis Elite tweaked to be more unique and slightly harder. Butcher Elite attacks are harder to run from.
 * Crash Zone: Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and allowing for more synergy from effects that rely on killing enemies or picking up materials.
@@ -248,11 +249,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; (Fixed tooltip bounce count) _[Most of my Shiv nerfs were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%
-* **Scissors:** Tier-3/4 Cooldown 0.94/0.86 -> 0.89/0.78 _[Makes higher tier versions more worth using, and buffing cooldown helps their potential as a healing add-in to a Precise build.]_
+* **Scissors:** Crit Chance 10%/12%/15%/20% -> 10%/15%/20%/25%; Tier-3/4 Cooldown 0.94/0.86 -> 0.93/0.83 _[Makes higher tier versions more worth using; Buffing cooldown helps their potential as a healing add-in to a Precise build, and increasing base crit chance helps it fit in better with its Precise peers.]_
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (Accounts for the lowered starting Range)
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
-* **Thief Dagger:** Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
+* **Thief Dagger:** Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%; Tier-4 Base Damage 30->27
 #### DLC
 * **Brick:** Can no longer break during Wave 1.
 * **Mace:** Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
@@ -290,6 +291,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regen 5 -> 3
 * **Engineer:** No longer starts with a Wrench; Starting Engineering 10 -> 5; Elemental Damage Penalty -50% -> -20% _[Allows Engineer to lean into a mixed Engineering+Elemental build if desired, and makes more sense for Plank as a starting weapon.]_
+* **Entrepreneur:** Shop Prices -25% -> -20%
 * **Explorer:** Starting Trees: 12 -> 11
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
 * **Gladiator:** -30 Luck -> -40
@@ -311,7 +313,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wildling:** No longer starts with a Stick.
 _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
-~~ * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
+* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
+* **Ogre:** Explosion crit chance now properly affected by your Crit Chance stat (base chance is still 3% and damage is still 1.5x)
 
 ## Enemies
 ### Elites

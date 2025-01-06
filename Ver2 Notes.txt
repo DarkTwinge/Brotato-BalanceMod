@@ -197,7 +197,6 @@ BM-Lute shouldn't do extra damage itself from the Lute bonus
 ~~~~
 prisoner elite -- 2nd phase either too much delay between attacks or doesn't attack from far enough away
 
-small fish -- verify multiplicative, add to tooltip
 
 check curse special cases, and make sure anything I rework doesn't get extra silly (heavy bullets right now maybe?  couch down the line.)
  ^Verify it is affecting -1accuracy correctly; probably should be since Eyepatch exists but?
@@ -303,10 +302,11 @@ Romantic + Flute is bugged?
 consider increasing Thief Dagger price slighty
 
 brawler nerf -- either basic 5% dodge, or partially lock in negative range like with Dwarf, e.g. 50% mods and -120
-crash zone - add the early wave 4-5 guaranteed curse goblin?
 abyss - remove ~1 plankton wave 1?
 
 curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse? [And lower the cap for odds of getting stuff cursed for lots of curse, or make it further away]
+could make elites/bosses stronger based on curse amount
+drop seapig profit down to 4 or 3 if this is implemented
 
 blunderbuss tooltip should clarify 1 per mat
 
@@ -327,10 +327,36 @@ Could make it so Fisher doesn't see Bait in Crates (would adding it as a banned 
 
 
 COuld see a mild Ogre nerf
-Entre could maybe get a bit less recycle bonus?  or maybe only -20% items pirce?  (how easy are they with their worst weapons?)
-
+	Test the explosion starting at 5 base damage instead of 10.  (Maybe should be 0.01 crit instead of 0.03 to be more consistent or?)
 
 could possibly increase the material-drop-off-for-later-waves effect slightly if there is desire for just slightly less money in general
 
 
 pocket factory could give the explorer effect of earlier tree spawns
+landmine item curse is dumb?
+
+
+vamp squids on 17 might force spawn away from the player a bit?  (unlike puffers, to make them harder rather than easier?)
+
+~ WL reported: apparently Alien eyes is always taking the damage from the first alien eyes you buy. 
+
+maybe go -atk spd on Snail instead of spd?
+	see if something else needs to go -spd, but not that important
+
+advstats:
+Other Sources -damage because builder turret's burn (wand)
+loot alien spawns something like 10x what they should be
+
+
+investigate: rocket launchers on builder weren't knocking back mummies
+	sharp bullet present
+
+
+pcoket factory doesn't update right away for techno
+
+
+Pile of Books tagged Engeering instead of Structure, which is better for builder but kinda weird
+
+potentiall up wave 5 abyss boss hp slightly?  what's the comparison with Crash? [Looks like CZ has a little less HP]
+
+Some consideration to drop Sharp Tooth from Precise, because it doesn't want to be mixed
