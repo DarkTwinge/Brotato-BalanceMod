@@ -29,6 +29,7 @@ func add_all_dlcs()->void :
 		Text.keys_needing_percent.new_effect_loot_alien_chance = [0]
 		Text.keys_needing_operator.new_effect_loot_alien_chance = [0]
 		Text.keys_needing_percent.new_sf_effect_bonus_damage_against_targets_above_hp = [0, 2]
+		Text.keys_needing_operator.new_sf_effect_bonus_damage_against_targets_above_hp = [0]
 		
 
 		### ENEMIES ###
@@ -42,7 +43,10 @@ func add_all_dlcs()->void :
 			for elite in dlc.elites:
 				if elite.my_id in elite_scenes.keys():
 					elite.scene = load(elite_scenes[elite.my_id])
-
+		
+		temp = load("res://dlcs/dlc_1/enemies/turtle/turtle_stats.tres")
+		temp.armor = 1												# 3
+		temp.armor_increase_each_wave = 0.75	# 0.5
 		
 		# Regular enemies
 		temp = load("res://dlcs/dlc_1/enemies/walrus/walrus_stats.tres")
@@ -103,6 +107,9 @@ func add_all_dlcs()->void :
 		temp_2 =load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/DLC-wave16_fly.tres")
 		temp.wave_units_data.push_back(temp_2)
 		
+		temp = load("res://dlcs/dlc_1/zones/abyss/017/unit_1.tres")
+		temp.additional_min_distance_from_player = 100.0		# 0.0
+		
 		### ITEMS ###
 		# Items: Tier-1 #
 		temp = load("res://dlcs/dlc_1/items/corrupted_shard/corrupted_shard_data.tres")
@@ -154,13 +161,13 @@ func add_all_dlcs()->void :
 		temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
 
 		temp = load("res://dlcs/dlc_1/items/goblet/goblet_data.tres")
-		temp.value = 72		# 70
+		temp.value = 73		# 70
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 		temp.value = 15   # 23
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-		temp.value = 52		# 65
+		temp.value = 49		# 65
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
 		temp.scale = 7.5	# 6.0
 		temp.text_key = "new_effect_explode_when_below_hp"
@@ -293,12 +300,20 @@ func add_all_dlcs()->void :
 		# Flute
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
 		temp.value = 19					# 20
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
+		temp.effects.append(temp_2)		
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/2/flute_2_data.tres")
 		temp.value = 41					# 45
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
+		temp.effects.append(temp_2)
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/3/flute_3_data.tres")
 		temp.value = 81					# 80
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
+		temp.effects.append(temp_2)
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/4/flute_4_data.tres")
 		temp.value = 150				# 165
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
+		temp.effects.append(temp_2)
 		
 		# Grenade Launcher
 		temp = load("res://dlcs/dlc_1/weapons/ranged/grenade_launcher/2/grenade_launcher_2_effect_0.tres")
@@ -409,6 +424,12 @@ func add_all_dlcs()->void :
 
 		temp = load("res://dlcs/dlc_1/characters/ogre/effects/ogre_effect_2.tres")
 		temp.text_key = "new_effect_no_ranged_weapons"
+		
+		temp = load("res://dlcs/dlc_1/characters/romantic/effects/romantic_effect_2.tres")
+		temp.text_key = "new_effect_gain_stat_end_of_wave"
+		temp = load("res://dlcs/dlc_1/characters/romantic/romantic_data.tres")
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
+		temp.effects.append(temp_2)		
 		
 		temp = load("res://dlcs/dlc_1/characters/sailor/effects/sailor_effect_6.tres")
 		temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"

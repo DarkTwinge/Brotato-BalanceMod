@@ -52,7 +52,7 @@ As with items, the goal is not for characters to be equal strength. The focus is
 * Lucky and Speedy now care more about raising their thematic stats. Soldier cares more about Pickup Range.
 * Crazy now works with Crossbows properly; Brawler works with Claw properly.
 * One-armed and Farmer receive moderate buffs.
-* Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Explorer, Demon, King, Mutant, Gladiator, Engineer, and Brawler receive modest nerfs.
+* Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Explorer, Demon, King, Mutant, Gladiator, Engineer, Entrepreneur, and Brawler receive modest nerfs.
 * Many automatic starting weapons (e.g. Wildling, Crazy) are removed in order to make those characters more varied and your chosen starting weapon more meaningful.
 
 ### Enemies & Waves
@@ -78,9 +78,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (instead of a fully random weapon). This makes it a little easier to match up a starting tier-2+ only weapon (e.g. Potato Thrower) with something relevant.
 * Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up to be more consistent and have a slightly more logical progression.
 * The reroll button for level-ups is now color-coded for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
-* All explosions can now crit (Rip & Tear, Spicy Sauce, and Glutton affected). All explosion tooltips now also list their explosion size (weapons, items, and characters).
+* All explosions can now crit (Rip & Tear, Spicy Sauce, Glutton, and Ogre affected). All explosion tooltips now also list their explosion size (weapons, items, and characters).
 * Horde Wave Materials: 65% -> 60% _[This still leaves them as generally more profitable and easier than Elite waves, but now more closely aligned.]_
-* Clarified various tooltips to be more clear & accurate: Detailed hidden mechanics (e.g. Fisher, Spicy Sauce, Scared Sausage); Adjusted wordings of several item and stat tooltips to be more correct; Shortened several character effect descriptions to fit in the box better; Tooltip for Armor has an extra decimal place; Knight's tooltip color-coded properly; Fixed Lightning Shiv's bounce count.
+* Clarified various tooltips to be more clear & accurate: Detailed hidden mechanics (e.g. Fisher, Spicy Sauce, Scared Sausage); Adjusted wordings of item and stat tooltips to be more correct; Shortened character effect descriptions to fit in the box better; Armor tooltip has an extra decimal place; Knight's tooltip color-coded properly; Fixed Lightning Shiv's bounce count.
 
 ## Level-ups
 * **Range:** 15/30/45/60 -> 20/35/50/70
@@ -119,6 +119,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
+* **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%) 
 * **Weird Food:** Price 20->24
 #### DLC
 * **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
@@ -146,7 +147,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lure:** Price 34->39
 * **Medal:** Price 55->60; Crit Chance -4% -> -3%
 * **Metal Detector:** Damage -5% -> -4%
-* **Metal Plate:** Price 40->42
+* **Metal Plate:** Price 40->43
 * **Missile:** Price 45->43; Damage 10% -> 11%
 * **Pocket Factory:** Price 75->70; Engineering 2 -> 3 _[Many people like this item, but if you look at its actual damage output in practice, it tends to be very lackluster for its cost outside of best-case scenarios.]_
 * **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
@@ -156,6 +157,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ritual:** Price 60->57
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
+* **Snail:** Eenemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
 * **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies; Now tagged for 'consumables' instead of 'luck'. _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
@@ -171,7 +173,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Tier-3
 * **Adrenaline:** Price 60->57
-* **Alien Magic:** Price 85->82
+* **Alien Magic:** Price 85->83
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
@@ -191,7 +193,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Poisonous Tonic:** Range 15 -> 27
 * **Power Generator:** -5% Damage --> -1 Max HP Per 5% Speed
 * **Rip and Tear:** Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies
-* **Shackles:** Price 80->86; Range 80 -> 88
+* **Shackles:** Price 80->88; Range 80 -> 88
 * **Shmoop:** Price 60->65; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
 * **Statue:** Price 60->55
 * **Strange Book:** Price 70->62
@@ -203,10 +205,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wings:** Range 30 -> 33
 * **Wisdom:** Price 85->80
 #### DLC
-* **Goblet:** Price 70->72
+* **Goblet:** Price 70->73
 * **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Explosion Size 5% -> 10%; -3% Dodge --> No Penalty
-* **Sunken Bell:** Price 65->52; Explosion Size 600% -> 750%
+* **Sunken Bell:** Price 65->49; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Big Arms:** Price 105->98
@@ -226,7 +228,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Regeneration Potion:** HP Regen 3 -> 4
 * **Retromation's Hoodie:** +2% Attack Speed for every 1% Dodge --> +3% Attack Speed for every 2% Dodge
 * **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
-* **Robot Arm:** Price 100->95
+* **Robot Arm:** Price 100->93
 * **Spider:** Attack Speed Per Different Weapon 6% -> 8%; Damage 12% -> 8%
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 #### DLC
@@ -265,7 +267,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65% _[For reference, Tier-1 SMG is 70% Accuracy.]_
-- **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95 _[Allows 1 extra shot Wave 1, so you're less behind when starting with it.]_
+- **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95 _[Allows 1 extra shot during Wave 1, so you're less behind when starting with it.]_
 - **Minigun:** Base Damage 1/3 -> 2/4; Now has 25%/35% Knockback Piercing, making its knockback more effective against resistant enemies such as Chargers. _[Often a more-expensive but worse SMG in vanilla, this gives it some unique utility. Build additional Knockback to really notice the effect.]_
 - **Nuclear Launcher:** Cooldown 2.12 -> 2.20; Base Damage 60/120 -> 50/100; Range 800 -> 650; Ranged Scaling 100%/100% -> 125%/125%; Elemental Scaling 100%/100% -> 150%/150% _[Similar strength in Elemental builds, a touch weaker otherwise.]_
 - **Obliterator:** Projectile Hitbox Width +25%
@@ -325,8 +327,8 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Rhino:** Base Speed 250 -> 275
 
 #### The Abyss
-* Spider Crab:**: Phase 1 Crab Summoning Cooldown 2s -> 1.85s; Summoning Radius 600 -> 750; HP to switch to 2nd Phase 85% -> 82%; Time to switch to 2nd Phase 12s -> 13s _[Aiming to make the initial summoning phase more noticeable and interesting; this causes one extra summoning before switching phases from time.]_
-* **Turtle:** Time Before First Attack 2s -> 0.5s
+* Spider Crab:**: Phase 1 Crab Summoning Cooldown 2s -> 1.85s; Summoning Radius 600 -> 800; HP to switch to 2nd Phase 85% -> 82%; Time to switch to 2nd Phase 12s -> 13s _[Aiming to make the initial summoning phase more noticeable and interesting; this causes one extra summoning before switching phases from time.]_
+* **Turtle:** Time Before First Attack 2s -> 0.5s; Base Armor 3 -> 1; Armor Per Wave 0.5 -> 0.75 _[Similar armor early, more armor later.]
 
 ### Standard Enemies
 + **Small Charger:** Knockback Resistance 80% -> 75%
@@ -340,7 +342,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
 + **Stargazer:** Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 325% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Narwhal:** Knockback Resistance 90% -> 87%
-+ **Vampire Squid:** Initial Cooldown 1.17s -> 1.05s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 6 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
++ **Vampire Squid:** Initial Cooldown 1.17s -> 1.05s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 6; Minimum Spawn Distance From Player +100 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 
 ### Wave Spawns: Crazh Zone

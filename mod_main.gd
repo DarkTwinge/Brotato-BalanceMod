@@ -84,6 +84,7 @@ func _ready()->void:
 	Text.keys_needing_operator.effect_bounce_damage = [0]
 	Text.keys_needing_operator.new_effect_item_box_gold = [0]
 	Text.keys_needing_operator.new_effect_on_hit = [0]
+	Text.keys_needing_operator.new_effect_gain_stat_end_of_wave = [0]
 	Text.keys_needing_percent.new_effect_damage_against_bosses = [0]
 	Text.keys_needing_percent.new_effect_burn_chance = [0]
 	Text.keys_needing_percent.effect_bounce_damage = [0]
@@ -101,7 +102,8 @@ func _ready()->void:
 	Text.keys_needing_percent.new_info_pos_stat_luck = [0] 
 	Text.keys_needing_percent.new_info_neg_stat_luck = [0] 
 	Text.keys_needing_percent.new_info_pos_stat_armor = [0] 
-	Text.keys_needing_percent.new_info_neg_stat_armor = [0] 
+	Text.keys_needing_percent.new_info_neg_stat_armor = [0]
+	
 	
 	# New effects
 	Text.keys_needing_percent.bm_non_elemental_reduce_stat_gains = [1]
@@ -341,6 +343,9 @@ func _ready()->void:
 	temp = load("res://items/all/terrified_onion/terrified_onion_data.tres")
 	temp.value = 12  # 15
 	
+	temp = load("res://items/all/ugly_tooth/ugly_tooth_effect_1.tres")
+	temp.value = 7		# 5
+
 	temp = load("res://items/all/weird_food/weird_food_data.tres")
 	temp.value = 24  # 20
 		
@@ -424,7 +429,7 @@ func _ready()->void:
 	temp.value = -4  # -5 (Damage%)
 	
 	temp = load("res://items/all/metal_plate/metal_plate_data.tres")
-	temp.value = 42  # 40
+	temp.value = 43  # 40
 	
 	temp = load("res://items/all/missile/missile_data.tres")
 	temp.value = 43  # 45
@@ -463,6 +468,11 @@ func _ready()->void:
 
 	temp = load("res://items/all/shady_potion/shady_potion_effect_1.tres")
 	temp.value = 19  # 20 (Luck)
+	
+	temp = load("res://items/all/snail/snail_effect_1.tres")
+	temp.value = -10  # -8 (Enemy Speed)
+	temp = load("res://items/all/snail/snail_effect_2.tres")
+	temp.key = "stat_attack_speed"	# Speed
 
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_data.tres")
 	temp.tags = [ "stat_max_hp", "consumable", "explosive" ]	# (Luck -> Consumables)
@@ -492,7 +502,7 @@ func _ready()->void:
 	temp.value = 57  # 60
 
 	temp = load("res://items/all/alien_magic/alien_magic_data.tres")
-	temp.value = 82  # 85
+	temp.value = 83  # 85
 	
 	temp = load("res://items/all/alloy/alloy_effect_1.tres")
 	temp.value = 5   # 3 (Melee Damage)
@@ -594,7 +604,7 @@ func _ready()->void:
 	temp.text_key = "new_effect_explode_on_death"
 	
 	temp = load("res://items/all/shackles/shackles_data.tres")
-	temp.value = 86  # 80
+	temp.value = 88  # 80
 	temp = load("res://items/all/shackles/shackles_effect_3.tres")
 	temp.value = 88  # 80 (Range)
 
@@ -827,7 +837,7 @@ func _ready()->void:
 	
 	# Robot Arm
 	temp = load("res://items/all/robot_arm/robot_arm_data.tres")
-	temp.value = 95  # 100
+	temp.value = 93  # 100
 	
 	# Spider
 	temp = load("res://items/all/spider/spider_effect_1.tres")

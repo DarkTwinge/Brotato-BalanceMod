@@ -74,7 +74,8 @@ Ogre -  Ghost Axe??
 Old - Brick?
 One-armed - Brick; Javelin?; [Grenade Launcher]
 Renegade - [Harpoon Gun]
-Romantic - Ghost Flint? (depends if charming counts as a proc for it), Thief Dagger? (same quesiton as Flint), Torch? (does burn ticks proc their effect?)
+Romantic - Ghost Flint? (depends if charming counts as a proc for it), 
+[Romantic + Thief Dagger will NOT give mats on a crit that charms.]
 Streamer - Brick, Flute??
 Technomage - Spoon??
 
@@ -271,11 +272,6 @@ whistle - track extras given
 whistle could make a sfx when looter spawns
 ^^These both seem kinda hard.  Would be neat tho.
 
---adv stats mod
-loot alien count definitely wrong
-recycling count maybe wrong? (arms dealer run)
-"burn" on planks in adv stats for planks, is it ice cube or explosion or
-~~
 
 Check the new effect for tooltip mods I made; was I just doing key instead of text_key so they don't need new files?
 
@@ -327,26 +323,18 @@ Could make it so Fisher doesn't see Bait in Crates (would adding it as a banned 
 
 
 COuld see a mild Ogre nerf
-	Test the explosion starting at 5 base damage instead of 10.  (Maybe should be 0.01 crit instead of 0.03 to be more consistent or?)
+	Test the explosion starting at 5 base damage instead of 10.  (Maybe should be 0.01 crit instead of 0.03 to be more consistent or? Tho Glutton is 3% I think)
 
 could possibly increase the material-drop-off-for-later-waves effect slightly if there is desire for just slightly less money in general
 
 
 pocket factory could give the explorer effect of earlier tree spawns
-landmine item curse is dumb?
+landmine item curse is dumb? (prob some reason why it increasing eng scaling isn't easy? does it break screwdrivers?)
 
 
 vamp squids on 17 might force spawn away from the player a bit?  (unlike puffers, to make them harder rather than easier?)
 
 ~ WL reported: apparently Alien eyes is always taking the damage from the first alien eyes you buy. 
-
-maybe go -atk spd on Snail instead of spd?
-	see if something else needs to go -spd, but not that important
-
-advstats:
-Other Sources -damage because builder turret's burn (wand)
-loot alien spawns something like 10x what they should be
-
 
 investigate: rocket launchers on builder weren't knocking back mummies
 	sharp bullet present
@@ -360,3 +348,13 @@ Pile of Books tagged Engeering instead of Structure, which is better for builder
 potentiall up wave 5 abyss boss hp slightly?  what's the comparison with Crash? [Looks like CZ has a little less HP]
 
 Some consideration to drop Sharp Tooth from Precise, because it doesn't want to be mixed
+
+possibly reduce curse impact on some really big things, e.g. make curse lower the min cooldown on Ball & Chain less?
+
+~~Check some of the early game deaths to see of I had invested in Dodge early in them; does early Dodge investment hurt me too mcuh?
+
+butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
+
+~~Run some tests on Seashell - is it kinda meh like Ricochet or?
+
+Romantic-Screwdriver start

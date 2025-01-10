@@ -1,0 +1,8 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://mods-unpacked/DarkTwinge-BalanceMod/effects/do_nothing_effect.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+custom_key = "EFFECT_NOT_USED"
+text_key = "bm_effect_charm_clarify"

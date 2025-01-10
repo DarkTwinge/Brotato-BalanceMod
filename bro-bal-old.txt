@@ -1,8 +1,6 @@
 WORKSHOP ID: 3058512152
 
 ~~ CURRENT PONDERINGS ~~
-Up Minigun base damage slightly?  (since it's scaling is even betrter than SMG right?)
-
 Ugly Tooth -- maybe not -Speed because snail overlap
 smg +25 range (or lower range of other guns more?)
 
@@ -103,8 +101,6 @@ bull's tooltip should prob include crit chance if not too hard
 
 ~~~ GRAVEYARD (Probably not going to use these ideas, but left for posterity) ~~~
 Should Renegade be tagged for Ranged Damage? [Already kinda strong enough without it, tho could potentially also get some minor nerf at the same time; would also make it slightly harder to find varied tier-1s]
-
-Should Sharp Bullet be part of the Ranged Damage tag set like Bandana is? (Or, piercing Tag could be given to Ranged & Engineering build types?) [Thinking no, since it's still plenty common enough]
 
 Should one-armed have Harvesting Tag? (Tho Bee can be rough)
 

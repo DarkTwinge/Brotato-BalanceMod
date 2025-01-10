@@ -57,7 +57,7 @@ attack_anim_speed = 1.0
 nb_to_spawn = 6
 spawn_at_random_pos = false
 ;; 600
-spawn_in_radius_around_unit = 750
+spawn_in_radius_around_unit = 800
 max_nb_of_spawns = -1
 
 [node name="State1" parent="States" index="0" instance=ExtResource( 9 )]
