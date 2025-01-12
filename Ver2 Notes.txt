@@ -24,16 +24,16 @@ Minimum-sets Vagabond
 Baby-Screwdriver
 Solo Co-op
 Armorless Knight (Only items, or level-ups too?)
+One Punch Ogre (Single Fist weapon)
 
 `(Requires editing)`
 Pure-Pistol Ranger
-One Punch Ogre (Single Fist weapon)
 Generalist - Harpoon Gun Only
 
 Starters to test:
+Romantic-Screwdriver 
 Ghost Scepter Ranger?
 Soldier-Flute
-Lich  Spiky, Thief Dagger
 Jack w/ Wrench, Flute
 Loud w/ Pruner
 Saver-Torch
@@ -44,13 +44,10 @@ Entre-Revolver?
 ~Other starters to maybe test or add:~
 ~~Maybes - test first~~
 Lich - Brick (can still do dmg if breaks); Flute
-Buccaneer - Plank?
 dwarf spear/joust
 Druid - Spiky Shield?
-Hiker - Slingshot?
-King - Blunderbuss?  Trident?
 Loud - Flute??
-Ogre - Knife, Spear
+Ogre - Spear
 Mage - Spoon?
 Romantic - Plank, Screwdriver
 Captain SMG & slingshot
@@ -58,21 +55,18 @@ Captain SMG & slingshot
 Apprentice - [Harpoon Gun]
 Builder - Shuriken??
 Captain - Ghost Axe??
-Demon - Flute?, Brick
 Explorer - Brick
 Fisher - maaaaybe Hiking Stick, [Trident], [[Harpoon Gun???]]
-Gladiator - Brick, (Lute), [Mace]
-Golem - Spoon??
 Hiker - Ghost Axe?, Spear
 Hunter - [Harpoon Gun]
 King - Harpoon Gun??, Spoon??, Anchor?
 Knight - Spoon??
 Lucky - Brick (cute thematic fit)
 Maso - Spoon?
-Multitasker - Brick, Spoon
+Multitasker - Brick
 Ogre -  Ghost Axe??
 Old - Brick?
-One-armed - Brick; Javelin?; [Grenade Launcher]
+One-armed - Javelin?; [Grenade Launcher]
 Renegade - [Harpoon Gun]
 Romantic - Ghost Flint? (depends if charming counts as a proc for it), 
 [Romantic + Thief Dagger will NOT give mats on a crit that charms.]
@@ -84,10 +78,7 @@ reconsider jousting lance (tho Blob already nerfed it a fair bit)
 sharp bullet giving -Range is an idea
 maybe add a few mummy spawns to the edge on wave 20 to further emphasize knockback value?
 
-check the Snail situation (does it already slow charges without my change?)
-
-
-prob add some knockback to Couch when neg speed too?
+prob add some knockback to Couch when neg speed too? (if reworked)
 
 Tooltip Cooldowns don't accurately show the breakpoint stuff, so at high atk spd can be inaccurate
 	have a parenthetical show amount to next breakpoint if possible?
@@ -99,8 +90,6 @@ possibly fly enemy should have more hp/wave
 Sausage should prob proc from Sauce/Rip&Tear since it procs from other explosions
 
 could tweak elite hp so wave 18 has slightly more?
-
-cyborg switch sound -> more unique and louder
 
 
 
@@ -295,8 +284,6 @@ Possible Laser turret should have a small base damage boost?  (do a few comparis
 Romantic + Flute is bugged?
 
 
-consider increasing Thief Dagger price slighty
-
 brawler nerf -- either basic 5% dodge, or partially lock in negative range like with Dwarf, e.g. 50% mods and -120
 abyss - remove ~1 plankton wave 1?
 
@@ -357,4 +344,21 @@ butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
 
 ~~Run some tests on Seashell - is it kinda meh like Ricochet or?
 
-Romantic-Screwdriver start
+~~Perhaps test Med Guns vs SMGs on ~5% Lifesteal; how much better are SMGs at damage and which is better at healing
+
+Hiking Poles might want to be slightly cheaper (17->16 path).  A weird-cute idea would be worse base Range as it levels up, which is *probably* an advantage (tho probably makes them mix with other weapons even worse).  Could also see smoothing out the progression a litt,e so tier-1s are 65 instead of 70 or whatever, or even 60
+
+
+Streamer could have a lower income cap and/or a slightly smooth income spot at lower values?  (Not super convinced, by could be interesting to be a bit less snowball-focused)
+
+Ball & Chain could change the color of cooldown on weapons when at cap?
+
+Gangster could count value of stolen items in their tooltip
+
+Megalodon elite could have slightly lower HP?
+
+Cursed Relic base bonus Dodge a bit lower, maybe 7 instead of 10
+
+Silver Bullet price could be _slightly_ higher
+
+Bosses could have +0.1% HP per Curse perhaps

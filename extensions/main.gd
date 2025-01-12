@@ -1,5 +1,17 @@
 extends "res://main.gd"
 
+# Cyborg SFX on state change
+func _physics_process(_delta:float)->void :
+	if not _convert_stats_half_wave_proced and _wave_timer.time_left <= _wave_timer.wait_time / 2.0:
+		for player_index in RunData.get_player_count():
+			if RunData.get_player_effect("convert_stats_half_wave", player_index) != []:
+				var cyborg_swap_sfx = load("res://mods-unpacked/DarkTwinge-BalanceMod/sounds/cyborg.wav")
+				SoundManager.play(cyborg_swap_sfx, 0, 0, true)
+				break
+	
+	._physics_process(_delta)
+
+
 # Replace to reduce Horde Wave profits
 func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
 

@@ -22,9 +22,6 @@ Renegade -Damage% wrong, or the stat box is wrong, shows -79% to start?
 ~~~ LOW PRIORITY (All things I'd like to add/look at but are less essential) ~~~
 Bull + Robot Arm -- may incorrectly report Bull damage on the weapon?
 
-Cyborg: Unique SFX when switching modes (rather than an already used sound)
-	Vanilla appears to only make a sound incidentally as part of the stat_added signal?
-	
 Should crit chance tooltip mention explosions can crit?
 
 Double negative from -%Dmg and Negative Elemental Damage results in a positive damage scaling for burn.
@@ -303,7 +300,6 @@ Bull, Wave 16, Shmoop, PlasticExplo
 ~Blue Mediguns Set to 20% LS, Wave 19, 50% AtkSpd, SharpBullet~
 143
 
--> Lure IS affected by EnemyAmount
 -> Burn does NOT count for the 8-hits to kill trees
 
 xTest: comparative value of piercing for Lifesteal, e.g. Sharp Bullet on 1-damage SMGs in a crowd with 1k HP at 10% LS

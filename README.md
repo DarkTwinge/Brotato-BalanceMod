@@ -15,7 +15,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Range gained from level-ups & items is ~15% higher (both increases and decreases).
 * Small tweaks to other level-ups: Tier 2-4 Luck is stronger; Tier-1 Harvesting dropped to 4; weaker Tier-4 level-ups are more worthwhile.
 * Horde Waves give ~8% fewer materials.
-* Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are now color-coded.
+* Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are now color-coded. Cyborg's transition has unique SFX.
 
 ### Weapons
 * Primitive set bonus is worse; Blunt set bonus is better. Gun set bonus changed to Attack Speed in order to make the Range stat more relevant.
@@ -255,7 +255,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (Accounts for the lowered starting Range)
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
-* **Thief Dagger:** Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%; Tier-4 Base Damage 30->27
+* **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
 * **Brick:** Can no longer break during Wave 1.
 * **Mace:** Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
@@ -292,7 +292,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regen 5 -> 3
-* **Engineer:** No longer starts with a Wrench; Starting Engineering 10 -> 5; Elemental Damage Penalty -50% -> -20% _[Allows Engineer to lean into a mixed Engineering+Elemental build if desired, and makes more sense for Plank as a starting weapon.]_
+* **Engineer:** No longer starts with a Wrench; Starting Engineering 10 -> 6; Elemental Damage Penalty -50% -> -20% _[Allows Engineer to lean into a mixed Engineering+Elemental build if desired, and makes more sense for Plank as a starting weapon.]_
 * **Entrepreneur:** Shop Prices -25% -> -20%
 * **Explorer:** Starting Trees: 12 -> 11
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
@@ -301,7 +301,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
 * **Loud:** -3 Harvesting per Wave -> -5
-* **Lucky:** 100 Starting Luck -> 75; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a good while to break even with vanilla Lucky (+130 Luck), so gets slightly better Attack Speed to compensate.]_
+* **Lucky:** 100 Starting Luck -> 70; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a fair bit to break even with vanilla Lucky, so gets slightly better Attack Speed to compensate.]_
 * **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
@@ -374,12 +374,15 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Wildling:** Removed Sharp Tooth _[Doesn't benefit from Wildling's ability.]_
 #### DLC
 * **Baby:** Added Lute
-* **Buccaneer:** Added Wrench
+* **Buccaneer:** Added Plank, Wrench
 * **Chef:** Removed Plank, Stick
-* **Demon:** Added Mace
+* **Demon:** Added Brick, Mace
 * **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin
 * **King:** Added Blunderbuss, Harpoon Gun, Spoon
+* **Hiker:** Added Slingshot
+* **Multi-tasker:** Added Spoon; Removed Revolver _[Removal just to make room for Spoon.]_
+* **Ogre:** Added Knife
 * **One-armed:** Added Harpoon Gun
 * **Romantic:** Added Jousting Lance; Removed Fist
 * **Sick:** Added Javelin

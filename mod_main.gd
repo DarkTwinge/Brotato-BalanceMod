@@ -59,6 +59,7 @@ func _init(modLoader = ModLoader):
 ###	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "zones/wave_manager.gd")
 	
 	# Reduced Horde Wave profits
+	# Cyborg Transition SFX
 	#y Save mats for new Padding effect
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "main.gd")
 
@@ -1135,16 +1136,19 @@ func _ready()->void:
 	# Thief Dagger
 	temp = load("res://weapons/melee/dagger/1/dagger_stats.tres")
 	temp.knockback = 0			# 2
+	temp.damage = 5					# 6
 	temp = load("res://weapons/melee/dagger/2/dagger_2_stats.tres")
 	temp.knockback = 0			# 2
+	temp.damage = 10				# 12
 	temp = load("res://weapons/melee/dagger/3/dagger_3_stats.tres")
 	temp.knockback = 0			# 2
+	temp.damage = 16				# 18
 	temp = load("res://weapons/melee/dagger/4/dagger_4_data.tres")
 	temp.value = 95					# 105
 	temp = load("res://weapons/melee/dagger/4/dagger_4_stats.tres")
 	temp.knockback = 0			# 2
 	temp.crit_chance = 0.35	# 0.4
-	temp.damage = 27
+	temp.damage = 26				# 30
 	
 	# Thunder Sword
 	temp = load("res://weapons/melee/thunder_sword/4/thunder_sword_4_data.tres")
@@ -1515,7 +1519,7 @@ func _ready()->void:
 	
 	# Engineer
 	temp = load("res://items/characters/engineer/engineer_effect_1.tres")
-	temp.value = 5  # 10 (Base Engineering)
+	temp.value = 6  # 10 (Base Engineering)
 	temp = load("res://items/characters/engineer/engineer_data.tres")
 	temp_2 = load("res://items/characters/engineer/engineer_effect_2.tres")
 	temp.effects.erase(temp_2) # Remove starting Wrench
@@ -1575,7 +1579,7 @@ func _ready()->void:
 
 	# Lucky
 	temp = load("res://items/characters/lucky/lucky_effect_1.tres")
-	temp.value = 75 # 100 (Starting Luck)
+	temp.value = 70 # 100 (Starting Luck)
 	temp = load("res://items/characters/lucky/lucky_effect_2.tres")
 	temp.value = 40 # 25 (+% Luck Modificaitons)
 	temp = load("res://items/characters/lucky/lucky_effect_4.tres")
