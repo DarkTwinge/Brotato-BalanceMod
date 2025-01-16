@@ -35,12 +35,12 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Tardigrade is no longer wasted by Bloody Hand/Donation.
 * Ricochet is now friendlier with already-piercing weapons.
 * Power Generator now reduces your HP as it powers up.
-* Fairy gives less HP Regen and gives negative speed for Tier-4s instead of negative HP Regen.
+* Fairy gives less HP Regen and gives negative HP for Tier-4s instead of negative HP Regen.
 * Utility Crit items (Pile of Books, Eyepatch) come with more Crit Chance to work better as speculative picks.
-* Candle is cheaper and thus more viable for non-Elemental builds that want fewer enemies.
 * Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are better (as you have much less time to profit from them).
 * Chameleon, Wandering Bot, and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
+* Candle is cheaper and thus more viable for non-Elemental builds that want fewer enemies.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
 ### Characters
@@ -48,7 +48,7 @@ As with items, the goal is not for characters to be equal strength. The focus is
 
 * (DLC) Druid partially reworked to care more about poisoned fruit.
 * Baby can more reliably hit Level 2 after Wave 1.
-* Mage can better run an Engineering build (turrets causing burn via Sausage) and also handles Gun builds better (extra Sausage). Engineer can better combo with Elemental Damage.
+* Mage can better run an Engineering build (turrets + Sausage) and also handles Gun builds better (extra Sausage). Engineer can better combo with Elemental Damage.
 * Lucky and Speedy now care more about raising their thematic stats. Soldier cares more about Pickup Range.
 * Crazy now works with Crossbows properly; Brawler works with Claw properly.
 * One-armed and Farmer receive moderate buffs.
@@ -58,7 +58,7 @@ As with items, the goal is not for characters to be equal strength. The focus is
 ### Enemies & Waves
 * (DLC) Pufferfish now spawns 4 projectiles when killed by a melee attack (instead of 0).
 * (DLC) Stargazers are now stronger when you kill their Incubators first.
-* (DLC) Spider Crab summons are a bit harder to deal with. Turtle Elite starts attacking sooner.
+* (DLC) Spider Crab summons harder to deal with. Turtle Elite attacks sooner and gets more armor late game.
 * (DLC) A few guaranteed Seapigs now spawn on Crash Zone, letting you more easily get Curse.
 * Hivemind/Colossus Elite slightly nerfed.
 * Mantis Elite tweaked to be more unique and slightly harder. Butcher Elite attacks are harder to run from.
@@ -410,10 +410,10 @@ You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/
 
 # Thanks To
 Inschato, ArosRising, Hyphen-ated, Pasha, WL, and everyone else that's assisted with feedback, suggestions, or coding help!
-Also thanks to Blobfish for being generally receptive to feedback and suggestions, implementing many previous Balance Mod changes directly into the base game.
+Also thanks to Blobfish for being generally receptive to feedback, implementing many previous Balance Mod changes directly into the base game.
 
 # License
-You are free to use concepts and code contained within elsewhere, with attribution. E.g. if you want to make a spin-off mod with only some of the changes, you are welcome to do so - just link back to the Balance Mod and/or to my Twitch stream.
+You are free to use Balance Mod concepts & code with attribution. E.g. if you want to make a spin-off mod with only some changes, you are welcome to do so: just link back to the Balance Mod and/or to my Twitch stream.
 
 # Now Included in Vanilla
 These changes were originally made for Balance Mod but are now implemented into the main game (either directly or similarly enough to obsolete my version):

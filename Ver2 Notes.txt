@@ -393,3 +393,5 @@ Wave 11 Elite HP reduces slightly more than 12?
 ~~Can greek fire work on both burn types simultaneously?
 
 still like the idea of weird ghost being set to ~4hp instead if do-able.  Otherwise drop the price by 1 or 2.
+
+~~Druid + Jerky: does poison hurt you then heal over time?
