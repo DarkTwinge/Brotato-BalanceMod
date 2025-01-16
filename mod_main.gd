@@ -56,7 +56,7 @@ func _init(modLoader = ModLoader):
 
 	# Adds a new enemy-group to Horde waves to spawn Magicians for Wave 14/15
 ### TODO Check if this affects Abyss
-###	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "zones/wave_manager.gd")
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "zones/wave_manager.gd")
 	
 	# Reduced Horde Wave profits
 	# Cyborg Transition SFX
@@ -211,27 +211,26 @@ func _ready()->void:
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/wave20_fin.tres")
 	temp.groups_data.push_back(temp_2)
 
-#### Currently disabled because of the new priority despawning; needs to be re-evaluated
-#	# Wave 14 & 15 Horde
-#	# Basics 26x4 & Chasers 26x4 -> 0 & 0 for Wave 14/15
-#	temp = load("res://zones/zone_1/000_hordes/group_3b.tres")
-#	temp.max_wave = 13    # Groups of 4 Chasers + 4 Basics in 2nd half removed for 14+15 to make more room for others
-#	temp = load("res://zones/zone_1/000_hordes/group_4.tres")
-#	# Helmets 33x8.5 -> 31x6
-#	temp.repeating_interval = 3 
-#	temp.spawn_edge_of_map = true
-#	temp = load("res://zones/zone_1/000_hordes/unit_3.tres") # Helmet
-#	temp.min_number = 5   # 8
-#	temp.max_number = 7   # 9
-#	temp = load("res://zones/zone_1/000_hordes/group_5.tres")
-#	temp.min_wave = 13		# 15
-#	temp.spawn_edge_of_map = true
-#	# Basic 28x4 & Chaser 28x4 -> 0
-#	temp_2 = load("res://zones/zone_1/000_hordes/unit_1.tres") # Basic
-#	temp.wave_units_data.erase(temp_2) 
-#	temp_2 = load("res://zones/zone_1/000_hordes/unit_2.tres") # Chaser
-#	temp.wave_units_data.erase(temp_2)
-#	# (Leaving only 28x6.5 Fins)
+	# Wave 14 & 15 Horde (Crash Zone)
+##	# Basics 26x4 & Chasers 26x4 -> 0 & 0 for Wave 14/15
+##	temp = load("res://zones/zone_1/000_hordes/group_3b.tres")
+##	temp.max_wave = 13    # Groups of 4 Chasers + 4 Basics in 2nd half removed for 14+15 to make more room for others
+	temp = load("res://zones/zone_1/000_hordes/group_4.tres")
+	# Helmets 33x8.5 -> 31x7
+	temp.repeating_interval = 3 
+	temp.spawn_edge_of_map = true
+	temp = load("res://zones/zone_1/000_hordes/unit_3.tres") # Helmet
+	temp.min_number = 6   # 8
+	temp.max_number = 8   # 9
+	temp = load("res://zones/zone_1/000_hordes/group_5.tres")
+	temp.min_wave = 13		# 15
+	temp.spawn_edge_of_map = true
+	# Basic 28x4 -> 0
+	temp_2 = load("res://zones/zone_1/000_hordes/unit_1.tres") # Basic
+	temp.wave_units_data.erase(temp_2) 
+##	temp_2 = load("res://zones/zone_1/000_hordes/unit_2.tres") # Chaser
+##	temp.wave_units_data.erase(temp_2)
+##	# (Leaving only 28x6.5 Fins)
 	
 
 
@@ -389,6 +388,8 @@ func _ready()->void:
 	temp = load("res://items/all/dangerous_bunny/dangerous_bunny_data.tres")
 	temp.value = 35   # 30
 	
+	temp = load("res://items/all/energy_bracelet/energy_bracelet_data.tres")
+	temp.value = 56		# 55
 	temp = load("res://items/all/energy_bracelet/energy_bracelet_effect_1.tres")
 	temp.value = 5    # 4 (Crit Chance)
 	
@@ -433,7 +434,7 @@ func _ready()->void:
 	temp.value = 43  # 40
 	
 	temp = load("res://items/all/missile/missile_data.tres")
-	temp.value = 43  # 45
+	temp.value = 44  # 45
 	temp = load("res://items/all/missile/missile_effect_1.tres")
 	temp.value = 11  # 10 (Damage%)
 	
@@ -493,22 +494,22 @@ func _ready()->void:
 	temp.value = 42  # 40
 	
 	temp = load("res://items/all/white_flag/white_flag_data.tres")
-	temp.value = 38  # 40
+	temp.value = 35  # 40
 	temp = load("res://items/all/white_flag/white_flag_effect_1.tres")
 	temp.value = 6   # 5 (Harvesting)
 
 
 	## TIER-3 ITEMS ##
-	temp = load("res://items/all/adrenaline/adrenaline_data.tres")
-	temp.value = 57  # 60
+	temp = load("res://items/all/adrenaline/adrenaline_effect_1.tres")
+	temp.value = 7		# 5
 
 	temp = load("res://items/all/alien_magic/alien_magic_data.tres")
-	temp.value = 83  # 85
+	temp.value = 83		# 85
 	
 	temp = load("res://items/all/alloy/alloy_effect_1.tres")
-	temp.value = 5   # 3 (Melee Damage)
+	temp.value = 5		# 3 (Melee Damage)
 	temp = load("res://items/all/alloy/alloy_effect_5.tres")
-	temp.value = -5  # -6 (Dodge)
+	temp.value = -5		# -6 (Dodge)
 	
 	temp = load("res://items/all/baby_with_a_beard/baby_with_a_beard_effect_1.tres")
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/weapons/baby_beard_weapon_stats.tres")
@@ -528,7 +529,7 @@ func _ready()->void:
 	temp.value = 20  # 15 (Luck)
 	
 	temp = load("res://items/all/candle/candle_data.tres")
-	temp.value = 50  # 65
+	temp.value = 48  # 65
 	temp = load("res://items/all/candle/candle_effect_1.tres")
 	temp.value = 3   # 4 (Elemental Damage)
 	temp = load("res://items/all/candle/candle_effect_4.tres")
@@ -561,19 +562,29 @@ func _ready()->void:
 	temp = load("res://items/all/fin/fin_effect_1.tres")
 	temp.value = 9   # 10 (Speed)
 	temp = load("res://items/all/fin/fin_effect_3.tres")
-	temp.value = -9  # -8 (Luck)
+	temp.value = -9		# -8 (Luck)
 
 	temp = load("res://items/all/glass_cannon/glass_cannon_data.tres")
-	temp.value = 70  # 75
+	temp.value = 70		# 75
 	
 	temp = load("res://items/all/honey/honey_data.tres")
+	temp.value = 53		# 70
 	temp_2 = load("res://items/all/honey/effects/honey_effect_4.tres")
 	temp.effects.erase(temp_2) # Remove Dodge penalty
 	temp = load("res://items/all/honey/effects/honey_effect_2.tres")
-	temp.value = 10	 # 5 (Explosion Size)
+	temp.value = 10		# 5 (Explosion Size)
+	temp = load("res://items/all/honey/effects/honey_effect_0.tres")
+	temp.value = 2		# 3 (Ranged Damage)
+	temp = load("res://items/all/honey/effects/honey_effect_3.tres")
+	temp.key = "stat_range"
+	temp.value = -20	# -3 Speed -> -20 Range
 	
 	temp = load("res://items/all/hunting_trophy/hunting_trophy_data.tres")
 	temp.value = 60  # 55
+	
+	# Laser Turret
+	temp = load("res://items/all/turret_laser/turret_laser_data.tres")
+	temp.value = 59  # 65
 	
 	temp = load("res://items/all/lucky_charm/lucky_charm_data.tres")
 	temp.value = 70  # 75
@@ -634,6 +645,9 @@ func _ready()->void:
 	
 	temp = load("res://items/all/triangle_of_power/triangle_of_power_effect_3.tres")
 	temp.text_key = "new_effect_on_hit"
+	
+	temp = load("res://items/all/tyler/tyler_data.tres")
+	temp.value = 69		# 75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
 	temp.value = 75  # 92
@@ -896,7 +910,9 @@ func _ready()->void:
 	
 	# Excalibur
 	temp = load("res://weapons/melee/excalibur/4/excalibur_4_data.tres")
-	temp.value = 215		 # 230	
+	temp.value = 215		 # 230
+	temp = load("res://weapons/melee/excalibur/4/excalibur_effect_1.tres")
+	temp.value = -2				# -3 (Armor per weapon)
 	
 	# Flaming Brass Knuckles
 	temp = load("res://weapons/melee/flaming_knuckles/2/flaming_knuckles_2_stats.tres")
@@ -1794,6 +1810,11 @@ func _ready()->void:
 
 	
 	## STARTING WEAPONS ##
+	# Chunky
+	temp = load("res://items/characters/chunky/chunky_data.tres")
+	temp_2 = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	
 	# Crazy
 	temp = load("res://items/characters/crazy/crazy_data.tres")
 	temp_2 = load("res://weapons/ranged/crossbow/1/crossbow_data.tres")
@@ -1801,9 +1822,13 @@ func _ready()->void:
 	
 	# Cyborg
 	temp = load("res://items/characters/cyborg/cyborg_data.tres")
+	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	# Remove
 	temp_2 = load("res://weapons/ranged/crossbow/1/crossbow_data.tres")
-	temp.starting_weapons.erase(temp_2)	
+	temp.starting_weapons.erase(temp_2)
+	temp_2 = load("res://weapons/ranged/pistol/1/pistol_data.tres")
+	temp.starting_weapons.erase(temp_2)
 
 	# Demon
 	temp = load("res://items/characters/demon/demon_data.tres")
@@ -1818,6 +1843,8 @@ func _ready()->void:
 
 	# Generalist
 	temp = load("res://items/characters/generalist/generalist_data.tres")
+	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+	temp.starting_weapons.insert(14, temp_2)	
 	# Remove
 	temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
 	temp.starting_weapons.erase(temp_2)
@@ -1858,6 +1885,11 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/wrench/1/wrench_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
+	# Old
+	temp = load("res://items/characters/old/old_data.tres")
+	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+	temp.starting_weapons.insert(9, temp_2)	
+	
 	# One-armed
 	temp = load("res://items/characters/one_arm/one_arm_data.tres")
 	temp_2 = load("res://weapons/melee/sword/2/sword_2_data.tres")
@@ -1877,8 +1909,10 @@ func _ready()->void:
 	temp.starting_weapons.push_back(temp_2)
 	
 	# Ranger
-	# Remove
 	temp = load("res://items/characters/ranger/ranger_data.tres")
+	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+	temp.starting_weapons.insert(6, temp_2)
+	# Remove
 	temp_2 = load("res://weapons/ranged/pistol/1/pistol_data.tres")
 	temp.starting_weapons.erase(temp_2)	
 	
@@ -1890,8 +1924,18 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/torch/1/torch_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
+	# Soldier
+	temp = load("res://items/characters/soldier/soldier_data.tres")
+	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+	temp.starting_weapons.insert(9, temp_2)	
+	
+	# Vagabond
+	temp = load("res://items/characters/vagabond/vagabond_data.tres")	
+	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+	temp.starting_weapons.push_back(temp_2)	
+	
 	# Wildling
-	# Remove
 	temp = load("res://items/characters/wildling/wildling_data.tres")
+	# Remove
 	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
 	temp.starting_weapons.erase(temp_2)

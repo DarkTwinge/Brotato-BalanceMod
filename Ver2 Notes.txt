@@ -352,6 +352,7 @@ Hiking Poles might want to be slightly cheaper (17->16 path).  A weird-cute idea
 Streamer could have a lower income cap and/or a slightly smooth income spot at lower values?  (Not super convinced, by could be interesting to be a bit less snowball-focused)
 
 Ball & Chain could change the color of cooldown on weapons when at cap?
+	^Didn't seem trivial but I do like the idea
 
 Gangster could count value of stolen items in their tooltip
 
@@ -362,3 +363,33 @@ Cursed Relic base bonus Dodge a bit lower, maybe 7 instead of 10
 Silver Bullet price could be _slightly_ higher
 
 Bosses could have +0.1% HP per Curse perhaps
+
+possibly revert sickle changes and try it some more
+
+Peguin should perhaps be more expensive and +2 per and 0 base?
+
+preventing bounce/random target from hitting curse goblins would be good; how hard is this?
+
+~~check current harpoon damage reduction (maybe do it in practice against only an elite, also check code)
+	take a look at pure harpoon diver for a lark?
+
+Spyglass should specify both shop and level-ups maybe?
+
+Particle Accel slow doesn't work?
+
+
+Add MedGun Starter Maybe:
+Mutant? (if remove SMG?)
+Entre?
+Explorer? (Seems logical, but should be tested)
+Baby?
+Could get spicy and replace SMG with it on Multitasker
+Could test on One-armed, maaaaybe fisher
+multi (would prob have to replace smg?)
+
+
+Wave 11 Elite HP reduces slightly more than 12?
+
+~~Can greek fire work on both burn types simultaneously?
+
+still like the idea of weird ghost being set to ~4hp instead if do-able.  Otherwise drop the price by 1 or 2.

@@ -167,7 +167,7 @@ func add_all_dlcs()->void :
 		temp.value = 15   # 23
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-		temp.value = 49		# 65
+		temp.value = 48		# 65
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
 		temp.scale = 7.5	# 6.0
 		temp.text_key = "new_effect_explode_when_below_hp"
@@ -465,7 +465,12 @@ func add_all_dlcs()->void :
 		temp = load("res://items/characters/cryptid/cryptid_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
 		temp.starting_weapons.push_back(temp_2)	
-
+		
+		# Curious
+		temp = load("res://dlcs/dlc_1/characters/curious/curious_data.tres")
+		temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+		temp.starting_weapons.insert(11, temp_2)
+		
 		# Demon
 		temp = load("res://items/characters/demon/demon_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/mace/2/mace_2_data.tres")
@@ -489,6 +494,8 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")
 		temp_2 = load("res://weapons/ranged/slingshot/1/slingshot_data.tres")
 		temp.starting_weapons.push_back(temp_2)			
+		temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+		temp.starting_weapons.insert(9, temp_2)
 		
 		# King
 		temp = load("res://items/characters/king/king_data.tres")

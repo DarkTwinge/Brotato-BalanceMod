@@ -62,7 +62,7 @@ As with items, the goal is not for characters to be equal strength. The focus is
 * (DLC) A few guaranteed Seapigs now spawn on Crash Zone, letting you more easily get Curse.
 * Hivemind/Colossus Elite slightly nerfed.
 * Mantis Elite tweaked to be more unique and slightly harder. Butcher Elite attacks are harder to run from.
-* Crash Zone: Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and allowing for more synergy from effects that rely on killing enemies or picking up materials.
+* Crash Zone: Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and allowing for more synergy from enemy/material-reliant effects. Wave 14/15 Horde Waves scarier.
 * Knockback a bit more effective against resistant enemies.
 
 # Support Me
@@ -137,7 +137,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Celery Tea:** Price 35->33; Extra Enemy HP +100% -> +75%
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was very strong priced at 35, and remains so with the now-cheaper rerolls.]_
-* **Energy Bracelet:** Crit Chance 4% -> 5%
+* **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
 * **Incendiary Turret:** Price 40->42; Engineering Scaling 33% -> 35% _[Makes the rounding less abysmal.]_
@@ -148,7 +148,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Medal:** Price 55->60; Crit Chance -4% -> -3%
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->43
-* **Missile:** Price 45->43; Damage 10% -> 11%
+* **Missile:** Price 45->44; Damage 10% -> 11%
 * **Pocket Factory:** Price 75->70; Engineering 2 -> 3 _[Many people like this item, but if you look at its actual damage output in practice, it tends to be very lackluster for its cost outside of best-case scenarios.]_
 * **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -1 HP Regen
@@ -157,11 +157,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ritual:** Price 60->57
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
-* **Snail:** Eenemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
-* **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies; Now tagged for 'consumables' instead of 'luck'. _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
+* **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
+* **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Now tagged for 'consumables' instead of 'luck'; Clarified effect of having multiple copies. _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
-* **White Flag:** Price 40->38; Harvesting 5 -> 6
+* **White Flag:** Price 40->35; Harvesting 5 -> 6
 #### DLC
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
@@ -172,13 +172,13 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
 
 ### Tier-3
-* **Adrenaline:** Price 60->57
+* **Adrenaline:** 50% Chance to Heal 5 HP -> 50% Chance to Heal 7 HP
 * **Alien Magic:** Price 85->83
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 20
-* **Candle:** Price 65->50; Elemental Damage 4 -> 3; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
+* **Candle:** Price 65->48; Elemental Damage 4 -> 3; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
 * **Chameleon:** Price 70->50; Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support:** Price 75->71
 * **Crown:** Price 70->68
@@ -186,6 +186,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
+* **Laser Turret:** Price 65->59
 * **Lucky Charm:** Price 75->70
 * **Peacock:** Price 50->47
 * **Pile of Books:**: Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
@@ -199,6 +200,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Strange Book:** Price 70->62
 * **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
+* **Tyler:** Price 75->69
 * **Vigilante Ring:** Price 92->75
 * **Wandering Bot:** Price 60->42
 * **Wheat:** Price 85->82; Harvesting 10 -> 14
@@ -207,8 +209,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 * **Goblet:** Price 70->73
 * **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
-* **Honey:** Explosion Size 5% -> 10%; -3% Dodge --> No Penalty
-* **Sunken Bell:** Price 65->49; Explosion Size 600% -> 750%
+* **Honey:** Price 70->53; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
+* **Sunken Bell:** Price 65->48; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Big Arms:** Price 105->98
@@ -243,6 +245,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Melee
 * **Cacti Club:** Base Projectile Damage 1->2 (All Tiers)
 * **Chopper:** Base Damage 6/12/18/30 -> 7/12/17/27 _[The new vanilla Chopper focuses its power on the Tier-4 version and this smooths out the curve a smidge.]_
+* **Excalibur:** -3 Armor Per Weapon -> -2
 * **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Ghost Flint:** Tier-1 Damage 6->7 _[Helps tier-1 not be so behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
@@ -353,34 +356,40 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Wave 16:** 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->725) _[Aiming to make them less trivially smashed by melee quickly]_; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
 * **(DLC) Wave 16:** One of the added Flies is replaced with a Pufferfish.
 * **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
+* **Wave 14 & 15 Hordes:** Added 5 single Magician spawns alongside 5 single Wizard Hats (Spawners) spread out over the last ~2/3rds of the wave; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map (with slightly fewer Helmets spawned); Made the Horde additions identical for 14 & 15; Removed one group of Basic Aliens to make more room for the others. _[Aiming to make these Horde waves feel threatening, rather than easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
 ### Wave Spawns: The Abyss
 * **Wave 14:** Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
 
 ## Starting Weapons
+* **Chunky:** Added Potato Thrower
 * **Crazy:** Added Crossbow
 * **Cryptid:** Added Flute
-* **Cyborg:** Removed Crossbow
+* **Cyborg:** Added Medical Gun; Removed Crossbow, Pistol
 * **Demon:** Added Potato Thrower
 * **Engineer:** Removed Hammer
-* **Generalist:** Removed Lighting Shiv
+* **Generalist:** Added Medical Gun; Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth
 * **Jack:** Removed Shuriken
 * **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle
 * **Mage:** Added Wrench
+* **Old:** Added Medical Gun
 * **One-armed:** Added Sword, Hammer, Flaming Brass Knuckles, Fireball
 * **Pacifist:** Added Scissors, Rock
-* **Ranger:** Removed Pistol
+* **Ranger:** Added Medical Gun; Removed Pistol
 * **Saver:** Added Stick
+* **Soldier:** Added Medical Gun
+* **Vagabond:** Added Medical Gun
 * **Wildling:** Removed Sharp Tooth _[Doesn't benefit from Wildling's ability.]_
 #### DLC
 * **Baby:** Added Lute
 * **Buccaneer:** Added Plank, Wrench
 * **Chef:** Removed Plank, Stick
+* **Curious:** Added Medical Gun
 * **Demon:** Added Brick, Mace
 * **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin
 * **King:** Added Blunderbuss, Harpoon Gun, Spoon
-* **Hiker:** Added Slingshot
+* **Hiker:** Added Slingshot, Medical Gun
 * **Multi-tasker:** Added Spoon; Removed Revolver _[Removal just to make room for Spoon.]_
 * **Ogre:** Added Knife
 * **One-armed:** Added Harpoon Gun
