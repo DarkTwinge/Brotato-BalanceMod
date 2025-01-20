@@ -47,6 +47,7 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/enemies/turtle/turtle_stats.tres")
 		temp.armor = 1												# 3
 		temp.armor_increase_each_wave = 0.75	# 0.5
+		temp.health_increase_each_wave = 750.0	# 700.0
 		
 		# Regular enemies
 		temp = load("res://dlcs/dlc_1/enemies/walrus/walrus_stats.tres")
@@ -161,7 +162,7 @@ func add_all_dlcs()->void :
 		temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
 
 		temp = load("res://dlcs/dlc_1/items/goblet/goblet_data.tres")
-		temp.value = 73		# 70
+		temp.value = 75		# 70
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 		temp.value = 15   # 23
@@ -251,6 +252,16 @@ func add_all_dlcs()->void :
 		temp.cooldown	= 30	# 40
 		
 		# Sickle
+		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
+		temp.tier = -1
+		temp.add_to_chars_as_starting = [ ]
+		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/2/sickle_2_data.tres")
+		temp.tier = -1
+		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/3/sickle_3_data.tres")
+		temp.tier = -1
+		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/4/sickle_4_data.tres")
+		temp.tier = -1
+		
 		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_stats.tres")
 		temp.cooldown = 19	# 20
 		temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.1 ] ]  # 0.8, 0.1	
@@ -455,11 +466,6 @@ func add_all_dlcs()->void :
 		temp.starting_weapons.erase(temp_2)	
 		temp_2 = load("res://weapons/melee/stick/1/stick_data.tres")
 		temp.starting_weapons.erase(temp_2)
-		
-		# Chunky
-	#	temp = load("res://items/characters/chunky/chunky_data.tres")
-	#	temp_2 = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
-	#	temp.starting_weapons.push_back(temp_2)
 		
 		# Cryptid
 		temp = load("res://items/characters/cryptid/cryptid_data.tres")

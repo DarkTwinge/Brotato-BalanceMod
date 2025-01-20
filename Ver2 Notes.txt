@@ -8,6 +8,7 @@ BM_EFFECT_FOR_NEGATIVE_SPEED	If your Speed is negative, gain {0} {1}
 
 
 ~Challenge Run Ideas~
+Lich pure ability run (-Melee Damage, Scissors, rely on ability entirely?)
 PaciFIST (Has to kill final bosses; possibly earlier elites tho 11 seems very sus)
 Im-Precise Crazy
 Sausage Lord Mage (no direct Elemental weapons)
@@ -265,11 +266,6 @@ whistle could make a sfx when looter spawns
 Check the new effect for tooltip mods I made; was I just doing key instead of text_key so they don't need new files?
 
 
-- Crossbow -- with Range being ~17% more available, is it too strong?
-	Still like the thematic-fit idea of better Crossbows getting slower
-	One play at least indicated thy weren't super OP or anything, still needs more testing
-	
-
 Landmines themselves could maybe have more Crit Damage
 Healer & Hermit kinda weird -- healer is faster and has more hp, hermit has knockback resistance (likely making it *easier* to kill) and a tiny bit of armor.  
 
@@ -291,6 +287,22 @@ curve the curse formula more to give slightly better cursed-item/weapon odds at 
 could make elites/bosses stronger based on curse amount
 drop seapig profit down to 4 or 3 if this is implemented
 
+_on_EntitySpawner_enemy_spawned -- Curse enemy odds
+get_stat_description_text -- tooltip curse info, needs to also be changed
+
+var enemy_curse_chance = stepify(abs(Utils.get_curse_factor(value) / 2.0), 0.1)
+var item_curse_chance = stepify(abs(Utils.get_curse_factor(value, chance * 100.0)), 0.1)
+	get_curse_factor:
+		return max_val * (1.0 - 1.0 / (1.0 + value / 50.0))
+			max_val is 100.0 for enemies, or chance * 100.0 for items ; chance = 0.15 I guess?
+
+
+Cursed White Flag should get extra effect; or just treat the enemy cap as a green rather than neutral effect (make sure it flips the right direction if so)
+
+~~What does Harpoon Riccochet look like
+
+14-Abyss might still have a pretty empty spot early on that's weird?
+
 blunderbuss tooltip should clarify 1 per mat
 
 ~(other hp regen tweak possibilities if needed)~
@@ -304,7 +316,7 @@ weird food or jerky are possiblities
 
 could slightly reducing the damage of a wave 11/12 elite be sensible? (keep in mind gangster for lower waves or whatever)
 
-should seashell be made to work for structures too?
+seashell should be made to work for structures too [Make sure it doesn't double-apply to builder turret]
 
 Could make it so Fisher doesn't see Bait in Crates (would adding it as a banned item work?)  [this is kinda funny so maybe leave it]
 
@@ -312,7 +324,7 @@ Could make it so Fisher doesn't see Bait in Crates (would adding it as a banned 
 COuld see a mild Ogre nerf
 	Test the explosion starting at 5 base damage instead of 10.  (Maybe should be 0.01 crit instead of 0.03 to be more consistent or? Tho Glutton is 3% I think)
 
-could possibly increase the material-drop-off-for-later-waves effect slightly if there is desire for just slightly less money in general
+could possibly increase the material-drop-off-for-later-waves effect slightly if there is desire for just slightly less money in general; not unreasonable to reduce later-game money a bit without impacting early game, tho would feel semi odd to have less money when theings are pricier
 
 
 pocket factory could give the explorer effect of earlier tree spawns
@@ -364,8 +376,6 @@ Silver Bullet price could be _slightly_ higher
 
 Bosses could have +0.1% HP per Curse perhaps
 
-possibly revert sickle changes and try it some more
-
 Peguin should perhaps be more expensive and +2 per and 0 base?
 
 preventing bounce/random target from hitting curse goblins would be good; how hard is this?
@@ -387,6 +397,9 @@ Could get spicy and replace SMG with it on Multitasker
 Could test on One-armed, maaaaybe fisher
 multi (would prob have to replace smg?)
 
+Pruners should also have new garden text
+	^This fails an assert for some reason so whatever
+		Also for Farmer's starting Garden, so I guess it runs okay on live, but weird.
 
 Wave 11 Elite HP reduces slightly more than 12?
 
@@ -395,3 +408,29 @@ Wave 11 Elite HP reduces slightly more than 12?
 still like the idea of weird ghost being set to ~4hp instead if do-able.  Otherwise drop the price by 1 or 2.
 
 ~~Druid + Jerky: does poison hurt you then heal over time?
+
+powerfist base dmg is awkward
+do something to warhammer?
+
+
+~~test slingshots vs shurikens some
+
+Chameleon: either full rework, or could increase dodge cap while standing still (prob can only go to 70% and ignore if higher existing cap)
+
+remake sickle, prob 135 range, prob consumable healing scaling, prob keep the low hp damage bonus concept
+
+should Pearl cap at 15?
+
+Could add note on Ethereals that Selling doesn't lose the stats
+
+Evaluate -Enemies% a bit; does it suck enough at reducing all those 1-1 spawns (that is, doesn't remove them ever) that it should be a higher %?
+
+do the penguin switch
+
+modest rework of wildling?
+
+pocket factory may want to come with +1 tree to begin with (and possibly a small downside?)
+
+Captain- should they be tagged for xp?  seems more normal value than good value?  (might need to math out how it works with 5 weapons and with 6 to see what it looks like)
+
+maybe rework tardigrade work-around; does it not work if you have two right now?

@@ -17,6 +17,7 @@ func _init(modLoader = ModLoader):
 	# Changes stat tooltip text to be more accurate (+extra decimal place for Armor)
 	#xx Increases reroll prices (Implemented into vanilla in 1.1.7)
 	# Remove King's smiley indicator for Tier-4 weapons you already have
+	# Add Riposte to the list of Banned Melee-Damage Items
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
 	# Gives One-armed a 4-set Bonus for their weapon
@@ -43,6 +44,9 @@ func _init(modLoader = ModLoader):
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/reroll_button.gd")
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/ingame/upgrades_ui_player_container.gd")
 	
+	# Names Structures in the shop (Jank special cases for Clockwork Wasp and Improved Tools)
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/item_description.gd")
+	
 	# Add new Druid poisoned-fruit-only effect
 	# Tardigrade no longer used for 1-damage hits
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/player/player.gd")
@@ -62,6 +66,9 @@ func _init(modLoader = ModLoader):
 	# Cyborg Transition SFX
 	#y Save mats for new Padding effect
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "main.gd")
+	
+	# Adds new lower enemy cap effect (White Flag), applies to both queue and despawns
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "global/entity_spawner.gd")
 
 	# Adds another arg to explosions so they can also show the size
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
@@ -105,10 +112,11 @@ func _ready()->void:
 	Text.keys_needing_percent.new_info_pos_stat_armor = [0] 
 	Text.keys_needing_percent.new_info_neg_stat_armor = [0]
 	
-	
 	# New effects
 	Text.keys_needing_percent.bm_non_elemental_reduce_stat_gains = [1]
 	Text.keys_needing_operator.bm_effect_unique_tier_iv_weapon_bonus = [0, 2]
+	Text.keys_needing_percent.bm_max_enemy_limit = [0]
+	Text.keys_needing_operator.bm_max_enemy_limit = [0]
 	# This group for making descriptions shorter
 	Text.keys_needing_percent.new_effect_increase_stat_gains = [1]
 	Text.keys_needing_percent.new_effect_increase_stat_gains_all = [1]
@@ -495,6 +503,8 @@ func _ready()->void:
 	
 	temp = load("res://items/all/white_flag/white_flag_data.tres")
 	temp.value = 35  # 40
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/white_flag_reduced_cap.tres")
+	temp.effects.append(temp_2)		
 	temp = load("res://items/all/white_flag/white_flag_effect_1.tres")
 	temp.value = 6   # 5 (Harvesting)
 
@@ -584,7 +594,9 @@ func _ready()->void:
 	
 	# Laser Turret
 	temp = load("res://items/all/turret_laser/turret_laser_data.tres")
-	temp.value = 59  # 65
+	temp.value = 60  				# 65
+	temp = load("res://entities/structures/turret/laser/laser_turret_stats.tres")
+	temp.crit_damage = 2.5	# 2.0
 	
 	temp = load("res://items/all/lucky_charm/lucky_charm_data.tres")
 	temp.value = 70  # 75
@@ -592,6 +604,9 @@ func _ready()->void:
 	temp = load("res://items/all/peacock/peacock_data.tres")
 	temp.value = 47  # 50
 	
+	temp = load("res://items/all/pile_of_books/pile_of_books_data.tres")
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/pile_of_books_crit_note.tres")
+	temp.effects.append(temp_2)	
 	temp = load("res://items/all/pile_of_books/effects/pile_of_books_effect_1.tres")
 	temp.value = 5	 # 3 (Crit Chance)
 	
@@ -646,8 +661,11 @@ func _ready()->void:
 	temp = load("res://items/all/triangle_of_power/triangle_of_power_effect_3.tres")
 	temp.text_key = "new_effect_on_hit"
 	
+	# Tyler
 	temp = load("res://items/all/tyler/tyler_data.tres")
-	temp.value = 69		# 75
+	temp.value = 70				# 75
+	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
+	temp.max_range = 210	# 200
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
 	temp.value = 75  # 92
@@ -1092,6 +1110,7 @@ func _ready()->void:
 	temp.cooldown = 21   		# 28
 	temp.crit_chance = 0.12 # 15
 	temp.crit_damage = 2.25 # 2.0
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ], [ "stat_engineering", 0.6 ] ]	# 0.5, 0.5
 	temp = load("res://weapons/melee/screwdriver/3/screwdriver_3_data.tres")
 	temp.value = 46					# 45
 	temp = load("res://weapons/melee/screwdriver/3/screwdriver_3_stats.tres")
@@ -1099,6 +1118,7 @@ func _ready()->void:
 	temp.cooldown = 18   		# 26	
 	temp.crit_chance = 0.15	# 20
 	temp.crit_damage = 2.5  # 2.0
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ], [ "stat_engineering", 0.7 ] ]	# 0.5, 0.5
 	temp = load("res://weapons/melee/screwdriver/4/screwdriver_4_data.tres")
 	temp.value = 84					# 91
 	temp = load("res://weapons/melee/screwdriver/4/screwdriver_4_stats.tres")
@@ -1106,6 +1126,7 @@ func _ready()->void:
 	temp.cooldown = 14   		# 20
 	temp.crit_chance = 0.20 # 30
 	temp.crit_damage = 3.0 	# 2.0
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ], [ "stat_engineering", 0.8 ] ]	# 0.5, 0.5
 	temp = load("res://weapons/melee/screwdriver/4/screwdriver_4_effect.tres")
 	temp.spawn_cooldown = 4 # 3 (Landmine spawn rate)
 	
@@ -1188,12 +1209,28 @@ func _ready()->void:
 	temp.additional_cooldown_multiplier = 104.0 # 60.0
 	
 	# Crossbow
+	temp = load("res://weapons/ranged/crossbow/1/crossbow_stats.tres")
+	temp.max_range = 325   # 350
+	temp.cooldown = 47     # 50
+	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.09 ] ]
 	temp = load("res://weapons/ranged/crossbow/2/crossbow_data_2.tres")
 	temp.value = 32	  		 # 34
+	temp = load("res://weapons/ranged/crossbow/2/crossbow_stats_2.tres")
+	temp.max_range = 325   # 350
+	# (Cooldown 50)
+	# (Scaling 10%)
 	temp = load("res://weapons/ranged/crossbow/3/crossbow_data_3.tres")
 	temp.value = 61	  		 # 62
+	temp = load("res://weapons/ranged/crossbow/3/crossbow_stats_3.tres")
+	temp.max_range = 325   # 350
+	temp.cooldown = 52     # 50
+	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.11 ] ]
 	temp = load("res://weapons/ranged/crossbow/4/crossbow_data_4.tres")
 	temp.value = 107  		 # 132
+	temp = load("res://weapons/ranged/crossbow/4/crossbow_stats_4.tres")
+	temp.max_range = 325   # 350
+	temp.cooldown = 54     # 50
+	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.12 ] ]
 	
 	# Double-barrel Shotgun
 	temp = load("res://weapons/ranged/double_barrel_shotgun/2/double_barrel_shotgun_2_stats.tres")
@@ -1489,6 +1526,10 @@ func _ready()->void:
 	temp = load("res://items/upgrades/range/4/range_4_effect.tres")
 	temp.value = 70 # 60
 	
+	# Lifesteal
+	temp = load("res://items/upgrades/lifesteal/4/lifesteal_4_effect.tres")
+	temp.value = 5	# 4
+	
 
 	## CHARACTERS ##
 	# Baby
@@ -1584,22 +1625,24 @@ func _ready()->void:
 	
 	# Knight
 	temp = load("res://items/characters/knight/knight_effect_1.tres")
-	temp.value = 3  # 2
+	temp.value = 3		# 2
 	temp.nb_stat_scaled = 2 # 1 (2 melee per 1 armor -> 3 melee per 2 armor)
 	temp = load("res://items/characters/knight/knight_effect_4.tres")
 	temp.text_key = "new_effect_min_weapon_tier" # Hard-coded to fix the color being red when it should be green
 	
 	# Loud
+	temp = load("res://items/characters/loud/loud_effect_1.tres")
+	temp.value = 25		# 30
 	temp = load("res://items/characters/loud/loud_effect_3.tres")
-	temp.value = -5	# -3 (Harvesting per Wave)
+	temp.value = -5		# -3 (Harvesting per Wave)
 
 	# Lucky
 	temp = load("res://items/characters/lucky/lucky_effect_1.tres")
-	temp.value = 70 # 100 (Starting Luck)
+	temp.value = 70		# 100 (Starting Luck)
 	temp = load("res://items/characters/lucky/lucky_effect_2.tres")
-	temp.value = 40 # 25 (+% Luck Modificaitons)
+	temp.value = 40		# 25 (+% Luck Modificaitons)
 	temp = load("res://items/characters/lucky/lucky_effect_4.tres")
-	temp.value = -50 # -60 (Attack Speed)
+	temp.value = -50	# -60 (Attack Speed)
 
 	# Mage
 	temp = load("res://items/characters/mage/mage_data.tres")

@@ -15,7 +15,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Range gained from level-ups & items is ~15% higher (both increases and decreases).
 * Small tweaks to other level-ups: Tier 2-4 Luck is stronger; Tier-1 Harvesting dropped to 4; weaker Tier-4 level-ups are more worthwhile.
 * Horde Waves give ~8% fewer materials.
-* Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are now color-coded. Cyborg's transition has unique SFX.
+* Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are now color-coded. Cyborg's transition has unique SFX. Which items are 'structures' now indicated in the shop.
 
 ### Weapons
 * Primitive set bonus is worse; Blunt set bonus is better. Gun set bonus changed to Attack Speed in order to make the Range stat more relevant.
@@ -23,7 +23,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Hand partially reworked to make Tier-3/4 worth buying.
 * Screwdriver partially reworked+buffed so it cares more about Crit.
 * Minigun now has Knockback Piercing, meaning its Knockback is more effective against resistant enemies like Chargers.
-* Sickle receives a minor rework so that it works better for builds with less extreme Harvesting amounts.
+* Sickle removed from the game.
 * Spear is nerfed; Mace is buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, and War Hammer receive minor buffs.
 * Chain-gun, Flaming Brass Knuckles, Fist, Lightning Shiv, Nuclear Launcher, Revolver, and Thief Dagger receive minor nerfs.
@@ -89,6 +89,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **HP Regen** Tier-4: 5->6
 * **Engineering** Tier-4: 5->6
 * **Crit Chance** Tier-4: 9->10
+* **Lifesteal** Tier-4: 4->5
 
 ## Items
 ### Tier-1
@@ -153,7 +154,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -1 HP Regen
 * **Reinforced Steel:** Engineering 3 -> 4
-* **Riposte:** Price 40->34
+* **Riposte:** Price 40->34; Now removed from the pool for characters that cannot use Melee Damage
 * **Ritual:** Price 60->57
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
@@ -161,7 +162,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Now tagged for 'consumables' instead of 'luck'; Clarified effect of having multiple copies. _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
-* **White Flag:** Price 40->35; Harvesting 5 -> 6
+* **White Flag:** Price 40->35; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
 #### DLC
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
@@ -186,7 +187,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
-* **Laser Turret:** Price 65->59
+* **Laser Turret:** Price 65->60; Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
 * **Lucky Charm:** Price 75->70
 * **Peacock:** Price 50->47
 * **Pile of Books:**: Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
@@ -200,14 +201,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Strange Book:** Price 70->62
 * **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
-* **Tyler:** Price 75->69
+* **Tyler:** Price 75->70; Range 200 -> 210
 * **Vigilante Ring:** Price 92->75
 * **Wandering Bot:** Price 60->42
 * **Wheat:** Price 85->82; Harvesting 10 -> 14
 * **Wings:** Range 30 -> 33
 * **Wisdom:** Price 85->80
 #### DLC
-* **Goblet:** Price 70->73
+* **Goblet:** Price 70->75
 * **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Price 70->53; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Sunken Bell:** Price 65->48; Explosion Size 600% -> 750%
@@ -255,21 +256,22 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%
 * **Scissors:** Crit Chance 10%/12%/15%/20% -> 10%/15%/20%/25%; Tier-3/4 Cooldown 0.94/0.86 -> 0.93/0.83 _[Makes higher tier versions more worth using; Buffing cooldown helps their potential as a healing add-in to a Precise build, and increasing base crit chance helps it fit in better with its Precise peers.]_
-* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
+* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Engineering Scaling 50%(All) -> 50%/60%/70%/80%; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (Accounts for the lowered starting Range)
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
 * **Brick:** Can no longer break during Wave 1.
 * **Mace:** Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
-* **Sickle:** Melee Damage Scaling 80%(All) -> 90%(All); Harvesting Scaling 10%/15%/20%/25% -> 10%/14%/17%/20%; Cooldown 0.87/0.82/0.77/0.70 -> 0.85/0.78/0.72/0.65 _[Leans away from this weapon *only* making any sense in builds with obscene amounts of Harvesting.]_
+* **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between. May come back in a different form later.]_
 * **War Hammer:** Crit Damage 1.5x -> 1.75x
 
 - **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Mace 46/92/185 -> 43/81/142; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
 - **Other Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hammer: 190 -> 168; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133
 
 ### Ranged
-- **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65% _[For reference, Tier-1 SMG is 70% Accuracy.]_
+- **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%
+- **Crossbow:** Range Scaling 10%(All) -> 9%/10%/11%/12%; Cooldown 1.13(All) -> 1.08/1.13/1.17/1.20; Range 350 -> 325 _[Lower initial cooldown helps its Wave 1-3 performance. Better scaling makes higher tiers actually worth building, while the worsening cooldown offsets this in a thematically appropriate way.]_
 - **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95 _[Allows 1 extra shot during Wave 1, so you're less behind when starting with it.]_
 - **Minigun:** Base Damage 1/3 -> 2/4; Now has 25%/35% Knockback Piercing, making its knockback more effective against resistant enemies such as Chargers. _[Often a more-expensive but worse SMG in vanilla, this gives it some unique utility. Build additional Knockback to really notice the effect.]_
 - **Nuclear Launcher:** Cooldown 2.12 -> 2.20; Base Damage 60/120 -> 50/100; Range 800 -> 650; Ranged Scaling 100%/100% -> 125%/125%; Elemental Scaling 100%/100% -> 150%/150% _[Similar strength in Elemental builds, a touch weaker otherwise.]_
@@ -291,7 +293,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Brawler:** Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw)
 * **Bull:** Starting HP Regen 15 -> 10
 * **Chef:** Can no longer be offered Eyes Surgery.
-* **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[To prevent Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
+* **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regen 5 -> 3
@@ -303,7 +305,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Glutton:** Explosion crit chance now properly affected by your Crit Chance stat (base chance is still 3% and damage is still 1.5x)
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
-* **Loud:** -3 Harvesting per Wave -> -5
+* **Loud:** -3 Harvesting per Wave -> -5; Damage 30% -> 25%
 * **Lucky:** 100 Starting Luck -> 70; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a fair bit to break even with vanilla Lucky, so gets slightly better Attack Speed to compensate.]_
 * **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
@@ -331,7 +333,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 
 #### The Abyss
 * Spider Crab:**: Phase 1 Crab Summoning Cooldown 2s -> 1.85s; Summoning Radius 600 -> 800; HP to switch to 2nd Phase 85% -> 82%; Time to switch to 2nd Phase 12s -> 13s _[Aiming to make the initial summoning phase more noticeable and interesting; this causes one extra summoning before switching phases from time.]_
-* **Turtle:** Time Before First Attack 2s -> 0.5s; Base Armor 3 -> 1; Armor Per Wave 0.5 -> 0.75 _[Similar armor early, more armor later.]
+* **Turtle:** Time Before First Attack 2s -> 0.5s; HP Per Wave 700 -> 750; Base Armor 3 -> 1; Armor Per Wave 0.5 -> 0.75 _[Similar armor early, more armor later. Also means its armor is more reasonable if Gangster sees it very early. HP is now the same as normal Elites.]
 
 ### Standard Enemies
 + **Small Charger:** Knockback Resistance 80% -> 75%

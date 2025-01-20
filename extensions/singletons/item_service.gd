@@ -1,5 +1,10 @@
 extends "res://singletons/item_service.gd"
 
+# Adds Riposte to banned melee damage items
+func _ready()->void :
+	._ready()
+	item_groups["melee_damage"].push_back("item_riposte")
+
 # Replace original weapon-set-favoring pool with a weighted pool based on how many of the weapon you have
 # Adjusts shop weapon pick odds based on number of weapon types held
 func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandItemForWaveArgs)->ItemParentData:
@@ -143,7 +148,6 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 		if RunData.current_wave < RunData.nb_of_waves:
 			if player_character.banned_item_groups.size() > 0:
 				for banned_item_group in player_character.banned_item_groups:
-
 					if not banned_item_group in item_groups:
 						print(str(banned_item_group) + " does not exist in ItemService.item_groups")
 						continue
@@ -171,12 +175,10 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 	if is_a_set_pick == true:
 
 		# Gathers all sets from all weapons
-		print("all sets:")
 		var all_sets_from_weapons = []
 		for weapon in held_weapons:
 			for set in weapon.sets:
 				all_sets_from_weapons.push_back(set)
-				print(set.my_id)
 
 		var newpool = []
 #		var newpool_queue = []
@@ -244,14 +246,12 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 #	return [discounted_price, normal_price - discounted_price]
 
 
+
 # Add a decimal to armor tooltip for more accuracy
 func get_stat_description_text(stat_name:String, value:int, player_index:int)->String:
 	stat_name = stat_name.to_upper()
 	var stat_sign = "POS_" if value >= 0 else "NEG_"
 	var key = "INFO_" + stat_sign + stat_name
-	
-	print(key)
-	print(stat_name)
 	
 	if stat_name == "STAT_ARMOR":
 		### Now shows one decimal place; also extra clarification text
@@ -287,6 +287,13 @@ func get_stat_description_text(stat_name:String, value:int, player_index:int)->S
 				break
 		var enemy_curse_chance = stepify(abs(Utils.get_curse_factor(value) / 2.0), 0.1)
 		var item_curse_chance = stepify(abs(Utils.get_curse_factor(value, chance * 100.0)), 0.1)
+		###
+		print(value)
+		print(chance)
+		print(enemy_curse_chance)
+		print(item_curse_chance)
+		
+		##
 
 		return Text.text(key, [str(enemy_curse_chance), str(item_curse_chance)])
 	### Changed text for better clarity
@@ -305,8 +312,6 @@ func get_stat_description_text(stat_name:String, value:int, player_index:int)->S
 	elif stat_name == "STAT_LUCK":
 		key = "NEW_" + key
 	##
-	
-	print(key)
 	
 	return Text.text(key, [str(abs(value))])
 
