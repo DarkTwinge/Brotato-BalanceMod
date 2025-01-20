@@ -84,24 +84,17 @@ prob add some knockback to Couch when neg speed too? (if reworked)
 Tooltip Cooldowns don't accurately show the breakpoint stuff, so at high atk spd can be inaccurate
 	have a parenthetical show amount to next breakpoint if possible?
 
-weird ghost could  put hp at  3-5 instead for a few more spots it is usable? (e.g. if it works with Bloody Hand sorta thing that's maybe cute?)
-
-possibly fly enemy should have more hp/wave
 
 Sausage should prob proc from Sauce/Rip&Tear since it procs from other explosions
 
 could tweak elite hp so wave 18 has slightly more?
 
 
-
 could be cute to have tooltips show highest stat reached for previous round for e.g. Cryptid and also lowest for e.g. Triangle of Power (Fried Rice...)
 
 
-
 ENGINEER items could be more common if your stat is higher than the wave
-
-one-armed could have vaga's no-dupe weapon effect to clean up their shops very slightly (makes it slightly easier to swap)
-
+	prob hits wrongly too often, but still kinda cute with like Nail and Shackles and such
 
 if slow tag is to exist, wandering bot too?  maybe just remove that from old tho?
 
@@ -132,13 +125,11 @@ Goldfish should clarify doesn't affect locked
 GF could give free reroll, or make the next shop's items cheaper
 
 Dwarf: Counter for Engineering gained
-Definitely awkward char, tbd if overly niche or such
 
 Gangster: Controller down on items can go over to stats not weapons from rightmost only
 
 
-Tier-4 Brick could no longer destroy itself but instead cause 1 mat to drop each attack
-	or it could give you a Tier-1 Brick when it breaks
+Tier-4 Brick could give you a Tier-1 Brick when it breaks
 
 treasure map should have some visual/audio cue when procs
 	may also want some light base stats of some kind
@@ -196,8 +187,6 @@ keep an eye on plasma sledge; seeming pretty sad when it struggles to outpace pl
 
 hiking poles are sometimes resetting stat counts????
 
-stargazer sfx - louder, always play, only play when it enters vat
-
 ~
 ~If reworking things like e.g. Baby Squid, make sure they are removed/added to the lists in item_service for specific-character bans
 ~
@@ -211,7 +200,7 @@ could be true for treasure map as well
 prisoner range for phase 2/3 probably too low; explorer easily stays away
 	tho it also switches phases really fast, which is maybe fine but a bit threatening for sure
 
-Cauldron - does it stack at all?
+~~Cauldron - does it stack at all?
 
 ---
 
@@ -219,19 +208,17 @@ Cauldron - does it stack at all?
 	(verify negative curse doesn't break things)
 
 ~
-Wave reminder: 17 vampires, 7/14 walrus, 15 krakens
+Wave reminder: 17 vampires, 7/14 walrus
 wave 6 puffers
 ~
 
-Does Shuriken want a small buff to its early game?
+Does Shuriken want a small buff to its early game? (could cost slightly less? tho already pretty cheap.)
 
 Padding could maybe have both the hp per saved mats AND the hp per mats left on ground effects?  With a small -AtkSpd?
 
 ~
 
 Curse tooltip description more details?
-
-How worth upgrading is it for Flamethrower?  Gets duration on purple and range on red I guess?
 
 Gladiator maybe could go to -50 Luck?
 
@@ -277,10 +264,9 @@ BM Set Weighting: maybe don't double-count same weapons?
 
 Possible Laser turret should have a small base damage boost?  (do a few comparison points vs burn turrets and explosion ones)
 
-Romantic + Flute is bugged?
+~Romantic + Flute is bugged?
 
 
-brawler nerf -- either basic 5% dodge, or partially lock in negative range like with Dwarf, e.g. 50% mods and -120
 abyss - remove ~1 plankton wave 1?
 
 curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse? [And lower the cap for odds of getting stuff cursed for lots of curse, or make it further away]
@@ -354,9 +340,6 @@ possibly reduce curse impact on some really big things, e.g. make curse lower th
 
 butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
 
-~~Run some tests on Seashell - is it kinda meh like Ricochet or?
-
-~~Perhaps test Med Guns vs SMGs on ~5% Lifesteal; how much better are SMGs at damage and which is better at healing
 
 Hiking Poles might want to be slightly cheaper (17->16 path).  A weird-cute idea would be worse base Range as it levels up, which is *probably* an advantage (tho probably makes them mix with other weapons even worse).  Could also see smoothing out the progression a litt,e so tier-1s are 65 instead of 70 or whatever, or even 60
 
@@ -404,18 +387,14 @@ Pruners should also have new garden text
 Wave 11 Elite HP reduces slightly more than 12?
 
 ~~Can greek fire work on both burn types simultaneously?
-
-still like the idea of weird ghost being set to ~4hp instead if do-able.  Otherwise drop the price by 1 or 2.
-
 ~~Druid + Jerky: does poison hurt you then heal over time?
-
-powerfist base dmg is awkward
-do something to warhammer?
-
-
 ~~test slingshots vs shurikens some
+~~Run some tests on Seashell - is it kinda meh like Ricochet or?
+~~Perhaps test Med Guns vs SMGs on ~5% Lifesteal; how much better are SMGs at damage and which is better at healing
+
 
 Chameleon: either full rework, or could increase dodge cap while standing still (prob can only go to 70% and ignore if higher existing cap)
+	Should be able to treat dodge_cap as a stat while standing still, just like dodge itself ; but would need another check to make it still cap at 75; another stat that copies dodge cap maybe sometime during init so it only applies once, and is just referenced for this purpose?
 
 remake sickle, prob 135 range, prob consumable healing scaling, prob keep the low hp damage bonus concept
 
@@ -433,4 +412,5 @@ pocket factory may want to come with +1 tree to begin with (and possibly a small
 
 Captain- should they be tagged for xp?  seems more normal value than good value?  (might need to math out how it works with 5 weapons and with 6 to see what it looks like)
 
-maybe rework tardigrade work-around; does it not work if you have two right now?
+maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
+	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?

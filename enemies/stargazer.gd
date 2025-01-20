@@ -32,6 +32,8 @@ func on_target_lung_died(entity:Entity, _die_args:Entity.DieArgs)->void :
 
 
 func on_target_lung_became_full()->void :
+	# Moved sfx play over here so it only plays on entering vats, and increased volume
+	SoundManager2D.play(angry_sound, global_position, 15, 0.1, true)
 	if not dead:
 		get_angry()
 
@@ -45,4 +47,4 @@ func get_angry()->void :
 		boost_args.speed_boost += _boosted_args.speed_boost
 	boost(boost_args)
 	can_be_boosted = false
-	SoundManager2D.play(angry_sound, global_position, 5, 0.1, true)
+	#SoundManager2D.play(angry_sound, global_position, 15, 0.1, true)

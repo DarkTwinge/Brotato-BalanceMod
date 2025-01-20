@@ -24,9 +24,9 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Screwdriver partially reworked+buffed so it cares more about Crit.
 * Minigun now has Knockback Piercing, meaning its Knockback is more effective against resistant enemies like Chargers.
 * Sickle removed from the game.
-* Spear is nerfed; Mace is buffed.
+* Spear & Thief Dagger are nerfed; Mace is buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, and War Hammer receive minor buffs.
-* Chain-gun, Flaming Brass Knuckles, Fist, Lightning Shiv, Nuclear Launcher, Revolver, and Thief Dagger receive minor nerfs.
+* Fist, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
@@ -122,6 +122,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Terrified Onion:** Price 15->12
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%) 
 * **Weird Food:** Price 20->24
+* **Weird Ghost:** Starting HP Next Wave -100% -> -90%
 #### DLC
 * **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 * **Feather:** Price 18->19
@@ -160,6 +161,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Shady Potion:** Luck 20 -> 19
 * **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
 * **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Now tagged for 'consumables' instead of 'luck'; Clarified effect of having multiple copies. _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
+* **Tentacle:** Price 35->37
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
 * **White Flag:** Price 40->35; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
@@ -255,6 +257,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; (Fixed tooltip bounce count) _[Most of my Shiv nerfs were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 110%/135%; Explosion Chance 25%/50% -> 33%/50%
+* **Power Fist:** Tier 4 Damage 60 -> 75
 * **Scissors:** Crit Chance 10%/12%/15%/20% -> 10%/15%/20%/25%; Tier-3/4 Cooldown 0.94/0.86 -> 0.93/0.83 _[Makes higher tier versions more worth using; Buffing cooldown helps their potential as a healing add-in to a Precise build, and increasing base crit chance helps it fit in better with its Precise peers.]_
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Engineering Scaling 50%(All) -> 50%/60%/70%/80%; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (Accounts for the lowered starting Range)
@@ -264,7 +267,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Brick:** Can no longer break during Wave 1.
 * **Mace:** Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between. May come back in a different form later.]_
-* **War Hammer:** Crit Damage 1.5x -> 1.75x
+* **War Hammer:** Cooldown 2.11/1.95 -> 2.0/1.83; Crit Damage 1.5x -> 1.75x
 
 - **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Mace 46/92/185 -> 43/81/142; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
 - **Other Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hammer: 190 -> 168; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133
@@ -290,7 +293,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ## Characters
 * **Baby:** Harvesting 12 -> 15; Shop Price -20% -> -15% _[The extra Harvesting allows them to get their first Level-up after Waves 1 and 2 reliably.]_
-* **Brawler:** Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw)
+* **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw) _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10
 * **Chef:** Can no longer be offered Eyes Surgery.
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
@@ -336,6 +339,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 * **Turtle:** Time Before First Attack 2s -> 0.5s; HP Per Wave 700 -> 750; Base Armor 3 -> 1; Armor Per Wave 0.5 -> 0.75 _[Similar armor early, more armor later. Also means its armor is more reasonable if Gangster sees it very early. HP is now the same as normal Elites.]
 
 ### Standard Enemies
++ **Fly:** Base HP 15 -> 7; HP Per Wave 4 -> 7 _[Similar HP early, more HP late.]_
 + **Small Charger:** Knockback Resistance 80% -> 75%
 + **Small Viking Charger:** Knockback Resistance 80% -> 75%
 + **Tall Bruiser:** Knockback Resistance 90% -> 87%
@@ -345,7 +349,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 _[The base game mostly implemented my tweaks here, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
-+ **Stargazer:** Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 325% _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
++ **Stargazer:** Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 325%; SFX is now louder and always plays when a vat is entered (but never when you just destroy a vat) _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Narwhal:** Knockback Resistance 90% -> 87%
 + **Vampire Squid:** Initial Cooldown 1.17s -> 1.05s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 6; Minimum Spawn Distance From Player +100 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%

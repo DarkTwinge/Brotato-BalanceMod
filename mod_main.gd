@@ -117,6 +117,8 @@ func _ready()->void:
 	Text.keys_needing_operator.bm_effect_unique_tier_iv_weapon_bonus = [0, 2]
 	Text.keys_needing_percent.bm_max_enemy_limit = [0]
 	Text.keys_needing_operator.bm_max_enemy_limit = [0]
+	Text.keys_needing_percent.bm_effect_hp_start_next_wave = [0]
+	Text.keys_needing_operator.bm_effect_hp_start_next_wave = [0]
 	# This group for making descriptions shorter
 	Text.keys_needing_percent.new_effect_increase_stat_gains = [1]
 	Text.keys_needing_percent.new_effect_increase_stat_gains_all = [1]
@@ -146,7 +148,11 @@ func _ready()->void:
 	# Rhino Elite
 	temp = load("res://entities/units/enemies/rhino/rhino_stats.tres")
 	temp.speed = 275 	# 250
-
+	
+	# Fly
+	temp = load("res://entities/units/enemies/fly/fly_stats.tres")
+	temp.health = 7												# 15
+	temp.health_increase_each_wave = 7.0	# 4.0
 
 	# Small Charger
 	temp = load("res://entities/units/enemies/charger/charger_stats.tres")
@@ -356,7 +362,11 @@ func _ready()->void:
 
 	temp = load("res://items/all/weird_food/weird_food_data.tres")
 	temp.value = 24  # 20
-		
+	
+	temp = load("res://items/all/weird_ghost/weird_ghost_effect_2.tres")
+	temp.value = -90 # -100
+	temp.text_key = "BM_EFFECT_HP_START_NEXT_WAVE"
+	
 
 	## TIER-2 ITEMS ##
 	temp = load("res://items/all/acid/acid_data.tres")
@@ -495,6 +505,9 @@ func _ready()->void:
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_stats.tres")
 	temp.crit_chance = 0.01  # 0 (Crit Chance)
 
+	temp = load("res://items/all/tentacle/tentacle_data.tres")
+	temp.value = 37  # 35
+	
 	temp = load("res://items/all/wheelbarrow/wheelbarrow_data.tres")
 	temp.value = 38  # 40	
 	
@@ -1069,7 +1082,9 @@ func _ready()->void:
 	temp = load("res://weapons/melee/power_fist/3/power_fist_3_exploding_effect.tres")
 	temp.key = "new_effect_explode_melee"
 	temp = load("res://weapons/melee/power_fist/4/power_fist_4_data.tres")
-	temp.value = 198			# 221	
+	temp.value = 198			# 221
+	temp = load("res://weapons/melee/power_fist/4/power_fist_4_stats.tres")
+	temp.damage = 75			# 60
 	temp = load("res://weapons/melee/power_fist/4/power_fist_4_exploding_effect.tres")
 	temp.key = "new_effect_explode_melee"
 	
@@ -1540,8 +1555,15 @@ func _ready()->void:
 
 	# Brawler
 	temp = load("res://items/characters/brawler/brawler_effect_1.tres")
-	temp.value = 40  # 50 (Unarmed AtkSpd Bonus)
-
+	temp.value = 40		# 50 (Unarmed AtkSpd Bonus)
+	temp = load("res://items/characters/brawler/brawler_data.tres")
+	temp_2 = load("res://items/characters/brawler/brawler_effect_4.tres")
+	temp.effects.erase(temp_2)
+	temp.effects.push_back(temp_2)
+	temp_2.value = -125	# -50 (-63 after mods)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/brawler_range_mods.tres")
+	temp.effects.push_back(temp_2)
+	
 	# Bull
 	temp = load("res://items/characters/bull/bull_effect_2.tres")
 	temp.value = 10  # 15 (HP Regen)

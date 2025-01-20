@@ -294,10 +294,12 @@ func add_all_dlcs()->void :
 		temp.value = 119				#	130
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/3/war_hammer_3_stats.tres")
 		temp.crit_damage = 1.75	# 1.5
+		temp.cooldown = 83			# 90
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_data.tres")
 		temp.value = 209				#	255
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_stats.tres")
 		temp.crit_damage = 1.75	# 1.5
+		temp.cooldown = 73			# 80
 		
 		## RANGED WEAPONS ##
 		# Blunderbuss

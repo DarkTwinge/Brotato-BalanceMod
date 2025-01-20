@@ -86,3 +86,4 @@ BM_EFFECT_POB_CRIT_DETAILS,"(Laser Turrets have x2.5 Crit Damage; other structur
 BM_MAX_ENEMY_LIMIT,"{0} Enemy Limit\n(Base cap: 100 enemies before despawning.)"
 BM_ITEM_STRUCTURE,"Item: Structure"
 BM_UNIQUE_STRUCTURE,"Unique Structure"
+BM_EFFECT_HP_START_NEXT_WAVE,"{0} Starting HP next wave"
