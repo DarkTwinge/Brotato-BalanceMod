@@ -25,7 +25,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Minigun now has Knockback Piercing, meaning its Knockback is more effective against resistant enemies like Chargers.
 * Sickle removed from the game.
 * Spear & Thief Dagger are nerfed; Mace is buffed.
-* Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, and War Hammer receive minor buffs.
+* Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, Cacti Club, and War Hammer receive minor buffs.
 * Fist, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
@@ -143,7 +143,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
 * **Incendiary Turret:** Price 40->42; Engineering Scaling 33% -> 35% _[Makes the rounding less abysmal.]_
-* **Leather Vest:** Price 45->48
+* **Leather Vest:** Price 45->47
 * **Little Frog:** Price 45->38; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
 * **Lure:** Price 34->39
@@ -373,6 +373,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Cyborg:** Added Medical Gun; Removed Crossbow, Pistol
 * **Demon:** Added Potato Thrower
 * **Engineer:** Removed Hammer
+* **Explorer:** Added Medical Gun
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth
 * **Jack:** Removed Shuriken
@@ -389,6 +390,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 #### DLC
 * **Baby:** Added Lute
 * **Buccaneer:** Added Plank, Wrench
+* **Builder:** Added Icicle
 * **Chef:** Removed Plank, Stick
 * **Curious:** Added Medical Gun
 * **Demon:** Added Brick, Mace
@@ -396,10 +398,11 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Explorer:** Added Lute, Javelin
 * **King:** Added Blunderbuss, Harpoon Gun, Spoon
 * **Hiker:** Added Slingshot, Medical Gun
+* **Mage:** Added Spoon
 * **Multi-tasker:** Added Spoon; Removed Revolver _[Removal just to make room for Spoon.]_
 * **Ogre:** Added Knife
 * **One-armed:** Added Harpoon Gun
-* **Romantic:** Added Jousting Lance; Removed Fist
+* **Romantic:** Added Jousting Lance, Screwdriver; Removed Fist
 * **Sick:** Added Javelin
 * **Vampire:** Added Javelin
 

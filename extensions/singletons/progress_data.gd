@@ -461,6 +461,11 @@ func add_all_dlcs()->void :
 		temp_2 = load("res://weapons/melee/plank/1/plank_data.tres")
 		temp.starting_weapons.push_back(temp_2)
 		
+		# Builder
+		temp = load("res://dlcs/dlc_1/characters/builder/builder_data.tres")
+		temp_2 = load("res://weapons/ranged/icicle/1/icicle_data.tres")
+		temp.starting_weapons.push_back(temp_2)		
+		
 		# Chef
 		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
 		# Remove
@@ -514,6 +519,25 @@ func add_all_dlcs()->void :
 		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/2/blunderbuss_2_data.tres")
 		temp.starting_weapons.push_back(temp_2)
 		
+		#
+		# Lucky
+#		temp = load("res://items/characters/lucky/lucky_data.tres")
+#		temp_2 = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_data.tres")
+#		temp.starting_weapons.push_back(temp_2)		
+		#
+		
+		# Mage
+		temp = load("res://items/characters/mage/mage_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/weapons/melee/spoon/1/spoon_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		
+		#
+		# Masochist
+#		temp = load("res://items/characters/masochist/masochist_data.tres")
+#		temp_2 = load("res://dlcs/dlc_1/weapons/melee/spoon/1/spoon_data.tres")
+#		temp.starting_weapons.push_back(temp_2)		
+		#
+		
 		# Multi-tasker
 		temp = load("res://items/characters/multitasker/multitasker_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/spoon/1/spoon_data.tres")
@@ -536,6 +560,8 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/characters/romantic/romantic_data.tres")
 		temp_2 = load("res://weapons/melee/jousting_lance/1/jousting_lance_data.tres")
 		temp.starting_weapons.push_back(temp_2)	
+		temp_2 = load("res://weapons/melee/screwdriver/1/screwdriver_data.tres")
+		temp.starting_weapons.push_back(temp_2)			
 		# Remove
 		temp_2 = load("res://weapons/melee/fist/1/fist_data.tres")
 		temp.starting_weapons.erase(temp_2)

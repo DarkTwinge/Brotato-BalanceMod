@@ -31,15 +31,25 @@ One Punch Ogre (Single Fist weapon)
 Pure-Pistol Ranger
 Generalist - Harpoon Gun Only
 
+
 Starters to test:
-Romantic-Screwdriver 
+Maso - Spoon?
+Lucky - Brick (cute thematic fit)
+Saver-Torch
+
+Loud w/ Pruner
+
+
+~No~
+Loud - Flute
+
+
+Loud-Lute
 Ghost Scepter Ranger?
 Soldier-Flute
 Jack w/ Wrench, Flute
-Loud w/ Pruner
-Saver-Torch
+
 Test/Consider Captain-Quarterstaff, Screwdriver, Chopper
-Spoon on Mage?
 Entre-Revolver?
 
 ~Other starters to maybe test or add:~
@@ -47,31 +57,24 @@ Entre-Revolver?
 Lich - Brick (can still do dmg if breaks); Flute
 dwarf spear/joust
 Druid - Spiky Shield?
-Loud - Flute??
 Ogre - Spear
-Mage - Spoon?
 Romantic - Plank, Screwdriver
 Captain SMG & slingshot
 
-Apprentice - [Harpoon Gun]
-Builder - Shuriken??
 Captain - Ghost Axe??
 Explorer - Brick
 Fisher - maaaaybe Hiking Stick, [Trident], [[Harpoon Gun???]]
 Hiker - Ghost Axe?, Spear
 Hunter - [Harpoon Gun]
-King - Harpoon Gun??, Spoon??, Anchor?
 Knight - Spoon??
-Lucky - Brick (cute thematic fit)
-Maso - Spoon?
 Multitasker - Brick
 Ogre -  Ghost Axe??
 Old - Brick?
-One-armed - Javelin?; [Grenade Launcher]
+One-armed - [Grenade Launcher]
 Renegade - [Harpoon Gun]
 Romantic - Ghost Flint? (depends if charming counts as a proc for it), 
 [Romantic + Thief Dagger will NOT give mats on a crit that charms.]
-Streamer - Brick, Flute??
+Streamer - Brick
 Technomage - Spoon??
 
 ~~~
@@ -293,7 +296,7 @@ blunderbuss tooltip should clarify 1 per mat
 
 ~(other hp regen tweak possibilities if needed)~
 diploma could swap to -hp regen
-exoskeleton could lose the -2lifesteal
+exoskeleton could drop the -2lifesteal
 maybe scarf
 spider could be -regen instead of either
 weird food or jerky are possiblities
@@ -317,8 +320,6 @@ pocket factory could give the explorer effect of earlier tree spawns
 landmine item curse is dumb? (prob some reason why it increasing eng scaling isn't easy? does it break screwdrivers?)
 
 
-vamp squids on 17 might force spawn away from the player a bit?  (unlike puffers, to make them harder rather than easier?)
-
 ~ WL reported: apparently Alien eyes is always taking the damage from the first alien eyes you buy. 
 
 investigate: rocket launchers on builder weren't knocking back mummies
@@ -335,8 +336,6 @@ potentiall up wave 5 abyss boss hp slightly?  what's the comparison with Crash? 
 Some consideration to drop Sharp Tooth from Precise, because it doesn't want to be mixed
 
 possibly reduce curse impact on some really big things, e.g. make curse lower the min cooldown on Ball & Chain less?
-
-~~Check some of the early game deaths to see of I had invested in Dodge early in them; does early Dodge investment hurt me too mcuh?
 
 butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
 
@@ -397,6 +396,7 @@ Chameleon: either full rework, or could increase dodge cap while standing still 
 	Should be able to treat dodge_cap as a stat while standing still, just like dodge itself ; but would need another check to make it still cap at 75; another stat that copies dodge cap maybe sometime during init so it only applies once, and is just referenced for this purpose?
 
 remake sickle, prob 135 range, prob consumable healing scaling, prob keep the low hp damage bonus concept
+	maybe better to just leave removed tbh?
 
 should Pearl cap at 15?
 
@@ -414,3 +414,9 @@ Captain- should they be tagged for xp?  seems more normal value than good value?
 
 maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
 	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?
+	
+advstats - should note mats eaten by builder?
+
+Red Sticks oculd drop damasge per Stick by 1 and add +5 base damage, making it easier to switch out of
+
+Wandering Bot: Add some additional effect: Damage, knockback w/ pierce, debuff like ice cube, bigger slow, bigger hitebox...

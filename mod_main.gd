@@ -427,7 +427,7 @@ func _ready()->void:
 	temp.value = 9  # 8 (Dodge)
 	
 	temp = load("res://items/all/leather_vest/leather_vest_data.tres")
-	temp.value = 48  # 45
+	temp.value = 47  # 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
 	temp.value = 38  # 45
@@ -1905,7 +1905,12 @@ func _ready()->void:
 	# Remove
 	temp_2 = load("res://weapons/melee/hammer/2/hammer_2_data.tres")
 	temp.starting_weapons.erase(temp_2)
-
+	
+	# Explorer
+	temp = load("res://items/characters/explorer/explorer_data.tres")	
+	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
+	temp.starting_weapons.insert(14, temp_2)		
+	
 	# Generalist
 	temp = load("res://items/characters/generalist/generalist_data.tres")
 	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
@@ -1986,8 +1991,8 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/stick/1/stick_data.tres")
 	temp.starting_weapons.insert(5, temp_2)
 ##Testing
-	temp_2 = load("res://weapons/melee/torch/1/torch_data.tres")
-	temp.starting_weapons.push_back(temp_2)
+	#temp_2 = load("res://weapons/melee/torch/1/torch_data.tres")
+	#temp.starting_weapons.push_back(temp_2)
 	
 	# Soldier
 	temp = load("res://items/characters/soldier/soldier_data.tres")
