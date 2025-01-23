@@ -1,5 +1,5 @@
 # Overview
-More items are worth using and fewer choices are overpowered. The Range and Luck stats are better. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and to encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is relatively similar, with the easiest runs made a bit harder and the hardest runs made a bit easier.
+More items are worth using and fewer choices are overpowered. Range and Luck stats are better. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is similar, with the easiest runs made a bit harder and the hardest runs made a bit easier.
 
 The full list of all changes is here: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog - Below is a summary of the major changes you should know about.
 
@@ -47,11 +47,10 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 As with items, the goal is not for characters to be equal strength. The focus is instead on making the easiest options less 'free', as well as tweaks to make decisions more interesting and characters more variable.
 
 * (DLC) Druid partially reworked to care more about poisoned fruit.
-* Baby can more reliably hit Level 2 after Wave 1.
 * Mage can better run an Engineering build (turrets + Sausage) and also handles Gun builds better (extra Sausage). Engineer can better combo with Elemental Damage.
 * Lucky and Speedy now care more about raising their thematic stats. Soldier cares more about Pickup Range.
 * Crazy now works with Crossbows properly; Brawler works with Claw properly.
-* One-armed and Farmer receive moderate buffs.
+* One-armed, Farmer, and Baby receive moderate buffs.
 * Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Explorer, Demon, King, Mutant, Gladiator, Engineer, Entrepreneur, and Brawler receive modest nerfs.
 * Many automatic starting weapons (e.g. Wildling, Crazy) are removed in order to make those characters more varied and your chosen starting weapon more meaningful.
 
@@ -105,6 +104,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cute Monkey:** Price 25->35; Proc Chance 8% -> 10%; Limit 13->10 _[Cleaner numbers, and also more viable to take the -RangedDamage hit if you really want the supplemental healing.]_
 * **Duct Tape:** Price 20->15
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
+* **Gentle Alien:** Price 30->31
 * **Glasses:** Range 20 -> 22
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->24
@@ -292,7 +292,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
-* **Baby:** Harvesting 12 -> 15; Shop Price -20% -> -15% _[The extra Harvesting allows them to get their first Level-up after Waves 1 and 2 reliably.]_
+* **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120% _[The extra Harvesting allows them to get their first Level-up after Waves 1 and 2 reliably.]_
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw) _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10
 * **Chef:** Can no longer be offered Eyes Surgery.
@@ -367,8 +367,9 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Wave 14:** Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
 
 ## Starting Weapons
+* **Baby:** Added Ghost Axe; Removed Taser
 * **Chunky:** Added Potato Thrower
-* **Crazy:** Added Crossbow
+* **Crazy:** Added Crossbow _[Which now works with their starting Range.]_
 * **Cryptid:** Added Flute
 * **Cyborg:** Added Medical Gun; Removed Crossbow, Pistol
 * **Demon:** Added Potato Thrower
@@ -388,7 +389,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Vagabond:** Added Medical Gun
 * **Wildling:** Removed Sharp Tooth _[Doesn't benefit from Wildling's ability.]_
 #### DLC
-* **Baby:** Added Lute
+* **Baby:** Added Lute, Brick; Removed Flute
 * **Buccaneer:** Added Plank, Wrench
 * **Builder:** Added Icicle
 * **Chef:** Removed Plank, Stick
@@ -418,7 +419,7 @@ You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/
 * Advanced Statistics: https://steamcommunity.com/sharedfiles/filedetails/?id=3025488976
 
 # Thanks To
-Inschato, ArosRising, Hyphen-ated, Pasha, WL, and everyone else that's assisted with feedback, suggestions, or coding help!
+Inschato, ArosRising, Hyphen-ated, Pasha, WL, and everyone else that's assisted with feedback, suggestions, or coding!
 Also thanks to Blobfish for being generally receptive to feedback, implementing many previous Balance Mod changes directly into the base game.
 
 # License

@@ -6,6 +6,7 @@ const BM_DIR_DLCE = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/dlcs/d
 func add_all_dlcs()->void :
 	# Checks if the DLC exists before loading script extensions
 	if File.new().file_exists("res://dlcs/dlc_1/dlc_data.tres"):
+		# Curse adjustments
 		ModLoaderMod.install_script_extension(BM_DIR_DLCE + "dlc_1_data.gd")
 	
 	# Run the normal function to load DLCs
@@ -313,6 +314,7 @@ func add_all_dlcs()->void :
 		# Flute
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
 		temp.value = 19					# 20
+		temp.add_to_chars_as_starting = [ "character_lucky", "character_glutton", "character_renegade", "character_jack", "character_golem", "character_soldier", "character_demon" ] 	# Removed Baby
 		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
 		temp.effects.append(temp_2)		
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/2/flute_2_data.tres")
@@ -453,6 +455,9 @@ func add_all_dlcs()->void :
 		temp = load("res://items/characters/baby/baby_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/lute/1/lute_data.tres")
 		temp.starting_weapons.push_back(temp_2)
+		temp_2 = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		# (Flute Removed Above)
 		
 		# Buccaneer
 		temp = load("res://dlcs/dlc_1/characters/buccaneer/buccaneer_data.tres")

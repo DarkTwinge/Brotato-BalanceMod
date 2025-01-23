@@ -409,6 +409,7 @@ do the penguin switch
 modest rework of wildling?
 
 pocket factory may want to come with +1 tree to begin with (and possibly a small downside?)
+	prob adjust tags as appropriate
 
 Captain- should they be tagged for xp?  seems more normal value than good value?  (might need to math out how it works with 5 weapons and with 6 to see what it looks like)
 
@@ -419,4 +420,8 @@ advstats - should note mats eaten by builder?
 
 Red Sticks oculd drop damasge per Stick by 1 and add +5 base damage, making it easier to switch out of
 
-Wandering Bot: Add some additional effect: Damage, knockback w/ pierce, debuff like ice cube, bigger slow, bigger hitebox...
+Wandering Bot: Add some additional effect: Damage, knockback w/ pierce, debuff like ice cube, bigger slow, bigger hitebox...  could scale with engineering somehow
+
+Wave 19 could broadly be a little more Horde-like, to test those limits somewhat guaranteed (like W17-18's guaranteed Elite)
+
+should blunder get more nerfs?

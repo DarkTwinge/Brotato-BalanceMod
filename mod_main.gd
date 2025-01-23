@@ -296,6 +296,9 @@ func _ready()->void:
 	temp = load("res://items/all/fertilizer/fertilizer_effect_1.tres")
 	temp.value = 7   # 8 (Harvesting)
 	
+	temp = load("res://items/all/gentle_alien/gentle_alien_data.tres")
+	temp.value = 31	 #30
+	
 	temp = load("res://items/all/glasses/glasses_effect_1.tres")
 	temp.value = 22  # 20 (Range)
 	
@@ -364,7 +367,8 @@ func _ready()->void:
 	temp.value = 24  # 20
 	
 	temp = load("res://items/all/weird_ghost/weird_ghost_effect_2.tres")
-	temp.value = -90 # -100
+	temp.value = -90 # -100  !!! If changed, also change in dlc_1_data
+	temp.effect_sign = 3 # 1
 	temp.text_key = "BM_EFFECT_HP_START_NEXT_WAVE"
 	
 
@@ -1549,9 +1553,9 @@ func _ready()->void:
 	## CHARACTERS ##
 	# Baby
 	temp = load("res://items/characters/baby/effects/baby_effect_0a.tres")
-	temp.value = 15  # 12 (Harvesting)
-	temp = load("res://items/characters/baby/effects/baby_effect_0b.tres")
-	temp.value = -15 # -20 (Item Price)
+	temp.value = 15		# 12 (Harvesting)
+	temp = load("res://items/characters/baby/effects/baby_effect_4.tres")
+	temp.value = 120	# 130
 
 	# Brawler
 	temp = load("res://items/characters/brawler/brawler_effect_1.tres")
@@ -1875,6 +1879,14 @@ func _ready()->void:
 
 	
 	## STARTING WEAPONS ##
+	# Baby
+	temp = load("res://items/characters/baby/baby_data.tres")
+	temp_2 = load("res://weapons/melee/ghost_axe/1/ghost_axe_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	# Remove
+	temp_2 = load("res://weapons/ranged/taser/1/taser_data.tres")
+	temp.starting_weapons.erase(temp_2)
+	
 	# Chunky
 	temp = load("res://items/characters/chunky/chunky_data.tres")
 	temp_2 = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
