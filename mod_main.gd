@@ -688,7 +688,7 @@ func _ready()->void:
 	temp.value = 75  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
-	temp.value = 42  # 60
+	temp.value = 40  # 60
 	
 	temp = load("res://items/all/wheat/wheat_data.tres")
 	temp.value = 82  # 85
@@ -1720,7 +1720,7 @@ func _ready()->void:
 	
 	# Sick
 	temp = load("res://items/characters/sick/sick_data.tres")
-	temp.wanted_tags = [  ]
+	temp.wanted_tags = [  ]	# Had Lifesteal
 	
 	# Soldier
 	temp = load("res://items/characters/soldier/soldier_effect_3.tres")
@@ -1965,6 +1965,11 @@ func _ready()->void:
 	# Mage
 	temp = load("res://items/characters/mage/mage_data.tres")
 	temp_2 = load("res://weapons/melee/wrench/1/wrench_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	
+	# Mutant
+	temp = load("res://items/characters/mutant/mutant_data.tres")
+	temp_2 = load("res://weapons/melee/chopper/1/chopper_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
 	# Old

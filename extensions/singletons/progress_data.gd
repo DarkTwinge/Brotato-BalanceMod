@@ -109,6 +109,12 @@ func add_all_dlcs()->void :
 		temp_2 =load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/DLC-wave16_fly.tres")
 		temp.wave_units_data.push_back(temp_2)
 		
+		# Wave 4 Lamprey now on DL1
+		temp = load("res://dlcs/dlc_1/zones/abyss/004/d5_group_1.tres")
+		temp.min_difficulty = 1
+		
+		
+		# Vamp Squid
 		temp = load("res://dlcs/dlc_1/zones/abyss/017/unit_1.tres")
 		temp.additional_min_distance_from_player = 100.0		# 0.0
 		
@@ -221,7 +227,7 @@ func add_all_dlcs()->void :
 		temp.text_key = "new_effect_break_on_hit"
 		temp = load("res://dlcs/dlc_1/weapons/melee/brick/4/brick_4_data.tres")
 		temp.value = 36			# 40
-		
+
 		# Captain's Sword
 		temp = load("res://dlcs/dlc_1/weapons/melee/captains_sword/4/captains_sword_4_data.tres")
 		temp.value = 198		# 210
@@ -308,6 +314,8 @@ func add_all_dlcs()->void :
 		temp.value = 46					# 45
 		temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/3/blunderbuss_3_data.tres")
 		temp.value = 90					# 95
+		temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/3/blunderbuss_3_stats.tres")
+		temp.damage = 45				# 50
 		temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/4/blunderbuss_4_data.tres")
 		temp.value = 160				# 192
 		
@@ -363,6 +371,10 @@ func add_all_dlcs()->void :
 		temp.value = 125				# 140
 		
 		### CHARACTERS ###
+		# Captain
+		temp = load("res://dlcs/dlc_1/characters/captain/captain_data.tres")
+		temp.wanted_tags = [  ]	# Had XP Gain
+		
 		# Chef
 		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
 		temp.banned_items = [ "item_frozen_heart", "item_eyes_surgery" ]
@@ -479,6 +491,12 @@ func add_all_dlcs()->void :
 		temp_2 = load("res://weapons/melee/stick/1/stick_data.tres")
 		temp.starting_weapons.erase(temp_2)
 		
+		# Creature
+		temp = load("res://dlcs/dlc_1/characters/creature/creature_data.tres")
+		# Remove
+		temp_2 = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
+		temp.starting_weapons.erase(temp_2)	# Needs to be manually removed despite being a Tier -1 weapon
+		
 		# Cryptid
 		temp = load("res://items/characters/cryptid/cryptid_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
@@ -495,6 +513,12 @@ func add_all_dlcs()->void :
 		temp.starting_weapons.push_back(temp_2)
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_data.tres")
 		temp.starting_weapons.push_back(temp_2)
+		
+		# Druid
+		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")
+		# Remove
+		temp_2 = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
+		temp.starting_weapons.erase(temp_2)	# Needs to be manually removed despite being a Tier -1 weapon
 		
 		# Entrepreneur
 		temp = load("res://items/characters/entrepreneur/entrepreneur_data.tres")
