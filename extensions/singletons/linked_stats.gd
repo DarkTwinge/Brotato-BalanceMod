@@ -25,8 +25,8 @@ func reset_player(player_index:int)->void :
 			actual_nb_scaled = unique_tier4_weapon_ids.size()
 		##
 		### New Padding effect
-		elif stat_scaled == "bm_leftover_materials":
-			actual_nb_scaled = RunData.effects["bm_leftover_materials"]
+		#elif stat_scaled == "bm_leftover_materials":
+		#	actual_nb_scaled = RunData.effects["bm_leftover_materials"]
 		##
 
 		var amount_to_add = int(floor(nb_stat_to_tweak * (actual_nb_scaled / nb_stat_scaled)))

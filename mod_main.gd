@@ -17,12 +17,11 @@ func _init(modLoader = ModLoader):
 	# Changes stat tooltip text to be more accurate (+extra decimal place for Armor)
 	#xx Increases reroll prices (Implemented into vanilla in 1.1.7)
 	# Remove King's smiley indicator for Tier-4 weapons you already have
-	# Add Riposte to the list of Banned Melee-Damage Items
+	# (This is where to add banned item changes)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
 	# Gives One-armed a 4-set Bonus for their weapon
 	# Slightly reduce the strength of armor
-	# Makes Glutton, Spicy Sauce, and Rip and Tear all use the crit stat
 	# Gives Gun Mage an extra Sausage
 	# Fixes rounding for Fairy tooltip
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/run_data.gd")
@@ -988,8 +987,17 @@ func _ready()->void:
 	temp.value = 95			 # 105
 	
 	# Hammer
+	temp = load("res://weapons/melee/hammer/2/hammer_2_stats.tres")
+	temp.cooldown = 62		# 65
+	temp.max_range = 180	# 175
+	temp = load("res://weapons/melee/hammer/3/hammer_3_stats.tres")
+	temp.cooldown = 57		# 60
+	temp.max_range = 190	# 175
 	temp = load("res://weapons/melee/hammer/4/hammer_4_data.tres")
-	temp.value = 168		 # 190
+	temp.value = 168			# 190
+	temp = load("res://weapons/melee/hammer/4/hammer_4_stats.tres")
+	temp.cooldown = 52		# 55
+	temp.max_range = 200	# 175
 	
 	# Hand
 	temp = load("res://weapons/melee/hand/1/hand_data.tres")

@@ -47,7 +47,7 @@ Loud - Flute
 Loud-Lute
 Ghost Scepter Ranger?
 Soldier-Flute
-Jack w/ Wrench, Flute
+Jack w/ Wrench, Flute, Taser
 
 Test/Consider Captain-Quarterstaff, Screwdriver, Chopper
 Entre-Revolver?
@@ -101,7 +101,7 @@ ENGINEER items could be more common if your stat is higher than the wave
 
 if slow tag is to exist, wandering bot too?  maybe just remove that from old tho?
 
-When testing Eyes Surgery, try some with One-armed
+~~When testing Eyes Surgery, try some with One-armed
 
 do some comparisons of xbow vs icicle
 
@@ -267,9 +267,6 @@ BM Set Weighting: maybe don't double-count same weapons?
 
 Possible Laser turret should have a small base damage boost?  (do a few comparison points vs burn turrets and explosion ones)
 
-~Romantic + Flute is bugged?
-
-
 abyss - remove ~1 plankton wave 1?
 
 curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse? [And lower the cap for odds of getting stuff cursed for lots of curse, or make it further away]
@@ -433,5 +430,10 @@ Try Mage-Hand and Cacti starters
 Hunter-Screwdriver is probably too off vibe-wise, but maybe with the Crit angle it makes some sense?
 Sailor-Harpoon
 Bucc-Revolver
+Should Cacti on Creature be removed?
+	Could add Slingshot, Shuriken, Taser?
 
 look at builder internal ban tagging, currently nixes Improved Tools as it is tagged structure; Pile of Books should maybe be tagged struct but then gets banned on builder
+
+
+Need one more item giving Dodge or at least remove -Dodge from Weird Food

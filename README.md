@@ -25,7 +25,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Minigun now has Knockback Piercing, meaning its Knockback is more effective against resistant enemies like Chargers.
 * Sickle removed from the game.
 * Spear & Thief Dagger are nerfed; Mace is buffed.
-* Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, Cacti Club, and War Hammer receive minor buffs.
+* Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, Cacti Club, Hammer, and War Hammer receive minor buffs.
 * Fist, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
@@ -77,8 +77,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (instead of a fully random weapon). This makes it a little easier to match up a starting tier-2+ only weapon (e.g. Potato Thrower) with something relevant.
 * Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up to be more consistent and have a slightly more logical progression.
 * The reroll button for level-ups is now color-coded for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
-* All explosions can now crit (Rip & Tear, Spicy Sauce, Glutton, and Ogre affected). All explosion tooltips now also list their explosion size (weapons, items, and characters).
 * Horde Wave Materials: 65% -> 60% _[This still leaves them as generally more profitable and easier than Elite waves, but now more closely aligned.]_
+* All explosion tooltips now list their explosion size (weapons, items, and characters).
 * Clarified various tooltips to be more clear & accurate: Detailed hidden mechanics (e.g. Fisher, Spicy Sauce, Scared Sausage); Adjusted wordings of item and stat tooltips to be more correct; Shortened character effect descriptions to fit in the box better; Armor tooltip has an extra decimal place; Knight's tooltip color-coded properly; Fixed Lightning Shiv's bounce count.
 
 ## Level-ups
@@ -155,12 +155,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -1 HP Regen
 * **Reinforced Steel:** Engineering 3 -> 4
-* **Riposte:** Price 40->34; Now removed from the pool for characters that cannot use Melee Damage
+* **Riposte:** Price 40->34
 * **Ritual:** Price 60->57
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
 * **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
-* **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Can now crit for 1.5x damage (base Crit Chance 1%); Now tagged for 'consumables' instead of 'luck'; Clarified effect of having multiple copies. _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
+* **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies). _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
 * **Tentacle:** Price 35->37
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
@@ -196,7 +196,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Plastic Explosive:** Price 60->52
 * **Poisonous Tonic:** Range 15 -> 27
 * **Power Generator:** -5% Damage --> -1 Max HP Per 5% Speed
-* **Rip and Tear:** Can now crit for 1.5x damage (base Crit Chance 1%); Clarified effect of having multiple copies
+* **Rip and Tear:** (Clarified effect of having multiple copies)
 * **Shackles:** Price 80->88; Range 80 -> 88
 * **Shmoop:** Price 60->65; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
 * **Statue:** Price 60->55
@@ -252,6 +252,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Ghost Flint:** Tier-1 Damage 6->7 _[Helps tier-1 not be so behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
+* **Hammer:** Range 175(All) -> 180/190/200; Cooldown 1.67/1.59/1.50 -> 1.63/1.55/1.48 (accounts for the increased Range)
 * **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
 * **Hatchet:** Range 125->135
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; (Fixed tooltip bounce count) _[Most of my Shiv nerfs were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
@@ -260,7 +261,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Power Fist:** Tier 4 Damage 60 -> 75
 * **Scissors:** Crit Chance 10%/12%/15%/20% -> 10%/15%/20%/25%; Tier-3/4 Cooldown 0.94/0.86 -> 0.93/0.83 _[Makes higher tier versions more worth using; Buffing cooldown helps their potential as a healing add-in to a Precise build, and increasing base crit chance helps it fit in better with its Precise peers.]_
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Engineering Scaling 50%(All) -> 50%/60%/70%/80%; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
-* **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (Accounts for the lowered starting Range)
+* **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (accounts for the lowered Range)
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
@@ -306,7 +307,6 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Explorer:** Starting Trees: 12 -> 11
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
 * **Gladiator:** -30 Luck -> -40
-* **Glutton:** Explosion crit chance now properly affected by your Crit Chance stat (base chance is still 3% and damage is still 1.5x)
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
 * **Loud:** -3 Harvesting per Wave -> -5; Damage 30% -> 25%
@@ -326,7 +326,6 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 ### DLC
 * **Captain:** No longer favored to find XP Gain items.
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
-* **Ogre:** Explosion crit chance now properly affected by your Crit Chance stat (base chance is still 3% and damage is still 1.5x)
 
 ## Enemies
 ### Elites
@@ -435,6 +434,7 @@ These changes were originally made for Balance Mod but are now implemented into 
 - Over 100 starting weapon changes.
 - Bugfixed Wave 3 shops so they can sell more than 1 weapon.
 - Fairy & King show icons for relevant items in shops; Renegade now also shows icons for crates.
+- Fixed Crit to work properly for: Glutton, Ogre, Spicy Sauce, Rip & Tear.
 - Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand, Extra Stomach, Lure
 - Item Buffs to: Sifd's Relic, Eyes Surgery, Spicy Sauce, Snail, Wisdom, Gambling Token, Little Frog, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
 - Item Tweaks to: Stone Skin, Tyler
@@ -447,7 +447,7 @@ These changes were originally made for Balance Mod but are now implemented into 
 - Elite Nerfs to: Croc, Mother
 - Elite Buffs to: Rhino
 - Elite Buff+Rework of: Gargoyle
-- Fixed Tagging for: Baby Gecko, Silver Bullet, Triangle of Power, Improved Tools, Alloy, Community Support, Power Generator, Octopus, Explorer, Streamer, Cyborg, Farmer, Glutton
+- Fixed Tagging/Banning for: Baby Gecko, Riposte, Silver Bullet, Triangle of Power, Improved Tools, Alloy, Community Support, Power Generator, Octopus, Explorer, Streamer, Cyborg, Farmer, Glutton
 - Pocket Factory now counts as a Structure. Fixed Incendiary Turret tooltip's incorrect damage rounding.
 - HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.
 - Revolver & Chain-gun: Fixed a bug that caused them to instantly reload when used alongside effects that check if you're moving (e.g. Solider). Also bugfixed inaccurate long cooldown tooltip.
