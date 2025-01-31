@@ -121,7 +121,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%) 
-* **Weird Food:** Price 20->24
+* **Weird Food:** Price 20->23; Dodge -2% --> Speed -2%
 * **Weird Ghost:** Starting HP Next Wave -100% -> -90%
 #### DLC
 * **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
@@ -130,13 +130,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Tier-2
 * **Acid:** Price 65->62
-* **Alien Eyes:** Price 50->53; No Downside --> -8 Range
+* **Alien Eyes:** Price 50->52; No Downside --> -8 Range
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Range -15 -> -18
 * **Blackbelt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->40
 * **Campfire:** Price 40->39
 * **Celery Tea:** Price 35->33; Extra Enemy HP +100% -> +75%
+* **Cog:** Damage -4% -> -2% _[This penalty usually don't matter much for an Engineering build anyway: this makes it less punishing to splash.]_
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was very strong priced at 35, and remains so with the now-cheaper rerolls.]_
 * **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
@@ -181,7 +182,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 20
-* **Candle:** Price 65->48; Elemental Damage 4 -> 3; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
+* **Candle:** Price 65->45; Elemental Damage 4 -> 3; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
 * **Chameleon:** Price 70->50; Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support:** Price 75->71
 * **Crown:** Price 70->68
@@ -195,7 +196,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Pile of Books:**: Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
 * **Plastic Explosive:** Price 60->52
 * **Poisonous Tonic:** Range 15 -> 27
-* **Power Generator:** -5% Damage --> -1 Max HP Per 5% Speed
+* **Power Generator:** Price 65->63; -5% Damage --> -1 Max HP Per 5% Speed
 * **Rip and Tear:** (Clarified effect of having multiple copies)
 * **Shackles:** Price 80->88; Range 80 -> 88
 * **Shmoop:** Price 60->65; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
@@ -203,7 +204,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Strange Book:** Price 70->62
 * **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
-* **Tyler:** Price 75->70; Range 200 -> 210
+* **Tyler:** Price 75->70; Range 200 -> 210; Engineering & Elemental Scaling 75% -> 80%
 * **Vigilante Ring:** Price 92->75
 * **Wandering Bot:** Price 60->40
 * **Wheat:** Price 85->82; Harvesting 10 -> 14
@@ -407,6 +408,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Ogre:** Added Knife
 * **One-armed:** Added Harpoon Gun
 * **Romantic:** Added Jousting Lance, Screwdriver; Removed Fist
+* **Sailor:** Added Harpoon Gun
 * **Sick:** Added Javelin
 * **Vampire:** Added Javelin
 

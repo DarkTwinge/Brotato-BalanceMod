@@ -30,7 +30,7 @@ NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapo
 NEW_EFFECT_BOUNCING_PLURAL,Your projectiles gain {0} bounces.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage; Non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
 NEW_EFFECT_GARDEN,Spawns a garden that creates a fruit an average of every {0} seconds
 NEW_EFFECT_DAMAGE_AGAINST_BOSSES,{0} damage against bosses and elites (multiplicative)
-NEW_SAUSAGE_EFFECT_STARTING_ITEM,You start with {0} {1} (or [color=#00ff00]2[/color] when starting with a Gun)
+NEW_SAUSAGE_EFFECT_STARTING_ITEM,You start with {0} {1} ([color=#00ff00]2[/color] when starting with non-Elemental)
 BM_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS,{0} {1} for every [color=#ffae40]different[/color] Tier IV weapon you have [{2}]
 NEW_EFFECT_REDUCE_STAT_GAINS,{0} reduced by {1}
 NEW_EFFECT_REDUCE_STAT_GAINS_ALL,"All {0} modifications reduced by {1}"

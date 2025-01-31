@@ -73,7 +73,7 @@ func get_armor_coef(armor:int)->float:
 	return percent_dmg_taken
 
 
-# Gives an extra starting Sausage for Gun Mage
+# Gives an extra starting Sausage for non-Elemental Mage
 func add_starting_items_and_weapons()->void :
 	.add_starting_items_and_weapons()
 
@@ -83,10 +83,10 @@ func add_starting_items_and_weapons()->void :
 			for item_id in effects["starting_item"]:
 				for i in item_id[1]:
 					var item = ItemService.get_element(ItemService.items, item_id[0])
-					### If adding a starting Sausage, add a 2nd if the starting weapon is an SMG or Shotgun
+					### If adding a starting Sausage, add a 2nd if the starting weapon is non-Elemental (TODO: Make it not hard-cased)
 					if item_id[0] == "item_scared_sausage":
 						var weapons = RunData.get_player_weapons(player_index)
-						if weapons[0].my_id == "weapon_double_barrel_shotgun_1" or weapons[0].my_id == "weapon_smg_1":
+						if weapons[0].my_id == "weapon_double_barrel_shotgun_1" or weapons[0].my_id == "weapon_smg_1" or weapons[0].my_id == "weapon_wrench_1" or weapons[0].my_id == "weapon_spoon_1":
 							add_item(item, player_index)
 					##
 

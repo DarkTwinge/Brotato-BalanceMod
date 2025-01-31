@@ -594,7 +594,12 @@ func add_all_dlcs()->void :
 		# Remove
 		temp_2 = load("res://weapons/melee/fist/1/fist_data.tres")
 		temp.starting_weapons.erase(temp_2)
-
+		
+		# Sailor
+		temp = load("res://dlcs/dlc_1/characters/sailor/sailor_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/2/harpoon_gun_2_data.tres")
+		temp.starting_weapons.push_back(temp_2)		
+		
 		# Sick
 		temp = load("res://items/characters/sick/sick_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/javelin/1/javelin_data.tres")

@@ -8,6 +8,7 @@ BM_EFFECT_FOR_NEGATIVE_SPEED	If your Speed is negative, gain {0} {1}
 
 
 ~Challenge Run Ideas~
+Mage-Hand
 Lich pure ability run (-Melee Damage, Scissors, rely on ability entirely?)
 PaciFIST (Has to kill final bosses; possibly earlier elites tho 11 seems very sus)
 Im-Precise Crazy
@@ -376,10 +377,6 @@ Could get spicy and replace SMG with it on Multitasker
 Could test on One-armed, maaaaybe fisher
 multi (would prob have to replace smg?)
 
-Pruners should also have new garden text
-	^This fails an assert for some reason so whatever
-		Also for Farmer's starting Garden, so I guess it runs okay on live, but weird.
-
 Wave 11 Elite HP reduces slightly more than 12?
 
 ~~Can greek fire work on both burn types simultaneously?
@@ -401,12 +398,12 @@ Could add note on Ethereals that Selling doesn't lose the stats
 
 Evaluate -Enemies% a bit; does it suck enough at reducing all those 1-1 spawns (that is, doesn't remove them ever) that it should be a higher %?
 
-do the penguin switch
+do the penguin switch (+2 regen per, 0 base, limit 2?)
 
 modest rework of wildling?
 
 pocket factory may want to come with +1 tree to begin with (and possibly a small downside?)
-	prob adjust tags as appropriate
+	prob adjust tags as appropriate; fix curse adjustment
 
 not sure Baby should be XP-tagged
 
@@ -425,10 +422,8 @@ should blunder get further nerfs?
 
 Flute could be retooled as a multi-projectile
 
-Try Mage-Hand and Cacti starters
-	Probably make the 2nd Sausage just for non-Elemental starters, so include Wrench and this possible new stuff too
+Try Mage-Cacti starter
 Hunter-Screwdriver is probably too off vibe-wise, but maybe with the Crit angle it makes some sense?
-Sailor-Harpoon
 Bucc-Revolver
 Should Cacti on Creature be removed?
 	Could add Slingshot, Shuriken, Taser?
@@ -437,3 +432,10 @@ look at builder internal ban tagging, currently nixes Improved Tools as it is ta
 
 
 Need one more item giving Dodge or at least remove -Dodge from Weird Food
+
+Coupon counts gangster-stolen items as value for itself
+
+
+Sausage's self-burn increase is not reflected in tooltip
+
+Ivestigate incompatability with: Mashtato and Pentato

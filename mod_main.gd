@@ -363,10 +363,12 @@ func _ready()->void:
 	temp.value = 7		# 5
 
 	temp = load("res://items/all/weird_food/weird_food_data.tres")
-	temp.value = 24  # 20
+	temp.value = 23		# 20
+	temp = load("res://items/all/weird_food/weird_food_effect_3.tres")
+	temp.key = "stat_speed"	# Dodge
 	
 	temp = load("res://items/all/weird_ghost/weird_ghost_effect_2.tres")
-	temp.value = -90 # -100  !!! If changed, also change in dlc_1_data
+	temp.value = -90	# -100  !!! If changed, also change in dlc_1_data
 	temp.effect_sign = 3 # 1
 	temp.text_key = "BM_EFFECT_HP_START_NEXT_WAVE"
 	
@@ -376,7 +378,7 @@ func _ready()->void:
 	temp.value = 62   # 65
 
 	temp = load("res://items/all/alien_eyes/alien_eyes_data.tres")
-	temp.value = 53   # 50
+	temp.value = 52   # 50
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/alien_eyes_range_malus.tres")
 	temp.effects.push_back(temp_2) # -8 Range
 	
@@ -402,6 +404,9 @@ func _ready()->void:
 
 	temp = load("res://items/all/clockwork_wasp/clockwork_wasp_data.tres")
 	temp.value = 47   # 45
+	
+	temp = load("res://items/all/cog/cog_effect_2.tres")
+	temp.value = -2		# -4 (Damage%)
 	
 	temp = load("res://items/all/cyclops_worm/cyclops_worm_effect_2.tres")
 	temp.value = -16  # -12 (Range)
@@ -555,7 +560,7 @@ func _ready()->void:
 	temp.value = 20  # 15 (Luck)
 	
 	temp = load("res://items/all/candle/candle_data.tres")
-	temp.value = 48  # 65
+	temp.value = 45  # 65
 	temp = load("res://items/all/candle/candle_effect_1.tres")
 	temp.value = 3   # 4 (Elemental Damage)
 	temp = load("res://items/all/candle/candle_effect_4.tres")
@@ -624,15 +629,16 @@ func _ready()->void:
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/pile_of_books_crit_note.tres")
 	temp.effects.append(temp_2)	
 	temp = load("res://items/all/pile_of_books/effects/pile_of_books_effect_1.tres")
-	temp.value = 5	 # 3 (Crit Chance)
+	temp.value = 5		# 3 (Crit Chance)
 	
 	temp = load("res://items/all/plastic_explosive/plastic_explosive_data.tres")
-	temp.value = 52  # 60
+	temp.value = 52		# 60
 	
 	temp = load("res://items/all/poisonous_tonic/poisonous_tonic_effect_3.tres")
-	temp.value = 27  # 15 (Range)
+	temp.value = 27		# 15 (Range)
 
 	temp = load("res://items/all/power_generator/power_generator_data.tres")
+	temp.value = 63		# 65
 	temp_2 = load("res://items/all/power_generator/power_generator_effect_2.tres")
 	temp.effects.erase(temp_2) # Remove -Damage%
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/power_generator_2_max_hp_malus.tres")
@@ -682,6 +688,7 @@ func _ready()->void:
 	temp.value = 70				# 75
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
 	temp.max_range = 210	# 200
+	temp.scaling_stats = [ [ "stat_engineering", 0.8 ], [ "stat_elemental_damage", 0.8 ] ]	# 0.75, 0.75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
 	temp.value = 75  # 92
@@ -1103,6 +1110,12 @@ func _ready()->void:
 	# Pruner
 	temp = load("res://weapons/melee/pruner/4/pruner_4_data.tres")
 	temp.value = 93				# 95
+	temp = load("res://weapons/melee/pruner/2/pruner_2_effect_1.tres")
+	temp.text_key = "new_effect_garden"
+	temp = load("res://weapons/melee/pruner/3/pruner_3_effect_1.tres")
+	temp.text_key = "new_effect_garden"
+	temp = load("res://weapons/melee/pruner/4/pruner_4_effect_1.tres")
+	temp.text_key = "new_effect_garden"
 	
 	# Quarterstaff
 	temp = load("res://weapons/melee/fighting_stick/4/fighting_stick_4_data.tres")
