@@ -323,20 +323,12 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
 		temp.value = 19					# 20
 		temp.add_to_chars_as_starting = [ "character_lucky", "character_glutton", "character_renegade", "character_jack", "character_golem", "character_soldier", "character_demon" ] 	# Removed Baby
-		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
-		temp.effects.append(temp_2)		
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/2/flute_2_data.tres")
 		temp.value = 41					# 45
-		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
-		temp.effects.append(temp_2)
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/3/flute_3_data.tres")
 		temp.value = 81					# 80
-		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
-		temp.effects.append(temp_2)
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/4/flute_4_data.tres")
 		temp.value = 150				# 165
-		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
-		temp.effects.append(temp_2)
 		
 		# Grenade Launcher
 		temp = load("res://dlcs/dlc_1/weapons/ranged/grenade_launcher/2/grenade_launcher_2_effect_0.tres")

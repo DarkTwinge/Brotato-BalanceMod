@@ -352,8 +352,6 @@ Megalodon elite could have slightly lower HP?
 
 Cursed Relic base bonus Dodge a bit lower, maybe 7 instead of 10
 
-Silver Bullet price could be _slightly_ higher
-
 Bosses could have +0.1% HP per Curse perhaps
 
 Peguin should perhaps be more expensive and +2 per and 0 base?
@@ -402,11 +400,6 @@ do the penguin switch (+2 regen per, 0 base, limit 2?)
 
 modest rework of wildling?
 
-pocket factory may want to come with +1 tree to begin with (and possibly a small downside?)
-	prob adjust tags as appropriate; fix curse adjustment
-
-not sure Baby should be XP-tagged
-
 maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
 	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?
 	
@@ -416,7 +409,7 @@ Red Sticks oculd drop damasge per Stick by 1 and add +5 base damage, making it e
 
 Wandering Bot: Add some additional effect: Damage, knockback w/ pierce, debuff like ice cube, bigger slow, bigger hitbox...  could scale with engineering somehow
 
-Wave 19 could broadly be a little more Horde-like, to test those limits somewhat guaranteed (like W17-18's guaranteed Elite)
+Wave 19 could broadly be a little more Horde-like, to test those limits in a guaranteed spot
 
 should blunder get further nerfs?
 
@@ -431,11 +424,14 @@ Should Cacti on Creature be removed?
 look at builder internal ban tagging, currently nixes Improved Tools as it is tagged structure; Pile of Books should maybe be tagged struct but then gets banned on builder
 
 
-Need one more item giving Dodge or at least remove -Dodge from Weird Food
-
 Coupon counts gangster-stolen items as value for itself
 
 
 Sausage's self-burn increase is not reflected in tooltip
 
 Ivestigate incompatability with: Mashtato and Pentato
+
+
+~~flute test: friends alive at end, do they give you full or halves on e.g. hiker
+
+Could up the volume of brick breaking? (on_weapon_wanted_to_break)

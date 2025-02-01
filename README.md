@@ -152,7 +152,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->43
 * **Missile:** Price 45->44; Damage 10% -> 11%
-* **Pocket Factory:** Price 75->70; Engineering 2 -> 3 _[Many people like this item, but if you look at its actual damage output in practice, it tends to be very lackluster for its cost outside of best-case scenarios.]_
+* **Pocket Factory:** Price 75->70; Now comes with +1 Tree Stat (same as buying one Tree item) _[Makes it less reliant on finding Trees.]_
 * **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -1 HP Regen
 * **Reinforced Steel:** Engineering 3 -> 4
@@ -161,11 +161,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
 * **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
-* **Spicy Sauce:** Proc Chance 33% -> 35%; Explosion Size 125% -> 135%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies). _[The small bump to 35% removes the 1% chance of failure when you have all 3.]_
+* **Snowball:** Price 50->48
+* **Spicy Sauce:** Explosion Size 125% -> 135%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies).
 * **Tentacle:** Price 35->37
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
-* **White Flag:** Price 40->35; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
+* **White Flag:** Price 40->33; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
 #### DLC
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
@@ -196,7 +197,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Pile of Books:**: Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
 * **Plastic Explosive:** Price 60->52
 * **Poisonous Tonic:** Range 15 -> 27
-* **Power Generator:** Price 65->63; -5% Damage --> -1 Max HP Per 5% Speed
+* **Power Generator:** Price 65->62; -5% Damage --> -1 Max HP Per 5% Speed
 * **Rip and Tear:** (Clarified effect of having multiple copies)
 * **Shackles:** Price 80->88; Range 80 -> 88
 * **Shmoop:** Price 60->65; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
@@ -295,7 +296,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
-* **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120% _[The extra Harvesting allows them to get their first Level-up after Waves 1 and 2 reliably.]_
+* **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-up after Waves 1 and 2 much more reliably.]_
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw) _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10
 * **Chef:** Can no longer be offered Eyes Surgery.
@@ -385,7 +386,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Mage:** Added Wrench
 * **Mutant:** Added Chopper
 * **Old:** Added Medical Gun
-* **One-armed:** Added Sword, Hammer, Flaming Brass Knuckles, Fireball
+* **One-armed:** Added Slingshot, Sword, Hammer, Flaming Brass Knuckles, Fireball
 * **Pacifist:** Added Scissors, Rock
 * **Ranger:** Added Medical Gun; Removed Pistol
 * **Saver:** Added Stick

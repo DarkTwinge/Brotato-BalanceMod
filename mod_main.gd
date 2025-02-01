@@ -466,8 +466,8 @@ func _ready()->void:
 	
 	temp = load("res://items/all/pocket_factory/pocket_factory_data.tres")
 	temp.value = 70  # 75
-	temp = load("res://items/all/pocket_factory/pocket_factory_effect_0.tres")
-	temp.value = 3   # 2 (Engineering)
+	temp_2 = load("res://items/all/tree/tree_effect_1.tres")
+	temp.effects.insert(1,temp_2)
 	
 	temp = load("res://items/all/pumpkin/pumpkin_data.tres")
 	temp.max_nb = 8  # -1
@@ -501,14 +501,16 @@ func _ready()->void:
 	temp.value = -10  # -8 (Enemy Speed)
 	temp = load("res://items/all/snail/snail_effect_2.tres")
 	temp.key = "stat_attack_speed"	# Speed
-
+	
+	temp = load("res://items/all/snowball/snowball_data.tres")
+	temp.value = 48		# 50
+	
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_data.tres")
 	temp.tags = [ "stat_max_hp", "consumable", "explosive" ]	# (Luck -> Consumables)
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/rip_sauce_clarify_effect.tres")
 	temp.effects.append(temp_2)	
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_effect_1.tres")
 	temp.scale = 1.35   # 1.25 (Explosion Size)
-	temp.chance = 0.35  # 0.33 (Proc Chance)
 	temp.text_key = "new_effect_explode_on_consumable"
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_stats.tres")
 	temp.crit_chance = 0.01  # 0 (Crit Chance)
@@ -523,7 +525,7 @@ func _ready()->void:
 	temp.value = 42  # 40
 	
 	temp = load("res://items/all/white_flag/white_flag_data.tres")
-	temp.value = 35  # 40
+	temp.value = 33  # 40
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/white_flag_reduced_cap.tres")
 	temp.effects.append(temp_2)		
 	temp = load("res://items/all/white_flag/white_flag_effect_1.tres")
@@ -638,7 +640,7 @@ func _ready()->void:
 	temp.value = 27		# 15 (Range)
 
 	temp = load("res://items/all/power_generator/power_generator_data.tres")
-	temp.value = 63		# 65
+	temp.value = 62		# 65
 	temp_2 = load("res://items/all/power_generator/power_generator_effect_2.tres")
 	temp.effects.erase(temp_2) # Remove -Damage%
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/power_generator_2_max_hp_malus.tres")
@@ -1573,6 +1575,8 @@ func _ready()->void:
 
 	## CHARACTERS ##
 	# Baby
+	temp = load("res://items/characters/baby/baby_data.tres")
+	temp.wanted_tags = [  ]	# Had XP Gain
 	temp = load("res://items/characters/baby/effects/baby_effect_0a.tres")
 	temp.value = 15		# 12 (Harvesting)
 	temp = load("res://items/characters/baby/effects/baby_effect_4.tres")
@@ -2000,6 +2004,8 @@ func _ready()->void:
 	
 	# One-armed
 	temp = load("res://items/characters/one_arm/one_arm_data.tres")
+	temp_2 = load("res://weapons/ranged/slingshot/1/slingshot_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/melee/sword/2/sword_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/melee/hammer/2/hammer_2_data.tres")

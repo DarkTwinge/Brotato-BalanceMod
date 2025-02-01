@@ -30,6 +30,15 @@ func curse_item(item_data:ItemParentData, player_index:int, turn_randomization_o
 			effect.value = _boost_effect_value_positively(effect, max_effect_modifier, override, overriden_sign)
 		
 		i = i + 1
-		
+	
+	# Removes the extra trees added by Curse since those will naturally be there anyway now
+	i = 0
+	if orig_result.my_id == "item_pocket_factory":
+		for effect in orig_result.effects:
+			if effect.key == "trees" && effect.value == 1:
+				orig_result.effects.erase(effect)
+				break
+			i = i + 1
+			
 	return orig_result as ItemParentData
 
