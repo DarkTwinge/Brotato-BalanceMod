@@ -284,8 +284,6 @@ var item_curse_chance = stepify(abs(Utils.get_curse_factor(value, chance * 100.0
 			max_val is 100.0 for enemies, or chance * 100.0 for items ; chance = 0.15 I guess?
 
 
-Cursed White Flag should get extra effect; or just treat the enemy cap as a green rather than neutral effect (make sure it flips the right direction if so)
-
 ~~What does Harpoon Riccochet look like
 
 14-Abyss might still have a pretty empty spot early on that's weird?
@@ -435,3 +433,6 @@ Ivestigate incompatability with: Mashtato and Pentato
 ~~flute test: friends alive at end, do they give you full or halves on e.g. hiker
 
 Could up the volume of brick breaking? (on_weapon_wanted_to_break)
+
+
+Cursed Bait text should acknowledge the extra spawns

@@ -23,10 +23,16 @@ func curse_item(item_data:ItemParentData, player_index:int, turn_randomization_o
 			effect.value = -90	# Resets to base value, when vanilla forced it to -100
 			var override = false
 			var overriden_sign = Sign.POSITIVE
-			
 			var effect_modifier: = _get_cursed_item_effect_modifier(turn_randomization_off, min_modifier)
 			var max_effect_modifier = max(0.0, effect_modifier)
-
+			effect.value = _boost_effect_value_positively(effect, max_effect_modifier, override, overriden_sign)
+		# White Flag adjustment, affects Enemy Limit at half the 'normal' amount
+		elif effect.key == "bm_max_enemy_limit":
+			var override = true
+			var overriden_sign = Sign.POSITIVE
+			var effect_modifier: = _get_cursed_item_effect_modifier(turn_randomization_off, min_modifier)
+			effect_modifier = effect_modifier * 0.5
+			var max_effect_modifier = max(0.0, effect_modifier)
 			effect.value = _boost_effect_value_positively(effect, max_effect_modifier, override, overriden_sign)
 		
 		i = i + 1

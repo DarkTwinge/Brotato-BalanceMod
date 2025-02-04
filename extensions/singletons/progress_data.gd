@@ -165,6 +165,9 @@ func add_all_dlcs()->void :
 
 
 		# Items: Tier-3 #
+		temp = load("res://dlcs/dlc_1/items/black_flag/black_flag_data.tres")
+		temp.value = 57		# 60
+		
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")
 		temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
 
@@ -173,9 +176,12 @@ func add_all_dlcs()->void :
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 		temp.value = 15   # 23
+
+		temp = load("res://dlcs/dlc_1/items/starfish/starfish_data.tres")
+		temp.value = 70		# 75
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-		temp.value = 48		# 65
+		temp.value = 45		# 65
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
 		temp.scale = 7.5	# 6.0
 		temp.text_key = "new_effect_explode_when_below_hp"
@@ -384,6 +390,15 @@ func add_all_dlcs()->void :
 		temp.effects.insert(3, temp_2) # Reposition so it appears after you see what poison fruit are
 		temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_3.tres")
 		temp_2.text_key = "NEW_EFFECT_POISONED_FRUIT"
+		
+		# Hiker
+		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_3.tres")
+		temp.effects.erase(temp_2)		#	Remove -5 Speed
+		temp_2 = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_2.tres")
+		temp.effects.erase(temp_2)		# Remove +Speed Mod
+		temp = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_1.tres")
+		temp.value2 = 75							# 80 (Steps per HP)
 		
 		## OTHER CHARACTER TEXT TWEAKS ##
 		# Builder

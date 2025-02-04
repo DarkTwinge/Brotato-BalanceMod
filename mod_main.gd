@@ -996,14 +996,18 @@ func _ready()->void:
 	temp.value = 95			 # 105
 	
 	# Hammer
+	temp = load("res://weapons/melee/hammer/2/hammer_2_data.tres")
+	temp.value = 46				# 51
 	temp = load("res://weapons/melee/hammer/2/hammer_2_stats.tres")
 	temp.cooldown = 62		# 65
 	temp.max_range = 180	# 175
+	temp = load("res://weapons/melee/hammer/3/hammer_3_data.tres")
+	temp.value = 86				# 95
 	temp = load("res://weapons/melee/hammer/3/hammer_3_stats.tres")
 	temp.cooldown = 57		# 60
 	temp.max_range = 190	# 175
 	temp = load("res://weapons/melee/hammer/4/hammer_4_data.tres")
-	temp.value = 168			# 190
+	temp.value = 151			# 190
 	temp = load("res://weapons/melee/hammer/4/hammer_4_stats.tres")
 	temp.cooldown = 52		# 55
 	temp.max_range = 200	# 175
@@ -1653,6 +1657,11 @@ func _ready()->void:
 	temp_2 = load("res://items/characters/farmer/farmer_effect_3.tres")
 	temp.effects.erase(temp_2) # Re-order to put downside at the end
 	temp.effects.push_back(temp_2)
+	
+	# Fisher
+	temp = load("res://items/characters/fisherman/fisherman_effect_0b.tres")
+	temp.value = 8		# 5 (HP)
+	
 	
 	# Gladiator
 	temp = load("res://items/characters/gladiator/gladiator_effect_5.tres")

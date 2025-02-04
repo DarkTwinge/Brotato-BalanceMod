@@ -50,15 +50,15 @@ As with items, the goal is not for characters to be equal strength. The focus is
 * Mage can better run an Engineering build (turrets + Sausage) and also handles Gun builds better (extra Sausage). Engineer can better combo with Elemental Damage.
 * Lucky and Speedy now care more about raising their thematic stats. Soldier cares more about Pickup Range.
 * Crazy now works with Crossbows properly; Brawler works with Claw properly.
-* One-armed, Farmer, and Baby receive moderate buffs.
+* One-armed, Farmer, and Baby receive moderate buffs. Hiker and Fisher gets minor buffs.
 * Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Explorer, Demon, King, Mutant, Gladiator, Engineer, Entrepreneur, and Brawler receive modest nerfs.
-* Many automatic starting weapons (e.g. Wildling, Crazy) are removed in order to make those characters more varied and your chosen starting weapon more meaningful.
+* Most automatic starting weapons (e.g. Wildling, Crazy) are removed, making your chosen starting weapon more meaningful.
 
 ### Enemies & Waves
-* (DLC) Pufferfish now spawns 4 projectiles when killed by a melee attack (instead of 0).
+* (DLC) Pufferfish now spawn 4 projectiles when killed by a melee attack (instead of 0).
 * (DLC) Stargazers are now stronger when you kill their Incubators first.
-* (DLC) Spider Crab summons harder to deal with. Turtle Elite attacks sooner and gets more armor late game.
-* (DLC) A few guaranteed Seapigs now spawn on Crash Zone, letting you more easily get Curse.
+* (DLC) Spider Crab Elite summons harder to deal with. Turtle Elite attacks sooner and gets more armor late game.
+* (DLC) A few guaranteed Seapigs now spawn on the Crash Zone map, letting you more easily get Curse.
 * Hivemind/Colossus Elite slightly nerfed.
 * Mantis Elite tweaked to be more unique and slightly harder. Butcher Elite attacks are harder to run from.
 * Crash Zone: Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and allowing for more synergy from enemy/material-reliant effects. Wave 14/15 Horde Waves scarier.
@@ -212,10 +212,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wings:** Range 30 -> 33
 * **Wisdom:** Price 85->80
 #### DLC
+* **Black Flag:** Price 60->57
 * **Goblet:** Price 70->75
 * **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Price 70->53; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
-* **Sunken Bell:** Price 65->48; Explosion Size 600% -> 750%
+* **Starfish:** Price 75->70
+* **Sunken Bell:** Price 65->45; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Big Arms:** Price 105->98
@@ -254,7 +256,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Ghost Flint:** Tier-1 Damage 6->7 _[Helps tier-1 not be so behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
-* **Hammer:** Range 175(All) -> 180/190/200; Cooldown 1.67/1.59/1.50 -> 1.63/1.55/1.48 (accounts for the increased Range)
+* **Hammer:** Price 51/95/190 -> 46/86/151; Range 175(All) -> 180/190/200; Cooldown 1.67/1.59/1.50 -> 1.63/1.55/1.48 (accounts for the increased Range)
 * **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
 * **Hatchet:** Range 125->135
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; (Fixed tooltip bounce count) _[Most of my Shiv nerfs were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
@@ -273,7 +275,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **War Hammer:** Cooldown 2.11/1.95 -> 2.0/1.83; Crit Damage 1.5x -> 1.75x
 
 - **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Mace 46/92/185 -> 43/81/142; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
-- **Other Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hammer: 190 -> 168; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133
+- **Other Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%
@@ -308,6 +310,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Entrepreneur:** Shop Prices -25% -> -20%
 * **Explorer:** Starting Trees: 12 -> 11
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
+* **Fisher:** Extra HP 5 -> 8
 * **Gladiator:** -30 Luck -> -40
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
@@ -328,6 +331,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 ### DLC
 * **Captain:** No longer favored to find XP Gain items.
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
+* **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
 
 ## Enemies
 ### Elites
