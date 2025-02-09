@@ -197,9 +197,7 @@ hiking poles are sometimes resetting stat counts????
 ~~~
 Engineer halving explosion damage is kinda weird
 
-fishhook could come with some base generic stats
-could be true for treasure map as well
-^^Idea would just be to have generic stats more accessible, but given cheaper rerolls probably isn't needed any more?
+map could come with a little luck
 
 prisoner range for phase 2/3 probably too low; explorer easily stays away
 	tho it also switches phases really fast, which is maybe fine but a bit threatening for sure
@@ -302,6 +300,7 @@ weird food or jerky are possiblities
 could slightly reducing the damage of a wave 11/12 elite be sensible? (keep in mind gangster for lower waves or whatever)
 
 seashell should be made to work for structures too [Make sure it doesn't double-apply to builder turret]
+	All projectiles; when works for all projectile, probably remove it from bans on e.g. knight
 
 Could make it so Fisher doesn't see Bait in Crates (would adding it as a banned item work?)  [this is kinda funny so maybe leave it]
 
@@ -418,6 +417,7 @@ Hunter-Screwdriver is probably too off vibe-wise, but maybe with the Crit angle 
 Bucc-Revolver
 Should Cacti on Creature be removed?
 	Could add Slingshot, Shuriken, Taser?
+Vampire-Cacti
 
 look at builder internal ban tagging, currently nixes Improved Tools as it is tagged structure; Pile of Books should maybe be tagged struct but then gets banned on builder
 
@@ -432,7 +432,26 @@ Ivestigate incompatability with: Mashtato and Pentato
 
 ~~flute test: friends alive at end, do they give you full or halves on e.g. hiker
 
-Could up the volume of brick breaking? (on_weapon_wanted_to_break)
-
 
 Cursed Bait text should acknowledge the extra spawns
+
+Sick doesn't necessarily need Tardigrade banned now (maybe wait for full Tardigrade fix tho to ignore all self-damage?)
+
+
+does sunken bell crit
+	sunken bell could give flat hp?
+
+fairy icon visual could show at a glance how many items needed with some sort of gradiant overlay?
+
+
+vaga could maybe go for a different penalty than -5 Dodge, since it feels like this weird unecessary shot at Dodge, but still makes some sense as 'bad defensively', hm.
+
+curse rework: probably lower effective curse bonus at earlier waves to go along with the easier-to-find with small amounts of curse
+curse could give lower hp enemies a bigger hp bump
+
+Pretty weird that Chasers have a 2_3 drop rate, tho if I drop this should I up it somewhere else for Crash Zone?
+Goblin Sharks being 1_1 is also kinda weird, maybe they want to be 2_1 at least?
+
+okaaaaay probably implement the SMG cooldown nerf again
+
+jerky price up, spyglass too

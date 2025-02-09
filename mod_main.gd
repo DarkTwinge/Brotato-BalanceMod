@@ -48,6 +48,7 @@ func _init(modLoader = ModLoader):
 	
 	# Add new Druid poisoned-fruit-only effect
 	# Tardigrade no longer used for 1-damage hits
+	# Louder SFX for Brick breaking
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/player/player.gd")
 		
 	#y New Padding Effect
@@ -152,7 +153,11 @@ func _ready()->void:
 	temp = load("res://entities/units/enemies/fly/fly_stats.tres")
 	temp.health = 7												# 15
 	temp.health_increase_each_wave = 7.0	# 4.0
-
+	
+	# Tentacle
+	temp = load("res://entities/units/enemies/tentacle/tentacle_stats.tres")
+	temp.item_drop_chance = 0.03					# 0.02
+	
 	# Small Charger
 	temp = load("res://entities/units/enemies/charger/charger_stats.tres")
 	temp.knockback_resistance = 0.75		 # 0.8
@@ -301,6 +306,9 @@ func _ready()->void:
 	temp = load("res://items/all/glasses/glasses_effect_1.tres")
 	temp.value = 22  # 20 (Range)
 	
+	temp = load("res://items/all/gummy_berserker/gummy_berserker_effect_2.tres")
+	temp.value = 28  # 25 (Range)
+	
 	temp = load("res://items/all/head_injury/head_injury_effect_1.tres")
 	temp.value = 7   # 6 (Damage%)
 	temp = load("res://items/all/head_injury/head_injury_effect_2.tres")
@@ -308,7 +316,7 @@ func _ready()->void:
 	temp.value = -2  # -8 Range -> -2 Speed
 	
 	temp = load("res://items/all/hedgehog/hedgehog_data.tres")
-	temp.value = 24  # 30
+	temp.value = 23  # 30
 
 	temp = load("res://items/all/helmet/helmet_data.tres")
 	temp.value = 18  # 15
@@ -343,7 +351,7 @@ func _ready()->void:
 	temp.value = 25  # 28
 
 	temp = load("res://items/all/scar/scar_data.tres")
-	temp.value = 24  # 25
+	temp.value = 23  # 25
 	temp = load("res://items/all/scar/scar_effect_2.tres")
 	temp.value = -11 # -8 (Range)
 	
@@ -660,7 +668,7 @@ func _ready()->void:
 	temp.value = 88  # 80 (Range)
 
 	temp = load("res://items/all/shmoop/shmoop_data.tres")
-	temp.value = 65  # 60
+	temp.value = 62  # 60
 	temp.tags = [ "stat_max_hp", "stat_lifesteal" ]
 	temp = load("res://items/all/shmoop/shmoop_effect_2.tres")
 	temp.key = "stat_lifesteal"		# Was HP Regen
@@ -687,9 +695,9 @@ func _ready()->void:
 	
 	# Tyler
 	temp = load("res://items/all/tyler/tyler_data.tres")
-	temp.value = 70				# 75
+	temp.value = 68				# 75
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
-	temp.max_range = 210	# 200
+	temp.max_range = 215	# 200
 	temp.scaling_stats = [ [ "stat_engineering", 0.8 ], [ "stat_elemental_damage", 0.8 ] ]	# 0.75, 0.75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
@@ -1001,16 +1009,22 @@ func _ready()->void:
 	temp = load("res://weapons/melee/hammer/2/hammer_2_stats.tres")
 	temp.cooldown = 62		# 65
 	temp.max_range = 180	# 175
+	temp.knockback_piercing = 0.1		# 0
+	temp.knockback = 25		# 30
 	temp = load("res://weapons/melee/hammer/3/hammer_3_data.tres")
 	temp.value = 86				# 95
 	temp = load("res://weapons/melee/hammer/3/hammer_3_stats.tres")
 	temp.cooldown = 57		# 60
 	temp.max_range = 190	# 175
+	temp.knockback_piercing = 0.15	# 0
+	temp.knockback = 30		# 40
 	temp = load("res://weapons/melee/hammer/4/hammer_4_data.tres")
 	temp.value = 151			# 190
 	temp = load("res://weapons/melee/hammer/4/hammer_4_stats.tres")
 	temp.cooldown = 52		# 55
 	temp.max_range = 200	# 175
+	temp.knockback_piercing = 0.2		# 0
+	temp.knockback = 40		# 50
 	
 	# Hand
 	temp = load("res://weapons/melee/hand/1/hand_data.tres")
@@ -1094,14 +1108,24 @@ func _ready()->void:
 	temp = load("res://weapons/melee/plasma_sledgehammer/3/plasma_sledgehammer_3_data.tres")
 	temp.value = 122			# 136
 	temp = load("res://weapons/melee/plasma_sledgehammer/3/plasma_sledgehammer_3_effect.tres")
-	temp.scale = 1.1    	# 1.0
+	temp.scale = 1.2    	# 1.0
 	temp.chance = 0.33  	# 0.25
 	temp.key = "new_effect_explode_melee"
+	temp = load("res://weapons/melee/plasma_sledgehammer/3/plasma_sledgehammer_3_stats.tres")
+	temp.knockback_piercing = 0.1		# 0
+	temp.knockback = 25		# 30
+	temp.max_range = 190	# 175
+	temp.cooldown = 55		# 58
 	temp = load("res://weapons/melee/plasma_sledgehammer/4/plasma_sledgehammer_4_data.tres")
 	temp.value = 218			# 272
 	temp = load("res://weapons/melee/plasma_sledgehammer/4/plasma_sledgehammer_4_effect.tres")
-	temp.scale = 1.35    	# 1.25
+	temp.scale = 1.4    	# 1.25
 	temp.key = "new_effect_explode_melee"
+	temp = load("res://weapons/melee/plasma_sledgehammer/4/plasma_sledgehammer_4_stats.tres")
+	temp.knockback_piercing = 0.1		# 0
+	temp.knockback = 25		# 30
+	temp.max_range = 200	# 175
+	temp.cooldown = 51		# 54
 	
 	# Power Fist
 	temp = load("res://weapons/melee/power_fist/3/power_fist_3_exploding_effect.tres")

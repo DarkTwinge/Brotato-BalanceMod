@@ -17,6 +17,28 @@ func get_damage_value(dmg_value:int, _from_player_index:int, armor_applied: = tr
 		result.value = max(1, round(dmg_value * armor_coef)) as int if armor_applied else dmg_value
 	return result
 
+
+# Increase volume of Brick breaking
+func on_weapon_wanted_to_break(weapon:Weapon, gold_dropped:int)->void :
+
+	if not current_weapons.has(weapon):
+		return 
+
+	emit_signal("wanted_to_spawn_gold", gold_dropped, weapon.global_position, 300)
+	var _r = RunData.remove_weapon_by_index(weapon.weapon_pos, player_index)
+
+	current_weapons.erase(weapon)
+
+	for current_weapon in current_weapons:
+		if current_weapon.weapon_pos > weapon.weapon_pos:
+			current_weapon.weapon_pos -= 1
+	
+	# -15 -> -10
+	SoundManager.play(Utils.get_rand_element(WeaponService.breaking_sounds), - 10, 0.1, true)
+
+	weapon.queue_free()
+	
+
 # New Druid effect for only poisoned fruits
 func on_consumable_picked_up(consumable_data:ConsumableData)->void :
 	.on_consumable_picked_up(consumable_data)

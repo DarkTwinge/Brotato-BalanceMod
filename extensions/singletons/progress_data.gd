@@ -58,6 +58,9 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/enemies/narwhal/narwhal_stats.tres")
 		temp.knockback_resistance = 0.87			# 0.9
 		
+		temp = load("res://dlcs/dlc_1/enemies/stargazer/stargazer_stats.tres")
+		temp.speed = 115											# 100
+		
 		temp = load("res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid_stats.tres")
 		temp.health_increase_each_wave = 6.0	# 5.0
 		
@@ -148,9 +151,9 @@ func add_all_dlcs()->void :
 		temp.value2 = 3		# 2 (Seconds of Duration)
 
 		temp = load("res://dlcs/dlc_1/items/eyepatch/eyepatch_data.tres")
-		temp.value = 66		# 55
+		temp.value = 63		# 55
 		temp = load("res://dlcs/dlc_1/items/eyepatch/effects/eyepatch_effect_1.tres")
-		temp.value = 7		# 3 (Crit Chance)
+		temp.value = 6		# 3 (Crit Chance)
 
 		temp = load("res://dlcs/dlc_1/items/pearl/pearl_data.tres")
 		temp.value = 55   # 60
@@ -168,6 +171,10 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/items/black_flag/black_flag_data.tres")
 		temp.value = 57		# 60
 		
+		temp = load("res://dlcs/dlc_1/items/crystal/crystal_data.tres")
+		temp.value = 57		# 65
+		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0c.tres")
+		temp.key = "stat_max_hp"	# Engineering
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")
 		temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
 
@@ -390,6 +397,10 @@ func add_all_dlcs()->void :
 		temp.effects.insert(3, temp_2) # Reposition so it appears after you see what poison fruit are
 		temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_3.tres")
 		temp_2.text_key = "NEW_EFFECT_POISONED_FRUIT"
+		
+		# Dwarf
+		temp = load("res://dlcs/dlc_1/characters/dwarf/dwarf_data.tres")
+		temp.banned_items = [ "item_seashell" ]
 		
 		# Hiker
 		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")
