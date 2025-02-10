@@ -63,6 +63,9 @@ func add_all_dlcs()->void :
 		
 		temp = load("res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid_stats.tres")
 		temp.health_increase_each_wave = 6.0	# 5.0
+
+		temp = load("res://dlcs/dlc_1/enemies/goblin_shark/goblin_shark_stats.tres")
+		temp.base_drop_chance = 0.02					# 0.01
 		
 		## WAVE CHANGES ##
 		# Find all waves with Stargazers, Pufferfish, and Vampire Squid to replace them with my versions
@@ -86,9 +89,12 @@ func add_all_dlcs()->void :
 					elif unit.get_path() == "res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid.tscn":
 						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/vampire_squid.tscn")
 		
-		# Wave 13 - Spawn single Egglord sooner
+		# Wave 13 - Spawn single Egglord and Stargazer sooner
 		temp = load("res://dlcs/dlc_1/zones/abyss/013/d5_group_1.tres")
-		temp.spawn_timing = 34			# 40
+		temp.spawn_timing = 34			# 40 (Egglord)
+
+		temp = load("res://dlcs/dlc_1/zones/abyss/013/d1_group_1b.tres")
+		temp.spawn_timing = 28			# 30 (Stargazer)
 		
 		## Crash Zone - Adds single Curse Goblins to Waves 3 and 6
 		temp = load("res://zones/zone_1/003/wave_3.tres")
@@ -155,6 +161,9 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/items/eyepatch/effects/eyepatch_effect_1.tres")
 		temp.value = 6		# 3 (Crit Chance)
 
+		temp = load("res://dlcs/dlc_1/items/jerky/jerky_data.tres")
+		temp.value = 53		# 50
+
 		temp = load("res://dlcs/dlc_1/items/pearl/pearl_data.tres")
 		temp.value = 55   # 60
 		temp = load("res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres")
@@ -162,6 +171,9 @@ func add_all_dlcs()->void :
 
 		temp = load("res://dlcs/dlc_1/items/saltwater/effects/saltwater_effect_1.tres")
 		temp.value = 20		# 10 (Extra Speed when hit)
+
+		temp = load("res://dlcs/dlc_1/items/spyglass/spyglass_data.tres")
+		temp.value = 35		# 30
 		
 		temp = load("res://dlcs/dlc_1/items/treasure_map/treasure_map_data.tres")
 		temp.tags = [ "stat_luck", "exploration" ]	# Luck only -> Luck & Explore

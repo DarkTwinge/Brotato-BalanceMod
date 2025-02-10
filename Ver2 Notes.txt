@@ -449,9 +449,5 @@ vaga could maybe go for a different penalty than -5 Dodge, since it feels like t
 curse rework: probably lower effective curse bonus at earlier waves to go along with the easier-to-find with small amounts of curse
 curse could give lower hp enemies a bigger hp bump
 
-Pretty weird that Chasers have a 2_3 drop rate, tho if I drop this should I up it somewhere else for Crash Zone?
-Goblin Sharks being 1_1 is also kinda weird, maybe they want to be 2_1 at least?
 
-okaaaaay probably implement the SMG cooldown nerf again
-
-jerky price up, spyglass too
+Crit SFX: unit.tscn replace to make quieter sounds? (test with other sounds)

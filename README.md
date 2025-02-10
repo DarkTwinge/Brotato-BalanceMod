@@ -23,7 +23,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Screwdriver partially reworked+buffed so it cares more about Crit.
 * Minigun, Hammer, and Sledge now have Knockback Piercing, meaning their Knockback is more effective against resistant enemies like Chargers.
 * Sickle removed from the game.
-* Spear & Thief Dagger are nerfed; Mace is buffed.
+* SMG, Spear & Thief Dagger are nerfed; Mace is buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, Cacti Club, Hammer, and War Hammer receive minor buffs.
 * Fist, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
@@ -120,7 +120,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
-* **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%) 
+* **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%); Speed -3% -> -2%
 * **Weird Food:** Price 20->23; Dodge -2% --> Speed -2%
 * **Weird Ghost:** Starting HP Next Wave -100% -> -90%
 #### DLC
@@ -172,8 +172,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
 * **Clockwork Wasp:** Price 45->47
 * **Eyepatch:** Price 55->63; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
+* **Jerky:** Price 50->53
 * **Pearl:** Price 60->55; Chance for free Pearl in crate 3% -> 4%
 * **Saltwater:** Extra Speed When Hit 10% -> 20%
+* **Spyglass:** Price 30->35
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
 
 ### Tier-3
@@ -181,11 +183,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alien Magic:** Price 85->83
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
-* **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be a bit lower.]_
+* **Barricade:** Price 75->70
+* **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 20
 * **Candle:** Price 65->45; Elemental Damage 4 -> 3; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
 * **Chameleon:** Price 70->50; Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
-* **Community Support:** Price 75->71
+* **Community Support:** Price 75->71 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->68
 * **Fairy:** Price 85->90; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
@@ -197,7 +200,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Pile of Books:**: Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
 * **Plastic Explosive:** Price 60->52
 * **Poisonous Tonic:** Range 15 -> 27
-* **Power Generator:** Price 65->62; -5% Damage --> -1 Max HP Per 5% Speed
+* **Power Generator:** Price 65->61; -5% Damage --> -1 Max HP Per 5% Speed
 * **Rip and Tear:** (Clarified effect of having multiple copies)
 * **Shackles:** Price 80->88; Range 80 -> 88
 * **Shmoop:** Price 60->62; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
@@ -256,7 +259,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Excalibur:** -3 Armor Per Weapon -> -2
 * **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
-* **Ghost Flint:** Tier-1 Damage 6->7 _[Helps tier-1 not be so behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
+* **Ghost Flint:** Range 150/160/170/180 -> 165/175/185/200; Tier-1 Damage 6 -> 7 _[Helps tier-1 not be so behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
 * **Hammer:** Price 51/95/190 -> 46/86/151; Range 175(All) -> 180/190/200; Cooldown 1.67/1.59/1.50 -> 1.63/1.55/1.48 (accounts for the increased Range); Now has 10%/15%/20% Knockback Piercing (more effective against resistant enemies); Knockback 30/40/50 -> 25/30/40
 * **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
 * **Hatchet:** Range 125->135
@@ -288,6 +291,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Potato Thrower:** Added to the Blunt Weapon Set; Base Damage 1(All) -> 2/3/4 _[Blunt Set allows it to find some synergy options when picked as a starting weapon.]_
 - **Revolver:** Range 450 -> 425; Price 20/34/70/130 -> 18/36/68/125
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
+= **SMG:** Internal Cooldown 4/4/4/3 -> 5/5/5/4 _[In practice, ~8% worse cooldown at 0% Attack Speed, but will end up the same with more Attack Speed. Breakpoint before Attack Speed usefulness plateaus is now 67% for Tiers 1-3 and 51% for Tier-4. (Still also has a spike at 201% for all Tiers.)]_
 - **Sniper Gun:** Range 800/1000 -> 550/600; Ranged Damage Scaling 100%(All) -> 200%/250% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much Range to begin with that more is irrelevant.]_
 - **Wand:** Cooldown 0.87/0.78/0.70/0.53 -> 0.83/0.77/0.68/0.53 _[The slight cooldown buff lets you get 1 extra kill on Wave 1.]_
 #### DLC
@@ -363,6 +367,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 + **Narwhal:** Knockback Resistance 90% -> 87%
 + **Vampire Squid:** Initial Cooldown 1.17s -> 1.05s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 6; Minimum Spawn Distance From Player +100 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
++ **Goblin Shark:** Fruit Drop Chance 1% -> 2%
 
 ### Wave Spawns: Crazh Zone
 * **(DLC) Waves 3, 6, and 13:** Now have guaranteed Seapig spawns (similar to Waves 4, 5, and 16 on The Abyss), giving more opportunity to opt into Curse on this map.
@@ -375,7 +380,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Wave 14 & 15 Hordes:** Added 5 single Magician spawns alongside 5 single Wizard Hats (Spawners) spread out over the last ~2/3rds of the wave; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map (with slightly fewer Helmets spawned); Made the Horde additions identical for 14 & 15; Removed one group of Basic Aliens to make more room for the others. _[Aiming to make these Horde waves feel threatening, rather than easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
 ### Wave Spawns: The Abyss
 * **Wave 4:** The Lamprey now appears on Danger Level 1+ instead of only DL5. _[This is a way to learn the enemy pattern more safely instead of having to take Bait.]_
-* **Wave 14:** Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
+* **Wave 13:** Stargazer spawn timing 30s -> 28s; Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
 
 ## Starting Weapons
 * **Baby:** Added Ghost Axe; Removed Taser

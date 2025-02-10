@@ -369,6 +369,8 @@ func _ready()->void:
 	
 	temp = load("res://items/all/ugly_tooth/ugly_tooth_effect_1.tres")
 	temp.value = 7		# 5
+	temp = load("res://items/all/ugly_tooth/ugly_tooth_effect_2.tres")
+	temp.value = -2		# -3 (Speed)
 
 	temp = load("res://items/all/weird_food/weird_food_data.tres")
 	temp.value = 23		# 20
@@ -557,6 +559,7 @@ func _ready()->void:
 	temp.weapon_stats = temp_2 # Ranged Damage scaling 100% -> 75%
 	
 	temp = load("res://items/all/barricade/barricade_data.tres")
+	temp.value = 70		# 75
 	temp_2 = load("res://items/all/barricade/barricade_effect_0.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.insert(1, temp_2)
@@ -648,7 +651,7 @@ func _ready()->void:
 	temp.value = 27		# 15 (Range)
 
 	temp = load("res://items/all/power_generator/power_generator_data.tres")
-	temp.value = 62		# 65
+	temp.value = 61		# 65
 	temp_2 = load("res://items/all/power_generator/power_generator_effect_2.tres")
 	temp.effects.erase(temp_2) # Remove -Damage%
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/power_generator_2_max_hp_malus.tres")
@@ -999,9 +1002,16 @@ func _ready()->void:
 	
 	# Ghost Flint
 	temp = load("res://weapons/melee/ghost_flint/1/ghost_flint_stats.tres")
-	temp.damage = 7      # 6
+	temp.damage = 7     	# 6
+	temp.max_range = 165	# 150
+	temp = load("res://weapons/melee/ghost_flint/2/ghost_flint_2_stats.tres")
+	temp.max_range = 175	# 160
+	temp = load("res://weapons/melee/ghost_flint/3/ghost_flint_3_stats.tres")
+	temp.max_range = 185	# 170
+	temp = load("res://weapons/melee/ghost_flint/4/ghost_flint_4_stats.tres")
+	temp.max_range = 200	# 180
 	temp = load("res://weapons/melee/ghost_flint/4/ghost_flint_4_data.tres")
-	temp.value = 95			 # 105
+	temp.value = 95				# 105
 	
 	# Hammer
 	temp = load("res://weapons/melee/hammer/2/hammer_2_data.tres")
@@ -1482,13 +1492,18 @@ func _ready()->void:
 	temp.value = 111				# 122
 	
 	# SMG
+	temp = load("res://weapons/ranged/smg/1/smg_stats.tres")
+	temp.cooldown = 5				# 4	
 	temp = load("res://weapons/ranged/smg/2/smg_2_stats.tres")
+	temp.cooldown = 5				# 4
 	temp.accuracy = 0.74		# 0.75
 	temp = load("res://weapons/ranged/smg/3/smg_3_stats.tres")
+	temp.cooldown = 5				# 4
 	temp.accuracy = 0.77		# 0.80
 	temp = load("res://weapons/ranged/smg/4/smg_4_data.tres")
 	temp.value = 133				# 149
 	temp = load("res://weapons/ranged/smg/4/smg_4_stats.tres")
+	temp.cooldown = 4				# 3	
 	temp.accuracy = 0.80		# 0.85
 	
 	# Sniper Gun
