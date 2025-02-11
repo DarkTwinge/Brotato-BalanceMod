@@ -400,8 +400,6 @@ modest rework of wildling?
 maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
 	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?
 	
-advstats - should note mats eaten by builder?
-
 Red Sticks oculd drop damasge per Stick by 1 and add +5 base damage, making it easier to switch out of
 
 Wandering Bot: Add some additional effect: Damage, knockback w/ pierce, debuff like ice cube, bigger slow, bigger hitbox...  could scale with engineering somehow
@@ -451,3 +449,10 @@ curse could give lower hp enemies a bigger hp bump
 
 
 Crit SFX: unit.tscn replace to make quieter sounds? (test with other sounds)
+
+
+Candle could  be retooled further to reduce enemy damage a bit (probably only 5% but maybe 10%)?  Only 2 Elmenetal?
+
+Bull doesn't proc Ice Cube
+
+~~Blobfish summons: only 2 from turret?  Is this because it came from a Wrench? [comment artificer wrench vid with findings]

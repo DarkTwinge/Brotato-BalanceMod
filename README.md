@@ -93,14 +93,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Tier-1
 * **Alien Tongue:** Pickup Range +30% -> +35%; Knockback +1 -> +2; Price 25->23
 * **Baby Gecko:** Range 10 -> 12
-* **Bag:** Price 15->18
+* **Bag:** Price 15->19
 * **Beanie:** Range -6 -> -7
 * **Book:** Price 8->7
 * **Boxing Glove:** Knockback +3 -> +4
 * **Broken Mouth:** Price 25->26
 * **Cake:** Price 15->16
 * **Coupon:** Price 15->19
-* **Cute Monkey:** Price 25->35; Proc Chance 8% -> 10%; Limit 13->10 _[Cleaner numbers, and also more viable to take the -RangedDamage hit if you really want the supplemental healing.]_
+* **Cute Monkey:** Price 25->28
 * **Duct Tape:** Price 20->15
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
 * **Gentle Alien:** Price 30->31

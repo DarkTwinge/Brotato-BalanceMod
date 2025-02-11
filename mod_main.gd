@@ -264,7 +264,7 @@ func _ready()->void:
 	temp.value = 12   # 10 (Range)
 
 	temp = load("res://items/all/bag/bag_data.tres")
-	temp.value = 18   # 15
+	temp.value = 19   # 15
 	temp = load("res://items/all/bag/bag_effect_1.tres")
 	temp.text_key = "new_effect_item_box_gold"
 	
@@ -287,10 +287,7 @@ func _ready()->void:
 	temp.value = 19   # 15
 	
 	temp = load("res://items/all/cute_monkey/cute_monkey_data.tres")
-	temp.value = 35  # 25
-	temp.max_nb = 10 # 13 (Limit)
-	temp = load("res://items/all/cute_monkey/cute_monkey_effect_1.tres")
-	temp.value = 10  # 8 (Healing Proc Chance)
+	temp.value = 28  # 25
 	
 	temp = load("res://items/all/duct_tape/duct_tape_data.tres")
 	temp.value = 15  # 20 
