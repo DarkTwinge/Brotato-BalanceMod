@@ -39,7 +39,7 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are better (as you have much less time to profit from them).
 * Chameleon, Wandering Bot, and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
-* Candle is cheaper and thus more viable for non-Elemental builds that want fewer enemies.
+* Candle is useful in more situations, being cheaper and also providing reduced enemy damage.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
 ### Characters
@@ -186,7 +186,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Barricade:** Price 75->70
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 20
-* **Candle:** Price 65->45; Elemental Damage 4 -> 3; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the reduced enemy count.]_
+* **Candle:** Price 65->45; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
 * **Chameleon:** Price 70->50; Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
 * **Community Support:** Price 75->71 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->68
@@ -262,7 +262,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ghost Flint:** Range 150/160/170/180 -> 165/175/185/200; Tier-1 Damage 6 -> 7 _[Helps tier-1 not be so behind that it can never kill enough enemies to proc on characters that don't have extra damage to start.]_
 * **Hammer:** Price 51/95/190 -> 46/86/151; Range 175(All) -> 180/190/200; Cooldown 1.67/1.59/1.50 -> 1.63/1.55/1.48 (accounts for the increased Range); Now has 10%/15%/20% Knockback Piercing (more effective against resistant enemies); Knockback 30/40/50 -> 25/30/40
 * **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
-* **Hatchet:** Range 125->135
+* **Hatchet:** Range 125->135; Internal Recoil Duration 0.1 -> 0.05 _[Increases attack animation speed, resulting in ~7% more DPS on average.]_
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; (Fixed tooltip bounce count) _[Most of my Shiv nerfs were implemented into vanilla; I've opted to still keep this small additional cooldown nerf.]_
 * **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 120%/140%; Explosion Chance 25%/50% -> 33%/50%; Range 175(All) -> 190/200; Cooldown 1.55/1.49 -> 1.52/1.46 (accounts for the increased Range); Now has 10%(All) Knockback Piercing (more effective against resistant enemies); Knockback 30(All) -> 25(All)

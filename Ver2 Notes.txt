@@ -9,6 +9,7 @@ BM_EFFECT_FOR_NEGATIVE_SPEED	If your Speed is negative, gain {0} {1}
 
 ~Challenge Run Ideas~
 Mage-Hand
+Jack starting with Candle+Flag
 Lich pure ability run (-Melee Damage, Scissors, rely on ability entirely?)
 PaciFIST (Has to kill final bosses; possibly earlier elites tho 11 seems very sus)
 Im-Precise Crazy
@@ -328,8 +329,6 @@ Pile of Books tagged Engeering instead of Structure, which is better for builder
 
 potentiall up wave 5 abyss boss hp slightly?  what's the comparison with Crash? [Looks like CZ has a little less HP]
 
-Some consideration to drop Sharp Tooth from Precise, because it doesn't want to be mixed
-
 possibly reduce curse impact on some really big things, e.g. make curse lower the min cooldown on Ball & Chain less?
 
 butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
@@ -451,8 +450,14 @@ curse could give lower hp enemies a bigger hp bump
 Crit SFX: unit.tscn replace to make quieter sounds? (test with other sounds)
 
 
-Candle could  be retooled further to reduce enemy damage a bit (probably only 5% but maybe 10%)?  Only 2 Elmenetal?
-
 Bull doesn't proc Ice Cube
 
-~~Blobfish summons: only 2 from turret?  Is this because it came from a Wrench? [comment artificer wrench vid with findings]
+~~"Melee" attack for Blobfish (and Puffer?), sometimes counts from a turret and sometimes not, at least for Blue; might be the direct hit vs the burn?
+
+1.1.9 bugs:
+Material object visuals all the same now
+burn turret no go up with curse why
+
+Remake Creature somehow
+
+sharp tooth is *probably* just bad and needs a bit of a rework?  (Thinking remove Precise; could either look at short range fast attacking, or similar speed but longer range; maybe cheaper, maybe less atrocious low-tiers?  Any way for it to make better sense as an add-in than solo weapon?)

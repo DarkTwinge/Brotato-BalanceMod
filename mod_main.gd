@@ -571,8 +571,10 @@ func _ready()->void:
 	
 	temp = load("res://items/all/candle/candle_data.tres")
 	temp.value = 45  # 65
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/candle_reduce_damage.tres")
+	temp.effects.insert(2, temp_2)
 	temp = load("res://items/all/candle/candle_effect_1.tres")
-	temp.value = 3   # 4 (Elemental Damage)
+	temp.value = 2   # 4 (Elemental Damage)
 	temp = load("res://items/all/candle/candle_effect_4.tres")
 	temp.key = "stat_attack_speed"
 	temp.value = -4  # -5 (Damage -> Attack Speed)
@@ -1053,15 +1055,23 @@ func _ready()->void:
 	
 	# Hatchet
 	temp = load("res://weapons/melee/hatchet/1/hatchet_stats.tres")
-	temp.max_range = 135	# 125
+	temp.max_range = 135				# 125
+	temp.recoil = 20						# 25
+	temp.recoil_duration = 0.05	# 0.1
 	temp = load("res://weapons/melee/hatchet/2/hatchet_2_stats.tres")
-	temp.max_range = 135	# 125
+	temp.max_range = 135				# 125
+	temp.recoil = 20						# 25
+	temp.recoil_duration = 0.05	# 0.1
 	temp = load("res://weapons/melee/hatchet/3/hatchet_3_stats.tres")
-	temp.max_range = 135	# 125
+	temp.max_range = 135				# 125
+	temp.recoil = 20						# 25
+	temp.recoil_duration = 0.05	# 0.1
 	temp = load("res://weapons/melee/hatchet/4/hatchet_4_data.tres")
-	temp.value = 111			# 122
+	temp.value = 111						# 122
 	temp = load("res://weapons/melee/hatchet/4/hatchet_4_stats.tres")
-	temp.max_range = 135	# 125
+	temp.max_range = 135				# 125
+	temp.recoil = 20						# 25
+	temp.recoil_duration = 0.05	# 0.1
 	
 	# Jousting Lance
 	temp = load("res://weapons/melee/jousting_lance/3/jousting_lance_3_data.tres")
