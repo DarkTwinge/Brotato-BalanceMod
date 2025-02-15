@@ -370,7 +370,7 @@ func _ready()->void:
 	temp.value = -2		# -3 (Speed)
 
 	temp = load("res://items/all/weird_food/weird_food_data.tres")
-	temp.value = 23		# 20
+	temp.value = 22		# 20
 	temp = load("res://items/all/weird_food/weird_food_effect_3.tres")
 	temp.key = "stat_speed"	# Dodge
 	
@@ -428,21 +428,24 @@ func _ready()->void:
 	
 	# Garden
 	temp = load("res://items/all/garden/garden_data.tres")
-	temp.value = 48  # 50
+	temp.value = 48		# 50
 	temp = load("res://items/all/garden/garden_effect_1.tres")
 	temp.text_key = "new_effect_garden"
-
+	
+	temp = load("res://items/all/ice_cube/ice_cube_data.tres")
+	temp.value = 47		# 50
+	
 	# Incendiary Turret
 	temp = load("res://items/all/turret_flame/turret_flame_data.tres")
-	temp.value = 42  # 40
+	temp.value = 42		# 40
 	temp = load("res://entities/structures/turret/flame/flame_turret_stats.tres")
 	temp.scaling_stats = [ [ "stat_engineering", 0.35 ] ]  # 0.33
 
 	temp = load("res://items/all/gambling_token/gambling_token_effect_1.tres")
-	temp.value = 9  # 8 (Dodge)
+	temp.value = 9		# 8 (Dodge)
 	
 	temp = load("res://items/all/leather_vest/leather_vest_data.tres")
-	temp.value = 47  # 45
+	temp.value = 47		# 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
 	temp.value = 38  # 45
@@ -453,7 +456,7 @@ func _ready()->void:
 	temp.value = -18  # -15 (Range)
 
 	temp = load("res://items/all/lure/lure_data.tres")
-	temp.value = 39  # 34
+	temp.value = 40  # 34
 			
 	temp = load("res://items/all/medal/medal_data.tres")
 	temp.value = 60  # 55
@@ -1778,6 +1781,9 @@ func _ready()->void:
 	# One-armed
 	temp = load("res://items/characters/one_arm/one_arm_effect_3.tres")
 	temp.text_key = "NEW_EFFECT_ONE_WEAPON_SLOT_LIMIT"
+	temp = load("res://items/characters/one_arm/one_arm_data.tres")
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/one-arm_no_dupe_weps.tres")
+	temp.effects.push_back(temp_2)
 	
 	# Ranger
 	temp = load("res://items/characters/ranger/ranger_data.tres")

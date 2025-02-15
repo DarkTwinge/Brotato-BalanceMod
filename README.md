@@ -39,7 +39,7 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are better (as you have much less time to profit from them).
 * Chameleon, Wandering Bot, and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
-* Candle is useful in more situations, being cheaper and also providing reduced enemy damage.
+* Candle is cheaper and now reduces enemy damage.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
 ### Characters
@@ -121,7 +121,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%); Speed -3% -> -2%
-* **Weird Food:** Price 20->23; Dodge -2% --> Speed -2%
+* **Weird Food:** Price 20->22; Dodge -2% --> Speed -2%
 * **Weird Ghost:** Starting HP Next Wave -100% -> -90%
 #### DLC
 * **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
@@ -143,11 +143,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
+* **Ice Cube:** Price 50->47
 * **Incendiary Turret:** Price 40->42; Engineering Scaling 33% -> 35% _[Makes the rounding less abysmal.]_
 * **Leather Vest:** Price 45->47
 * **Little Frog:** Price 45->38; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
-* **Lure:** Price 34->39
+* **Lure:** Price 34->40
 * **Medal:** Price 55->60; Crit Chance -4% -> -3%
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->43
@@ -323,7 +324,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
-* **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary). _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_
+* **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered low-tier versions of the weapon you have equipped _[Very minor; removes completely useless weapons and makes swapping weapons slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
 * **Sick:** No longer favored to find Lifesteal items.

@@ -454,10 +454,15 @@ Bull doesn't proc Ice Cube
 
 ~~"Melee" attack for Blobfish (and Puffer?), sometimes counts from a turret and sometimes not, at least for Blue; might be the direct hit vs the burn?
 
-1.1.9 bugs:
-Material object visuals all the same now
-burn turret no go up with curse why
-
 Remake Creature somehow
 
 sharp tooth is *probably* just bad and needs a bit of a rework?  (Thinking remove Precise; could either look at short range fast attacking, or similar speed but longer range; maybe cheaper, maybe less atrocious low-tiers?  Any way for it to make better sense as an add-in than solo weapon?)
+
+Could be cute to have an 8-hit-rule (like Trees) for Eggs and Iron Lungs, so that pacifist builds could destroy them
+
+Saver-Hiking Pole start?
+
+~ Picky: -10 Shop Price each wave; -10 Reroll Price each wave; +3 Reroll Price for every purchase; +5 Shop Price for every unique item; +25 Luck; starters things you're probably okay having fewer/lower-tiers of, like Spear, SMG; Pruner?  (And verify -120% Shop/Reroll Prices don't break anything)
+
+
+Possible mod conflict with one of: RerollRNGBalancing , BigMapSolo , HookCursesMore  -- Sickle showed up in the shop in Endless

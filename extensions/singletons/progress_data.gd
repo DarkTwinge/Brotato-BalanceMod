@@ -293,22 +293,7 @@ func add_all_dlcs()->void :
 		temp.tier = -1
 		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/4/sickle_4_data.tres")
 		temp.tier = -1
-		
-		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_stats.tres")
-		temp.cooldown = 19	# 20
-		temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.1 ] ]  # 0.8, 0.1	
-		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/2/sickle_2_stats.tres")
-		temp.cooldown = 15	# 17
-		temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.14 ] ] # 0.8, 0.15	
-		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/3/sickle_3_stats.tres")
-		temp.cooldown = 11	# 14
-		temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.17 ] ] # 0.8, 0.2
-		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/4/sickle_4_data.tres")
-		temp.value = 111		# 122
-		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/4/sickle_4_stats.tres")
-		temp.cooldown = 7		# 10
-		temp.scaling_stats = [ [ "stat_melee_damage", 0.9 ], [ "stat_harvesting", 0.2 ] ]  # 0.8, 0.25
-		
+	
 		# Spoon
 		temp = load("res://dlcs/dlc_1/weapons/melee/spoon/4/spoon_4_data.tres")
 		temp.value = 111		# 122
