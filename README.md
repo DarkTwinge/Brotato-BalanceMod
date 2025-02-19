@@ -344,7 +344,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 ### Elites
 #### Crash Zone
 * **Hivemind/Colossus:** Phase 2 Cooldown 0.9s -> 1.02s _[Gives a bit more breathing room during the rapid onslaught of Phase 2.]_
-* **Mantis:** Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Differentiates Mantis and Rhino more.]_
+* **Mantis:** Time Before First Attack 2s -> 1.75s; Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Differentiates Mantis and Rhino more.]_
 * **Butcher:** Phase 2 & 3 Max Range increased _[Makes it so you can't so easily get out of range of the slashes; most relevant for Explorer.]_
 * **Rhino:** Base Speed 250 -> 275
 
@@ -389,7 +389,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Crazy:** Added Crossbow _[Which now works with their starting Range.]_
 * **Cryptid:** Added Flute
 * **Cyborg:** Added Medical Gun; Removed Crossbow, Pistol
-* **Demon:** Added Potato Thrower
+* **Demon:** Added Shuriken, Potato Thrower
 * **Engineer:** Removed Hammer
 * **Explorer:** Added Medical Gun
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv

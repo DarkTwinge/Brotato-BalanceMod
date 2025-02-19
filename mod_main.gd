@@ -1995,6 +1995,8 @@ func _ready()->void:
 
 	# Demon
 	temp = load("res://items/characters/demon/demon_data.tres")
+	temp_2 = load("res://weapons/ranged/shuriken/1/shuriken_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	

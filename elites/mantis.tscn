@@ -66,7 +66,8 @@ projectile_speed = 600
 projectile_speed_randomization = 0
 speed_change_after_each_projectile = 0
 cooldown = 75.0
-initial_cooldown = 45
+;; 45
+initial_cooldown = 30
 max_cd_randomization = 10
 long_cooldown_every_x_shoots = 0
 long_cooldown = 0
