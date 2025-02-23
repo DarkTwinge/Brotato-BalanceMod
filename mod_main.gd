@@ -59,10 +59,10 @@ func _init(modLoader = ModLoader):
 ##	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/gain_stat_for_every_stat_effect.gd")
 
 	# Adds a new enemy-group to Horde waves to spawn Magicians for Wave 14/15
-### TODO Check if this affects Abyss
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "zones/wave_manager.gd")
 	
 	# Reduced Horde Wave profits
+	# Tweak mat drops to be per-mat rather than per-enemy
 	# Cyborg Transition SFX
 	#y Save mats for new Padding effect
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "main.gd")
@@ -234,15 +234,14 @@ func _ready()->void:
 ##	temp = load("res://zones/zone_1/000_hordes/group_3b.tres")
 ##	temp.max_wave = 13    # Groups of 4 Chasers + 4 Basics in 2nd half removed for 14+15 to make more room for others
 	temp = load("res://zones/zone_1/000_hordes/group_4.tres")
-	# Helmets 33x8.5 -> 31x7
+	# Helmets 33x8.5 -> 31x6.5
 	temp.repeating_interval = 3 
 	temp.spawn_edge_of_map = true
 	temp = load("res://zones/zone_1/000_hordes/unit_3.tres") # Helmet
 	temp.min_number = 6   # 8
-	temp.max_number = 8   # 9
+	temp.max_number = 7   # 9
 	temp = load("res://zones/zone_1/000_hordes/group_5.tres")
 	temp.min_wave = 13		# 15
-	temp.spawn_edge_of_map = true
 	# Basic 28x4 -> 0
 	temp_2 = load("res://zones/zone_1/000_hordes/unit_1.tres") # Basic
 	temp.wave_units_data.erase(temp_2) 
@@ -2014,7 +2013,7 @@ func _ready()->void:
 	# Generalist
 	temp = load("res://items/characters/generalist/generalist_data.tres")
 	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
-	temp.starting_weapons.insert(14, temp_2)	
+	temp.starting_weapons.insert(14, temp_2)
 	# Remove
 	temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
 	temp.starting_weapons.erase(temp_2)
@@ -2023,7 +2022,14 @@ func _ready()->void:
 	temp = load("res://items/characters/gladiator/gladiator_data.tres")
 	# Remove
 	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
-	temp.starting_weapons.erase(temp_2)	
+	temp.starting_weapons.erase(temp_2)
+	
+	# Hunter
+	temp = load("res://items/characters/hunter/hunter_data.tres")
+	temp_2 = load("res://weapons/melee/screwdriver/1/screwdriver_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/melee/knife/1/knife_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	
 	# Jack
 	temp = load("res://items/characters/jack/jack_data.tres")

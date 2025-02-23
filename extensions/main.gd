@@ -9,10 +9,12 @@ func _physics_process(_delta:float)->void :
 				SoundManager.play(cyborg_swap_sfx, 0, 0, true)
 				break
 	
-	._physics_process(_delta)
+	## (Automatically executed anyway)
+	##._physics_process(_delta)
 
 
 # Replace to reduce Horde Wave profits
+# Tweak mat drops to be per-mat rather than per-enemy
 func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
 
 	if not unit.can_drop_loot:
@@ -31,15 +33,22 @@ func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
 
 	if unit.stats.always_drop_consumables:
 		spawn_chance = 1.0
-
-	if entity_type == EntityType.ENEMY and not Utils.get_chance_success(spawn_chance):
-		return 
+	
+	# (Old behavior: all or nothing mat drops)
+	##if entity_type == EntityType.ENEMY and not Utils.get_chance_success(spawn_chance):
+	##	return 
 
 	var pos:Vector2 = unit.global_position
 	var value:float = get_gold_value(entity_type, args, unit.stats.value, unit)
 	var gold_spread = clamp((value - 1) * 25, unit.stats.gold_spread, 200)
-
-	spawn_gold(value, pos, gold_spread)
+	
+	# New behavior: Each mat is rolled independantly
+	var total_mats:float = value
+	for i in value:
+		if entity_type == EntityType.ENEMY and not Utils.get_chance_success(spawn_chance):
+			total_mats = total_mats - 1
+	
+	spawn_gold(total_mats, pos, gold_spread)
 
 
 # Append to save next-wave mats for new Padding

@@ -14,6 +14,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Range gained from level-ups & items is ~15% higher (both increases and decreases).
 * Other level-ups: Tier 2-4 Luck is stronger; Tier-1 Harvesting dropped to 4; weaker Tier-4 level-ups are more worthwhile.
 * Horde Waves give ~8% fewer materials.
+* Enemies now drop partial material amounts instead of all or nothing (average amount is the same).
 * Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are now color-coded. Cyborg's transition has unique SFX. Which items are 'structures' now indicated in the shop. Tooltips now show explosion sizes.
 
 ### Weapons
@@ -378,7 +379,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Wave 16:** 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->725) _[Aiming to make them less trivially smashed by melee quickly]_; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
 * **(DLC) Wave 16:** One of the added Flies is replaced with a Pufferfish.
 * **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
-* **Wave 14 & 15 Hordes:** Added 5 single Magician spawns alongside 5 single Wizard Hats (Spawners) spread out over the last ~2/3rds of the wave; Made the added Helmets and Fins in the 2nd half spawn on the edges of the map (with slightly fewer Helmets spawned); Made the Horde additions identical for 14 & 15; Removed one group of Basic Aliens to make more room for the others. _[Aiming to make these Horde waves feel threatening, rather than easier and simply more profitable than their non-Horde counterparts like they are in vanilla.]_
+* **Wave 14 & 15 Hordes:** Added 4 single Magician spawns alongside 4 single Wizard Hats (Spawners) spread out over the last ~1/2 of the wave; Made the added Helmets in the 2nd half spawn on the edges of the map (with slightly fewer Helmets spawned); Made the Horde additions identical for 14 & 15; Removed one group of Basic Aliens to make more room for the others. _[Aiming to make these Horde waves feel as threatening as Elite fights are.]_
 ### Wave Spawns: The Abyss
 * **Wave 4:** The Lamprey now appears on Danger Level 1+ instead of only DL5. _[This is a way to learn the enemy pattern more safely instead of having to take Bait.]_
 * **Wave 13:** Stargazer spawn timing 30s -> 28s; Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
@@ -394,6 +395,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Explorer:** Added Medical Gun
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth
+* **Hunter:** Added Knife, Screwdriver
 * **Jack:** Removed Shuriken
 * **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle
 * **Mage:** Added Wrench
@@ -423,6 +425,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **One-armed:** Added Harpoon Gun
 * **Romantic:** Added Jousting Lance, Screwdriver; Removed Fist
 * **Sailor:** Added Harpoon Gun
+* **Saver:** Added Hiking Pole
 * **Sick:** Added Javelin
 * **Vampire:** Added Javelin
 
