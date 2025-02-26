@@ -512,7 +512,7 @@ func _ready()->void:
 	temp.key = "stat_attack_speed"	# Speed
 	
 	temp = load("res://items/all/snowball/snowball_data.tres")
-	temp.value = 48		# 50
+	temp.value = 47		# 50
 	
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_data.tres")
 	temp.tags = [ "stat_max_hp", "consumable", "explosive" ]	# (Luck -> Consumables)
@@ -534,7 +534,7 @@ func _ready()->void:
 	temp.value = 42  # 40
 	
 	temp = load("res://items/all/white_flag/white_flag_data.tres")
-	temp.value = 33  # 40
+	temp.value = 32  # 40
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/white_flag_reduced_cap.tres")
 	temp.effects.append(temp_2)		
 	temp = load("res://items/all/white_flag/white_flag_effect_1.tres")
@@ -558,7 +558,7 @@ func _ready()->void:
 	temp.weapon_stats = temp_2 # Ranged Damage scaling 100% -> 75%
 	
 	temp = load("res://items/all/barricade/barricade_data.tres")
-	temp.value = 70		# 75
+	temp.value = 68		# 75
 	temp_2 = load("res://items/all/barricade/barricade_effect_0.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.insert(1, temp_2)
@@ -1736,7 +1736,7 @@ func _ready()->void:
 	temp.value = 3		# 2
 	temp.nb_stat_scaled = 2 # 1 (2 melee per 1 armor -> 3 melee per 2 armor)
 	temp = load("res://items/characters/knight/knight_effect_4.tres")
-	temp.text_key = "new_effect_min_weapon_tier" # Hard-coded to fix the color being red when it should be green
+	temp.text_key = "new_effect_min_weapon_tier" # Hard-coded to change color from red to light green
 	
 	# Loud
 	temp = load("res://items/characters/loud/loud_effect_1.tres")

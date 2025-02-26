@@ -1,5 +1,7 @@
 extends "res://singletons/run_data.gd"
 
+var bm_player_index: = 0
+
 # Added set bonus for One-armed
 func update_sets(player_index:int)->void :
 	var player_data = players_data[player_index]

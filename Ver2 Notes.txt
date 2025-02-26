@@ -124,10 +124,8 @@ Watch if Mom is even hard any more
 	--Seems pretty trivial to survive?  Still kinda hard to kill at least with short range melee?
 
 
-Sailor -- Tier 2 is colored red, should it be green?
 
-Goldfish should clarify doesn't affect locked
-GF could give free reroll, or make the next shop's items cheaper
+Goldfish could give free reroll, or make the next shop's items cheaper
 
 Dwarf: Counter for Engineering gained
 
@@ -137,9 +135,8 @@ Gangster: Controller down on items can go over to stats not weapons from rightmo
 Tier-4 Brick could give you a Tier-1 Brick when it breaks
 
 treasure map should have some visual/audio cue when procs
-	may also want some light base stats of some kind
 
-Spiked Shark run-away Elite may want to switch phase ar 40s instead of 35s since it's so difficult to hit while it's running away early?  Not strong
+Impaled Worm run-away Elite may want to switch phase ar 40s instead of 35s since it's so difficult to hit while it's running away early?  Not strong
 
 Sailor-Knight differentiate more?
 	sailor cursed weapons could count too? (and reduce bonus)
@@ -156,8 +153,6 @@ maybe add new turret, prob blue tier
 
 Spoon - Even-out HP Scaling (so 0.25 at all tiers), making melee scaling still poor but less awful with 50%->60% (all tiers), and then changing the base damage from 8/12/16/20 -> 7/12/18/24
 
-
-sound effect entering vat = could be louder, often doesn't play
 
 
 ~~~~~
@@ -186,12 +181,7 @@ prisoner elite -- 2nd phase either too much delay between attacks or doesn't att
 
 
 check curse special cases, and make sure anything I rework doesn't get extra silly (heavy bullets right now maybe?  couch down the line.)
- ^Verify it is affecting -1accuracy correctly; probably should be since Eyepatch exists but?
-~~
-keep an eye on plasma sledge; seeming pretty sad when it struggles to outpace planks
-
-hiking poles are sometimes resetting stat counts????
-
+ ^Verify it is affecting -accuracy correctly; probably should be since Eyepatch exists but?
 ~
 ~If reworking things like e.g. Baby Squid, make sure they are removed/added to the lists in item_service for specific-character bans
 ~
@@ -228,16 +218,11 @@ Gladiator maybe could go to -50 Luck?
 
 
 
-
 Still consider revert early-exact-weapon changes and perhaps making them set instead
 
 bug with 3rd shop slot moving up -- mirror and other modifier things e.g. curious, fairy
 
-`~`Aros reported issues at 1.1.7 - verify before implementing any`~`
-Dwarf – I don’t find myself buying engineering - Maybe Dwarf shouldn’t be tagged for engineering, just structures.
-Chef - I don't think chef needs the Elemental damage restriction on +200% bonus damage. It could be -100% elemetal damage modification along with burn not being able to do +200%
-Chainsaw's text says cooldown is ... every 40th Shot. - It isn't a ranged weapon, so the text should say attack instead of shot.
-
+~
 (reported bug: Rip & Tear is currently scaling with Frozen Heart.)
 Reported-Turrets don't benefit from Eyepatch
 ~~
@@ -265,10 +250,6 @@ Probably re-look at Wands, maybe direct compare with Icicle (could increase cost
 
 BM Set Weighting: maybe don't double-count same weapons?
 
-Possible Laser turret should have a small base damage boost?  (do a few comparison points vs burn turrets and explosion ones)
-
-abyss - remove ~1 plankton wave 1?
-
 curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse? [And lower the cap for odds of getting stuff cursed for lots of curse, or make it further away]
 could make elites/bosses stronger based on curse amount
 drop seapig profit down to 4 or 3 if this is implemented
@@ -295,13 +276,14 @@ exoskeleton could drop the -2lifesteal
 maybe scarf
 spider could be -regen instead of either
 weird food or jerky are possiblities
+butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
 
 
 
 could slightly reducing the damage of a wave 11/12 elite be sensible? (keep in mind gangster for lower waves or whatever)
 
 seashell should be made to work for structures too [Make sure it doesn't double-apply to builder turret]
-	All projectiles; when works for all projectile, probably remove it from bans on e.g. knight
+	All projectiles; when works for all projectile, probably remove it from bans on e.g. knight, dwarf
 
 Could make it so Fisher doesn't see Bait in Crates (would adding it as a banned item work?)  [this is kinda funny so maybe leave it]
 
@@ -331,10 +313,9 @@ potentiall up wave 5 abyss boss hp slightly?  what's the comparison with Crash? 
 
 possibly reduce curse impact on some really big things, e.g. make curse lower the min cooldown on Ball & Chain less?
 
-butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
 
 
-Hiking Poles might want to be slightly cheaper (17->16 path).  A weird-cute idea would be worse base Range as it levels up, which is *probably* an advantage (tho probably makes them mix with other weapons even worse).  Could also see smoothing out the progression a litt,e so tier-1s are 65 instead of 70 or whatever, or even 60
+Hiking Poles might want to be slightly cheaper (17->16 path).  A weird-cute idea would be worse base Range as it levels up, which is *probably* an advantage (tho probably makes them mix with other weapons even worse).  Could also see smoothing out the progression a litte, so tier-1s are 65 instead of 70 or whatever, or even 60
 
 
 Streamer could have a lower income cap and/or a slightly smooth income spot at lower values?  (Not super convinced, by could be interesting to be a bit less snowball-focused)
@@ -357,15 +338,12 @@ preventing bounce/random target from hitting curse goblins would be good; how ha
 ~~check current harpoon damage reduction (maybe do it in practice against only an elite, also check code)
 	take a look at pure harpoon diver for a lark?
 
-Spyglass should specify both shop and level-ups maybe?
-
 Particle Accel slow doesn't work?
 
 
 Add MedGun Starter Maybe:
 Mutant? (if remove SMG?)
 Entre?
-Explorer? (Seems logical, but should be tested)
 Baby?
 Could get spicy and replace SMG with it on Multitasker
 Could test on One-armed, maaaaybe fisher
@@ -380,8 +358,11 @@ Wave 11 Elite HP reduces slightly more than 12?
 ~~Perhaps test Med Guns vs SMGs on ~5% Lifesteal; how much better are SMGs at damage and which is better at healing
 
 
-Chameleon: either full rework, or could increase dodge cap while standing still (prob can only go to 70% and ignore if higher existing cap)
+Chameleon: increase dodge cap while standing still (no more than 75 cap)
 	Should be able to treat dodge_cap as a stat while standing still, just like dodge itself ; but would need another check to make it still cap at 75; another stat that copies dodge cap maybe sometime during init so it only applies once, and is just referenced for this purpose?
+	There's also the Dodge tooltip showing you at cap; which should it use?  Probably Chameleon's?
+	and test/decide cursed effect; the cap remains the same right?
+	And make sure it doesn't *lower* Ghost's cap
 
 remake sickle, prob 135 range, prob consumable healing scaling, prob keep the low hp damage bonus concept
 	maybe better to just leave removed tbh?
@@ -404,8 +385,6 @@ Red Sticks oculd drop damasge per Stick by 1 and add +5 base damage, making it e
 Wandering Bot: Add some additional effect: Damage, knockback w/ pierce, debuff like ice cube, bigger slow, bigger hitbox...  could scale with engineering somehow
 
 Wave 19 could broadly be a little more Horde-like, to test those limits in a guaranteed spot
-
-should blunder get further nerfs?
 
 Flute could be retooled as a multi-projectile
 
@@ -430,15 +409,18 @@ look at builder internal ban tagging, currently nixes Improved Tools as it is ta
 Coupon counts gangster-stolen items as value for itself
 
 
-Sausage's self-burn increase is not reflected in tooltip
-
-Ivestigate incompatability with: Mashtato and Pentato
+Possible incompatability with: Mashtato and Pentato ; checked and nothing clear in extensions that should conflict
+Possible mod conflict with one of: RerollRNGBalancing , Fixed Camera Solo , HookCursesMore  -- Sickle showed up in the shop in Endless
 
 
 ~~flute test: friends alive at end, do they give you full or halves on e.g. hiker
 
 
 Cursed Bait text should acknowledge the extra spawns
+Sausage's self-burn increase is not reflected in tooltip
+Spyglass should specify both shop and level-ups maybe?
+Goldfish should clarify doesn't affect locked
+
 
 Sick doesn't necessarily need Tardigrade banned now (maybe wait for full Tardigrade fix tho to ignore all self-damage?)
 
@@ -462,8 +444,6 @@ Bull doesn't proc Ice Cube
 
 ~~"Melee" attack for Blobfish (and Puffer?), sometimes counts from a turret and sometimes not, at least for Blue; might be the direct hit vs the burn?
 
-Remake Creature somehow
-
 sharp tooth is *probably* just bad and needs a bit of a rework?  (Thinking remove Precise; could either look at short range fast attacking, or similar speed but longer range; maybe cheaper, maybe less atrocious low-tiers?  Any way for it to make better sense as an add-in than solo weapon?)
 
 Could be cute to have an 8-hit-rule (like Trees) for Eggs and Iron Lungs, so that pacifist builds could destroy them
@@ -471,11 +451,8 @@ Could be cute to have an 8-hit-rule (like Trees) for Eggs and Iron Lungs, so tha
 ~ Picky: -10 Shop Price each wave; -10 Reroll Price each wave; +3 Reroll Price for every purchase; +5 Shop Price for every unique item; +25 Luck; starters things you're probably okay having fewer/lower-tiers of, like Spear, SMG; Pruner?  (And verify -120% Shop/Reroll Prices don't break anything)
 
 
-Possible mod conflict with one of: RerollRNGBalancing , Fixed Camera Solo , HookCursesMore  -- Sickle showed up in the shop in Endless
 
 Recycling Machine not tracking right, unsure if base or advstats (seems to be tracking in Recycling probably but not for the item itself in adv stats)
 
 
-Creature could make the curse_factor (and average roll?) stronger a little bit based on your Curse stat
-	could give the Curse scaling bonus based on either the weapons scaling (added together for multiple?) or based on the weapons base damage [Balance around the cursed versions of weapons]
-
+Add current amount of creature curse strength bonus to their tooltip if possible?

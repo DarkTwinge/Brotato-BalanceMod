@@ -38,7 +38,7 @@ NEW_EFFECT_INCREASE_STAT_GAINS,{0} increased by {1}
 NEW_EFFECT_INCREASE_STAT_GAINS_ALL,"All {0} modifications increased by {1}"
 NEW_EFFECT_GAIN_STAT_FOR_EVERY_TREE,{0} {1} per currently living tree [{4}]
 NEW_EFFECT_CONVERT_STAT_TEMP_HALF_WAVE,{0} of {1} temporarily converts to {2} halfway through a wave ({3} {1} = {4} {2})
-NEW_EFFECT_MIN_WEAPON_TIER,You are only offered [color=#00ff00]Tier II[/color] weapons and above
+NEW_EFFECT_MIN_WEAPON_TIER,You are only offered [color=#76ff76]Tier II[/color] weapons and above
 NEW_EFFECT_LIGHTNING_ON_HIT,Hitting an enemy spawns a lightning projectile that deals {1} ({3}) damage and bounces an additional {2} time(s)
 BM_NON_ELEMENTAL_REDUCE_STAT_GAINS,[color=#ff0000]Non-elemental Damage[/color] modifications reduced by {1}
 BM_LEFTOVER_MATERIALS,materials left uncollected from the previous wave
@@ -88,3 +88,4 @@ BM_ITEM_STRUCTURE,"Item: Structure"
 BM_UNIQUE_STRUCTURE,"Unique Structure"
 BM_EFFECT_HP_START_NEXT_WAVE,"{0} Starting HP next wave"
 BM_BLANK," "
+BM_EFFECT_CREATURE_MORE_CURSE,"Strength of cursed equipment scales with [color=#ca61ff]Curse[/color] stat (10 Curse: +7%; 50: +17%; 200: +37%)\nBetter curse rolls (-20 to +30 instead of -30 to +30)"

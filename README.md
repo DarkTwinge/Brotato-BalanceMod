@@ -47,21 +47,22 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 As with items, the goal is not for characters to be equal strength. The focus is instead on making the easiest options less 'free', as well as tweaks to make decisions more interesting and characters more variable.
 
 * (DLC) Druid partially reworked to care more about poisoned fruit.
+* (DLC) Creature reworked to have stronger curses rather than weapon scaling.
 * Mage can better run an Engineering build (turrets + Sausage) and also handles Gun builds better (extra Sausage). Engineer can better combo with Elemental Damage.
 * Lucky and Speedy now care more about raising their thematic stats. Soldier cares more about Pickup Range.
 * Crazy now works with Crossbows properly; Brawler works with Claw properly.
-* One-armed and Baby receive moderate buffs. Hiker, Fisher, and Farmer gets minor buffs.
-* Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Explorer, Demon, King, Mutant, Gladiator, Engineer, Entrepreneur, and Brawler receive modest nerfs.
-* Most automatic starting weapons (e.g. Wildling, Crazy) are removed, making your chosen starting weapon more meaningful.
+* One-armed and Baby receive moderate buffs. Hiker, Fisher, and Farmer get minor buffs.
+* Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Explorer, Demon, King, Mutant, Gladiator, Engineer, Entrepreneur, and Brawler receive nerfs.
+* Most automatic starting weapons (e.g. Wildling, Crazy) are removed, making your chosen starter more meaningful.
 
 ### Enemies & Waves
-* (DLC) Pufferfish now spawn 4 projectiles when killed by a melee attack (instead of 0).
+* (DLC) Pufferfish now spawn 4 projectiles when killed by melee (instead of 0).
 * (DLC) Stargazers are now stronger when you kill their Incubators first.
-* (DLC) Spider Crab Elite summons harder to deal with. Turtle Elite attacks sooner and gets more armor late game.
-* (DLC) A few guaranteed Seapigs now spawn on the Crash Zone map, letting you more easily get Curse.
+* (DLC) Spider Crab Elite summons harder to deal with. Turtle Elite attacks sooner and is tankier.
+* (DLC) Guaranteed Seapigs now spawn on the Crash Zone map, letting you more easily get Curse.
 * Hivemind/Colossus Elite slightly nerfed.
 * Mantis Elite tweaked to be more unique and slightly harder. Butcher Elite attacks are harder to run from.
-* Crash Zone: Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and allowing for more synergy from enemy/material-reliant effects. Wave 14/15 Horde Waves scarier.
+* Crash Zone: Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and helping enemy/material synergies. Wave 14/15 Horde Waves scarier.
 * Knockback a bit more effective against resistant enemies.
 
 # Support Me
@@ -118,12 +119,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Pencil:** -1 Crit --> -1 Luck _[Leaning away from Engineering with Crit penalties to work better with Pile of Books and new Screwdriver.]_
 * **Propeller Hat:** Price 28->25
 * **Scar:** Price 25->23; Range -8 -> -11
-* **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Helps encourage mixed builds by being more affordable in so-so situations.]_
+* **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Price reduction helps encourage mixed builds.]_
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%); Speed -3% -> -2%
 * **Weird Food:** Price 20->22; Dodge -2% --> Speed -2%
-* **Weird Ghost:** Starting HP Next Wave -100% -> -90%
+* **Weird Ghost:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
 #### DLC
 * **Corrupted Shard:** Price 12->14; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 * **Feather:** Price 18->19
@@ -138,9 +139,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blood Leech:** Price 45->40
 * **Campfire:** Price 40->39
 * **Celery Tea:** Price 35->33; Extra Enemy HP +100% -> +75%
-* **Cog:** Damage -4% -> -2% _[This penalty usually don't matter much for an Engineering build anyway: this makes it less punishing to splash.]_
+* **Cog:** Damage -4% -> -2% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_
 * **Cyclops Worm:** Range -12 -> -16
-* **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was very strong priced at 35, and remains so with the now-cheaper rerolls.]_
+* **Dangerous Bunny:** Price 30->35 _[Reverting to the price it was in 1.0; it was strong priced at 35, and remains good with the now-cheaper rerolls.]_
 * **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
@@ -163,12 +164,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
 * **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
-* **Snowball:** Price 50->48
+* **Snowball:** Price 50->47
 * **Spicy Sauce:** Explosion Size 125% -> 135%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies).
 * **Tentacle:** Price 35->37
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
-* **White Flag:** Price 40->33; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
+* **White Flag:** Price 40->32; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
 #### DLC
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
@@ -185,7 +186,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alien Magic:** Price 85->83
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
-* **Barricade:** Price 75->70
+* **Barricade:** Price 75->68
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 20
 * **Candle:** Price 65->45; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
@@ -217,13 +218,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wings:** Range 30 -> 33
 * **Wisdom:** Price 85->80
 #### DLC
-* **Black Flag:** Price 60->57
-* **Crystal:** Price 65->57; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
+* **Crystal:** Price 65->56; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
 * **Goblet:** Price 70->75
 * **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Price 70->53; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Starfish:** Price 75->70
-* **Sunken Bell:** Price 65->45; Explosion Size 600% -> 750%
+* **Sunken Bell:** Price 65->42; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Big Arms:** Price 105->98
@@ -253,11 +253,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Set Bonuses
 * **Blunt:** -2/-4/-6/-8/-10 Speed -> -1/-2/-3/-4/-5 Speed
 * **Primitive:** 3 HP Per -> 2 HP Per
-* **Guns:** 10/20/30/40/50 Range -> 2/4/6/8/10 Attack Speed _[Helps Guns care about the Range stat more often.]_
+* **Guns:** 10/20/30/40/50 Range -> 2/4/6/8/10 Attack Speed _[Helps Guns care about your Range stat more often.]_
 
 ### Melee
 * **Cacti Club:** Base Projectile Damage 1->2 (All Tiers)
-* **Chopper:** Base Damage 6/12/18/30 -> 7/12/17/27 _[The new vanilla Chopper focuses its power on the Tier-4 version and this smooths out the curve a smidge.]_
+* **Chopper:** Base Damage 6/12/18/30 -> 7/12/17/27 _[The new vanilla Chopper focuses its power heavily on the Tier-4 version and this smooths out the curve a smidge.]_
 * **Excalibur:** -3 Armor Per Weapon -> -2
 * **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
@@ -294,18 +294,18 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Revolver:** Range 450 -> 425; Price 20/34/70/130 -> 18/36/68/125
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
 = **SMG:** Internal Cooldown 4/4/4/3 -> 5/5/5/4 _[In practice, ~8% worse cooldown at 0% Attack Speed, but will end up the same with more Attack Speed. Breakpoint before Attack Speed usefulness plateaus is now 67% for Tiers 1-3 and 51% for Tier-4. (Still also has a spike at 201% for all Tiers.)]_
-- **Sniper Gun:** Range 800/1000 -> 550/600; Ranged Damage Scaling 100%(All) -> 200%/250% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much Range to begin with that more is irrelevant.]_
+- **Sniper Gun:** Range 800/1000 -> 550/600; Ranged Damage Scaling 100%(All) -> 200%/250% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much base Range that adding more is irrelevant.]_
 - **Wand:** Cooldown 0.87/0.78/0.70/0.53 -> 0.83/0.77/0.68/0.53 _[The slight cooldown buff lets you get 1 extra kill on Wave 1.]_
 #### DLC
 - **Blunderbuss:** Tier-3 Damage 50 -> 45
-- **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 80%/90%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
+- **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 75%/85%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
 
 * **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Minigun: 127/255 -> 122/218; Obliterator 127/255 -> 122/218; Potato Thrower: 36/69/139 -> 33/64/114. Blunderbuss: 45/95/192 -> 46/90/160; Flute: 20/45/80/165 -> 19/41/81/150; Javelin: 18/36/66/140 -> 18/36/68/125
 * **Other Tier-4 Price Reductions:** Chain-gun: 300->265; Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 260; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Nuclear Launcher: 289 -> 251; Particle Accelerator: 289 -> 251; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 105 -> 95
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
-* **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-up after Waves 1 and 2 much more reliably.]_
+* **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw) _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
@@ -337,6 +337,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 ### DLC
 * **Captain:** No longer favored to find XP Gain items.
 * **Chef:** Can no longer be offered Eyes Surgery.
+* **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell.
 * **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
@@ -441,7 +442,7 @@ You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/
 * Advanced Statistics: https://steamcommunity.com/sharedfiles/filedetails/?id=3025488976
 
 # Thanks To
-Inschato, ArosRising, Hyphen-ated, Pasha, WL, and everyone else that's assisted with feedback, suggestions, or coding!
+Inschato, ArosRising, Hyphen-ated, Pasha, WL, Lady Lynn, and everyone else that's assisted with feedback, suggestions, or coding!
 Also thanks to Blobfish for being generally receptive to feedback, implementing many previous Balance Mod changes directly into the base game.
 
 # License

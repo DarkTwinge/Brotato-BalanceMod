@@ -8,6 +8,6 @@ key = "items_price"
 text_key = "effect_gain_stat_end_of_wave"
 value = 2
 custom_key = "stats_end_of_wave"
-storage_method = 0
+storage_method = 1
 effect_sign = 1
 custom_args = [  ]

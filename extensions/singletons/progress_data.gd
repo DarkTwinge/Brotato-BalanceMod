@@ -180,11 +180,8 @@ func add_all_dlcs()->void :
 
 
 		# Items: Tier-3 #
-		temp = load("res://dlcs/dlc_1/items/black_flag/black_flag_data.tres")
-		temp.value = 57		# 60
-		
 		temp = load("res://dlcs/dlc_1/items/crystal/crystal_data.tres")
-		temp.value = 57		# 65
+		temp.value = 56		# 65
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0c.tres")
 		temp.key = "stat_max_hp"	# Engineering
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")
@@ -200,7 +197,7 @@ func add_all_dlcs()->void :
 		temp.value = 70		# 75
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-		temp.value = 45		# 65
+		temp.value = 42		# 65
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
 		temp.scale = 7.5	# 6.0
 		temp.text_key = "new_effect_explode_when_below_hp"
@@ -355,12 +352,12 @@ func add_all_dlcs()->void :
 		temp.value = 46					# 50
 		temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/2/harpoon_gun_2_stats.tres")
 		temp.max_range = 750		# 800
-		temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_melee_damage", 0.8 ] ]	# 1.0, 1.0
+		temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_melee_damage", 0.75 ] ]	# 1.0, 1.0
 		temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/3/harpoon_gun_3_data.tres")
 		temp.value = 90					# 105
 		temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/3/harpoon_gun_3_stats.tres")
 		temp.max_range = 825		# 850
-		temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_melee_damage", 0.9 ] ]	# 1.0, 1.0
+		temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_melee_damage", 0.85 ] ]	# 1.0, 1.0
 		temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/4/harpoon_gun_4_data.tres")
 		temp.value = 160				# 220
 		temp = load("res://dlcs/dlc_1/weapons/ranged/harpoon_gun/4/harpoon_gun_4_stats.tres")
@@ -380,6 +377,18 @@ func add_all_dlcs()->void :
 		# Chef
 		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
 		temp.banned_items = [ "item_frozen_heart", "item_eyes_surgery" ]
+		
+		# Creature
+		temp = load("res://dlcs/dlc_1/characters/creature/creature_data.tres")
+		temp_2 = load("res://dlcs/dlc_1/characters/creature/effects/creature_effect_0.tres")
+		temp.effects.erase(temp_2)		# Removes weapon curse scaling
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/creature_more-curse.tres")
+		temp.effects.insert(0,temp_2)	# Text description of new ability, which is based on being the Creature Character
+		
+		temp = load("res://dlcs/dlc_1/characters/creature/effects/creature_effect_3.tres")
+		temp.text_key = "new_effect_gain_stat_end_of_wave"
+		temp = load("res://dlcs/dlc_1/characters/creature/effects/creature_effect_4.tres")
+		temp.text_key = "new_effect_gain_stat_end_of_wave"
 		
 		# Druid
 		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")
@@ -475,6 +484,8 @@ func add_all_dlcs()->void :
 		
 		temp = load("res://dlcs/dlc_1/characters/sailor/effects/sailor_effect_6.tres")
 		temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
+		temp = load("res://dlcs/dlc_1/characters/sailor/effects/sailor_effect_3b.tres")
+		temp.text_key = "new_effect_min_weapon_tier" # Hard-coded to change color from red to light green
 
 
 		### STARTING WEAPONS ###
