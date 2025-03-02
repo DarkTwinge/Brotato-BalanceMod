@@ -171,6 +171,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Whetstone:** Price 40->42
 * **White Flag:** Price 40->32; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
 #### DLC
+* **Bait:** Fixed Cursed Bait to only spawn one set of Lampreys
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
 * **Clockwork Wasp:** Price 45->47
@@ -272,6 +273,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Scissors:** Crit Chance 10%/12%/15%/20% -> 10%/15%/20%/25%; Tier-3/4 Cooldown 0.94/0.86 -> 0.93/0.83 _[Makes higher tier versions more worth using; Buffing cooldown helps their potential as a healing add-in to a Precise build, and increasing base crit chance helps it fit in better with its Precise peers.]_
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Engineering Scaling 50%(All) -> 50%/60%/70%/80%; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only requires one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: now that Pile of Books exists and Crit can make more sense on Engineering builds, Screwdrivers are a good fit to actually care about that crit.]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (accounts for the lowered Range)
+* **Stick:** Base Damage 8/9/10/12 -> 7/8/10/12
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
@@ -393,6 +395,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Cyborg:** Added Medical Gun; Removed Crossbow, Pistol
 * **Demon:** Added Shuriken, Potato Thrower
 * **Engineer:** Removed Hammer
+* **Entrepreneur:** Added Screwdriver
 * **Explorer:** Added Medical Gun
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth
@@ -405,19 +408,23 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **One-armed:** Added Slingshot, Sword, Hammer, Flaming Brass Knuckles, Fireball
 * **Pacifist:** Added Scissors, Rock
 * **Ranger:** Added Medical Gun; Removed Pistol
-* **Saver:** Added Stick
+* **Saver:** Added Stick, Torch
+* **Sick:** Added Chopper
 * **Soldier:** Added Medical Gun
 * **Vagabond:** Added Medical Gun
+* **Vampire:** Added Cacti Club
 * **Wildling:** Removed Sharp Tooth _[Doesn't benefit from Wildling's ability.]_
 #### DLC
 * **Baby:** Added Lute, Brick; Removed Flute
-* **Buccaneer:** Added Plank, Wrench
+* **Buccaneer:** Added Plank, Wrench, Revolver
 * **Builder:** Added Icicle
 * **Chef:** Removed Plank, Stick
+* **Creature:** Added Shuriken, Ghost Axe, Taser; Removed Fist
 * **Curious:** Added Medical Gun
 * **Demon:** Added Brick, Mace
 * **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin
+* **Gangster:** Added Claw
 * **King:** Added Blunderbuss, Harpoon Gun, Spoon
 * **Hiker:** Added Slingshot, Medical Gun
 * **Mage:** Added Spoon

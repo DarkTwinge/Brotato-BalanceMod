@@ -388,6 +388,9 @@ func _ready()->void:
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/alien_eyes_range_malus.tres")
 	temp.effects.push_back(temp_2) # -8 Range
 	
+	temp = load("res://items/all/bait/bait_effect_2.tres")
+	temp.effect_sign = 2	# 3
+	
 	temp = load("res://items/all/banner/banner_effect_1.tres")
 	temp.value = 25   # 20 (Range)
 		
@@ -1250,6 +1253,10 @@ func _ready()->void:
 	temp.value = 111		 # 122
 	
 	# Stick
+	temp = load("res://weapons/melee/stick/1/stick_stats.tres")
+	temp.damage = 7				# 8
+	temp = load("res://weapons/melee/stick/2/stick_2_stats.tres")
+	temp.damage = 8				# 9
 	temp = load("res://weapons/melee/stick/4/stick_4_data.tres")
 	temp.value = 81			 # 91
 	
@@ -2005,6 +2012,11 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/hammer/2/hammer_2_data.tres")
 	temp.starting_weapons.erase(temp_2)
 	
+	# Entrepreneur
+	temp = load("res://items/characters/entrepreneur/entrepreneur_data.tres")
+	temp_2 = load("res://weapons/melee/screwdriver/1/screwdriver_data.tres")
+	temp.starting_weapons.insert(10, temp_2)
+	
 	# Explorer
 	temp = load("res://items/characters/explorer/explorer_data.tres")	
 	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
@@ -2050,6 +2062,11 @@ func _ready()->void:
 	temp_2 = load("res://weapons/ranged/icicle/2/icicle_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
+	# Lich
+	temp = load("res://items/characters/lich/lich_data.tres")
+	temp_2 = load("res://weapons/melee/cactus_mace/1/cactus_mace_data.tres")
+	temp.starting_weapons.push_back(temp_2)	
+	
 	# Loud
 	###temp = load("res://items/characters/loud/loud_data.tres")
 	# Remove
@@ -2060,6 +2077,9 @@ func _ready()->void:
 	temp = load("res://items/characters/mage/mage_data.tres")
 	temp_2 = load("res://weapons/melee/wrench/1/wrench_data.tres")
 	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/melee/cactus_mace/1/cactus_mace_data.tres")
+	temp.starting_weapons.push_back(temp_2)	
+	### Testing ^^
 	
 	# Mutant
 	temp = load("res://items/characters/mutant/mutant_data.tres")
@@ -2103,9 +2123,13 @@ func _ready()->void:
 	temp = load("res://items/characters/saver/saver_data.tres")
 	temp_2 = load("res://weapons/melee/stick/1/stick_data.tres")
 	temp.starting_weapons.insert(5, temp_2)
-##Testing
-	#temp_2 = load("res://weapons/melee/torch/1/torch_data.tres")
-	#temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/melee/torch/1/torch_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	
+	# Sick
+	temp = load("res://items/characters/sick/sick_data.tres")
+	temp_2 = load("res://weapons/melee/chopper/1/chopper_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	
 	# Soldier
 	temp = load("res://items/characters/soldier/soldier_data.tres")
@@ -2113,9 +2137,14 @@ func _ready()->void:
 	temp.starting_weapons.insert(9, temp_2)	
 	
 	# Vagabond
-	temp = load("res://items/characters/vagabond/vagabond_data.tres")	
+	temp = load("res://items/characters/vagabond/vagabond_data.tres")
 	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
 	temp.starting_weapons.push_back(temp_2)	
+	
+	# Vampire
+	temp = load("res://items/characters/vampire/vampire_data.tres")
+	temp_2 = load("res://weapons/melee/cactus_mace/1/cactus_mace_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	
 	# Wildling
 	temp = load("res://items/characters/wildling/wildling_data.tres")

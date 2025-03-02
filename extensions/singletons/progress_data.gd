@@ -7,6 +7,7 @@ func add_all_dlcs()->void :
 	# Checks if the DLC exists before loading script extensions
 	if File.new().file_exists("res://dlcs/dlc_1/dlc_data.tres"):
 		# Curse adjustments
+		# Creature rework
 		ModLoaderMod.install_script_extension(BM_DIR_DLCE + "dlc_1_data.gd")
 	
 	# Run the normal function to load DLCs
@@ -503,6 +504,8 @@ func add_all_dlcs()->void :
 		temp.starting_weapons.push_back(temp_2)
 		temp_2 = load("res://weapons/melee/plank/1/plank_data.tres")
 		temp.starting_weapons.push_back(temp_2)
+		temp_2 = load("res://weapons/ranged/revolver/1/revolver_data.tres")
+		temp.starting_weapons.insert(7, temp_2)
 		
 		# Builder
 		temp = load("res://dlcs/dlc_1/characters/builder/builder_data.tres")
@@ -519,9 +522,17 @@ func add_all_dlcs()->void :
 		
 		# Creature
 		temp = load("res://dlcs/dlc_1/characters/creature/creature_data.tres")
+		temp_2 = load("res://weapons/ranged/shuriken/1/shuriken_data.tres")
+		temp.starting_weapons.push_back(temp_2)		
+		temp_2 = load("res://weapons/melee/ghost_axe/1/ghost_axe_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		temp_2 = load("res://weapons/ranged/taser/1/taser_data.tres")
+		temp.starting_weapons.insert(14, temp_2)
 		# Remove
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
 		temp.starting_weapons.erase(temp_2)	# Needs to be manually removed despite being a Tier -1 weapon
+		temp_2 = load("res://weapons/melee/fist/1/fist_data.tres")
+		temp.starting_weapons.erase(temp_2)
 		
 		# Cryptid
 		temp = load("res://items/characters/cryptid/cryptid_data.tres")
@@ -540,6 +551,12 @@ func add_all_dlcs()->void :
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_data.tres")
 		temp.starting_weapons.push_back(temp_2)
 		
+		# Diver
+		temp = load("res://dlcs/dlc_1/characters/diver/diver_data.tres")
+		temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		### Testing ^^
+		
 		# Druid
 		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")
 		# Remove
@@ -557,6 +574,11 @@ func add_all_dlcs()->void :
 		temp.starting_weapons.push_back(temp_2)
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/lute/1/lute_data.tres")
 		temp.starting_weapons.push_back(temp_2)
+		
+		# Gangster
+		temp = load("res://dlcs/dlc_1/characters/gangster/gangster_data.tres")
+		temp_2 = load("res://weapons/melee/claw/1/claw_data.tres")
+		temp.starting_weapons.push_back(temp_2)		
 		
 		# Hiker
 		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")

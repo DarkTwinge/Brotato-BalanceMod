@@ -52,7 +52,7 @@ func curse_item(item_data:ItemParentData, player_index:int, turn_randomization_o
 	return orig_result as ItemParentData
 
 
-
+# Creature rework
 func _get_cursed_item_effect_modifier(turn_randomization_off:bool = false, min_modifier:float = 0.0)->float:
 	var result = ._get_cursed_item_effect_modifier(turn_randomization_off, min_modifier)
 	

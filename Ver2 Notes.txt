@@ -360,9 +360,11 @@ Wave 11 Elite HP reduces slightly more than 12?
 
 Chameleon: increase dodge cap while standing still (no more than 75 cap)
 	Should be able to treat dodge_cap as a stat while standing still, just like dodge itself ; but would need another check to make it still cap at 75; another stat that copies dodge cap maybe sometime during init so it only applies once, and is just referenced for this purpose?
-	There's also the Dodge tooltip showing you at cap; which should it use?  Probably Chameleon's?
+	There's also the Dodge tooltip showing you at cap; should show normal non-chamleon
 	and test/decide cursed effect; the cap remains the same right?
 	And make sure it doesn't *lower* Ghost's cap
+	make unique if not
+	(also make sure it works on Sailor's 20 Dodge Cap?)
 
 remake sickle, prob 135 range, prob consumable healing scaling, prob keep the low hp damage bonus concept
 	maybe better to just leave removed tbh?
@@ -389,18 +391,10 @@ Wave 19 could broadly be a little more Horde-like, to test those limits in a gua
 Flute could be retooled as a multi-projectile
 
 Try Mage-Cacti starter, Mage-Lute
-Bucc-Revolver
-Should Cacti on Creature be removed?
-	Creature-Shuriken (may vary on eventual changes to the char), Ghost Flint
-	Could add Slingshot, Taser?
-Vampire-Cacti
-Sick-Chopper
-Entre-Screwdriver
-Lich-Cacti
 Golem-Quarterstaff
-Gangster-Claw
-Diver-Shiv?
-
+Chef-Slingshot? (thematic partial miss)
+Creature Spoon?
+Creature Crossbow?  (seems appropriate for kit but soft-miss theme)
 
 
 look at builder internal ban tagging, currently nixes Improved Tools as it is tagged structure; Pile of Books should maybe be tagged struct but then gets banned on builder
@@ -454,5 +448,13 @@ Could be cute to have an 8-hit-rule (like Trees) for Eggs and Iron Lungs, so tha
 
 Recycling Machine not tracking right, unsure if base or advstats (seems to be tracking in Recycling probably but not for the item itself in adv stats)
 
-
 Add current amount of creature curse strength bonus to their tooltip if possible?
+
+maybe nerf Coral while it is bugged, or?
+
+
+possible Well-Rounded should have Ghost Axe, Mutant the Flint since Flint is cheaper?
+
+
+~~Trying Out: Diver-Shiv (Add to Readme)
+~~Trying Out:Mage-Cacti (Add)
