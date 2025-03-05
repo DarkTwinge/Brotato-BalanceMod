@@ -57,7 +57,7 @@ attack_anim_speed = 1.0
 nb_to_spawn = 6
 spawn_at_random_pos = false
 ;; 600
-spawn_in_radius_around_unit = 800
+spawn_in_radius_around_unit = 850
 max_nb_of_spawns = -1
 
 [node name="State1" parent="States" index="0" instance=ExtResource( 9 )]
@@ -104,7 +104,8 @@ max_cd_randomization = 0
 long_cooldown_every_x_shoots = 2
 long_cooldown = 60
 damage_increase_each_wave = 1.15
-max_range = 600
+;; 600
+max_range = 900
 attack_anim_speed = 3.0
 random_direction = true
 number_projectiles = 4

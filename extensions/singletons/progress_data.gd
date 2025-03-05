@@ -131,7 +131,7 @@ func add_all_dlcs()->void :
 		### ITEMS ###
 		# Items: Tier-1 #
 		temp = load("res://dlcs/dlc_1/items/corrupted_shard/corrupted_shard_data.tres")
-		temp.value = 14   # 12
+		temp.value = 15   # 12
 		temp = load("res://dlcs/dlc_1/items/corrupted_shard/effects/corrupted_shard_effect_0.tres")
 		temp.value = 4		#	3 (%Damage)
 		temp = load("res://dlcs/dlc_1/items/corrupted_shard/effects/corrupted_shard_effect_1.tres")
@@ -182,7 +182,7 @@ func add_all_dlcs()->void :
 
 		# Items: Tier-3 #
 		temp = load("res://dlcs/dlc_1/items/crystal/crystal_data.tres")
-		temp.value = 56		# 65
+		temp.value = 55		# 65
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0c.tres")
 		temp.key = "stat_max_hp"	# Engineering
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")
@@ -555,7 +555,9 @@ func add_all_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/characters/diver/diver_data.tres")
 		temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
 		temp.starting_weapons.push_back(temp_2)
-		### Testing ^^
+		# Remove
+		temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
+		temp.starting_weapons.erase(temp_2)		
 		
 		# Druid
 		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")

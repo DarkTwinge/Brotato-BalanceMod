@@ -289,7 +289,7 @@ func _ready()->void:
 	temp.value = 28  # 25
 	
 	temp = load("res://items/all/duct_tape/duct_tape_data.tres")
-	temp.value = 15  # 20 
+	temp.value = 16  # 20 
 	
 	temp = load("res://items/all/fertilizer/fertilizer_data.tres")
 	temp.value = 17  # 15
@@ -356,6 +356,9 @@ func _ready()->void:
 	temp = load("res://items/all/scared_sausage/scared_sausage_effect_1.tres")
 	temp.text_key = "NEW_EFFECT_BURN_CHANCE"
 	
+	temp = load("res://items/all/sharp_bullet/sharp_bullet_effect_4.tres")
+	temp.value = -2		# -3
+	
 	temp = load("res://items/all/snake/snake_data.tres")
 	temp.value = 23  # 25	
 	temp.max_nb = 3  # -1	
@@ -421,7 +424,7 @@ func _ready()->void:
 	temp.value = -16  # -12 (Range)
 	
 	temp = load("res://items/all/dangerous_bunny/dangerous_bunny_data.tres")
-	temp.value = 35   # 30
+	temp.value = 34   # 30
 	
 	temp = load("res://items/all/energy_bracelet/energy_bracelet_data.tres")
 	temp.value = 56		# 55
@@ -469,7 +472,7 @@ func _ready()->void:
 	temp.value = -4  # -5 (Damage%)
 	
 	temp = load("res://items/all/metal_plate/metal_plate_data.tres")
-	temp.value = 43  # 40
+	temp.value = 44  # 40
 	
 	temp = load("res://items/all/missile/missile_data.tres")
 	temp.value = 44  # 45
@@ -515,7 +518,7 @@ func _ready()->void:
 	temp.key = "stat_attack_speed"	# Speed
 	
 	temp = load("res://items/all/snowball/snowball_data.tres")
-	temp.value = 47		# 50
+	temp.value = 46		# 50
 	
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_data.tres")
 	temp.tags = [ "stat_max_hp", "consumable", "explosive" ]	# (Luck -> Consumables)
@@ -528,7 +531,7 @@ func _ready()->void:
 	temp.crit_chance = 0.01  # 0 (Crit Chance)
 
 	temp = load("res://items/all/tentacle/tentacle_data.tres")
-	temp.value = 37  # 35
+	temp.value = 38  # 35
 	
 	temp = load("res://items/all/wheelbarrow/wheelbarrow_data.tres")
 	temp.value = 38  # 40	
@@ -537,7 +540,7 @@ func _ready()->void:
 	temp.value = 42  # 40
 	
 	temp = load("res://items/all/white_flag/white_flag_data.tres")
-	temp.value = 32  # 40
+	temp.value = 31  # 40
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/white_flag_reduced_cap.tres")
 	temp.effects.append(temp_2)		
 	temp = load("res://items/all/white_flag/white_flag_effect_1.tres")
@@ -575,7 +578,7 @@ func _ready()->void:
 	temp.value = 20  # 15 (Luck)
 	
 	temp = load("res://items/all/candle/candle_data.tres")
-	temp.value = 45  # 65
+	temp.value = 43  # 65
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/candle_reduce_damage.tres")
 	temp.effects.insert(2, temp_2)
 	temp = load("res://items/all/candle/candle_effect_1.tres")
@@ -585,7 +588,7 @@ func _ready()->void:
 	temp.value = -4  # -5 (Damage -> Attack Speed)
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
-	temp.value = 50  # 70
+	temp.value = 48  # 70
 	temp = load("res://items/all/chameleon/chameleon_effect_2.tres")
 	temp.value = -2  # -4 (%Damage)
 
@@ -655,7 +658,7 @@ func _ready()->void:
 	temp.value = 27		# 15 (Range)
 
 	temp = load("res://items/all/power_generator/power_generator_data.tres")
-	temp.value = 61		# 65
+	temp.value = 60		# 65
 	temp_2 = load("res://items/all/power_generator/power_generator_effect_2.tres")
 	temp.effects.erase(temp_2) # Remove -Damage%
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/power_generator_2_max_hp_malus.tres")
@@ -675,7 +678,7 @@ func _ready()->void:
 	temp.value = 88  # 80 (Range)
 
 	temp = load("res://items/all/shmoop/shmoop_data.tres")
-	temp.value = 62  # 60
+	temp.value = 61  # 60
 	temp.tags = [ "stat_max_hp", "stat_lifesteal" ]
 	temp = load("res://items/all/shmoop/shmoop_effect_2.tres")
 	temp.key = "stat_lifesteal"		# Was HP Regen
@@ -684,7 +687,7 @@ func _ready()->void:
 	temp.value = 55  # 60
 
 	temp = load("res://items/all/strange_book/strange_book_data.tres")
-	temp.value = 62  # 70
+	temp.value = 60  # 70
 	
 	temp = load("res://items/all/tardigrade/tardigrade_data.tres")
 	temp.value = 40  # 50
@@ -722,7 +725,7 @@ func _ready()->void:
 	temp.value = 33  # 30 (Range)
 	
 	temp = load("res://items/all/wisdom/wisdom_data.tres")
-	temp.value = 80  # 85
+	temp.value = 78  # 85
 	
 
 	## TIER-4 ITEMS ##
@@ -1229,9 +1232,42 @@ func _ready()->void:
 	temp.text_key = "new_effect_on_hit"
 	
 	# Sharp Tooth
+	temp = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
+	temp_2 = load("res://items/sets/precise/precise_set_data.tres")
+	temp.sets.erase(temp_2)
+	temp = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_effect_0.tres")
+	temp.nb_stat_scaled = 20	# 25
+	temp = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_stats.tres")
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.6 ], [ "stat_lifesteal", 0.6 ] ]	# 0.5, 0.5
+	temp.cooldown = 33				# 35
+	
+	temp = load("res://weapons/melee/sharp_tooth/2/sharp_tooth_2_data.tres")
+	temp_2 = load("res://items/sets/precise/precise_set_data.tres")
+	temp.sets.erase(temp_2)
+	temp = load("res://weapons/melee/sharp_tooth/2/sharp_tooth_2_effect_0.tres")
+	temp.nb_stat_scaled = 17	# 20
+	temp = load("res://weapons/melee/sharp_tooth/2/sharp_tooth_2_stats.tres")
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.6 ], [ "stat_lifesteal", 0.7 ] ]	# 0.5, 0.65
+	temp.cooldown = 28				# 30
+	
+	temp = load("res://weapons/melee/sharp_tooth/3/sharp_tooth_3_data.tres")
+	temp_2 = load("res://items/sets/precise/precise_set_data.tres")
+	temp.sets.erase(temp_2)
+	temp = load("res://weapons/melee/sharp_tooth/3/sharp_tooth_3_effect_0.tres")
+	temp.nb_stat_scaled = 14	# 15
+	temp = load("res://weapons/melee/sharp_tooth/3/sharp_tooth_3_stats.tres")
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.6 ], [ "stat_lifesteal", 0.8 ] ]	# 0.5, 0.8
+	temp.cooldown = 23				# 25
+	
 	temp = load("res://weapons/melee/sharp_tooth/4/sharp_tooth_4_data.tres")
 	temp.value = 95			 # 105
-
+	temp_2 = load("res://items/sets/precise/precise_set_data.tres")
+	temp.sets.erase(temp_2)
+	temp = load("res://weapons/melee/sharp_tooth/4/sharp_tooth_4_stats.tres")
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.6 ], [ "stat_lifesteal", 1.0 ] ]	# 0.5, 1.0
+	temp.cooldown = 18				# 20
+	
+	
 	# Spear
 	temp = load("res://weapons/melee/spear/1/spear_stats.tres")
 	temp.max_range = 325 # 350
@@ -1370,6 +1406,8 @@ func _ready()->void:
 	temp.cooldown = 93			# 95
 	temp = load("res://weapons/ranged/laser_gun/4/laser_gun_4_data.tres")
 	temp.value = 111				#	122
+	temp = load("res://weapons/ranged/laser_gun/4/laser_gun_4_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 6.0 ] ]	# 5.0
 	
 	# Medical Gun
 	temp = load("res://weapons/ranged/medical_gun/1/medical_gun_stats.tres")
@@ -1988,6 +2026,9 @@ func _ready()->void:
 	temp = load("res://items/characters/crazy/crazy_data.tres")
 	temp_2 = load("res://weapons/ranged/crossbow/1/crossbow_data.tres")
 	temp.starting_weapons.push_back(temp_2)
+	# Remove
+	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
+	temp.starting_weapons.erase(temp_2)
 	
 	# Cyborg
 	temp = load("res://items/characters/cyborg/cyborg_data.tres")
@@ -2016,6 +2057,8 @@ func _ready()->void:
 	temp = load("res://items/characters/entrepreneur/entrepreneur_data.tres")
 	temp_2 = load("res://weapons/melee/screwdriver/1/screwdriver_data.tres")
 	temp.starting_weapons.insert(10, temp_2)
+	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	
 	# Explorer
 	temp = load("res://items/characters/explorer/explorer_data.tres")	
@@ -2079,7 +2122,6 @@ func _ready()->void:
 	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/melee/cactus_mace/1/cactus_mace_data.tres")
 	temp.starting_weapons.push_back(temp_2)	
-	### Testing ^^
 	
 	# Mutant
 	temp = load("res://items/characters/mutant/mutant_data.tres")
@@ -2140,6 +2182,9 @@ func _ready()->void:
 	temp = load("res://items/characters/vagabond/vagabond_data.tres")
 	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
 	temp.starting_weapons.push_back(temp_2)	
+	# Remove
+	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
+	temp.starting_weapons.erase(temp_2)
 	
 	# Vampire
 	temp = load("res://items/characters/vampire/vampire_data.tres")
