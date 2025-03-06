@@ -1406,8 +1406,6 @@ func _ready()->void:
 	temp.cooldown = 93			# 95
 	temp = load("res://weapons/ranged/laser_gun/4/laser_gun_4_data.tres")
 	temp.value = 111				#	122
-	temp = load("res://weapons/ranged/laser_gun/4/laser_gun_4_stats.tres")
-	temp.scaling_stats = [ [ "stat_ranged_damage", 6.0 ] ]	# 5.0
 	
 	# Medical Gun
 	temp = load("res://weapons/ranged/medical_gun/1/medical_gun_stats.tres")
@@ -1755,7 +1753,6 @@ func _ready()->void:
 	temp = load("res://items/characters/fisherman/fisherman_effect_0b.tres")
 	temp.value = 8		# 5 (HP)
 	
-	
 	# Gladiator
 	temp = load("res://items/characters/gladiator/gladiator_effect_5.tres")
 	temp.value = -40  # -30
@@ -2078,6 +2075,11 @@ func _ready()->void:
 	# Remove
 	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
 	temp.starting_weapons.erase(temp_2)
+	
+	# Golem
+	temp = load("res://items/characters/golem/golem_data.tres")
+	temp_2 = load("res://weapons/melee/fighting_stick/1/fighting_stick_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	
 	# Hunter
 	temp = load("res://items/characters/hunter/hunter_data.tres")

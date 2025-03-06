@@ -291,7 +291,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%
 - **Crossbow:** Range Scaling 10%(All) -> 9%/10%/11%/12%; Cooldown 1.13(All) -> 1.08/1.13/1.17/1.20; Range 350 -> 325 _[Lower initial cooldown helps its Wave 1-3 performance. Better scaling makes higher tiers actually worth building, while the worsening cooldown offsets this in a thematically appropriate way.]_
-- **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95 _[Allows 1 extra shot during Wave 1, so you're less behind when starting with it.]_; Tier-4 Ranged Damage Scaling 500% -> 600% _[Bugfix, this was accidentally reduced with the 1.1 update.]_
+- **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95 _[Allows 1 extra shot during Wave 1, so you're less behind when starting with it.]_
 - **Minigun:** Base Damage 1/3 -> 2/4; Now has 25%/35% Knockback Piercing (more effective against resistant enemies) _[Often a more-expensive but worse SMG in vanilla, this gives it some unique utility. Build additional Knockback to really notice the effect.]_
 - **Nuclear Launcher:** Cooldown 2.12 -> 2.20; Base Damage 60/120 -> 50/100; Range 800 -> 650; Ranged Scaling 100%/100% -> 125%/125%; Elemental Scaling 100%/100% -> 150%/150% _[Similar strength in Elemental builds, a touch weaker otherwise.]_
 - **Obliterator:** Projectile Hitbox Width +25%
@@ -402,6 +402,7 @@ _[The base game mostly implemented my tweaks here, but it still felt difficult f
 * **Explorer:** Added Medical Gun
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth
+* **Golem:** Added Quarterstaff
 * **Hunter:** Added Knife, Screwdriver
 * **Jack:** Removed Shuriken
 * **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle

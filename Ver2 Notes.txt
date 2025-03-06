@@ -390,8 +390,7 @@ Wave 19 could broadly be a little more Horde-like, to test those limits in a gua
 
 Flute could be retooled as a multi-projectile
 
-Try Mage-Cacti starter, Mage-Lute
-Golem-Quarterstaff
+Mage-Lute
 Chef-Slingshot? (thematic partial miss)
 Creature Spoon?
 Creature Crossbow?  (seems appropriate for kit but soft-miss theme)
@@ -450,9 +449,6 @@ Recycling Machine not tracking right, unsure if base or advstats (seems to be tr
 
 Add current amount of creature curse strength bonus to their tooltip if possible?
 
-maybe nerf Coral while it is bugged, or?
-
-
 possible Well-Rounded should have Ghost Axe, Mutant the Flint since Flint is cheaper?
 
 Could possibly have negative armor diminish faster, making a negative armor build more viable
@@ -465,3 +461,7 @@ harpoon tooltip mention the lower damage effect
 
 Possible other Sharp Tooth users: Mutant, Loud
 
+Cursed Blue Turrets still broken
+	^Caused by BalMod, I think -- but is inconsistent??  And it reverted the 33->35% chance, so the Cursed was actually worse?  huh
+
+Hand could have slightly lower range to be useable alongside other wepaons e.g. Fist more reasonably?
