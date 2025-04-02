@@ -394,6 +394,7 @@ Mage-Lute
 Chef-Slingshot? (thematic partial miss)
 Creature Spoon?
 Creature Crossbow?  (seems appropriate for kit but soft-miss theme)
+Hunter-Hatchet; maybe Ghost Flint
 
 
 look at builder internal ban tagging, currently nixes Improved Tools as it is tagged structure; Pile of Books should maybe be tagged struct but then gets banned on builder
@@ -465,3 +466,16 @@ Cursed Blue Turrets still broken
 	^Caused by BalMod, I think -- but is inconsistent??  And it reverted the 33->35% chance, so the Cursed was actually worse?  huh
 
 Hand could have slightly lower range to be useable alongside other wepaons e.g. Fist more reasonably?
+
+Builder-Blunder start?
+
+Wand may benefit interestingly from extra Knockback if it needs a buff
+
+Triangle may want to be Dodge instead of Armor
+
+~Giant Belt vs Silver Bullet comparison (w15, w20, 15/40/100 crit or so?)
+
+
+Wrench in Blunt set,
+Screwdriver in Explosive set
+Possibly Plank out of Elemental set

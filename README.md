@@ -47,7 +47,7 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 ### Characters
 As with items, the goal is not for characters to be equal strength. The focus is instead on making the easiest options less 'free', as well as tweaks to make decisions more interesting and characters more variable.
 
-* (DLC) Druid partially reworked to care more about poisoned fruit.
+* (DLC) Druid reworked to care more about poisoned fruit.
 * (DLC) Creature reworked to have stronger curses rather than weapon scaling.
 * Mage can better run an Engineering build (turrets + Sausage) and also handles Gun builds better (extra Sausage). Engineer can better combo with Elemental Damage.
 * Lucky and Speedy now care more about raising their thematic stats. Soldier cares more about Pickup Range.
@@ -60,7 +60,7 @@ As with items, the goal is not for characters to be equal strength. The focus is
 * (DLC) Pufferfish now spawn 4 projectiles when killed by melee (instead of 0).
 * (DLC) Stargazers are now stronger when you kill their Incubators first.
 * (DLC) Spider Crab Elite summons harder to deal with. Turtle Elite attacks sooner and is tankier.
-* (DLC) Guaranteed Seapigs now spawn on the Crash Zone map, letting you more easily get Curse.
+* (DLC) Guaranteed Seapigs now spawn on the Crash Zone map, letting you opt into Curse.
 * Hivemind/Colossus Elite slightly nerfed.
 * Mantis Elite tweaked to be more unique and slightly harder. Butcher Elite attacks are harder to run from.
 * Crash Zone: Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and helping enemy/material synergies. Wave 14/15 Horde Waves scarier.
@@ -91,6 +91,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Engineering** Tier-4: 5->6
 * **Crit Chance** Tier-4: 9->10
 * **Lifesteal** Tier-4: 4->5
+* **Dodge Tier-1: 3->4 [Dodge is very weak until you have a good amount of it, making it especially bad to invest in early; this helps counteract that some.]
 
 ## Items
 ### Tier-1
@@ -148,7 +149,6 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
 * **Ice Cube:** Price 50->47
-* **Incendiary Turret:** Price 40->42; Engineering Scaling 33% -> 35% _[Makes the rounding less abysmal.]_
 * **Leather Vest:** Price 45->47
 * **Little Frog:** Price 45->38; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
@@ -330,7 +330,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
-* **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered low-tier versions of the weapon you have equipped _[Very minor; removes completely useless weapons and makes swapping weapons slightly easier.]_
+* **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered lower-tier versions of the weapon you have equipped _[Very minor; removes completely useless weapons and makes swapping weapons slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
 * **Sick:** No longer favored to find Lifesteal items.
@@ -455,7 +455,7 @@ You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/
 
 # Thanks To
 Inschato, ArosRising, Hyphen-ated, Pasha, WL, Lady Lynn, and everyone else that's assisted with feedback, suggestions, or coding!
-Also thanks to Blobfish for being generally receptive to feedback, implementing many previous Balance Mod changes directly into the base game.
+Also thanks to Blobfish for being receptive to feedback, implementing many previous Balance Mod changes directly into the base game.
 
 # License
 You are free to use Balance Mod concepts & code with attribution. E.g. if you want to make a spin-off mod with only some changes, you are welcome to do so: just link back to the Balance Mod and/or to my Twitch stream.

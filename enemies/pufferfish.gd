@@ -11,6 +11,10 @@ func _ready()->void :
 	_death_shoot_projectiles_behavior.init(self)
 	_all_attack_behaviors.push_back(_death_shoot_projectiles_behavior)
 
+func respawn()->void :
+	.respawn()
+	shoot_projs_on_death = true
+	
 
 func _on_Hurtbox_area_entered(hitbox:Area2D)->void :
 

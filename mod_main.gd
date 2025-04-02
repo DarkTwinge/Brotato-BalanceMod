@@ -74,6 +74,9 @@ func _init(modLoader = ModLoader):
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
 	
+	# Tweak Incendiary Turret scaling -- causes crashes when hover Bull, Glutton character select
+####	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/burning_data.gd")
+	
 	# Load up new and fixed descriptions
 	ModLoaderMod.add_translation("res://mods-unpacked/DarkTwinge-BalanceMod/translations/BalanceMod.en.translation")
 	
@@ -441,10 +444,8 @@ func _ready()->void:
 	temp.value = 47		# 50
 	
 	# Incendiary Turret
-	temp = load("res://items/all/turret_flame/turret_flame_data.tres")
-	temp.value = 42		# 40
-	temp = load("res://entities/structures/turret/flame/flame_turret_stats.tres")
-	temp.scaling_stats = [ [ "stat_engineering", 0.35 ] ]  # 0.33
+##	temp = load("res://items/all/turret_flame/turret_flame_data.tres")
+##	temp.value = 42		# 40
 
 	temp = load("res://items/all/gambling_token/gambling_token_effect_1.tres")
 	temp.value = 9		# 8 (Dodge)
@@ -1667,6 +1668,10 @@ func _ready()->void:
 	temp = load("res://items/upgrades/lifesteal/4/lifesteal_4_effect.tres")
 	temp.value = 5	# 4
 	
+	# Dodge
+	temp = load("res://items/upgrades/dodge/1/dodge_effect.tres")
+	temp.value = 4	# 3	
+	
 
 	## CHARACTERS ##
 	# Baby
@@ -2042,6 +2047,8 @@ func _ready()->void:
 	temp_2 = load("res://weapons/ranged/shuriken/1/shuriken_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/melee/rock/1/rock_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
 	# Engineer

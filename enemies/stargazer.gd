@@ -7,8 +7,13 @@ onready var _on_triggered_movement_behavior = $OnTriggeredMovementBehavior
 
 var boost_args:BoostArgs = BoostArgs.new()
 
-func _ready():
-	var _e = entity_spawner.connect("enemy_spawned", self, "on_enemy_spawned")
+var _target_lung:IronLung
+
+
+func init(zone_min_pos:Vector2, zone_max_pos:Vector2, p_players_ref:Array = [], entity_spawner_ref = null)->void :
+	.init(zone_min_pos, zone_max_pos, p_players_ref, entity_spawner_ref)
+
+	var _e = entity_spawner_ref.connect("enemy_respawned", self, "on_enemy_respawned")
 	_on_triggered_movement_behavior.init(self)
 	##boost_args.hp_boost = 150
 	boost_args.hp_boost = 200
@@ -17,8 +22,22 @@ func _ready():
 	boost_args.speed_boost = 280
 
 
-func on_enemy_spawned(enemy:Entity)->void :
+func respawn()->void :
+	.respawn()
+	can_be_boosted = true
+
+	if _target_lung:
+		_target_lung.disconnect("became_full", self, "on_target_lung_became_full")
+		_target_lung.disconnect("died", self, "on_target_lung_died")
+		disconnect("died", _target_lung, "on_stargazer_died")
+
+	_target_lung = null
+	_movement_behavior.lung = null
+
+
+func on_enemy_respawned(enemy:Entity)->void :
 	if enemy is Enemy and is_instance_valid(enemy) and enemy.enemy_id == "iron_lung" and enemy.source_spawner == self:
+		_target_lung = enemy
 		_movement_behavior.add_lung(enemy)
 
 		var _e = enemy.connect("became_full", self, "on_target_lung_became_full")
@@ -42,9 +61,12 @@ func get_angry()->void :
 	_current_movement_behavior = _on_triggered_movement_behavior
 	can_be_boosted = true
 	if is_boosted and _boosted_args:
-		boost_args.hp_boost += _boosted_args.hp_boost
-		boost_args.damage_boost += _boosted_args.damage_boost
-		boost_args.speed_boost += _boosted_args.speed_boost
-	boost(boost_args)
+		_boosted_args.hp_boost += boost_args.hp_boost
+		_boosted_args.damage_boost += boost_args.damage_boost
+		_boosted_args.speed_boost += boost_args.speed_boost
+		boost(_boosted_args)
+	else :
+		boost(boost_args)
+
 	can_be_boosted = false
-	#SoundManager2D.play(angry_sound, global_position, 15, 0.1, true)
+	##SoundManager2D.play(angry_sound, global_position, 5, 0.1, true)
