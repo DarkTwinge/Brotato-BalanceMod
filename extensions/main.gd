@@ -1,13 +1,13 @@
 extends "res://main.gd"
 
 # Cyborg SFX on state change
-func _physics_process(_delta:float)->void :
-	if not _convert_stats_half_wave_proced and _wave_timer.time_left <= _wave_timer.wait_time / 2.0:
-		for player_index in RunData.get_player_count():
-			if RunData.get_player_effect("convert_stats_half_wave", player_index) != []:
-				var cyborg_swap_sfx = load("res://mods-unpacked/DarkTwinge-BalanceMod/sounds/cyborg.wav")
-				SoundManager.play(cyborg_swap_sfx, 0, 0, true)
-				break
+#func _physics_process(_delta:float)->void :
+#	if not _convert_stats_half_wave_proced and _wave_timer.time_left <= _wave_timer.wait_time / 2.0:
+#		for player_index in RunData.get_player_count():
+#			if RunData.get_player_effect("convert_stats_half_wave", player_index) != []:
+#				var cyborg_swap_sfx = load("res://mods-unpacked/DarkTwinge-BalanceMod/sounds/cyborg.wav")
+#				SoundManager.play(cyborg_swap_sfx, 0, 0, true)
+#				break
 	
 	## (Automatically executed anyway)
 	##._physics_process(_delta)
@@ -39,7 +39,7 @@ func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
 	##	return 
 
 	var pos:Vector2 = unit.global_position
-	var value:float = get_gold_value(entity_type, args, unit.stats.value, unit)
+	var value:float = get_gold_value(entity_type, args, unit.get_stats_value(), unit)
 	var gold_spread = clamp((value - 1) * 25, unit.stats.gold_spread, 200)
 	
 	# New behavior: Each mat is rolled independantly

@@ -16,6 +16,7 @@ radius = 36.0139
 radius = 27.0185
 
 [node name="Enemy" instance=ExtResource( 2 )]
+enemy_id = "vampire_squid"
 
 [node name="Sprite" parent="Animation" index="0"]
 position = Vector2( -2, -6 )
@@ -43,7 +44,7 @@ projectile_speed = 300
 projectile_speed_randomization = 0
 speed_change_after_each_projectile = 0
 cooldown = 10.0
-initial_cooldown = 53
+initial_cooldown = 51
 max_cd_randomization = 0
 long_cooldown_every_x_shoots = 4
 long_cooldown = 90

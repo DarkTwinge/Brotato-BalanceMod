@@ -3,7 +3,7 @@ extends "res://singletons/progress_data.gd"
 const BM_DIR_DLCE = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/dlcs/dlc_1/"
 
 ### ALL BASELINE DLC CHANGES ###
-func add_all_dlcs()->void :
+func check_for_available_dlcs()->void :
 	# Checks if the DLC exists before loading script extensions
 	if File.new().file_exists("res://dlcs/dlc_1/dlc_data.tres"):
 		# Curse adjustments
@@ -11,7 +11,7 @@ func add_all_dlcs()->void :
 		ModLoaderMod.install_script_extension(BM_DIR_DLCE + "dlc_1_data.gd")
 	
 	# Run the normal function to load DLCs
-	.add_all_dlcs()
+	.check_for_available_dlcs()
 	
 	# Checks if DLC is available and loaded before replacing any DLC data
 	if ProgressData.is_dlc_available("abyssal_terrors"):
@@ -63,7 +63,7 @@ func add_all_dlcs()->void :
 		temp.speed = 115											# 100
 		
 		temp = load("res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid_stats.tres")
-		temp.health_increase_each_wave = 6.0	# 5.0
+		temp.health_increase_each_wave = 6.5	# 5.0
 
 		temp = load("res://dlcs/dlc_1/enemies/goblin_shark/goblin_shark_stats.tres")
 		temp.base_drop_chance = 0.02					# 0.01
@@ -126,7 +126,7 @@ func add_all_dlcs()->void :
 		
 		# Vamp Squid
 		temp = load("res://dlcs/dlc_1/zones/abyss/017/unit_1.tres")
-		temp.additional_min_distance_from_player = 100.0		# 0.0
+		temp.additional_min_distance_from_player = 120.0		# 0.0
 		
 		### ITEMS ###
 		# Items: Tier-1 #

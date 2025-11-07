@@ -1,7 +1,7 @@
 {
 	"name": "BalanceMod",
 	"namespace": "DarkTwinge",
-	"version_number": "2.5.0",
+	"version_number": "2.6.1",
 	"description": "A full overhaul offering a more balanced & varied experience while still feeling like the vanilla game.",
 	"website_url": "https://www.twitch.tv/darktwinge",
 	"dependencies": [
@@ -12,7 +12,7 @@
 			],
 			"authors": ["DarkTwinge"],
 			"compatible_mod_loader_version": ["6.0.0"],
-			"compatible_game_version": ["1.1.10.0"],
+			"compatible_game_version": ["1.1.13.0"],
 			"config_defaults": {}
 		}
 	}

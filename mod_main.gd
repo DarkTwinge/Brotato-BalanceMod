@@ -659,7 +659,7 @@ func _ready()->void:
 	temp.value = 27		# 15 (Range)
 
 	temp = load("res://items/all/power_generator/power_generator_data.tres")
-	temp.value = 60		# 65
+	temp.value = 58		# 65
 	temp_2 = load("res://items/all/power_generator/power_generator_effect_2.tres")
 	temp.effects.erase(temp_2) # Remove -Damage%
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/power_generator_2_max_hp_malus.tres")
@@ -1420,13 +1420,13 @@ func _ready()->void:
 
 	# Minigun
 	temp = load("res://weapons/ranged/minigun/3/minigun_3_data.tres")
-	temp.value = 122				# 127
+	temp.value = 108				# 127
 	temp = load("res://weapons/ranged/minigun/3/minigun_3_stats.tres")
 	temp.accuracy = 0.8			# 0.85
 	temp.damage = 2					# 1
 	temp.knockback_piercing = 0.25	# 0
 	temp = load("res://weapons/ranged/minigun/4/minigun_4_data.tres")
-	temp.value = 218				# 255
+	temp.value = 191				# 255
 	temp = load("res://weapons/ranged/minigun/4/minigun_4_stats.tres")
 	temp.damage = 4					# 3
 	temp.knockback_piercing = 0.35	# 0

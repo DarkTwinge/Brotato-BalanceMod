@@ -52,5 +52,6 @@ func on_consumable_picked_up(consumable_data:ConsumableData)->void :
 			if Utils.get_chance_success(effect_chance / 100.0):
 				RunData.add_stat(stat_name, stat_value, player_index)
 				RunData.add_tracked_value(player_index, "character_druid", stat_value)
-
-	RunData.emit_stats_updated()
+	
+	# No longer used?
+	##RunData.emit_stats_updated()

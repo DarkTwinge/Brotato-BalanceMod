@@ -20,6 +20,7 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 		var max_weapon_tier = RunData.get_player_effect("max_weapon_tier", player_index)
 		item_tier = clamp(item_tier, min_weapon_tier, max_weapon_tier)
 
+	var banned_items = RunData.players_data[player_index].banned_items
 	var pool = get_pool(item_tier, type)
 	var backup_pool = get_pool(item_tier, type)
 	var items_to_remove = []
@@ -27,10 +28,16 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 	var is_a_set_pick = false
 	var held_weapons = RunData.get_player_weapons(player_index)
 	##
+
+	if banned_items.size() > 0:
+		for item_id in banned_items:
+			pool = remove_element_by_id(pool, item_id)
+			backup_pool = remove_element_by_id(backup_pool, item_id)
+
 	
 	for shop_item in args.excluded_items:
-		pool = remove_element_by_id(pool, shop_item[0])
-		backup_pool = remove_element_by_id(pool, shop_item[0])
+		pool = remove_element_by_id_with_item(pool, shop_item[0])
+		backup_pool = remove_element_by_id_with_item(pool, shop_item[0])
 
 	if type == TierData.WEAPONS:
 		var bonus_chance_same_weapon_set = max(0, (MAX_WAVE_ONE_WEAPON_GUARANTEED + 1 - RunData.current_wave) * (BONUS_CHANCE_SAME_WEAPON_SET / MAX_WAVE_ONE_WEAPON_GUARANTEED))
@@ -79,12 +86,12 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 
 		for item in pool:
 			if no_melee_weapons and item.type == WeaponType.MELEE:
-				backup_pool = remove_element_by_id(backup_pool, item)
+				backup_pool = remove_element_by_id_with_item(backup_pool, item)
 				items_to_remove.push_back(item)
 				continue
 
 			if no_ranged_weapons and item.type == WeaponType.RANGED:
-				backup_pool = remove_element_by_id(backup_pool, item)
+				backup_pool = remove_element_by_id_with_item(backup_pool, item)
 				items_to_remove.push_back(item)
 				continue
 
@@ -92,17 +99,17 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 				for weapon in unique_weapon_ids.values():
 					
 					if item.weapon_id == weapon.weapon_id and item.tier < weapon.tier:
-						backup_pool = remove_element_by_id(backup_pool, item)
+						backup_pool = remove_element_by_id_with_item(backup_pool, item)
 						items_to_remove.push_back(item)
 						break
 
 					elif item.my_id == weapon.my_id and weapon.upgrades_into == null:
-						backup_pool = remove_element_by_id(backup_pool, item)
+						backup_pool = remove_element_by_id_with_item(backup_pool, item)
 						items_to_remove.push_back(item)
 						break
 
 			if no_structures and EntityService.is_weapon_spawning_structure(item):
-				backup_pool = remove_element_by_id(backup_pool, item)
+				backup_pool = remove_element_by_id_with_item(backup_pool, item)
 				items_to_remove.append(item)
 
 			###
@@ -160,16 +167,22 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 				for item in pool:
 					if player_character.banned_items.has(item.my_id):
 						items_to_remove.append(item)
+		else :
+			
+			for item in pool:
+				if banned_items_for_endless.has(item.my_id):
+					items_to_remove.append(item)
+
 
 	var limited_items = get_limited_items(args.owned_and_shop_items)
 
 	for key in limited_items:
 		if limited_items[key][1] >= limited_items[key][0].max_nb:
-			backup_pool = remove_element_by_id(backup_pool, limited_items[key][0])
+			backup_pool = remove_element_by_id_with_item(backup_pool, limited_items[key][0])
 			items_to_remove.push_back(limited_items[key][0])
 
 	for item in items_to_remove:
-		pool = remove_element_by_id(pool, item)
+		pool = remove_element_by_id_with_item(pool, item)
 
 	### Replace original pool of only-set items with new weighted pool
 	if is_a_set_pick == true:
@@ -227,7 +240,7 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 	if DebugService.force_item_in_shop != "" and randf() < 0.5:
 		elt = get_element(items, DebugService.force_item_in_shop)
 	
-	if elt.my_id == "item_axolotl" and elt.effects.size() > 0 and "stats_swapped" in elt.effects[0]:
+	if elt != null and elt.my_id == "item_axolotl" and elt.effects.size() > 0 and "stats_swapped" in elt.effects[0]:
 		elt.effects[0].stats_swapped = []
 		
 	return apply_item_effect_modifications(elt, player_index)

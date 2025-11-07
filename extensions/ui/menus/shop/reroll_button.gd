@@ -1,16 +1,18 @@
 extends "res://ui/menus/shop/reroll_button.gd"
 
-# Default level to 1 so the shop's reroll button stays normal
-func init(value:int, player_index:int, level:int=1)->void :
+# 
+func init(value:int, player_index:int)->void :
 	.init(value, player_index)
+	
+	var player_level = _wl_get_upgrade_level()
 
 	# Set the color of the reroll button to indicate the reroll will have a guaranteed rarity
 	var tier = 0
-	if level == 5:
+	if player_level == 5:
 		tier = Tier.UNCOMMON
-	elif level == 10 or level == 15 or level == 20:
+	elif player_level == 10 or player_level == 15 or player_level == 20:
 		tier = Tier.RARE
-	elif level % 5 == 0:
+	elif player_level >= 25 and player_level % 5 == 0:
 		tier = Tier.LEGENDARY
 	
 	if tier > 0:
@@ -24,3 +26,13 @@ func init(value:int, player_index:int, level:int=1)->void :
 		add_stylebox_override("normal", stylebox_color)
 	else:
 		remove_stylebox_override("normal")
+		
+
+# Stealing WL's level-grab solution to help compatability
+func _wl_get_upgrade_level() -> int:
+	var node = self
+	while !node.get("_level"):
+		node = node.get_parent()
+		if node == null:
+			return 0
+	return node._level

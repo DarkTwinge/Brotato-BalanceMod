@@ -479,3 +479,32 @@ Triangle may want to be Dodge instead of Armor
 Wrench in Blunt set,
 Screwdriver in Explosive set
 Possibly Plank out of Elemental set
+
+
+Tier-1/Tier-4 text blurbs could be color-coded for the color of the item tiers
+
+Riposte could reset melee weapon cooldowns on dodge instead?  (would be Tier 3 or 4 then probably and might need some minus stats, but cute idea)
+
+Co-op bugs: mid-wave crashes, buying Bone Dice?
+
+conflicts with Improved Tooltips
+"I believe the incompatibility with Improved Tooltips can easily be solved. DarkTwinge is changing the function signature of the init function which means nothing else can ever extend the reroll button. Creating a member variable and setting it instead should make it work." -wl
+
+"I'm getting failures to load mods while launching with this installed sometimes. Restarting usually fixes it though. Modlist is BalanceMod, CurseIndicator, SmartPickupRadius and SortedInventory"
+
+Proton/Linux -- should be same version, but doing the thing where it fails to load properly every other time
+
+Sickle showed up for Hyph on a Demon run (Sickle IV but colored white)
+
+
+Will'o'Wisp -- Why? Snowball also exists??
+Snowball idea: When you obtain Melee or Ranged Damage, also gain +1 Elemental
+and/or: Ice Cube could be a higher amount (25%?), but only apply the damage increase to non-Elemental
+
+cursed pile of books should maybe not be triple stats since the base is higher
+
+Gobbler may want to take longer to switch to phase 2? more HP in phase 3?
+
+Chameleon could do with a rework to not be Dodge probably
+
+Pufferfish Codex descript should specify melee difference?

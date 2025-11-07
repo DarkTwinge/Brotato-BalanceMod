@@ -6,11 +6,11 @@ func show_upgrades_for_level(level:int)->void :
 		var result = ItemService.get_reroll_price(RunData.current_wave, _reroll_count, player_index)
 		_reroll_price = result[0]
 		_reroll_discount = result[1]
-	### Pass in level so the button can highlight if it's guaranteed rarity
-	_reroll_button.init(_reroll_price, player_index, level)
-	##
-	
+	### Move this above the init call instead of below, so it is updated in time to be accurate
 	_level = level
+	##
+	_reroll_button.init(_reroll_price, player_index)
+	
 	var upgrades = ItemService.get_upgrades(level, 4, _old_upgrades, player_index)
 	_old_upgrades = upgrades
 
