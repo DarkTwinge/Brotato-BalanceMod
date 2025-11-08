@@ -338,8 +338,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2
 * **Streamer:** Now also favored to find Stand-still items.
 * **Wildling:** No longer starts with a Stick.
-
-_[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
+* _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
 * **Captain:** No longer favored to find XP Gain items.
 * **Chef:** Can no longer be offered Eyes Surgery.
@@ -369,8 +368,7 @@ _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those charact
 + **Tall Armored Bruiser:** Knockback Resistance 90% -> 87%
 + **Hatched Slasher:** Knockback Resistance 90% -> 87%
 + **Lamprey Fish:** Knockback Resistance 95% -> 93%
-
-_[The base game mostly implemented my knockback tweaks, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
++ _[The base game mostly implemented my knockback tweaks, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
 + **Stargazer:** Base Speed 100 -> 115; Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 280%; SFX is now louder and always plays when a vat is entered (but not when you just destroy a vat) _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
