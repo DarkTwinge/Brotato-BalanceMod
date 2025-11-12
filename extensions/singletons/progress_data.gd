@@ -32,6 +32,8 @@ func check_for_available_dlcs()->void :
 		Text.keys_needing_operator.new_effect_loot_alien_chance = [0]
 		Text.keys_needing_percent.new_sf_effect_bonus_damage_against_targets_above_hp = [0, 2]
 		Text.keys_needing_operator.new_sf_effect_bonus_damage_against_targets_above_hp = [0]
+		Text.keys_needing_percent.new_effect_charm_below_hp = [0, 1]
+		Text.keys_needing_percent.new_effect_charm_below_hp_no_scaling = [0, 1]
 		
 
 		### ENEMIES ###
@@ -195,7 +197,7 @@ func check_for_available_dlcs()->void :
 		temp.value = 15   # 23
 
 		temp = load("res://dlcs/dlc_1/items/starfish/starfish_data.tres")
-		temp.value = 70		# 75
+		temp.value = 68		# 75
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
 		temp.value = 42		# 65
@@ -337,6 +339,15 @@ func check_for_available_dlcs()->void :
 		temp.value = 81					# 80
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/4/flute_4_data.tres")
 		temp.value = 150				# 165
+
+		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_effect_0.tres")
+		temp.text_key = "new_effect_charm_below_hp_no_scaling"
+		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/2/flute_2_effect_0.tres")
+		temp.text_key = "new_effect_charm_below_hp_no_scaling"
+		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/3/flute_3_effect_0.tres")
+		temp.text_key = "new_effect_charm_below_hp_no_scaling"
+		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/4/flute_4_effect_0.tres")
+		temp.text_key = "new_effect_charm_below_hp_no_scaling"
 		
 		# Grenade Launcher
 		temp = load("res://dlcs/dlc_1/weapons/ranged/grenade_launcher/2/grenade_launcher_2_effect_0.tres")
@@ -385,6 +396,8 @@ func check_for_available_dlcs()->void :
 		temp.effects.erase(temp_2)		# Removes weapon curse scaling
 		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/creature_more-curse.tres")
 		temp.effects.insert(0,temp_2)	# Text description of new ability, which is based on being the Creature Character
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/creature_descript-curse-rolls.tres")
+		temp.effects.insert(1,temp_2)
 		
 		temp = load("res://dlcs/dlc_1/characters/creature/effects/creature_effect_3.tres")
 		temp.text_key = "new_effect_gain_stat_end_of_wave"
@@ -479,6 +492,8 @@ func check_for_available_dlcs()->void :
 		
 		temp = load("res://dlcs/dlc_1/characters/romantic/effects/romantic_effect_2.tres")
 		temp.text_key = "new_effect_gain_stat_end_of_wave"
+		temp = load("res://dlcs/dlc_1/characters/romantic/effects/romantic_effect_0.tres")
+		temp.text_key = "new_effect_charm_below_hp"
 		temp = load("res://dlcs/dlc_1/characters/romantic/romantic_data.tres")
 		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
 		temp.effects.append(temp_2)		

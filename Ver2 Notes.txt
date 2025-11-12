@@ -80,6 +80,9 @@ Streamer - Brick
 Technomage - Spoon??
 
 ~~~
+BalMod SMG breakpoints: 1-26-51-67
+
+~~~
 reconsider jousting lance (tho Blob already nerfed it a fair bit)
 sharp bullet giving -Range is an idea
 maybe add a few mummy spawns to the edge on wave 20 to further emphasize knockback value?
@@ -311,8 +314,7 @@ Pile of Books tagged Engeering instead of Structure, which is better for builder
 
 potentiall up wave 5 abyss boss hp slightly?  what's the comparison with Crash? [Looks like CZ has a little less HP]
 
-possibly reduce curse impact on some really big things, e.g. make curse lower the min cooldown on Ball & Chain less?
-
+possibly reduce curse impact on some other really big things?
 
 
 Hiking Poles might want to be slightly cheaper (17->16 path).  A weird-cute idea would be worse base Range as it levels up, which is *probably* an advantage (tho probably makes them mix with other weapons even worse).  Could also see smoothing out the progression a litte, so tier-1s are 65 instead of 70 or whatever, or even 60
@@ -326,8 +328,6 @@ Ball & Chain could change the color of cooldown on weapons when at cap?
 Gangster could count value of stolen items in their tooltip
 
 Megalodon elite could have slightly lower HP?
-
-Cursed Relic base bonus Dodge a bit lower, maybe 7 instead of 10
 
 Bosses could have +0.1% HP per Curse perhaps
 
@@ -379,8 +379,6 @@ do the penguin switch (+2 regen per, 0 base, limit 2?)
 
 modest rework of wildling?
 
-maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
-	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?
 	
 Red Sticks oculd drop damasge per Stick by 1 and add +5 base damage, making it easier to switch out of
 
@@ -416,8 +414,6 @@ Spyglass should specify both shop and level-ups maybe?
 Goldfish should clarify doesn't affect locked
 
 
-Sick doesn't necessarily need Tardigrade banned now (maybe wait for full Tardigrade fix tho to ignore all self-damage?)
-
 
 does sunken bell crit
 	sunken bell could give flat hp?
@@ -438,7 +434,6 @@ Bull doesn't proc Ice Cube
 
 ~~"Melee" attack for Blobfish (and Puffer?), sometimes counts from a turret and sometimes not, at least for Blue; might be the direct hit vs the burn?
 
-sharp tooth is *probably* just bad and needs a bit of a rework?  (Thinking remove Precise; could either look at short range fast attacking, or similar speed but longer range; maybe cheaper, maybe less atrocious low-tiers?  Any way for it to make better sense as an add-in than solo weapon?)
 
 Could be cute to have an 8-hit-rule (like Trees) for Eggs and Iron Lungs, so that pacifist builds could destroy them
 
@@ -469,7 +464,7 @@ Hand could have slightly lower range to be useable alongside other wepaons e.g. 
 
 Builder-Blunder start?
 
-Wand may benefit interestingly from extra Knockback if it needs a buff
+Wand may benefit interestingly from extra Knockback if it needs a small buff
 
 Triangle may want to be Dodge instead of Armor
 
@@ -487,18 +482,11 @@ Riposte could reset melee weapon cooldowns on dodge instead?  (would be Tier 3 o
 
 Co-op bugs: mid-wave crashes, buying Bone Dice?
 
-conflicts with Improved Tooltips
-"I believe the incompatibility with Improved Tooltips can easily be solved. DarkTwinge is changing the function signature of the init function which means nothing else can ever extend the reroll button. Creating a member variable and setting it instead should make it work." -wl
-
-"I'm getting failures to load mods while launching with this installed sometimes. Restarting usually fixes it though. Modlist is BalanceMod, CurseIndicator, SmartPickupRadius and SortedInventory"
-
-Proton/Linux -- should be same version, but doing the thing where it fails to load properly every other time
-
 Sickle showed up for Hyph on a Demon run (Sickle IV but colored white)
 
 
 Will'o'Wisp -- Why? Snowball also exists??
-Snowball idea: When you obtain Melee or Ranged Damage, also gain +1 Elemental
+Snowball idea: When you obtain Melee or Ranged Damage, also gain +1 (+2?) Elemental
 and/or: Ice Cube could be a higher amount (25%?), but only apply the damage increase to non-Elemental
 
 cursed pile of books should maybe not be triple stats since the base is higher
@@ -508,3 +496,42 @@ Gobbler may want to take longer to switch to phase 2? more HP in phase 3?
 Chameleon could do with a rework to not be Dodge probably
 
 Pufferfish Codex descript should specify melee difference?
+
+
+base sale for weapons could be +5/10% to more encourage mixed weapons
+Mastery downside is relevant for how few things? Harpoon Gun, Baby, Generalist, Arms Dealer, rarely Vagabond/Multitasker?
+
+
+
+Goes into 3rd row of weapons: Multitasker, King
+	if don't reduce their counts, maybe re-add revolver for multi
+Streamer almost wants 3 more starters to go 2nd row full?
+
+
+clarify druid's "higher chance" in descript if possible?
+
+Explorer text - MANY more trees spawn [cryptid too assumedly]
+Fruit Basket - clarify after missing the normal check (based on Luck), you have a {1}% chance to drop a fruit
+
+King -- bottom bit is cut off; but shortening text seems kinda rough
+
+Reported:
+UI - Technomage opnly shows 1 turret when they start with 2
+End screen indexing bug for controller
+
+Sunken Bell - look at HP for highest HP enemies; cursed/uncursed; it really should one-shot almost anything that kills you as long as you built decent damage?  Or maybe re-tooled to do 999999(?) damage to non-bosses in the radius instead of even scaling with anything?  Or could it give extra iframes?
+
+Revisit maknig Tardigrade specifically ignore self-damage instead of '1 damage'
+	maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
+	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?
+Sick doesn't necessarily need Tardigrade banned now (maybe wait for full Tardigrade fix tho to ignore all self-damage?)
+
+weird that the dodge cap for cursed ghost costume is unaffected by curse strength
+
+
+
+
+Tiny Auto Knights
+confirm when merging two units that are already on the board? (could be an option)
+rarity hover tooltip doesn't work while picking relics
+

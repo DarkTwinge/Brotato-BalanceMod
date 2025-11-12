@@ -214,18 +214,19 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Strange Book:** Price 70->60
 * **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
-* **Tyler:** Price 75->68; Range 200 -> 215; Engineering & Elemental Scaling 75% -> 80%
+* **Tyler:** Price 75->68; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 80%
 * **Vigilante Ring:** Price 92->75
 * **Wandering Bot:** Price 60->40
 * **Wheat:** Price 85->82; Harvesting 10 -> 14
 * **Wings:** Range 30 -> 33
 * **Wisdom:** Price 85->78
 #### DLC
+* **Ball and Chain (Cursed):** Weapon Cooldown Floor ~0.35s -> ~0.5s
 * **Crystal:** Price 65->55; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
 * **Goblet:** Price 70->75
 * **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Price 70->53; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
-* **Starfish:** Price 75->70
+* **Starfish:** Price 75->68
 * **Sunken Bell:** Price 65->42; Explosion Size 600% -> 750%
 
 ### Tier-4
@@ -236,6 +237,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
 * **Heavy Bullets:** Price 100->95; +10 Range --> +5% Crit Chance; -5% Crit Chance --> -25% Accuracy; (Replaced 'Range' tag with 'Crit Chance') _[The Ranged Weapons section below also covers some Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
+* **Hourglass:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
 * **Jet Pack:** Price 100->92; HP -5 -> -3
 * **Lucky Coin:** Price: 105->70; Armor -2 -> -1
 * **Mammoth:** Price 110->115; Melee Damage 20 -> 17; HP Regen 5 -> 4; Speed -3% -> -5%
@@ -251,6 +253,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 #### DLC
 * **Kraken's Eye:** Price 110->90
+* **Sifd's Relic (Cursed):** Base Additional Dodge 10% -> 5% _[The Armor increasing from Curse is already strong, so the additional Dodge is now a still solid ~9% instead of bananas ~18%.]_
 
 ## Weapons
 ### Set Bonuses
@@ -415,7 +418,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Saver:** Added Stick, Torch
 * **Sick:** Added Chopper
 * **Soldier:** Added Medical Gun
-* **Vagabond:** Added Medical Gun; Removed Sharp Tooth (as it is now only one-Set)
+* **Vagabond:** Added Medical Gun; Removed Sharp Tooth (as it now only has one Set)
 * **Vampire:** Added Cacti Club
 * **Wildling:** Removed Sharp Tooth _[Doesn't benefit from Wildling's ability.]_
 #### DLC

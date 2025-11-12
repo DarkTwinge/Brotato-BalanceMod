@@ -96,6 +96,7 @@ func _ready()->void:
 	Text.keys_needing_operator.new_effect_item_box_gold = [0]
 	Text.keys_needing_operator.new_effect_on_hit = [0]
 	Text.keys_needing_operator.new_effect_gain_stat_end_of_wave = [0]
+	Text.keys_needing_operator.new_effect_temp_stat_on_dodge = [0]
 	Text.keys_needing_percent.new_effect_damage_against_bosses = [0]
 	Text.keys_needing_percent.new_effect_burn_chance = [0]
 	Text.keys_needing_percent.effect_bounce_damage = [0]
@@ -114,6 +115,7 @@ func _ready()->void:
 	Text.keys_needing_percent.new_info_neg_stat_luck = [0] 
 	Text.keys_needing_percent.new_info_pos_stat_armor = [0] 
 	Text.keys_needing_percent.new_info_neg_stat_armor = [0]
+	
 	
 	# New effects
 	Text.keys_needing_percent.bm_non_elemental_reduce_stat_gains = [1]
@@ -708,7 +710,7 @@ func _ready()->void:
 	temp = load("res://items/all/tyler/tyler_data.tres")
 	temp.value = 68				# 75
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
-	temp.max_range = 215	# 200
+	temp.max_range = 225	# 200
 	temp.scaling_stats = [ [ "stat_engineering", 0.8 ], [ "stat_elemental_damage", 0.8 ] ]	# 0.75, 0.75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
@@ -733,6 +735,12 @@ func _ready()->void:
 	# Big Arms
 	temp = load("res://items/all/big_arms/big_arms_data.tres")
 	temp.value = 98  # 105
+	
+	# Hourglass
+	temp = load("res://items/all/hourglass/hourglass_effect_2.tres")
+	temp.value = -90	# -100  !!! If changed, also change in dlc_1_data
+	temp.effect_sign = 3 # 1
+	temp.text_key = "BM_EFFECT_HP_START_NEXT_WAVE"	
 	
 	# Diploma
 	temp = load("res://items/all/diploma/diploma_effect_2.tres")
@@ -1713,6 +1721,9 @@ func _ready()->void:
 	# Cryptid
 	temp = load("res://items/characters/cryptid/cryptid_effect_1.tres")
 	temp.value = 11 # 12 (Harvesting per Tree)
+	temp.text_key = "new_effect_cryptid"
+	temp = load("res://items/characters/cryptid/cryptid_effect_3.tres")
+	temp.text_key = "new_effect_temp_stat_on_dodge"
 
 	# Demon
 	temp = load("res://items/characters/demon/demon_effect_1.tres")
@@ -1807,10 +1818,10 @@ func _ready()->void:
 	temp_2 = load("res://items/characters/mage/mage_effect_8.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.push_back(temp_2) # Re-order penalties so Engineering is shown first
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/mage_descript_extra_sausage.tres")
+	temp.effects.push_back(temp_2)
 	temp = load("res://items/characters/mage/mage_effect_9.tres")
 	temp.value = -33   # -50 (Engineering Modifications)
-	temp = load("res://items/characters/mage/mage_effect_3b.tres")
-	temp.text_key = "new_sausage_effect_starting_item"
 	
 	# Masochist
 	temp = load("res://items/characters/masochist/masochist_effect_3.tres")
@@ -1825,9 +1836,8 @@ func _ready()->void:
 	temp.value = -60  # -66 (XP Needed for Level-up)
 
 	# One-armed
-	temp = load("res://items/characters/one_arm/one_arm_effect_3.tres")
-	temp.text_key = "NEW_EFFECT_ONE_WEAPON_SLOT_LIMIT"
 	temp = load("res://items/characters/one_arm/one_arm_data.tres")
+	# Provides the description text for the set-bonus effect (which is hard-coded) and has no description included for this effect itself because it is so minor
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/one-arm_no_dupe_weps.tres")
 	temp.effects.push_back(temp_2)
 	

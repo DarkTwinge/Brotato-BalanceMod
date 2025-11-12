@@ -1,8 +1,10 @@
 extends "res://dlcs/dlc_1/dlc_1_data.gd"
 
 func curse_item(item_data:ItemParentData, player_index:int, turn_randomization_off:bool = false, min_modifier:float = 0.0)->ItemParentData:
-	
-	# Hijack global variable to transfer info into _get_cursed_item_effect_modifier
+	# Reduces extra base dodge when it gets cursed, was 10
+	sifds_relic_dodge = 5
+
+	# Hijack global variable to transfer info into _get_cursed_item_effect_modifier	
 	RunData.bm_player_index = player_index
 	var orig_result = .curse_item(item_data, player_index, turn_randomization_off, min_modifier)
 	RunData.bm_player_index = 0
@@ -35,6 +37,15 @@ func curse_item(item_data:ItemParentData, player_index:int, turn_randomization_o
 			var overriden_sign = Sign.POSITIVE
 			var effect_modifier: = _get_cursed_item_effect_modifier(turn_randomization_off, min_modifier)
 			effect_modifier = effect_modifier * 0.5
+			var max_effect_modifier = max(0.0, effect_modifier)
+			effect.value = _boost_effect_value_positively(effect, max_effect_modifier, override, overriden_sign)
+		# Ball & Chain's minimum weapon cooldown floors around 0.5 instead of 0.35 now
+		elif effect.key == "minimum_weapon_cooldowns" and item_data.my_id == "item_ball_and_chain":
+			effect.value = 45		# Reset to base value
+			var override = false
+			var overriden_sign = Sign.POSITIVE
+			var effect_modifier: = _get_cursed_item_effect_modifier(turn_randomization_off, min_modifier)
+			effect_modifier = effect_modifier * 0.45
 			var max_effect_modifier = max(0.0, effect_modifier)
 			effect.value = _boost_effect_value_positively(effect, max_effect_modifier, override, overriden_sign)
 		

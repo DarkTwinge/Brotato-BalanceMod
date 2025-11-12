@@ -1,7 +1,7 @@
 key,en
 NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT,{0} {1} for every {2} [color=#ffae40]different[/color] {3}[color=#00ff00]s[/color] you have [{4}]
 NEW_EFFECT_BURN_CHANCE,Attacks have a {0} chance to deal {1}x{2} ({3}) burning damage\nEffects that already burn get +1 burn damage
-NEW_EFFECT_ONE_WEAPON_SLOT_LIMIT,You can only equip one weapon at a time\nYou have a [color=#00ff00]4-Set Bonus[/color] for the weapon you have equipped (excluding Legendary’s penalty)
+BM_EFFECT_ONE_ARMED_SET_BONUS,You have a [color=#00ff00]4-Set Bonus[/color] for the weapon you have equipped (excluding Legendary’s penalty)
 NEW_INFO_POS_STAT_RANGE,The max range of your weapons is increased by {0}. Half as effective on melee weapons. (Higher range also slightly increases cooldown of melee weapons because of the travel distance.)
 NEW_INFO_NEG_STAT_RANGE,The max range of your weapons is reduced by {0}. Half as effective on melee weapons. (Lower range also slightly decreases cooldown of melee weapons because of the travel distance.)
 NEW_INFO_POS_STAT_ARMOR,You take {0} less damage. (+6.25% Effective HP per point of armor.)
@@ -30,7 +30,7 @@ NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapo
 NEW_EFFECT_BOUNCING_PLURAL,Your projectiles gain {0} bounces.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage; Non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
 NEW_EFFECT_GARDEN,Spawns a garden that creates a fruit an average of every {0} seconds
 NEW_EFFECT_DAMAGE_AGAINST_BOSSES,{0} damage against bosses and elites (multiplicative)
-NEW_SAUSAGE_EFFECT_STARTING_ITEM,You start with {0} {1} ([color=#00ff00]2[/color] when starting with non-Elemental)
+BM_MAGE_DESCRIPT_EXTRA_SAUSAGE,You start with an additional [color=#00ff00]Scared Sausage[/color] when starting with a non-Elemental weapon
 BM_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS,{0} {1} for every [color=#ffae40]different[/color] Tier IV weapon you have [{2}]
 NEW_EFFECT_REDUCE_STAT_GAINS,{0} reduced by {1}
 NEW_EFFECT_REDUCE_STAT_GAINS_ALL,"All {0} modifications reduced by {1}"
@@ -87,5 +87,9 @@ BM_MAX_ENEMY_LIMIT,"{0} Enemy Limit\n(Base cap: 100 enemies before despawning.)"
 BM_ITEM_STRUCTURE,"Item: Structure"
 BM_UNIQUE_STRUCTURE,"Unique Structure"
 BM_EFFECT_HP_START_NEXT_WAVE,"{0} Starting HP next wave"
-BM_BLANK," "
-BM_EFFECT_CREATURE_MORE_CURSE,"Strength of cursed equipment scales with [color=#ca61ff]Curse[/color] stat (10 Curse: +7%; 50: +17%; 200: +37%)\nMinimum curse rolls are +10% higher"
+BM_EFFECT_CREATURE_MORE_CURSE,"Strength of cursed equipment scales with [color=#ca61ff]Curse[/color] stat (10 Curse: +7%; 50: +17%; 200: +37%)"
+BM_EFFECT_CREATURE_MIN_CURSE_ROLL,"Minimum curse rolls are +10% higher (-20% to +30%)"
+NEW_EFFECT_CHARM_BELOW_HP,"Hitting an enemy under {0} health has a {1} ({2}) chance to charm it for {3} seconds"
+NEW_EFFECT_CHARM_BELOW_HP_NO_SCALING,"Hitting an enemy under {0} health has a {1} chance to charm it for {3} seconds"
+NEW_EFFECT_TEMP_STAT_ON_DODGE,"{0} {1} until end of wave when you dodge an attack"
+NEW_EFFECT_CRYPTID,"Gain {0} materials and XP per living tree at end of a wave"
