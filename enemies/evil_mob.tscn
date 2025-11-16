@@ -1,0 +1,81 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://entities/units/enemies/evil_mob/evil_mob.tres" type="Resource" id=1]
+[ext_resource path="res://entities/units/enemies/enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://entities/units/enemies/evil_mob/evil_mob_0.png" type="Texture" id=3]
+[ext_resource path="res://entities/units/movement_behaviors/target_rand_gold_pos_behavior.gd" type="Script" id=4]
+[ext_resource path="res://entities/units/player/item_attract_area.gd" type="Script" id=5]
+[ext_resource path="res://mods-unpacked/DarkTwinge-BalanceMod/enemies/evil_mob.gd" type="Script" id=6]
+[ext_resource path="res://entities/units/enemies/evil_mob/evil_mob_1.png" type="Texture" id=7]
+[ext_resource path="res://entities/units/enemies/evil_mob/evil_mob_2.png" type="Texture" id=8]
+[ext_resource path="res://ui/hud/ui_progress_bar.tscn" type="PackedScene" id=9]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 16.2788
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 21.0238
+
+[sub_resource type="CircleShape2D" id=4]
+
+[sub_resource type="CircleShape2D" id=5]
+
+[node name="Enemy" instance=ExtResource( 2 )]
+script = ExtResource( 6 )
+can_be_boosted = false
+stats = ExtResource( 1 )
+enemy_id = "evil_mob"
+is_loot = true
+can_be_cursed = false
+textures_evolution = [ ExtResource( 3 ), ExtResource( 7 ), ExtResource( 8 ) ]
+quantity_to_evolve = [ 0, 10, 20 ]
+decrease_speed_by_evolve = 120
+
+[node name="Sprite" parent="Animation" index="0"]
+texture = ExtResource( 3 )
+offset = Vector2( 2.63, -12.266 )
+region_rect = Rect2( 0, 0, 250, 250 )
+
+[node name="Collision" parent="." index="1"]
+position = Vector2( 0, 0 )
+shape = SubResource( 2 )
+
+[node name="Collision" parent="Hitbox" index="0"]
+position = Vector2( 0, -1 )
+shape = SubResource( 3 )
+
+[node name="MovementBehavior" parent="." index="6"]
+script = ExtResource( 4 )
+
+[node name="LifeBar" parent="." index="11" instance=ExtResource( 9 )]
+unique_name_in_owner = true
+visible = false
+margin_left = -32.0
+margin_top = -100.0
+margin_right = 32.0
+margin_bottom = -84.0
+nine_patch_stretch = true
+progress_color = Color( 0.721569, 0, 0, 1 )
+
+[node name="ItemAttractArea" type="Area2D" parent="." index="12"]
+collision_layer = 0
+collision_mask = 96
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemAttractArea" index="0"]
+scale = Vector2( 10, 10 )
+shape = SubResource( 4 )
+
+[node name="ItemPickUpArea" type="Area2D" parent="." index="13"]
+collision_mask = 96
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ItemPickUpArea" index="0"]
+position = Vector2( 0, -10 )
+scale = Vector2( 3, 3 )
+shape = SubResource( 5 )
+
+[connection signal="area_entered" from="ItemAttractArea" to="." method="_on_ItemAttractArea_area_entered"]
+[connection signal="area_entered" from="ItemPickUpArea" to="." method="_on_ItemPickUpArea_area_entered"]
+
+[editable path="Hurtbox"]
+[editable path="Hitbox"]

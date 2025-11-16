@@ -141,10 +141,20 @@ func check_for_available_dlcs()->void :
 
 		temp = load("res://dlcs/dlc_1/items/feather/feather_data.tres")
 		temp.value = 19   # 18
+
+		temp = load("res://dlcs/dlc_1/items/penguin/penguin_data.tres")
+		temp.value = 27		# 25
+		temp.max_nb = 2		# 3
+		temp_2 = load("res://dlcs/dlc_1/items/penguin/effects/penguin_effect_0.tres")
+		temp.effects.erase(temp_2)
+		temp = load("res://dlcs/dlc_1/items/penguin/effects/penguin_effect_1.tres")
+		temp.value = 2		# 1 (HP Regen Per Consumable)
 		
 		temp = load("res://dlcs/dlc_1/items/small_fish/effects/small_fish_effect_0.tres")
 		temp.text_key = "NEW_SF_EFFECT_BONUS_DAMAGE_AGAINST_TARGETS_ABOVE_HP"
 		
+		temp = load("res://dlcs/dlc_1/items/whistle/whistle_data.tres")
+		temp.value = 24		# 25
 		temp = load("res://dlcs/dlc_1/items/whistle/effects/whistle_effect_0.tres")
 		temp.value = 60   # 50 (Extra Loot Goblins)
 		temp.text_key = "NEW_EFFECT_LOOT_ALIEN_CHANCE"
@@ -165,10 +175,11 @@ func check_for_available_dlcs()->void :
 		temp.value = 6		# 3 (Crit Chance)
 
 		temp = load("res://dlcs/dlc_1/items/jerky/jerky_data.tres")
-		temp.value = 53		# 50
+		temp.value = 55		# 50
 
 		temp = load("res://dlcs/dlc_1/items/pearl/pearl_data.tres")
-		temp.value = 55   # 60
+		temp.value = 54   # 60
+		temp.max_nb = 15	# 20
 		temp = load("res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres")
 		temp.value = 4		# 3 (Chance to find an extra Pearl)
 
@@ -194,7 +205,7 @@ func check_for_available_dlcs()->void :
 		temp.value = 75		# 70
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
-		temp.value = 15   # 23
+		temp.value = 14   # 23
 
 		temp = load("res://dlcs/dlc_1/items/starfish/starfish_data.tres")
 		temp.value = 68		# 75

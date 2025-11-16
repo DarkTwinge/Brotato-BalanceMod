@@ -37,10 +37,11 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Ricochet is now friendlier with already-piercing weapons.
 * Power Generator now reduces your HP as it powers up.
 * Fairy gives less HP Regen and gives negative HP for Tier-4s instead of negative HP Regen.
+* Chameleon reworked to provide Luck.
 * Utility Crit items (Pile of Books, Eyepatch) come with more Crit Chance to work better as speculative picks.
 * Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are better (as you have much less time to profit from them).
-* Chameleon, Wandering Bot, and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
+* Wandering Bot and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
 * Candle is cheaper and now reduces enemy damage.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
@@ -95,7 +96,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ## Items
 ### Tier-1
-* **Alien Tongue:** Pickup Range +30% -> +35%; Knockback +1 -> +2; Price 25->23
+* **Alien Tongue:** Pickup Range +30% -> +35%; Knockback +1 -> +2; Price 25->22
 * **Baby Gecko:** Range 10 -> 12
 * **Bag:** Price 15->19
 * **Beanie:** Range -6 -> -7
@@ -131,7 +132,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 * **Corrupted Shard:** Price 12->15; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 * **Feather:** Price 18->19
-* **Whistle:** Extra Loot Goblins +50% -> +60% _[This still leaves it as a worse economy item than Coupon or Bag on average.]_
+* **Penguin:** Price 25->27; Base HP Regen 1 -> 0; HP Regen Per Consumable 1 -> 2; Limit 3 -> 2
+* **Whistle:** Price 25->24; Extra Loot Goblins +50% -> +60% _[This still leaves it as a worse economy item than Coupon or Bag on average.]_
 
 ### Tier-2
 * **Acid:** Price 65->62
@@ -146,6 +148,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->34
 * **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
+* **Fruit Basket:** Price 45->58; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -5%; Limit 4 -> 3; Now tagged for 'consumables' instead of 'elemental'
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
 * **Ice Cube:** Price 50->47
@@ -178,8 +181,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
 * **Clockwork Wasp:** Price 45->47
 * **Eyepatch:** Price 55->63; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
-* **Jerky:** Price 50->53
-* **Pearl:** Price 60->55; Chance for free Pearl in crate 3% -> 4%
+* **Jerky:** Price 50->55
+* **Pearl:** Price 60->54; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
 * **Saltwater:** Extra Speed When Hit 10% -> 20%
 * **Spyglass:** Price 30->35
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
@@ -189,15 +192,16 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alien Magic:** Price 85->83
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
-* **Barricade:** Price 75->68
+* **Barricade:** Price 75->67
 * **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be lower.]_
-* **Bowler Hat:** Price 75->69; Luck 15 -> 20
-* **Candle:** Price 65->43; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
-* **Chameleon:** Price 70->48; Damage -4% -> -2% _[The least-reliable and most awkward stand-still item made more accessible.]
+* **Bowler Hat:** Price 75->69; Luck 15 -> 21
+* **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
+* **Chameleon:** Price 70->50; 20% Dodge While Standing Still --> 37 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
 * **Community Support:** Price 75->71 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->68
 * **Fairy:** Price 85->90; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
+* **Ghost Outfit:** Price 80->70; Armor -3 -> No Penalty
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
 * **Laser Turret:** Price 65->60; Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
@@ -214,6 +218,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Strange Book:** Price 70->60
 * **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
+* **Triangle of Power:** Armor +1 --> Dodge +4%
 * **Tyler:** Price 75->68; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 80%
 * **Vigilante Ring:** Price 92->75
 * **Wandering Bot:** Price 60->40
@@ -224,8 +229,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ball and Chain (Cursed):** Weapon Cooldown Floor ~0.35s -> ~0.5s
 * **Crystal:** Price 65->55; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
 * **Goblet:** Price 70->75
-* **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
-* **Honey:** Price 70->53; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
+* **Goldfish:** Price 23->14 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
+* **Honey:** Price 70->52; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Starfish:** Price 75->68
 * **Sunken Bell:** Price 65->42; Explosion Size 600% -> 750%
 
@@ -346,7 +351,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Captain:** No longer favored to find XP Gain items.
 * **Chef:** Can no longer be offered Eyes Surgery.
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
-* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, giving them a more unique aspect to interact with.]_
+* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell.
 * **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
 
@@ -363,7 +368,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Turtle:** Time Before First Attack 2s -> 0.5s; HP Per Wave 700 -> 750; Base Armor 3 -> 1; Armor Per Wave 0.5 -> 0.75 _[Similar armor early, more armor later. Also means its armor is more reasonable if Gangster sees it very early. HP is now the same as normal Elites.]_
 
 ### Standard Enemies
-+ **Fly:** Base HP 15 -> 7; HP Per Wave 4 -> 7 _[Similar HP early, more HP late.]_
++ **Gobbler:** Speed range for each evolution 300-400/175-275/50-150 -> 320-400/200-280/80-160; HP increase upon evolution 50% -> 75%
++ **Fly:** Base HP 15 -> 4; HP Per Wave 4 -> 8 _[Similar HP early, more HP late.]_
 + **Tentacle:** Item Crate Drop Chance 2% -> 3%
 + **Small Charger:** Knockback Resistance 80% -> 75%
 + **Small Viking Charger:** Knockback Resistance 80% -> 75%

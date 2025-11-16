@@ -144,6 +144,17 @@ Applying additional burn could cause damage tick to happen immediately (not my f
 Magician HP and move speed slightly lower which will cover some of the increased Helmet HP; value Helmet HP about half as much?
 
 
+Chameleon: increase dodge cap while standing still (no more than 75 cap)
+	Should be able to treat dodge_cap as a stat while standing still, just like dodge itself ; but would need another check to make it still cap at 75; another stat that copies dodge cap maybe sometime during init so it only applies once, and is just referenced for this purpose?
+	There's also the Dodge tooltip showing you at cap; should show normal non-chamleon
+	and test/decide cursed effect; the cap remains the same right?
+	And make sure it doesn't *lower* Ghost's cap
+	make unique
+	(also make sure it works on Sailor's 20 Dodge Cap?)
+
+Spoon - Even-out HP Scaling (so 0.25 at all tiers), making melee scaling still poor but less awful with 50%->60% (all tiers), and then changing the base damage from 8/12/16/20 -> 7/12/18/24
+
+
 
 ~QoL / UI~
 

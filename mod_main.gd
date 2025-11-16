@@ -115,6 +115,7 @@ func _ready()->void:
 	Text.keys_needing_percent.new_info_neg_stat_luck = [0] 
 	Text.keys_needing_percent.new_info_pos_stat_armor = [0] 
 	Text.keys_needing_percent.new_info_neg_stat_armor = [0]
+	Text.keys_needing_percent.new_effect_enemy_fruit_drops = [0]
 	
 	
 	# New effects
@@ -156,8 +157,8 @@ func _ready()->void:
 	
 	# Fly
 	temp = load("res://entities/units/enemies/fly/fly_stats.tres")
-	temp.health = 7												# 15
-	temp.health_increase_each_wave = 7.0	# 4.0
+	temp.health = 4												# 15
+	temp.health_increase_each_wave = 8.0	# 4.0
 	
 	# Tentacle
 	temp = load("res://entities/units/enemies/tentacle/tentacle_stats.tres")
@@ -165,27 +166,46 @@ func _ready()->void:
 	
 	# Small Charger
 	temp = load("res://entities/units/enemies/charger/charger_stats.tres")
-	temp.knockback_resistance = 0.75		 # 0.8
+	temp.knockback_resistance = 0.75			# 0.8
 
 	# Small Viking
 	temp = load("res://entities/units/enemies/horned_charger/horned_charger_stats.tres")
-	temp.knockback_resistance = 0.75		 # 0.8
+	temp.knockback_resistance = 0.75			# 0.8
 		
 	# Tall Bruiser
 	temp = load("res://entities/units/enemies/bruiser/bruiser_stats.tres")
-	temp.knockback_resistance = 0.87		 # 0.9
+	temp.knockback_resistance = 0.87			# 0.9
 
 	# Tall Armored Bruiser
 	temp = load("res://entities/units/enemies/horned_bruiser/horned_bruiser_stats.tres")
-	temp.knockback_resistance = 0.87		 # 0.9
+	temp.knockback_resistance = 0.87			# 0.9
 
 	# Hatched Slasher
 	temp = load("res://entities/units/enemies/slasher/slasher_stats.tres")
-	temp.knockback_resistance = 0.87		 # 0.9
+	temp.knockback_resistance = 0.87			# 0.9
 	
 	# Lamprey Fish
 	temp = load("res://entities/units/enemies/lamprey/lamprey_stats.tres")
-	temp.knockback_resistance = 0.93		 # 0.95
+	temp.knockback_resistance = 0.93			# 0.95
+	
+	# Gobbler
+	temp = load("res://entities/units/enemies/evil_mob/evil_mob.tres")
+	temp.speed = 360											# 350
+	temp.speed_randomization = 40					# 50
+	
+	# Replace Gobbler with my version
+	for zone in ZoneService.zones:
+		for wave in zone.waves_data:
+			for group in wave.groups_data:
+				for unit in group.wave_units_data:
+					print(unit.unit_scene.get_path())
+					if unit.unit_scene.get_path() == "res://entities/units/enemies/evil_mob/evil_mob.tscn":
+						unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/evil_mob.tscn")
+##TODO
+#		for unit in zone.endless_enemy_scenes:
+#			if unit.unit_scene.get_path() == "res://entities/units/enemies/evil_mob/evil_mob.tscn":
+#				unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/evil_mob.tscn")
+
 	
 	
 	### WAVE SPAWNS - CRASH ZONE ###
@@ -258,7 +278,7 @@ func _ready()->void:
 
 	## TIER-1 ITEMS ##
 	temp = load("res://items/all/alien_tongue/alien_tongue_data.tres")
-	temp.value = 23  # 25
+	temp.value = 22  # 25
 	temp = load("res://items/all/alien_tongue/alien_tongue_effect_1.tres")
 	temp.value = 35  # 30 (Pickup Range)
 	temp = load("res://items/all/alien_tongue/alien_tongue_effect_2.tres")
@@ -448,7 +468,19 @@ func _ready()->void:
 	# Incendiary Turret
 ##	temp = load("res://items/all/turret_flame/turret_flame_data.tres")
 ##	temp.value = 42		# 40
-
+	
+	temp = load("res://items/all/fruit_basket/fruit_basket_data.tres")
+	temp.value = 58		# 45
+	temp.tags = [ "consumable" ] # Was mistakenly Elemental
+	temp.max_nb = 3		# 4
+	temp = load("res://items/all/fruit_basket/fruit_basket_effect_1.tres")
+	temp.value = 2		# 1 (% chance to drop fruit)
+	temp.text_key = "new_effect_enemy_fruit_drops"
+	temp = load("res://items/all/fruit_basket/fruit_basket_effect_2.tres")
+	temp.value = -5
+	temp.key = "stat_percent_damage"	# -3 HP Regen -> -5 Damage%
+	
+	
 	temp = load("res://items/all/gambling_token/gambling_token_effect_1.tres")
 	temp.value = 9		# 8 (Dodge)
 	
@@ -456,9 +488,9 @@ func _ready()->void:
 	temp.value = 47		# 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
-	temp.value = 38  # 45
+	temp.value = 38		# 45
 	temp = load("res://items/all/little_frog/little_frog_effect_1.tres")
-	temp.value = 30  # 20 (Pickup Range)
+	temp.value = 30		# 20 (Pickup Range)
 	
 	temp = load("res://items/all/little_muscley_dude/little_muscley_dude_effect_3.tres")
 	temp.value = -18  # -15 (Range)
@@ -567,7 +599,7 @@ func _ready()->void:
 	temp.weapon_stats = temp_2 # Ranged Damage scaling 100% -> 75%
 	
 	temp = load("res://items/all/barricade/barricade_data.tres")
-	temp.value = 68		# 75
+	temp.value = 67		# 75
 	temp_2 = load("res://items/all/barricade/barricade_effect_0.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.insert(1, temp_2)
@@ -578,10 +610,10 @@ func _ready()->void:
 	temp = load("res://items/all/bowler_hat/bowler_hat_data.tres")
 	temp.value = 69  # 75
 	temp = load("res://items/all/bowler_hat/bowler_hat_effect_1.tres")
-	temp.value = 20  # 15 (Luck)
+	temp.value = 21  # 15 (Luck)
 	
 	temp = load("res://items/all/candle/candle_data.tres")
-	temp.value = 43  # 65
+	temp.value = 42  # 65
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/candle_reduce_damage.tres")
 	temp.effects.insert(2, temp_2)
 	temp = load("res://items/all/candle/candle_effect_1.tres")
@@ -591,9 +623,13 @@ func _ready()->void:
 	temp.value = -4  # -5 (Damage -> Attack Speed)
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
-	temp.value = 48  # 70
-	temp = load("res://items/all/chameleon/chameleon_effect_2.tres")
-	temp.value = -2  # -4 (%Damage)
+	temp.value = 50		# 70
+	temp.tags = [ "stat_dodge", "stand_still", "stat_luck" ]
+	temp = load("res://items/all/chameleon/chameleon_effect_0.tres")
+	temp.value = 4		# 3 (Dodge)
+	temp = load("res://items/all/chameleon/chameleon_effect_1.tres")
+	temp.key = "stat_luck"
+	temp.value = 37		# 20 Stand-still Dodge -> 37 Stand-still Luck
 
 	temp = load("res://items/all/community_support/community_support_data.tres")
 	temp.value = 71  # 75
@@ -621,8 +657,15 @@ func _ready()->void:
 	temp = load("res://items/all/glass_cannon/glass_cannon_data.tres")
 	temp.value = 70		# 75
 	
+	temp = load("res://items/all/ghost_outfit/ghost_outfit_data.tres")
+	temp.value = 70		# 80
+	temp_2 = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
+	temp.effects.erase(temp_2)	# Remove -3 Armor
+
+	
+	
 	temp = load("res://items/all/honey/honey_data.tres")
-	temp.value = 53		# 70
+	temp.value = 52		# 70
 	temp_2 = load("res://items/all/honey/effects/honey_effect_4.tres")
 	temp.effects.erase(temp_2) # Remove Dodge penalty
 	temp = load("res://items/all/honey/effects/honey_effect_2.tres")
@@ -712,6 +755,12 @@ func _ready()->void:
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
 	temp.max_range = 225	# 200
 	temp.scaling_stats = [ [ "stat_engineering", 0.8 ], [ "stat_elemental_damage", 0.8 ] ]	# 0.75, 0.75
+	
+	# Triangle of Power
+	temp = load("res://items/all/triangle_of_power/triangle_of_power_effect_2.tres")
+	temp.key = "stat_dodge"
+	temp.value = 4				# 1 Armor -> 4 Dodge
+	
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
 	temp.value = 75  # 92

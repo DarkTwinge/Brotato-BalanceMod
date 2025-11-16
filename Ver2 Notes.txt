@@ -128,7 +128,7 @@ Watch if Mom is even hard any more
 
 
 
-Goldfish could give free reroll, or make the next shop's items cheaper
+Goldfish could give free reroll, or make the next shop's items cheaper [would be moderately hard; could probably make a new effect type and replace `func fill_shop_items` to apply the discount right before the goldfish breaks, using an else to run the shop code normally so it doesn't go twice\
 
 Dwarf: Counter for Engineering gained
 
@@ -154,9 +154,6 @@ maybe add new turret, prob blue tier
 
 
 
-Spoon - Even-out HP Scaling (so 0.25 at all tiers), making melee scaling still poor but less awful with 50%->60% (all tiers), and then changing the base damage from 8/12/16/20 -> 7/12/18/24
-
-
 
 ~~~~~
 ogre - too many waves with plankton/fins/shrimp
@@ -178,9 +175,9 @@ Flutes could increase enemy damage both to you and for charmed enemies vs other 
 
 BM-Lute shouldn't do extra damage itself from the Lute bonus
 	How does it stack? does the extra damage refresh on each hit, or is each tracked separately
+	if implemented improve their damage/scaling a little to compensate
 
 ~~~~
-prisoner elite -- 2nd phase either too much delay between attacks or doesn't attack from far enough away
 
 
 check curse special cases, and make sure anything I rework doesn't get extra silly (heavy bullets right now maybe?  couch down the line.)
@@ -193,10 +190,21 @@ Engineer halving explosion damage is kinda weird
 
 map could come with a little luck
 
+prisoner elite -- 2nd phase either too much delay between attacks or doesn't attack from far enough away
 prisoner range for phase 2/3 probably too low; explorer easily stays away
 	tho it also switches phases really fast, which is maybe fine but a bit threatening for sure
 
 ~~Cauldron - does it stack at all?
+cauldron uptime
+15
+12
+9
+13
+16
+15
+8(/40s)
+
+
 
 ---
 
@@ -288,7 +296,6 @@ could slightly reducing the damage of a wave 11/12 elite be sensible? (keep in m
 seashell should be made to work for structures too [Make sure it doesn't double-apply to builder turret]
 	All projectiles; when works for all projectile, probably remove it from bans on e.g. knight, dwarf
 
-Could make it so Fisher doesn't see Bait in Crates (would adding it as a banned item work?)  [this is kinda funny so maybe leave it]
 
 
 COuld see a mild Ogre nerf
@@ -327,11 +334,7 @@ Ball & Chain could change the color of cooldown on weapons when at cap?
 
 Gangster could count value of stolen items in their tooltip
 
-Megalodon elite could have slightly lower HP?
-
 Bosses could have +0.1% HP per Curse perhaps
-
-Peguin should perhaps be more expensive and +2 per and 0 base?
 
 preventing bounce/random target from hitting curse goblins would be good; how hard is this?
 
@@ -358,24 +361,14 @@ Wave 11 Elite HP reduces slightly more than 12?
 ~~Perhaps test Med Guns vs SMGs on ~5% Lifesteal; how much better are SMGs at damage and which is better at healing
 
 
-Chameleon: increase dodge cap while standing still (no more than 75 cap)
-	Should be able to treat dodge_cap as a stat while standing still, just like dodge itself ; but would need another check to make it still cap at 75; another stat that copies dodge cap maybe sometime during init so it only applies once, and is just referenced for this purpose?
-	There's also the Dodge tooltip showing you at cap; should show normal non-chamleon
-	and test/decide cursed effect; the cap remains the same right?
-	And make sure it doesn't *lower* Ghost's cap
-	make unique if not
-	(also make sure it works on Sailor's 20 Dodge Cap?)
 
 remake sickle, prob 135 range, prob consumable healing scaling, prob keep the low hp damage bonus concept
 	maybe better to just leave removed tbh?
 
-should Pearl cap at 15?
-
 Could add note on Ethereals that Selling doesn't lose the stats
 
-Evaluate -Enemies% a bit; does it suck enough at reducing all those 1-1 spawns (that is, doesn't remove them ever) that it should be a higher %?
+Evaluate -Enemies% a bit; does it suck enough at reducing all those 1-1 range spawns (that is, doesn't remove them ever) that it should be a higher %?
 
-do the penguin switch (+2 regen per, 0 base, limit 2?)
 
 modest rework of wildling?
 
@@ -457,9 +450,6 @@ harpoon tooltip mention the lower damage effect
 
 Possible other Sharp Tooth users: Mutant, Loud
 
-Cursed Blue Turrets still broken
-	^Caused by BalMod, I think -- but is inconsistent??  And it reverted the 33->35% chance, so the Cursed was actually worse?  huh
-
 Hand could have slightly lower range to be useable alongside other wepaons e.g. Fist more reasonably?
 
 Builder-Blunder start?
@@ -487,13 +477,32 @@ Sickle showed up for Hyph on a Demon run (Sickle IV but colored white)
 
 Will'o'Wisp -- Why? Snowball also exists??
 Snowball idea: When you obtain Melee or Ranged Damage, also gain +1 (+2?) Elemental
+	Does this moreso just make those items into Elemental Damage items and you still go single build?  Is this okay anyway?
 and/or: Ice Cube could be a higher amount (25%?), but only apply the damage increase to non-Elemental
 
 cursed pile of books should maybe not be triple stats since the base is higher
 
 Gobbler may want to take longer to switch to phase 2? more HP in phase 3?
 
-Chameleon could do with a rework to not be Dodge probably
+Tyler could maybe be blue
+Chameleon could be blue
+Honey (but probably messes Ranged Damage distribution?)
+Pile of Books would be possible, let you plan that build-around earlier
+maaaybe Shmoop
+Wandering Bot
+
+
+Other possible Purples that could be given Dodge:
+Sunken Bell
+Scarf
+Starfish
+Wandering Bot
+Mouse
+Crystal
+Adrenaline could give 1-2 more?
+
+
+
 
 Pufferfish Codex descript should specify melee difference?
 
@@ -524,9 +533,29 @@ Sunken Bell - look at HP for highest HP enemies; cursed/uncursed; it really shou
 Revisit maknig Tardigrade specifically ignore self-damage instead of '1 damage'
 	maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
 	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?
+	could the check if it's bypass_ be handled in the big take-damage function, routing to my modified function if appropriate and the normal code otherwise, letting me overwrite neither function??
 Sick doesn't necessarily need Tardigrade banned now (maybe wait for full Tardigrade fix tho to ignore all self-damage?)
 
 weird that the dodge cap for cursed ghost costume is unaffected by curse strength
+
+Gobbler's Hat -- not dodge penalty? (or at least some armor, some dodge)
+	could scale down Speed with mats like the Gobbler itself, using Streamer effect
+
+
+Fruit Basket 
+	Fruits +40% at 0 Luck, roughly -- 2.6 fruits, so call it ~15hp in healing?  Around 4-5 HP Regen
+	fix the description; probably go from 1% to 2%, cap down to 3? is it existing enough to move jerky (or itself) to purple?
+	
+	Average fruit for mathing: 10 per wave (~50 Luck, ~1 Tree item)  --> 2.5 HP Regen per +1 Consumable Healing
+
+Candy bag could skip stats with a -100% modifier
+
+Hiker-could have tag-bans for stand-still items
+
+
+Probably not but maybe Tags:
+Hourglass could be economy
+Evil Hat could be pickup
 
 
 
@@ -535,3 +564,8 @@ Tiny Auto Knights
 confirm when merging two units that are already on the board? (could be an option)
 rarity hover tooltip doesn't work while picking relics
 
+
+fix fruit basket tag if not fixed in vanilla in time
+
+improve cursed landmines somewhow - either let curse lower their cooldown, or add maybe 4 explosion damage%
+	probably also give them improved crit damage?
