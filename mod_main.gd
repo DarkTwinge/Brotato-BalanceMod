@@ -311,7 +311,7 @@ func _ready()->void:
 	temp.value = 19   # 15
 	
 	temp = load("res://items/all/cute_monkey/cute_monkey_data.tres")
-	temp.value = 28  # 25
+	temp.value = 29  # 25
 	
 	temp = load("res://items/all/duct_tape/duct_tape_data.tres")
 	temp.value = 16  # 20 
@@ -328,7 +328,7 @@ func _ready()->void:
 	temp.value = 22  # 20 (Range)
 	
 	temp = load("res://items/all/gummy_berserker/gummy_berserker_effect_2.tres")
-	temp.value = 28  # 25 (Range)
+	temp.value = 29  # 25 (Range)
 	
 	temp = load("res://items/all/head_injury/head_injury_effect_1.tres")
 	temp.value = 7   # 6 (Damage%)
@@ -346,19 +346,21 @@ func _ready()->void:
 	temp.value = -10 # -2 Speed -> -10 Range
 	
 	temp = load("res://items/all/landmines/landmines_data.tres")
-	temp.value = 13  # 15
+	temp.value = 13		# 15
 	## THIS TOOLTIP IS HARDCODED
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/landmine_size_text.tres")
 	temp.effects.push_back(temp_2) # Add explosion size text
+	temp = load("res://items/all/landmines/landmine_exploding_effect.tres")
+	temp.scale = 1.8	# 1.75
 	
 	temp = load("res://items/all/lens/lens_effect_2.tres")
 	temp.value = -10  # -5 (Range)
 	
 	temp = load("res://items/all/lost_duck/lost_duck_effect_1.tres")
-	temp.value = 9  # 8 (Luck)
+	temp.value = 9		# 8 (Luck)
 	
 	temp = load("res://items/all/lumberjack_shirt/lumberjack_shirt_data.tres")
-	temp.value = 12  # 15
+	temp.value = 12		# 15
 
 	temp = load("res://items/all/mutation/mutation_data.tres")
 	temp.value = 24  # 25
@@ -429,7 +431,7 @@ func _ready()->void:
 	temp.value = 30   # 25 (XP Gain)
 	
 	temp = load("res://items/all/blood_leech/blood_leech_data.tres")
-	temp.value = 40   # 45	
+	temp.value = 39   # 45
 
 	temp = load("res://items/all/campfire/campfire_data.tres")
 	temp.value = 39   # 40
@@ -509,8 +511,6 @@ func _ready()->void:
 	temp = load("res://items/all/metal_plate/metal_plate_data.tres")
 	temp.value = 44  # 40
 	
-	temp = load("res://items/all/missile/missile_data.tres")
-	temp.value = 44  # 45
 	temp = load("res://items/all/missile/missile_effect_1.tres")
 	temp.value = 11  # 10 (Damage%)
 	
@@ -520,7 +520,8 @@ func _ready()->void:
 	temp.effects.insert(1,temp_2)
 	
 	temp = load("res://items/all/pumpkin/pumpkin_data.tres")
-	temp.max_nb = 8  # -1
+	temp.value = 36		# 40
+	temp.max_nb = 8		# -1
 	temp_2 = load("res://items/all/pumpkin/pumpkin_effect_2.tres")
 	temp.effects.erase(temp_2)     # Remove -2% Damage penalty
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/pumpkin_bounce.tres")
@@ -605,7 +606,7 @@ func _ready()->void:
 	temp.effects.insert(1, temp_2)
 	
 	temp = load("res://items/all/blood_donation/blood_donation_data.tres")
-	temp.value = 42  # 50
+	temp.value = 41  # 50
 	
 	temp = load("res://items/all/bowler_hat/bowler_hat_data.tres")
 	temp.value = 69  # 75
@@ -629,7 +630,7 @@ func _ready()->void:
 	temp.value = 4		# 3 (Dodge)
 	temp = load("res://items/all/chameleon/chameleon_effect_1.tres")
 	temp.key = "stat_luck"
-	temp.value = 37		# 20 Stand-still Dodge -> 37 Stand-still Luck
+	temp.value = 50		# 20 Stand-still Dodge -> Stand-still Luck
 
 	temp = load("res://items/all/community_support/community_support_data.tres")
 	temp.value = 71  # 75
@@ -639,7 +640,7 @@ func _ready()->void:
 	
 	# Fairy
 	temp = load("res://items/all/fairy/fairy_data.tres")
-	temp.value = 90  # 85
+	temp.value = 89  # 85
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/fairy_count_tier1s.tres")
 	temp.effects.insert(1, temp_2)
 	temp = load("res://items/all/fairy/fairy_effect_1.tres")
@@ -698,7 +699,7 @@ func _ready()->void:
 	temp.value = 5		# 3 (Crit Chance)
 	
 	temp = load("res://items/all/plastic_explosive/plastic_explosive_data.tres")
-	temp.value = 52		# 60
+	temp.value = 51		# 60
 	
 	temp = load("res://items/all/poisonous_tonic/poisonous_tonic_effect_3.tres")
 	temp.value = 27		# 15 (Range)
@@ -763,7 +764,7 @@ func _ready()->void:
 	
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
-	temp.value = 75  # 92
+	temp.value = 74  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
 	temp.value = 40  # 60

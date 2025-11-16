@@ -1,18 +1,5 @@
 extends "res://main.gd"
 
-# Cyborg SFX on state change
-#func _physics_process(_delta:float)->void :
-#	if not _convert_stats_half_wave_proced and _wave_timer.time_left <= _wave_timer.wait_time / 2.0:
-#		for player_index in RunData.get_player_count():
-#			if RunData.get_player_effect("convert_stats_half_wave", player_index) != []:
-#				var cyborg_swap_sfx = load("res://mods-unpacked/DarkTwinge-BalanceMod/sounds/cyborg.wav")
-#				SoundManager.play(cyborg_swap_sfx, 0, 0, true)
-#				break
-	
-	## (Automatically executed anyway)
-	##._physics_process(_delta)
-
-
 # Replace to reduce Horde Wave profits
 # Tweak mat drops to be per-mat rather than per-enemy
 func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
@@ -50,6 +37,14 @@ func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
 	
 	spawn_gold(total_mats, pos, gold_spread)
 
+
+# Cyborg SFX on state change
+func _on_HalfWaveTimer_timeout()->void :
+	._on_HalfWaveTimer_timeout()
+
+	if RunData.concat_all_player_effects("convert_stats_half_wave").size() > 0:
+		var cyborg_swap_sfx = load("res://mods-unpacked/DarkTwinge-BalanceMod/sounds/cyborg.wav")
+		SoundManager.play(cyborg_swap_sfx, 0, 0, true)
 
 # Append to save next-wave mats for new Padding
 #func clean_up_room(is_last_wave:bool = false, is_run_lost:bool = false, is_run_won:bool = false)->void :

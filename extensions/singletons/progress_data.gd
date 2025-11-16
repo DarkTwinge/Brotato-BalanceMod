@@ -187,7 +187,7 @@ func check_for_available_dlcs()->void :
 		temp.value = 20		# 10 (Extra Speed when hit)
 
 		temp = load("res://dlcs/dlc_1/items/spyglass/spyglass_data.tres")
-		temp.value = 35		# 30
+		temp.value = 33		# 30
 		
 		temp = load("res://dlcs/dlc_1/items/treasure_map/treasure_map_data.tres")
 		temp.tags = [ "stat_luck", "exploration" ]	# Luck only -> Luck & Explore
@@ -195,7 +195,7 @@ func check_for_available_dlcs()->void :
 
 		# Items: Tier-3 #
 		temp = load("res://dlcs/dlc_1/items/crystal/crystal_data.tres")
-		temp.value = 55		# 65
+		temp.value = 54		# 65
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0c.tres")
 		temp.key = "stat_max_hp"	# Engineering
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")

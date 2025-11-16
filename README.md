@@ -1,11 +1,11 @@
 # Overview
-More items are worth using and fewer choices are overpowered. Range and Luck stats are better. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is similar, with the easiest runs made a bit harder and the hardest runs made a bit easier.
+More items are worth using and fewer choices are overpowered. Range and Luck stats are better. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is similar, with the easiest runs made modestly harder and the hardest runs made a bit easier.
 
 The full list of all changes is here: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog - Below is a summary of the major changes you should know about.
 
-(Dozens of changes from the original Balance Mod have now been implemented directly into the base game. A summary of those prior changes is at the very end.)
+(Dozens of changes from previous Balance Mod versions have been implemented directly into the base game; A summary of those is at the very end.)
 
-_Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! ~75 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
+_Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! ~90 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
 
 ## Change Summary
 ### Mechanics
@@ -41,7 +41,7 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Utility Crit items (Pile of Books, Eyepatch) come with more Crit Chance to work better as speculative picks.
 * Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are better (as you have much less time to profit from them).
-* Wandering Bot and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
+* Ghost Outfit significantly buffed. Wandering Bot and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
 * Candle is cheaper and now reduces enemy damage.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
@@ -96,7 +96,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ## Items
 ### Tier-1
-* **Alien Tongue:** Pickup Range +30% -> +35%; Knockback +1 -> +2; Price 25->22
+* **Alien Tongue:** Price 25->22; Pickup Range +30% -> +35%; Knockback +1 -> +2
 * **Baby Gecko:** Range 10 -> 12
 * **Bag:** Price 15->19
 * **Beanie:** Range -6 -> -7
@@ -105,16 +105,16 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Broken Mouth:** Price 25->26
 * **Cake:** Price 15->16
 * **Coupon:** Price 15->19
-* **Cute Monkey:** Price 25->28
+* **Cute Monkey:** Price 25->29
 * **Duct Tape:** Price 20->16
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
 * **Gentle Alien:** Price 30->31
 * **Glasses:** Range 20 -> 22
-* **Gummy Berserker:** Range 25 -> 28
+* **Gummy Berserker:** Range 25 -> 29
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->23
 * **Helmet:** Price 15->18; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
-* **Landmines:** Price 15->13
+* **Landmines:** Price 15->13; Explosion Size 175% -> 180%
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
 * **Lumberjack Shirt:** Price 15->12
@@ -141,7 +141,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Range -15 -> -18
 * **Blackbelt:** XP Gain +25% -> +30%
-* **Blood Leech:** Price 45->40
+* **Blood Leech:** Price 45->39
 * **Campfire:** Price 40->39
 * **Celery Tea:** Price 35->33; Extra Enemy HP +100% -> +75%
 * **Cog:** Damage -4% -> -2% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_
@@ -159,9 +159,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Medal:** Price 55->60; Crit Chance -4% -> -3%
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->44
-* **Missile:** Price 45->44; Damage 10% -> 11%
+* **Missile:** Damage 10% -> 11%
 * **Pocket Factory:** Price 75->70; Now comes with +1 Tree Stat (same as buying one Tree item) _[Makes it less reliant on finding Trees.]_
-* **Pumpkin:** -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect it to be, so I remove the downside. Limit is mostly irrelevant, but will stop it from showing up in deep endless if you've already maxed the possible value.]_
+* **Pumpkin:** Price 40->36; -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect. Limit stops it from showing up in endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -1 HP Regen
 * **Reinforced Steel:** Engineering 3 -> 4
 * **Riposte:** Price 40->34
@@ -184,7 +184,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Jerky:** Price 50->55
 * **Pearl:** Price 60->54; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
 * **Saltwater:** Extra Speed When Hit 10% -> 20%
-* **Spyglass:** Price 30->35
+* **Spyglass:** Price 30->33
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
 
 ### Tier-3
@@ -193,13 +193,13 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
 * **Barricade:** Price 75->67
-* **Blood Donation:** Price 50->42 _[The primary 'cost' is the damage, so the material cost should be lower.]_
+* **Blood Donation:** Price 50->41 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
-* **Chameleon:** Price 70->50; 20% Dodge While Standing Still --> 37 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
+* **Chameleon:** Price 70->50; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
 * **Community Support:** Price 75->71 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->68
-* **Fairy:** Price 85->90; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
+* **Fairy:** Price 85->89; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
 * **Ghost Outfit:** Price 80->70; Armor -3 -> No Penalty
 * **Glass Canon:** Price 75->70
@@ -208,7 +208,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lucky Charm:** Price 75->70
 * **Peacock:** Price 50->47
 * **Pile of Books:** Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
-* **Plastic Explosive:** Price 60->52
+* **Plastic Explosive:** Price 60->51
 * **Poisonous Tonic:** Range 15 -> 27
 * **Power Generator:** Price 65->58; -5% Damage --> -1 Max HP Per 5% Speed
 * **Rip and Tear:** (Clarified effect of having multiple copies)
@@ -220,14 +220,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Triangle of Power:** Armor +1 --> Dodge +4%
 * **Tyler:** Price 75->68; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 80%
-* **Vigilante Ring:** Price 92->75
+* **Vigilante Ring:** Price 92->74
 * **Wandering Bot:** Price 60->40
 * **Wheat:** Price 85->82; Harvesting 10 -> 14
 * **Wings:** Range 30 -> 33
 * **Wisdom:** Price 85->78
 #### DLC
 * **Ball and Chain (Cursed):** Weapon Cooldown Floor ~0.35s -> ~0.5s
-* **Crystal:** Price 65->55; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
+* **Crystal:** Price 65->54; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
 * **Goblet:** Price 70->75
 * **Goldfish:** Price 23->14 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Price 70->52; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
@@ -258,7 +258,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 #### DLC
 * **Kraken's Eye:** Price 110->90
-* **Sifd's Relic (Cursed):** Base Additional Dodge 10% -> 5% _[The Armor increasing from Curse is already strong, so the additional Dodge is now a still solid ~9% instead of bananas ~18%.]_
+* **Sifd's Relic (Cursed):** Base Additional Dodge 10% -> 5% _[The Armor increasing from Curse is already strong, so the additional Dodge is now a solid ~9% instead of bananas ~18%.]_
 
 ## Weapons
 ### Set Bonuses

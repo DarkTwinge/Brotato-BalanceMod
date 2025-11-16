@@ -52,7 +52,7 @@ NEW_EFFECT_EXPLODE_CUSTOM,Projectiles have {0} chance to explode on hit (Size: {
 NEW_EFFECT_EXPLODE_ON_CONSUMABLE,Consumables have a {0} chance to explode for {1} ({2}) damage when picked up (Size: {4})
 NEW_EFFECT_EXPLODE_ON_HIT,You explode for {1} ({2}) damage when you take damage (Size: {4})
 NEW_EFFECT_EXPLODE_ON_DEATH,Enemies have a {0} chance to explode for {1} ({2}) damage when they die (Size: {4})
-BM_EFFECT_LANDMINE_SIZE,(Explosion Size: [color=#00ff00]175[/color])
+BM_EFFECT_LANDMINE_SIZE,(Explosion Size: [color=#00ff00]180[/color])
 BM_EFFECT_EXPLOSIVE_TURRET_SIZE,(Explosion Size: [color=#00ff00]100[/color])
 NEW_EFFECT_ON_HIT,{0} {1} each time you take damage until the end of the wave
 BM_EFFECT_STAT_ON_POISON_FRUIT,{0} {1} when you pick up a [color=#bb576b]poisoned[/color] fruit

@@ -456,7 +456,6 @@ Builder-Blunder start?
 
 Wand may benefit interestingly from extra Knockback if it needs a small buff
 
-Triangle may want to be Dodge instead of Armor
 
 ~Giant Belt vs Silver Bullet comparison (w15, w20, 15/40/100 crit or so?)
 
@@ -490,8 +489,6 @@ Honey (but probably messes Ranged Damage distribution?)
 Pile of Books would be possible, let you plan that build-around earlier
 maaaybe Shmoop
 Wandering Bot
-
-
 Other possible Purples that could be given Dodge:
 Sunken Bell
 Scarf
@@ -499,6 +496,7 @@ Starfish
 Wandering Bot
 Mouse
 Crystal
+
 Adrenaline could give 1-2 more?
 
 
@@ -520,7 +518,6 @@ Streamer almost wants 3 more starters to go 2nd row full?
 clarify druid's "higher chance" in descript if possible?
 
 Explorer text - MANY more trees spawn [cryptid too assumedly]
-Fruit Basket - clarify after missing the normal check (based on Luck), you have a {1}% chance to drop a fruit
 
 King -- bottom bit is cut off; but shortening text seems kinda rough
 
@@ -565,7 +562,9 @@ confirm when merging two units that are already on the board? (could be an optio
 rarity hover tooltip doesn't work while picking relics
 
 
-fix fruit basket tag if not fixed in vanilla in time
-
 improve cursed landmines somewhow - either let curse lower their cooldown, or add maybe 4 explosion damage%
 	probably also give them improved crit damage?
+	
+	
+3 Weird Ghosts in one wave -- started at 1 hp when at 60 max hp
+
