@@ -187,7 +187,7 @@ func check_for_available_dlcs()->void :
 		temp.value = 20		# 10 (Extra Speed when hit)
 
 		temp = load("res://dlcs/dlc_1/items/spyglass/spyglass_data.tres")
-		temp.value = 33		# 30
+		temp.value = 32		# 30
 		
 		temp = load("res://dlcs/dlc_1/items/treasure_map/treasure_map_data.tres")
 		temp.tags = [ "stat_luck", "exploration" ]	# Luck only -> Luck & Explore
@@ -399,7 +399,7 @@ func check_for_available_dlcs()->void :
 		
 		# Chef
 		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
-		temp.banned_items = [ "item_frozen_heart", "item_eyes_surgery" ]
+		temp.banned_items = [ "item_eyes_surgery" ]
 		
 		# Creature
 		temp = load("res://dlcs/dlc_1/characters/creature/creature_data.tres")
@@ -435,6 +435,7 @@ func check_for_available_dlcs()->void :
 		
 		# Hiker
 		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")
+		temp.banned_item_groups = [ "stand_still" ]
 		temp_2 = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_3.tres")
 		temp.effects.erase(temp_2)		#	Remove -5 Speed
 		temp_2 = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_2.tres")

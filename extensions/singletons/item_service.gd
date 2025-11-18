@@ -1,9 +1,11 @@
 extends "res://singletons/item_service.gd"
 
-# (Where to add new banned item changes)
-##func _ready()->void :
-##	._ready()
-##	item_groups["melee_damage"].push_back("item_riposte")
+# New restricted item changes
+func _ready()->void :
+	._ready()
+	item_groups["stand_still"] = ["item_barricade", "item_chameleon", "item_statue"]
+	item_groups["dodge"].erase("item_chameleon")
+
 
 # Replace original weapon-set-favoring pool with a weighted pool based on how many of the weapon you have
 # Adjusts shop weapon pick odds based on number of weapon types held

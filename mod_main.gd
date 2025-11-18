@@ -17,7 +17,7 @@ func _init(modLoader = ModLoader):
 	# Changes stat tooltip text to be more accurate (+extra decimal place for Armor)
 	#xx Increases reroll prices (Implemented into vanilla in 1.1.7)
 	# Remove King's smiley indicator for Tier-4 weapons you already have
-	# (This is where to add banned item changes)
+	# New restricted item categories (Stand-still for Hiker), remove Chameleon from Dodge category
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
 	# Gives One-armed a 4-set Bonus for their weapon
@@ -682,7 +682,7 @@ func _ready()->void:
 	
 	# Laser Turret
 	temp = load("res://items/all/turret_laser/turret_laser_data.tres")
-	temp.value = 60  				# 65
+	temp.value = 62  				# 65
 	temp = load("res://entities/structures/turret/laser/laser_turret_stats.tres")
 	temp.crit_damage = 2.5	# 2.0
 	
@@ -746,9 +746,15 @@ func _ready()->void:
 	temp.value = 7   # 6 (Engineering)
 	temp = load("res://items/all/toolbox/toolbox_effect_2.tres")
 	temp.value = -5  # -8 (Attack Speed)
-	
+
+	# Triangle of Power
+	temp = load("res://items/all/triangle_of_power/triangle_of_power_data.tres")
+	temp.tags = [ "stat_percent_damage", "stat_dodge" ]	# Added Dodge
+	temp = load("res://items/all/triangle_of_power/triangle_of_power_effect_2.tres")
+	temp.key = "stat_dodge"
+	temp.value = 4				# 1 Armor -> 4 Dodge
 	temp = load("res://items/all/triangle_of_power/triangle_of_power_effect_3.tres")
-	temp.text_key = "new_effect_on_hit"
+	temp.text_key = "new_effect_on_hit"	
 	
 	# Tyler
 	temp = load("res://items/all/tyler/tyler_data.tres")
@@ -756,12 +762,6 @@ func _ready()->void:
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
 	temp.max_range = 225	# 200
 	temp.scaling_stats = [ [ "stat_engineering", 0.8 ], [ "stat_elemental_damage", 0.8 ] ]	# 0.75, 0.75
-	
-	# Triangle of Power
-	temp = load("res://items/all/triangle_of_power/triangle_of_power_effect_2.tres")
-	temp.key = "stat_dodge"
-	temp.value = 4				# 1 Armor -> 4 Dodge
-	
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
 	temp.value = 74  # 92
@@ -1890,6 +1890,10 @@ func _ready()->void:
 	# Provides the description text for the set-bonus effect (which is hard-coded) and has no description included for this effect itself because it is so minor
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/one-arm_no_dupe_weps.tres")
 	temp.effects.push_back(temp_2)
+	
+	# Pacifist
+	temp = load("res://items/characters/pacifist/pacifist_data.tres")
+	temp.banned_items = [ "item_whistle" ]
 	
 	# Ranger
 	temp = load("res://items/characters/ranger/ranger_data.tres")

@@ -568,3 +568,12 @@ improve cursed landmines somewhow - either let curse lower their cooldown, or ad
 	
 3 Weird Ghosts in one wave -- started at 1 hp when at 60 max hp
 
+Controller cursor should default to the reroll button when you ban to create a freeroll
+
+Fairy now inconsistent - gives +5 HP Regen when Fairy tooltip says +4, so used formula different than display formula
+
+Stargazer sound doesn't always go off when they enter vat?
+
+Seashell still wants to get in on that turret action too
+
+Any other Mace ideas?

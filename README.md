@@ -184,7 +184,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Jerky:** Price 50->55
 * **Pearl:** Price 60->54; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
 * **Saltwater:** Extra Speed When Hit 10% -> 20%
-* **Spyglass:** Price 30->33
+* **Spyglass:** Price 30->32
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
 
 ### Tier-3
@@ -204,7 +204,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ghost Outfit:** Price 80->70; Armor -3 -> No Penalty
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
-* **Laser Turret:** Price 65->60; Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
+* **Laser Turret:** Price 65->62; Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
 * **Lucky Charm:** Price 75->70
 * **Peacock:** Price 50->47
 * **Pile of Books:** Crit Chance 3% -> 5% _[Giving more to start helps it work better as an entry-point into Crit.]_
@@ -218,7 +218,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Strange Book:** Price 70->60
 * **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
-* **Triangle of Power:** Armor +1 --> Dodge +4%
+* **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge)
 * **Tyler:** Price 75->68; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 80%
 * **Vigilante Ring:** Price 92->74
 * **Wandering Bot:** Price 60->40
@@ -241,7 +241,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Extra Stomach:** Now tagged for 'consumables' instead of 'luck'.
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
-* **Heavy Bullets:** Price 100->95; +10 Range --> +5% Crit Chance; -5% Crit Chance --> -25% Accuracy; (Replaced 'Range' tag with 'Crit Chance') _[The Ranged Weapons section below also covers some Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
+* **Heavy Bullets:** Price 100->95; Range +10 --> Crit Chance +5%; Crit Chance -5% --> Accuracy -25%; (Replaced 'Range' tag with 'Crit Chance') _[The Ranged Weapons section below also covers some Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
 * **Hourglass:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
 * **Jet Pack:** Price 100->92; HP -5 -> -3
 * **Lucky Coin:** Price: 105->70; Armor -2 -> -1
@@ -353,7 +353,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell.
-* **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
+* **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
+* **Pacifist:** Can no longer be offered Whistle.
 
 ## Enemies
 ### Elites
