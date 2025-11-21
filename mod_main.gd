@@ -47,7 +47,7 @@ func _init(modLoader = ModLoader):
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/item_description.gd")
 	
 	# Add new Druid poisoned-fruit-only effect
-	# Tardigrade no longer used for 1-damage hits
+	# Tardigrade no longer used for hits that bypass invincibility i.e. self-damage
 	# Louder SFX for Brick breaking
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/player/player.gd")
 		
@@ -659,7 +659,7 @@ func _ready()->void:
 	temp.value = 70		# 75
 	
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_data.tres")
-	temp.value = 70		# 80
+	temp.value = 73		# 80
 	temp_2 = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
 	temp.effects.erase(temp_2)	# Remove -3 Armor
 
@@ -1917,6 +1917,7 @@ func _ready()->void:
 	# Sick
 	temp = load("res://items/characters/sick/sick_data.tres")
 	temp.wanted_tags = [  ]	# Had Lifesteal
+	temp.banned_items = [ "item_weird_ghost" ] # removed Tardigrade
 	
 	# Soldier
 	temp = load("res://items/characters/soldier/soldier_effect_3.tres")

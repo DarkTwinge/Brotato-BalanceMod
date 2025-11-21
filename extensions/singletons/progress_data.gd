@@ -26,6 +26,7 @@ func check_for_available_dlcs()->void :
 		Text.keys_needing_percent.new_effect_explode_when_below_hp = [5]
 		Text.keys_needing_operator.new_effect_gain_stat_for_every_different_stat_short = [0, 4]
 		Text.keys_needing_percent.new_effect_stronger_loot_aliens_on_kill = [0]
+		Text.keys_needing_operator.new_effect_stronger_loot_aliens_on_kill = [0]
 		Text.keys_needing_percent.new_effect_chance_explode_on_hit = [0]
 		Text.keys_needing_percent.new_effect_break_on_hit = [0]
 		Text.keys_needing_percent.new_effect_loot_alien_chance = [0]
@@ -69,6 +70,10 @@ func check_for_available_dlcs()->void :
 
 		temp = load("res://dlcs/dlc_1/enemies/goblin_shark/goblin_shark_stats.tres")
 		temp.base_drop_chance = 0.02					# 0.01
+		
+		## DESCRIPTION TWEAKS ##
+		temp = load("res://dlcs/dlc_1/enemies/pufferfish/pufferfish_item.tres")
+		temp.behaviour_description = "NEW_PUFFERFISH_BEHAVIOUR_DESCRIPTION"
 		
 		## WAVE CHANGES ##
 		# Find all waves with Stargazers, Pufferfish, and Vampire Squid to replace them with my versions
@@ -206,7 +211,10 @@ func check_for_available_dlcs()->void :
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 		temp.value = 14   # 23
-
+		
+		temp = load("res://dlcs/dlc_1/items/mirror/mirror_data.tres")
+		temp.value = 57		# 60
+		
 		temp = load("res://dlcs/dlc_1/items/starfish/starfish_data.tres")
 		temp.value = 68		# 75
 		
@@ -282,15 +290,15 @@ func check_for_available_dlcs()->void :
 
 		# Mace
 		temp = load("res://dlcs/dlc_1/weapons/melee/mace/2/mace_2_data.tres")
-		temp.value = 43			# 46
+		temp.value = 30			# 46
 		temp = load("res://dlcs/dlc_1/weapons/melee/mace/2/mace_2_stats.tres")
 		temp.cooldown	= 43	# 50
 		temp = load("res://dlcs/dlc_1/weapons/melee/mace/3/mace_3_data.tres")
-		temp.value = 81			# 92
+		temp.value = 59			# 92
 		temp = load("res://dlcs/dlc_1/weapons/melee/mace/3/mace_3_stats.tres")
 		temp.cooldown	= 36	# 45
 		temp = load("res://dlcs/dlc_1/weapons/melee/mace/4/mace_4_data.tres")
-		temp.value = 142		# 185
+		temp.value = 105		# 185
 		temp = load("res://dlcs/dlc_1/weapons/melee/mace/4/mace_4_stats.tres")
 		temp.cooldown	= 30	# 40
 		
@@ -542,8 +550,6 @@ func check_for_available_dlcs()->void :
 		# Chef
 		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
 		# Remove
-		temp_2 = load("res://weapons/melee/plank/1/plank_data.tres")
-		temp.starting_weapons.erase(temp_2)	
 		temp_2 = load("res://weapons/melee/stick/1/stick_data.tres")
 		temp.starting_weapons.erase(temp_2)
 		
@@ -648,9 +654,9 @@ func check_for_available_dlcs()->void :
 		temp = load("res://items/characters/multitasker/multitasker_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/spoon/1/spoon_data.tres")
 		temp.starting_weapons.push_back(temp_2)
-		# Remove
-		temp_2 = load("res://weapons/ranged/revolver/1/revolver_data.tres")
-		temp.starting_weapons.erase(temp_2)
+		# Was Removed to make room for Spoon, but now it's 3 lines anyway...
+#		temp_2 = load("res://weapons/ranged/revolver/1/revolver_data.tres")
+#		temp.starting_weapons.erase(temp_2)
 		
 		# Ogre
 		temp = load("res://dlcs/dlc_1/characters/ogre/ogre_data.tres")

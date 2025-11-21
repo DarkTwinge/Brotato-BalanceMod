@@ -493,16 +493,14 @@ Other possible Purples that could be given Dodge:
 Sunken Bell
 Scarf
 Starfish
-Wandering Bot
+Wandering Bot [Possibly scaling with Engineering, maybe 5 Eng:1 Dodge]
 Mouse
 Crystal
+Tardigrade
 
-Adrenaline could give 1-2 more?
+Adrenaline could give 1-2 more Dodge?
 
 
-
-
-Pufferfish Codex descript should specify melee difference?
 
 
 base sale for weapons could be +5/10% to more encourage mixed weapons
@@ -524,14 +522,16 @@ King -- bottom bit is cut off; but shortening text seems kinda rough
 Reported:
 UI - Technomage opnly shows 1 turret when they start with 2
 End screen indexing bug for controller
+Controller cursor should default to the reroll button when you ban to create a freeroll
+
 
 Sunken Bell - look at HP for highest HP enemies; cursed/uncursed; it really should one-shot almost anything that kills you as long as you built decent damage?  Or maybe re-tooled to do 999999(?) damage to non-bosses in the radius instead of even scaling with anything?  Or could it give extra iframes?
 
+~~This should now be done~~
 Revisit maknig Tardigrade specifically ignore self-damage instead of '1 damage'
 	maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
 	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?
 	could the check if it's bypass_ be handled in the big take-damage function, routing to my modified function if appropriate and the normal code otherwise, letting me overwrite neither function??
-Sick doesn't necessarily need Tardigrade banned now (maybe wait for full Tardigrade fix tho to ignore all self-damage?)
 
 weird that the dodge cap for cursed ghost costume is unaffected by curse strength
 
@@ -539,19 +539,13 @@ Gobbler's Hat -- not dodge penalty? (or at least some armor, some dodge)
 	could scale down Speed with mats like the Gobbler itself, using Streamer effect
 
 
-Fruit Basket 
-	Fruits +40% at 0 Luck, roughly -- 2.6 fruits, so call it ~15hp in healing?  Around 4-5 HP Regen
-	fix the description; probably go from 1% to 2%, cap down to 3? is it existing enough to move jerky (or itself) to purple?
-	
+Vanilla Fruit Basket - Fruits +40% at 0 Luck, roughly -- 2.6 fruits, so call it ~15hp in healing?  Around 4-5 HP Regen
 	Average fruit for mathing: 10 per wave (~50 Luck, ~1 Tree item)  --> 2.5 HP Regen per +1 Consumable Healing
 
 Candy bag could skip stats with a -100% modifier
 
-Hiker-could have tag-bans for stand-still items
-
 
 Probably not but maybe Tags:
-Hourglass could be economy
 Evil Hat could be pickup
 
 
@@ -568,12 +562,19 @@ improve cursed landmines somewhow - either let curse lower their cooldown, or ad
 	
 3 Weird Ghosts in one wave -- started at 1 hp when at 60 max hp
 
-Controller cursor should default to the reroll button when you ban to create a freeroll
-
 Fairy now inconsistent - gives +5 HP Regen when Fairy tooltip says +4, so used formula different than display formula
 
 Stargazer sound doesn't always go off when they enter vat?
 
 Seashell still wants to get in on that turret action too
 
-Any other Mace ideas?
+Exploring Mace starters... Jack? Doctor, Entreprenuer, Lich, Vaga, Druid, (Bucaneer, Gladiator, and Ogre prob too good?)
+
+What to do about the Sword/Vorpal situation. . .
+	Vorpal maybe should not be Medieval (tho I guess some of the idea is that it can mix with Swords smoothly)
+
+Test Lutes - how stack
+
+
+
+	

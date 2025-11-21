@@ -3,7 +3,7 @@ extends "res://singletons/item_service.gd"
 # New restricted item changes
 func _ready()->void :
 	._ready()
-	item_groups["stand_still"] = ["item_barricade", "item_chameleon", "item_statue"]
+	item_groups["stand_still"] = ["item_barricade", "item_chameleon", "item_statue", "item_coral"]
 	item_groups["dodge"].erase("item_chameleon")
 
 

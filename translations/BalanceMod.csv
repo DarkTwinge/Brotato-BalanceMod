@@ -24,8 +24,8 @@ NEW_INFO_POS_STAT_LIFESTEAL,"Your weapon attacks have a {0} chance to heal you f
 NEW_INFO_NEG_STAT_LIFESTEAL,"Your weapon attacks have a 0% chance to heal you for 1 HP. (Capped at 1 HP every 0.1 seconds. Explosions cannot lifesteal.)"
 NEW_EFFECT_NO_HEAL,You [color=#ff0000]can’t heal[/color] in any way during waves
 NEW_EFFECT_PACIFIST,Gain {0} material and XP for every living and despawned enemy at the end of a wave 
-BM_EFFECT_HIT_PROTECTION,Nullifies the the first hit (of 2 or more damage) taken each wave
-BM_EFFECT_HIT_PROTECTION_PLURAL,"Nullifies the first {0} hits (of 2 or more damage) taken each wave"
+BM_EFFECT_HIT_PROTECTION,"Nullifies the the first hit taken each wave (ignores self-damage)"
+BM_EFFECT_HIT_PROTECTION_PLURAL,"Nullifies the first {0} hits taken each wave (ignores self-damage)"
 NEW_EFFECT_BOUNCING,Your projectiles gain {0} bounce.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage; Non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
 NEW_EFFECT_BOUNCING_PLURAL,Your projectiles gain {0} bounces.  (Naturally piercing weapons gain bounces at [color=#00ff00]70%[/color] damage; Non-bouncing or piercing weapons at [color=#76ff76]50%[/color] damage.)
 NEW_EFFECT_GARDEN,Spawns a garden that creates a fruit an average of every {0} seconds
@@ -67,7 +67,7 @@ NEW_EFFECT_CONVERT_BONUS_GOLD_TWO,"Every {0} uncollected materials convert into 
 NEW_EFFECT_CONVERT_BONUS_GOLD_TWO_WITH_TRACKING,"Every {0} uncollected materials convert into {2} {3} and {4} {5} at end of wave [{6}/{7}]"
 NEW_SHORT_EFFECT_STARTING_ITEM,"Start with {0} {1}"
 NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT_SHORT,"{0} {1} for every different {3} held [{4}]"
-NEW_EFFECT_STRONGER_LOOT_ALIENS_ON_KILL,"All future loot aliens get {0} more health when you kill a loot alien"
+NEW_EFFECT_STRONGER_LOOT_ALIENS_ON_KILL,"Future loot aliens get {0} health when you kill a loot alien"
 NEW_EFFECT_EXPLODE_AND_BURN_ON_CONSUMABLE,"Consumables explode for {5}x{6} ({7}) burning damage when picked up (Size: [color=#00ff00]{4}[/color])"
 NEW_EFFECT_STRONGER_ELITES_ON_KILL,"All future elites/bosses become stronger when you kill an elite/boss ([color=#ff0000]+15%[/color] HP, [color=#ff0000]+7.5%[/color] Damage)"
 NEW_EFFECT_NO_MELEE_WEAPONS,"Can't find melee weapons"
@@ -94,3 +94,4 @@ NEW_EFFECT_CHARM_BELOW_HP_NO_SCALING,"Hitting an enemy under {0} health has a {1
 NEW_EFFECT_TEMP_STAT_ON_DODGE,"{0} {1} until end of wave when you dodge an attack"
 NEW_EFFECT_CRYPTID,"Gain {0} materials and XP per living tree at end of a wave"
 NEW_EFFECT_ENEMY_FRUIT_DROPS,"Enemies have an extra {0} chance to drop a fruit (after failing to drop a fruit or crate due to Luck)"
+NEW_PUFFERFISH_BEHAVIOUR_DESCRIPTION,"Explodes into 4 projectiles when killed by melee damage. Explodes into 8 projectiles when killed by non-melee damage or after being charmed and expiring."

@@ -170,7 +170,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Shady Potion:** Luck 20 -> 19
 * **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
 * **Snowball:** Price 50->46
-* **Spicy Sauce:** Explosion Size 125% -> 135%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies).
+* **Spicy Sauce:** Explosion Size 125% -> 135%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies)
 * **Tentacle:** Price 35->38
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
@@ -201,7 +201,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Crown:** Price 70->68
 * **Fairy:** Price 85->89; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
-* **Ghost Outfit:** Price 80->70; Armor -3 -> No Penalty
+* **Ghost Outfit:** Price 80->73; Armor -3 -> No Penalty
 * **Glass Canon:** Price 75->70
 * **Hunting Trophy:** Price 55->60
 * **Laser Turret:** Price 65->62; Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
@@ -216,7 +216,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Shmoop:** Price 60->61; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
 * **Statue:** Price 60->55
 * **Strange Book:** Price 70->60
-* **Tardigrade:** Price 50->40; Now requires 2+ damage to proc (preventing it from being wasted by Bloody Hand, Blood Donation, or Sick); Added to Dodge Item Tag Pool
+* **Tardigrade:** Price 50->40; Now ignores self-damage effects (anything that bypasses invulnerability); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge)
 * **Tyler:** Price 75->68; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 80%
@@ -231,6 +231,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Goblet:** Price 70->75
 * **Goldfish:** Price 23->14 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Honey:** Price 70->52; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
+* **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
 * **Sunken Bell:** Price 65->42; Explosion Size 600% -> 750%
 
@@ -289,11 +290,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
 * **Brick:** Can no longer break during Wave 1; Breaking SFX slightly louder
-* **Mace:** Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
+* **Mace:** Price 46/92/185 -> 30/59/105; Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between.]_
 * **War Hammer:** Cooldown 2.11/1.95 -> 2.0/1.83; Crit Damage 1.5x -> 1.75x
 
-- **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Mace 46/92/185 -> 43/81/142; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
+- **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
 - **Other Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133
 
 ### Ranged
@@ -341,7 +342,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered lower-tier versions of the weapon you have equipped _[Very minor; removes completely useless weapons and makes swapping weapons slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
-* **Sick:** No longer favored to find Lifesteal items.
+* **Sick:** No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage).
 * **Soldier:** 200% Pickup Range -> 125% _[Gives them some reason to care about Pickup Range items.]_
 * **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2
 * **Streamer:** Now also favored to find Stand-still items.
@@ -432,7 +433,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby:** Added Lute, Brick; Removed Flute
 * **Buccaneer:** Added Plank, Wrench, Revolver
 * **Builder:** Added Icicle
-* **Chef:** Removed Plank, Stick
+* **Chef:** Removed Stick
 * **Creature:** Added Shuriken, Ghost Axe, Taser; Removed Fist
 * **Curious:** Added Medical Gun
 * **Demon:** Added Brick, Mace
@@ -443,7 +444,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **King:** Added Blunderbuss, Harpoon Gun, Spoon
 * **Hiker:** Added Slingshot, Medical Gun
 * **Mage:** Added Spoon
-* **Multi-tasker:** Added Spoon; Removed Revolver _[Removal just to make room for Spoon.]_
+* **Multi-tasker:** Added Spoon
 * **Ogre:** Added Knife
 * **One-armed:** Added Harpoon Gun
 * **Romantic:** Added Jousting Lance, Screwdriver; Removed Fist
@@ -487,7 +488,7 @@ These changes were originally made for Balance Mod but are now implemented into 
 - Elite Nerfs to: Croc, Mother
 - Elite Buffs to: Rhino
 - Elite Buff+Rework of: Gargoyle
-- Fixed Tagging/Banning for: Baby Gecko, Riposte, Silver Bullet, Triangle of Power, Improved Tools, Alloy, Community Support, Power Generator, Octopus, Explorer, Streamer, Cyborg, Farmer, Glutton
+- Fixed Tagging/Banning for 20+ items.
 - Pocket Factory now counts as a Structure. Fixed Incendiary Turret tooltip's incorrect damage rounding.
 - HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.
 - Revolver & Chain-gun: Fixed a bug that caused them to instantly reload when used alongside effects that check if you're moving (e.g. Solider). Also bugfixed inaccurate long cooldown tooltip.
