@@ -304,14 +304,14 @@ func check_for_available_dlcs()->void :
 		
 		# Sickle
 		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
-		temp.tier = -1
+		temp.can_be_looted = false
 		temp.add_to_chars_as_starting = [ ]
 		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/2/sickle_2_data.tres")
-		temp.tier = -1
+		temp.can_be_looted = false
 		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/3/sickle_3_data.tres")
-		temp.tier = -1
+		temp.can_be_looted = false
 		temp = load("res://dlcs/dlc_1/weapons/melee/sickle/4/sickle_4_data.tres")
-		temp.tier = -1
+		temp.can_be_looted = false
 	
 		# Spoon
 		temp = load("res://dlcs/dlc_1/weapons/melee/spoon/4/spoon_4_data.tres")

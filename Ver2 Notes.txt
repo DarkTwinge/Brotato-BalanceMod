@@ -395,7 +395,7 @@ Coupon counts gangster-stolen items as value for itself
 
 
 Possible incompatability with: Mashtato and Pentato ; checked and nothing clear in extensions that should conflict
-Possible mod conflict with one of: RerollRNGBalancing , Fixed Camera Solo , HookCursesMore  -- Sickle showed up in the shop in Endless
+Possible mod conflict with one of: RerollRNGBalancing , Fixed Camera Solo , HookCursesMore  
 
 
 ~~flute test: friends alive at end, do they give you full or halves on e.g. hiker
@@ -471,7 +471,6 @@ Riposte could reset melee weapon cooldowns on dodge instead?  (would be Tier 3 o
 
 Co-op bugs: mid-wave crashes, buying Bone Dice?
 
-Sickle showed up for Hyph on a Demon run (Sickle IV but colored white)
 
 
 Will'o'Wisp -- Why? Snowball also exists??
@@ -575,6 +574,3 @@ What to do about the Sword/Vorpal situation. . .
 
 Test Lutes - how stack
 
-
-
-	
