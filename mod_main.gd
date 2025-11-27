@@ -23,7 +23,7 @@ func _init(modLoader = ModLoader):
 	# Gives One-armed a 4-set Bonus for their weapon
 	# Slightly reduce the strength of armor
 	# Gives Gun Mage an extra Sausage
-	# Fixes rounding for Fairy tooltip
+	#xx Fixes rounding for Fairy tooltip (Game variable beavior changed in 1.1.11)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/run_data.gd")
 
 	# Now applies Crazy's +Range to Crossbow/Sniper
@@ -641,8 +641,8 @@ func _ready()->void:
 	# Fairy
 	temp = load("res://items/all/fairy/fairy_data.tres")
 	temp.value = 89  # 85
-	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/fairy_count_tier1s.tres")
-	temp.effects.insert(1, temp_2)
+#	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/fairy_count_tier1s.tres")
+#	temp.effects.insert(1, temp_2)
 	temp = load("res://items/all/fairy/fairy_effect_1.tres")
 	temp.value = 2   # 1 (HP Regen Gained)
 	temp.nb_stat_scaled = 3 # 1 (Items Required)
@@ -693,10 +693,9 @@ func _ready()->void:
 	temp.value = 47  # 50
 	
 	temp = load("res://items/all/pile_of_books/pile_of_books_data.tres")
+	temp.tier = 1			# 2
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/pile_of_books_crit_note.tres")
-	temp.effects.append(temp_2)	
-	temp = load("res://items/all/pile_of_books/effects/pile_of_books_effect_1.tres")
-	temp.value = 5		# 3 (Crit Chance)
+	temp.effects.append(temp_2)
 	
 	temp = load("res://items/all/plastic_explosive/plastic_explosive_data.tres")
 	temp.value = 51		# 60
@@ -1463,6 +1462,12 @@ func _ready()->void:
 	# Laser Gun
 	temp = load("res://weapons/ranged/laser_gun/1/laser_gun_stats.tres")
 	temp.cooldown = 93			# 95
+	temp = load("res://weapons/ranged/laser_gun/2/laser_gun_2_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 5.0 ] ]	# 4.5
+	temp = load("res://weapons/ranged/laser_gun/3/laser_gun_3_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 6.0 ] ]	# 5.0
+	temp = load("res://weapons/ranged/laser_gun/4/laser_gun_4_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 7.0 ] ]	# 6.0
 	temp = load("res://weapons/ranged/laser_gun/4/laser_gun_4_data.tres")
 	temp.value = 111				#	122
 	
@@ -1554,18 +1559,22 @@ func _ready()->void:
 	temp = load("res://weapons/ranged/revolver/1/revolver_data.tres")
 	temp.value = 18					# 20
 	temp = load("res://weapons/ranged/revolver/1/revolver_stats.tres")
+	temp.additional_cooldown_multiplier = 9.0	# 8.0
 	temp.max_range = 425		# 450
 	temp = load("res://weapons/ranged/revolver/2/revolver_2_data.tres")
 	temp.value = 36					# 34
 	temp = load("res://weapons/ranged/revolver/2/revolver_2_stats.tres")
+	temp.additional_cooldown_multiplier = 9.0	# 8.0
 	temp.max_range = 425		# 450
 	temp = load("res://weapons/ranged/revolver/3/revolver_3_data.tres")
 	temp.value = 68					# 70
 	temp = load("res://weapons/ranged/revolver/3/revolver_3_stats.tres")
+	temp.additional_cooldown_multiplier = 9.0	# 8.0
 	temp.max_range = 425		# 450
 	temp = load("res://weapons/ranged/revolver/4/revolver_4_data.tres")
 	temp.value = 125				# 130
 	temp = load("res://weapons/ranged/revolver/4/revolver_4_stats.tres")
+	temp.additional_cooldown_multiplier = 9.0	# 8.0
 	temp.max_range = 425		# 450
 
 	# Rocket Launcher
@@ -1604,18 +1613,22 @@ func _ready()->void:
 	
 	# SMG
 	temp = load("res://weapons/ranged/smg/1/smg_stats.tres")
-	temp.cooldown = 5				# 4	
+	temp.cooldown = 5				# 4
+	temp.sound_db_mod = -11	# -10
 	temp = load("res://weapons/ranged/smg/2/smg_2_stats.tres")
 	temp.cooldown = 5				# 4
 	temp.accuracy = 0.74		# 0.75
+	temp.sound_db_mod = -11	# -10
 	temp = load("res://weapons/ranged/smg/3/smg_3_stats.tres")
 	temp.cooldown = 5				# 4
 	temp.accuracy = 0.77		# 0.80
+	temp.sound_db_mod = -11	# -10
 	temp = load("res://weapons/ranged/smg/4/smg_4_data.tres")
 	temp.value = 133				# 149
 	temp = load("res://weapons/ranged/smg/4/smg_4_stats.tres")
 	temp.cooldown = 4				# 3	
 	temp.accuracy = 0.80		# 0.85
+	temp.sound_db_mod = -11	# -10
 	
 	# Sniper Gun
 	temp = load("res://weapons/ranged/sniper_gun/3/sniper_gun_3_stats.tres")
@@ -1625,7 +1638,11 @@ func _ready()->void:
 	temp.value = 205				# 245
 	temp = load("res://weapons/ranged/sniper_gun/4/sniper_gun_4_stats.tres")
 	temp.max_range = 600		# 1000
+	temp.crit_chance = 0.25	# 0.2
 	temp.scaling_stats = [ [ "stat_ranged_damage", 2.5 ], [ "stat_range", 0.3 ] ]  # 1.0 / 0.3
+	temp = load("res://weapons/ranged/sniper_gun/4/sniper_gun_4_proj_stats.tres")
+	temp.crit_chance = 0.25	# 0.2
+	
 	
 	# Taser
 	temp = load("res://weapons/ranged/taser/4/taser_4_data.tres")

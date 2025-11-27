@@ -175,7 +175,7 @@ func on_weapon_wanted_to_break(weapon:Weapon, gold_dropped:int)->void :
 			current_weapon.weapon_pos -= 1
 	
 	# -15 -> -10
-	SoundManager.play(Utils.get_rand_element(WeaponService.breaking_sounds), - 10, 0.1, true)
+	SoundManager.play(Utils.get_rand_element(WeaponService.breaking_sounds), - 8, 0.1, true)
 
 	weapon.queue_free()
 	

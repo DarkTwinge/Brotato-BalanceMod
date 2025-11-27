@@ -95,16 +95,16 @@ func add_starting_items_and_weapons()->void :
 
 
 # Fixes tooltip for Fairy
-func get_scaling_bonus(value:int, stat_scaled:String, nb_stat_scaled:int, perm_stats_only:bool, player_index:int)->int:
-	var orig_value = .get_scaling_bonus(value, stat_scaled, nb_stat_scaled, perm_stats_only, player_index)
-	var actual_nb_scaled: = 0.0
-	# Changes how the rounding happens for Fairy's tooltip
-	if stat_scaled == "common_item":
-		actual_nb_scaled = get_nb_different_items_of_tier(Tier.COMMON, player_index)
-		return int(value * floor((actual_nb_scaled / nb_stat_scaled)))
-	# For anything other than Tier-1 Items, use original rounding
-	else:
-		return orig_value
+#func get_scaling_bonus(value:int, stat_scaled:String, nb_stat_scaled:int, perm_stats_only:bool, player_index:int)->int:
+#	var orig_value = .get_scaling_bonus(value, stat_scaled, nb_stat_scaled, perm_stats_only, player_index)
+#	var actual_nb_scaled: = 0.0
+#	# Changes how the rounding happens for Fairy's tooltip
+#	if stat_scaled == "common_item":
+#		actual_nb_scaled = get_nb_different_items_of_tier(Tier.COMMON, player_index)
+#		return int(value * floor((actual_nb_scaled / nb_stat_scaled)))
+#	# For anything other than Tier-1 Items, use original rounding
+#	else:
+#		return orig_value
 
 
 

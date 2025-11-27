@@ -8,6 +8,7 @@ BM_EFFECT_FOR_NEGATIVE_SPEED	If your Speed is negative, gain {0} {1}
 
 
 ~Challenge Run Ideas~
+Multitasker-All Different weapons
 Mage-Hand
 Jack starting with Candle+Flag
 Lich pure ability run (-Melee Damage, Scissors, rely on ability entirely?)
@@ -81,6 +82,7 @@ Technomage - Spoon??
 
 ~~~
 BalMod SMG breakpoints: 1-26-51-67
+Each 5 points of +Enemy Damage% is about the same as -1 Armor
 
 ~~~
 reconsider jousting lance (tho Blob already nerfed it a fair bit)
@@ -137,16 +139,11 @@ Gangster: Controller down on items can go over to stats not weapons from rightmo
 
 Tier-4 Brick could give you a Tier-1 Brick when it breaks
 
-treasure map should have some visual/audio cue when procs
-
 Impaled Worm run-away Elite may want to switch phase ar 40s instead of 35s since it's so difficult to hit while it's running away early?  Not strong
 
 Sailor-Knight differentiate more?
 	sailor cursed weapons could count too? (and reduce bonus)
 Javelin/seashell text 'every 2nd attack' maybe clearer if accurate?
-
-romantic's bonus range apply to hiking stick
-	^Seemed surprisingly hard to implement, but would still like to
 
 
 maybe add new turret, prob blue tier
@@ -180,9 +177,6 @@ BM-Lute shouldn't do extra damage itself from the Lute bonus
 ~~~~
 
 
-check curse special cases, and make sure anything I rework doesn't get extra silly (heavy bullets right now maybe?  couch down the line.)
- ^Verify it is affecting -accuracy correctly; probably should be since Eyepatch exists but?
-~
 ~If reworking things like e.g. Baby Squid, make sure they are removed/added to the lists in item_service for specific-character bans
 ~
 ~~~
@@ -244,12 +238,8 @@ Baby/Techno/Captain (/more?) -- XP _needed_ to level up?
 "the end of a wave" -> end of wave (Creature...)
 
 
-whistle - track extras given
-whistle could make a sfx when looter spawns
-^^These both seem kinda hard.  Would be neat tho.
 
-
-Check the new effect for tooltip mods I made; was I just doing key instead of text_key so they don't need new files?
+Check the new effect for tooltip modifications I made; was I just doing key instead of text_key so they don't need new files?
 
 
 Landmines themselves could maybe have more Crit Damage
@@ -293,8 +283,7 @@ butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
 
 could slightly reducing the damage of a wave 11/12 elite be sensible? (keep in mind gangster for lower waves or whatever)
 
-seashell should be made to work for structures too [Make sure it doesn't double-apply to builder turret]
-	All projectiles; when works for all projectile, probably remove it from bans on e.g. knight, dwarf
+	when Seashell works for all projectile, probably remove it from bans on e.g. knight, dwarf
 
 
 
@@ -328,11 +317,6 @@ Hiking Poles might want to be slightly cheaper (17->16 path).  A weird-cute idea
 
 
 Streamer could have a lower income cap and/or a slightly smooth income spot at lower values?  (Not super convinced, by could be interesting to be a bit less snowball-focused)
-
-Ball & Chain could change the color of cooldown on weapons when at cap?
-	^Didn't seem trivial but I do like the idea
-
-Gangster could count value of stolen items in their tooltip
 
 Bosses could have +0.1% HP per Curse perhaps
 
@@ -401,7 +385,6 @@ Possible mod conflict with one of: RerollRNGBalancing , Fixed Camera Solo , Hook
 ~~flute test: friends alive at end, do they give you full or halves on e.g. hiker
 
 
-Cursed Bait text should acknowledge the extra spawns
 Sausage's self-burn increase is not reflected in tooltip
 Spyglass should specify both shop and level-ups maybe?
 Goldfish should clarify doesn't affect locked
@@ -574,3 +557,39 @@ What to do about the Sword/Vorpal situation. . .
 
 Test Lutes - how stack
 
+Gobbler capable of being mega-slow --- ugly tooth I think
+
+
+Sometimes going down (controller) on right-most item will move it over to Speed instead of down to weapons. (no ban, no lock button), repeatable if you move into the weapon from the stats area; sometimes to the ban of the item to its left, also bad
+
+~~ Wishlist of new features ~~
+* Whistle should count how many extra Loot Goblins it creates.
+* I think it'd also be cute of Whistle made a sound effect whenever any Loot Goblin was spawned (both extra and natural ones).
+* I'd like to have Seashell also working on Turrets. (Needs to not be counted twice for Builer's Turret.)
+* Treasure Map should have a visible and/or audio effect when it activates.
+* Romantic's bonus Range for Melee Weapons should also apply to Hiking Pole's scaling. (I did this for Brawler+Claw and Crazy+Crossbow already, but it seemed harder to implement for Romantic when I last looked.)
+* Would be neat if Ball & Chain changed a weapon's cooldown to a unique color when it is at the cap.
+* Gangster could count the value of stolen items in their tooltip. (Haven't looked at this yet, might be easy but not sure.)
+
+
+
+Impr Tooltip:
+Count stand-still time for e.g. Coral
+
+
+Red Knife -5 Base Crit w/ tiny other buff?
+Sailor having Dodge banned but Dwarf and Crazy not is pretty weird
+
+
+
+Bug: Buffers/Spitters (the 'stay at distance form player logic pattern?" match player speed after getting hit with harppon gun sometimes
+
+
+CHART:
+Demon HP Costs for first 2 Waves
+AtkSpd breakpoints (some 'standard' for most weapons maybe like the 201% and maybe 51% spots?  otherwise SMG/Revolver/Minigun/etc. specific
+
+
+
+
+Character: Lose double the set bonuses you have active [different way to encourage mixed builds?]
