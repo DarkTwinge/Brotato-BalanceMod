@@ -505,6 +505,7 @@ Reported:
 UI - Technomage opnly shows 1 turret when they start with 2
 End screen indexing bug for controller
 Controller cursor should default to the reroll button when you ban to create a freeroll
+Bug: Buffers/Spitters (the 'stay at distance form player logic pattern?" match player speed after getting hit with harppon gun sometimes
 
 
 Sunken Bell - look at HP for highest HP enemies; cursed/uncursed; it really should one-shot almost anything that kills you as long as you built decent damage?  Or maybe re-tooled to do 999999(?) damage to non-bosses in the radius instead of even scaling with anything?  Or could it give extra iframes?
@@ -582,14 +583,15 @@ Sailor having Dodge banned but Dwarf and Crazy not is pretty weird
 
 
 
-Bug: Buffers/Spitters (the 'stay at distance form player logic pattern?" match player speed after getting hit with harppon gun sometimes
 
 
 CHART:
 Demon HP Costs for first 2 Waves
 AtkSpd breakpoints (some 'standard' for most weapons maybe like the 201% and maybe 51% spots?  otherwise SMG/Revolver/Minigun/etc. specific
 
-
-
-
 Character: Lose double the set bonuses you have active [different way to encourage mixed builds?]
+
+
+
+extra decimals for super high armor?
+

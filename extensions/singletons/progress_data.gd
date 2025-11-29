@@ -183,7 +183,7 @@ func check_for_available_dlcs()->void :
 		temp.value = 55		# 50
 
 		temp = load("res://dlcs/dlc_1/items/pearl/pearl_data.tres")
-		temp.value = 54   # 60
+		temp.value = 53   # 60
 		temp.max_nb = 15	# 20
 		temp = load("res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres")
 		temp.value = 4		# 3 (Chance to find an extra Pearl)

@@ -50,6 +50,9 @@ func _init(modLoader = ModLoader):
 	# Tardigrade no longer used for hits that bypass invincibility i.e. self-damage
 	# Louder SFX for Brick breaking
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/player/player.gd")
+	
+	# Extra HP for Waves 17-19 Elites
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/enemies/boss/boss.gd")
 		
 	#y New Padding Effect
 	#y New Couch Negative Speed Effect
@@ -431,7 +434,7 @@ func _ready()->void:
 	temp.value = 30   # 25 (XP Gain)
 	
 	temp = load("res://items/all/blood_leech/blood_leech_data.tres")
-	temp.value = 39   # 45
+	temp.value = 38   # 45
 
 	temp = load("res://items/all/campfire/campfire_data.tres")
 	temp.value = 39   # 40
@@ -472,7 +475,7 @@ func _ready()->void:
 ##	temp.value = 42		# 40
 	
 	temp = load("res://items/all/fruit_basket/fruit_basket_data.tres")
-	temp.value = 58		# 45
+	temp.value = 59		# 45
 	temp.tags = [ "consumable" ] # Was mistakenly Elemental
 	temp.max_nb = 3		# 4
 	temp = load("res://items/all/fruit_basket/fruit_basket_effect_1.tres")
@@ -490,7 +493,7 @@ func _ready()->void:
 	temp.value = 47		# 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
-	temp.value = 38		# 45
+	temp.value = 37		# 45
 	temp = load("res://items/all/little_frog/little_frog_effect_1.tres")
 	temp.value = 30		# 20 (Pickup Range)
 	
@@ -498,7 +501,7 @@ func _ready()->void:
 	temp.value = -18  # -15 (Range)
 
 	temp = load("res://items/all/lure/lure_data.tres")
-	temp.value = 40  # 34
+	temp.value = 41  # 34
 			
 	temp = load("res://items/all/medal/medal_data.tres")
 	temp.value = 60  # 55
@@ -509,7 +512,7 @@ func _ready()->void:
 	temp.value = -4  # -5 (Damage%)
 	
 	temp = load("res://items/all/metal_plate/metal_plate_data.tres")
-	temp.value = 44  # 40
+	temp.value = 45  # 40
 	
 	temp = load("res://items/all/missile/missile_effect_1.tres")
 	temp.value = 11  # 10 (Damage%)
@@ -554,7 +557,7 @@ func _ready()->void:
 	temp.key = "stat_attack_speed"	# Speed
 	
 	temp = load("res://items/all/snowball/snowball_data.tres")
-	temp.value = 46		# 50
+	temp.value = 44		# 50
 	
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_data.tres")
 	temp.tags = [ "stat_max_hp", "consumable", "explosive" ]	# (Luck -> Consumables)
@@ -567,7 +570,7 @@ func _ready()->void:
 	temp.crit_chance = 0.01  # 0 (Crit Chance)
 
 	temp = load("res://items/all/tentacle/tentacle_data.tres")
-	temp.value = 38  # 35
+	temp.value = 39  # 35
 	
 	temp = load("res://items/all/wheelbarrow/wheelbarrow_data.tres")
 	temp.value = 38  # 40	
@@ -598,6 +601,9 @@ func _ready()->void:
 	temp = load("res://items/all/baby_with_a_beard/baby_with_a_beard_effect_1.tres")
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/weapons/baby_beard_weapon_stats.tres")
 	temp.weapon_stats = temp_2 # Ranged Damage scaling 100% -> 75%
+	
+	temp = load("res://items/all/ball_and_chain/ball_and_chain_data.tres")
+	temp.value = 77		# 75
 	
 	temp = load("res://items/all/barricade/barricade_data.tres")
 	temp.value = 67		# 75
@@ -633,10 +639,10 @@ func _ready()->void:
 	temp.value = 50		# 20 Stand-still Dodge -> Stand-still Luck
 
 	temp = load("res://items/all/community_support/community_support_data.tres")
-	temp.value = 71  # 75
+	temp.value = 70  # 75
 	
 	temp = load("res://items/all/crown/crown_data.tres")
-	temp.value = 68  # 70
+	temp.value = 67  # 70
 	
 	# Fairy
 	temp = load("res://items/all/fairy/fairy_data.tres")
@@ -766,7 +772,7 @@ func _ready()->void:
 	temp.value = 74  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
-	temp.value = 40  # 60
+	temp.value = 39  # 60
 	
 	temp = load("res://items/all/wheat/wheat_data.tres")
 	temp.value = 82  # 85
@@ -1454,6 +1460,22 @@ func _ready()->void:
 	temp.value = 111				#	122
 	
 	# Icicle
+	temp = load("res://weapons/ranged/icicle/1/icicle_stats.tres")
+	temp.cooldown = 51			# 50
+	temp.max_range = 350		# 400
+	temp.knockback = 3			# 5
+	temp = load("res://weapons/ranged/icicle/2/icicle_2_stats.tres")
+	temp.cooldown = 46			# 45
+	temp.max_range = 350		# 400
+	temp.knockback = 3			# 5
+	temp = load("res://weapons/ranged/icicle/3/icicle_3_stats.tres")
+	temp.cooldown = 41			# 40
+	temp.max_range = 350		# 400
+	temp.knockback = 3			# 5
+	temp = load("res://weapons/ranged/icicle/4/icicle_4_stats.tres")
+	temp.cooldown = 31			# 30
+	temp.max_range = 350		# 400
+	temp.knockback = 3			# 5
 	temp = load("res://weapons/ranged/icicle/3/icicle_3_data.tres")
 	temp.value = 68					# 66
 	temp = load("res://weapons/ranged/icicle/4/icicle_4_data.tres")
@@ -1525,8 +1547,10 @@ func _ready()->void:
 	temp.projectile_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/weapons/obliterator_bullet.tscn")
 	
 	# Particle Accelerator
+	temp = load("res://weapons/ranged/particle_accelerator/3/particle_accelerator_3_data.tres")
+	temp.value = 130				# 144
 	temp = load("res://weapons/ranged/particle_accelerator/4/particle_accelerator_4_data.tres")
-	temp.value = 251				# 289
+	temp.value = 232				# 289
 	
 	# Pistol
 	temp = load("res://weapons/ranged/pistol/4/pistol_4_data.tres")
