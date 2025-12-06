@@ -315,7 +315,7 @@ func _ready()->void:
 	temp.value = 19   # 15
 	
 	temp = load("res://items/all/cute_monkey/cute_monkey_data.tres")
-	temp.value = 29  # 25
+	temp.value = 30  # 25
 	
 	temp = load("res://items/all/duct_tape/duct_tape_data.tres")
 	temp.value = 16  # 20 
@@ -326,7 +326,7 @@ func _ready()->void:
 	temp.value = 7   # 8 (Harvesting)
 	
 	temp = load("res://items/all/gentle_alien/gentle_alien_data.tres")
-	temp.value = 31	 #30
+	temp.value = 32	 #30
 	
 	temp = load("res://items/all/glasses/glasses_effect_1.tres")
 	temp.value = 22  # 20 (Range)
@@ -364,7 +364,7 @@ func _ready()->void:
 	temp.value = 9		# 8 (Luck)
 	
 	temp = load("res://items/all/lumberjack_shirt/lumberjack_shirt_data.tres")
-	temp.value = 12		# 15
+	temp.value = 11		# 15
 
 	temp = load("res://items/all/mutation/mutation_data.tres")
 	temp.value = 24  # 25
@@ -403,7 +403,7 @@ func _ready()->void:
 	temp.value = -2		# -3 (Speed)
 
 	temp = load("res://items/all/weird_food/weird_food_data.tres")
-	temp.value = 22		# 20
+	temp.value = 23		# 20
 	temp = load("res://items/all/weird_food/weird_food_effect_3.tres")
 	temp.key = "stat_speed"	# Dodge
 	
@@ -427,7 +427,9 @@ func _ready()->void:
 	
 	temp = load("res://items/all/banner/banner_effect_1.tres")
 	temp.value = 25   # 20 (Range)
-		
+	
+	temp = load("res://items/all/blindfold/blindfold_data.tres")
+	temp.value = 43		# 45
 	temp = load("res://items/all/blindfold/blindfold_effect_3.tres")
 	temp.value = -18  # -15 (Range)
 
@@ -441,12 +443,12 @@ func _ready()->void:
 	temp.value = 39   # 40
 	
 	temp = load("res://items/all/celery_tea/celery_tea_data.tres")
-	temp.value = 33   # 35
+	temp.value = 32   # 35
 	temp = load("res://items/all/celery_tea/effects/celery_tea_effect_1.tres")
 	temp.value = 75		# 100 (Extra Enemy HP)
 
 	temp = load("res://items/all/clockwork_wasp/clockwork_wasp_data.tres")
-	temp.value = 47   # 45
+	temp.value = 46   # 45
 	
 	temp = load("res://items/all/cog/cog_effect_2.tres")
 	temp.value = -2		# -4 (Damage%)
@@ -491,7 +493,7 @@ func _ready()->void:
 	temp.value = 9		# 8 (Dodge)
 	
 	temp = load("res://items/all/leather_vest/leather_vest_data.tres")
-	temp.value = 47		# 45
+	temp.value = 48		# 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
 	temp.value = 37		# 45
@@ -580,7 +582,7 @@ func _ready()->void:
 	temp.value = 42  # 40
 	
 	temp = load("res://items/all/white_flag/white_flag_data.tres")
-	temp.value = 31  # 40
+	temp.value = 30  # 40
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/white_flag_reduced_cap.tres")
 	temp.effects.append(temp_2)		
 	temp = load("res://items/all/white_flag/white_flag_effect_1.tres")
@@ -613,7 +615,7 @@ func _ready()->void:
 	temp.effects.insert(1, temp_2)
 	
 	temp = load("res://items/all/blood_donation/blood_donation_data.tres")
-	temp.value = 41  # 50
+	temp.value = 40  # 50
 	
 	temp = load("res://items/all/bowler_hat/bowler_hat_data.tres")
 	temp.value = 69  # 75
@@ -641,7 +643,7 @@ func _ready()->void:
 	temp.value = 5		# 8
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
-	temp.value = 50		# 70
+	temp.value = 49		# 70
 	temp.tags = [ "stat_dodge", "stand_still", "stat_luck" ]
 	temp = load("res://items/all/chameleon/chameleon_effect_0.tres")
 	temp.value = 4		# 3 (Dodge)
@@ -657,7 +659,7 @@ func _ready()->void:
 	
 	# Fairy
 	temp = load("res://items/all/fairy/fairy_data.tres")
-	temp.value = 89  # 85
+	temp.value = 88  # 85
 #	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/fairy_count_tier1s.tres")
 #	temp.effects.insert(1, temp_2)
 	temp = load("res://items/all/fairy/fairy_effect_1.tres")
@@ -676,14 +678,14 @@ func _ready()->void:
 	temp.value = 70		# 75
 	
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_data.tres")
-	temp.value = 73		# 80
+	temp.value = 74		# 80
 	temp_2 = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
 	temp.effects.erase(temp_2)	# Remove -3 Armor
 
 	
 	
 	temp = load("res://items/all/honey/honey_data.tres")
-	temp.value = 52		# 70
+	temp.value = 51		# 70
 	temp_2 = load("res://items/all/honey/effects/honey_effect_4.tres")
 	temp.effects.erase(temp_2) # Remove Dodge penalty
 	temp = load("res://items/all/honey/effects/honey_effect_2.tres")
@@ -774,7 +776,7 @@ func _ready()->void:
 	
 	# Tyler
 	temp = load("res://items/all/tyler/tyler_data.tres")
-	temp.value = 68				# 75
+	temp.value = 66				# 75
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
 	temp.max_range = 225	# 200
 	temp.scaling_stats = [ [ "stat_engineering", 0.8 ], [ "stat_elemental_damage", 0.8 ] ]	# 0.75, 0.75
@@ -783,18 +785,18 @@ func _ready()->void:
 	temp.value = 74  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
-	temp.value = 39  # 60
+	temp.value = 37  # 60
 	
 	temp = load("res://items/all/wheat/wheat_data.tres")
 	temp.value = 82  # 85
 	temp = load("res://items/all/wheat/wheat_effect_3.tres")
-	temp.value = 14  # 10 (Harvesting)
+	temp.value = 15  # 10 (Harvesting)
 	
 	temp = load("res://items/all/wings/wings_effect_2.tres")
 	temp.value = 33  # 30 (Range)
 	
 	temp = load("res://items/all/wisdom/wisdom_data.tres")
-	temp.value = 78  # 85
+	temp.value = 77  # 85
 	
 
 	## TIER-4 ITEMS ##
@@ -988,7 +990,7 @@ func _ready()->void:
 	
 	# Robot Arm
 	temp = load("res://items/all/robot_arm/robot_arm_data.tres")
-	temp.value = 93  # 100
+	temp.value = 92  # 100
 	
 	# Spider
 	temp = load("res://items/all/spider/spider_effect_1.tres")

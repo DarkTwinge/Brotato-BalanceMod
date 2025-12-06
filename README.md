@@ -1,7 +1,7 @@
 # Overview
 More items are worth using and fewer choices are overpowered. Range and Luck stats are better. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is similar, with the easiest runs made modestly harder and the hardest runs made a bit easier.
 
-Below is a summary of the major changes you should know about. (The detailed exact changes are further below: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog)
+Below is a summary of major changes you should know about. (The detailed exact changes are further below: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog)
 
 _Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! ~90 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
 
@@ -104,10 +104,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Broken Mouth:** Price 25->26
 * **Cake:** Price 15->16
 * **Coupon:** Price 15->19
-* **Cute Monkey:** Price 25->29
+* **Cute Monkey:** Price 25->30
 * **Duct Tape:** Price 20->16
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
-* **Gentle Alien:** Price 30->31
+* **Gentle Alien:** Price 30->32
 * **Glasses:** Range 20 -> 22
 * **Gummy Berserker:** Range 25 -> 29
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
@@ -116,7 +116,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Landmines:** Price 15->13; Explosion Size 175% -> 180%
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
-* **Lumberjack Shirt:** Price 15->12
+* **Lumberjack Shirt:** Price 15->11
 * **Mutation:** Price 25->24; Knockback -3 -> -2
 * **Pencil:** -1 Crit --> -1 Luck _[Leaning away from Engineering with Crit penalties to work better with Pile of Books and new Screwdriver.]_
 * **Propeller Hat:** Price 28->25
@@ -126,7 +126,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%); Speed -3% -> -2%
-* **Weird Food:** Price 20->22; Dodge -2% --> Speed -2%
+* **Weird Food:** Price 20->23; Dodge -2% --> Speed -2%
 * **Weird Ghost:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
 #### DLC
 * **Corrupted Shard:** Price 12->15; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
@@ -139,11 +139,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Acid:** Price 65->62
 * **Alien Eyes:** Price 50->51; No Downside --> -8 Range
 * **Banner:** Range 20 -> 25
-* **Blindfold:** Range -15 -> -18
+* **Blindfold:** Price 45->43; Range -15 -> -18
 * **Blackbelt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->38
 * **Campfire:** Price 40->39
-* **Celery Tea:** Price 35->33; Extra Enemy HP +100% -> +75%
+* **Celery Tea:** Price 35->32; Extra Enemy HP +100% -> +75%
+* **Clockwork Wasp:** Price 45->46
 * **Cog:** Damage -4% -> -2% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->34
@@ -152,7 +153,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
 * **Ice Cube:** Price 50->47
-* **Leather Vest:** Price 45->47
+* **Leather Vest:** Price 45->48
 * **Little Frog:** Price 45->37; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
 * **Lure:** Price 34->41
@@ -174,12 +175,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Tentacle:** Price 35->39
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
-* **White Flag:** Price 40->31; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
+* **White Flag:** Price 40->30; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->85 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
 #### DLC
 * **Bait:** Fixed Cursed Bait to only spawn one set of Lampreys
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
-* **Clockwork Wasp:** Price 45->47
 * **Eyepatch:** Price 55->63; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
 * **Jerky:** Price 50->55
 * **Pearl:** Price 60->53; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
@@ -194,17 +194,18 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
 * **Barricade:** Price 75->67
 * **Ball and Chain:** Price 75->77
-* **Blood Donation:** Price 50->41 _[The primary 'cost' is the damage, so the material cost should be lower.]_
+* **Blood Donation:** Price 50->40 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
 * **Candy Bag:** Price 70->74; Random Stats Gained 8 -> 5 & No longer gives useless stats; Extra Elite Chance +10% --> Enemy Damage Next Wave +25% _[The extra elite effect was too high-variance, meaning the item was never worth taking for high-winrate players. It also sucked to hit stats your character literally couldn't use, so the system that prevents useless items now also blocks useless Candy stats.]_
-* **Chameleon:** Price 70->50; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
+* **Chameleon:** Price 70->49; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
 * **Community Support:** Price 75->70 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->65
-* **Fairy:** Price 85->89; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
+* **Fairy:** Price 85->88; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
-* **Ghost Outfit:** Price 80->73; Armor -3 -> No Penalty
+* **Ghost Outfit:** Price 80->74; Armor -3 -> No Penalty
 * **Glass Canon:** Price 75->70
+* **Honey:** Price 70->51; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Hunting Trophy:** Price 55->60
 * **Laser Turret:** Price 65->62; Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
 * **Lucky Charm:** Price 75->70
@@ -221,18 +222,17 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Tardigrade:** Price 50->40; Now ignores self-damage effects (anything that bypasses invulnerability); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge)
-* **Tyler:** Price 75->68; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 80%
+* **Tyler:** Price 75->66; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 80%
 * **Vigilante Ring:** Price 92->74
-* **Wandering Bot:** Price 60->39
-* **Wheat:** Price 85->82; Harvesting 10 -> 14
+* **Wandering Bot:** Price 60->37
+* **Wheat:** Price 85->82; Harvesting 10 -> 15
 * **Wings:** Range 30 -> 33
-* **Wisdom:** Price 85->78
+* **Wisdom:** Price 85->77
 #### DLC
 * **Ball and Chain (Cursed):** Weapon Cooldown Floor ~0.35s -> ~0.5s
-* **Crystal:** Price 65->54; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
-* **Goblet:** Price 70->75
+* **Crystal:** Price 65->53; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
+* **Goblet:** Price 70->77
 * **Goldfish:** Price 23->14 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
-* **Honey:** Price 70->52; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
 * **Sunken Bell:** Price 65->42; Explosion Size 600% -> 750%
@@ -256,7 +256,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Regeneration Potion:** HP Regen 3 -> 4
 * **Retromation's Hoodie:** +2% Attack Speed for every 1% Dodge --> +3% Attack Speed for every 2% Dodge
 * **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
-* **Robot Arm:** Price 100->93
+* **Robot Arm:** Price 100->92
 * **Spider:** Attack Speed Per Different Weapon 6% -> 8%; Damage 12% -> 8%
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 #### DLC

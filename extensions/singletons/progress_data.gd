@@ -206,14 +206,14 @@ func check_for_available_dlcs()->void :
 
 		# Items: Tier-3 #
 		temp = load("res://dlcs/dlc_1/items/crystal/crystal_data.tres")
-		temp.value = 54		# 65
+		temp.value = 53		# 65
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0c.tres")
 		temp.key = "stat_max_hp"	# Engineering
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")
 		temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
 
 		temp = load("res://dlcs/dlc_1/items/goblet/goblet_data.tres")
-		temp.value = 75		# 70
+		temp.value = 77		# 70
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 		temp.value = 14   # 23
