@@ -155,8 +155,14 @@ func check_for_available_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/items/penguin/effects/penguin_effect_1.tres")
 		temp.value = 2		# 1 (HP Regen Per Consumable)
 		
+		temp = load("res://dlcs/dlc_1/items/small_fish/small_fish_data.tres")
+		temp.value = 20		# 18
 		temp = load("res://dlcs/dlc_1/items/small_fish/effects/small_fish_effect_0.tres")
 		temp.text_key = "NEW_SF_EFFECT_BONUS_DAMAGE_AGAINST_TARGETS_ABOVE_HP"
+		temp.value = 15		# 10 (Damage multiplier)
+		temp.value2 = 70	# 75 (HP Over X for bonus)
+		temp = load("res://dlcs/dlc_1/items/small_fish/effects/small_fish_effect_1.tres")
+		temp.value = -4		# -3
 		
 		temp = load("res://dlcs/dlc_1/items/whistle/whistle_data.tres")
 		temp.value = 24		# 25

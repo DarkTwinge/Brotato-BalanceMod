@@ -1,9 +1,7 @@
 # Overview
 More items are worth using and fewer choices are overpowered. Range and Luck stats are better. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is similar, with the easiest runs made modestly harder and the hardest runs made a bit easier.
 
-The full list of all changes is here: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog - Below is a summary of the major changes you should know about.
-
-(Dozens of changes from previous Balance Mod versions have been implemented directly into the base game; A summary of those is at the very end.)
+Below is a summary of the major changes you should know about. (The detailed exact changes are further below: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog)
 
 _Note: Altered/New descriptions will currently not display for non-English languages._ (If anyone wants to help me make a translation set for another language, let me know! ~90 text keys, but most are simply tweaks of vanilla text which already has translations to reference.)
 
@@ -27,7 +25,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Sickle removed from the game.
 * SMG, Spear & Thief Dagger are nerfed; Mace is heavily buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, Cacti Club, Hammer, and War Hammer receive minor buffs.
-* Fist, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, Icicle, and Revolver receive minor nerfs.
+* Fist, Icicle, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
@@ -134,11 +132,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Corrupted Shard:** Price 12->15; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 * **Feather:** Price 18->19
 * **Penguin:** Price 25->27; Base HP Regen 1 -> 0; HP Regen Per Consumable 1 -> 2; Limit 3 -> 2
+* **Small Fish:** Price 18->20; Damage Multiplier +10% to targets over 75% HP -> +15% to targets over 70% HP; Attack Speed -3% -> -4%
 * **Whistle:** Price 25->24; Extra Loot Goblins +50% -> +60% _[This still leaves it as a worse economy item than Coupon or Bag on average.]_
 
 ### Tier-2
 * **Acid:** Price 65->62
-* **Alien Eyes:** Price 50->52; No Downside --> -8 Range
+* **Alien Eyes:** Price 50->51; No Downside --> -8 Range
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Range -15 -> -18
 * **Blackbelt:** XP Gain +25% -> +30%
@@ -157,7 +156,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Little Frog:** Price 45->37; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
 * **Lure:** Price 34->41
-* **Medal:** Price 55->60; Crit Chance -4% -> -3%
+* **Medal:** Price 55->61; Crit Chance -4% -> -3%
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->45
 * **Missile:** Damage 10% -> 11%
@@ -198,9 +197,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blood Donation:** Price 50->41 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
+* **Candy Bag:** Price 70->74; Random Stats Gained 8 -> 5 & No longer gives useless stats; Extra Elite Chance +10% --> Enemy Damage Next Wave +25% _[The extra elite effect was too high-variance, meaning the item was never worth taking for high-winrate players. It also sucked to hit stats your character literally couldn't use, so the system that prevents useless items now also blocks useless Candy stats.]_
 * **Chameleon:** Price 70->50; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
 * **Community Support:** Price 75->70 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
-* **Crown:** Price 70->67
+* **Crown:** Price 70->65
 * **Fairy:** Price 85->89; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
 * **Ghost Outfit:** Price 80->73; Armor -3 -> No Penalty
@@ -212,7 +212,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Pile of Books:** Tier-3 -> Tier-2 _[This is a build-around item, but at purple-tier you usually find it too late to be able to meaningfully build into it.]_
 * **Plastic Explosive:** Price 60->51
 * **Poisonous Tonic:** Range 15 -> 27
-* **Power Generator:** Price 65->58; -5% Damage --> -1 Max HP Per 5% Speed
+* **Power Generator:** Price 65->59; -5% Damage --> -1 Max HP Per 6% Speed
 * **Rip and Tear:** (Clarified effect of having multiple copies)
 * **Shackles:** Price 80->88; Range 80 -> 88
 * **Shmoop:** Price 60->61; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
@@ -287,7 +287,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Engineering Scaling 50%(All) -> 50%/60%/70%/80%; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only required one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84 _[A modest rework+buff: with Pile of Books at blue-tier, Crit can make more sense on Engineering builds, and Screwdrivers are a good option for caring about that crit.]_
 * **Sharp Tooth:** No longer part of the Precise Set (now only Primitive); +1% Lifesteal for every XX% missing health 25%/20%/15%/10% -> 20%/17%/14%/10%; Melee Damage Scaling 50%(All) -> 60%(All); Lifesteal Scaling 50%/65%/80%/100% -> 60%/70%/80%/100%; Cooldown 1.14/1.07/1.00/0.93 -> 1.11/1.04/0.97/0.89 _[Being part of the two biggest Sets when it really wants to be your only weapon made it harder to find (and also polluted the pool for other Precise weapons). Low-tier Teeth felt awful and struggled to get off the ground so they kick in the Lifesteal bonuses earlier, and all tiers have less-bad Melee Scaling, making it easier to directly increase their damage (tho still worse than normal weapons).]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (accounts for the lowered Range)
-* **Stick:** Base Damage 8/9/10/12 -> 7/8/10/12
+* **Stick:** Base Damage 8/9/10/12 -> 7/8/10/17; Tier-4 Damage-Per-Stick 10 -> 9 _[Tier-4 has the same damage with 6 sticks but is stronger with fewer sticks, giving more room to switch your build out of Sticks if desired.]_
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC

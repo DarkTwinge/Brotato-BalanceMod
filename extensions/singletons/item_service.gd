@@ -271,7 +271,12 @@ func get_stat_description_text(stat_name:String, value:int, player_index:int)->S
 	if stat_name == "STAT_ARMOR":
 		### Now shows one decimal place; also extra clarification text
 		key = "NEW_" + key
-		return Text.text(key, [str(abs(stepify((1.0 - RunData.get_armor_coef(value)) * 100.0, 0.1)))])
+		print(RunData.get_armor_coef(value))
+		# Extra decimal place if Armor is over 80% reduction
+		if RunData.get_armor_coef(value) <= 0.2:
+			return Text.text(key, [str(abs(stepify((1.0 - RunData.get_armor_coef(value)) * 100.0, 0.01)))])
+		else:
+			return Text.text(key, [str(abs(stepify((1.0 - RunData.get_armor_coef(value)) * 100.0, 0.1)))])
 		#return Text.text(key, [str(abs(round((1.0 - RunData.get_armor_coef(value)) * 100.0)))])
 		##
 	elif stat_name == "STAT_HARVESTING":

@@ -23,6 +23,7 @@ func _init(modLoader = ModLoader):
 	# Gives One-armed a 4-set Bonus for their weapon
 	# Slightly reduce the strength of armor
 	# Gives Gun Mage an extra Sausage
+	# Candy Bag doesn't go to useless stats
 	#xx Fixes rounding for Fairy tooltip (Game variable beavior changed in 1.1.11)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/run_data.gd")
 
@@ -417,7 +418,7 @@ func _ready()->void:
 	temp.value = 62   # 65
 
 	temp = load("res://items/all/alien_eyes/alien_eyes_data.tres")
-	temp.value = 52   # 50
+	temp.value = 51   # 50
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/alien_eyes_range_malus.tres")
 	temp.effects.push_back(temp_2) # -8 Range
 	
@@ -504,7 +505,7 @@ func _ready()->void:
 	temp.value = 41  # 34
 			
 	temp = load("res://items/all/medal/medal_data.tres")
-	temp.value = 60  # 55
+	temp.value = 61  # 55
 	temp = load("res://items/all/medal/medal_effect_5.tres")
 	temp.value = -3  # -4 (Crit%)
 	
@@ -628,6 +629,16 @@ func _ready()->void:
 	temp = load("res://items/all/candle/candle_effect_4.tres")
 	temp.key = "stat_attack_speed"
 	temp.value = -4  # -5 (Damage -> Attack Speed)
+
+	# Candy Bag
+	temp = load("res://items/all/candy_bag/candy_bag_data.tres")
+	temp.value = 74		# 70
+	temp_2 = load("res://items/all/candy_bag/candy_bag_effect_1.tres")
+	temp.effects.erase(temp_2) # Remove elite spawn chance
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/candy_bag-enemy_damage.tres")
+	temp.effects.push_back(temp_2) # Add 25% extra enemy damage for one wave
+	temp = load("res://items/all/candy_bag/candy_bag_effect_0.tres")
+	temp.value = 5		# 8
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
 	temp.value = 50		# 70
@@ -642,7 +653,7 @@ func _ready()->void:
 	temp.value = 70  # 75
 	
 	temp = load("res://items/all/crown/crown_data.tres")
-	temp.value = 67  # 70
+	temp.value = 65  # 70
 	
 	# Fairy
 	temp = load("res://items/all/fairy/fairy_data.tres")
@@ -710,11 +721,11 @@ func _ready()->void:
 	temp.value = 27		# 15 (Range)
 
 	temp = load("res://items/all/power_generator/power_generator_data.tres")
-	temp.value = 58		# 65
+	temp.value = 59		# 65
 	temp_2 = load("res://items/all/power_generator/power_generator_effect_2.tres")
 	temp.effects.erase(temp_2) # Remove -Damage%
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/power_generator_2_max_hp_malus.tres")
-	temp.effects.push_back(temp_2) # -1 HP per 5% Speed
+	temp.effects.push_back(temp_2) # -1 HP per 6% Speed
 
 	temp = load("items/all/rip_and_tear/rip_and_tear_data.tres")
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/rip_sauce_clarify_effect.tres")
@@ -1358,7 +1369,12 @@ func _ready()->void:
 	temp = load("res://weapons/melee/stick/2/stick_2_stats.tres")
 	temp.damage = 8				# 9
 	temp = load("res://weapons/melee/stick/4/stick_4_data.tres")
-	temp.value = 81			 # 91
+	temp.value = 81				# 91
+	
+	temp = load("res://weapons/melee/stick/4/stick_4_stats.tres")
+	temp.damage = 17			# 12
+	temp = load("res://weapons/melee/stick/4/stick_4_effect_1.tres")
+	temp.value = 9				# 10
 	
 	# Sword
 	temp = load("res://weapons/melee/sword/4/sword_4_data.tres")

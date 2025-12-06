@@ -19,5 +19,5 @@ custom_key = ""
 storage_method = 0
 effect_sign = 3
 custom_args = [ SubResource( 1 ) ]
-nb_stat_scaled = 5
+nb_stat_scaled = 6
 stat_scaled = "stat_speed"

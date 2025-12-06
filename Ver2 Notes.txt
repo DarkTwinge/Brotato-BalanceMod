@@ -97,8 +97,6 @@ Tooltip Cooldowns don't accurately show the breakpoint stuff, so at high atk spd
 
 Sausage should prob proc from Sauce/Rip&Tear since it procs from other explosions
 
-could tweak elite hp so wave 18 has slightly more?
-
 
 could be cute to have tooltips show highest stat reached for previous round for e.g. Cryptid and also lowest for e.g. Triangle of Power (Fried Rice...)
 
@@ -109,8 +107,6 @@ ENGINEER items could be more common if your stat is higher than the wave
 if slow tag is to exist, wandering bot too?  maybe just remove that from old tho?
 
 ~~When testing Eyes Surgery, try some with One-armed
-
-do some comparisons of xbow vs icicle
 
 Could have Mom/Monk have lower HP scaling?
 make Monk phase 1 move a bit faster but keep their reduced hp?
@@ -357,8 +353,6 @@ Evaluate -Enemies% a bit; does it suck enough at reducing all those 1-1 range sp
 modest rework of wildling?
 
 	
-Red Sticks oculd drop damasge per Stick by 1 and add +5 base damage, making it easier to switch out of
-
 Wandering Bot: Add some additional effect: Damage, knockback w/ pierce, debuff like ice cube, bigger slow, bigger hitbox...  could scale with engineering somehow
 
 Wave 19 could broadly be a little more Horde-like, to test those limits in a guaranteed spot
@@ -549,8 +543,6 @@ Fairy now inconsistent - gives +5 HP Regen when Fairy tooltip says +4, so used f
 
 Stargazer sound doesn't always go off when they enter vat?
 
-Seashell still wants to get in on that turret action too
-
 Exploring Mace starters... Jack? Doctor, Entreprenuer, Lich, Vaga, Druid, (Bucaneer, Gladiator, and Ogre prob too good?)
 
 What to do about the Sword/Vorpal situation. . .
@@ -571,6 +563,7 @@ Sometimes going down (controller) on right-most item will move it over to Speed 
 * Romantic's bonus Range for Melee Weapons should also apply to Hiking Pole's scaling. (I did this for Brawler+Claw and Crazy+Crossbow already, but it seemed harder to implement for Romantic when I last looked.)
 * Would be neat if Ball & Chain changed a weapon's cooldown to a unique color when it is at the cap.
 * Gangster could count the value of stolen items in their tooltip. (Haven't looked at this yet, might be easy but not sure.)
+** Gangster could show Elites killed in Tooltip, showing the actual stat increases
 
 
 
@@ -592,6 +585,4 @@ AtkSpd breakpoints (some 'standard' for most weapons maybe like the 201% and may
 Character: Lose double the set bonuses you have active [different way to encourage mixed builds?]
 
 
-
-extra decimals for super high armor?
-
+Warhammer could be Tool Set to make it more findable for Engineering builds?

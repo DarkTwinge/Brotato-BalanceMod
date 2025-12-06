@@ -93,7 +93,55 @@ func add_starting_items_and_weapons()->void :
 							add_item(item, player_index)
 					##
 
+# Removes useless-for-the-character stats from the random list for Candy Bag
+func get_random_primary_stats()->String:
+	var stats_list = [
+		"stat_max_hp", 
+		"stat_armor", 
+		"stat_crit_chance", 
+		"stat_luck", 
+		"stat_attack_speed", 
+		"stat_elemental_damage", 
+		"stat_hp_regeneration", 
+		"stat_lifesteal", 
+		"stat_melee_damage", 
+		"stat_percent_damage", 
+		"stat_dodge", 
+		"stat_engineering", 
+		"stat_range", 
+		"stat_ranged_damage", 
+		"stat_speed", 
+		"stat_harvesting"
+	]
 
+	##TODO - this doesn't have a player_index to tell apart co-op players, does it ened to ignore this in co-op?
+	for player_data in RunData.players_data:
+		var character = player_data.current_character
+
+		if character.banned_item_groups.has("armor"):
+			stats_list.erase("stat_armor")
+		if character.banned_item_groups.has("dodge"):
+			stats_list.erase("stat_dodge")
+		if character.banned_item_groups.has("harvesting"):
+			stats_list.erase("stat_harvesting")
+		if character.banned_item_groups.has("melee_damage"):
+			stats_list.erase("stat_melee_damage")
+		if character.banned_item_groups.has("ranged_damage"):
+			stats_list.erase("stat_ranged_damage")
+		if character.banned_item_groups.has("elemental_damage"):
+			stats_list.erase("stat_elemental_damage")
+		if character.banned_item_groups.has("engineering"):
+			stats_list.erase("stat_engineering")
+		if character.banned_item_groups.has("speed"):
+			stats_list.erase("stat_speed")
+		if character.banned_item_groups.has("hp_regeneration"):
+			stats_list.erase("stat_hp_regeneration")
+		if character.banned_item_groups.has("lifesteal"):
+			stats_list.erase("stat_lifesteal")
+			
+	return stats_list[randi() % stats_list.size()]
+		
+		
 # Fixes tooltip for Fairy
 #func get_scaling_bonus(value:int, stat_scaled:String, nb_stat_scaled:int, perm_stats_only:bool, player_index:int)->int:
 #	var orig_value = .get_scaling_bonus(value, stat_scaled, nb_stat_scaled, perm_stats_only, player_index)
