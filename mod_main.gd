@@ -14,7 +14,7 @@ func _init(modLoader = ModLoader):
 	#y TODO? Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
 	# Adjusts shop weapon pick odds based on number of weapon types held
 	# Turns exact-weapon picks into weapon-set picks if it can't find an exact-pick
-	# Changes stat tooltip text to be more accurate (+extra decimal place for Armor)
+	# Changes stat tooltip text to be more accurate (+extra decimal place(s) for Armor)
 	#xx Increases reroll prices (Implemented into vanilla in 1.1.7)
 	# Remove King's smiley indicator for Tier-4 weapons you already have
 	# New restricted item categories (Stand-still for Hiker, Attack Speed + Range for Bull), remove Chameleon from Dodge category
@@ -350,12 +350,12 @@ func _ready()->void:
 	temp.value = -10 # -2 Speed -> -10 Range
 	
 	temp = load("res://items/all/landmines/landmines_data.tres")
-	temp.value = 13		# 15
+	temp.value = 14		# 15
 	## THIS TOOLTIP IS HARDCODED
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/landmine_size_text.tres")
 	temp.effects.push_back(temp_2) # Add explosion size text
 	temp = load("res://items/all/landmines/landmine_exploding_effect.tres")
-	temp.scale = 1.8	# 1.75
+	temp.scale = 1.9	# 1.75
 	
 	temp = load("res://items/all/lens/lens_effect_2.tres")
 	temp.value = -10  # -5 (Range)
@@ -813,7 +813,12 @@ func _ready()->void:
 	temp = load("res://items/all/hourglass/hourglass_effect_2.tres")
 	temp.value = -90	# -100  !!! If changed, also change in dlc_1_data
 	temp.effect_sign = 3 # 1
-	temp.text_key = "BM_EFFECT_HP_START_NEXT_WAVE"	
+	temp.text_key = "BM_EFFECT_HP_START_NEXT_WAVE"
+	temp = load("res://items/all/hourglass/broken_hourglass_effect_2.tres")
+	temp.value = -90	# -100  !!! If changed, also change in dlc_1_data
+	temp.effect_sign = 3 # 1
+	temp.text_key = "BM_EFFECT_HP_START_NEXT_WAVE"
+	
 	
 	# Diploma
 	temp = load("res://items/all/diploma/diploma_effect_2.tres")
@@ -1987,6 +1992,14 @@ func _ready()->void:
 	temp.banned_items = [ "item_weird_ghost" ] # removed Tardigrade
 	
 	# Soldier
+	temp = load("res://items/characters/soldier/soldier_effect_1.tres")
+	temp.text_key = ""			# These two remove the stand-still requirement, bugfixes Soldier's delayed game-state update
+	temp.custom_key = ""
+	temp.storage_method = 0
+	temp = load("res://items/characters/soldier/soldier_effect_2.tres")
+	temp.text_key = ""
+	temp.custom_key = ""
+	temp.storage_method = 0
 	temp = load("res://items/characters/soldier/soldier_effect_3.tres")
 	temp.value = 125 # 200 (Pickup Range)
 	

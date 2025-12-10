@@ -612,3 +612,5 @@ pairing for AtkSpd + Range are kinda high, could possibly change one (Berserker,
 	tweak the banned_item_group if changed
 	
 Any new weapons (e.g. Vorpal) should at least have their tier-4 pricing adjusted
+
+maybe re-look at the bonus odds of finding matches for mixed builds sometime to see if I want a different rework direction

@@ -71,9 +71,9 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 		elif unique_weapon_ids.size() == 4:       # 24%
 			new_chance_same_weapon += 0.04
 			chance_same_weapon_set += 0.04
-		elif unique_weapon_ids.size() >= 5:       # 25%
-			new_chance_same_weapon += 0.05
-			chance_same_weapon_set += 0.05
+		elif unique_weapon_ids.size() >= 5:       # 26%
+			new_chance_same_weapon += 0.06
+			chance_same_weapon_set += 0.06
 
 		# Verifies there are matching weapons available in the pool (there might not be due to tier restrictions)...
 		if rand_wanted < new_chance_same_weapon:
