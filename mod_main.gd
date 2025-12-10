@@ -17,7 +17,7 @@ func _init(modLoader = ModLoader):
 	# Changes stat tooltip text to be more accurate (+extra decimal place for Armor)
 	#xx Increases reroll prices (Implemented into vanilla in 1.1.7)
 	# Remove King's smiley indicator for Tier-4 weapons you already have
-	# New restricted item categories (Stand-still for Hiker), remove Chameleon from Dodge category
+	# New restricted item categories (Stand-still for Hiker, Attack Speed + Range for Bull), remove Chameleon from Dodge category
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/item_service.gd")
 	
 	# Gives One-armed a 4-set Bonus for their weapon
@@ -312,7 +312,7 @@ func _ready()->void:
 	temp.value = 16   # 15
 
 	temp = load("res://items/all/coupon/coupon_data.tres")
-	temp.value = 19   # 15
+	temp.value = 20   # 15
 	
 	temp = load("res://items/all/cute_monkey/cute_monkey_data.tres")
 	temp.value = 30  # 25
@@ -607,6 +607,11 @@ func _ready()->void:
 	
 	temp = load("res://items/all/ball_and_chain/ball_and_chain_data.tres")
 	temp.value = 77		# 75
+	
+	temp = load("res://items/all/bandana/bandana_data.tres")
+	temp.value = 70		# 75
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/bandana-piercing_damage.tres")
+	temp.effects.insert(1, temp_2)
 	
 	temp = load("res://items/all/barricade/barricade_data.tres")
 	temp.value = 67		# 75
@@ -1811,6 +1816,9 @@ func _ready()->void:
 	temp.effects.push_back(temp_2)
 	
 	# Bull
+	temp = load("res://items/characters/bull/bull_data.tres")
+	temp.banned_item_groups.push_back("range_and_attack_speed")
+	temp.banned_items.push_back("item_glasses")
 	temp = load("res://items/characters/bull/bull_effect_2.tres")
 	temp.value = 10  # 15 (HP Regen)
 	temp = load("res://items/characters/bull/bull_effect_4.tres")

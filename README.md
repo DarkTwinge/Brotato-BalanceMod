@@ -103,7 +103,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Boxing Glove:** Knockback +3 -> +4
 * **Broken Mouth:** Price 25->26
 * **Cake:** Price 15->16
-* **Coupon:** Price 15->19
+* **Coupon:** Price 15->20
 * **Cute Monkey:** Price 25->30
 * **Duct Tape:** Price 20->16
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
@@ -192,8 +192,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alien Magic:** Price 85->83
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
-* **Barricade:** Price 75->67
 * **Ball and Chain:** Price 75->77
+* **Bandana:** Price 75->70; Added Effect: +5% Piercing Damage
+* **Barricade:** Price 75->67
 * **Blood Donation:** Price 50->40 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
@@ -324,9 +325,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 ## Characters
 * **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw) _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
-* **Bull:** Starting HP Regen 15 -> 10
+* **Bull:** Starting HP Regen 15 -> 10; Can no longer be offered Glasses, Banner, or Gummy Berserker
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11
+* **Cyborg:** Now makes a distinct sound effect when switching from Ranged Damage to Engineering mode
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regen 5 -> 3
 * **Engineer:** No longer starts with a Wrench; Starting Engineering 10 -> 6; Elemental Damage Penalty -50% -> -20% _[Allows Engineer to lean into a mixed Engineering+Elemental build if desired, and makes more sense for Plank as a starting weapon.]_

@@ -83,6 +83,7 @@ Technomage - Spoon??
 ~~~
 BalMod SMG breakpoints: 1-26-51-67
 Each 5 points of +Enemy Damage% is about the same as -1 Armor
+13%/51% for Hiker HP
 
 ~~~
 reconsider jousting lance (tho Blob already nerfed it a fair bit)
@@ -279,8 +280,26 @@ butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
 
 could slightly reducing the damage of a wave 11/12 elite be sensible? (keep in mind gangster for lower waves or whatever)
 
-	when Seashell works for all projectile, probably remove it from bans on e.g. knight, dwarf
 
+
+~~~ Medical Gun testing vs SMG
+50% Dmg, 10 Ranged Damage, Wave 16 Abyss
+2x Red, 2x Purple, 2x Blue Medical Gun: 228hp (includes the 5 HP Regen = 17hp)
+	+40% AtkSpd: 256hp (w/ 5 Regen)
+		+5% LS, 20RD: 249hp ; 29991 dmg
+		+5% LS: 291hp ; 24290 dmg
+		+ Sharp Bullet: 288hp
+			+5% LS: 310hp ; 26447 dmg
+		
+2x Red, 2x Purple, 2x Blue SMGs:
+	+40% AtkSpd, 5% LS:  81hp ; 25893 dmg
+	+40% AtkSpd, 5%LS, 20RD: 55hp ; 35254 dmg
+	+40% AtkSpd, 10% LS: 135hp ; 25,839 dmg	
+		+ Sharp Bullet, 5% LS:  112
+		+ Sharp Bullet, 10% LS: 183hp ; 27,811 dmg
+		
+-----> 6 HP Regen of healing equivalent for an add-in medical gun, or 40 HP Regen for a set
+~~~
 
 
 COuld see a mild Ogre nerf
@@ -548,7 +567,6 @@ Exploring Mace starters... Jack? Doctor, Entreprenuer, Lich, Vaga, Druid, (Bucan
 What to do about the Sword/Vorpal situation. . .
 	Vorpal maybe should not be Medieval (tho I guess some of the idea is that it can mix with Swords smoothly)
 
-Test Lutes - how stack
 
 Gobbler capable of being mega-slow --- ugly tooth I think
 
@@ -559,6 +577,7 @@ Sometimes going down (controller) on right-most item will move it over to Speed 
 * Whistle should count how many extra Loot Goblins it creates.
 * I think it'd also be cute of Whistle made a sound effect whenever any Loot Goblin was spawned (both extra and natural ones).
 * I'd like to have Seashell also working on Turrets. (Needs to not be counted twice for Builer's Turret.)
+** 	Probably remove it from bans on e.g. knight, dwarf if this is changed.
 * Treasure Map should have a visible and/or audio effect when it activates.
 * Romantic's bonus Range for Melee Weapons should also apply to Hiking Pole's scaling. (I did this for Brawler+Claw and Crazy+Crossbow already, but it seemed harder to implement for Romantic when I last looked.)
 * Would be neat if Ball & Chain changed a weapon's cooldown to a unique color when it is at the cap.
@@ -586,3 +605,10 @@ Character: Lose double the set bonuses you have active [different way to encoura
 
 
 Warhammer could be Tool Set to make it more findable for Engineering builds?
+
+Additional reminder icons mod, probably omni: Piggy, Torture, Stand-Still,
+
+pairing for AtkSpd + Range are kinda high, could possibly change one (Berserker, Banner, Tonic)
+	tweak the banned_item_group if changed
+	
+Any new weapons (e.g. Vorpal) should at least have their tier-4 pricing adjusted
