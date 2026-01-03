@@ -683,7 +683,7 @@ func _ready()->void:
 	temp.value = 70		# 75
 	
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_data.tres")
-	temp.value = 74		# 80
+	temp.value = 76		# 80
 	temp_2 = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
 	temp.effects.erase(temp_2)	# Remove -3 Armor
 
@@ -856,6 +856,13 @@ func _ready()->void:
 	temp = load("res://items/all/gnome/gnome_effect_3.tres")
 	temp.value = -25  # -20 (Range)
 	
+	# Gobbler's Hat
+	temp = load("res://items/all/evil_hat/evil_hat.tres")
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/gobbler_hat-armor_malus.tres")
+	temp.effects.push_back(temp_2) # -2 Armor
+	temp = load("res://items/all/evil_hat/evil_hat_effect_2.tres")
+	temp.value = -5		# -10 (Dodge)
+	
 	# Heavy Bullets
 	temp = load("res://items/all/heavy_bullets/heavy_bullets_data.tres")
 	temp.value = 95   # 100
@@ -1000,17 +1007,19 @@ func _ready()->void:
 	
 	# Robot Arm
 	temp = load("res://items/all/robot_arm/robot_arm_data.tres")
-	temp.value = 92  # 100
+	temp.value = 92		# 100
 	
 	# Spider
+	temp = load("res://items/all/spider/spider_data.tres")
+	temp.value = 102	# 110
 	temp = load("res://items/all/spider/spider_effect_1.tres")
-	temp.value = 8   # 12 (Damage%)
+	temp.value = 8		# 12 (Damage%)
 	temp = load("res://items/all/spider/spider_effect_2.tres")
-	temp.value = 8   # 6 (Atk Speed for Diff Weapons)	
+	temp.value = 8		# 6 (Atk Speed for Diff Weapons)	
 
 	# Wolf Helm
 	temp = load("res://items/all/wolf_helmet/wolf_helmet_data.tres")
-	temp.value = 95  # 90
+	temp.value = 95		# 90
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/wolf_helm_malus.tres")
 	temp.effects.push_back(temp_2)  # -5 Harvesting
 
@@ -1418,6 +1427,10 @@ func _ready()->void:
 	# Torch
 	temp = load("res://weapons/melee/torch/4/torch_4_data.tres")
 	temp.value = 81			 # 91
+	
+	# Vorpal Sword
+	temp = load("res://weapons/melee/vorpal_sword/4/vorpal_sword_4_data.tres")
+	temp.value = 180		 # 200
 	
 	# Wrench
 	temp = load("res://weapons/melee/wrench/4/wrench_4_data.tres")
@@ -2227,6 +2240,8 @@ func _ready()->void:
 	# Remove
 	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
 	temp.starting_weapons.erase(temp_2)
+	temp_2 = load("res://weapons/melee/hatchet/1/hatchet_data.tres")
+	temp.starting_weapons.erase(temp_2)
 	
 	# Golem
 	temp = load("res://items/characters/golem/golem_data.tres")
@@ -2270,6 +2285,11 @@ func _ready()->void:
 	###temp_2 = load("res://weapons/melee/pruner/1/pruner_data.tres")
 	###temp.starting_weapons.erase(temp_2)
 	
+	# Masochist
+	temp = load("res://items/characters/masochist/masochist_data.tres")
+	temp_2 = load("res://weapons/melee/hatchet/1/hatchet_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	
 	# Mage
 	temp = load("res://items/characters/mage/mage_data.tres")
 	temp_2 = load("res://weapons/melee/wrench/1/wrench_data.tres")
@@ -2281,6 +2301,13 @@ func _ready()->void:
 	temp = load("res://items/characters/mutant/mutant_data.tres")
 	temp_2 = load("res://weapons/melee/chopper/1/chopper_data.tres")
 	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/melee/hatchet/1/hatchet_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/melee/ghost_flint/1/ghost_flint_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	# Remove
+	temp_2 = load("res://weapons/melee/ghost_axe/1/ghost_axe_data.tres")
+	temp.starting_weapons.erase(temp_2)
 	
 	# Old
 	temp = load("res://items/characters/old/old_data.tres")
@@ -2339,11 +2366,21 @@ func _ready()->void:
 	# Remove
 	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
 	temp.starting_weapons.erase(temp_2)
+	temp_2 = load("res://weapons/melee/hatchet/1/hatchet_data.tres")
+	temp.starting_weapons.erase(temp_2)
 	
 	# Vampire
 	temp = load("res://items/characters/vampire/vampire_data.tres")
 	temp_2 = load("res://weapons/melee/cactus_mace/1/cactus_mace_data.tres")
 	temp.starting_weapons.push_back(temp_2)
+	
+	# Well-rounded
+	temp = load("res://items/characters/well_rounded/well_rounded_data.tres")
+	temp_2 = load("res://weapons/melee/ghost_axe/1/ghost_axe_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	# Remove
+	temp_2 = load("res://weapons/melee/ghost_flint/1/ghost_flint_data.tres")
+	temp.starting_weapons.erase(temp_2)
 	
 	# Wildling
 	temp = load("res://items/characters/wildling/wildling_data.tres")

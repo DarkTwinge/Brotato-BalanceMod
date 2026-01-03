@@ -7,11 +7,62 @@ BM_INCREASED_BURN_DURATION	Burning Duration lasts {0} tick longer
 BM_EFFECT_FOR_NEGATIVE_SPEED	If your Speed is negative, gain {0} {1}
 
 
+~Starters to consider/test~
+Mage-Lute
+Chef-Slingshot? (thematic partial miss)
+Creature Spoon?
+Creature Crossbow?  (seems appropriate for kit but soft-miss theme)
+Hunter-Hatchet; maybe Ghost Flint
+
+Lich-Flute
+Old-Flute
+Maso - Spoon?
+Lucky - Brick (cute thematic fit)
+
+Loud w/ Pruner
+
+Possible other Sharp Tooth users: Mutant, Loud
+
+
+Loud-Lute
+Ghost Scepter Ranger?
+Soldier-Flute
+Jack w/ Wrench, Flute, Taser
+
+Entre-Revolver?
+
+~Other starters to maybe test or add:~
+~~Maybes - test first~~
+Lich - Brick (can still do dmg if breaks)
+Druid - Spiky Shield?
+Ogre - Spear
+Romantic - Plank
+Gladiator-Brick
+
+Captain - Ghost Axe??
+Explorer - Brick
+Fisher - maaaaybe Hiking Stick, [Trident], [[Harpoon Gun???]]
+Hiker - Ghost Axe?, Spear
+Hunter - Laser Gun, [Harpoon Gun]
+Knight - Spoon??
+Multitasker - Brick
+Ogre -  Ghost Axe??
+Old - Brick?
+One-armed - [Grenade Launcher]
+Renegade - [Harpoon Gun]
+[Romantic + Thief Dagger will NOT give mats on a crit that charms.]
+Streamer - Brick
+Technomage - Spoon??
+
+~No - Bad Starters~
+Loud - Flute
+Romantic - Flint (Doesn't proc when it Charms)
+
+
+
 ~Challenge Run Ideas~
 Multitasker-All Different weapons
 Mage-Hand
-Jack starting with Candle+Flag
-Lich pure ability run (-Melee Damage, Scissors, rely on ability entirely?)
 PaciFIST (Has to kill final bosses; possibly earlier elites tho 11 seems very sus)
 Im-Precise Crazy
 Sausage Lord Mage (no direct Elemental weapons)
@@ -33,52 +84,10 @@ One Punch Ogre (Single Fist weapon)
 `(Requires editing)`
 Pure-Pistol Ranger
 Generalist - Harpoon Gun Only
+Lich pure ability run (-Melee Damage, Scissors/Rock, rely on ability entirely?)
+Jack starting with Candle+Flag
 
 
-Starters to test:
-Maso - Spoon?
-Lucky - Brick (cute thematic fit)
-
-Mutant Brick
-Loud w/ Pruner
-
-
-~No~
-Loud - Flute
-
-
-Loud-Lute
-Ghost Scepter Ranger?
-Soldier-Flute
-Jack w/ Wrench, Flute, Taser
-
-Test/Consider Captain-Quarterstaff, Screwdriver, Chopper
-Entre-Revolver?
-
-~Other starters to maybe test or add:~
-~~Maybes - test first~~
-Lich - Brick (can still do dmg if breaks); Flute
-dwarf spear/joust
-Druid - Spiky Shield?
-Ogre - Spear
-Romantic - Plank, Screwdriver
-Captain SMG & slingshot
-
-Captain - Ghost Axe??
-Explorer - Brick
-Fisher - maaaaybe Hiking Stick, [Trident], [[Harpoon Gun???]]
-Hiker - Ghost Axe?, Spear
-Hunter - [Harpoon Gun]
-Knight - Spoon??
-Multitasker - Brick
-Ogre -  Ghost Axe??
-Old - Brick?
-One-armed - [Grenade Launcher]
-Renegade - [Harpoon Gun]
-Romantic - Ghost Flint? (depends if charming counts as a proc for it), 
-[Romantic + Thief Dagger will NOT give mats on a crit that charms.]
-Streamer - Brick
-Technomage - Spoon??
 
 ~~~
 BalMod SMG breakpoints: 1-26-51-67
@@ -87,6 +96,7 @@ Each 5 points of +Enemy Damage% is about the same as -1 Armor
 
 ~~~
 reconsider jousting lance (tho Blob already nerfed it a fair bit)
+	maybe simply drop the base Speed bonus by 1 per tier? or at least tier 1-2?
 sharp bullet giving -Range is an idea
 maybe add a few mummy spawns to the edge on wave 20 to further emphasize knockback value?
 
@@ -98,8 +108,6 @@ Tooltip Cooldowns don't accurately show the breakpoint stuff, so at high atk spd
 
 Sausage should prob proc from Sauce/Rip&Tear since it procs from other explosions
 
-
-could be cute to have tooltips show highest stat reached for previous round for e.g. Cryptid and also lowest for e.g. Triangle of Power (Fried Rice...)
 
 
 ENGINEER items could be more common if your stat is higher than the wave
@@ -115,10 +123,6 @@ make Monk phase 1 move a bit faster but keep their reduced hp?
 more ranged set options for better mixing and more varied vaga options?
 
 
-~~~~~~
-Beta/DLC
-~~~~~~
-
 
 Consider re-buffing Croc a little bit; Phase 2 might be too easy now
 Re-eval Mantis v Rhino differences again with the Rhino cooldown changes
@@ -128,8 +132,6 @@ Watch if Mom is even hard any more
 
 
 Goldfish could give free reroll, or make the next shop's items cheaper [would be moderately hard; could probably make a new effect type and replace `func fill_shop_items` to apply the discount right before the goldfish breaks, using an else to run the shop code normally so it doesn't go twice\
-
-Dwarf: Counter for Engineering gained
 
 Gangster: Controller down on items can go over to stats not weapons from rightmost only
 
@@ -157,7 +159,6 @@ Red Screwdriver w/ Ball & Chain showed Cooldown of 0.73
 super-speed on wall edge sometimes
 
 
-baby octopus kinda unnecessary
 maybe something else with -hp regen
 
 
@@ -168,7 +169,6 @@ maybe something else with -hp regen
 Flutes could increase enemy damage both to you and for charmed enemies vs other enemies
 
 BM-Lute shouldn't do extra damage itself from the Lute bonus
-	How does it stack? does the extra damage refresh on each hit, or is each tracked separately
 	if implemented improve their damage/scaling a little to compensate
 
 ~~~~
@@ -243,8 +243,7 @@ Landmines themselves could maybe have more Crit Damage
 Healer & Hermit kinda weird -- healer is faster and has more hp, hermit has knockback resistance (likely making it *easier* to kill) and a tiny bit of armor.  
 
 Ghost Axe could possibly be lower range (which would help Flints get more kills)
-Probably re-look at Wands, maybe direct compare with Icicle (could increase cost of icicles if that makes sense to spread them out more)
-	^Wand direct damage was kind of impressive on a Mage run...
+	The Flint changes probably cover this well enough now
 
 BM Set Weighting: maybe don't double-count same weapons?
 
@@ -323,8 +322,6 @@ pcoket factory doesn't update right away for techno
 
 Pile of Books tagged Engeering instead of Structure, which is better for builder but kinda weird
 
-potentiall up wave 5 abyss boss hp slightly?  what's the comparison with Crash? [Looks like CZ has a little less HP]
-
 possibly reduce curse impact on some other really big things?
 
 
@@ -340,24 +337,19 @@ preventing bounce/random target from hitting curse goblins would be good; how ha
 ~~check current harpoon damage reduction (maybe do it in practice against only an elite, also check code)
 	take a look at pure harpoon diver for a lark?
 
-Particle Accel slow doesn't work?
-
 
 Add MedGun Starter Maybe:
 Mutant? (if remove SMG?)
 Entre?
 Baby?
-Could get spicy and replace SMG with it on Multitasker
+Multitasker
 Could test on One-armed, maaaaybe fisher
-multi (would prob have to replace smg?)
 
-Wave 11 Elite HP reduces slightly more than 12?
+Make Wave 11 Elite HP reduced slightly more than 12?
 
-~~Can greek fire work on both burn types simultaneously?
 ~~Druid + Jerky: does poison hurt you then heal over time?
 ~~test slingshots vs shurikens some
 ~~Run some tests on Seashell - is it kinda meh like Ricochet or?
-~~Perhaps test Med Guns vs SMGs on ~5% Lifesteal; how much better are SMGs at damage and which is better at healing
 
 
 
@@ -378,11 +370,6 @@ Wave 19 could broadly be a little more Horde-like, to test those limits in a gua
 
 Flute could be retooled as a multi-projectile
 
-Mage-Lute
-Chef-Slingshot? (thematic partial miss)
-Creature Spoon?
-Creature Crossbow?  (seems appropriate for kit but soft-miss theme)
-Hunter-Hatchet; maybe Ghost Flint
 
 
 look at builder internal ban tagging, currently nixes Improved Tools as it is tagged structure; Pile of Books should maybe be tagged struct but then gets banned on builder
@@ -391,14 +378,12 @@ look at builder internal ban tagging, currently nixes Improved Tools as it is ta
 Coupon counts gangster-stolen items as value for itself
 
 
-Possible incompatability with: Mashtato and Pentato ; checked and nothing clear in extensions that should conflict
-Possible mod conflict with one of: RerollRNGBalancing , Fixed Camera Solo , HookCursesMore  
-
 
 ~~flute test: friends alive at end, do they give you full or halves on e.g. hiker
 
 
 Sausage's self-burn increase is not reflected in tooltip
+	Does it still increase self-burn?
 Spyglass should specify both shop and level-ups maybe?
 Goldfish should clarify doesn't affect locked
 
@@ -430,21 +415,13 @@ Could be cute to have an 8-hit-rule (like Trees) for Eggs and Iron Lungs, so tha
 
 
 
-Recycling Machine not tracking right, unsure if base or advstats (seems to be tracking in Recycling probably but not for the item itself in adv stats)
-
 Add current amount of creature curse strength bonus to their tooltip if possible?
-
-possible Well-Rounded should have Ghost Axe, Mutant the Flint since Flint is cheaper?
 
 Could possibly have negative armor diminish faster, making a negative armor build more viable
 
 
-why enemy stats show wlarus having ranged damage number
-
 harpoon tooltip mention the lower damage effect
 
-
-Possible other Sharp Tooth users: Mutant, Loud
 
 Hand could have slightly lower range to be useable alongside other wepaons e.g. Fist more reasonably?
 
@@ -465,8 +442,6 @@ Tier-1/Tier-4 text blurbs could be color-coded for the color of the item tiers
 
 Riposte could reset melee weapon cooldowns on dodge instead?  (would be Tier 3 or 4 then probably and might need some minus stats, but cute idea)
 
-Co-op bugs: mid-wave crashes, buying Bone Dice?
-
 
 
 Will'o'Wisp -- Why? Snowball also exists??
@@ -474,14 +449,11 @@ Snowball idea: When you obtain Melee or Ranged Damage, also gain +1 (+2?) Elemen
 	Does this moreso just make those items into Elemental Damage items and you still go single build?  Is this okay anyway?
 and/or: Ice Cube could be a higher amount (25%?), but only apply the damage increase to non-Elemental
 
-cursed pile of books should maybe not be triple stats since the base is higher
-
 Gobbler may want to take longer to switch to phase 2? more HP in phase 3?
 
 Tyler could maybe be blue
 Chameleon could be blue
 Honey (but probably messes Ranged Damage distribution?)
-Pile of Books would be possible, let you plan that build-around earlier
 maaaybe Shmoop
 Wandering Bot
 Other possible Purples that could be given Dodge:
@@ -504,7 +476,6 @@ Mastery downside is relevant for how few things? Harpoon Gun, Baby, Generalist, 
 
 
 Goes into 3rd row of weapons: Multitasker, King
-	if don't reduce their counts, maybe re-add revolver for multi
 Streamer almost wants 3 more starters to go 2nd row full?
 
 
@@ -531,35 +502,17 @@ Revisit maknig Tardigrade specifically ignore self-damage instead of '1 damage'
 
 weird that the dodge cap for cursed ghost costume is unaffected by curse strength
 
-Gobbler's Hat -- not dodge penalty? (or at least some armor, some dodge)
-	could scale down Speed with mats like the Gobbler itself, using Streamer effect
-
 
 Vanilla Fruit Basket - Fruits +40% at 0 Luck, roughly -- 2.6 fruits, so call it ~15hp in healing?  Around 4-5 HP Regen
 	Average fruit for mathing: 10 per wave (~50 Luck, ~1 Tree item)  --> 2.5 HP Regen per +1 Consumable Healing
 
-Candy bag could skip stats with a -100% modifier
 
-
-Probably not but maybe Tags:
-Evil Hat could be pickup
-
-
-
-
-Tiny Auto Knights
-confirm when merging two units that are already on the board? (could be an option)
-rarity hover tooltip doesn't work while picking relics
 
 
 improve cursed landmines somewhow - either let curse lower their cooldown, or add maybe 4 explosion damage%
 	probably also give them improved crit damage?
 	
 	
-3 Weird Ghosts in one wave -- started at 1 hp when at 60 max hp
-
-Fairy now inconsistent - gives +5 HP Regen when Fairy tooltip says +4, so used formula different than display formula
-
 Stargazer sound doesn't always go off when they enter vat?
 
 Exploring Mace starters... Jack? Doctor, Entreprenuer, Lich, Vaga, Druid, (Bucaneer, Gladiator, and Ogre prob too good?)
@@ -586,10 +539,6 @@ Sometimes going down (controller) on right-most item will move it over to Speed 
 
 
 
-Impr Tooltip:
-Count stand-still time for e.g. Coral
-
-
 Red Knife -5 Base Crit w/ tiny other buff?
 Sailor having Dodge banned but Dwarf and Crazy not is pretty weird
 
@@ -611,6 +560,22 @@ Additional reminder icons mod, probably omni: Piggy, Torture, Stand-Still,
 pairing for AtkSpd + Range are kinda high, could possibly change one (Berserker, Banner, Tonic)
 	tweak the banned_item_group if changed
 	
-Any new weapons (e.g. Vorpal) should at least have their tier-4 pricing adjusted
+Any new weapons should at least have their tier-4 pricing adjusted
 
 maybe re-look at the bonus odds of finding matches for mixed builds sometime to see if I want a different rework direction
+
+possibly could make sense for Gobbler to ignore Slow effects (Tooth, Snail)?
+
+x-hit threshold for killing Eggs and Iron Lungs like with trees?
+
+Lucky - cancel the minor Attack Speed buff?
+add Tardigrade to Bull-restricted?
+	and Community Support [Should make an Attack Speed group with Coffee?], Gummy Berserker, Glasses, Lifesteal Group (make sure includes Fresh Meat)
+
+
+Is Sick-Scepter an extra-hard run?  Soldier-Flute?
+
+Flute Wave 1 kill rate sucks big time [tho not necessarily problem if there are alternatives e.g. Lich, Soldier's atkspd...]
+
+
+will o wisp: maybe gives random of the 4 primary damage stats?  if it could randomly be one non-Elemental for the run that could also be cute.

@@ -185,6 +185,9 @@ func check_for_available_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/items/eyepatch/effects/eyepatch_effect_1.tres")
 		temp.value = 6		# 3 (Crit Chance)
 
+		temp = load("res://dlcs/dlc_1/items/fish_hook/fish_hook_data.tres")
+		temp.value = 37		# 35
+
 		temp = load("res://dlcs/dlc_1/items/jerky/jerky_data.tres")
 		temp.value = 55		# 50
 
@@ -213,7 +216,9 @@ func check_for_available_dlcs()->void :
 		temp.text_key = "NEW_EFFECT_LOST_ON_HIT"
 
 		temp = load("res://dlcs/dlc_1/items/goblet/goblet_data.tres")
-		temp.value = 77		# 70
+		temp.value = 69		# 70
+		temp = load("res://dlcs/dlc_1/items/goblet/effects/goblet_effect_0.tres")
+		temp.value = 12		# 15
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 		temp.value = 14   # 23
@@ -263,8 +268,12 @@ func check_for_available_dlcs()->void :
 		### WEAPONS ###
 		## MELEE WEAPONS ##
 		# Anchor
+		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/2/anchor_2_data.tres")
+		temp.value = 46				# 51
+		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/3/anchor_3_data.tres")
+		temp.value = 86				# 95
 		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/4/anchor_4_data.tres")
-		temp.value = 168		# 190
+		temp.value = 151			# 190
 		
 		# Brick
 		temp = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_effect_0.tres")
@@ -553,6 +562,11 @@ func check_for_available_dlcs()->void :
 		temp_2 = load("res://weapons/ranged/icicle/1/icicle_data.tres")
 		temp.starting_weapons.push_back(temp_2)		
 		
+		# Captain
+		temp = load("res://dlcs/dlc_1/characters/captain/captain_data.tres")
+		temp_2 = load("res://weapons/melee/wrench/1/wrench_data.tres")
+		temp.starting_weapons.push_back(temp_2)
+		
 		# Chef
 		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
 		# Remove
@@ -582,6 +596,9 @@ func check_for_available_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/characters/curious/curious_data.tres")
 		temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
 		temp.starting_weapons.insert(11, temp_2)
+		# Remove
+		temp_2 = load("res://weapons/melee/hatchet/1/hatchet_data.tres")
+		temp.starting_weapons.erase(temp_2)
 		
 		# Demon
 		temp = load("res://items/characters/demon/demon_data.tres")
@@ -604,6 +621,11 @@ func check_for_available_dlcs()->void :
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/sickle/1/sickle_data.tres")
 		temp.starting_weapons.erase(temp_2)	# Needs to be manually removed despite being a Tier -1 weapon
 		
+		# Dwarf
+		temp = load("res://dlcs/dlc_1/characters/dwarf/dwarf_data.tres")
+		temp_2 = load("res://weapons/melee/circular_saw/2/circular_saw_2_data.tres")
+		temp.starting_weapons.push_back(temp_2)		
+		
 		# Entrepreneur
 		temp = load("res://items/characters/entrepreneur/entrepreneur_data.tres")
 		temp_2 = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_data.tres")
@@ -620,6 +642,8 @@ func check_for_available_dlcs()->void :
 		temp = load("res://dlcs/dlc_1/characters/gangster/gangster_data.tres")
 		temp_2 = load("res://weapons/melee/claw/1/claw_data.tres")
 		temp.starting_weapons.push_back(temp_2)		
+		temp_2 = load("res://weapons/melee/chopper/1/chopper_data.tres")
+		temp.starting_weapons.push_back(temp_2)				
 		
 		# Hiker
 		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")
@@ -636,7 +660,7 @@ func check_for_available_dlcs()->void :
 		temp.starting_weapons.push_back(temp_2)
 		temp_2 = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/2/blunderbuss_2_data.tres")
 		temp.starting_weapons.push_back(temp_2)
-		
+
 		#
 		# Lucky
 #		temp = load("res://items/characters/lucky/lucky_data.tres")

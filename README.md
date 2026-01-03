@@ -31,7 +31,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 ### Items
 Tons of items receive small buffs or nerfs: overall more items are useful in more situations, and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
 
-* Tardigrade is no longer wasted by Bloody Hand/Donation.
+* Tardigrade is no longer wasted by self-damage.
 * Ricochet is now friendlier with already-piercing weapons.
 * Power Generator now reduces your HP as it powers up.
 * Fairy gives less HP Regen and gives negative HP for Tier-4s instead of negative HP Regen.
@@ -74,14 +74,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 # Full Changelog
 ## General Changes
 * Armor is about 7% less effective (Each point is +6.25% Effective HP instead of +6.67%). _[This probably still leaves it as the strongest general stat, but now closer to its peers.]_
-* Having different weapons will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/25% for having 1/2/3/4/5+ different types of weapons.
+* Having different weapons will make the shop more likely to offer you an exact-match of a weapon you already have. In vanilla, this is always a 20% chance; now it's 19%/20%/22%/24%/26% for having 1/2/3/4/5+ different types of weapons.
 * Mixed Weapon Sets don't hurt your shop odds as much: The calculation that weighs shop weapons to more often match weapon sets you currently have (15% of the time, more often in the first 5 waves) now factors in how many copies of the set you have rather than weighing them all equally. For example, if you have 5 Thief Daggers (Precise set) and 1 Scissors (Precise & Medical sets): when the shop is picking a tier-1 weapon based on sets, in vanilla this would give you a 1 in 7 chance to be offered a Medical Gun -- now the odds of it picking Medical Gun are only 1 in 32. _[This also means multi-set weapons will inherently be favored slightly more, which helps offset the fact they're pulling in more weapons into the pool.]_
 * When a shop tries to offer you an exact weapon you have but can't, it will now offer you a same-set weapon (instead of a fully random weapon). This makes it a little easier to match up a starting tier-2+ only weapon (e.g. Potato Thrower) with something relevant.
 * Tier-4 weapons are significantly cheaper, primarily as an indirect buff to Luck and mixed-weapon builds. Other weapon prices are cleaned up to be more consistent and have a slightly more logical progression.
 * The reroll button for level-ups is now color-coded for levels that have a guaranteed rarity. (Level 5, 10, 15, etc.)
 * Horde Wave Materials: 65% -> 60% _[This still leaves them mostly more profitable and easier than Elite waves, but more closely aligned.]_
 * All explosion tooltips now list their explosion size (weapons, items, and characters).
-* Clarified various tooltips to be more clear & accurate: Detailed hidden mechanics (e.g. Fisher, Spicy Sauce, Scared Sausage); Adjusted wordings of item and stat tooltips to be more correct; Shortened character effect descriptions to fit in the box better; Armor tooltip has an extra decimal place; Knight's tooltip color-coded properly; Fixed Lightning Shiv's bounce count.
+* Clarified various tooltips to be more clear & accurate: Detailed hidden mechanics (e.g. Fisher, Spicy Sauce, Scared Sausage); Adjusted wordings of item and stat tooltips to be more correct; Shortened character effect descriptions to fit in the box better; Armor tooltip has extra decimal places; Knight's tooltip color-coded properly; Fixed Lightning Shiv's bounce count.
 
 ## Level-ups
 * **Range:** 15/30/45/60 -> 20/35/50/70
@@ -181,6 +181,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
 * **Eyepatch:** Price 55->63; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
+* **Fish Hook:** Price 35->37
 * **Jerky:** Price 50->55
 * **Pearl:** Price 60->53; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
 * **Saltwater:** Extra Speed When Hit 10% -> 20%
@@ -204,7 +205,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Crown:** Price 70->65
 * **Fairy:** Price 85->88; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
-* **Ghost Outfit:** Price 80->74; Armor -3 -> No Penalty
+* **Ghost Outfit:** Price 80->76; Armor -3 -> No Penalty
 * **Glass Canon:** Price 75->70
 * **Honey:** Price 70->51; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Hunting Trophy:** Price 55->60
@@ -232,7 +233,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 * **Ball and Chain (Cursed):** Weapon Cooldown Floor ~0.35s -> ~0.5s
 * **Crystal:** Price 65->53; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
-* **Goblet:** Price 70->77
+* **Goblet:** Price 70->69; Chance of heal per kill 15% -> 12%
 * **Goldfish:** Price 23->14 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
@@ -245,6 +246,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Extra Stomach:** Now tagged for 'consumables' instead of 'luck'.
 * **Focus:** Price 110->100; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
+* **Gobbler's Hat:** Dodge -10% -> -5%; Additional Downside of -2 Armor
 * **Heavy Bullets:** Price 100->95; Range +10 --> Crit Chance +5%; Crit Chance -5% --> Accuracy -25%; (Replaced 'Range' tag with 'Crit Chance') _[The Ranged Weapons section below also covers some Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
 * **Hourglass:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
 * **Jet Pack:** Price 100->92; HP -5 -> -3
@@ -258,7 +260,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Retromation's Hoodie:** +2% Attack Speed for every 1% Dodge --> +3% Attack Speed for every 2% Dodge
 * **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
 * **Robot Arm:** Price 100->92
-* **Spider:** Attack Speed Per Different Weapon 6% -> 8%; Damage 12% -> 8%
+* **Spider:** Price 110->102; Attack Speed Per Different Weapon 6% -> 8%; Damage 12% -> 8%
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 #### DLC
 * **Kraken's Eye:** Price 110->90
@@ -292,13 +294,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
+* **Anchor:** Price 51/95/190 -> 46/86/151
 * **Brick:** Can no longer break during Wave 1; Breaking SFX slightly louder
 * **Mace:** Price 46/92/185 -> 30/59/105; Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between.]_
 * **War Hammer:** Cooldown 2.11/1.95 -> 2.0/1.83; Crit Damage 1.5x -> 1.75x
 
 - **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
-- **Other Tier-4 Price Reductions:** Anchor: 190 -> 168; Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Wrench: 149 -> 133
+- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%
@@ -341,7 +344,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
 * **Loud:** -3 Harvesting per Wave -> -5; Damage 30% -> 25%
 * **Lucky:** 100 Starting Luck -> 70; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat. Takes a fair bit to break even with vanilla Lucky, so gets slightly better Attack Speed to compensate.]_
-* **Mage:** Now starts with a 2nd Sausage when starting with SMG or Shotgun; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
+* **Mage:** Now gets a 2nd Sausage when starting with non-Elemental weapons; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
 * **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered lower-tier versions of the weapon you have equipped _[Very minor; removes completely useless weapons and makes swapping weapons slightly easier.]_
@@ -354,7 +357,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wildling:** No longer starts with a Stick.
 * _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
-* **Captain:** No longer favored to find XP Gain items.
+* **Captain:** No longer favored to find XP Gain items. _[Their benefit is only about average, and Barnacle especially is sad for Captain.]_
 * **Chef:** Can no longer be offered Eyes Surgery.
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
@@ -419,13 +422,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Entrepreneur:** Added Screwdriver, Sharp Tooth
 * **Explorer:** Added Medical Gun
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv
-* **Gladiator:** Removed Sharp Tooth
+* **Gladiator:** Removed Sharp Tooth, Hatchet
 * **Golem:** Added Quarterstaff
 * **Hunter:** Added Knife, Screwdriver
 * **Jack:** Removed Shuriken
 * **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle
+* **Masochist:** Added Hatchet
 * **Mage:** Added Wrench, Cacti Club
-* **Mutant:** Added Chopper
+* **Mutant:** Added Chopper, Hatchet, Ghost Flint; Removed Ghost Axe
 * **Old:** Added Medical Gun
 * **One-armed:** Added Slingshot, Sword, Hammer, Flaming Brass Knuckles, Fireball
 * **Pacifist:** Added Scissors, Rock
@@ -433,21 +437,24 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Saver:** Added Stick, Torch
 * **Sick:** Added Chopper
 * **Soldier:** Added Medical Gun
-* **Vagabond:** Added Medical Gun; Removed Sharp Tooth (as it now only has one Set)
+* **Vagabond:** Added Medical Gun; Removed Hatchet, Sharp Tooth (as it now only has one Set)
 * **Vampire:** Added Cacti Club
+* **Well-rounded:** Added Ghost Axe; Removed Ghost Flint
 * **Wildling:** Removed Sharp Tooth _[Doesn't benefit from Wildling's ability.]_
 #### DLC
 * **Baby:** Added Lute, Brick; Removed Flute
 * **Buccaneer:** Added Plank, Wrench, Revolver
 * **Builder:** Added Icicle
+* **Captain:** Added Wrench
 * **Chef:** Removed Stick
 * **Creature:** Added Shuriken, Ghost Axe, Taser; Removed Fist
-* **Curious:** Added Medical Gun
+* **Curious:** Added Medical Gun; Removed Hatchet
 * **Demon:** Added Brick, Mace
 * **Diver:** Added Lightning Shiv; Removed Sharp Tooth (no longer Precise)
+* **Dwarf:** Added Circular Saw
 * **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin
-* **Gangster:** Added Claw
+* **Gangster:** Added Claw, Chopper
 * **King:** Added Blunderbuss, Harpoon Gun, Spoon
 * **Hiker:** Added Slingshot, Medical Gun
 * **Mage:** Added Spoon

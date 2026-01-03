@@ -59,7 +59,7 @@ BM_EFFECT_STAT_ON_POISON_FRUIT,{0} {1} when you pick up a [color=#bb576b]poisone
 NEW_EFFECT_POISONED_FRUIT,{0} of fruits are poisoned and hurt you (ignores defenses)
 NEW_EFFECT_UPGRADED_BAITS,"Baits make Lampreys spawn during all future waves (Extras at 15, 20, 30, 40, 45... total Baits)"
 NEW_EFFECT_EXPLODE_WHEN_BELOW_HP,"Once per wave, you explode for {1} ({2}) damage when you fall below {5} health (Size: {4})"
-NEW_EFFECT_RECYCLING_GAINS,Gain {0} more materials from recycling items (additive with the 25% base recycling rate)
+NEW_EFFECT_RECYCLING_GAINS,Gain {0} more materials from recycling (additive with the 25% base rate)
 NEW_NEXT_LEVEL_XP_NEEDED,{0} XP needed to level up
 NEW_EFFECT_CONSUMABLE_STAT_WHILE_MAX,"{0} {1} when picking up a consumable at max health"
 NEW_EFFECT_CONVERT_BONUS_GOLD,"Every {0} uncollected materials convert into {2} {3} at end of wave"
