@@ -3,7 +3,7 @@ extends "res://singletons/run_data.gd"
 var bm_player_index: = 0
 
 # Added set bonus for One-armed
-func update_sets(player_index:int)->void :
+func update_sets(player_index: int) -> void :
 	var player_data = players_data[player_index]
 	var active_set_effects = player_data.active_set_effects
 	var active_sets = player_data.active_sets
@@ -21,7 +21,7 @@ func update_sets(player_index:int)->void :
 				active_sets[set.my_id] = weapons.size()
 			elif active_sets.has(set.my_id):
 				active_sets[set.my_id] += 1
-			else :
+			else:
 				active_sets[set.my_id] = 1
 				### Treats One-armed as having a 4-set Bonus, except for Legendary weapons
 				var current_character = get_player_character(player_index)
@@ -40,7 +40,7 @@ func update_sets(player_index:int)->void :
 
 
 # Changes effect of King's abilities to be unique weapons
-func update_tier_iv_weapon_bonuses(player_index:int)->void :
+func update_tier_iv_weapon_bonuses(player_index: int) -> void :
 	var effects: = get_player_effects(player_index)
 	var tier_iv_weapon_effects = players_data[player_index].tier_iv_weapon_effects
 
@@ -66,7 +66,7 @@ func update_tier_iv_weapon_bonuses(player_index:int)->void :
 				
 
 # Slightly reduce the effect of armor
-func get_armor_coef(armor:int)->float:
+func get_armor_coef(armor: int) -> float:
 	var percent_dmg_taken = 10.0 / (10.0 + (abs(armor) / 1.6)) # Was 1.5
 
 	if armor < 0:
@@ -76,7 +76,7 @@ func get_armor_coef(armor:int)->float:
 
 
 # Gives an extra starting Sausage for non-Elemental Mage
-func add_starting_items_and_weapons()->void :
+func add_starting_items_and_weapons() -> void :
 	.add_starting_items_and_weapons()
 
 	for player_index in players_data.size():
@@ -94,7 +94,7 @@ func add_starting_items_and_weapons()->void :
 					##
 
 # Removes useless-for-the-character stats from the random list for Candy Bag
-func get_random_primary_stats()->String:
+func get_random_primary_stats() -> String:
 	var stats_list = [
 		"stat_max_hp", 
 		"stat_armor", 
@@ -114,7 +114,7 @@ func get_random_primary_stats()->String:
 		"stat_harvesting"
 	]
 
-	##TODO - this doesn't have a player_index to tell apart co-op players, does it ened to ignore this in co-op?
+	##TODO - this doesn't have a player_index to tell apart co-op players, does it need to ignore this in co-op?
 	for player_data in RunData.players_data:
 		var character = player_data.current_character
 

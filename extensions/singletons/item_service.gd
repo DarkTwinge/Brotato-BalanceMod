@@ -1,7 +1,7 @@
 extends "res://singletons/item_service.gd"
 
 # New restricted item changes
-func _ready()->void :
+func _ready() -> void :
 	._ready()
 	item_groups["stand_still"] = ["item_barricade", "item_chameleon", "item_statue", "item_coral"]
 	item_groups["range_and_attack_speed"] = ["item_banner", "item_gummy_berserker"]
@@ -10,7 +10,7 @@ func _ready()->void :
 
 # Replace original weapon-set-favoring pool with a weighted pool based on how many of the weapon you have
 # Adjusts shop weapon pick odds based on number of weapon types held
-func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandItemForWaveArgs)->ItemParentData:
+func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetRandItemForWaveArgs) -> ItemParentData:
 	var player_character = RunData.get_player_character(player_index)
 	var rand_wanted = randf()
 	var item_tier = get_tier_from_wave(wave, player_index, args.increase_tier)
@@ -48,13 +48,13 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 		var bonus_chance_same_weapon = max(0, (MAX_WAVE_ONE_WEAPON_GUARANTEED + 1 - RunData.current_wave) * (BONUS_CHANCE_SAME_WEAPON / MAX_WAVE_ONE_WEAPON_GUARANTEED))
 		var chance_same_weapon = CHANCE_SAME_WEAPON + bonus_chance_same_weapon
 
-		var no_melee_weapons:bool = RunData.get_player_effect_bool("no_melee_weapons", player_index)
-		var no_ranged_weapons:bool = RunData.get_player_effect_bool("no_ranged_weapons", player_index)
-		var no_duplicate_weapons:bool = RunData.get_player_effect_bool("no_duplicate_weapons", player_index)
-		var no_structures:bool = RunData.get_player_effect("remove_shop_items", player_index).has("structure")
+		var no_melee_weapons: bool = RunData.get_player_effect_bool("no_melee_weapons", player_index)
+		var no_ranged_weapons: bool = RunData.get_player_effect_bool("no_ranged_weapons", player_index)
+		var no_duplicate_weapons: bool = RunData.get_player_effect_bool("no_duplicate_weapons", player_index)
+		var no_structures: bool = RunData.get_player_effect("remove_shop_items", player_index).has("structure")
 
-		var player_sets:Array = RunData.get_player_sets(player_index)
-		var unique_weapon_ids:Dictionary = RunData.get_unique_weapon_ids(player_index)
+		var player_sets: Array = RunData.get_player_sets(player_index)
+		var unique_weapon_ids: Dictionary = RunData.get_unique_weapon_ids(player_index)
 
 		### Adjusts shop weapon pick odds based on number of weapon types held
 		### Gets a same-set weapon if no exact-match is available
@@ -137,7 +137,10 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 					continue
 
 	elif type == TierData.ITEMS:
-		if Utils.get_chance_success(CHANCE_WANTED_ITEM_TAG) and player_character.wanted_tags.size() > 0:
+		var wanted_item_tag_chance = CHANCE_WANTED_ITEM_TAG
+		if RunData.get_player_effects(player_index).has("boosted_wanted_item_tag") and RunData.get_player_effect_bool("boosted_wanted_item_tag", player_index):
+			wanted_item_tag_chance = BOOSTED_WANTED_ITEM_TAG
+		if Utils.get_chance_success(wanted_item_tag_chance) and player_character.wanted_tags.size() > 0:
 			for item in pool:
 				var has_wanted_tag = false
 
@@ -149,7 +152,13 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 				if not has_wanted_tag:
 					items_to_remove.push_back(item)
 
-		var remove_item_tags:Array = RunData.get_player_effect("remove_shop_items", player_index)
+		if args.forced_shop_tag != null:
+			for item in pool:
+				if not items_to_remove.has(item) and not item.tags.has(args.forced_shop_tag):
+					items_to_remove.push_back(item)
+
+
+		var remove_item_tags: Array = RunData.get_player_effect("remove_shop_items", player_index)
 		for tag_to_remove in remove_item_tags:
 			for item in pool:
 				if tag_to_remove in item.tags:
@@ -170,7 +179,7 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 				for item in pool:
 					if player_character.banned_items.has(item.my_id):
 						items_to_remove.append(item)
-		else :
+		else:
 			
 			for item in pool:
 				if banned_items_for_endless.has(item.my_id):
@@ -233,9 +242,9 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 	if pool.size() == 0:
 		if backup_pool.size() > 0:
 			elt = Utils.get_rand_element(backup_pool)
-		else :
+		else:
 			elt = Utils.get_rand_element(_tiers_data[item_tier][type])
-	else :
+	else:
 		elt = Utils.get_rand_element(pool)
 		if elt.my_id == "item_axolotl" and randf() < 0.5:
 			elt = Utils.get_rand_element(pool)
@@ -264,7 +273,7 @@ func _get_rand_item_for_wave(wave:int, player_index:int, type:int, args:GetRandI
 
 
 # Add a decimal to armor tooltip for more accuracy
-func get_stat_description_text(stat_name:String, value:int, player_index:int)->String:
+func get_stat_description_text(stat_name: String, value: int, player_index: int) -> String:
 	stat_name = stat_name.to_upper()
 	var stat_sign = "POS_" if value >= 0 else "NEG_"
 	var key = "INFO_" + stat_sign + stat_name
@@ -281,7 +290,7 @@ func get_stat_description_text(stat_name:String, value:int, player_index:int)->S
 		#return Text.text(key, [str(abs(round((1.0 - RunData.get_armor_coef(value)) * 100.0)))])
 		##
 	elif stat_name == "STAT_HARVESTING":
-		if value >= 0:key += "_LIMITED"
+		if value >= 0: key += "_LIMITED"
 		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect("harvesting_growth", player_index)), str(RunData.nb_of_waves), str(RunData.ENDLESS_HARVESTING_DECREASE)])
 	elif stat_name == "STAT_LIFESTEAL":
 		### Clarity text change
@@ -337,7 +346,7 @@ func get_stat_description_text(stat_name:String, value:int, player_index:int)->S
 	return Text.text(key, [str(abs(value))])
 
 # Fix King's smiley-face indicator for tier-4 weapons
-func get_icon_for_duplicate_shop_item(character:CharacterData, player_items:Array, player_weapons:Array, shop_item:ItemParentData, player_index:int)->Texture:
+func get_icon_for_duplicate_shop_item(character: CharacterData, player_items: Array, player_weapons: Array, shop_item: ItemParentData, player_index: int) -> Texture:
 	var orig_result = .get_icon_for_duplicate_shop_item(character, player_items, player_weapons, shop_item, player_index)
 	
 	# Original loop, run again to re-check

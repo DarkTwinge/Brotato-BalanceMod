@@ -1,6 +1,6 @@
 extends "res://dlcs/dlc_1/dlc_1_data.gd"
 
-func curse_item(item_data:ItemParentData, player_index:int, turn_randomization_off:bool = false, min_modifier:float = 0.0)->ItemParentData:
+func curse_item(item_data: ItemParentData, player_index: int, turn_randomization_off: bool = false, min_modifier: float = 0.0)->ItemParentData:
 	# Reduces extra base dodge when it gets cursed, was 10
 	sifds_relic_dodge = 5
 
@@ -64,7 +64,7 @@ func curse_item(item_data:ItemParentData, player_index:int, turn_randomization_o
 
 
 # Creature rework
-func _get_cursed_item_effect_modifier(turn_randomization_off:bool = false, min_modifier:float = 0.0)->float:
+func _get_cursed_item_effect_modifier(turn_randomization_off: bool = false, min_modifier: float = 0.0)->float:
 	var result = ._get_cursed_item_effect_modifier(turn_randomization_off, min_modifier)
 	
 	# Using RunData to pass in player_index from the above function to get the character and then the Curse stat amount

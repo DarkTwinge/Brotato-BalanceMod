@@ -2,10 +2,10 @@ extends "res://main.gd"
 
 # Replace to reduce Horde Wave profits
 # Tweak mat drops to be per-mat rather than per-enemy
-func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
+func spawn_loot(unit: Unit, entity_type: int, args: Entity.DieArgs)->void :
 
 	if not unit.can_drop_loot:
-		return 
+		return
 
 	if unit.stats.can_drop_consumables:
 		spawn_consumables(unit)
@@ -23,10 +23,10 @@ func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
 	
 	# (Old behavior: all or nothing mat drops)
 	##if entity_type == EntityType.ENEMY and not Utils.get_chance_success(spawn_chance):
-	##	return 
+	##	return
 
-	var pos:Vector2 = unit.global_position
-	var value:float = get_gold_value(entity_type, args, unit.get_stats_value(), unit)
+	var pos: Vector2 = unit.global_position
+	var value: float = get_gold_value(entity_type, args, unit.get_stats_value(), unit)
 	var gold_spread = clamp((value - 1) * 25, unit.stats.gold_spread, 200)
 	
 	# New behavior: Each mat is rolled independantly
@@ -39,7 +39,7 @@ func spawn_loot(unit:Unit, entity_type:int, args:Entity.DieArgs)->void :
 
 
 # Cyborg SFX on state change
-func _on_HalfWaveTimer_timeout()->void :
+func _on_HalfWaveTimer_timeout() -> void :
 	._on_HalfWaveTimer_timeout()
 
 	if RunData.concat_all_player_effects("convert_stats_half_wave").size() > 0:

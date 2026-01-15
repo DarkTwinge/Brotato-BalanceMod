@@ -1,7 +1,7 @@
 extends "res://effects/burning_data.gd"
 
 # Replace to tweak Incendiary scaling
-func _convert_burning_type_to_scaling_stats(serialized:Dictionary)->void :
+func _convert_burning_type_to_scaling_stats(serialized: Dictionary)->void :
 	var burning_type_elemental = 0
 	var burning_type_engineering = 1
 	var type = serialized.get("type")

@@ -1,7 +1,7 @@
 extends "res://ui/menus/shop/reroll_button.gd"
 
 # 
-func init(value:int, player_index:int)->void :
+func init(value: int, player_index: int) -> void :
 	.init(value, player_index)
 	
 	var player_level = _wl_get_upgrade_level()

@@ -1,7 +1,7 @@
 extends "res://ui/menus/ingame/upgrades_ui_player_container.gd"
 
 # Replace to pass in player level to reroll button
-func show_upgrades_for_level(level:int)->void :
+func show_upgrades_for_level(level: int) -> void :
 	if _reroll_price == 0:
 		var result = ItemService.get_reroll_price(RunData.current_wave, _reroll_count, player_index)
 		_reroll_price = result[0]

@@ -1,17 +1,20 @@
 extends "res://global/entity_spawner.gd"
 
-func _physics_process(_delta:float)->void :
+func _physics_process(_delta: float) -> void :
 	if _cleaning_up:
-		return 
+		return
 
 	cur_spawn_delay += 1
 
 	if cur_spawn_delay >= SPAWN_DELAY:
 		for player_index in Utils.shuffled_range(queues_to_spawn_structures.size()):
-			var queue = queues_to_spawn_structures[player_index]
-			if queue.size() > 0:
-				spawn(queue, player_index)
-				break
+			var struct_queue = queues_to_spawn_structures[player_index]
+			if struct_queue.size() > 0:
+				spawn(struct_queue, player_index)
+			var pet_queue = queues_to_spawn_pets[player_index]
+			if pet_queue.size() > 0:
+				spawn(pet_queue, player_index)
+				
 		spawn(queue_to_spawn_trees)
 		spawn(queue_to_spawn_bosses)
 		spawn(queue_to_spawn_summons)
@@ -34,9 +37,9 @@ func _physics_process(_delta:float)->void :
 
 
 
-func on_group_spawn_timing_reached(group_data:WaveGroupData)->void :
+func on_group_spawn_timing_reached(group_data: WaveGroupData) -> void :
 	if _cleaning_up:
-		return 
+		return
 
 	var max_enemies = int(_current_wave_data.max_enemies + ((RunData.get_player_count() - 1) * (_current_wave_data.max_enemies / 8.0)))
 	###
@@ -59,7 +62,7 @@ func on_group_spawn_timing_reached(group_data:WaveGroupData)->void :
 			en.die()
 			enemies_removed_for_perf += 1
 
-	var group_pos:Vector2 = get_group_pos(group_data)
+	var group_pos: Vector2 = get_group_pos(group_data)
 	group_pos = get_group_pos_away_from_players(group_pos, group_data)
 
 	var units_data = group_data.wave_units_data
@@ -68,7 +71,7 @@ func on_group_spawn_timing_reached(group_data:WaveGroupData)->void :
 	var tree_modifier = RunData.sum_all_player_effects("trees")
 
 	for unit_wave_data in units_data:
-		var number:float = Utils.randi_range(unit_wave_data.min_number, unit_wave_data.max_number) as float
+		var number: float = Utils.randi_range(unit_wave_data.min_number, unit_wave_data.max_number) as float
 		number *= DebugService.nb_enemies_mult
 
 		if unit_wave_data.type == EntityType.ENEMY and not group_data.is_loot:
@@ -77,7 +80,7 @@ func on_group_spawn_timing_reached(group_data:WaveGroupData)->void :
 		elif unit_wave_data.type == EntityType.NEUTRAL:
 			number += tree_modifier
 
-		var number_total:float = number * unit_wave_data.spawn_chance
+		var number_total: float = number * unit_wave_data.spawn_chance
 		var number_floored: = int(number_total)
 		var residual_chance: = number_total - number_floored
 		var spawn_count: = (number_floored + 1) if Utils.get_chance_success(residual_chance) else number_floored

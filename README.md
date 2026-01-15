@@ -13,7 +13,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Other level-ups: Tier 2-4 Luck is stronger; Tier-1 Harvesting dropped to 4; weaker Tier-4 level-ups are more worthwhile.
 * Horde Waves give ~8% fewer materials.
 * Enemies can now drop partial material amounts instead of all or nothing (average amount is the same).
-* Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are color-coded. Cyborg's transition has unique SFX. Which items are 'structures' is indicated in the shop. Tooltips show explosion sizes.
+* Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are color-coded. Cyborg's transition has unique SFX. Tooltips show explosion sizes.
 
 ### Weapons
 * Primitive set bonus is worse; Blunt set bonus is better. Gun set bonus changed to Attack Speed in order to make the Range stat more relevant.
@@ -41,6 +41,7 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are better (as you have much less time to profit from them).
 * Ghost Outfit significantly buffed. Wandering Bot and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
 * Candle is cheaper and now reduces enemy damage.
+* Fresh Meat removed.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
 ### Characters
@@ -99,7 +100,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby Gecko:** Range 10 -> 12
 * **Bag:** Price 15->19
 * **Beanie:** Range -6 -> -7
-* **Book:** Price 8->7
+* **Book:** Price 8->9; Now also gives +2% Crit Chance (and is tagged for Crit Chance)
 * **Boxing Glove:** Knockback +3 -> +4
 * **Broken Mouth:** Price 25->26
 * **Cake:** Price 15->16
@@ -107,6 +108,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cute Monkey:** Price 25->30
 * **Duct Tape:** Price 20->16
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
+* **Fresh Meat:** Removed from the game. _[There don't need to be three separate tier-1 items that give +2% Lifesteal.]_
 * **Gentle Alien:** Price 30->32
 * **Glasses:** Range 20 -> 22
 * **Gummy Berserker:** Range 25 -> 29
@@ -137,7 +139,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Tier-2
 * **Acid:** Price 65->62
-* **Alien Eyes:** Price 50->51; No Downside --> -8 Range
+* **Alien Eyes:** No Downside --> -8 Range
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Price 45->43; Range -15 -> -18
 * **Blackbelt:** XP Gain +25% -> +30%
@@ -149,7 +151,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->34
 * **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
-* **Fruit Basket:** Price 45->59; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -5%; Limit 4 -> 3; Now tagged for 'consumables' instead of 'elemental'
+* **Fruit Basket:** Price 45->59; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -5%; Limit 4 -> 3
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
 * **Ice Cube:** Price 50->47
@@ -169,6 +171,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ritual:** Price 60->57
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
+* **Small Magazine:** Price 60->64; -6 Damage% -> -5 _[Slightly better fit in the situation you want it just for the Attack Speed, similar otherwise.]_
 * **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
 * **Snowball:** Price 50->44
 * **Spicy Sauce:** Explosion Size 125% -> 135%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies)
@@ -205,7 +208,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Crown:** Price 70->65
 * **Fairy:** Price 85->88; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
-* **Ghost Outfit:** Price 80->76; Armor -3 -> No Penalty
+* **Ghost Outfit:** Armor -3 -> No Penalty
 * **Glass Canon:** Price 75->70
 * **Honey:** Price 70->51; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Hunting Trophy:** Price 55->60
@@ -298,14 +301,15 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Brick:** Can no longer break during Wave 1; Breaking SFX slightly louder
 * **Mace:** Price 46/92/185 -> 30/59/105; Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between.]_
-* **War Hammer:** Cooldown 2.11/1.95 -> 2.0/1.83; Crit Damage 1.5x -> 1.75x
+* **War Hammer:** Now in the Tool set instead of Heavy; Cooldown 2.11/1.95 -> 2.0/1.83; Crit Damage 1.5x -> 1.75x
 
 - **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
-- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Sickle: 122 -> 111; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
+- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%
 - **Crossbow:** Range Scaling 10%(All) -> 9%/10%/11%/12%; Cooldown 1.13(All) -> 1.08/1.13/1.17/1.20; Range 350 -> 325 _[Lower initial cooldown helps its Wave 1-3 performance. Better scaling makes higher tiers actually worth building, while the worsening cooldown offsets this in a thematically appropriate way.]_
+- **Double-barrel Shotgun:** (Firing SFX slightly quieter)
 - **Icicle:** Range 400 -> 350; Cooldown 1.03/0.95/0.87/0.70 -> 1.05/0.97/0.88/0.72; Knockback 5 -> 3
 - **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95; Ranged Damage Scaling 400%/450%/500%/600% -> 400%/500%/600%/700% _[Cooldown tweak allows 1 extra shot during Wave 1.]_
 - **Minigun:** Base Damage 1/3 -> 2/4; Now has 25%/35% Knockback Piercing (more effective against resistant enemies); Price 127/255 -> 108/191 _[Often a more-expensive but worse SMG in vanilla, this gives it some unique utility. Build additional Knockback to really notice the effect.]_
@@ -337,7 +341,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Engineer:** No longer starts with a Wrench; Starting Engineering 10 -> 6; Elemental Damage Penalty -50% -> -20% _[Allows Engineer to lean into a mixed Engineering+Elemental build if desired, and makes more sense for Plank as a starting weapon.]_
 * **Entrepreneur:** Shop Prices -25% -> -20%
 * **Explorer:** Starting Trees: 12 -> 11
-* **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to tier-1 Harvesting and Fertilizer than most, and one that is most relevant for their weaker, non-Pruner-based builds.]_
+* **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to early Harvesting than most, and one that is most relevant for their weaker, non-Pruner builds.]_
 * **Fisher:** Extra HP 5 -> 8
 * **Gladiator:** -30 Luck -> -40
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
@@ -347,11 +351,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Mage:** Now gets a 2nd Sausage when starting with non-Elemental weapons; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
-* **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered lower-tier versions of the weapon you have equipped _[Very minor; removes completely useless weapons and makes swapping weapons slightly easier.]_
+* **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered lower-tier versions of the weapon you have equipped _[Very minor; makes swapping weapons slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
-* **Sick:** No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage).
-* **Soldier:** Bugfix: Damage bonuses are now always active (instead of spoardically tuning off due to delayed game-state updates); 200% Pickup Range -> 125% _[Gives them some reason to care about Pickup Range items.]_
+* **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage).
+* **Soldier:** 200% Pickup Range -> 125% _[Gives them some reason to care about Pickup Range items.]_
 * **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2
 * **Streamer:** Now also favored to find Stand-still items.
 * **Wildling:** No longer starts with a Stick.
@@ -361,9 +365,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Chef:** Can no longer be offered Eyes Surgery.
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
-* **Dwarf:** Can no longer be offered Seashell.
+* **Dwarf:** Can no longer be offered Seashell or Improved Tools.
 * **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
 * **Pacifist:** Can no longer be offered Whistle.
+* **Sick:** Can no longer be offered Crystal.
 
 ## Enemies
 ### Elites
@@ -488,6 +493,7 @@ These changes were originally made for Balance Mod but are now implemented into 
 - Knockback now always moves the enemy away from the player.
 - Over 100 starting weapon changes.
 - Bugfixed Wave 3 shops so they can sell more than 1 weapon.
+- Bugfixed Soldier so their Damage bonuses are properly active all the time.
 - Fairy & King show icons for relevant items in shops; Renegade now also shows icons for crates.
 - Fixed Crit to work properly for: Glutton, Ogre, Spicy Sauce, Rip & Tear.
 - Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand, Extra Stomach, Lure
@@ -503,6 +509,7 @@ These changes were originally made for Balance Mod but are now implemented into 
 - Elite Buffs to: Rhino
 - Elite Buff+Rework of: Gargoyle
 - Fixed Tagging/Banning for 20+ items.
+- Which items are 'structures' is indicated in the shop.
 - Pocket Factory now counts as a Structure. Fixed Incendiary Turret tooltip's incorrect damage rounding.
 - HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.
 - Revolver & Chain-gun: Fixed a bug that caused them to instantly reload when used alongside effects that check if you're moving (e.g. Solider). Also bugfixed inaccurate long cooldown tooltip.

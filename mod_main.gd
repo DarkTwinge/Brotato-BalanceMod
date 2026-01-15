@@ -44,8 +44,8 @@ func _init(modLoader = ModLoader):
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/reroll_button.gd")
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/ingame/upgrades_ui_player_container.gd")
 	
-	# Names Structures in the shop (Jank special cases for Clockwork Wasp and Improved Tools)
-	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/item_description.gd")
+	# Names Structures in the shop (Jank special cases for Clockwork Wasp and Improved Tools) -- Should be in vanilla now
+##	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/shop/item_description.gd")
 	
 	# Add new Druid poisoned-fruit-only effect
 	# Tardigrade no longer used for hits that bypass invincibility i.e. self-damage
@@ -300,8 +300,11 @@ func _ready()->void:
 	temp.value = -7  # -6 (Range)
 	
 	temp = load("res://items/all/book/book_data.tres")
-	temp.value = 7  # 8
-		
+	temp.value = 9  # 8
+	temp.tags = [ "stat_engineering", "stat_crit_chance" ]
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/book-added_crit.tres")
+	temp.effects.push_back(temp_2) # Added +2% Crit
+	
 	temp = load("res://items/all/boxing_glove/boxing_glove_effect_1.tres")
 	temp.value = 4  # 3 (Knockback)
 
@@ -324,6 +327,9 @@ func _ready()->void:
 	temp.value = 17  # 15
 	temp = load("res://items/all/fertilizer/fertilizer_effect_1.tres")
 	temp.value = 7   # 8 (Harvesting)
+	
+	temp = load("res://items/all/fresh_meat/fresh_meat_data.tres")
+	temp.can_be_looted = false
 	
 	temp = load("res://items/all/gentle_alien/gentle_alien_data.tres")
 	temp.value = 32	 #30
@@ -418,7 +424,6 @@ func _ready()->void:
 	temp.value = 62   # 65
 
 	temp = load("res://items/all/alien_eyes/alien_eyes_data.tres")
-	temp.value = 51   # 50
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/alien_eyes_range_malus.tres")
 	temp.effects.push_back(temp_2) # -8 Range
 	
@@ -479,7 +484,6 @@ func _ready()->void:
 	
 	temp = load("res://items/all/fruit_basket/fruit_basket_data.tres")
 	temp.value = 59		# 45
-	temp.tags = [ "consumable" ] # Was mistakenly Elemental
 	temp.max_nb = 3		# 4
 	temp = load("res://items/all/fruit_basket/fruit_basket_effect_1.tres")
 	temp.value = 2		# 1 (% chance to drop fruit)
@@ -553,6 +557,11 @@ func _ready()->void:
 
 	temp = load("res://items/all/shady_potion/shady_potion_effect_1.tres")
 	temp.value = 19  # 20 (Luck)
+
+	temp = load("res://items/all/small_magazine/small_magazine_data.tres")
+	temp.value = 64		# 60
+	temp = load("res://items/all/small_magazine/small_magazine_effect_3.tres")
+	temp.value = -5		# -6
 	
 	temp = load("res://items/all/snail/snail_effect_1.tres")
 	temp.value = -10  # -8 (Enemy Speed)
@@ -683,7 +692,6 @@ func _ready()->void:
 	temp.value = 70		# 75
 	
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_data.tres")
-	temp.value = 76		# 80
 	temp_2 = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
 	temp.effects.erase(temp_2)	# Remove -3 Armor
 
@@ -1470,14 +1478,19 @@ func _ready()->void:
 	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.12 ] ]
 	
 	# Double-barrel Shotgun
+	temp = load("res://weapons/ranged/double_barrel_shotgun/1/double_barrel_shotgun_stats.tres")
+	temp.sound_db_mod = -17	# -15
 	temp = load("res://weapons/ranged/double_barrel_shotgun/2/double_barrel_shotgun_2_stats.tres")
 	temp.accuracy = 0.9			# 0.95
+	temp.sound_db_mod = -17	# -15
 	temp = load("res://weapons/ranged/double_barrel_shotgun/3/double_barrel_shotgun_3_stats.tres")
 	temp.accuracy = 0.9			# 1.0
+	temp.sound_db_mod = -17	# -15
 	temp = load("res://weapons/ranged/double_barrel_shotgun/4/double_barrel_shotgun_4_data.tres")
 	temp.value = 133				# 149
 	temp = load("res://weapons/ranged/double_barrel_shotgun/4/double_barrel_shotgun_4_stats.tres")
 	temp.accuracy = 0.9			# 1.0
+	temp.sound_db_mod = -17	# -15
 	
 	# Fireball
 	temp = load("res://weapons/ranged/fireball/fireball_effect.tres")
@@ -2002,17 +2015,11 @@ func _ready()->void:
 	# Sick
 	temp = load("res://items/characters/sick/sick_data.tres")
 	temp.wanted_tags = [  ]	# Had Lifesteal
-	temp.banned_items = [ "item_weird_ghost" ] # removed Tardigrade
+	temp.banned_items = [ "item_weird_ghost", "item_crystal" ] # removed Tardigrade, added Crystal
+	temp = load("res://items/characters/sick/sick_effect_2.tres")
+	temp.value = 20					# 25 (Lifesteal)
 	
 	# Soldier
-	temp = load("res://items/characters/soldier/soldier_effect_1.tres")
-	temp.text_key = ""			# These two remove the stand-still requirement, bugfixes Soldier's delayed game-state update
-	temp.custom_key = ""
-	temp.storage_method = 0
-	temp = load("res://items/characters/soldier/soldier_effect_2.tres")
-	temp.text_key = ""
-	temp.custom_key = ""
-	temp.storage_method = 0
 	temp = load("res://items/characters/soldier/soldier_effect_3.tres")
 	temp.value = 125 # 200 (Pickup Range)
 	

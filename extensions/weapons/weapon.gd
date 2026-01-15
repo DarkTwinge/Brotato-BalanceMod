@@ -1,13 +1,13 @@
 extends "res://weapons/weapon.gd"
 
-func on_weapon_hit_something(_thing_hit:Node, damage_dealt:int, hitbox:Hitbox)->void :
+func on_weapon_hit_something(_thing_hit: Node, damage_dealt: int, hitbox: Hitbox) -> void :
 	RunData.add_weapon_dmg_dealt(weapon_pos, damage_dealt, _parent.player_index)
 	if hitbox == null:
-		return 
+		return
 	var attack_id: = hitbox.player_attack_id
 	if attack_id < 0:
 		
-		return 
+		return
 	var attack_hit_count = _hit_count_by_attack_id.get(attack_id, 0)
 	attack_hit_count += 1
 	_hit_count_by_attack_id[attack_id] = attack_hit_count

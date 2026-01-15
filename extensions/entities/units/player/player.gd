@@ -1,24 +1,7 @@
 extends "res://entities/units/player/player.gd"
 
-# Tardigrades now ignore single-damage hits
-#func get_damage_value(dmg_value:int, _from_player_index:int, armor_applied: = true, dodgeable: = true, _is_crit: = false, _hitbox:Hitbox = null, _is_burning: = false)->Unit.GetDamageValueResult:
-#	var result: = Unit.GetDamageValueResult.new()
-#	if dodgeable and randf() < min(current_stats.dodge, RunData.get_player_effect("dodge_cap", player_index) / 100.0):
-#		result.value = 0
-#		result.dodged = true
-#	###	Adds a check for damage to be at least 2 to activate Tardigrade
-#	elif _hit_protection > 0 and dmg_value >= 2:
-#	##
-#		result.value = 0
-#		result.protected = true
-#		_hit_protection -= 1
-#	else :
-#		var armor_coef = RunData.get_armor_coef(current_stats.armor)
-#		result.value = max(1, round(dmg_value * armor_coef)) as int if armor_applied else dmg_value
-#	return result
-
 # Tardigrades now ignore anything that bypasses invincibility (i.e. self-damage) -- hopefully compatible with other mods this way
-func take_damage(value:int, args:TakeDamageArgs)->Array:
+func take_damage(value: int, args:TakeDamageArgs) -> Array:
 	# Essentially copies the normal take_damage function in full, but uses my get_damage_value function to not remove Tardigrade
 	if args.bypass_invincibility:
 
@@ -102,7 +85,7 @@ func take_damage(value:int, args:TakeDamageArgs)->Array:
 				_health_regen_timer.start()
 
 			for stat in _remove_temp_stats_on_hit:
-				var stat_value:int = _remove_temp_stats_on_hit[stat]
+				var stat_value: int = _remove_temp_stats_on_hit[stat]
 				TempStats.remove_stat(stat, stat_value, player_index)
 				_remove_temp_stats_on_hit[stat] = 0
 
@@ -160,10 +143,10 @@ func get_damage_value_no_tardigrade(dmg_value:int, _from_player_index:int, armor
 
 
 # Increase volume of Brick breaking
-func on_weapon_wanted_to_break(weapon:Weapon, gold_dropped:int)->void :
+func on_weapon_wanted_to_break(weapon: Weapon, gold_dropped: int) -> void :
 
 	if not current_weapons.has(weapon):
-		return 
+		return
 
 	emit_signal("wanted_to_spawn_gold", gold_dropped, weapon.global_position, 300)
 	var _r = RunData.remove_weapon_by_index(weapon.weapon_pos, player_index)
@@ -181,7 +164,7 @@ func on_weapon_wanted_to_break(weapon:Weapon, gold_dropped:int)->void :
 	
 
 # New Druid effect for only poisoned fruits
-func on_consumable_picked_up(consumable_data:ConsumableData)->void :
+func on_consumable_picked_up(consumable_data: ConsumableData) -> void :
 	.on_consumable_picked_up(consumable_data)
 
 	if consumable_data.my_id == "consumable_poisoned_fruit":

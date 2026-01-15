@@ -3,7 +3,7 @@ extends "res://singletons/progress_data.gd"
 const BM_DIR_DLCE = "res://mods-unpacked/DarkTwinge-BalanceMod/extensions/dlcs/dlc_1/"
 
 ### ALL BASELINE DLC CHANGES ###
-func check_for_available_dlcs()->void :
+func check_for_available_dlcs() -> void :
 	# Checks if the DLC exists before loading script extensions
 	if File.new().file_exists("res://dlcs/dlc_1/dlc_data.tres"):
 		# Curse adjustments
@@ -343,11 +343,19 @@ func check_for_available_dlcs()->void :
 		# War Hammer
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/3/war_hammer_3_data.tres")
 		temp.value = 119				#	130
+		temp_2 = load("res://items/sets/heavy/heavy_set_data.tres")
+		temp.sets.erase(temp_2)
+		temp_2 = load("res://items/sets/tool/tool_set_data.tres")
+		temp.sets.push_back(temp_2)	# Replaces 'Heavy' set with 'Tool'
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/3/war_hammer_3_stats.tres")
 		temp.crit_damage = 1.75	# 1.5
 		temp.cooldown = 83			# 90
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_data.tres")
 		temp.value = 209				#	255
+		temp_2 = load("res://items/sets/heavy/heavy_set_data.tres")
+		temp.sets.erase(temp_2)
+		temp_2 = load("res://items/sets/tool/tool_set_data.tres")
+		temp.sets.push_back(temp_2)	# Replaces 'Heavy' set with 'Tool'
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_stats.tres")
 		temp.crit_damage = 1.75	# 1.5
 		temp.cooldown = 73			# 80
@@ -454,7 +462,7 @@ func check_for_available_dlcs()->void :
 		
 		# Dwarf
 		temp = load("res://dlcs/dlc_1/characters/dwarf/dwarf_data.tres")
-		temp.banned_items = [ "item_seashell" ]
+		temp.banned_items = [ "item_seashell", "item_improved_tools" ]
 		
 		# Hiker
 		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")
