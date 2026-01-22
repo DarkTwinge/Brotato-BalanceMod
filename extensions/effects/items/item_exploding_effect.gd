@@ -1,6 +1,6 @@
 extends "res://effects/items/item_exploding_effect.gd"
 
-func get_args(player_index: int)->Array:
+func get_args(player_index: int) -> Array:
 	var args: = WeaponServiceInitStatsArgs.new()
 	args.effects = [ExplodingEffect.new()]
 	var current_stats = WeaponService.init_base_stats(stats, player_index, args)

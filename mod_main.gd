@@ -293,6 +293,7 @@ func _ready()->void:
 
 	temp = load("res://items/all/bag/bag_data.tres")
 	temp.value = 19   # 15
+	temp.tags.push_back("exploration_cryptid")
 	temp = load("res://items/all/bag/bag_effect_1.tres")
 	temp.text_key = "new_effect_item_box_gold"
 	
@@ -356,7 +357,7 @@ func _ready()->void:
 	temp.value = -10 # -2 Speed -> -10 Range
 	
 	temp = load("res://items/all/landmines/landmines_data.tres")
-	temp.value = 14		# 15
+	temp.value = 13		# 15
 	## THIS TOOLTIP IS HARDCODED
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/landmine_size_text.tres")
 	temp.effects.push_back(temp_2) # Add explosion size text
@@ -402,6 +403,9 @@ func _ready()->void:
 
 	temp = load("res://items/all/terrified_onion/terrified_onion_data.tres")
 	temp.value = 12  # 15
+
+	temp = load("res://items/all/tree/tree_data.tres")
+	temp.tags.push_back("exploration_cryptid")
 	
 	temp = load("res://items/all/ugly_tooth/ugly_tooth_effect_1.tres")
 	temp.value = 7		# 5
@@ -476,7 +480,7 @@ func _ready()->void:
 	temp.text_key = "new_effect_garden"
 	
 	temp = load("res://items/all/ice_cube/ice_cube_data.tres")
-	temp.value = 47		# 50
+	temp.value = 46		# 50
 	
 	# Incendiary Turret
 ##	temp = load("res://items/all/turret_flame/turret_flame_data.tres")
@@ -615,7 +619,7 @@ func _ready()->void:
 	temp.weapon_stats = temp_2 # Ranged Damage scaling 100% -> 75%
 	
 	temp = load("res://items/all/ball_and_chain/ball_and_chain_data.tres")
-	temp.value = 77		# 75
+	temp.value = 78		# 75
 	
 	temp = load("res://items/all/bandana/bandana_data.tres")
 	temp.value = 70		# 75
@@ -657,7 +661,7 @@ func _ready()->void:
 	temp.value = 5		# 8
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
-	temp.value = 49		# 70
+	temp.value = 48		# 70
 	temp.tags = [ "stat_dodge", "stand_still", "stat_luck" ]
 	temp = load("res://items/all/chameleon/chameleon_effect_0.tres")
 	temp.value = 4		# 3 (Dodge)
@@ -789,13 +793,13 @@ func _ready()->void:
 	
 	# Tyler
 	temp = load("res://items/all/tyler/tyler_data.tres")
-	temp.value = 66				# 75
+	temp.value = 65				# 75
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
-	temp.max_range = 225	# 200
+	temp.max_range = 230	# 200
 	temp.scaling_stats = [ [ "stat_engineering", 0.8 ], [ "stat_elemental_damage", 0.8 ] ]	# 0.75, 0.75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
-	temp.value = 74  # 92
+	temp.value = 73  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
 	temp.value = 37  # 60
@@ -1331,7 +1335,7 @@ func _ready()->void:
 	
 	# Scythe
 	temp = load("res://weapons/melee/scythe/4/scythe_4_data.tres")
-	temp.value = 260				# 285
+	temp.value = 265				# 285
 	temp = load("res://weapons/melee/scythe/4/scythe_effect_2.tres")
 	temp.text_key = "new_effect_on_hit"
 	
@@ -1867,6 +1871,9 @@ func _ready()->void:
 	temp.value = -15 # -10 (Ranged Damage)
 	
 	# Cryptid
+	temp = load("res://items/characters/cryptid/cryptid_data.tres")
+	temp.wanted_tags.erase("exploration")
+	temp.wanted_tags.push_back("exploration_cryptid")
 	temp = load("res://items/characters/cryptid/cryptid_effect_1.tres")
 	temp.value = 11 # 12 (Harvesting per Tree)
 	temp.text_key = "new_effect_cryptid"

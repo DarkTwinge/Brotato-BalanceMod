@@ -18,6 +18,7 @@ Lich-Flute
 Old-Flute
 Maso - Spoon?
 Lucky - Brick (cute thematic fit)
+One-armed Lute
 
 Loud w/ Pruner
 
@@ -578,6 +579,10 @@ will o wisp: maybe gives random of the 4 primary damage stats?  if it could rand
 IF NOT DONE IN OFFICIAL:
 add Tardigrade to Bull-restricted?
 	and Community Support [Should make an Attack Speed group with Coffee, Crystal...], Gummy Berserker, Glasses, Banner, Statue, Lifesteal Group 
+Piggy for Entre?
+Lootworm for Cryptid
+One-armed Spider probably (how bad is it form crate? Jelly is currently restricted)
+
 
 
 Other fix-if-unfixed in main:
@@ -589,6 +594,8 @@ Other fix-if-unfixed in main:
 	Look into Charm+Puffer
 	Look into Harpoon damage reduction getting stuck ON
 	Catling tooltip should specify enrage amount
+	Whistle going off whenever pausing and exiting
+
 
 Do Charmed enemies give XP at end of wave or only gold?
 How does Cursed Sausage work i.e. does one Cursed one effectively improve them all?
@@ -601,3 +608,10 @@ Mastery prolly does want a different downside
 
 
 Charcutterie item could be cute: kind of like Potato but at Blue tier; less obviously good but filling in some stat holes?
+
+
+Pressing down on right-most shop item goes into stats
+
+Bonk Dog(?) causing crash on quit out and resume
+
+maybe -1 internal cooldown for crossbow all tiers?

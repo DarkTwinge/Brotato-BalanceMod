@@ -108,14 +108,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cute Monkey:** Price 25->30
 * **Duct Tape:** Price 20->16
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
-* **Fresh Meat:** Removed from the game. _[There don't need to be three separate tier-1 items that give +2% Lifesteal.]_
+* **Fresh Meat:** Removed from the game. _[Having three separate tier-1 items that give +2% Lifesteal is unnecessary.]_
 * **Gentle Alien:** Price 30->32
 * **Glasses:** Range 20 -> 22
 * **Gummy Berserker:** Range 25 -> 29
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->23
 * **Helmet:** Price 15->18; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
-* **Landmines:** Price 15->14; Explosion Size 175% -> 190%
+* **Landmines:** Price 15->13; Explosion Size 175% -> 190%
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
 * **Lumberjack Shirt:** Price 15->11
@@ -135,7 +135,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Feather:** Price 18->19
 * **Penguin:** Price 25->27; Base HP Regen 1 -> 0; HP Regen Per Consumable 1 -> 2; Limit 3 -> 2
 * **Small Fish:** Price 18->20; Damage Multiplier +10% to targets over 75% HP -> +15% to targets over 70% HP; Attack Speed -3% -> -4%
-* **Whistle:** Price 25->24; Extra Loot Goblins +50% -> +60% _[This still leaves it as a worse economy item than Coupon or Bag on average.]_
+* **Whistle:** Price 25->24; Extra Loot Goblins +50% -> +60% _[This still leaves it as a worse economy item than Coupon or Bag.]_
 
 ### Tier-2
 * **Acid:** Price 65->62
@@ -154,7 +154,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fruit Basket:** Price 45->59; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -5%; Limit 4 -> 3
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
-* **Ice Cube:** Price 50->47
+* **Ice Cube:** Price 50->46
 * **Leather Vest:** Price 45->48
 * **Little Frog:** Price 45->37; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
@@ -196,14 +196,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alien Magic:** Price 85->83
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
-* **Ball and Chain:** Price 75->77
+* **Ball and Chain:** Price 75->78
 * **Bandana:** Price 75->70; Added Effect: +5% Piercing Damage
 * **Barricade:** Price 75->67
 * **Blood Donation:** Price 50->40 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->69; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
 * **Candy Bag:** Price 70->74; Random Stats Gained 8 -> 5 & No longer gives useless stats; Extra Elite Chance +10% --> Enemy Damage Next Wave +25% _[The extra elite effect was too high-variance, meaning the item was never worth taking for high-winrate players. It also sucked to hit stats your character literally couldn't use, so the system that prevents useless items now also blocks useless Candy stats.]_
-* **Chameleon:** Price 70->49; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
+* **Chameleon:** Price 70->48; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
 * **Community Support:** Price 75->70 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->65
 * **Fairy:** Price 85->88; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
@@ -227,8 +227,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Tardigrade:** Price 50->40; Now ignores self-damage effects (anything that bypasses invulnerability); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge)
-* **Tyler:** Price 75->66; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 80%
-* **Vigilante Ring:** Price 92->74
+* **Tyler:** Price 75->65; Range 200 -> 230; Engineering & Elemental Scaling 75% -> 80%
+* **Vigilante Ring:** Price 92->73
 * **Wandering Bot:** Price 60->37
 * **Wheat:** Price 85->82; Harvesting 10 -> 15
 * **Wings:** Range 30 -> 33
@@ -237,7 +237,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ball and Chain (Cursed):** Weapon Cooldown Floor ~0.35s -> ~0.5s
 * **Crystal:** Price 65->53; Engineering -2 --> Max HP -2 _[Engineering builds often don't care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
 * **Goblet:** Price 70->69; Chance of heal per kill 15% -> 12%
-* **Goldfish:** Price 23->14 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
+* **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
 * **Sunken Bell:** Price 65->42; Explosion Size 600% -> 750%
@@ -304,7 +304,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **War Hammer:** Now in the Tool set instead of Heavy; Cooldown 2.11/1.95 -> 2.0/1.83; Crit Damage 1.5x -> 1.75x
 
 - **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
-- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 260; Sharp Tooth: 105 -> 95; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
+- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 265; Sharp Tooth: 105 -> 95; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%
@@ -334,7 +334,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw) _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10; Can no longer be offered Glasses, Banner, or Gummy Berserker
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
-* **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11
+* **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
 * **Cyborg:** Now makes a distinct sound effect when switching from Ranged Damage to Engineering mode
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regen 5 -> 3
@@ -351,7 +351,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Mage:** Now gets a 2nd Sausage when starting with non-Elemental weapons; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
-* **One-armed:** Now gains a 4-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered lower-tier versions of the weapon you have equipped _[Very minor; makes swapping weapons slightly easier.]_
+* **One-armed:** Now gains a 3-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered lower-tier versions of your equipped weapon _[Very minor; swapping weapons is slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
 * **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage).

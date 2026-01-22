@@ -1,7 +1,7 @@
 key,en
 NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT,{0} {1} for every {2} [color=#ffae40]different[/color] {3}[color=#00ff00]s[/color] you have [{4}]
 NEW_EFFECT_BURN_CHANCE,Attacks have a {0} chance to deal {1}x{2} ({3}) burning damage\nEffects that already burn get +1 burn damage
-BM_EFFECT_ONE_ARMED_SET_BONUS,You have a [color=#00ff00]4-Set Bonus[/color] for the weapon you have equipped (excluding Legendary’s penalty)
+BM_EFFECT_ONE_ARMED_SET_BONUS,You have a [color=#00ff00]3-Set Bonus[/color] for the weapon you have equipped (excluding Legendary’s penalty)
 NEW_INFO_POS_STAT_RANGE,The max range of your weapons is increased by {0}. Half as effective on melee weapons. (Higher range also slightly increases cooldown of melee weapons because of the travel distance.)
 NEW_INFO_NEG_STAT_RANGE,The max range of your weapons is reduced by {0}. Half as effective on melee weapons. (Lower range also slightly decreases cooldown of melee weapons because of the travel distance.)
 NEW_INFO_POS_STAT_ARMOR,You take {0} less damage. (+6.25% Effective HP per point of armor.)

@@ -221,7 +221,7 @@ func check_for_available_dlcs() -> void :
 		temp.value = 12		# 15
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
-		temp.value = 14   # 23
+		temp.value = 15   # 23
 		
 		temp = load("res://dlcs/dlc_1/items/mirror/mirror_data.tres")
 		temp.value = 57		# 60
