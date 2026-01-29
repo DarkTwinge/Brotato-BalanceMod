@@ -95,3 +95,4 @@ NEW_EFFECT_TEMP_STAT_ON_DODGE,"{0} {1} until end of wave when you dodge an attac
 NEW_EFFECT_CRYPTID,"Gain {0} materials and XP per living tree at end of a wave"
 NEW_EFFECT_ENEMY_FRUIT_DROPS,"Enemies have an extra {0} chance to drop a fruit (after failing to drop a fruit or crate due to Luck)"
 NEW_PUFFERFISH_BEHAVIOUR_DESCRIPTION,"Explodes into 4 projectiles when killed by melee damage. Explodes into 8 projectiles when killed by non-melee damage or after being charmed and expiring."
+NEW_ONE_SHOT,"Snicker-snack!"

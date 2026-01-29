@@ -27,7 +27,7 @@ func _on_Hurtbox_area_entered(hitbox:Area2D)->void :
 	._on_Hurtbox_area_entered(hitbox)
 
 
-func die(args: = Entity.DieArgs.new())->void :
+func die(args: = Utils.default_die_args) -> void :
 	.die(args)
 
 	if not cleaning_up:

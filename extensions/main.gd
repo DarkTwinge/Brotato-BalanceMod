@@ -25,7 +25,6 @@ func spawn_loot(unit: Unit, entity_type: int, args: Entity.DieArgs)->void :
 	##if entity_type == EntityType.ENEMY and not Utils.get_chance_success(spawn_chance):
 	##	return
 
-	var pos: Vector2 = unit.global_position
 	var value: float = get_gold_value(entity_type, args, unit.get_stats_value(), unit)
 	var gold_spread = clamp((value - 1) * 25, unit.stats.gold_spread, 200)
 	
@@ -35,14 +34,14 @@ func spawn_loot(unit: Unit, entity_type: int, args: Entity.DieArgs)->void :
 		if entity_type == EntityType.ENEMY and not Utils.get_chance_success(spawn_chance):
 			total_mats = total_mats - 1
 	
-	spawn_gold(total_mats, pos, gold_spread)
+	spawn_gold(total_mats, unit.global_position, gold_spread)
 
 
 # Cyborg SFX on state change
 func _on_HalfWaveTimer_timeout() -> void :
 	._on_HalfWaveTimer_timeout()
 
-	if RunData.concat_all_player_effects("convert_stats_half_wave").size() > 0:
+	if RunData.concat_all_player_effects(Keys.convert_stats_half_wave_hash).size() > 0:
 		var cyborg_swap_sfx = load("res://mods-unpacked/DarkTwinge-BalanceMod/sounds/cyborg.wav")
 		SoundManager.play(cyborg_swap_sfx, 0, 0, true)
 

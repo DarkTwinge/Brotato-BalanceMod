@@ -11,10 +11,9 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 		var hitbox = args.hitbox
 		var dodgeable = args.dodgeable
 		var bypass_invincibility = args.bypass_invincibility
-		var from = args.from
 
 		if hitbox and hitbox.is_healing:
-			var _healed = on_healing_effect(value, hitbox.damage_tracking_key)
+			var _healed = on_healing_effect(value, hitbox.damage_tracking_key_hash)
 			return [0, 0, false]
 		
 		### Uses a modified function to skip the Tardigrade
@@ -36,28 +35,30 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 		if is_dodge:
 			sound = Utils.get_rand_element(dodge_sounds)
 
-			var dmg_on_dodge_effect = RunData.get_player_effect("dmg_on_dodge", player_index)
+			var dmg_on_dodge_effect = RunData.get_player_effect(Keys.dmg_on_dodge_hash, player_index)
 			if dmg_on_dodge_effect.size() > 0 and hitbox != null and is_instance_valid(hitbox.from):
 				var total_dmg_to_deal = 0
 				for dmg_on_dodge in dmg_on_dodge_effect:
 					if randf() >= dmg_on_dodge[2] / 100.0:
 						continue
+					assert (dmg_on_dodge[0] is int)
 					var dmg_from_stat = max(1, (dmg_on_dodge[1] / 100.0) * Utils.get_stat(dmg_on_dodge[0], player_index))
 					var dmg = WeaponService.apply_damage_bonus(dmg_from_stat, player_index) as int
 					total_dmg_to_deal += dmg
-				var dodge_damage_args = TakeDamageArgs.new(player_index)
-				var dodge_dmg_dealt = hitbox.from.take_damage(total_dmg_to_deal, dodge_damage_args)
-				RunData.add_tracked_value(player_index, "item_riposte", dodge_dmg_dealt[1])
+				
+				_dodge_damage_args._init(player_index)
+				var dodge_dmg_dealt = hitbox.from.take_damage(total_dmg_to_deal, _dodge_damage_args)
+				RunData.add_tracked_value(player_index, Keys.item_riposte_hash, dodge_dmg_dealt[1])
 
-			var heal_on_dodge_effect = RunData.get_player_effect("heal_on_dodge", player_index)
+			var heal_on_dodge_effect = RunData.get_player_effect(Keys.heal_on_dodge_hash, player_index)
 			if heal_on_dodge_effect.size() > 0:
 				var total_to_heal = 0
 				for heal_on_dodge in heal_on_dodge_effect:
 					if randf() < heal_on_dodge[2] / 100.0:
 						total_to_heal += heal_on_dodge[1]
-				var _healed = on_healing_effect(total_to_heal, "item_adrenaline", false)
+				var _healed = on_healing_effect(total_to_heal, Keys.item_adrenaline_hash, false)
 
-			var temp_stats_on_dodge_effect = RunData.get_player_effect("temp_stats_on_dodge", player_index)
+			var temp_stats_on_dodge_effect = RunData.get_player_effect(Keys.temp_stats_on_dodge_hash, player_index)
 			for temp_stat_on_hit in temp_stats_on_dodge_effect:
 				TempStats.add_stat(temp_stat_on_hit[0], temp_stat_on_hit[1], player_index)
 
@@ -65,8 +66,8 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 			flash()
 			_attract_nearby_consumables()
 
-			var explode_on_hit_effects = RunData.get_player_effect("explode_on_hit", player_index)
-			var explode_when_below_hp_effects = RunData.get_player_effect("explode_when_below_hp", player_index)
+			var explode_on_hit_effects = RunData.get_player_effect(Keys.explode_on_hit_hash, player_index)
+			var explode_when_below_hp_effects = RunData.get_player_effect(Keys.explode_when_below_hp_hash, player_index)
 			var nb_explosions = explode_on_hit_effects.size() + explode_when_below_hp_effects.size()
 
 			for effect in explode_on_hit_effects:
@@ -77,7 +78,7 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 					explode(_explode_when_below_hp_stats[effect], effect, nb_explosions)
 					_explode_when_below_hp_triggers[effect] -= 1
 
-			var temp_stats_on_hit_effect = RunData.get_player_effect("temp_stats_on_hit", player_index)
+			var temp_stats_on_hit_effect = RunData.get_player_effect(Keys.temp_stats_on_hit_hash, player_index)
 			for temp_stat_on_hit in temp_stats_on_hit_effect:
 				TempStats.add_stat(temp_stat_on_hit[0], temp_stat_on_hit[1], player_index)
 
@@ -90,7 +91,7 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 				_remove_temp_stats_on_hit[stat] = 0
 
 			
-			var decaying_stats_on_hit_effects = RunData.get_player_effect("decaying_stats_on_hit", player_index)
+			var decaying_stats_on_hit_effects = RunData.get_player_effect(Keys.decaying_stats_on_hit_hash, player_index)
 			for decaying_stats_on_hit_effect in decaying_stats_on_hit_effects:
 				var decaying_stat_name = decaying_stats_on_hit_effect[0]
 				var decaying_stat_value = decaying_stats_on_hit_effect[1]
@@ -100,9 +101,7 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 		SoundManager2D.play(sound, global_position, 0, 0.2, true)
 
 		if current_stats.health <= 0:
-			var die_args: = Entity.DieArgs.new()
-			die_args.from = from
-			die(die_args)
+			die(Utils.default_die_args)
 
 		emit_signal(
 			"took_damage", 
@@ -167,15 +166,15 @@ func on_weapon_wanted_to_break(weapon: Weapon, gold_dropped: int) -> void :
 func on_consumable_picked_up(consumable_data: ConsumableData) -> void :
 	.on_consumable_picked_up(consumable_data)
 
-	if consumable_data.my_id == "consumable_poisoned_fruit":
-		var stats_on_fruit_effects = RunData.get_player_effect("bm_stats_on_poison_fruit", player_index)
+	if consumable_data.my_id_hash == Keys.consumable_poisoned_fruit_hash:
+		var stats_on_fruit_effects = RunData.get_player_effect(Keys.generate_hash("bm_stats_on_poison_fruit"), player_index)
 		for stats_on_fruit_effect in stats_on_fruit_effects:
 			var stat_name = stats_on_fruit_effect[0]
 			var stat_value = stats_on_fruit_effect[1]
 			var effect_chance = stats_on_fruit_effect[2]
 			if Utils.get_chance_success(effect_chance / 100.0):
 				RunData.add_stat(stat_name, stat_value, player_index)
-				RunData.add_tracked_value(player_index, "character_druid", stat_value)
+				RunData.add_tracked_value(player_index, Keys.generate_hash("character_druid"), stat_value)
 	
 	# No longer used?
 	##RunData.emit_stats_updated()

@@ -2,7 +2,7 @@ extends "res://weapons/weapon_stats/weapon_stats.gd"
 
 func get_knockback_text(base_stats: Resource) -> String:
 	var orig_result = .get_knockback_text(base_stats)
-	# Standard knckback shows as normal
+	# Standard knockback shows as normal
 	if base_stats.knockback_piercing == 0 or knockback == 0:
 		return orig_result
 	else:

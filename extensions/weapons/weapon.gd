@@ -13,7 +13,7 @@ func on_weapon_hit_something(_thing_hit: Node, damage_dealt: int, hitbox: Hitbox
 	_hit_count_by_attack_id[attack_id] = attack_hit_count
 	
 	if current_stats is MeleeWeaponStats:
-		ChallengeService.try_complete_challenge("chal_unstoppable_force", attack_hit_count)
+		ChallengeService.try_complete_challenge(ChallengeService.chal_unstoppable_force_hash, attack_hit_count)
 	
 	var remove_until_attack_id: = attack_id - MAX_ATTACK_COUNT_HISTORY + 1
 	for old_attack_id in range(_oldest_attack_id, remove_until_attack_id):
@@ -27,6 +27,6 @@ func on_weapon_hit_something(_thing_hit: Node, damage_dealt: int, hitbox: Hitbox
 	if RunData.current_wave != 1:
 	##
 		for effect in effects:
-			if effect.key == "break_on_hit":
+			if effect.key_hash == Keys.break_on_hit_hash:
 				if Utils.get_chance_success(effect.value / 100.0):
 					emit_signal("wanted_to_break", self, effect.value2)

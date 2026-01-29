@@ -23,7 +23,7 @@ func _physics_process(_delta: float) -> void :
 		
 		###
 		var enemy_limit = QUEUE_LIMIT
-		var enemy_limit_mods = (RunData.sum_all_player_effects("bm_max_enemy_limit") / 100.0)
+		var enemy_limit_mods = (RunData.sum_all_player_effects(Keys.generate_hash("bm_max_enemy_limit")) / 100.0)
 		enemy_limit = enemy_limit + enemy_limit * enemy_limit_mods
 		
 		if queue_to_spawn.size() >= enemy_limit:
@@ -43,14 +43,12 @@ func on_group_spawn_timing_reached(group_data: WaveGroupData) -> void :
 
 	var max_enemies = int(_current_wave_data.max_enemies + ((RunData.get_player_count() - 1) * (_current_wave_data.max_enemies / 8.0)))
 	###
-	var enemy_limit_mods = (RunData.sum_all_player_effects("bm_max_enemy_limit") / 100.0)
+	var enemy_limit_mods = (RunData.sum_all_player_effects(Keys.generate_hash("bm_max_enemy_limit")) / 100.0)
 	max_enemies = max_enemies + max_enemies * enemy_limit_mods
 	##
 
 	if enemies.size() > max_enemies:
-		var nb_to_remove = enemies.size() - max_enemies
-
-		for i in nb_to_remove:
+		for i in enemies.size() - max_enemies:
 			var array_from = enemies
 
 			if enemies_to_remove_in_priority.size() > 0:
@@ -67,8 +65,8 @@ func on_group_spawn_timing_reached(group_data: WaveGroupData) -> void :
 
 	var units_data = group_data.wave_units_data
 	var coop_factor = (RunData.get_player_count() - 1) * CoopService.additional_enemies_per_coop_player
-	var enemy_modifier = (RunData.sum_all_player_effects("number_of_enemies") / 100.0)
-	var tree_modifier = RunData.sum_all_player_effects("trees")
+	var enemy_modifier = (RunData.sum_all_player_effects(Keys.number_of_enemies_hash) / 100.0)
+	var tree_modifier = RunData.sum_all_player_effects(Keys.trees_hash)
 
 	for unit_wave_data in units_data:
 		var number: float = Utils.randi_range(unit_wave_data.min_number, unit_wave_data.max_number) as float

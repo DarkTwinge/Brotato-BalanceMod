@@ -17,19 +17,25 @@ func update_sets(player_index: int) -> void :
 	var weapons: = get_player_weapons(player_index)
 	for weapon in weapons:
 		for set in weapon.sets:
-			if get_player_effect_bool("all_weapons_count_for_sets", player_index):
-				active_sets[set.my_id] = weapons.size()
-			elif active_sets.has(set.my_id):
-				active_sets[set.my_id] += 1
+			if get_player_effect_bool(Keys.all_weapons_count_for_sets_hash, player_index):
+				active_sets[set.my_id_hash] = weapons.size()
+			elif active_sets.has(set.my_id_hash):
+				active_sets[set.my_id_hash] += 1
 			else:
-				active_sets[set.my_id] = 1
+				active_sets[set.my_id_hash] = 1
 				### Treats One-armed as having a 3-set Bonus, except for Legendary weapons
 				var current_character = get_player_character(player_index)
-				if current_character.my_id == "character_one_arm" and not set.my_id == "set_legendary":
-					active_sets[set.my_id] = 3	
+				print("~~~")
+				print(set)
+				print(set.my_id_hash)
+				print(current_character.my_id_hash)
+				if current_character.my_id_hash == Keys.generate_hash("character_one_arm") and not set.my_id_hash == Keys.generate_hash("set_legendary"):
+				#if current_character.my_id_hash == Keys.character_one_arm_hash and not set.my_id_hash == set_legendary_hash:
+					active_sets[set.my_id_hash] = 3	
 				##				
 
 	for key in active_sets:
+		assert (key is int)
 		if active_sets[key] >= 2:
 			var set = ItemService.get_set(key)
 			var set_effects = set.set_bonuses[min(active_sets[key] - 2, set.set_bonuses.size() - 1)]
@@ -45,6 +51,7 @@ func update_tier_iv_weapon_bonuses(player_index: int) -> void :
 	var tier_iv_weapon_effects = players_data[player_index].tier_iv_weapon_effects
 
 	for effect in tier_iv_weapon_effects:
+		assert (effect[0] is int)
 		effects[effect[0]] -= effect[1]
 
 	tier_iv_weapon_effects.clear()
@@ -59,7 +66,8 @@ func update_tier_iv_weapon_bonuses(player_index: int) -> void :
 			if not unique_tier4_weapon_ids.has(weapon.weapon_id):
 				unique_tier4_weapon_ids.push_back(weapon.weapon_id)
 			##
-				for effect in effects["tier_iv_weapon_effects"]:
+				for effect in effects[Keys.tier_iv_weapon_effects_hash]:
+					assert (effect[0] is int)
 					effects[effect[0]] += effect[1]
 					tier_iv_weapon_effects.push_back([effect[0], effect[1]])
 
@@ -81,15 +89,17 @@ func add_starting_items_and_weapons() -> void :
 
 	for player_index in players_data.size():
 		var effects: = get_player_effects(player_index)
-		if effects["starting_item"].size() > 0:
-			for item_id in effects["starting_item"]:
+		if effects[Keys.starting_item_hash].size() > 0:
+			for item_id in effects[Keys.starting_item_hash]:
 				for i in item_id[1]:
+					assert (item_id[0] is int)
 					var item = ItemService.get_element(ItemService.items, item_id[0])
 					### If adding a starting Sausage, add a 2nd if the starting weapon is non-Elemental (TODO: Make it not hard-cased)
 					var current_character = get_player_character(player_index)
-					if item_id[0] == "item_scared_sausage" and current_character.my_id == "character_mage":
+					
+					if item_id[0] == Keys.generate_hash("item_scared_sausage") and current_character.my_id_hash == Keys.generate_hash("character_mage"):
 						var weapons = RunData.get_player_weapons(player_index)
-						if weapons[0].my_id == "weapon_double_barrel_shotgun_1" or weapons[0].my_id == "weapon_smg_1" or weapons[0].my_id == "weapon_wrench_1" or weapons[0].my_id == "weapon_spoon_1" or weapons[0].my_id == "weapon_cacti_club_1":
+						if weapons[0].my_id_hash == Keys.generate_hash("weapon_double_barrel_shotgun_1") or weapons[0].my_id_hash == Keys.generate_hash("weapon_smg_1") or weapons[0].my_id_hash == Keys.generate_hash("weapon_wrench_1") or weapons[0].my_id_hash == Keys.generate_hash("weapon_spoon_1") or weapons[0].my_id_hash == Keys.generate_hash("weapon_cacti_club_1"):
 							add_item(item, player_index)
 					##
 

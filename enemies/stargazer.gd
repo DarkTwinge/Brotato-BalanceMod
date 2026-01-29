@@ -40,7 +40,7 @@ func _clean_up_signals() -> void :
 		_signals_connected = false
 
 
-func die(args: = Entity.DieArgs.new()) -> void :
+func die(args: = Utils.default_die_args) -> void :
 	.die(args)
 	_clean_up_signals()
 

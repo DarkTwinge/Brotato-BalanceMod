@@ -19,8 +19,8 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 		item_tier = args.fixed_tier
 
 	if type == TierData.WEAPONS:
-		var min_weapon_tier = RunData.get_player_effect("min_weapon_tier", player_index)
-		var max_weapon_tier = RunData.get_player_effect("max_weapon_tier", player_index)
+		var min_weapon_tier = RunData.get_player_effect(Keys.min_weapon_tier_hash, player_index)
+		var max_weapon_tier = RunData.get_player_effect(Keys.max_weapon_tier_hash, player_index)
 		item_tier = clamp(item_tier, min_weapon_tier, max_weapon_tier)
 
 	var banned_items = RunData.players_data[player_index].banned_items
@@ -48,10 +48,10 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 		var bonus_chance_same_weapon = max(0, (MAX_WAVE_ONE_WEAPON_GUARANTEED + 1 - RunData.current_wave) * (BONUS_CHANCE_SAME_WEAPON / MAX_WAVE_ONE_WEAPON_GUARANTEED))
 		var chance_same_weapon = CHANCE_SAME_WEAPON + bonus_chance_same_weapon
 
-		var no_melee_weapons: bool = RunData.get_player_effect_bool("no_melee_weapons", player_index)
-		var no_ranged_weapons: bool = RunData.get_player_effect_bool("no_ranged_weapons", player_index)
-		var no_duplicate_weapons: bool = RunData.get_player_effect_bool("no_duplicate_weapons", player_index)
-		var no_structures: bool = RunData.get_player_effect("remove_shop_items", player_index).has("structure")
+		var no_melee_weapons: bool = RunData.get_player_effect_bool(Keys.no_melee_weapons_hash, player_index)
+		var no_ranged_weapons: bool = RunData.get_player_effect_bool(Keys.no_ranged_weapons_hash, player_index)
+		var no_duplicate_weapons: bool = RunData.get_player_effect_bool(Keys.no_duplicate_weapons_hash, player_index)
+		var no_structures: bool = RunData.get_player_effect(Keys.remove_shop_items_hash, player_index).has(Keys.structure_hash)
 
 		var player_sets: Array = RunData.get_player_sets(player_index)
 		var unique_weapon_ids: Dictionary = RunData.get_unique_weapon_ids(player_index)
@@ -101,12 +101,12 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 			if no_duplicate_weapons:
 				for weapon in unique_weapon_ids.values():
 					
-					if item.weapon_id == weapon.weapon_id and item.tier < weapon.tier:
+					if item.weapon_id_hash == weapon.weapon_id_hash and item.tier < weapon.tier:
 						backup_pool = remove_element_by_id_with_item(backup_pool, item)
 						items_to_remove.push_back(item)
 						break
 
-					elif item.my_id == weapon.my_id and weapon.upgrades_into == null:
+					elif item.my_id_hash == weapon.my_id_hash and weapon.upgrades_into == null:
 						backup_pool = remove_element_by_id_with_item(backup_pool, item)
 						items_to_remove.push_back(item)
 						break
@@ -130,7 +130,7 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 				##
 				var remove: = true
 				for set in item.sets:
-					if set.my_id in player_sets:
+					if set.my_id_hash in player_sets:
 						remove = false
 				if remove:
 					items_to_remove.push_back(item)
@@ -138,7 +138,7 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 
 	elif type == TierData.ITEMS:
 		var wanted_item_tag_chance = CHANCE_WANTED_ITEM_TAG
-		if RunData.get_player_effects(player_index).has("boosted_wanted_item_tag") and RunData.get_player_effect_bool("boosted_wanted_item_tag", player_index):
+		if RunData.get_player_effects(player_index).has(Keys.stat_boosted_wanted_item_tag_hash) and RunData.get_player_effect_bool(Keys.stat_boosted_wanted_item_tag_hash, player_index):
 			wanted_item_tag_chance = BOOSTED_WANTED_ITEM_TAG
 		if Utils.get_chance_success(wanted_item_tag_chance) and player_character.wanted_tags.size() > 0:
 			for item in pool:
@@ -158,10 +158,10 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 					items_to_remove.push_back(item)
 
 
-		var remove_item_tags: Array = RunData.get_player_effect("remove_shop_items", player_index)
+		var remove_item_tags: Array = RunData.get_player_effect(Keys.remove_shop_items_hash, player_index)
 		for tag_to_remove in remove_item_tags:
 			for item in pool:
-				if tag_to_remove in item.tags:
+				if Keys.hash_to_string[tag_to_remove] in item.tags:
 					items_to_remove.append(item)
 
 		if RunData.current_wave < RunData.nb_of_waves:
@@ -182,7 +182,7 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 		else:
 			
 			for item in pool:
-				if banned_items_for_endless.has(item.my_id):
+				if banned_items_for_endless.has(item.my_id_hash):
 					items_to_remove.append(item)
 
 
@@ -246,14 +246,16 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 			elt = Utils.get_rand_element(_tiers_data[item_tier][type])
 	else:
 		elt = Utils.get_rand_element(pool)
-		if elt.my_id == "item_axolotl" and randf() < 0.5:
+		if elt.my_id_hash == Keys.item_axolotl_hash and randf() < 0.5:
 			elt = Utils.get_rand_element(pool)
 
 	if DebugService.force_item_in_shop != "" and randf() < 0.5:
-		elt = get_element(items, DebugService.force_item_in_shop)
-	
-	if elt != null and elt.my_id == "item_axolotl" and elt.effects.size() > 0 and "stats_swapped" in elt.effects[0]:
-		elt.effects[0].stats_swapped = []
+		elt = get_element(items, Keys.generate_hash(DebugService.force_item_in_shop))
+		if elt == null:
+			elt = get_element(weapons, Keys.generate_hash(DebugService.force_item_in_shop))
+
+	if elt.my_id_hash == Keys.item_axolotl_hash and elt.effects.size() > 0 and Keys.stats_swapped_hash in elt.effects[0]:
+		elt.effects[0][Keys.stats_swapped_hash] = []
 		
 	return apply_item_effect_modifications(elt, player_index)
 
@@ -273,12 +275,12 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 
 
 # Add a decimal to armor tooltip for more accuracy
-func get_stat_description_text(stat_name: String, value: int, player_index: int) -> String:
-	stat_name = stat_name.to_upper()
+func get_stat_description_text(stat_hash: int, value: int, player_index: int) -> String:
+	var stat_name = Keys.hash_to_string[stat_hash].to_upper()
 	var stat_sign = "POS_" if value >= 0 else "NEG_"
 	var key = "INFO_" + stat_sign + stat_name
 	
-	if stat_name == "STAT_ARMOR":
+	if stat_hash == Keys.stat_armor_hash:
 		### Now shows one decimal place; also extra clarification text
 		key = "NEW_" + key
 		print(RunData.get_armor_coef(value))
@@ -289,15 +291,15 @@ func get_stat_description_text(stat_name: String, value: int, player_index: int)
 			return Text.text(key, [str(abs(stepify((1.0 - RunData.get_armor_coef(value)) * 100.0, 0.1)))])
 		#return Text.text(key, [str(abs(round((1.0 - RunData.get_armor_coef(value)) * 100.0)))])
 		##
-	elif stat_name == "STAT_HARVESTING":
+	elif stat_hash == Keys.stat_harvesting_hash:
 		if value >= 0: key += "_LIMITED"
-		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect("harvesting_growth", player_index)), str(RunData.nb_of_waves), str(RunData.ENDLESS_HARVESTING_DECREASE)])
-	elif stat_name == "STAT_LIFESTEAL":
+		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect(Keys.harvesting_growth_hash, player_index)), str(RunData.nb_of_waves), str(RunData.ENDLESS_HARVESTING_DECREASE)])
+	elif stat_hash == Keys.stat_lifesteal_hash:
 		### Clarity text change
 		key = "NEW_" + key
 		##
 		return Text.text(key, [str(abs(value)), "10"])
-	elif stat_name == "STAT_HP_REGENERATION":
+	elif stat_hash == Keys.stat_hp_regeneration_hash:
 		### Clarity text change
 		key = "NEW_" + key
 		##
@@ -305,11 +307,11 @@ func get_stat_description_text(stat_name: String, value: int, player_index: int)
 		var amount = 1
 		var amount_per_sec = 1 / val
 		return Text.text(key, [str(amount), str(stepify(val, 0.01)), str(stepify(amount_per_sec, 0.01))])
-	elif stat_name == "STAT_DODGE":
-		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect("dodge_cap", player_index)) + "%"])
-	elif stat_name == "STAT_CRIT_CHANCE":
-		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect("crit_chance_cap", player_index)) + "%"])
-	elif stat_name == "STAT_CURSE":
+	elif stat_hash == Keys.stat_dodge_hash:
+		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect(Keys.dodge_cap_hash, player_index)) + "%"])
+	elif stat_hash == Keys.stat_crit_chance_hash:
+		return Text.text(key, [str(abs(value)), str(RunData.get_player_effect(Keys.crit_chance_cap_hash, player_index)) + "%"])
+	elif stat_hash == Keys.stat_curse_hash:
 		var chance = 0.0
 		for dlc_data in ProgressData.available_dlcs:
 			if "max_curse_item_chance" in dlc_data:
@@ -318,28 +320,27 @@ func get_stat_description_text(stat_name: String, value: int, player_index: int)
 		var enemy_curse_chance = stepify(abs(Utils.get_curse_factor(value) / 2.0), 0.1)
 		var item_curse_chance = stepify(abs(Utils.get_curse_factor(value, chance * 100.0)), 0.1)
 		###
-		print(value)
-		print(chance)
-		print(enemy_curse_chance)
-		print(item_curse_chance)
-		
+#		print(value)
+#		print(chance)
+#		print(enemy_curse_chance)
+#		print(item_curse_chance)	
 		##
 
 		return Text.text(key, [str(enemy_curse_chance), str(item_curse_chance)])
 	### Changed text for better clarity
-	elif stat_name == "STAT_RANGE":
+	elif stat_hash == Keys.stat_range_hash:
 		key = "NEW_" + key
-	elif stat_name == "STAT_ATTACK_SPEED":
+	elif stat_hash == Keys.stat_attack_speed_hash:
 		key = "NEW_" + key
-	elif stat_name == "STAT_MELEE_DAMAGE":
+	elif stat_hash == Keys.stat_melee_damage_hash:
 		key = "NEW_" + key
-	elif stat_name == "STAT_RANGED_DAMAGE":
+	elif stat_hash == Keys.stat_ranged_damage_hash:
 		key = "NEW_" + key
-	elif stat_name == "STAT_ELEMENTAL_DAMAGE":
+	elif stat_hash == Keys.stat_elemental_damage_hash:
 		key = "NEW_" + key
-	elif stat_name == "STAT_PERCENT_DAMAGE":
+	elif stat_hash == Keys.stat_percent_damage_hash:
 		key = "NEW_" + key
-	elif stat_name == "STAT_LUCK":
+	elif stat_hash == Keys.stat_luck_hash:
 		key = "NEW_" + key
 	##
 	
@@ -353,11 +354,11 @@ func get_icon_for_duplicate_shop_item(character: CharacterData, player_items: Ar
 	var same_tier_copies = 0
 	if shop_item is WeaponData:
 		for weapon in player_weapons:
-			if weapon.my_id == shop_item.my_id:
+			if weapon.weapon_id_hash == shop_item.weapon_id_hash:
 				same_tier_copies += 1
 	var already_has_it = same_tier_copies > 0
 	
-	if character.my_id == "character_king" and (shop_item is WeaponData and already_has_it) and shop_item.tier == Tier.LEGENDARY:
+	if character.my_id_hash == Keys.character_king_hash and (shop_item is WeaponData and already_has_it) and shop_item.tier == Tier.LEGENDARY:
 		return null
 	else:
 		return orig_result

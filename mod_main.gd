@@ -10,7 +10,6 @@ func _init(modLoader = ModLoader):
 	# Adds version number to title screen
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "ui/menus/pages/main_menu.gd")
 	
-	#y Increases Luck's effect on higher-tier equipment/level-ups
 	#y TODO? Weighs weapon-set-favoring bonus based on how many of the weapons providing those sets you have
 	# Adjusts shop weapon pick odds based on number of weapon types held
 	# Turns exact-weapon picks into weapon-set picks if it can't find an exact-pick
@@ -24,7 +23,7 @@ func _init(modLoader = ModLoader):
 	# Slightly reduce the strength of armor
 	# Gives Gun Mage an extra Sausage
 	# Candy Bag doesn't go to useless stats
-	#xx Fixes rounding for Fairy tooltip (Game variable beavior changed in 1.1.11)
+	#xx Fixes rounding for Fairy tooltip (Game variable behavior changed in 1.1.11)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/run_data.gd")
 
 	# Now applies Crazy's +Range to Crossbow/Sniper
@@ -74,11 +73,14 @@ func _init(modLoader = ModLoader):
 	# Adds new lower enemy cap effect (White Flag), applies to both queue and despawns
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "global/entity_spawner.gd")
 
+	# Change text for Vorpal one-shot
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "visual_effects/floating_text/floating_text_manager.gd")
+
 	# Adds another arg to explosions so they can also show the size
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/exploding_effect.gd")
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/items/item_exploding_effect.gd")
 	
-	# Tweak Incendiary Turret scaling -- causes crashes when hover Bull, Glutton character select
+	# Tweak Incendiary Turret scaling -- was causing crashes when hover Bull, Glutton character select; try again sometime
 ####	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/burning_data.gd")
 	
 	# Load up new and fixed descriptions
@@ -1992,6 +1994,7 @@ func _ready()->void:
 
 	# One-armed
 	temp = load("res://items/characters/one_arm/one_arm_data.tres")
+	temp.banned_items = [ "item_jelly", "item_spider" ] # Added Spider
 	# Provides the description text for the set-bonus effect (which is hard-coded) and has no description included for this effect itself because it is so minor
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/one-arm_no_dupe_weps.tres")
 	temp.effects.push_back(temp_2)

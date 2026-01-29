@@ -555,7 +555,7 @@ AtkSpd breakpoints (some 'standard' for most weapons maybe like the 201% and may
 Character: Lose double the set bonuses you have active [different way to encourage mixed builds?]
 
 
-Additional reminder icons mod, probably omni: Piggy, Torture, Stand-Still,
+Additional reminder icons mod, probably omni: Piggy, Torture, Stand-Still, Fish Hook
 
 pairing for AtkSpd + Range are kinda high, could possibly change one (Berserker, Banner, Tonic)
 	tweak the banned_item_group if changed
@@ -581,7 +581,7 @@ add Tardigrade to Bull-restricted?
 	and Community Support [Should make an Attack Speed group with Coffee, Crystal...], Gummy Berserker, Glasses, Banner, Statue, Lifesteal Group 
 Piggy for Entre?
 Lootworm for Cryptid
-One-armed Spider probably (how bad is it form crate? Jelly is currently restricted)
+
 
 
 
@@ -605,13 +605,13 @@ Run some damage output tests on Ice Cube
 Vaga Laser Gun start is sus, tho they're strong so it's mostly fine.
 	could get a small general nerf and also +20-25% Ranged Damage to make the range build side more viable?
 Mastery prolly does want a different downside
+	which I guess means un-restrict for Generalist
 
 
 Charcutterie item could be cute: kind of like Potato but at Blue tier; less obviously good but filling in some stat holes?
 
 
-Pressing down on right-most shop item goes into stats
-
 Bonk Dog(?) causing crash on quit out and resume
 
 maybe -1 internal cooldown for crossbow all tiers?
+

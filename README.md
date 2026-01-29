@@ -351,7 +351,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Mage:** Now gets a 2nd Sausage when starting with non-Elemental weapons; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
-* **One-armed:** Now gains a 3-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that really helps some of their less-viable builds like Shuriken.]_; Can no longer be offered lower-tier versions of your equipped weapon _[Very minor; swapping weapons is slightly easier.]_
+* **One-armed:** Now gains a 3-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that especially helps some of their worst starters like Shuriken.]_; Can no longerbe offered Spider; Can no longer be offered lower-tier versions of your equipped weapon _[Very minor; swapping weapons is slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
 * **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage).
