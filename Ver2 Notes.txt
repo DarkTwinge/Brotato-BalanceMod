@@ -203,10 +203,6 @@ cauldron uptime
 1-3 tier-3/4 items that reduces curse
 	(verify negative curse doesn't break things)
 
-~
-Wave reminder: 17 vampires, 7/14 walrus
-wave 6 puffers
-~
 
 Does Shuriken want a small buff to its early game? (could cost slightly less? tho already pretty cheap.)
 
@@ -597,7 +593,6 @@ Other fix-if-unfixed in main:
 	Whistle going off whenever pausing and exiting
 
 
-Do Charmed enemies give XP at end of wave or only gold?
 How does Cursed Sausage work i.e. does one Cursed one effectively improve them all?
 Run some damage output tests on Ice Cube
 
@@ -615,3 +610,8 @@ Bonk Dog(?) causing crash on quit out and resume
 
 maybe -1 internal cooldown for crossbow all tiers?
 
+
+Stargazer bug may also be affecting Wave Info
+
+
+Streamer income popup wonky? sometimes not showing, or showing way high?

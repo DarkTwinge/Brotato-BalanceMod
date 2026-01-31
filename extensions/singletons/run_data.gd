@@ -25,10 +25,6 @@ func update_sets(player_index: int) -> void :
 				active_sets[set.my_id_hash] = 1
 				### Treats One-armed as having a 3-set Bonus, except for Legendary weapons
 				var current_character = get_player_character(player_index)
-				print("~~~")
-				print(set)
-				print(set.my_id_hash)
-				print(current_character.my_id_hash)
 				if current_character.my_id_hash == Keys.generate_hash("character_one_arm") and not set.my_id_hash == Keys.generate_hash("set_legendary"):
 				#if current_character.my_id_hash == Keys.character_one_arm_hash and not set.my_id_hash == set_legendary_hash:
 					active_sets[set.my_id_hash] = 3	
@@ -106,22 +102,22 @@ func add_starting_items_and_weapons() -> void :
 # Removes useless-for-the-character stats from the random list for Candy Bag
 func get_random_primary_stats() -> String:
 	var stats_list = [
-		"stat_max_hp", 
-		"stat_armor", 
-		"stat_crit_chance", 
-		"stat_luck", 
-		"stat_attack_speed", 
-		"stat_elemental_damage", 
-		"stat_hp_regeneration", 
-		"stat_lifesteal", 
-		"stat_melee_damage", 
-		"stat_percent_damage", 
-		"stat_dodge", 
-		"stat_engineering", 
-		"stat_range", 
-		"stat_ranged_damage", 
-		"stat_speed", 
-		"stat_harvesting"
+		Keys.generate_hash("stat_max_hp"), 
+		Keys.generate_hash("stat_armor"), 
+		Keys.generate_hash("stat_crit_chance"), 
+		Keys.generate_hash("stat_luck"), 
+		Keys.generate_hash("stat_attack_speed"), 
+		Keys.generate_hash("stat_elemental_damage"), 
+		Keys.generate_hash("stat_hp_regeneration"), 
+		Keys.generate_hash("stat_lifesteal"), 
+		Keys.generate_hash("stat_melee_damage"), 
+		Keys.generate_hash("stat_percent_damage"), 
+		Keys.generate_hash("stat_dodge"), 
+		Keys.generate_hash("stat_engineering"), 
+		Keys.generate_hash("stat_range"), 
+		Keys.generate_hash("stat_ranged_damage"), 
+		Keys.generate_hash("stat_speed"), 
+		Keys.generate_hash("stat_harvesting")
 	]
 
 	##TODO - this doesn't have a player_index to tell apart co-op players, does it need to ignore this in co-op?
@@ -129,25 +125,25 @@ func get_random_primary_stats() -> String:
 		var character = player_data.current_character
 
 		if character.banned_item_groups.has("armor"):
-			stats_list.erase("stat_armor")
+			stats_list.erase(Keys.generate_hash("stat_armor"))
 		if character.banned_item_groups.has("dodge"):
-			stats_list.erase("stat_dodge")
+			stats_list.erase(Keys.generate_hash("stat_dodge"))
 		if character.banned_item_groups.has("harvesting"):
-			stats_list.erase("stat_harvesting")
+			stats_list.erase(Keys.generate_hash("stat_harvesting"))
 		if character.banned_item_groups.has("melee_damage"):
-			stats_list.erase("stat_melee_damage")
+			stats_list.erase(Keys.generate_hash("stat_melee_damage"))
 		if character.banned_item_groups.has("ranged_damage"):
-			stats_list.erase("stat_ranged_damage")
+			stats_list.erase(Keys.generate_hash("stat_ranged_damage"))
 		if character.banned_item_groups.has("elemental_damage"):
-			stats_list.erase("stat_elemental_damage")
+			stats_list.erase(Keys.generate_hash("stat_elemental_damage"))
 		if character.banned_item_groups.has("engineering"):
-			stats_list.erase("stat_engineering")
+			stats_list.erase(Keys.generate_hash("stat_engineering"))
 		if character.banned_item_groups.has("speed"):
-			stats_list.erase("stat_speed")
+			stats_list.erase(Keys.generate_hash("stat_speed"))
 		if character.banned_item_groups.has("hp_regeneration"):
-			stats_list.erase("stat_hp_regeneration")
+			stats_list.erase(Keys.generate_hash("stat_hp_regeneration"))
 		if character.banned_item_groups.has("lifesteal"):
-			stats_list.erase("stat_lifesteal")
+			stats_list.erase(Keys.generate_hash("stat_lifesteal"))
 			
 	return stats_list[randi() % stats_list.size()]
 		
@@ -167,9 +163,9 @@ func get_random_primary_stats() -> String:
 
 
 # Debug stuff
-#func reset(restart:bool = false)->void :
-#	.reset(restart)
-#	current_wave = 16
-#	invulnerable = true
+func reset(restart:bool = false)->void :
+	.reset(restart)
+	current_wave = 16
+	invulnerable = true
 #	temp = load("res://weapons/ranged/double_barrel_shotgun/4/double_barrel_shotgun_4_data.tres")
 #	players_data[0].weapons.push_back(temp)

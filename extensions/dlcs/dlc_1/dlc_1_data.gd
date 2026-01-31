@@ -75,11 +75,11 @@ func _get_cursed_item_effect_modifier(turn_randomization_off: bool = false, min_
 		var random_modifier: = 0 if turn_randomization_off else Utils.randi_range( - cursed_item_random_percent_modifier + 10, cursed_item_random_percent_modifier)
 		var wave_basis = 0 if turn_randomization_off else RunData.current_wave
 		# Creature bonus increasing based on amount of Curse
-		print(random_modifier)
-		print(Utils.get_stat(Keys.stat_curse_hash, RunData.bm_player_index))
+#		print(random_modifier)
+#		print(Utils.get_stat(Keys.stat_curse_hash, RunData.bm_player_index))
 		var current_curse = Utils.get_stat(Keys.stat_curse_hash, RunData.bm_player_index)
 		var creature_bonus = round(2 * pow(current_curse, 0.55))
-		print(creature_bonus)
+#		print(creature_bonus)
 		# Base = 40; Per Wave = 2; random = -30 to +30 (-20 to +30 now)
 		var percent_modifier: = cursed_item_base_percent_modifier + cursed_item_percent_modifier_increase_each_wave * min(20, (wave_basis - 1)) + random_modifier + int(creature_bonus)
 		print(percent_modifier)

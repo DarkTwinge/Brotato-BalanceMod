@@ -10,7 +10,6 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 
 		var hitbox = args.hitbox
 		var dodgeable = args.dodgeable
-		var bypass_invincibility = args.bypass_invincibility
 
 		if hitbox and hitbox.is_healing:
 			var _healed = on_healing_effect(value, hitbox.damage_tracking_key_hash)
@@ -175,6 +174,3 @@ func on_consumable_picked_up(consumable_data: ConsumableData) -> void :
 			if Utils.get_chance_success(effect_chance / 100.0):
 				RunData.add_stat(stat_name, stat_value, player_index)
 				RunData.add_tracked_value(player_index, Keys.generate_hash("character_druid"), stat_value)
-	
-	# No longer used?
-	##RunData.emit_stats_updated()
