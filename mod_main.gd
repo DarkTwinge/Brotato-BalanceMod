@@ -35,6 +35,8 @@ func _init(modLoader = ModLoader):
 	
 	# Adds Knockpack Piercing to the tooltip (for Minigun, also Harpoon)
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "weapons/weapon_stats/weapon_stats.gd")
+	# No effect - Required to make the above not cause crashes on reloads due to saving into binary or somesuch nonsense
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/pet/bonk_dog/bonk_dog.gd")
 	
 	# Fix Lightning Shiv bounce count
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "effects/weapons/projectiles_on_hit_effect.gd")
@@ -285,8 +287,6 @@ func _ready()->void:
 	## TIER-1 ITEMS ##
 	temp = load("res://items/all/alien_tongue/alien_tongue_data.tres")
 	temp.value = 22  # 25
-	temp = load("res://items/all/alien_tongue/alien_tongue_effect_1.tres")
-	temp.value = 35  # 30 (Pickup Range)
 	temp = load("res://items/all/alien_tongue/alien_tongue_effect_2.tres")
 	temp.value = 2  # 1 (Knockback)	
 
@@ -358,8 +358,10 @@ func _ready()->void:
 	temp.key = "stat_range"
 	temp.value = -10 # -2 Speed -> -10 Range
 	
-	temp = load("res://items/all/landmines/landmines_data.tres")
-	temp.value = 13		# 15
+#	temp = load("res://items/all/landmines/landmines_data.tres")
+#	temp.value = 13		# 15
+	temp = load("res://items/all/landmines/landmines_effect_1.tres")
+	temp.spawn_cooldown = 10 # 12
 	## THIS TOOLTIP IS HARDCODED
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/landmine_size_text.tres")
 	temp.effects.push_back(temp_2) # Add explosion size text
@@ -387,7 +389,7 @@ func _ready()->void:
 	temp.value = 25  # 28
 
 	temp = load("res://items/all/scar/scar_data.tres")
-	temp.value = 23  # 25
+	temp.value = 24  # 25
 	temp = load("res://items/all/scar/scar_effect_2.tres")
 	temp.value = -11 # -8 (Range)
 	
@@ -452,6 +454,30 @@ func _ready()->void:
 
 	temp = load("res://items/all/campfire/campfire_data.tres")
 	temp.value = 39   # 40
+
+######
+
+	temp = load("res://items/all/catling_gun/catling_gun.tres")
+	temp.value = 38				# 34
+	temp = load("res://entities/units/pet/catling_gun/catling_gun_weapon_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ] ]	# 0.6
+	temp.max_range = 475	# 500
+	temp.cooldown = 60		# 55
+
+	temp = load("res://entities/units/pet/bonk_dog/bonk_dog_weapon_stats.tres")
+	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ] ]	# 0.6
+	temp.cooldown = 30		# 28
+	
+	temp = load("res://items/all/bot_o_mine/bot_o_mine.tres")
+	temp.value = 60				# 55
+	temp.tier = 2					# 1
+	temp = load("res://entities/units/pet/bot_o_mine/bot_o_mine_weapon_stats.tres")
+	temp.damage = 9				# 10
+	temp.cooldown = 40		# 32
+	temp.scaling_stats = [ [ "stat_engineering", 0.75 ] ]	# 1.0
+
+######
+
 	
 	temp = load("res://items/all/celery_tea/celery_tea_data.tres")
 	temp.value = 32   # 35
@@ -483,10 +509,6 @@ func _ready()->void:
 	
 	temp = load("res://items/all/ice_cube/ice_cube_data.tres")
 	temp.value = 46		# 50
-	
-	# Incendiary Turret
-##	temp = load("res://items/all/turret_flame/turret_flame_data.tres")
-##	temp.value = 42		# 40
 	
 	temp = load("res://items/all/fruit_basket/fruit_basket_data.tres")
 	temp.value = 59		# 45
@@ -629,16 +651,19 @@ func _ready()->void:
 	temp.effects.insert(1, temp_2)
 	
 	temp = load("res://items/all/barricade/barricade_data.tres")
-	temp.value = 67		# 75
+	temp.value = 65		# 75
 	temp_2 = load("res://items/all/barricade/barricade_effect_0.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.insert(1, temp_2)
+	temp.value = 4		# 3 (Knockback)
+	temp_2 = load("res://items/all/barricade/barricade_effect_2.tres")
+	temp.value = -4		# -5 (Speed)
 	
 	temp = load("res://items/all/blood_donation/blood_donation_data.tres")
 	temp.value = 40  # 50
 	
 	temp = load("res://items/all/bowler_hat/bowler_hat_data.tres")
-	temp.value = 69  # 75
+	temp.value = 70  # 75
 	temp = load("res://items/all/bowler_hat/bowler_hat_effect_1.tres")
 	temp.value = 21  # 15 (Luck)
 	
@@ -698,8 +723,11 @@ func _ready()->void:
 	temp.value = 70		# 75
 	
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_data.tres")
-	temp_2 = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
-	temp.effects.erase(temp_2)	# Remove -3 Armor
+	temp.value = 78		# 80
+	temp = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
+	temp.key = "stat_max_hp"
+	temp.value = -2 	# -3 Armor -> -2 HP
+	
 
 	
 	
@@ -796,15 +824,17 @@ func _ready()->void:
 	# Tyler
 	temp = load("res://items/all/tyler/tyler_data.tres")
 	temp.value = 65				# 75
+	temp.tier = 1					# 2 (Purple -> Blue)
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
-	temp.max_range = 230	# 200
-	temp.scaling_stats = [ [ "stat_engineering", 0.8 ], [ "stat_elemental_damage", 0.8 ] ]	# 0.75, 0.75
+	temp.damage = 12			# 10
+	temp.max_range = 225	# 200
+	temp.scaling_stats = [ [ "stat_engineering", 0.9 ], [ "stat_elemental_damage", 0.9 ] ]	# 0.75, 0.75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
 	temp.value = 73  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
-	temp.value = 37  # 60
+	temp.value = 38  # 60
 	
 	temp = load("res://items/all/wheat/wheat_data.tres")
 	temp.value = 82  # 85
@@ -858,7 +888,7 @@ func _ready()->void:
 	
 	# Focus
 	temp = load("res://items/all/focus/focus_data.tres")
-	temp.value = 100  # 110
+	temp.value = 102  # 110
 	temp = load("res://items/all/focus/focus_effect_2.tres")
 	temp.value = -4   # -3 (AtkSpd per weapon)
 	
@@ -891,7 +921,7 @@ func _ready()->void:
 
 	# Jetpack
 	temp = load("res://items/all/jetpack/jetpack_data.tres")
-	temp.value = 92  # 100
+	temp.value = 94  # 100
 	temp = load("res://items/all/jetpack/jetpack_effect_3.tres")
 	temp.value = -3  # -5 (HP)
 
@@ -1192,6 +1222,10 @@ func _ready()->void:
 	temp.recoil_duration = 0.05	# 0.1
 	
 	# Jousting Lance
+	temp = load("res://weapons/melee/jousting_lance/1/jousting_lance_effect_1.tres")
+	temp.value = 1				# 2
+	temp = load("res://weapons/melee/jousting_lance/2/jousting_lance_2_effect_1.tres")
+	temp.value = 2				# 3
 	temp = load("res://weapons/melee/jousting_lance/3/jousting_lance_3_data.tres")
 	temp.value = 71				# 72
 	temp = load("res://weapons/melee/jousting_lance/4/jousting_lance_4_data.tres")
@@ -1264,12 +1298,14 @@ func _ready()->void:
 	
 	# Power Fist
 	temp = load("res://weapons/melee/power_fist/3/power_fist_3_exploding_effect.tres")
+	temp.scale = 1.0			# 0.75
 	temp.key = "new_effect_explode_melee"
 	temp = load("res://weapons/melee/power_fist/4/power_fist_4_data.tres")
 	temp.value = 198			# 221
 	temp = load("res://weapons/melee/power_fist/4/power_fist_4_stats.tres")
-	temp.damage = 75			# 60
+	temp.damage = 70			# 60
 	temp = load("res://weapons/melee/power_fist/4/power_fist_4_exploding_effect.tres")
+	temp.scale = 1.25			# 1.0
 	temp.key = "new_effect_explode_melee"
 	
 	# Pruner
@@ -1395,8 +1431,14 @@ func _ready()->void:
 	temp.cooldown = 24   # 18
 	
 	# Spiky Shield
+	temp = load("res://weapons/melee/spiky_shield/1/spiky_shield_data.tres")
+	temp.value = 17				# 15
+	temp = load("res://weapons/melee/spiky_shield/2/spiky_shield_2_data.tres")
+	temp.value = 34				# 31
+	temp = load("res://weapons/melee/spiky_shield/3/spiky_shield_3_data.tres")
+	temp.value = 66				# 61
 	temp = load("res://weapons/melee/spiky_shield/4/spiky_shield_4_data.tres")
-	temp.value = 111		 # 122
+	temp.value = 120			# 122
 	
 	# Stick
 	temp = load("res://weapons/melee/stick/1/stick_stats.tres")

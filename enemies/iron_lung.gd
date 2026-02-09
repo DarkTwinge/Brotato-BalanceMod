@@ -42,7 +42,7 @@ func _on_DetectionZone_body_entered(body):
 		reset_health_stat(200)
 		body.die()
 		emit_signal("became_full")
-		### Anger sound not plays here instead of in the Stargazer code
+		### Anger sound now plays here instead of in the Stargazer code
 		SoundManager2D.play(lung_angry_sound, global_position, 18, 0.1, true)
 		##
 

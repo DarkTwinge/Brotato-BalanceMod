@@ -62,7 +62,7 @@ Romantic - Flint (Doesn't proc when it Charms)
 
 
 ~Challenge Run Ideas~
-Multitasker-All Different weapons
+Mutant-No Items
 Mage-Hand
 PaciFIST (Has to kill final bosses; possibly earlier elites tho 11 seems very sus)
 Im-Precise Crazy
@@ -84,7 +84,6 @@ One Punch Ogre (Single Fist weapon)
 
 `(Requires editing)`
 Pure-Pistol Ranger
-Generalist - Harpoon Gun Only
 Lich pure ability run (-Melee Damage, Scissors/Rock, rely on ability entirely?)
 Jack starting with Candle+Flag
 
@@ -389,8 +388,6 @@ Goldfish should clarify doesn't affect locked
 does sunken bell crit
 	sunken bell could give flat hp?
 
-fairy icon visual could show at a glance how many items needed with some sort of gradiant overlay?
-
 
 vaga could maybe go for a different penalty than -5 Dodge, since it feels like this weird unecessary shot at Dodge, but still makes some sense as 'bad defensively', hm.
 
@@ -492,14 +489,9 @@ Bug: Buffers/Spitters (the 'stay at distance form player logic pattern?" match p
 
 Sunken Bell - look at HP for highest HP enemies; cursed/uncursed; it really should one-shot almost anything that kills you as long as you built decent damage?  Or maybe re-tooled to do 999999(?) damage to non-bosses in the radius instead of even scaling with anything?  Or could it give extra iframes?
 
-~~This should now be done~~
-Revisit maknig Tardigrade specifically ignore self-damage instead of '1 damage'
-	maybe rework tardigrade work-around (since it doesn't work if you have multiple, or for scythe)
-	maybe could transfer in more info from args to judge; either dodgeable or bypass_invince are possibly things that could key-in on the self-damage?
-	could the check if it's bypass_ be handled in the big take-damage function, routing to my modified function if appropriate and the normal code otherwise, letting me overwrite neither function??
 
 weird that the dodge cap for cursed ghost costume is unaffected by curse strength
-
+	also applies to will-o-wisp apparently?
 
 Vanilla Fruit Basket - Fruits +40% at 0 Luck, roughly -- 2.6 fruits, so call it ~15hp in healing?  Around 4-5 HP Regen
 	Average fruit for mathing: 10 per wave (~50 Luck, ~1 Tree item)  --> 2.5 HP Regen per +1 Consumable Healing
@@ -511,8 +503,6 @@ improve cursed landmines somewhow - either let curse lower their cooldown, or ad
 	probably also give them improved crit damage?
 	
 	
-Stargazer sound doesn't always go off when they enter vat?
-
 Exploring Mace starters... Jack? Doctor, Entreprenuer, Lich, Vaga, Druid, (Bucaneer, Gladiator, and Ogre prob too good?)
 
 What to do about the Sword/Vorpal situation. . .
@@ -526,7 +516,6 @@ Sometimes going down (controller) on right-most item will move it over to Speed 
 
 ~~ Wishlist of new features ~~
 * Whistle should count how many extra Loot Goblins it creates.
-* I think it'd also be cute of Whistle made a sound effect whenever any Loot Goblin was spawned (both extra and natural ones).
 * I'd like to have Seashell also working on Turrets. (Needs to not be counted twice for Builer's Turret.)
 ** 	Probably remove it from bans on e.g. knight, dwarf if this is changed.
 * Treasure Map should have a visible and/or audio effect when it activates.
@@ -538,7 +527,6 @@ Sometimes going down (controller) on right-most item will move it over to Speed 
 
 
 Red Knife -5 Base Crit w/ tiny other buff?
-Sailor having Dodge banned but Dwarf and Crazy not is pretty weird
 
 
 
@@ -575,22 +563,20 @@ will o wisp: maybe gives random of the 4 primary damage stats?  if it could rand
 IF NOT DONE IN OFFICIAL:
 add Tardigrade to Bull-restricted?
 	and Community Support [Should make an Attack Speed group with Coffee, Crystal...], Gummy Berserker, Glasses, Banner, Statue, Lifesteal Group 
-Piggy for Entre?
-Lootworm for Cryptid
-
-
+Piggy for Entre? [is it usually still value from a crate?  I guess not because they have higher recycle rate, or?]
+Lootworm for Cryptid [at least not favored like Shirt was]
 
 
 Other fix-if-unfixed in main:
 	Fix all restricted-list pet stuff:
 		Doc Moth in the HP Regen+Lifesteal restricted pool 
-		re-add them to appropriate restricted lists most likely (double-check each individual case)
-		fix Beastmaster having Ranged Damage restricted
+		Brawler-Catling specifically (not in general Ranged Damage)
+		Bot-o-mine on Pacifist specifically
+	Sailor having Dodge banned but Dwarf and Crazy not is pretty weird [might even reverse? or only restrict on Dwarf given other BalMod changes, or?  -- maybe just make Dwarf -20 Dodge and un-Restrict on all]
 	-Enemies = more Lampreys
-	Look into Charm+Puffer
 	Look into Harpoon damage reduction getting stuck ON
-	Catling tooltip should specify enrage amount
-	Whistle going off whenever pausing and exiting
+	Catling tooltip should specify enrage amount  (x2)
+
 
 
 How does Cursed Sausage work i.e. does one Cursed one effectively improve them all?
@@ -605,13 +591,22 @@ Mastery prolly does want a different downside
 
 Charcutterie item could be cute: kind of like Potato but at Blue tier; less obviously good but filling in some stat holes?
 
+Does Community Support count charmed enemies?
 
-Bonk Dog(?) causing crash on quit out and resume
+Mummy hurtbox could be smaller; Anglerfish hurtbox could be bigger
+	[haven't audited all enemies by any means, probably a few other oddballs]
+
+some consideration to kill Snake, maybe tack its effect on to a purple or something
+wisp could reduce spread
 
 maybe -1 internal cooldown for crossbow all tiers?
+maybe drop Claw price very slightly 14/.. to make it easier to fill out early
+	should do some mid/late game damage comparisons with Fist for the cost of stats put in; it's okay if earlygame is worse if lategame is stronger.
 
 
-Stargazer bug may also be affecting Wave Info
+spikey shield may want additional nerf (in addition to small price increase), maybe reduce all scaling a bit? otherwise it's base damage I guess
 
 
-Streamer income popup wonky? sometimes not showing, or showing way high?
+
+
+candy bag a roll to see if enemy damage is increased; little jestery laugh sfx when it is?  20% chance of +20% enemy damage...?

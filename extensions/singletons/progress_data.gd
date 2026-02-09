@@ -164,8 +164,6 @@ func check_for_available_dlcs() -> void :
 		temp = load("res://dlcs/dlc_1/items/small_fish/effects/small_fish_effect_1.tres")
 		temp.value = -4		# -3
 		
-		temp = load("res://dlcs/dlc_1/items/whistle/whistle_data.tres")
-		temp.value = 24		# 25
 		temp = load("res://dlcs/dlc_1/items/whistle/effects/whistle_effect_0.tres")
 		temp.value = 60   # 50 (Extra Loot Goblins)
 		temp.text_key = "NEW_EFFECT_LOOT_ALIEN_CHANCE"
@@ -186,7 +184,7 @@ func check_for_available_dlcs() -> void :
 		temp.value = 6		# 3 (Crit Chance)
 
 		temp = load("res://dlcs/dlc_1/items/fish_hook/fish_hook_data.tres")
-		temp.value = 37		# 35
+		temp.value = 38		# 35
 
 		temp = load("res://dlcs/dlc_1/items/jerky/jerky_data.tres")
 		temp.value = 55		# 50

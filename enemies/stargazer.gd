@@ -7,7 +7,7 @@ onready var _on_triggered_movement_behavior = $OnTriggeredMovementBehavior
 
 var boost_args: BoostArgs = BoostArgs.new()
 
-var _target_lung: NewIronLung
+var _target_lung
 var _signals_connected: = false
 
 
