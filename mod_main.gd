@@ -452,22 +452,10 @@ func _ready()->void:
 	temp = load("res://items/all/blood_leech/blood_leech_data.tres")
 	temp.value = 38   # 45
 
-	temp = load("res://items/all/campfire/campfire_data.tres")
-	temp.value = 39   # 40
-
-######
-
-	temp = load("res://items/all/catling_gun/catling_gun.tres")
-	temp.value = 38				# 34
-	temp = load("res://entities/units/pet/catling_gun/catling_gun_weapon_stats.tres")
-	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ] ]	# 0.6
-	temp.max_range = 475	# 500
-	temp.cooldown = 60		# 55
-
 	temp = load("res://entities/units/pet/bonk_dog/bonk_dog_weapon_stats.tres")
 	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ] ]	# 0.6
 	temp.cooldown = 30		# 28
-	
+
 	temp = load("res://items/all/bot_o_mine/bot_o_mine.tres")
 	temp.value = 60				# 55
 	temp.tier = 2					# 1
@@ -476,9 +464,15 @@ func _ready()->void:
 	temp.cooldown = 40		# 32
 	temp.scaling_stats = [ [ "stat_engineering", 0.75 ] ]	# 1.0
 
-######
+	temp = load("res://items/all/campfire/campfire_data.tres")
+	temp.value = 39   # 40
 
-	
+	temp = load("res://items/all/catling_gun/catling_gun.tres")
+	temp.value = 38				# 34
+	temp = load("res://entities/units/pet/catling_gun/catling_gun_weapon_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ] ]	# 0.6
+	temp.cooldown = 60		# 55
+
 	temp = load("res://items/all/celery_tea/celery_tea_data.tres")
 	temp.value = 32   # 35
 	temp = load("res://items/all/celery_tea/effects/celery_tea_effect_1.tres")

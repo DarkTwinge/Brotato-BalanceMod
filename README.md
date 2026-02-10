@@ -8,7 +8,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 ## Change Summary
 ### Mechanics
 * Easier to have mixed-weapon builds: The chances of being offered one of the exact weapons you already have is higher the more weapon types you have. Additionally, shop weapon set favoring is now based on how many of that set you have (so a single off-set weapon doesn't impact your weapon pool as much).
-* Armor is slightly less effective (~7% worse).
+* Armor is slightly less effective (~7% worse). Fewer items give negative Dodge.
 * Range gained/lost from level-ups & items is ~15% higher.
 * Other level-ups: Tier 2-4 Luck is stronger; Tier-1 Harvesting dropped to 4; weaker Tier-4 level-ups are more worthwhile.
 * Horde Waves give ~8% fewer materials.
@@ -17,31 +17,32 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 
 ### Weapons
 * Primitive set bonus is worse; Blunt set bonus is better. Gun set bonus changed to Attack Speed in order to make the Range stat more relevant.
-* Most Tier-4 weapons are cheaper (slightly buffs Luck and mixed weapon builds). Other weapon prices slightly tweaked for more logical/consistent progression.
 * Hand partially reworked to make Tier-3/4 worth buying.
 * Screwdriver partially reworked+buffed so it cares more about Crit.
-* Sharp Tooth reworked to only have one Set and to be less awful early.
+* Sharp Tooth reworked to only have one Set and to be stronger overall.
 * Minigun, Hammer, and Sledge now have Knockback Piercing, meaning their Knockback is more effective against resistant enemies like Chargers.
 * Sickle removed from the game.
-* SMG, Spear & Thief Dagger are nerfed; Mace is heavily buffed.
+* Most Tier-4 weapons are cheaper (slightly buffs Luck & mixed weapon builds). Other weapon prices slightly tweaked for more logical/consistent progression.
+* Spear & Thief Dagger are nerfed; Mace is heavily buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, Cacti Club, Hammer, and War Hammer receive minor buffs.
-* Fist, Icicle, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
+* SMG, Fist, Icicle, Spiky Shield, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
 Tons of items receive small buffs or nerfs: overall more items are useful in more situations, and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
 
 * Tardigrade is no longer wasted by self-damage.
-* Ricochet is now friendlier with already-piercing weapons.
+* Candle is cheaper & reduces enemy damage. White Flag is cheaper & reduces max enemies.
+* Fresh Meat removed.
+* Chameleon reworked: now gives Luck.
+* Tyler buffed and moved to tier-2; Bot-o-mine nerfed and moved to Tier-3. Catling Gun & Bonk Dog nerfed.
+* Utility Crit items work better as speculative picks: Pile of Books is Blue Tier & Eyepatch comes with more Crit.
+* Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
+* Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring, Starfish) are better (as you have much less time to profit from them).
 * Power Generator now reduces your HP as it powers up.
 * Fairy gives less HP Regen and gives negative HP for Tier-4s instead of negative HP Regen.
-* Chameleon reworked to provide Luck.
-* Utility Crit items work better as speculative picks: Pile of Books is now Blue Tier and Eyepatch comes with more Crit.
-* Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
-* Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring) are better (as you have much less time to profit from them).
-* Ghost Outfit significantly buffed. Wandering Bot and Lucky Coin significantly cheaper. Hedgehog, Mutation, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
-* Candle is cheaper and now reduces enemy damage.
-* Fresh Meat removed.
+* Ghost Outfit significantly buffed. Wandering Bot and Lucky Coin significantly cheaper. Hedgehog, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
+* Ricochet is now friendlier with already-piercing weapons.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
 ### Characters
@@ -144,7 +145,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blindfold:** Price 45->43; Range -15 -> -18
 * **Blackbelt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->38
+* **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%
+* **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->60; Laser Damage 10 -> 9; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75% _[Swapped rarity tiers with Tyler to better represent their power levels, even after their respective nerfs and buffs.]_
 * **Campfire:** Price 40->39
+* **Catling Gun:** Price 34->38; Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
 * **Celery Tea:** Price 35->32; Extra Enemy HP +100% -> +75%
 * **Clockwork Wasp:** Price 45->46
 * **Cog:** Damage -4% -> -2% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_

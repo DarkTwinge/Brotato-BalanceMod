@@ -95,8 +95,6 @@ Each 5 points of +Enemy Damage% is about the same as -1 Armor
 13%/51% for Hiker HP
 
 ~~~
-reconsider jousting lance (tho Blob already nerfed it a fair bit)
-	maybe simply drop the base Speed bonus by 1 per tier? or at least tier 1-2?
 sharp bullet giving -Range is an idea
 maybe add a few mummy spawns to the edge on wave 20 to further emphasize knockback value?
 
@@ -238,9 +236,6 @@ Check the new effect for tooltip modifications I made; was I just doing key inst
 Landmines themselves could maybe have more Crit Damage
 Healer & Hermit kinda weird -- healer is faster and has more hp, hermit has knockback resistance (likely making it *easier* to kill) and a tiny bit of armor.  
 
-Ghost Axe could possibly be lower range (which would help Flints get more kills)
-	The Flint changes probably cover this well enough now
-
 BM Set Weighting: maybe don't double-count same weapons?
 
 curve the curse formula more to give slightly better cursed-item/weapon odds at lower curse (same at med curse maybe lower at high curse), but slightly more cursed enemies at medium-higher curse? [And lower the cap for odds of getting stuff cursed for lots of curse, or make it further away]
@@ -313,7 +308,7 @@ investigate: rocket launchers on builder weren't knocking back mummies
 	sharp bullet present
 
 
-pcoket factory doesn't update right away for techno
+pocket factory doesn't update right away for techno
 
 
 Pile of Books tagged Engeering instead of Structure, which is better for builder but kinda weird
@@ -376,7 +371,7 @@ Coupon counts gangster-stolen items as value for itself
 
 
 ~~flute test: friends alive at end, do they give you full or halves on e.g. hiker
-
+	quick in-run check: probably is affected by all other mods
 
 Sausage's self-burn increase is not reflected in tooltip
 	Does it still increase self-burn?
@@ -406,6 +401,7 @@ Bull doesn't proc Ice Cube
 Could be cute to have an 8-hit-rule (like Trees) for Eggs and Iron Lungs, so that pacifist builds could destroy them
 
 ~ Picky: -10 Shop Price each wave; -10 Reroll Price each wave; +3 Reroll Price for every purchase; +5 Shop Price for every unique item; +25 Luck; starters things you're probably okay having fewer/lower-tiers of, like Spear, SMG; Pruner?  (And verify -120% Shop/Reroll Prices don't break anything)
+Character: Lose double the set bonuses you have active [different way to encourage mixed builds?]
 
 
 
@@ -441,11 +437,9 @@ Riposte could reset melee weapon cooldowns on dodge instead?  (would be Tier 3 o
 Will'o'Wisp -- Why? Snowball also exists??
 Snowball idea: When you obtain Melee or Ranged Damage, also gain +1 (+2?) Elemental
 	Does this moreso just make those items into Elemental Damage items and you still go single build?  Is this okay anyway?
-and/or: Ice Cube could be a higher amount (25%?), but only apply the damage increase to non-Elemental
+and/or: Ice Cube could be a higher amount (25%?), but only apply the damage increase to non-Elemental (or vice-versa, non-Elemental buffing Elemental)
 
-Gobbler may want to take longer to switch to phase 2? more HP in phase 3?
 
-Tyler could maybe be blue
 Chameleon could be blue
 Honey (but probably messes Ranged Damage distribution?)
 maaaybe Shmoop
@@ -463,7 +457,7 @@ Adrenaline could give 1-2 more Dodge?
 
 
 
-Ranger tagged for Range is weird, tho does help Crossbow viability
+Ranger tagged for Range is weird, tho is important for Crossbow viability
 
 base sale for weapons could be +5/10% to more encourage mixed weapons
 Mastery downside is relevant for how few things? Harpoon Gun, Baby, Generalist, Arms Dealer, rarely Vagabond/Multitasker?
@@ -478,20 +472,18 @@ clarify druid's "higher chance" in descript if possible?
 
 Explorer text - MANY more trees spawn [cryptid too assumedly]
 
-King -- bottom bit is cut off; but shortening text seems kinda rough
-
 Reported:
 UI - Technomage opnly shows 1 turret when they start with 2
 End screen indexing bug for controller
 Controller cursor should default to the reroll button when you ban to create a freeroll
-Bug: Buffers/Spitters (the 'stay at distance form player logic pattern?" match player speed after getting hit with harppon gun sometimes
+Bug: Buffers/Spitters (the 'stay at distance from player logic pattern?" match player speed after getting hit with harpoon gun sometimes
 
 
 Sunken Bell - look at HP for highest HP enemies; cursed/uncursed; it really should one-shot almost anything that kills you as long as you built decent damage?  Or maybe re-tooled to do 999999(?) damage to non-bosses in the radius instead of even scaling with anything?  Or could it give extra iframes?
 
 
 weird that the dodge cap for cursed ghost costume is unaffected by curse strength
-	also applies to will-o-wisp apparently?
+	also true for will-o-wisp apparently?
 
 Vanilla Fruit Basket - Fruits +40% at 0 Luck, roughly -- 2.6 fruits, so call it ~15hp in healing?  Around 4-5 HP Regen
 	Average fruit for mathing: 10 per wave (~50 Luck, ~1 Tree item)  --> 2.5 HP Regen per +1 Consumable Healing
@@ -499,7 +491,7 @@ Vanilla Fruit Basket - Fruits +40% at 0 Luck, roughly -- 2.6 fruits, so call it 
 
 
 
-improve cursed landmines somewhow - either let curse lower their cooldown, or add maybe 4 explosion damage%
+improve cursed landmines somewhow - either let curse lower their cooldown, or add maybe 4 bonus explosion damage%
 	probably also give them improved crit damage?
 	
 	
@@ -508,8 +500,6 @@ Exploring Mace starters... Jack? Doctor, Entreprenuer, Lich, Vaga, Druid, (Bucan
 What to do about the Sword/Vorpal situation. . .
 	Vorpal maybe should not be Medieval (tho I guess some of the idea is that it can mix with Swords smoothly)
 
-
-Gobbler capable of being mega-slow --- ugly tooth I think
 
 
 Sometimes going down (controller) on right-most item will move it over to Speed instead of down to weapons. (no ban, no lock button), repeatable if you move into the weapon from the stats area; sometimes to the ban of the item to its left, also bad
@@ -536,7 +526,6 @@ CHART:
 Demon HP Costs for first 2 Waves
 AtkSpd breakpoints (some 'standard' for most weapons maybe like the 201% and maybe 51% spots?  otherwise SMG/Revolver/Minigun/etc. specific
 
-Character: Lose double the set bonuses you have active [different way to encourage mixed builds?]
 
 
 Additional reminder icons mod, probably omni: Piggy, Torture, Stand-Still, Fish Hook
@@ -608,5 +597,5 @@ spikey shield may want additional nerf (in addition to small price increase), ma
 
 
 
-
-candy bag a roll to see if enemy damage is increased; little jestery laugh sfx when it is?  20% chance of +20% enemy damage...?
+candy bag a roll to see if enemy damage is increased; little jestery laugh sfx when it is?  20% or 25% chance of +15% enemy damage.
+	might need to hardcode one of the factors since 2-attribute effects are complicated
