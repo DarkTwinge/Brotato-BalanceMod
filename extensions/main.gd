@@ -30,9 +30,10 @@ func spawn_loot(unit: Unit, entity_type: int, args: Entity.DieArgs)->void :
 	
 	# New behavior: Each mat is rolled independantly
 	var total_mats:float = value
-	for i in value:
-		if entity_type == EntityType.ENEMY and not Utils.get_chance_success(spawn_chance):
-			total_mats = total_mats - 1
+	if entity_type == EntityType.ENEMY:
+		for i in value:
+			if not Utils.get_chance_success(spawn_chance):
+				total_mats = total_mats - 1
 	
 	spawn_gold(total_mats, unit.global_position, gold_spread)
 
@@ -51,3 +52,24 @@ func _on_HalfWaveTimer_timeout() -> void :
 #	
 #	RunData.effects["bm_leftover_materials"] = RunData.bonus_gold
 
+
+# Add new 'chance for stats' effect, for changed Candy Bag effect
+#func _on_EntitySpawner_players_spawned(players: Array) -> void :
+#	._on_EntitySpawner_players_spawned(players)
+#
+#	print(Keys.bm_stats_next_wave_chance_hash)
+#
+#
+#	for player_index in _players.size():
+#		var effects = RunData.get_player_effects(player_index)	
+#
+#		print(effects[Keys.bm_stats_next_wave_chance_hash])
+#
+#		if effects[Keys.bm_stats_next_wave_chance_hash].size() > 0:
+#			# Hard-coded 20%
+#			if Utils.get_chance_success(float(20) / 100):
+#				for stat_next_wave in effects[Keys.bm_stats_next_wave_chance_hash]:
+#					assert (stat_next_wave[0] is int)
+#					TempStats.add_stat(stat_next_wave[0], stat_next_wave[1], player_index)
+#				var candy_trick_sfx = load("res://mods-unpacked/DarkTwinge-BalanceMod/sounds/candy-laugh.wav")
+#				SoundManager.play(candy_trick_sfx, 0, 0, true)

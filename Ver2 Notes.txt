@@ -580,6 +580,8 @@ Mastery prolly does want a different downside
 
 Charcutterie item could be cute: kind of like Potato but at Blue tier; less obviously good but filling in some stat holes?
 
+Jellyshield could heal 1hp or gain 1 material for each blocked projectile
+
 Does Community Support count charmed enemies?
 
 Mummy hurtbox could be smaller; Anglerfish hurtbox could be bigger
@@ -594,8 +596,10 @@ maybe drop Claw price very slightly 14/.. to make it easier to fill out early
 
 
 spikey shield may want additional nerf (in addition to small price increase), maybe reduce all scaling a bit? otherwise it's base damage I guess
+	Tho don't over-nerf scaling; you want it to be decently strong at 25 armor and kinda bad at 10 armor, probably?
 
 
-
-candy bag a roll to see if enemy damage is increased; little jestery laugh sfx when it is?  20% or 25% chance of +15% enemy damage.
+candy bag: roll to see if enemy damage is increased; little jestery laugh sfx when it is?  20% or 25% chance of +15% enemy damage.
 	might need to hardcode one of the factors since 2-attribute effects are complicated
+	laugh from: https://freesound.org/people/Yogoorth/sounds/589146/
+	BM_STATS_NEXT_WAVE_CHANCE,"Each wave, [color=#ff0000]20%[/color] chance of: {0} {1} during the next wave"

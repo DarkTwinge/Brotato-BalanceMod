@@ -133,6 +133,8 @@ func _ready()->void:
 	Text.keys_needing_operator.bm_max_enemy_limit = [0]
 	Text.keys_needing_percent.bm_effect_hp_start_next_wave = [0]
 	Text.keys_needing_operator.bm_effect_hp_start_next_wave = [0]
+##	Text.keys_needing_percent.bm_stats_next_wave_chance = [0]
+##	Text.keys_needing_operator.bm_stats_next_wave_chance = [0]
 	# This group for making descriptions shorter
 	Text.keys_needing_percent.new_effect_increase_stat_gains = [1]
 	Text.keys_needing_percent.new_effect_increase_stat_gains_all = [1]
