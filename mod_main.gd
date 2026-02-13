@@ -326,7 +326,7 @@ func _ready()->void:
 	temp.value = 30  # 25
 	
 	temp = load("res://items/all/duct_tape/duct_tape_data.tres")
-	temp.value = 16  # 20 
+	temp.value = 17  # 20 
 	
 	temp = load("res://items/all/fertilizer/fertilizer_data.tres")
 	temp.value = 17  # 15
@@ -419,7 +419,7 @@ func _ready()->void:
 	temp.value = -2		# -3 (Speed)
 
 	temp = load("res://items/all/weird_food/weird_food_data.tres")
-	temp.value = 23		# 20
+	temp.value = 24		# 20
 	temp = load("res://items/all/weird_food/weird_food_effect_3.tres")
 	temp.key = "stat_speed"	# Dodge
 	
@@ -507,7 +507,7 @@ func _ready()->void:
 	temp.value = 46		# 50
 	
 	temp = load("res://items/all/fruit_basket/fruit_basket_data.tres")
-	temp.value = 59		# 45
+	temp.value = 60		# 45
 	temp.max_nb = 3		# 4
 	temp = load("res://items/all/fruit_basket/fruit_basket_effect_1.tres")
 	temp.value = 2		# 1 (% chance to drop fruit)
@@ -600,7 +600,7 @@ func _ready()->void:
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/rip_sauce_clarify_effect.tres")
 	temp.effects.append(temp_2)	
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_effect_1.tres")
-	temp.scale = 1.35   # 1.25 (Explosion Size)
+	temp.scale = 1.4   # 1.25 (Explosion Size)
 	temp.text_key = "new_effect_explode_on_consumable"
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_stats.tres")
 	temp.crit_chance = 0.01  # 0 (Crit Chance)
@@ -652,7 +652,7 @@ func _ready()->void:
 	temp.effects.erase(temp_2)
 	temp.effects.insert(1, temp_2)
 	temp.value = 4		# 3 (Knockback)
-	temp_2 = load("res://items/all/barricade/barricade_effect_2.tres")
+	temp = load("res://items/all/barricade/barricade_effect_2.tres")
 	temp.value = -4		# -5 (Speed)
 	
 	temp = load("res://items/all/blood_donation/blood_donation_data.tres")
@@ -917,7 +917,7 @@ func _ready()->void:
 
 	# Jetpack
 	temp = load("res://items/all/jetpack/jetpack_data.tres")
-	temp.value = 94  # 100
+	temp.value = 95  # 100
 	temp = load("res://items/all/jetpack/jetpack_effect_3.tres")
 	temp.value = -3  # -5 (HP)
 
@@ -1878,11 +1878,18 @@ func _ready()->void:
 	temp.value = 15		# 12 (Harvesting)
 	temp = load("res://items/characters/baby/effects/baby_effect_4.tres")
 	temp.value = 120	# 130
-
+	
+	# Beast Master
+	temp = load("res://items/characters/beast_master/beast_master_data.tres")
+	temp.banned_item_groups.push_back("range_and_attack_speed")
+	temp.banned_item_groups.push_back("attack_speed")
+	temp.banned_items.push_back("item_spider")	
+	
 	# Brawler
 	temp = load("res://items/characters/brawler/brawler_effect_1.tres")
 	temp.value = 40		# 50 (Unarmed AtkSpd Bonus)
 	temp = load("res://items/characters/brawler/brawler_data.tres")
+	temp.banned_items.push_back("item_catling_gun")
 	temp_2 = load("res://items/characters/brawler/brawler_effect_4.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.push_back(temp_2)
@@ -1893,7 +1900,8 @@ func _ready()->void:
 	# Bull
 	temp = load("res://items/characters/bull/bull_data.tres")
 	temp.banned_item_groups.push_back("range_and_attack_speed")
-	temp.banned_items.push_back("item_glasses")
+	temp.banned_item_groups.push_back("attack_speed")
+	temp.banned_items.push_back("item_spider")
 	temp = load("res://items/characters/bull/bull_effect_2.tres")
 	temp.value = 10  # 15 (HP Regen)
 	temp = load("res://items/characters/bull/bull_effect_4.tres")
@@ -2039,7 +2047,7 @@ func _ready()->void:
 	
 	# Pacifist
 	temp = load("res://items/characters/pacifist/pacifist_data.tres")
-	temp.banned_items = [ "item_whistle" ]
+	temp.banned_items = [ "item_whistle", "item_bot_o_mine" ]
 	
 	# Ranger
 	temp = load("res://items/characters/ranger/ranger_data.tres")

@@ -5,7 +5,9 @@ func _ready() -> void :
 	._ready()
 	item_groups["stand_still"] = ["item_barricade", "item_chameleon", "item_statue", "item_coral"]
 	item_groups["range_and_attack_speed"] = ["item_banner", "item_gummy_berserker"]
+	item_groups["attack_speed"] = ["item_crystal", "item_coffee", "item_community_support", "item_retromations_hoodie", "item_statue"]
 	item_groups["dodge"].erase("item_chameleon")
+	item_groups["lifesteal_and_hp_regeneration"].push_back("item_doc_moth")
 
 
 # Replace original weapon-set-favoring pool with a weighted pool based on how many of the weapon you have
@@ -34,8 +36,13 @@ func _get_rand_item_for_wave(wave: int, player_index: int, type: int, args: GetR
 
 	if banned_items.size() > 0:
 		for item_id in banned_items:
-			pool = remove_element_by_id(pool, item_id)
-			backup_pool = remove_element_by_id(backup_pool, item_id)
+			if item_id is String:
+				var item_id_hash = Keys.generate_hash(item_id)
+				pool = remove_element_by_id(pool, item_id_hash)
+				backup_pool = remove_element_by_id(backup_pool, item_id_hash)
+			else:
+				pool = remove_element_by_id(pool, item_id)
+				backup_pool = remove_element_by_id(backup_pool, item_id)
 
 	
 	for shop_item in args.excluded_items:

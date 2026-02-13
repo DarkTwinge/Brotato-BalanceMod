@@ -107,7 +107,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cake:** Price 15->16
 * **Coupon:** Price 15->20
 * **Cute Monkey:** Price 25->30
-* **Duct Tape:** Price 20->16
+* **Duct Tape:** Price 20->17
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
 * **Fresh Meat:** Removed from the game. _[Having three separate tier-1 items that give +2% Lifesteal is unnecessary.]_
 * **Gentle Alien:** Price 30->32
@@ -129,7 +129,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%); Speed -3% -> -2%
-* **Weird Food:** Price 20->23; Dodge -2% --> Speed -2%
+* **Weird Food:** Price 20->24; Dodge -2% --> Speed -2%
 * **Weird Ghost:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
 #### DLC
 * **Corrupted Shard:** Price 12->15; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
@@ -155,7 +155,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->34
 * **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
-* **Fruit Basket:** Price 45->59; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -5%; Limit 4 -> 3
+* **Fruit Basket:** Price 45->60; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -5%; Limit 4 -> 3
 * **Gambling Token:** Dodge 8% -> 9%
 * **Garden:** Price 50->48
 * **Ice Cube:** Price 50->46
@@ -178,7 +178,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Small Magazine:** Price 60->64; -6 Damage% -> -5 _[Slightly better fit in the situation you want it just for the Attack Speed, similar otherwise.]_
 * **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
 * **Snowball:** Price 50->44
-* **Spicy Sauce:** Explosion Size 125% -> 135%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies)
+* **Spicy Sauce:** Explosion Size 125% -> 140%; Base Crit Chance 0% -> 1%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies)
 * **Tentacle:** Price 35->39
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
@@ -186,12 +186,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 * **Bait:** Fixed Cursed Bait to only spawn one set of Lampreys
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
-* **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds
+* **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds; Pickup Range +50% -> +40%
 * **Eyepatch:** Price 55->63; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
 * **Fish Hook:** Price 35->38
 * **Jerky:** Price 50->55
 * **Pearl:** Price 60->53; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
-* **Saltwater:** Extra Speed When Hit 10% -> 20%
+* **Saltwater:** Extra Speed When Hit 10% -> 15%
 * **Spyglass:** Price 30->32
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
 
@@ -256,7 +256,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Gobbler's Hat:** Dodge -10% -> -5%; Additional Downside of -2 Armor
 * **Heavy Bullets:** Price 100->95; Range +10 --> Crit Chance +5%; Crit Chance -5% --> Accuracy -25%; (Replaced 'Range' tag with 'Crit Chance') _[The Ranged Weapons section below also covers some Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
 * **Hourglass:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
-* **Jet Pack:** Price 100->94; HP -5 -> -3
+* **Jet Pack:** Price 100->95; HP -5 -> -3
 * **Lucky Coin:** Price: 105->70; Armor -2 -> -1
 * **Mammoth:** Price 110->115; Melee Damage 20 -> 17; HP Regen 5 -> 4; Speed -3% -> -5%
 * **Medikit:** Price: 95 -> 105; Starting HP Regen 10 -> 4
@@ -329,16 +329,19 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Wand:** Cooldown 0.87/0.78/0.70/0.53 -> 0.83/0.77/0.68/0.53 _[The slight cooldown buff lets you get 1 extra kill on Wave 1.]_
 #### DLC
 - **Blunderbuss:** Tier-3 Damage 50 -> 45
+- **Flute:** Price 20/45/80/165 -> 18/40/80/150
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 75%/85%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
 
-* **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Obliterator 127/255 -> 122/218; Particle Accelerator: 144/289 -> 130/232; Potato Thrower: 36/69/139 -> 33/64/114. Blunderbuss: 45/95/192 -> 46/90/160; Flute: 20/45/80/165 -> 19/41/81/150; Javelin: 18/36/66/140 -> 18/36/68/125
+* **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Obliterator 127/255 -> 122/218; Particle Accelerator: 144/289 -> 130/232; Potato Thrower: 36/69/139 -> 33/64/114. Blunderbuss: 45/95/192 -> 46/90/160; Javelin: 18/36/66/140 -> 18/36/68/125
 * **Other Tier-4 Price Reductions:** Chain-gun: 300->265; Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 260; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Nuclear Launcher: 289 -> 251; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 105 -> 95
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
 * **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
-* **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw) _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
-* **Bull:** Starting HP Regen 15 -> 10; Can no longer be offered Glasses, Banner, or Gummy Berserker
+* **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
+* **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
+* **Bull:** Starting HP Regen 15 -> 10; Can no longer be offered Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
+* **Chunky**: Can no longer be offered Doc Moth
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
 * **Cyborg:** Now makes a distinct sound effect when switching from Ranged Damage to Engineering mode
@@ -350,6 +353,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to early Harvesting than most, and one that is most relevant for their weaker, non-Pruner builds.]_
 * **Fisher:** Extra HP 5 -> 8
 * **Gladiator:** -30 Luck -> -40
+* **Golem:** Can no longer be offered Doc Moth
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
 * **Loud:** -3 Harvesting per Wave -> -5; Damage 30% -> 25%
@@ -370,10 +374,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Captain:** No longer favored to find XP Gain items. _[Their benefit is only about average, and Barnacle especially is sad for Captain.]_
 * **Chef:** Can no longer be offered Eyes Surgery.
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
-* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
+* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Can no longer be offered Doc Moth _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell or Improved Tools.
 * **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
-* **Pacifist:** Can no longer be offered Whistle.
+* **Pacifist:** Can no longer be offered Whistle or Bot-o-mine.
+* **Sailor:** Dodge Cap 20% -> 25%; Can now be offered Dodge items. _[While Dodge is still not good on Sailor, it is usable enough that the items don't need to be completely unavailable.]_
 * **Sick:** Can no longer be offered Crystal.
 
 ## Enemies
@@ -488,7 +493,7 @@ You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/
 * Advanced Statistics: https://steamcommunity.com/sharedfiles/filedetails/?id=3025488976
 
 # Thanks To
-Inschato, ArosRising, Hyphen-ated, Pasha, WL, Lady Lynn, and everyone else that's assisted with feedback, suggestions, or coding!
+WL, Inschato, ArosRising, Hyphen-ated, Pasha, Lady Lynn, and everyone else that's assisted with feedback, suggestions, or coding!
 Also thanks to Blobfish for being receptive to feedback, implementing many previous Balance Mod changes directly into the base game.
 
 # License

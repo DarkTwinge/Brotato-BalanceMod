@@ -393,8 +393,6 @@ curse could give lower hp enemies a bigger hp bump
 Crit SFX: unit.tscn replace to make quieter sounds? (test with other sounds)
 
 
-Bull doesn't proc Ice Cube
-
 ~~"Melee" attack for Blobfish (and Puffer?), sometimes counts from a turret and sometimes not, at least for Blue; might be the direct hit vs the burn?
 
 
@@ -550,18 +548,10 @@ will o wisp: maybe gives random of the 4 primary damage stats?  if it could rand
 
 
 IF NOT DONE IN OFFICIAL:
-add Tardigrade to Bull-restricted?
-	and Community Support [Should make an Attack Speed group with Coffee, Crystal...], Gummy Berserker, Glasses, Banner, Statue, Lifesteal Group 
 Piggy for Entre? [is it usually still value from a crate?  I guess not because they have higher recycle rate, or?]
-Lootworm for Cryptid [at least not favored like Shirt was]
 
 
 Other fix-if-unfixed in main:
-	Fix all restricted-list pet stuff:
-		Doc Moth in the HP Regen+Lifesteal restricted pool 
-		Brawler-Catling specifically (not in general Ranged Damage)
-		Bot-o-mine on Pacifist specifically
-	Sailor having Dodge banned but Dwarf and Crazy not is pretty weird [might even reverse? or only restrict on Dwarf given other BalMod changes, or?  -- maybe just make Dwarf -20 Dodge and un-Restrict on all]
 	-Enemies = more Lampreys
 	Look into Harpoon damage reduction getting stuck ON
 	Catling tooltip should specify enrage amount  (x2)
@@ -603,3 +593,18 @@ candy bag: roll to see if enemy damage is increased; little jestery laugh sfx wh
 	might need to hardcode one of the factors since 2-attribute effects are complicated
 	laugh from: https://freesound.org/people/Yogoorth/sounds/589146/
 	BM_STATS_NEXT_WAVE_CHANCE,"Each wave, [color=#ff0000]20%[/color] chance of: {0} {1} during the next wave"
+	
+
+
+Does Charming mean fewer fruit/crate drops?  (could check code or just set charm to 100% and Luck max)
+
+
+is Chef picking up fruit still exploding correctly?
+
+Bug?  Cursed Hourglass not going to right HP?
+	probably because the broken one isn't cursed any more
+	may be able to add curse to the broken one in `func remove_item`
+
+Burn turrent back to 35%
+
+Still need to do an emote; Cursed Walrus?

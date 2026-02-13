@@ -173,7 +173,9 @@ func check_for_available_dlcs() -> void :
 		temp.value = 27   # 30
 		temp = load("res://dlcs/dlc_1/items/bone_dice/effects/bone_dice_effect_0.tres")
 		temp.value2 = 60	# 50 (Chance to proc +1% Damage)
-
+		
+		temp = load("res://dlcs/dlc_1/items/cauldron/effects/cauldron_effect_0.tres")
+		temp.value = 40				# 50
 		temp = load("res://dlcs/dlc_1/items/cauldron/effects/cauldron_effect_1.tres")
 		temp.value = 25   # 20 (Temp Damage%)
 		temp.value2 = 3		# 2 (Seconds of Duration)
@@ -196,7 +198,7 @@ func check_for_available_dlcs() -> void :
 		temp.value = 4		# 3 (Chance to find an extra Pearl)
 
 		temp = load("res://dlcs/dlc_1/items/saltwater/effects/saltwater_effect_1.tres")
-		temp.value = 20		# 10 (Extra Speed when hit)
+		temp.value = 15		# 10 (Extra Speed when hit)
 
 		temp = load("res://dlcs/dlc_1/items/spyglass/spyglass_data.tres")
 		temp.value = 32		# 30
@@ -371,12 +373,12 @@ func check_for_available_dlcs() -> void :
 		
 		# Flute
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
-		temp.value = 19					# 20
+		temp.value = 18					# 20
 		temp.add_to_chars_as_starting = [ "character_lucky", "character_glutton", "character_renegade", "character_jack", "character_golem", "character_soldier", "character_demon" ] 	# Removed Baby
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/2/flute_2_data.tres")
-		temp.value = 41					# 45
+		temp.value = 40					# 45
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/3/flute_3_data.tres")
-		temp.value = 81					# 80
+		temp.value = 80					# 80
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/4/flute_4_data.tres")
 		temp.value = 150				# 165
 
@@ -539,6 +541,10 @@ func check_for_available_dlcs() -> void :
 		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/charm_clarify_effect.tres")
 		temp.effects.append(temp_2)		
 		
+		temp = load("res://dlcs/dlc_1/characters/sailor/sailor_data.tres")
+		temp.banned_item_groups.erase("dodge")
+		temp = load("res://dlcs/dlc_1/characters/sailor/effects/sailor_effect_5.tres")
+		temp.value = 25				# 20
 		temp = load("res://dlcs/dlc_1/characters/sailor/effects/sailor_effect_6.tres")
 		temp.key = "NEW_EFFECT_REDUCE_STAT_GAINS"
 		temp = load("res://dlcs/dlc_1/characters/sailor/effects/sailor_effect_3b.tres")

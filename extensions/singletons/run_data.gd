@@ -100,7 +100,7 @@ func add_starting_items_and_weapons() -> void :
 					##
 
 # Removes useless-for-the-character stats from the random list for Candy Bag
-func get_random_primary_stats() -> String:
+func get_random_primary_stats() -> int:
 	var stats_list = [
 		Keys.generate_hash("stat_max_hp"), 
 		Keys.generate_hash("stat_armor"), 
