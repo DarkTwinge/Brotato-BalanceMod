@@ -651,7 +651,7 @@ func _ready()->void:
 	temp_2 = load("res://items/all/barricade/barricade_effect_0.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.insert(1, temp_2)
-	temp.value = 4		# 3 (Knockback)
+	temp_2.value = 4		# 3 (Knockback)
 	temp = load("res://items/all/barricade/barricade_effect_2.tres")
 	temp.value = -4		# -5 (Speed)
 	
