@@ -68,7 +68,6 @@ PaciFIST (Has to kill final bosses; possibly earlier elites tho 11 seems very su
 Im-Precise Crazy
 Sausage Lord Mage (no direct Elemental weapons)
 All-Brick Mutant
-Buy Every Weapon Multi-tasker (is this fun?  Require recycler to be pleasant or?)
 Un-Primitive Wildling
 Gunless Cyborg
 One-weapon-type Gladiator
@@ -608,3 +607,5 @@ Bug?  Cursed Hourglass not going to right HP?
 Burn turrent back to 35%
 
 Still need to do an emote; Cursed Walrus?
+
+Restrict Jet Pack on Chunky?

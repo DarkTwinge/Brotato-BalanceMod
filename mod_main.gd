@@ -360,13 +360,12 @@ func _ready()->void:
 	temp.key = "stat_range"
 	temp.value = -10 # -2 Speed -> -10 Range
 	
-#	temp = load("res://items/all/landmines/landmines_data.tres")
-#	temp.value = 13		# 15
+	temp = load("res://items/all/landmines/landmines_data.tres")
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/landmine_size_text.tres")
+	temp.effects.push_back(temp_2) # Add explosion size text
 	temp = load("res://items/all/landmines/landmines_effect_1.tres")
 	temp.spawn_cooldown = 10 # 12
 	## THIS TOOLTIP IS HARDCODED
-	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/landmine_size_text.tres")
-	temp.effects.push_back(temp_2) # Add explosion size text
 	temp = load("res://items/all/landmines/landmine_exploding_effect.tres")
 	temp.scale = 1.9	# 1.75
 	
