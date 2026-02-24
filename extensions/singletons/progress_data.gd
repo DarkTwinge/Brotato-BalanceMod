@@ -221,7 +221,7 @@ func check_for_available_dlcs() -> void :
 		temp.value = 12		# 15
 		
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
-		temp.value = 15   # 23
+		temp.value = 16   # 23
 		
 		temp = load("res://dlcs/dlc_1/items/mirror/mirror_data.tres")
 		temp.value = 57		# 60
@@ -269,11 +269,17 @@ func check_for_available_dlcs() -> void :
 		## MELEE WEAPONS ##
 		# Anchor
 		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/2/anchor_2_data.tres")
-		temp.value = 46				# 51
+		temp.value = 39				# 51
+		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/2/anchor_2_stats.tres")
+		temp.scaling_stats = [ [ "stat_melee_damage", 1.0 ], [ "stat_curse", 0.7 ] ]		# Curse 0.65
 		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/3/anchor_3_data.tres")
-		temp.value = 86				# 95
+		temp.value = 74				# 95
+		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/3/anchor_3_stats.tres")
+		temp.scaling_stats = [ [ "stat_melee_damage", 1.25 ], [ "stat_curse", 1.0 ] ]		# Curse 0.9
 		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/4/anchor_4_data.tres")
-		temp.value = 151			# 190
+		temp.value = 133			# 190
+		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/4/anchor_4_stats.tres")
+		temp.scaling_stats = [ [ "stat_melee_damage", 1.5 ], [ "stat_curse", 1.4 ] ]		# Curse 1.25
 		
 		# Brick
 		temp = load("res://dlcs/dlc_1/weapons/melee/brick/1/brick_effect_0.tres")

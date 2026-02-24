@@ -23,9 +23,9 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Minigun, Hammer, and Sledge now have Knockback Piercing, meaning their Knockback is more effective against resistant enemies like Chargers.
 * Sickle removed from the game.
 * Most Tier-4 weapons are cheaper (slightly buffs Luck & mixed weapon builds). Other weapon prices slightly tweaked for more logical/consistent progression.
-* Spear & Thief Dagger are nerfed; Mace is heavily buffed.
+* Spear, Thief Dagger, & Spiky Shield are nerfed; Mace & Anchor are buffed.
 * Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, Cacti Club, Hammer, and War Hammer receive minor buffs.
-* SMG, Fist, Icicle, Spiky Shield, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
+* SMG, Fist, Icicle, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
 * Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
@@ -112,7 +112,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fresh Meat:** Removed from the game. _[Having three separate tier-1 items that give +2% Lifesteal is unnecessary.]_
 * **Gentle Alien:** Price 30->32
 * **Glasses:** Range 20 -> 22
-* **Gummy Berserker:** Range 25 -> 29
+* **Gummy Berserker:** Range 25 -> 30
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->23
 * **Helmet:** Price 15->18; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
@@ -231,7 +231,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Tardigrade:** Price 50->40; Now ignores self-damage effects (anything that bypasses invulnerability); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge)
-* **Tyler:** Tier-3 -> Tier-2; Price 75->65; Base Damage 10 -> 12; Range 200 -> 225; Engineering & Elemental Scaling 75% -> 90% _[Damage output was consistently very disappointing for the cost in all circumstances. Swapped rarity-tiers with Bot-o-mine to be more appropriate for their power levels.]_
+* **Tyler:** Tier-3 -> Tier-2; Price 75->62; Base Damage 10 -> 12; Range 200 -> 235; Engineering & Elemental Scaling 75% -> 90% _[Damage output was consistently very disappointing for the cost in all circumstances. Swapped rarity-tiers with Bot-o-mine to be more appropriate for their power levels.]_
 * **Vigilante Ring:** Price 92->73
 * **Wandering Bot:** Price 60->38
 * **Wheat:** Price 85->82; Harvesting 10 -> 15
@@ -241,7 +241,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ball and Chain (Cursed):** Weapon Cooldown Floor ~0.35s -> ~0.5s
 * **Crystal:** Price 65->53; Engineering -2 --> Max HP -2 _[Engineering builds rarely care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
 * **Goblet:** Price 70->69; Chance of heal per kill 15% -> 12%
-* **Goldfish:** Price 23->15 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
+* **Goldfish:** Price 23->16 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
 * **Sunken Bell:** Price 65->42; Explosion Size 600% -> 750%
@@ -285,7 +285,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Excalibur:** -3 Armor Per Weapon -> -2
 * **Fist:** Price 10/22/45/91 -> 12/26/52/95; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.61
-* **Ghost Flint:** Range 150/160/170/180 -> 165/175/185/200; Tier-1 Damage 6 -> 7 _[Helps tier-1 be able to proc on characters that don't have extra damage to start.]_
+* **Ghost Flint:** Range 150/160/170/180 -> 165/175/185/200; Tier-1 Damage 6 -> 7 _[Helps tier-1 be able to proc on characters that don't have extra damage to start & mixes better with Axes.]_
 * **Hammer:** Price 51/95/190 -> 46/86/151; Range 175(All) -> 180/190/200; Cooldown 1.67/1.59/1.50 -> 1.63/1.55/1.48 (accounts for the increased Range); Now has 10%/15%/20% Knockback Piercing (more effective against resistant enemies); Knockback 30/40/50 -> 25/30/40
 * **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
 * **Hatchet:** Range 125->135; Internal Recoil Duration 0.1 -> 0.05 _[Faster attack animation, netting ~7% more DPS on average.]_
@@ -298,12 +298,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Engineering Scaling 50%(All) -> 50%/60%/70%/80%; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only required one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84; Landmine Explosion Size 175% -> 190% _[A modest rework+buff: with Pile of Books at blue-tier, Crit can make more sense on Engineering builds, and Screwdrivers are a good option for caring about that crit.]_
 * **Sharp Tooth:** No longer part of the Precise Set (now only Primitive); +1% Lifesteal for every XX% missing health 25%/20%/15%/10% -> 20%/17%/14%/10%; Melee Damage Scaling 50%(All) -> 60%(All); Lifesteal Scaling 50%/65%/80%/100% -> 60%/70%/80%/100%; Cooldown 1.14/1.07/1.00/0.93 -> 1.11/1.04/0.97/0.89 _[Being part of the two biggest Sets when it really wants to be your only weapon made it harder to find (and also polluted the pool for other Precise weapons). Low-tier Teeth felt awful and struggled to get off the ground so they kick in the Lifesteal bonuses earlier, and all tiers have less-bad Melee Scaling, making it easier to directly increase their damage (tho still worse than normal weapons).]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (accounts for the lowered Range)
-* **Spiky Shield:** Price 15/31/61/122 -> 17/34/66/120
+* **Spiky Shield:** Price 15/31/61/122 -> 17/34/66/120; Damage Scaling From Armor 100%/125%/150%/200% -> 75%/100%/125%/150%
 * **Stick:** Base Damage 8/9/10/12 -> 7/8/10/17; Tier-4 Damage-Per-Stick 10 -> 9 _[Tier-4 has the same damage with 6 sticks but is stronger with fewer sticks, giving more room to switch your build out of Sticks if desired.]_
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
-* **Anchor:** Price 51/95/190 -> 46/86/151
+* **Anchor:** Price 51/95/190 -> 39/74/133; Damage Scaling From Curse 65%/90%/125% -> 70%/100%/140%
 * **Brick:** Can no longer break during Wave 1; Breaking SFX slightly louder
 * **Mace:** Price 46/92/185 -> 30/59/105; Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between.]_
@@ -339,7 +339,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ## Characters
 * **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
 * **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
-* **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -125 (-63); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
+* **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10; Can no longer be offered Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Chunky**: Can no longer be offered Doc Moth
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_

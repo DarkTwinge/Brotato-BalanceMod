@@ -514,7 +514,7 @@ Sometimes going down (controller) on right-most item will move it over to Speed 
 
 
 Red Knife -5 Base Crit w/ tiny other buff?
-
+	also could opt to not remove red theif dagger's extra 5%
 
 
 
@@ -595,12 +595,14 @@ candy bag: roll to see if enemy damage is increased; little jestery laugh sfx wh
 	
 
 
-Does Charming mean fewer fruit/crate drops?  (could check code or just set charm to 100% and Luck max)
+>Charming results in only ~85% value from your Luck (charmed enemies at the end don't drop crates; fruit is delayed)
+	[At perfect Charming; normal use will be more Luck value since you'll still kill many]
 
 
 is Chef picking up fruit still exploding correctly?
+	WL reported not mixing with Sauce properly
 
-Bug?  Cursed Hourglass not going to right HP?
+Bug:  Cursed Hourglass not going to right HP?
 	probably because the broken one isn't cursed any more
 	may be able to add curse to the broken one in `func remove_item`
 
@@ -609,3 +611,21 @@ Burn turrent back to 35%
 Still need to do an emote; Cursed Walrus?
 
 Restrict Jet Pack on Chunky?
+
+
+Does Arms Dealer 1st shop get weighted based on previous weapons
+Look into how Pets scale with speed - Rats go nyyooooom
+
+AdvStats - Loot Aliens spawned less than killed -- maybe Whistle?
+	NOT Whistle; Gobbler maybe?
+
+
+Fireball goes thru enemies even without pierce but only visual
+Does Lootworm eating a tree not proc Pocket Factory
+
+Should Ghost Scepter tier-1 cooldown  be slightly lower for its starting weapon viability?
+How bad is Sick+Scepter  [Also Chunky, Streamer, Golem, Cryptid, Lich, Builder, Druid, (Apprentice, Creature, Ghost) ; Could add to King]
+
+Generalist could have starters: Pruner, Rock
+
+Lucky could start with elss Luck but have slightly more base damage on their ability to compensate (so similar damage output but less Luck value)

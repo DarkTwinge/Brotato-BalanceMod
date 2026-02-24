@@ -343,7 +343,7 @@ func _ready()->void:
 	temp.value = 22  # 20 (Range)
 	
 	temp = load("res://items/all/gummy_berserker/gummy_berserker_effect_2.tres")
-	temp.value = 29  # 25 (Range)
+	temp.value = 30  # 25 (Range)
 	
 	temp = load("res://items/all/head_injury/head_injury_effect_1.tres")
 	temp.value = 7   # 6 (Damage%)
@@ -818,11 +818,11 @@ func _ready()->void:
 	
 	# Tyler
 	temp = load("res://items/all/tyler/tyler_data.tres")
-	temp.value = 65				# 75
+	temp.value = 62				# 75
 	temp.tier = 1					# 2 (Purple -> Blue)
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
 	temp.damage = 12			# 10
-	temp.max_range = 225	# 200
+	temp.max_range = 235	# 200
 	temp.scaling_stats = [ [ "stat_engineering", 0.9 ], [ "stat_elemental_damage", 0.9 ] ]	# 0.75, 0.75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
@@ -1428,12 +1428,20 @@ func _ready()->void:
 	# Spiky Shield
 	temp = load("res://weapons/melee/spiky_shield/1/spiky_shield_data.tres")
 	temp.value = 17				# 15
+	temp = load("res://weapons/melee/spiky_shield/1/spiky_shield_stats.tres")
+	temp.scaling_stats = [ [ "stat_armor", 0.75 ] ]		# 1.0
 	temp = load("res://weapons/melee/spiky_shield/2/spiky_shield_2_data.tres")
 	temp.value = 34				# 31
+	temp = load("res://weapons/melee/spiky_shield/2/spiky_shield_2_stats.tres")
+	temp.scaling_stats = [ [ "stat_armor", 1.0 ] ]		# 1.25
 	temp = load("res://weapons/melee/spiky_shield/3/spiky_shield_3_data.tres")
 	temp.value = 66				# 61
+	temp = load("res://weapons/melee/spiky_shield/3/spiky_shield_3_stats.tres")
+	temp.scaling_stats = [ [ "stat_armor", 1.25 ] ]		# 1.5
 	temp = load("res://weapons/melee/spiky_shield/4/spiky_shield_4_data.tres")
 	temp.value = 120			# 122
+	temp = load("res://weapons/melee/spiky_shield/4/spiky_shield_4_stats.tres")
+	temp.scaling_stats = [ [ "stat_armor", 1.5 ] ]		# 2.0
 	
 	# Stick
 	temp = load("res://weapons/melee/stick/1/stick_stats.tres")
@@ -1892,7 +1900,7 @@ func _ready()->void:
 	temp_2 = load("res://items/characters/brawler/brawler_effect_4.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.push_back(temp_2)
-	temp_2.value = -125	# -50 (-63 after mods)
+	temp_2.value = -140	# -50 (-70 after mods)
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/brawler_range_mods.tres")
 	temp.effects.push_back(temp_2)
 	
