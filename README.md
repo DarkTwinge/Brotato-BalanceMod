@@ -390,6 +390,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Mantis:** Time Before First Attack 2s -> 1.75s; Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Differentiates Mantis and Rhino more.]_
 * **Butcher:** Phase 2 & 3 Max Range increased _[Makes it so you can't so easily get out of range of the slashes; most relevant for Explorer.]_
 * **Rhino:** Base Speed 250 -> 275
+* **Gargoyle:** Time Before First Attack 2.42s -> 1.42s
 
 #### The Abyss
 * **Spider Crab:**: Phase 1 Crab Summoning Cooldown 2s -> 1.85s; Summoning Radius 600 -> 850; HP to switch to 2nd Phase 85% -> 82%; Time to switch to 2nd Phase 12s -> 13s; Phase 3 Max Range increased _[Aiming to make the initial summoning phase more noticeable and interesting; this causes one extra summoning before switching phases from time.]_

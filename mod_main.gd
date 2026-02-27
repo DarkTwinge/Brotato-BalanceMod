@@ -152,10 +152,12 @@ func _ready()->void:
 	# Hivemind Phase 2 cooldown nerf
 	# Butcher range increase
 	# Insect tweak
+	# Gargoyle faster first attack
 	var elite_scenes = {
 		"elite_colossus":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/colossus.tscn",
 		"elite_butcher":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/butcher.tscn",
-		"elite_insect":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/mantis.tscn"
+		"elite_insect":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/mantis.tscn",
+		"elite_demon":"res://mods-unpacked/DarkTwinge-BalanceMod/elites/gargoyle.tscn"
 	}
 	for elite in ItemService.elites:
 		if elite.my_id in elite_scenes.keys():
