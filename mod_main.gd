@@ -470,8 +470,6 @@ func _ready()->void:
 	temp = load("res://items/all/campfire/campfire_data.tres")
 	temp.value = 39   # 40
 
-	temp = load("res://items/all/catling_gun/catling_gun.tres")
-	temp.value = 38				# 34
 	temp = load("res://entities/units/pet/catling_gun/catling_gun_weapon_stats.tres")
 	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ] ]	# 0.6
 	temp.cooldown = 60		# 55
@@ -744,8 +742,6 @@ func _ready()->void:
 	temp.value = 60  # 55
 	
 	# Laser Turret
-	temp = load("res://items/all/turret_laser/turret_laser_data.tres")
-	temp.value = 62  				# 65
 	temp = load("res://entities/structures/turret/laser/laser_turret_stats.tres")
 	temp.crit_damage = 2.5	# 2.0
 	
@@ -759,6 +755,8 @@ func _ready()->void:
 	temp.tier = 1			# 2
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/pile_of_books_crit_note.tres")
 	temp.effects.append(temp_2)
+	temp = load("res://items/all/pile_of_books/effects/pile_of_books_effect_1.tres")
+	temp.value = 5		# 3 (Crit Chance)
 	
 	temp = load("res://items/all/plastic_explosive/plastic_explosive_data.tres")
 	temp.value = 51		# 60
@@ -825,7 +823,7 @@ func _ready()->void:
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
 	temp.damage = 12			# 10
 	temp.max_range = 235	# 200
-	temp.scaling_stats = [ [ "stat_engineering", 0.9 ], [ "stat_elemental_damage", 0.9 ] ]	# 0.75, 0.75
+	temp.scaling_stats = [ [ "stat_engineering", 1.0 ], [ "stat_elemental_damage", 1.0 ] ]	# 0.75, 0.75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
 	temp.value = 73  # 92
@@ -1108,7 +1106,7 @@ func _ready()->void:
 	
 	# Excalibur
 	temp = load("res://weapons/melee/excalibur/4/excalibur_4_data.tres")
-	temp.value = 215		 # 230
+	temp.value = 225		 # 230
 	temp = load("res://weapons/melee/excalibur/4/excalibur_effect_1.tres")
 	temp.value = -2				# -3 (Armor per weapon)
 	

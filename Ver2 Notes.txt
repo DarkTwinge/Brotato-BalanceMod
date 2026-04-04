@@ -611,7 +611,7 @@ Burn turrent back to 35%
 Still need to do an emote; Cursed Walrus?
 
 Restrict Jet Pack on Chunky?
-
+Focus on Vagabond, Curious (maybe Gladiator but less clear)
 
 Does Arms Dealer 1st shop get weighted based on previous weapons
 Look into how Pets scale with speed - Rats go nyyooooom
@@ -628,4 +628,18 @@ How bad is Sick+Scepter  [Also Chunky, Streamer, Golem, Cryptid, Lich, Builder, 
 
 Generalist could have starters: Pruner, Rock
 
-Lucky could start with elss Luck but have slightly more base damage on their ability to compensate (so similar damage output but less Luck value)
+Lucky could start with less Luck but have slightly more base damage on their ability to compensate (so similar damage output but less Luck value elsewhere)
+
+Seashell + Javelin may work negatively with each other?? (because of every x projectile)
+
+Add Shiv starter to Explorer?  How bad early
+
+
+Is Wave Info not counting +Enemy Damage e.g. Starfish?  (kinda seemed accurate tho but math isn't as expected, hmm.)
+
+
+brick t3/t4 mat drops {prolly gonna be in base game shortly so just accept it there}
+
+Fists logically should be cheap, maybe opt for dropping the damage and the cooldown slightly more instead
+
+Make structures pushing in further from the edge when you have fewer total structures, so a tech buy of a blue turret or med turret or whatever doesn't sit in the corner all sad.  (Slowly pushes in less based on total structure count?  ideally does not include landmines/screwdrivers/wander bot/bot-o-mine/clockwork wasp, but would include Pocket Factory

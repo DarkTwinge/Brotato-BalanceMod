@@ -148,7 +148,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%
 * **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->60; Laser Damage 10 -> 9; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75% _[Swapped rarity tiers with Tyler to better represent their power levels, even after their respective nerfs and buffs.]_
 * **Campfire:** Price 40->39
-* **Catling Gun:** Price 34->38; Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
+* **Catling Gun:** Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
 * **Celery Tea:** Price 35->32; Extra Enemy HP +100% -> +75%
 * **Clockwork Wasp:** Price 45->46
 * **Cog:** Damage -4% -> -2% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_
@@ -186,7 +186,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 * **Bait:** Fixed Cursed Bait to only spawn one set of Lampreys
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
-* **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds; Pickup Range +50% -> +40%
+* **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds; Pickup Range +50% -> +40%; Now tagged for 'consumables'
 * **Eyepatch:** Price 55->63; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
 * **Fish Hook:** Price 35->38
 * **Jerky:** Price 50->55
@@ -216,10 +216,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Glass Canon:** Price 75->70
 * **Honey:** Price 70->51; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Hunting Trophy:** Price 55->60
-* **Laser Turret:** Price 65->62; Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
+* **Laser Turret:** Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
 * **Lucky Charm:** Price 75->70
 * **Peacock:** Price 50->47
-* **Pile of Books:** Tier-3 -> Tier-2 _[This is a build-around item, but at purple-tier you usually find it too late to be able to meaningfully build into it.]_
+* **Pile of Books:** Tier-3 -> Tier-2; Crit Chance 3% -> 5% _[This is a build-around item, but at purple-tier you usually find it too late to be able to meaningfully build into it.]_
 * **Plastic Explosive:** Price 60->51
 * **Poisonous Tonic:** Range 15 -> 27
 * **Power Generator:** Price 65->59; -5% Damage --> -1 Max HP Per 6% Speed
@@ -231,7 +231,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Tardigrade:** Price 50->40; Now ignores self-damage effects (anything that bypasses invulnerability); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge)
-* **Tyler:** Tier-3 -> Tier-2; Price 75->62; Base Damage 10 -> 12; Range 200 -> 235; Engineering & Elemental Scaling 75% -> 90% _[Damage output was consistently very disappointing for the cost in all circumstances. Swapped rarity-tiers with Bot-o-mine to be more appropriate for their power levels.]_
+* **Tyler:** Tier-3 -> Tier-2; Price 75->62; Base Damage 10 -> 12; Range 200 -> 235; Engineering & Elemental Scaling 75% -> 100% _[Damage output was consistently very disappointing for the cost in all circumstances. Swapped rarity-tiers with Bot-o-mine to be more appropriate for their power levels.]_
 * **Vigilante Ring:** Price 92->73
 * **Wandering Bot:** Price 60->38
 * **Wheat:** Price 85->82; Harvesting 10 -> 15
@@ -307,10 +307,10 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Brick:** Can no longer break during Wave 1; Breaking SFX slightly louder
 * **Mace:** Price 46/92/185 -> 30/59/105; Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between.]_
-* **War Hammer:** Now in the Tool set instead of Heavy; Cooldown 2.11/1.95 -> 2.0/1.83; Crit Damage 1.5x -> 1.75x
+* **War Hammer:** Now in the Tool set instead of Heavy; Cooldown 2.11/1.95 -> 2.0/1.61; Engineering Scaling 100%/150% -> 150%/200%; Crit Damage 1.5x -> 1.75x
 
 - **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
-- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 215; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 265; Sharp Tooth: 105 -> 95; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
+- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 225; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 265; Sharp Tooth: 105 -> 95; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%

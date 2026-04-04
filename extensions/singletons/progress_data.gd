@@ -174,6 +174,8 @@ func check_for_available_dlcs() -> void :
 		temp = load("res://dlcs/dlc_1/items/bone_dice/effects/bone_dice_effect_0.tres")
 		temp.value2 = 60	# 50 (Chance to proc +1% Damage)
 		
+		temp = load("res://dlcs/dlc_1/items/cauldron/cauldron_data.tres")
+		temp.tags = [ "pickup", "consumable" ]	# Add consumable
 		temp = load("res://dlcs/dlc_1/items/cauldron/effects/cauldron_effect_0.tres")
 		temp.value = 40				# 50
 		temp = load("res://dlcs/dlc_1/items/cauldron/effects/cauldron_effect_1.tres")
@@ -356,6 +358,7 @@ func check_for_available_dlcs() -> void :
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/3/war_hammer_3_stats.tres")
 		temp.crit_damage = 1.75	# 1.5
 		temp.cooldown = 83			# 90
+		temp.scaling_stats = [ [ "stat_melee_damage", 1.5 ], [ "stat_engineering", 1.5 ] ]	# 1.5, 1.0
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_data.tres")
 		temp.value = 209				#	255
 		temp_2 = load("res://items/sets/heavy/heavy_set_data.tres")
@@ -364,7 +367,8 @@ func check_for_available_dlcs() -> void :
 		temp.sets.push_back(temp_2)	# Replaces 'Heavy' set with 'Tool'
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_stats.tres")
 		temp.crit_damage = 1.75	# 1.5
-		temp.cooldown = 73			# 80
+		temp.cooldown = 60			# 80
+		temp.scaling_stats = [ [ "stat_melee_damage", 2.0 ], [ "stat_engineering", 2.0 ] ]	# 2.0, 1.5
 		
 		## RANGED WEAPONS ##
 		# Blunderbuss
