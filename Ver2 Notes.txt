@@ -628,8 +628,6 @@ How bad is Sick+Scepter  [Also Chunky, Streamer, Golem, Cryptid, Lich, Builder, 
 
 Generalist could have starters: Pruner, Rock
 
-Lucky could start with less Luck but have slightly more base damage on their ability to compensate (so similar damage output but less Luck value elsewhere)
-
 Seashell + Javelin may work negatively with each other?? (because of every x projectile)
 
 Add Shiv starter to Explorer?  How bad early
@@ -642,4 +640,13 @@ brick t3/t4 mat drops {prolly gonna be in base game shortly so just accept it th
 
 Fists logically should be cheap, maybe opt for dropping the damage and the cooldown slightly more instead
 
-Make structures pushing in further from the edge when you have fewer total structures, so a tech buy of a blue turret or med turret or whatever doesn't sit in the corner all sad.  (Slowly pushes in less based on total structure count?  ideally does not include landmines/screwdrivers/wander bot/bot-o-mine/clockwork wasp, but would include Pocket Factory
+Make structures pushing in further from the edge when you have fewer total structures, so a tech buy of a blue turret or med turret or whatever doesn't sit in the corner all sad.  (Slowly pushes in less based on total structure count?  ideally does not include landmines/screwdrivers/wander bot/bot-o-mine/clockwork wasp, but would include +1 for Pocket Factory
+
+Lucky could start with less Luck but have slightly more base damage on their ability to compensate (so similar damage output but less Luck value elsewhere)
+
+
+Tea not counting up in its tooltip?
+
+{Remove fin ban from Chunky, Screwdriver start from Hunter as they're vanilla now}
+
+check if gobbler base hp could be slightly lower to make them slightly less tanky early game

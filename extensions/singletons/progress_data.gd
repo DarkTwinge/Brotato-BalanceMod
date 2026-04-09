@@ -183,7 +183,7 @@ func check_for_available_dlcs() -> void :
 		temp.value2 = 3		# 2 (Seconds of Duration)
 
 		temp = load("res://dlcs/dlc_1/items/eyepatch/eyepatch_data.tres")
-		temp.value = 63		# 55
+		temp.value = 61		# 55
 		temp = load("res://dlcs/dlc_1/items/eyepatch/effects/eyepatch_effect_1.tres")
 		temp.value = 6		# 3 (Crit Chance)
 
@@ -232,7 +232,7 @@ func check_for_available_dlcs() -> void :
 		temp.value = 68		# 75
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-		temp.value = 42		# 65
+		temp.value = 40		# 65
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
 		temp.scale = 7.5	# 6.0
 		temp.text_key = "new_effect_explode_when_below_hp"

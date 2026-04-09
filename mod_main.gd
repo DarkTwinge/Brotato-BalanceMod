@@ -378,7 +378,7 @@ func _ready()->void:
 	temp.value = 9		# 8 (Luck)
 	
 	temp = load("res://items/all/lumberjack_shirt/lumberjack_shirt_data.tres")
-	temp.value = 11		# 15
+	temp.value = 10		# 15
 
 	temp = load("res://items/all/mutation/mutation_data.tres")
 	temp.value = 24  # 25
@@ -435,6 +435,7 @@ func _ready()->void:
 	temp.value = 62   # 65
 
 	temp = load("res://items/all/alien_eyes/alien_eyes_data.tres")
+	temp.value = 47		# 50
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/alien_eyes_range_malus.tres")
 	temp.effects.push_back(temp_2) # -8 Range
 	
@@ -445,7 +446,7 @@ func _ready()->void:
 	temp.value = 25   # 20 (Range)
 	
 	temp = load("res://items/all/blindfold/blindfold_data.tres")
-	temp.value = 43		# 45
+	temp.value = 42		# 45
 	temp = load("res://items/all/blindfold/blindfold_effect_3.tres")
 	temp.value = -18  # -15 (Range)
 
@@ -497,8 +498,6 @@ func _ready()->void:
 	temp.value = 5    # 4 (Crit Chance)
 	
 	# Garden
-	temp = load("res://items/all/garden/garden_data.tres")
-	temp.value = 48		# 50
 	temp = load("res://items/all/garden/garden_effect_1.tres")
 	temp.text_key = "new_effect_garden"
 	
@@ -553,7 +552,7 @@ func _ready()->void:
 	temp.effects.insert(1,temp_2)
 	
 	temp = load("res://items/all/pumpkin/pumpkin_data.tres")
-	temp.value = 36		# 40
+	temp.value = 35		# 40
 	temp.max_nb = 8		# -1
 	temp_2 = load("res://items/all/pumpkin/pumpkin_effect_2.tres")
 	temp.effects.erase(temp_2)     # Remove -2% Damage penalty
@@ -592,7 +591,7 @@ func _ready()->void:
 	temp.key = "stat_attack_speed"	# Speed
 	
 	temp = load("res://items/all/snowball/snowball_data.tres")
-	temp.value = 44		# 50
+	temp.value = 43		# 50
 	
 	temp = load("res://items/all/spicy_sauce/spicy_sauce_data.tres")
 	temp.tags = [ "stat_max_hp", "consumable", "explosive" ]	# (Luck -> Consumables)
@@ -718,10 +717,10 @@ func _ready()->void:
 	temp.value = 70		# 75
 	
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_data.tres")
-	temp.value = 78		# 80
+	temp.value = 76		# 80
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
 	temp.key = "stat_max_hp"
-	temp.value = -2 	# -3 Armor -> -2 HP
+	temp.value = -3 	# -3 Armor -> -3 HP
 	
 
 	
@@ -740,6 +739,9 @@ func _ready()->void:
 	
 	temp = load("res://items/all/hunting_trophy/hunting_trophy_data.tres")
 	temp.value = 60  # 55
+	
+	temp = load("res://items/all/improved_tools/improved_tools_data.tres")
+	temp.value = 63	 # 70
 	
 	# Laser Turret
 	temp = load("res://entities/structures/turret/laser/laser_turret_stats.tres")
@@ -826,7 +828,7 @@ func _ready()->void:
 	temp.scaling_stats = [ [ "stat_engineering", 1.0 ], [ "stat_elemental_damage", 1.0 ] ]	# 0.75, 0.75
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
-	temp.value = 73  # 92
+	temp.value = 72  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
 	temp.value = 38  # 60
@@ -2249,6 +2251,7 @@ func _ready()->void:
 	
 	# Chunky
 	temp = load("res://items/characters/chunky/chunky_data.tres")
+	temp.banned_items.push_back("item_fin")
 	temp_2 = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	

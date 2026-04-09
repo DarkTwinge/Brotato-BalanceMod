@@ -119,7 +119,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Landmines:** Spawn Frequency Every 12 seconds -> Every 10 seconds; Explosion Size 175% -> 190%
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
-* **Lumberjack Shirt:** Price 15->11
+* **Lumberjack Shirt:** Price 15->10
 * **Mutation:** Price 25->24; Knockback -3 -> -2
 * **Pencil:** -1 Crit --> -1 Luck _[Leaning away from Engineering with Crit penalties to work better with Pile of Books and new Screwdriver.]_
 * **Propeller Hat:** Price 28->25
@@ -140,9 +140,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Tier-2
 * **Acid:** Price 65->62
-* **Alien Eyes:** No Downside --> -8 Range
+* **Alien Eyes:** Price 50->47; No Downside --> -8 Range
 * **Banner:** Range 20 -> 25
-* **Blindfold:** Price 45->43; Range -15 -> -18
+* **Blindfold:** Price 45->42; Range -15 -> -18
 * **Blackbelt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->38
 * **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%
@@ -157,7 +157,6 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
 * **Fruit Basket:** Price 45->60; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -5%; Limit 4 -> 3
 * **Gambling Token:** Dodge 8% -> 9%
-* **Garden:** Price 50->48
 * **Ice Cube:** Price 50->46
 * **Leather Vest:** Price 45->48
 * **Little Frog:** Price 45->37; Pickup Range +20% -> +30%
@@ -168,7 +167,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Metal Plate:** Price 40->45
 * **Missile:** Damage 10% -> 11%
 * **Pocket Factory:** Price 75->70; Now comes with +1 Tree Stat (same as buying one Tree item) _[Makes it less reliant on finding Trees.]_
-* **Pumpkin:** Price 40->36; -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect. Limit stops it from showing up in endless if you've already maxed the possible value.]_
+* **Pumpkin:** Price 40->35; -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect. Limit stops it from showing up in endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -1 HP Regen
 * **Reinforced Steel:** Engineering 3 -> 4
 * **Riposte:** Price 40->34
@@ -177,7 +176,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Shady Potion:** Luck 20 -> 19
 * **Small Magazine:** Price 60->64; -6 Damage% -> -5 _[Slightly better fit in the situation you want it just for the Attack Speed, similar otherwise.]_
 * **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
-* **Snowball:** Price 50->44
+* **Snowball:** Price 50->43
 * **Spicy Sauce:** Explosion Size 125% -> 140%; Base Crit Chance 0% -> 1%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies)
 * **Tentacle:** Price 35->39
 * **Wheelbarrow:** Price 40->38
@@ -187,7 +186,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Bait:** Fixed Cursed Bait to only spawn one set of Lampreys
 * **Bone Dice:** Price 30->27; Chance to proc +1 Damage% 50% -> 60%
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds; Pickup Range +50% -> +40%; Now tagged for 'consumables'
-* **Eyepatch:** Price 55->63; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
+* **Eyepatch:** Price 55->61; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
 * **Fish Hook:** Price 35->38
 * **Jerky:** Price 50->55
 * **Pearl:** Price 60->53; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
@@ -212,10 +211,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Crown:** Price 70->65
 * **Fairy:** Price 85->88; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
 * **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
-* **Ghost Outfit:** Price 80->78; Armor -3 -> HP -2
+* **Ghost Outfit:** Price 80->76; Armor -3 -> HP -3
 * **Glass Canon:** Price 75->70
 * **Honey:** Price 70->51; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Hunting Trophy:** Price 55->60
+* **Improved Tools:** Price 70->63
 * **Laser Turret:** Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
 * **Lucky Charm:** Price 75->70
 * **Peacock:** Price 50->47
@@ -230,9 +230,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Strange Book:** Price 70->60
 * **Tardigrade:** Price 50->40; Now ignores self-damage effects (anything that bypasses invulnerability); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
-* **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge)
+* **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge instead of Armor)
 * **Tyler:** Tier-3 -> Tier-2; Price 75->62; Base Damage 10 -> 12; Range 200 -> 235; Engineering & Elemental Scaling 75% -> 100% _[Damage output was consistently very disappointing for the cost in all circumstances. Swapped rarity-tiers with Bot-o-mine to be more appropriate for their power levels.]_
-* **Vigilante Ring:** Price 92->73
+* **Vigilante Ring:** Price 92->72
 * **Wandering Bot:** Price 60->38
 * **Wheat:** Price 85->82; Harvesting 10 -> 15
 * **Wings:** Range 30 -> 33
@@ -244,7 +244,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Goldfish:** Price 23->16 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
 * **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
-* **Sunken Bell:** Price 65->42; Explosion Size 600% -> 750%
+* **Sunken Bell:** Price 65->40; Explosion Size 600% -> 750%
 
 ### Tier-4
 * **Big Arms:** Price 105->98
@@ -341,7 +341,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10; Can no longer be offered Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
-* **Chunky**: Can no longer be offered Doc Moth
+* **Chunky**: Can no longer be offered Doc Moth or Fin
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
 * **Cyborg:** Now makes a distinct sound effect when switching from Ranged Damage to Engineering mode
@@ -361,7 +361,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Mage:** Now gets a 2nd Sausage when starting with non-Elemental weapons; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
-* **One-armed:** Now gains a 3-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that especially helps some of their worst starters like Shuriken.]_; Can no longerbe offered Spider; Can no longer be offered lower-tier versions of your equipped weapon _[Very minor; swapping weapons is slightly easier.]_
+* **One-armed:** Now gains a 3-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that especially helps some of their worst starters like Shuriken.]_; Can no longer be offered Spider; Can no longer be offered lower-tier versions of your equipped weapon _[Very minor; swapping weapons is slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
 * **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage).
