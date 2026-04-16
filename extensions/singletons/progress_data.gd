@@ -66,7 +66,7 @@ func check_for_available_dlcs() -> void :
 		temp.speed = 115											# 100
 		
 		temp = load("res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid_stats.tres")
-		temp.health_increase_each_wave = 6.5	# 5.0
+		temp.health_increase_each_wave = 7.0	# 5.0
 
 		temp = load("res://dlcs/dlc_1/enemies/goblin_shark/goblin_shark_stats.tres")
 		temp.base_drop_chance = 0.02					# 0.01
