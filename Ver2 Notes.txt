@@ -113,6 +113,7 @@ ENGINEER items could be more common if your stat is higher than the wave
 if slow tag is to exist, wandering bot too?  maybe just remove that from old tho?
 
 ~~When testing Eyes Surgery, try some with One-armed
+^Do re-investigate the item to see if it's any good now in general
 
 Could have Mom/Monk have lower HP scaling?
 make Monk phase 1 move a bit faster but keep their reduced hp?
@@ -459,6 +460,7 @@ Ranger tagged for Range is weird, tho is important for Crossbow viability
 base sale for weapons could be +5/10% to more encourage mixed weapons
 Mastery downside is relevant for how few things? Harpoon Gun, Baby, Generalist, Arms Dealer, rarely Vagabond/Multitasker?
 	Glutton passive + Ranged weaponry
+Fuel Tank similar clumsy downside
 
 
 Goes into 3rd row of weapons: Multitasker, King
@@ -551,7 +553,6 @@ Piggy for Entre? [is it usually still value from a crate?  I guess not because t
 
 
 Other fix-if-unfixed in main:
-	-Enemies = more Lampreys
 	Look into Harpoon damage reduction getting stuck ON
 	Catling tooltip should specify enrage amount  (x2)
 
@@ -606,12 +607,8 @@ Bug:  Cursed Hourglass not going to right HP?
 	probably because the broken one isn't cursed any more
 	may be able to add curse to the broken one in `func remove_item`
 
-Burn turrent back to 35%
 
-Still need to do an emote; Cursed Walrus?
-
-Restrict Jet Pack on Chunky?
-(Could also restrict Focus on Curious or Gladiator, but prolly okay)
+Could also restrict Focus on Curious or Gladiator, but prolly okay
 
 Does Arms Dealer 1st shop get weighted based on previous weapons
 Look into how Pets scale with speed - Rats go nyyooooom
@@ -632,6 +629,9 @@ Add Shiv starter to Explorer?  How bad early
 Seashell + Javelin may work negatively with each other?? (because of every x projectile)
 
 
+Nail, Frozen Heart, Padding still kinda weird
+Relic maybe down in cost and Armor to 2
+
 
 Is Wave Info not counting +Enemy Damage e.g. Starfish?  (kinda seemed accurate tho but math isn't as expected, hmm.)
 
@@ -645,7 +645,74 @@ Make structures pushing in further from the edge when you have fewer total struc
 
 Tea not counting up in its tooltip?
 
-{Remove fin ban from Chunky, Screwdriver start from Hunter as they're vanilla now}
-
 rename junkies
 
+jousting maybe 18/24/32 damage progression
+
+[If Fresh Meat reworked, un-restricted from Wounded]
+
+Could just remove Baby Elephant or remake
+
+Check if Nightmare increasing enemy speed makes eggs hatch faster too (or in reverse, does Snail make them slower)
+
+
+{Remove fin ban from Chunky if it's actually in vanilla properly}
+{Verify Book tagged for Ele}
+{Remove Hunter=Knife starter}
+{Verify Explorer doesn't get way too many trees now}
+{Add Barricade to Wounded restricted list
+How sensible is Railgun starter for Hunter, Ranger
+{Doc MOth banned on Golem, Druid now; probably did it directly rather than categories, so fix that}
+Does Pile of Books want to have its Cursed version toned back down
+
+
+Maybe re-do Wounded restricted list, so it actually uses the item groups, which would be applicable for the Candy Bag no-useless-stats effect
+	If they don't: Add Barricade, remove Mouse
+
+Wil-o-Wisp could maybe increase your lowest of the 4 damage types? (Cute since it also works with burn turrets)
+	or random, or a random fixed one when the item is offered
+
+~~Adressed~~	
+Cacti Club:
+	Damage 10/20/30/50  -> 15/20/35/60
+	Spikes 1/1/1/1 -> 1/2/3/4
+		Scaling 50/60/70/80 -> 60/70/80/100
+Hand Harvesting 3/6/9/18 -> 3/6/12/25
+	* **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
+Hatchet Price 15/31/61/122 -> 10/22/45/91
+	Damage 5/10/20/40 -> 7/11/22/45
+	AtkSpd Scaling 0.15 -> 0.2
+	Cooldown 9/7/5/3 -> 9/8/7/6
+	* **Hatchet:** Range 125->135; Internal Recoil Duration 0.1 -> 0.05 _[Faster attack animation, netting ~7% more DPS on average.]_
+Wand
+	Price 12/26/52/105 -> 10/22/45/91
+	Piercing +1 all tiers
+	- **Wand:** Cooldown 0.87/0.78/0.70/0.53 -> 0.83/0.77/0.68/0.53 _[The slight cooldown buff lets you get 1 extra kill on Wave 1.]_
+	
+
+Monitor: Flute, Sword, Power Fist, Medical Gun, Cacti Club, Potato Thrower, Thunder Sword, Plank (may still want a tiny explosion size increase, or further scaling), Flaming Knuckles
+
+Knife Price 15/31/61/122 -> 10/22/45/91
+	Damage 6/9/12/20 -> 9/13/18/25
+	Cooldown 27/22/18/13 -> 25/21/17/12
+Brick Tier 3/4 Mat Drops  60/120 -> 75/200
+Screwdriver
+	Range 125 -> 135
+	Crit Damage 2.0(All) -> 2.0/2.15/2.3/2.5
+	Engineering Scaling 0.5(All) -> 0.5/0.6/0.7/0.8
+	Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only required one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84; Landmine Explosion Size 175% -> 190% _[A modest rework+buff: with Pile of Books at blue-tier, Crit can make more sense on Engineering builds, and Screwdrivers are a way to care about that crit.]_
+Minigun
+	Damage 1/3 -> 2/5
+	Piercing 0.5/0.5 -> 0.75/0.75
+	Tier-4 Cooldown 2->3
+	- **Minigun:** Base Damage 1/3 -> 2/4; Now has 25%/35% Knockback Piercing (more effective against resistant enemies); Price 127/255 -> 108/191 _[Often a more-expensive but worse SMG in vanilla, this gives it some unique utility. Build additional Knockback to really notice the effect.]_
+
+
+Eval Rail Gun
+
+
+
+Has Saw been left behind
+>pile of books  price also dropped from 70 to 60 alongside the other buffs; monitor if too much
+>Tier-4 Power Fist went all the way up to 80 damage, I had it at 70
+>Flute is still expensive but let's see how the cooldown buffs feels

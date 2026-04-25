@@ -69,6 +69,11 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 			var explode_when_below_hp_effects = RunData.get_player_effect(Keys.explode_when_below_hp_hash, player_index)
 			var nb_explosions = explode_on_hit_effects.size() + explode_when_below_hp_effects.size()
 
+			var die_in_one_hit = RunData.get_player_effect(Keys.die_in_one_hit_hash, player_index)
+			if die_in_one_hit > 0:
+				current_stats.health = 0
+				emit_signal("health_updated", self, current_stats.health, max_stats.health)
+
 			for effect in explode_on_hit_effects:
 				explode(_explode_on_hit_stats[effect], effect, nb_explosions)
 
@@ -100,6 +105,13 @@ func take_damage(value: int, args:TakeDamageArgs) -> Array:
 		SoundManager2D.play(sound, global_position, 0, 0.2, true)
 
 		if current_stats.health <= 0:
+			Utils.default_die_args.from = args.from
+			Utils.default_die_args.knockback_vector = Vector2.ZERO
+			Utils.default_die_args.cleaning_up = false
+			Utils.default_die_args.enemy_killed_by_player = false
+			Utils.default_die_args.killed_by_player_index = - 1
+			Utils.default_die_args.killing_blow_dmg_value = 0
+			Utils.default_die_args.is_burning = false
 			die(Utils.default_die_args)
 
 		emit_signal(

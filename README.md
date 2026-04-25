@@ -35,8 +35,8 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Candle is cheaper & reduces enemy damage. White Flag is cheaper & reduces max enemies.
 * Fresh Meat removed.
 * Chameleon reworked: now gives Luck.
-* Tyler buffed and moved to tier-2; Bot-o-mine nerfed and moved to Tier-3. Catling Gun & Bonk Dog nerfed.
 * Utility Crit items work better as speculative picks: Pile of Books is Blue Tier & Eyepatch comes with more Crit.
+* Tyler buffed; Bot-o-mine nerfed and moved to Tier-3. Catling Gun & Bonk Dog nerfed.
 * Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring, Starfish) are better (as you have much less time to profit from them).
 * Power Generator now reduces your HP as it powers up.
@@ -101,68 +101,72 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby Gecko:** Range 10 -> 12
 * **Bag:** Price 15->19
 * **Beanie:** Range -6 -> -7
-* **Book:** Price 8->9; Now also gives +2% Crit Chance (and is tagged for Crit Chance)
+* **Book:** Price 15->16
 * **Boxing Glove:** Knockback +3 -> +4
 * **Broken Mouth:** Price 25->26
 * **Cake:** Price 15->16
 * **Coupon:** Price 15->20
-* **Cute Monkey:** Price 25->30
-* **Duct Tape:** Price 20->17
+* **Cute Monkey:** Price 25->31
+* **Duct Tape:** Price 20->18
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
 * **Fresh Meat:** Removed from the game. _[Having three separate tier-1 items that give +2% Lifesteal is unnecessary.]_
-* **Gentle Alien:** Price 30->32
+* **Gentle Alien:** Price 30->33
 * **Glasses:** Range 20 -> 22
-* **Gummy Berserker:** Range 25 -> 30
+* **Gummy Berserker:** Price 25->24; Range 25 -> 30
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->23
-* **Helmet:** Price 15->18; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
+* **Helmet:** Price 15->19; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
 * **Landmines:** Spawn Frequency Every 12 seconds -> Every 10 seconds; Explosion Size 175% -> 190%
+* **Lemonade:** Price 15->16
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
 * **Lumberjack Shirt:** Price 15->10
 * **Mutation:** Price 25->24; Knockback -3 -> -2
-* **Pencil:** -1 Crit --> -1 Luck _[Leaning away from Engineering with Crit penalties to work better with Pile of Books and new Screwdriver.]_
+* **Pencil:** Price 8->9; Now also gives +2% Crit Chance (and is tagged for Crit Chance)
 * **Propeller Hat:** Price 28->25
 * **Scar:** Price 25->24; Range -8 -> -11
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Price reduction helps encourage mixed builds.]_
 * **Sharp Bullet:** Knockback -3 -> -2
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
+* **Tree:** Price 15->16
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%); Speed -3% -> -2%
 * **Weird Food:** Price 20->24; Dodge -2% --> Speed -2%
 * **Weird Ghost:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
 #### DLC
 * **Corrupted Shard:** Price 12->15; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 * **Feather:** Price 18->19
-* **Penguin:** Price 25->27; Base HP Regen 1 -> 0; HP Regen Per Consumable 1 -> 2; Limit 3 -> 2
+* **Penguin:** Price 25->28; Base HP Regen 1 -> 0; HP Regen Per Consumable 1 -> 2; Limit 3 -> 2
 * **Small Fish:** Price 18->20; Damage Multiplier +10% to targets over 75% HP -> +15% to targets over 70% HP; Attack Speed -3% -> -4%
 * **Whistle:** Extra Loot Goblins +50% -> +60% _[This still leaves it as a worse economy item than Coupon or Bag.]_
 
 ### Tier-2
-* **Acid:** Price 65->62
-* **Alien Eyes:** Price 50->47; No Downside --> -8 Range
+* **Acid:** Price 65->63
+* **Alien Eyes:** Price 50->46; No Downside --> -8 Range
+* **Bait:** Price 25->26
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Price 45->42; Range -15 -> -18
-* **Blackbelt:** XP Gain +25% -> +30%
+* **Black Belt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->38
 * **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%
-* **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->60; Laser Damage 10 -> 9; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75% _[Swapped rarity tiers with Tyler to better represent their power levels, even after their respective nerfs and buffs.]_
+* **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->60; Laser Damage 10 -> 9; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75%
 * **Campfire:** Price 40->39
 * **Catling Gun:** Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
 * **Celery Tea:** Price 35->31; Extra Enemy HP +100% -> +70%
 * **Clockwork Wasp:** Price 45->46
-* **Cog:** Damage -4% -> -2% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_
+* **Cog:** Damage -4% -> -1% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->34
-* **Energy Bracelet:** Price 55->56; Crit Chance 4% -> 5%
-* **Fruit Basket:** Price 45->60; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -5%; Limit 4 -> 3
+* **Energy Bracelet:** Crit Chance 4% -> 5%
+* **Fruit Basket:** Price 45->58; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -6%; Limit 4 -> 3
 * **Gambling Token:** Dodge 8% -> 9%
 * **Ice Cube:** Price 50->46
-* **Leather Vest:** Price 45->48
+* **Incendiary Turret:** Price 40->39; Engineering Scaling 33% -> 35% _[Better rounding.]_
+* **Leather Vest:** Price 45->49
 * **Little Frog:** Price 45->37; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
 * **Lure:** Price 34->41
-* **Medal:** Price 55->61; Crit Chance -4% -> -3%
+* **Medal:** Price 55->62; Crit Chance -4% -> -3%
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->45
 * **Missile:** Damage 10% -> 11%
@@ -175,10 +179,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Scope:** Range 25 -> 40
 * **Shady Potion:** Luck 20 -> 19
 * **Small Magazine:** Price 60->64; -6 Damage% -> -5 _[Slightly better fit in the situation you want it just for the Attack Speed, similar otherwise.]_
-* **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -3% Attack Speed
+* **Snail:** Enemy Speed -8% -> -10%; -3% Speed --> -4% Attack Speed
 * **Snowball:** Price 50->43
 * **Spicy Sauce:** Explosion Size 125% -> 140%; Base Crit Chance 0% -> 1%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies)
 * **Tentacle:** Price 35->39
+* **Tyler:** Engineering & Elemental Scaling 90% -> 100% _[Almost all my buffs are now vanilla, so I only bump the scaling slightly now.]_
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
 * **White Flag:** Price 40->30; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->80 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
@@ -188,8 +193,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cauldron:** +20 Damage% for 2 seconds -> +25 Damage% for 3 seconds; Pickup Range +50% -> +40%; Now tagged for 'consumables'
 * **Eyepatch:** Price 55->61; Crit Chance 3% -> 6% _[Now works better as an entry point into Crit.]
 * **Fish Hook:** Price 35->38
-* **Jerky:** Price 50->55
-* **Pearl:** Price 60->53; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
+* **Jerky:** Price 50->57
+* **Pearl:** Price 60->52; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
 * **Saltwater:** Extra Speed When Hit 10% -> 15%
 * **Spyglass:** Price 30->32
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
@@ -200,18 +205,18 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Alloy:** Melee Damage 3 -> 5; Dodge -6% -> -5%
 * **Baby With a Beard:** Ranged Damage Scaling 100% -> 75%
 * **Ball and Chain:** Price 75->78
-* **Bandana:** Price 75->70; Added Effect: +5% Piercing Damage
-* **Barricade:** Price 75->65; Armor While Not Moving 8 -> 10; Knockback 3 -> 4; Speed -5% -> -3%
+* **Bandana:** Price 75->70; Added Effect: +5% Piercing Damage; Damage% -10% -> -8%
+* **Barricade:** Price 75->63; Armor While Not Moving 8 -> 10; Knockback 3 -> 4; Speed -5% -> -3%
 * **Blood Donation:** Price 50->40 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->70; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
 * **Candy Bag:** Price 70->74; Random Stats Gained 8 -> 5 & No longer gives useless stats; Extra Elite Chance +10% --> Enemy Damage Next Wave +25% _[The extra elite effect was too high-variance, meaning the item was never worth taking for high-winrate players. It also sucked to hit stats your character literally couldn't use, so the system that prevents useless items now also blocks useless Candy stats.]_
-* **Chameleon:** Price 70->48; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
+* **Chameleon:** Price 70->47; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
 * **Community Support:** Price 75->70 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->65
 * **Fairy:** Price 85->88; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
-* **Fin:** Speed 10% -> 9%; Luck -8 -> -9 
-* **Ghost Outfit:** Price 80->76; Armor -3 -> HP -3
+* **Fin:** Price 65->64; Speed 10% -> 9%; Luck -8 -> -9 
+* **Ghost Outfit:** Price 80->77; Armor -3 -> HP -3
 * **Glass Canon:** Price 75->70
 * **Honey:** Price 70->51; Ranged Damage 3 -> 2; Explosion Size 5% -> 10%; -3% Dodge --> No Penalty; -3% Speed --> -20 Range _[Reworked to make it worthwhile when you only care about the Explosion side, and swapped the downside so that it wasn't the same as Reinforced Steel.]_
 * **Hunting Trophy:** Price 55->60
@@ -219,44 +224,46 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Laser Turret:** Crit Damage 2.0x -> 2.5x (When you have Pile of Books)
 * **Lucky Charm:** Price 75->70
 * **Peacock:** Price 50->47
-* **Pile of Books:** Tier-3 -> Tier-2; Crit Chance 3% -> 5% _[This is a build-around item, but at purple-tier you usually find it too late to be able to meaningfully build into it.]_
 * **Plastic Explosive:** Price 60->51
 * **Poisonous Tonic:** Range 15 -> 27
 * **Power Generator:** Price 65->59; -5% Damage --> -1 Max HP Per 6% Speed
 * **Rip and Tear:** (Clarified effect of having multiple copies)
 * **Shackles:** Price 80->88; Range 80 -> 88
 * **Shmoop:** Price 60->61; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
-* **Statue:** Price 60->55
+* **Statue:** Price 60->54
+* **Stone Skin:** Attack Speed -6% -> -7%
 * **Strange Book:** Price 70->60
 * **Tardigrade:** Price 50->40; Now ignores self-damage effects (anything that bypasses invulnerability); Added to Dodge Item Tag Pool
 * **Toolbox:** Engineering 6 -> 7; Attack Speed -8% -> -5%
 * **Triangle of Power:** Armor +1 --> Dodge +4%; (Now tagged for Dodge instead of Armor)
-* **Tyler:** Tier-3 -> Tier-2; Price 75->62; Base Damage 10 -> 12; Range 200 -> 235; Engineering & Elemental Scaling 75% -> 100% _[Damage output was consistently very disappointing for the cost in all circumstances. Swapped rarity-tiers with Bot-o-mine to be more appropriate for their power levels.]_
 * **Vigilante Ring:** Price 92->72
 * **Wandering Bot:** Price 60->38
+* **Warrior Helm:** Price 80->82
 * **Wheat:** Price 85->82; Harvesting 10 -> 15
 * **Wings:** Range 30 -> 33
-* **Wisdom:** Price 85->77
+* **Wisdom:** Price 85->76
 #### DLC
 * **Ball and Chain (Cursed):** Weapon Cooldown Floor ~0.35s -> ~0.5s
-* **Crystal:** Price 65->53; Engineering -2 --> Max HP -2 _[Engineering builds rarely care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
+* **Crystal:** Price 65->52; Engineering -2 --> Max HP -2 _[Engineering builds rarely care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
 * **Goblet:** Price 70->69; Chance of heal per kill 15% -> 12%
 * **Goldfish:** Price 23->16 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
+* **Greek Fire:** Price 100->105
 * **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
 * **Sunken Bell:** Price 65->40; Explosion Size 600% -> 750%
 
 ### Tier-4
-* **Big Arms:** Price 105->98
 * **Diploma:** XP Gain +50% -> +60%
-* **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; Damage -15% -> -5% _[Lets it fit in more reasonably with mixed builds, and gives a little more emphasis on the more-unique size factor rather than just damage.]_
-* **Extra Stomach:** Now tagged for 'consumables' instead of 'luck'.
-* **Focus:** Price 110->102; Attack Speed penalty per weapon -3% -> -4%
+* **Esty's Couch:** Price 100->90
+* **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; Damage -15% -> Armor -1 _[Lets it fit in more reasonably with mixed builds, and gives a little more emphasis on the more-unique size factor rather than just damage.]_
+* **Exoskeleton:** Price 90->95
+* **Extra Stomach:** Price 100->105; Now tagged for 'consumables' instead of 'luck'.
+* **Focus:** Price 110->104; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
 * **Gobbler's Hat:** Dodge -10% -> -5%; Additional Downside of -2 Armor
 * **Heavy Bullets:** Price 100->95; Range +10 --> Crit Chance +5%; Crit Chance -5% --> Accuracy -25%; (Replaced 'Range' tag with 'Crit Chance') _[The Ranged Weapons section below also covers some Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
 * **Hourglass:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
-* **Jet Pack:** Price 100->95; HP -5 -> -3
+* **Jet Pack:** Price 100->96; HP -5 -> -3
 * **Lucky Coin:** Price: 105->70; Armor -2 -> -1
 * **Mammoth:** Price 110->115; Melee Damage 20 -> 17; HP Regen 5 -> 4; Speed -3% -> -5%
 * **Medikit:** Price: 95 -> 105; Starting HP Regen 10 -> 4
@@ -267,10 +274,13 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Retromation's Hoodie:** +2% Attack Speed for every 1% Dodge --> +3% Attack Speed for every 2% Dodge
 * **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
 * **Robot Arm:** Price 100->92
+* **Scapegoat:** Price 110->100
 * **Spider:** Price 110->102; Attack Speed Per Different Weapon 6% -> 8%; Damage 12% -> 8%
 * **Wolf Helmet:** Price 90->95; Additional Downside of -5 Harvesting
 #### DLC
-* **Kraken's Eye:** Price 110->90
+* **Ashes:** Range 100 -> 80
+* **Axolotl:** Price 130->115
+* **Kraken's Eye:** Price 110->105
 * **Sifd's Relic (Cursed):** Base Additional Dodge 10% -> 5% _[The Armor increasing from Curse is already strong, so the additional Dodge is now a solid ~9% instead of bananas ~18%.]_
 
 ## Weapons
@@ -280,37 +290,31 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Guns:** 10/20/30/40/50 Range -> 2/4/6/8/10 Attack Speed _[Helps Guns care about your Range stat more often.]_
 
 ### Melee
-* **Cacti Club:** Base Projectile Damage 1->2 (All Tiers)
 * **Chopper:** Base Damage 6/12/18/30 -> 7/12/17/27 _[The new vanilla Chopper focuses its power heavily on the Tier-4 version and this smooths out the curve a smidge.]_
-* **Excalibur:** -3 Armor Per Weapon -> -2
 * **Fist:** Damage 8/16/32/64 -> 7/14/28/56; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.63
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.63
-* **Ghost Flint:** Range 150/160/170/180 -> 165/175/185/200; Tier-1 Damage 6 -> 7 _[Helps tier-1 be able to proc on characters that don't have extra damage to start & mixes better with Axes.]_
-* **Hammer:** Price 51/95/190 -> 46/86/151; Range 175(All) -> 180/190/200; Cooldown 1.67/1.59/1.50 -> 1.63/1.55/1.48 (accounts for the increased Range); Now has 10%/15%/20% Knockback Piercing (more effective against resistant enemies); Knockback 30/40/50 -> 25/30/40
-* **Hand:** Price 10/22/45/91 -> 9/19/33/60; Harvesting 3/6/9/18 -> 2/5/10/20 _[This progression makes it sometimes worth upgrading past Blue-tier, which is broadly just a mistake in vanilla.]_
-* **Hatchet:** Range 125->135; Internal Recoil Duration 0.1 -> 0.05 _[Faster attack animation, netting ~7% more DPS on average.]_
+* **Ghost Flint:** Tier-1 Damage 6 -> 7
+* **Hammer:** Range 175(All) -> 180/190/200; Cooldown 1.67/1.59/1.50 -> 1.63/1.55/1.48 (accounts for the increased Range); Knockback 30/40/50 -> 25/30/40
 * **Jousting Lance:** Speed Bonus 2%/3%/4%/5% -> 1%/2%/4%/5%
 * **Lightning Shiv:** Cooldown 1.01/0.93/0.86/0.78 -> 1.03/0.96/0.89/0.81; (Fixed tooltip bounce count) _[Most of my Shiv nerfs are now in vanilla; I've opted to keep this small additional cooldown nerf.]_
-* **Plank:** Explosion Size 75%(All) -> 80%/90%/100%/110%
 * **Plasma Sledge:** Explosion Size 100%/125% -> 120%/140%; Explosion Chance 25%/50% -> 33%/50%; Range 175(All) -> 190/200; Cooldown 1.55/1.49 -> 1.52/1.46 (accounts for the increased Range); Now has 10%(All) Knockback Piercing (more effective against resistant enemies); Knockback 30(All) -> 25(All)
-* **Power Fist:** Explosion Size 75%/100% -> 100%/125%; Tier 4 Damage 60 -> 70
 * **Scissors:** Crit Chance 10%/12%/15%/20% -> 10%/15%/20%/25%; Tier-3/4 Cooldown 0.94/0.86 -> 0.93/0.83 _[Makes higher tier versions more worth using; Buffing cooldown helps their potential as a healing add-in to a Precise build, and increasing base crit chance helps it fit in better with its Precise peers.]_
-* **Screwdriver:** Range 125->135; Cooldown 1.05/1.0/0.97/0.87 -> 0.94/0.89/0.84/0.78; Crit Chance 10%/15%/20%/30% -> 10%/12%/15%/20%; Crit Damage 2x(All) -> 2x/2.25x/2.5x/3.0x; Engineering Scaling 50%(All) -> 50%/60%/70%/80%; Tier-4 Mine Rate 3 seconds -> 4 seconds; _[Landmines max at every 2 seconds which only required one Wasp, so this gives room to grow.]_ Price 10/22/45/91 -> 11/23/46/84; Landmine Explosion Size 175% -> 190% _[A modest rework+buff: with Pile of Books at blue-tier, Crit can make more sense on Engineering builds, and Screwdrivers are a good option for caring about that crit.]_
+* **Screwdriver:** Tier-4 Mine Rate 3 seconds -> 4 seconds _[Maxing at 2 seconds only required a single Wasp, so this gives room to grow.]_; Landmine Explosion Size 175% -> 190%
 * **Sharp Tooth:** No longer part of the Precise Set (now only Primitive); +1% Lifesteal for every XX% missing health 25%/20%/15%/10% -> 20%/17%/14%/10%; Melee Damage Scaling 50%(All) -> 60%(All); Lifesteal Scaling 50%/65%/80%/100% -> 60%/70%/80%/100%; Cooldown 1.14/1.07/1.00/0.93 -> 1.11/1.04/0.97/0.89 _[Being part of the two biggest Sets when it really wants to be your only weapon made it harder to find (and also polluted the pool for other Precise weapons). Low-tier Teeth felt awful and struggled to get off the ground so they kick in the Lifesteal bonuses earlier, and all tiers have less-bad Melee Scaling, making it easier to directly increase their damage (tho still worse than normal weapons).]_
 * **Spear:** Range 350/375/400/500 -> 325/350/375/450; Cooldown 1.52/1.40/1.28/1.24 -> 1.61/1.48/1.35/1.28 (accounts for the lowered Range)
-* **Spiky Shield:** Price 15/31/61/122 -> 17/34/66/120; Damage Scaling From Armor 100%/125%/150%/200% -> 75%/100%/125%/150%
+* **Spiky Shield:** Price 15/31/61/122 -> 17/34/66/120; Damage Scaling From Armor 80%/100%/130%/170% -> 75%/100%/125%/150% (Vanilla partially implemented this nerf, but it's still strong with the full reduction.)
 * **Stick:** Base Damage 8/9/10/12 -> 7/8/10/17; Tier-4 Damage-Per-Stick 10 -> 9 _[Tier-4 has the same damage with 6 sticks but is stronger with fewer sticks, giving more room to switch your build out of Sticks if desired.]_
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
 * **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
-* **Anchor:** Price 51/95/190 -> 39/74/133; Damage Scaling From Curse 65%/90%/125% -> 70%/100%/140%
+* **Anchor:** Price 48/90/175 -> 39/74/133; Tier-4 Damage Scaling From Curse 125% -> 140%
 * **Brick:** Can no longer break during Wave 1; Breaking SFX slightly louder
 * **Mace:** Price 46/92/185 -> 30/59/105; Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between.]_
-* **War Hammer:** Now in the Tool set instead of Heavy; Cooldown 2.11/1.95 -> 2.0/1.61; Engineering Scaling 100%/150% -> 150%/200%; Crit Damage 1.5x -> 1.75x
+* **War Hammer:** Cooldown 2.11/1.95 -> 2.0/1.7; Crit Damage 1.5x -> 1.75x
 
-- **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Trident: 52/96/200 -> 51/95/168; War Hammer 130/255 -> 119/209
-- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 225; Fist: 91 -> 81; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hatchet: 122 -> 111; Hiking Pole: 130 -> 120; Knife: 122 -> 111; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 130 -> 120; Rock: 91 -> 81; Scissors: 122 -> 111; Scythe: 285 -> 265; Sharp Tooth: 105 -> 95; Spear: 149 -> 133; Spiky Shield: 122 -> 111; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
+- **Additional Price Adjustments:** Jousting Lance: 20/36/72/132 -> 20/36/71/128; Lightning Shiv 18/36/66/142 -> 18/36/68/125; Plasma Sledge 136/272 -> 122/218; Trident: 49/96/200 -> 49/94/166; War Hammer 130/255 -> 119/209
+- **Other Tier-4 Price Reductions:** Brick: 40 -> 36; Cacti Club: 149 -> 133; Captain's Sword: 210 -> 198; Chainsaw: 242 -> 210; Chopper: 122 -> 111; Circular Saw: 173 -> 151; Claw: 110 -> 100; DEX-troyer: 315 -> 285; Drill 250 -> 240; Excalibur: 230 -> 225; Fist: 91 -> 81; Flaming Brass Knuckles: 173 -> 151; Ghost Axe: 149 -> 133; Ghost Flint: 105 -> 95; Hand: 91 -> 81; Hatchet: 91 -> 81; Hiking Pole: 130 -> 120; Knife: 91 -> 81; Lute: 122 -> 111; Plank: 122 -> 111; Power Fist: 221 -> 198; Pruner: 95 -> 93; Quarterstaff: 122 -> 111; Rock: 91 -> 81; Scissors: 122 -> 111; Screwdriver 91 -> 91; Scythe: 285 -> 265; Sharp Tooth: 105 -> 95; Spear: 149 -> 133; Spoon: 122 -> 111; Stick: 91 -> 81; Sword: 190 -> 168; Thief Dagger: 105 -> 95; Thunder Sword: 238 -> 209; Torch: 91 -> 81; Vorpal Sword 200 -> 180; Wrench: 149 -> 133
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%
@@ -318,22 +322,18 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Double-barrel Shotgun:** (Firing SFX slightly quieter)
 - **Icicle:** Range 400 -> 350; Cooldown 1.03/0.95/0.87/0.70 -> 1.05/0.97/0.88/0.72; Knockback 5 -> 3
 - **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95; Ranged Damage Scaling 400%/450%/500%/600% -> 400%/500%/600%/700% _[Cooldown tweak allows 1 extra shot during Wave 1.]_
-- **Minigun:** Base Damage 1/3 -> 2/4; Now has 25%/35% Knockback Piercing (more effective against resistant enemies); Price 127/255 -> 108/191 _[Often a more-expensive but worse SMG in vanilla, this gives it some unique utility. Build additional Knockback to really notice the effect.]_
 - **Nuclear Launcher:** Cooldown 2.12 -> 2.20; Base Damage 60/120 -> 50/100; Range 800 -> 650; Ranged Scaling 100%/100% -> 125%/125%; Elemental Scaling 100%/100% -> 150%/150% _[Similar strength in Elemental builds, a touch weaker otherwise.]_
-- **Obliterator:** Projectile Hitbox Width +25%; Tier-3 Range 800 -> 700; Tier-4 Base Damage 350 -> 400
-- **Potato Thrower:** Added to the Blunt Weapon Set; Base Damage 1(All) -> 2/3/4 _[Blunt Set allows it to find some synergy options when picked as a starting weapon.]_
-- **Revolver:** Price 20/34/70/130->18/36/68/125; Range 450 -> 425; Big Reload Cooldown 2.07s/1.93s/1.80s/1.67s -> 2.30s/2.15s/2.00s/1.85s _[About 5% slower attack rate overall.]_
+- **Obliterator:** Projectile Hitbox Width +25%; Tier-3 Range 800 -> 700
+- **Potato Thrower:** Added to the Blunt Weapon Set _[Blunt Set allows it to find some synergy options when picked as a starting weapon.]_
+- **Revolver:** Price 20/34/70/130 -> 18/36/68/125; Range 450 -> 425; Big Reload Cooldown 2.07s/1.93s/1.80s/1.67s -> 2.30s/2.15s/2.00s/1.85s _[About 5% slower attack rate overall.]_
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
 - **SMG:** Internal Cooldown 4/4/4/3 -> 5/5/5/4; (Firing SFX slightly quieter) _[In practice, ~8% worse cooldown at 0% Attack Speed, but will end up the same with more Attack Speed. Breakpoint before Attack Speed usefulness plateaus is now 67% for Tiers 1-3 and 51% for Tier-4. (Still also has a spike at 201% for all Tiers.)]_
 - **Sniper Gun:** Price 115/245 -> 108/191; Range 800/1000 -> 600/700; Ranged Damage Scaling 100%(All) -> 250%/350%; Tier-4 Crit Chance 20% -> 25% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much base Range that adding more is irrelevant.]_
-- **Wand:** Cooldown 0.87/0.78/0.70/0.53 -> 0.83/0.77/0.68/0.53 _[The slight cooldown buff lets you get 1 extra kill on Wave 1.]_
 #### DLC
-- **Blunderbuss:** Tier-3 Damage 50 -> 45
-- **Flute:** Price 20/45/80/165 -> 18/40/80/150
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 75%/85%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
 
-* **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Obliterator 127/255 -> 122/218; Particle Accelerator: 144/289 -> 130/232; Potato Thrower: 36/69/139 -> 33/64/114. Blunderbuss: 45/95/192 -> 46/90/160; Javelin: 18/36/66/140 -> 18/36/68/125
-* **Other Tier-4 Price Reductions:** Chain-gun: 300->265; Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 260; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Nuclear Launcher: 289 -> 251; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 105 -> 95
+* **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Obliterator 127/255 -> 122/218; Particle Accelerator: 144/289 -> 130/232; Potato Thrower: 36/69/139 -> 33/64/114. Blunderbuss: 45/95/192 -> 46/90/160; Flute: Price 20/45/80/165 -> 20/42/80/150; Javelin: 18/36/66/140 -> 18/36/68/125
+* **Other Tier-4 Price Reductions:** Chain-gun: 300->265; Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 260; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Mini-gun 255 -> 225; Nuclear Launcher: 289 -> 251; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 91 -> 81
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
@@ -341,7 +341,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10; Can no longer be offered Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
-* **Chunky**: Can no longer be offered Doc Moth or Fin
+* **Chunky**: Can no longer be offered Doc Moth, Jet Pack, or Fin
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
 * **Cyborg:** Now makes a distinct sound effect when switching from Ranged Damage to Engineering mode
@@ -354,6 +354,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fisher:** Extra HP 5 -> 8
 * **Gladiator:** -30 Luck -> -40
 * **Golem:** Can no longer be offered Doc Moth
+* **Jack:** Damage Vs Elites/Bosses 125% -> 120%; Extra Enemy HP 175% -> 180%
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
 * **Loud:** -3 Harvesting per Wave -> -5; Damage 30% -> 25%
@@ -366,7 +367,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
 * **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage).
 * **Soldier:** 200% Pickup Range -> 125% _[Gives them some reason to care about Pickup Range items.]_
-* **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2
+* **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2; Can no longer be offered Barricade.
 * **Streamer:** Now also favored to find Stand-still items.
 * **Vagabond:** Can no longer be offered Focus.
 * **Wildling:** No longer starts with a Stick.
@@ -442,7 +443,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth, Hatchet
 * **Golem:** Added Quarterstaff
-* **Hunter:** Added Knife, Screwdriver
+* **Hunter:** Added Knife
 * **Jack:** Removed Shuriken
 * **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle
 * **Masochist:** Added Hatchet
@@ -510,18 +511,18 @@ These changes were originally made for Balance Mod but are now implemented into 
 - Fairy & King show icons for relevant items in shops; Renegade now also shows icons for crates.
 - Fixed Crit to work properly for: Glutton, Ogre, Spicy Sauce, Rip & Tear.
 - Item Nerfs to: Exoskeleton, Coffee, Plant, Tentacle, Bloody Hand, Extra Stomach, Lure
-- Item Buffs to: Sifd's Relic, Eyes Surgery, Spicy Sauce, Snail, Wisdom, Gambling Token, Little Frog, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms
-- Item Tweaks to: Stone Skin, Tyler
+- Item Buffs to: Sifd's Relic, Eyes Surgery, Spicy Sauce, Snail, Wisdom, Gambling Token, Little Frog, Gummy Berserker, Scar, Black Belt, Bean Teacher, Diploma, Big Arms, Tyler, Pile of Books, Tyler (again)
+- Item Tweaks to: Stone Skin, Book (formerly Pencil)
 - Item Rework of: Robot Arm
-- Weapon Nerfs to: Lightning Shiv, Flamethrower, Stick
-- Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Scissors, Chopper, Crossbow, Medical Gun, Wand, Rock, Pistol, Hammer
+- Weapon Nerfs to: Lightning Shiv, Flamethrower, Stick, Blunderbuss
+- Weapon Buffs to: Torch, Sniper Gun, Plank, Cacti Club, Scissors, Chopper, Crossbow, Medical Gun, Wand, Rock, Pistol, Hammer, Excalibur, Hammer (again), Cacti Club (again), Ghost Flint, Power Fist, Anchor, War Hammer, Obliterator, Potato Thrower, Plank (again), Hand (T3-4), Hatchet, Screwdriver
 - Character Buffs to: Artificer, Jack
 - Character Nerfs to: Knight
 - Character Tweaks to: Doctor, Mutant
 - Elite Nerfs to: Croc, Mother
 - Elite Buffs to: Rhino
 - Elite Buff+Rework of: Gargoyle
-- Fixed Tagging/Banning for 20+ items.
+- Fixed Tagging/Restricting for 30+ items.
 - Which items are 'structures' is indicated in the shop.
 - Pocket Factory now counts as a Structure. Fixed Incendiary Turret tooltip's incorrect damage rounding.
 - HP tweaks to Looter and Helmet enemies. Drop rate tweak to Tentacle enemy. Knockback tweak to Spawned Magician enemy.

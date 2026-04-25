@@ -148,7 +148,7 @@ func check_for_available_dlcs() -> void :
 		temp.value = 19   # 18
 
 		temp = load("res://dlcs/dlc_1/items/penguin/penguin_data.tres")
-		temp.value = 27		# 25
+		temp.value = 28		# 25
 		temp.max_nb = 2		# 3
 		temp_2 = load("res://dlcs/dlc_1/items/penguin/effects/penguin_effect_0.tres")
 		temp.effects.erase(temp_2)
@@ -191,10 +191,10 @@ func check_for_available_dlcs() -> void :
 		temp.value = 38		# 35
 
 		temp = load("res://dlcs/dlc_1/items/jerky/jerky_data.tres")
-		temp.value = 55		# 50
+		temp.value = 57		# 50
 
 		temp = load("res://dlcs/dlc_1/items/pearl/pearl_data.tres")
-		temp.value = 53   # 60
+		temp.value = 52   # 60
 		temp.max_nb = 15	# 20
 		temp = load("res://dlcs/dlc_1/items/pearl/effects/pearl_effect_1.tres")
 		temp.value = 4		# 3 (Chance to find an extra Pearl)
@@ -211,7 +211,7 @@ func check_for_available_dlcs() -> void :
 
 		# Items: Tier-3 #
 		temp = load("res://dlcs/dlc_1/items/crystal/crystal_data.tres")
-		temp.value = 53		# 65
+		temp.value = 52		# 65
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0c.tres")
 		temp.key = "stat_max_hp"	# Engineering
 		temp = load("res://dlcs/dlc_1/items/crystal/effects/crystal_effect_0b.tres")
@@ -239,8 +239,14 @@ func check_for_available_dlcs() -> void :
 		
 
 		# Items: Tier-4 #
+		temp = load("res://dlcs/dlc_1/items/ashes/effects/ashes_effect_2.tres")
+		temp.value = 80			# 100 (Range)
+		
+		temp = load("res://dlcs/dlc_1/items/axolotl/axolotl_data.tres")
+		temp.value = 115		# 130
+		
 		temp = load("res://dlcs/dlc_1/items/krakens_eye/krakens_eye_data.tres")
-		temp.value = 90		# 110
+		temp.value = 105		# 110
 		temp = load("res://dlcs/dlc_1/items/krakens_eye/effects/krakens_eye_effect_0.tres")
 		temp.text_key = "new_effect_chance_explode_on_hit"
 
@@ -272,12 +278,8 @@ func check_for_available_dlcs() -> void :
 		# Anchor
 		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/2/anchor_2_data.tres")
 		temp.value = 39				# 51
-		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/2/anchor_2_stats.tres")
-		temp.scaling_stats = [ [ "stat_melee_damage", 1.0 ], [ "stat_curse", 0.7 ] ]		# Curse 0.65
 		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/3/anchor_3_data.tres")
 		temp.value = 74				# 95
-		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/3/anchor_3_stats.tres")
-		temp.scaling_stats = [ [ "stat_melee_damage", 1.25 ], [ "stat_curse", 1.0 ] ]		# Curse 0.9
 		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/4/anchor_4_data.tres")
 		temp.value = 133			# 190
 		temp = load("res://dlcs/dlc_1/weapons/melee/anchor/4/anchor_4_stats.tres")
@@ -341,34 +343,23 @@ func check_for_available_dlcs() -> void :
 		temp.value = 111		# 122
 		
 		# Trident
-		temp = load("res://dlcs/dlc_1/weapons/melee/trident/2/trident_2_data.tres")
-		temp.value = 51			#	52
 		temp = load("res://dlcs/dlc_1/weapons/melee/trident/3/trident_3_data.tres")
-		temp.value = 95			#	96
+		temp.value = 94			#	96
 		temp = load("res://dlcs/dlc_1/weapons/melee/trident/4/trident_4_data.tres")
-		temp.value = 168		#	200
+		temp.value = 166		#	200
 		
 		# War Hammer
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/3/war_hammer_3_data.tres")
 		temp.value = 119				#	130
-		temp_2 = load("res://items/sets/heavy/heavy_set_data.tres")
-		temp.sets.erase(temp_2)
-		temp_2 = load("res://items/sets/tool/tool_set_data.tres")
-		temp.sets.push_back(temp_2)	# Replaces 'Heavy' set with 'Tool'
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/3/war_hammer_3_stats.tres")
 		temp.crit_damage = 1.75	# 1.5
 		temp.cooldown = 83			# 90
-		temp.scaling_stats = [ [ "stat_melee_damage", 1.5 ], [ "stat_engineering", 1.5 ] ]	# 1.5, 1.0
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_data.tres")
 		temp.value = 209				#	255
-		temp_2 = load("res://items/sets/heavy/heavy_set_data.tres")
-		temp.sets.erase(temp_2)
-		temp_2 = load("res://items/sets/tool/tool_set_data.tres")
-		temp.sets.push_back(temp_2)	# Replaces 'Heavy' set with 'Tool'
 		temp = load("res://dlcs/dlc_1/weapons/melee/war_hammer/4/war_hammer_4_stats.tres")
 		temp.crit_damage = 1.75	# 1.5
-		temp.cooldown = 60			# 80
-		temp.scaling_stats = [ [ "stat_melee_damage", 2.0 ], [ "stat_engineering", 2.0 ] ]	# 2.0, 1.5
+		temp.cooldown = 65			# 80
+
 		
 		## RANGED WEAPONS ##
 		# Blunderbuss
@@ -376,19 +367,14 @@ func check_for_available_dlcs() -> void :
 		temp.value = 46					# 45
 		temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/3/blunderbuss_3_data.tres")
 		temp.value = 90					# 95
-		temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/3/blunderbuss_3_stats.tres")
-		temp.damage = 45				# 50
 		temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/4/blunderbuss_4_data.tres")
 		temp.value = 160				# 192
 		
 		# Flute
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
-		temp.value = 18					# 20
 		temp.add_to_chars_as_starting = [ "character_lucky", "character_glutton", "character_renegade", "character_jack", "character_golem", "character_soldier", "character_demon" ] 	# Removed Baby
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/2/flute_2_data.tres")
-		temp.value = 40					# 45
-		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/3/flute_3_data.tres")
-		temp.value = 80					# 80
+		temp.value = 42					# 45
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/4/flute_4_data.tres")
 		temp.value = 150				# 165
 

@@ -308,11 +308,8 @@ func _ready()->void:
 	temp.value = -7  # -6 (Range)
 	
 	temp = load("res://items/all/book/book_data.tres")
-	temp.value = 9  # 8
-	temp.tags = [ "stat_engineering", "stat_crit_chance" ]
-	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/book-added_crit.tres")
-	temp.effects.push_back(temp_2) # Added +2% Crit
-	
+	temp.value = 16  # 15
+
 	temp = load("res://items/all/boxing_glove/boxing_glove_effect_1.tres")
 	temp.value = 4  # 3 (Knockback)
 
@@ -326,10 +323,10 @@ func _ready()->void:
 	temp.value = 20   # 15
 	
 	temp = load("res://items/all/cute_monkey/cute_monkey_data.tres")
-	temp.value = 30  # 25
+	temp.value = 31  # 25
 	
 	temp = load("res://items/all/duct_tape/duct_tape_data.tres")
-	temp.value = 17  # 20 
+	temp.value = 18  # 20 
 	
 	temp = load("res://items/all/fertilizer/fertilizer_data.tres")
 	temp.value = 17  # 15
@@ -340,13 +337,15 @@ func _ready()->void:
 	temp.can_be_looted = false
 	
 	temp = load("res://items/all/gentle_alien/gentle_alien_data.tres")
-	temp.value = 32	 #30
+	temp.value = 33	 #30
 	
 	temp = load("res://items/all/glasses/glasses_effect_1.tres")
 	temp.value = 22  # 20 (Range)
 	
+	temp = load("res://items/all/gummy_berserker/gummy_berserker_data.tres")
+	temp.value = 24		# 25
 	temp = load("res://items/all/gummy_berserker/gummy_berserker_effect_2.tres")
-	temp.value = 30  # 25 (Range)
+	temp.value = 30		# 25 (Range)
 	
 	temp = load("res://items/all/head_injury/head_injury_effect_1.tres")
 	temp.value = 7   # 6 (Damage%)
@@ -358,7 +357,7 @@ func _ready()->void:
 	temp.value = 23  # 30
 
 	temp = load("res://items/all/helmet/helmet_data.tres")
-	temp.value = 18  # 15
+	temp.value = 19  # 15
 	temp = load("res://items/all/helmet/helmet_effect_2.tres")
 	temp.key = "stat_range"
 	temp.value = -10 # -2 Speed -> -10 Range
@@ -372,6 +371,9 @@ func _ready()->void:
 	temp = load("res://items/all/landmines/landmine_exploding_effect.tres")
 	temp.scale = 1.9	# 1.75
 	
+	temp = load("res://items/all/lemonade/lemonade_data.tres")
+	temp.value = 16		# 15
+	
 	temp = load("res://items/all/lens/lens_effect_2.tres")
 	temp.value = -10  # -5 (Range)
 	
@@ -382,13 +384,16 @@ func _ready()->void:
 	temp.value = 10		# 15
 
 	temp = load("res://items/all/mutation/mutation_data.tres")
-	temp.value = 24  # 25
+	temp.value = 24		# 25
 	temp = load("res://items/all/mutation/mutation_effect_3.tres")
-	temp.value = -2  # -3 (Knockback)
+	temp.value = -2		# -3 (Knockback)
 
-	temp = load("res://items/all/pencil/pencil_effect_3.tres")
-	temp.key = "stat_luck"	# -1 Crit -> -1 Luck
-
+	temp = load("res://items/all/pencil/pencil_data.tres")
+	temp.value = 9		# 8
+	temp.tags = [ "stat_engineering", "stat_crit_chance" ]
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/book-added_crit.tres")
+	temp.effects.push_back(temp_2) # Added +2% Crit
+	
 	temp = load("res://items/all/propeller_hat/propeller_hat_data.tres")
 	temp.value = 25  # 28
 
@@ -414,6 +419,7 @@ func _ready()->void:
 
 	temp = load("res://items/all/tree/tree_data.tres")
 	temp.tags.push_back("exploration_cryptid")
+	temp.value = 16		# 15
 	
 	temp = load("res://items/all/ugly_tooth/ugly_tooth_effect_1.tres")
 	temp.value = 7		# 5
@@ -433,12 +439,15 @@ func _ready()->void:
 
 	## TIER-2 ITEMS ##
 	temp = load("res://items/all/acid/acid_data.tres")
-	temp.value = 62   # 65
+	temp.value = 63   # 65
 
 	temp = load("res://items/all/alien_eyes/alien_eyes_data.tres")
-	temp.value = 47		# 50
+	temp.value = 46		# 50
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/alien_eyes_range_malus.tres")
 	temp.effects.push_back(temp_2) # -8 Range
+	
+	temp = load("res://items/all/bait/bait_data.tres")
+	temp.value = 26		# 25
 	
 	temp = load("res://items/all/bait/bait_effect_2.tres")
 	temp.effect_sign = 2	# 3
@@ -485,7 +494,7 @@ func _ready()->void:
 	temp.value = 46   # 45
 	
 	temp = load("res://items/all/cog/cog_effect_2.tres")
-	temp.value = -2		# -4 (Damage%)
+	temp.value = -1		# -4 (Damage%)
 	
 	temp = load("res://items/all/cyclops_worm/cyclops_worm_effect_2.tres")
 	temp.value = -16  # -12 (Range)
@@ -493,8 +502,6 @@ func _ready()->void:
 	temp = load("res://items/all/dangerous_bunny/dangerous_bunny_data.tres")
 	temp.value = 34   # 30
 	
-	temp = load("res://items/all/energy_bracelet/energy_bracelet_data.tres")
-	temp.value = 56		# 55
 	temp = load("res://items/all/energy_bracelet/energy_bracelet_effect_1.tres")
 	temp.value = 5    # 4 (Crit Chance)
 	
@@ -506,21 +513,27 @@ func _ready()->void:
 	temp.value = 46		# 50
 	
 	temp = load("res://items/all/fruit_basket/fruit_basket_data.tres")
-	temp.value = 60		# 45
+	temp.value = 58		# 45
 	temp.max_nb = 3		# 4
 	temp = load("res://items/all/fruit_basket/fruit_basket_effect_1.tres")
 	temp.value = 2		# 1 (% chance to drop fruit)
 	temp.text_key = "new_effect_enemy_fruit_drops"
 	temp = load("res://items/all/fruit_basket/fruit_basket_effect_2.tres")
-	temp.value = -5
-	temp.key = "stat_percent_damage"	# -3 HP Regen -> -5 Damage%
+	temp.value = -6
+	temp.key = "stat_percent_damage"	# -3 HP Regen -> -6 Damage%
 	
 	
 	temp = load("res://items/all/gambling_token/gambling_token_effect_1.tres")
 	temp.value = 9		# 8 (Dodge)
 	
+	# Incendiary Turret
+	temp = load("res://items/all/turret_flame/turret_flame_data.tres")
+	temp.value = 39		# 40
+	temp = load("res://items/all/turret_flame/turret_flame_burning_data.tres")
+	temp.scaling_stats = [ [ "stat_engineering", 0.35 ] ]		# 0.33
+	
 	temp = load("res://items/all/leather_vest/leather_vest_data.tres")
-	temp.value = 48		# 45
+	temp.value = 49		# 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
 	temp.value = 37		# 45
@@ -534,7 +547,7 @@ func _ready()->void:
 	temp.value = 41  # 34
 			
 	temp = load("res://items/all/medal/medal_data.tres")
-	temp.value = 61  # 55
+	temp.value = 62  # 55
 	temp = load("res://items/all/medal/medal_effect_5.tres")
 	temp.value = -3  # -4 (Crit%)
 	
@@ -589,7 +602,8 @@ func _ready()->void:
 	temp = load("res://items/all/snail/snail_effect_1.tres")
 	temp.value = -10  # -8 (Enemy Speed)
 	temp = load("res://items/all/snail/snail_effect_2.tres")
-	temp.key = "stat_attack_speed"	# Speed
+	temp.key = "stat_attack_speed"
+	temp.value = -4		# -3 Speed -> -4 AtkSpd
 	
 	temp = load("res://items/all/snowball/snowball_data.tres")
 	temp.value = 43		# 50
@@ -644,9 +658,11 @@ func _ready()->void:
 	temp.value = 70		# 75
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/bandana-piercing_damage.tres")
 	temp.effects.insert(1, temp_2)
+	temp = load("res://items/all/bandana/bandana_effect_2.tres")
+	temp.value = -8		# -10 (-Damage%)
 	
 	temp = load("res://items/all/barricade/barricade_data.tres")
-	temp.value = 65		# 75
+	temp.value = 63		# 75
 	temp_2 = load("res://items/all/barricade/barricade_effect_0.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.insert(1, temp_2)
@@ -685,7 +701,7 @@ func _ready()->void:
 	temp.value = 5		# 8
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
-	temp.value = 48		# 70
+	temp.value = 47		# 70
 	temp.tags = [ "stat_dodge", "stand_still", "stat_luck" ]
 	temp = load("res://items/all/chameleon/chameleon_effect_0.tres")
 	temp.value = 4		# 3 (Dodge)
@@ -710,24 +726,27 @@ func _ready()->void:
 	temp.text_key = "NEW_EFFECT_GAIN_STAT_FOR_EVERY_DIFFERENT_STAT"
 	temp = load("res://items/all/fairy/fairy_effect_2.tres")
 	temp.key = "stat_max_hp"	# (-3 HP Regen -> -3 Max HP)
-
+	
+	# Fin
+	temp = load("res://items/all/fin/fin_data.tres")
+	temp.value = 64		# 65
 	temp = load("res://items/all/fin/fin_effect_1.tres")
-	temp.value = 9   # 10 (Speed)
+	temp.value = 9		# 10 (Speed)
 	temp = load("res://items/all/fin/fin_effect_3.tres")
 	temp.value = -9		# -8 (Luck)
-
+	
+	# Glass Cannon
 	temp = load("res://items/all/glass_cannon/glass_cannon_data.tres")
 	temp.value = 70		# 75
 	
+	# Ghost Outfit
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_data.tres")
-	temp.value = 76		# 80
+	temp.value = 77		# 80
 	temp = load("res://items/all/ghost_outfit/ghost_outfit_effect_4.tres")
 	temp.key = "stat_max_hp"
 	temp.value = -3 	# -3 Armor -> -3 HP
 	
-
-	
-	
+	# Honey
 	temp = load("res://items/all/honey/honey_data.tres")
 	temp.value = 51		# 70
 	temp_2 = load("res://items/all/honey/effects/honey_effect_4.tres")
@@ -757,11 +776,8 @@ func _ready()->void:
 	temp.value = 47  # 50
 	
 	temp = load("res://items/all/pile_of_books/pile_of_books_data.tres")
-	temp.tier = 1			# 2
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/pile_of_books_crit_note.tres")
 	temp.effects.append(temp_2)
-	temp = load("res://items/all/pile_of_books/effects/pile_of_books_effect_1.tres")
-	temp.value = 5		# 3 (Crit Chance)
 	
 	temp = load("res://items/all/plastic_explosive/plastic_explosive_data.tres")
 	temp.value = 51		# 60
@@ -796,8 +812,11 @@ func _ready()->void:
 	temp.key = "stat_lifesteal"		# Was HP Regen
 	
 	temp = load("res://items/all/statue/statue_data.tres")
-	temp.value = 55  # 60
-
+	temp.value = 54  # 60
+	
+	temp = load("res://items/all/stone_skin/stone_skin_effect_2.tres")
+	temp.value = -7		# -6 (AtkSpd)
+	
 	temp = load("res://items/all/strange_book/strange_book_data.tres")
 	temp.value = 60  # 70
 	
@@ -822,19 +841,17 @@ func _ready()->void:
 	temp.text_key = "new_effect_on_hit"	
 	
 	# Tyler
-	temp = load("res://items/all/tyler/tyler_data.tres")
-	temp.value = 62				# 75
-	temp.tier = 1					# 2 (Purple -> Blue)
 	temp = load("res://entities/structures/turret/tyler/tyler_stats.tres")
-	temp.damage = 12			# 10
-	temp.max_range = 235	# 200
-	temp.scaling_stats = [ [ "stat_engineering", 1.0 ], [ "stat_elemental_damage", 1.0 ] ]	# 0.75, 0.75
+	temp.scaling_stats = [ [ "stat_engineering", 1.0 ], [ "stat_elemental_damage", 1.0 ] ]	# 0.9, 0.9
 	
 	temp = load("res://items/all/vigilante_ring/vigilante_ring_data.tres")
 	temp.value = 72  # 92
 	
 	temp = load("res://items/all/wandering_bot/wandering_bot_data.tres")
 	temp.value = 38  # 60
+	
+	temp = load("res://items/all/warrior_helmet/warrior_helmet_data.tres")
+	temp.value = 82		# 80
 	
 	temp = load("res://items/all/wheat/wheat_data.tres")
 	temp.value = 82  # 85
@@ -845,14 +862,10 @@ func _ready()->void:
 	temp.value = 33  # 30 (Range)
 	
 	temp = load("res://items/all/wisdom/wisdom_data.tres")
-	temp.value = 77  # 85
+	temp.value = 76  # 85
 	
 
 	## TIER-4 ITEMS ##
-	# Big Arms
-	temp = load("res://items/all/big_arms/big_arms_data.tres")
-	temp.value = 98  # 105
-	
 	# Hourglass
 	temp = load("res://items/all/hourglass/hourglass_effect_2.tres")
 	temp.value = -90	# -100  !!! If changed, also change in dlc_1_data
@@ -868,13 +881,18 @@ func _ready()->void:
 	temp = load("res://items/all/diploma/diploma_effect_2.tres")
 	temp.value = 60   # 50 (XP Gain)
 	
+	# Esty's Couch
+	temp = load("res://items/all/estys_couch/estys_couch_data.tres")
+	temp.value = 90		# 100
+	
 	# Explosive Shells
 	temp = load("res://items/all/explosive_shells/explosive_shells_effect_1.tres")
 	temp.value = 45   # 60 (Explosion Damage)	
 	temp = load("res://items/all/explosive_shells/explosive_shells_effect_1b.tres")
 	temp.value = 20   # 15 (Explosion Size)	
 	temp = load("res://items/all/explosive_shells/explosive_shells_effect_2.tres")
-	temp.value = -5   # -15 (Damage%)
+	temp.key = "stat_armor"
+	temp.value = -1   # -15 Damage% -> -1 Armor
 	
 	# Explosive Turret
 	temp = load("res://items/all/turret_rocket/turret_rocket_data.tres")
@@ -882,13 +900,18 @@ func _ready()->void:
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/explosive_turret_size_text.tres")
 	temp.effects.push_back(temp_2) # Add explosion size text
 	
+	# Exoskeleton
+	temp = load("res://items/all/exoskeleton/exoskeleton_data.tres")
+	temp.value = 95		# 90
+	
 	# Extra Stomach
 	temp = load("res://items/all/extra_stomach/extra_stomach_data.tres")
+	temp.value = 105	# 100
 	temp.tags = [ "stat_max_hp", "consumable" ]	# (HP & Luck -> HP & Consumables)
 	
 	# Focus
 	temp = load("res://items/all/focus/focus_data.tres")
-	temp.value = 102  # 110
+	temp.value = 104  # 110
 	temp = load("res://items/all/focus/focus_effect_2.tres")
 	temp.value = -4   # -3 (AtkSpd per weapon)
 	
@@ -907,6 +930,10 @@ func _ready()->void:
 	temp = load("res://items/all/evil_hat/evil_hat_effect_2.tres")
 	temp.value = -5		# -10 (Dodge)
 	
+	# Greek Fire
+	temp = load("res://items/all/greek_fire/greek_fire_data.tres")
+	temp.value = 105	# 100
+	
 	# Heavy Bullets
 	temp = load("res://items/all/heavy_bullets/heavy_bullets_data.tres")
 	temp.value = 95   # 100
@@ -921,7 +948,7 @@ func _ready()->void:
 
 	# Jetpack
 	temp = load("res://items/all/jetpack/jetpack_data.tres")
-	temp.value = 95  # 100
+	temp.value = 96  # 100
 	temp = load("res://items/all/jetpack/jetpack_effect_3.tres")
 	temp.value = -3  # -5 (HP)
 
@@ -1053,6 +1080,10 @@ func _ready()->void:
 	temp = load("res://items/all/robot_arm/robot_arm_data.tres")
 	temp.value = 92		# 100
 	
+	# Scapegoat
+	temp = load("res://items/all/scapegoat/scapegoat.tres")
+	temp.value = 100	# 110
+	
 	# Spider
 	temp = load("res://items/all/spider/spider_data.tres")
 	temp.value = 102	# 110
@@ -1072,14 +1103,6 @@ func _ready()->void:
 	## WEAPONS ##
 	## WEAPONS - MELEE ##
 	# Cacti Club
-	temp = load("res://weapons/melee/cactus_mace/1/cactus_mace_projectile.tres")
-	temp.damage = 2				# 1
-	temp = load("res://weapons/melee/cactus_mace/2/cactus_mace_2_projectile.tres")
-	temp.damage = 2				# 1
-	temp = load("res://weapons/melee/cactus_mace/3/cactus_mace_3_projectile.tres")
-	temp.damage = 2				# 1
-	temp = load("res://weapons/melee/cactus_mace/4/cactus_mace_4_projectile.tres")
-	temp.damage = 2				# 1
 	temp = load("res://weapons/melee/cactus_mace/4/cactus_mace_4_data.tres")
 	temp.value = 133			# 149
 	
@@ -1112,8 +1135,6 @@ func _ready()->void:
 	# Excalibur
 	temp = load("res://weapons/melee/excalibur/4/excalibur_4_data.tres")
 	temp.value = 225		 # 230
-	temp = load("res://weapons/melee/excalibur/4/excalibur_effect_1.tres")
-	temp.value = -2				# -3 (Armor per weapon)
 	
 	# Flaming Brass Knuckles
 	temp = load("res://weapons/melee/flaming_knuckles/2/flaming_knuckles_2_stats.tres")
@@ -1148,76 +1169,62 @@ func _ready()->void:
 	# Ghost Flint
 	temp = load("res://weapons/melee/ghost_flint/1/ghost_flint_stats.tres")
 	temp.damage = 7     	# 6
-	temp.max_range = 165	# 150
-	temp = load("res://weapons/melee/ghost_flint/2/ghost_flint_2_stats.tres")
-	temp.max_range = 175	# 160
-	temp = load("res://weapons/melee/ghost_flint/3/ghost_flint_3_stats.tres")
-	temp.max_range = 185	# 170
-	temp = load("res://weapons/melee/ghost_flint/4/ghost_flint_4_stats.tres")
-	temp.max_range = 200	# 180
 	temp = load("res://weapons/melee/ghost_flint/4/ghost_flint_4_data.tres")
 	temp.value = 95				# 105
 	
 	# Hammer
-	temp = load("res://weapons/melee/hammer/2/hammer_2_data.tres")
-	temp.value = 46				# 51
 	temp = load("res://weapons/melee/hammer/2/hammer_2_stats.tres")
 	temp.cooldown = 62		# 65
 	temp.max_range = 180	# 175
-	temp.knockback_piercing = 0.1		# 0
 	temp.knockback = 25		# 30
-	temp = load("res://weapons/melee/hammer/3/hammer_3_data.tres")
-	temp.value = 86				# 95
 	temp = load("res://weapons/melee/hammer/3/hammer_3_stats.tres")
 	temp.cooldown = 57		# 60
 	temp.max_range = 190	# 175
-	temp.knockback_piercing = 0.15	# 0
 	temp.knockback = 30		# 40
-	temp = load("res://weapons/melee/hammer/4/hammer_4_data.tres")
-	temp.value = 151			# 190
 	temp = load("res://weapons/melee/hammer/4/hammer_4_stats.tres")
 	temp.cooldown = 52		# 55
 	temp.max_range = 200	# 175
-	temp.knockback_piercing = 0.2		# 0
 	temp.knockback = 40		# 50
 	
 	# Hand
-	temp = load("res://weapons/melee/hand/1/hand_data.tres")
-	temp.value = 9       # 10
-	temp = load("res://weapons/melee/hand/1/hand_effect_1.tres")
-	temp.value = 2			 # 3
-	temp = load("res://weapons/melee/hand/2/hand_2_data.tres")
-	temp.value = 19      # 22
-	temp = load("res://weapons/melee/hand/2/hand_2_effect_1.tres")
-	temp.value = 5			 # 6
-	temp = load("res://weapons/melee/hand/3/hand_3_data.tres")
-	temp.value = 33     	# 45
-	temp = load("res://weapons/melee/hand/3/hand_3_effect_1.tres")
-	temp.value = 10				# 9
+#	temp = load("res://weapons/melee/hand/1/hand_data.tres")
+#	temp.value = 9       # 10
+#	temp = load("res://weapons/melee/hand/1/hand_effect_1.tres")
+#	temp.value = 2			 # 3
+#	temp = load("res://weapons/melee/hand/2/hand_2_data.tres")
+#	temp.value = 19      # 22
+#	temp = load("res://weapons/melee/hand/2/hand_2_effect_1.tres")
+#	temp.value = 5			 # 6
+#	temp = load("res://weapons/melee/hand/3/hand_3_data.tres")
+#	temp.value = 33     	# 45
+#	temp = load("res://weapons/melee/hand/3/hand_3_effect_1.tres")
+#	temp.value = 10				# 9
 	temp = load("res://weapons/melee/hand/4/hand_4_data.tres")
-	temp.value = 60     	# 91
-	temp = load("res://weapons/melee/hand/4/hand_4_effect_1.tres")
-	temp.value = 20				# 18
+	temp.value = 81     	# 91
+#	temp.value = 60     	# 91
+#	temp = load("res://weapons/melee/hand/4/hand_4_effect_1.tres")
+#	temp.value = 20				# 18
 	
 	# Hatchet
-	temp = load("res://weapons/melee/hatchet/1/hatchet_stats.tres")
-	temp.max_range = 135				# 125
-	temp.recoil = 20						# 25
-	temp.recoil_duration = 0.05	# 0.1
-	temp = load("res://weapons/melee/hatchet/2/hatchet_2_stats.tres")
-	temp.max_range = 135				# 125
-	temp.recoil = 20						# 25
-	temp.recoil_duration = 0.05	# 0.1
-	temp = load("res://weapons/melee/hatchet/3/hatchet_3_stats.tres")
-	temp.max_range = 135				# 125
-	temp.recoil = 20						# 25
-	temp.recoil_duration = 0.05	# 0.1
+#	temp = load("res://weapons/melee/hatchet/1/hatchet_stats.tres")
+#	temp.max_range = 135				# 125
+#	temp.recoil = 20						# 25
+#	temp.recoil_duration = 0.05	# 0.1
+#	temp = load("res://weapons/melee/hatchet/2/hatchet_2_stats.tres")
+#	temp.max_range = 135				# 125
+#	temp.recoil = 20						# 25
+#	temp.recoil_duration = 0.05	# 0.1
+#	temp = load("res://weapons/melee/hatchet/3/hatchet_3_stats.tres")
+#	temp.max_range = 135				# 125
+#	temp.recoil = 20						# 25
+#	temp.recoil_duration = 0.05	# 0.1
 	temp = load("res://weapons/melee/hatchet/4/hatchet_4_data.tres")
-	temp.value = 111						# 122
-	temp = load("res://weapons/melee/hatchet/4/hatchet_4_stats.tres")
-	temp.max_range = 135				# 125
-	temp.recoil = 20						# 25
-	temp.recoil_duration = 0.05	# 0.1
+	temp.value = 81							# 91
+#	temp.value = 111						# 122
+#	temp = load("res://weapons/melee/hatchet/4/hatchet_4_stats.tres")
+#	temp.max_range = 135				# 125
+#	temp.recoil = 20						# 25
+#	temp.recoil_duration = 0.05	# 0.1
 	
 	# Jousting Lance
 	temp = load("res://weapons/melee/jousting_lance/1/jousting_lance_effect_1.tres")
@@ -1231,7 +1238,8 @@ func _ready()->void:
 	
 	# Knife
 	temp = load("res://weapons/melee/knife/4/knife_4_data.tres")
-	temp.value = 111		 # 122
+	temp.value = 81		 # 91
+	#temp.value = 111		 # 122
 
 	# Lightning Shiv
 	temp = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_stats.tres")
@@ -1257,18 +1265,18 @@ func _ready()->void:
 	
 	# Plank
 	temp = load("res://weapons/melee/plank/1/plank_exploding_effect.tres")
-	temp.scale = 0.8 			# 0.75
+#	temp.scale = 0.8 			# 0.75
 	temp.key = "new_effect_explode_melee"
 	temp = load("res://weapons/melee/plank/2/plank_2_exploding_effect.tres")
-	temp.scale = 0.9  		# 0.75
+#	temp.scale = 0.9  		# 0.75
 	temp.key = "new_effect_explode_melee"
 	temp = load("res://weapons/melee/plank/3/plank_3_exploding_effect.tres")
-	temp.scale = 1.0 			# 0.75
+#	temp.scale = 1.0 			# 0.75
 	temp.key = "new_effect_explode_melee"
 	temp = load("res://weapons/melee/plank/4/plank_4_data.tres")
 	temp.value = 111			# 122	
 	temp = load("res://weapons/melee/plank/4/plank_4_exploding_effect.tres")
-	temp.scale = 1.1			# 0.75
+#	temp.scale = 1.1			# 0.75
 	temp.key = "new_effect_explode_melee"
 	
 	# Plasma Sledge
@@ -1296,14 +1304,10 @@ func _ready()->void:
 	
 	# Power Fist
 	temp = load("res://weapons/melee/power_fist/3/power_fist_3_exploding_effect.tres")
-	temp.scale = 1.0			# 0.75
 	temp.key = "new_effect_explode_melee"
 	temp = load("res://weapons/melee/power_fist/4/power_fist_4_data.tres")
 	temp.value = 198			# 221
-	temp = load("res://weapons/melee/power_fist/4/power_fist_4_stats.tres")
-	temp.damage = 70			# 60
 	temp = load("res://weapons/melee/power_fist/4/power_fist_4_exploding_effect.tres")
-	temp.scale = 1.25			# 1.0
 	temp.key = "new_effect_explode_melee"
 	
 	# Pruner
@@ -1318,7 +1322,7 @@ func _ready()->void:
 	
 	# Quarterstaff
 	temp = load("res://weapons/melee/fighting_stick/4/fighting_stick_4_data.tres")
-	temp.value = 120			# 130
+	temp.value = 111			# 122
 	
 	# Rock
 	temp = load("res://weapons/melee/rock/4/rock_4_data.tres")
@@ -1337,35 +1341,8 @@ func _ready()->void:
 	temp.crit_chance = 0.25	# 0.2
 	
 	# Screwdriver
-	temp = load("res://weapons/melee/screwdriver/1/screwdriver_data.tres")
-	temp.value = 11					# 10
-	temp = load("res://weapons/melee/screwdriver/1/screwdriver_stats.tres")
-	temp.max_range = 135 		# 125
-	temp.cooldown = 24  		# 31
-	temp = load("res://weapons/melee/screwdriver/2/screwdriver_2_data.tres")
-	temp.value = 23					# 22
-	temp = load("res://weapons/melee/screwdriver/2/screwdriver_2_stats.tres")
-	temp.max_range = 135 		# 125
-	temp.cooldown = 21   		# 28
-	temp.crit_chance = 0.12 # 15
-	temp.crit_damage = 2.25 # 2.0
-	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ], [ "stat_engineering", 0.6 ] ]	# 0.5, 0.5
-	temp = load("res://weapons/melee/screwdriver/3/screwdriver_3_data.tres")
-	temp.value = 46					# 45
-	temp = load("res://weapons/melee/screwdriver/3/screwdriver_3_stats.tres")
-	temp.max_range = 135 		# 125
-	temp.cooldown = 18   		# 26	
-	temp.crit_chance = 0.15	# 20
-	temp.crit_damage = 2.5  # 2.0
-	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ], [ "stat_engineering", 0.7 ] ]	# 0.5, 0.5
 	temp = load("res://weapons/melee/screwdriver/4/screwdriver_4_data.tres")
-	temp.value = 84					# 91
-	temp = load("res://weapons/melee/screwdriver/4/screwdriver_4_stats.tres")
-	temp.max_range = 135 		# 125
-	temp.cooldown = 14   		# 20
-	temp.crit_chance = 0.20 # 30
-	temp.crit_damage = 3.0 	# 2.0
-	temp.scaling_stats = [ [ "stat_melee_damage", 0.5 ], [ "stat_engineering", 0.8 ] ]	# 0.5, 0.5
+	temp.value = 81					# 91
 	temp = load("res://weapons/melee/screwdriver/4/screwdriver_4_effect.tres")
 	temp.spawn_cooldown = 4 # 3 (Landmine spawn rate)
 	
@@ -1612,17 +1589,17 @@ func _ready()->void:
 	temp.value = 111				# 122
 
 	# Minigun
-	temp = load("res://weapons/ranged/minigun/3/minigun_3_data.tres")
-	temp.value = 108				# 127
-	temp = load("res://weapons/ranged/minigun/3/minigun_3_stats.tres")
-	temp.accuracy = 0.8			# 0.85
-	temp.damage = 2					# 1
-	temp.knockback_piercing = 0.25	# 0
+#	temp = load("res://weapons/ranged/minigun/3/minigun_3_data.tres")
+#	temp.value = 108				# 127
+#	temp = load("res://weapons/ranged/minigun/3/minigun_3_stats.tres")
+#	temp.accuracy = 0.8			# 0.85
+#	temp.damage = 2					# 1
+#	temp.knockback_piercing = 0.25	# 0
 	temp = load("res://weapons/ranged/minigun/4/minigun_4_data.tres")
-	temp.value = 191				# 255
-	temp = load("res://weapons/ranged/minigun/4/minigun_4_stats.tres")
-	temp.damage = 4					# 3
-	temp.knockback_piercing = 0.35	# 0
+	temp.value = 225				# 255
+#	temp = load("res://weapons/ranged/minigun/4/minigun_4_stats.tres")
+#	temp.damage = 4					# 3
+#	temp.knockback_piercing = 0.35	# 0
 	
 	# Nuclear Launcher
 	temp = load("res://weapons/ranged/nuclear_launcher/3/nuclear_launcher_3_stats.tres")
@@ -1654,7 +1631,6 @@ func _ready()->void:
 	temp.value = 218  			# 255	
 	temp = load("res://weapons/ranged/obliterator/4/obliterator_4_stats.tres")
 	temp.projectile_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/weapons/obliterator_bullet.tscn")
-	temp.damage = 400				# 350
 	
 	# Particle Accelerator
 	temp = load("res://weapons/ranged/particle_accelerator/3/particle_accelerator_3_data.tres")
@@ -1672,21 +1648,18 @@ func _ready()->void:
 	temp_2 = load("res://items/sets/blunt/blunt_set_data.tres")
 	temp.sets.push_back(temp_2)
 	temp = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_stats.tres")
-	temp.damage = 2					# 1
 	temp.accuracy = 1.0			# 0.9
 	temp = load("res://weapons/ranged/potato_thrower/3/potato_thrower_3_data.tres")
 	temp.value = 64					# 69
 	temp_2 = load("res://items/sets/blunt/blunt_set_data.tres")
 	temp.sets.push_back(temp_2)
 	temp = load("res://weapons/ranged/potato_thrower/3/potato_thrower_3_stats.tres")
-	temp.damage = 3					# 1
 	temp.accuracy = 1.0			# 0.9
 	temp = load("res://weapons/ranged/potato_thrower/4/potato_thrower_4_data.tres")
 	temp.value = 114				# 139
 	temp_2 = load("res://items/sets/blunt/blunt_set_data.tres")
 	temp.sets.push_back(temp_2)
 	temp = load("res://weapons/ranged/potato_thrower/4/potato_thrower_4_stats.tres")
-	temp.damage = 4					# 1
 	temp.accuracy = 1.0			# 0.9
 	
 	# Revolver
@@ -1785,14 +1758,15 @@ func _ready()->void:
 	temp.value = 111				# 122
 	
 	# Wand
-	temp = load("res://weapons/ranged/wand/1/wand_stats.tres")
-	temp.cooldown = 38			# 40
-	temp = load("res://weapons/ranged/wand/2/wand_2_stats.tres")
-	temp.cooldown = 34			# 35	
-	temp = load("res://weapons/ranged/wand/3/wand_3_stats.tres")
-	temp.cooldown = 29			# 30
+#	temp = load("res://weapons/ranged/wand/1/wand_stats.tres")
+#	temp.cooldown = 38			# 40
+#	temp = load("res://weapons/ranged/wand/2/wand_2_stats.tres")
+#	temp.cooldown = 34			# 35	
+#	temp = load("res://weapons/ranged/wand/3/wand_3_stats.tres")
+#	temp.cooldown = 29			# 30
 	temp = load("res://weapons/ranged/wand/4/wand_4_data.tres")
-	temp.value = 95					# 105
+	temp.value = 81					# 91
+#	temp.value = 95					# 105
 	
 	
 	## SET BONUSES ##
@@ -1998,6 +1972,12 @@ func _ready()->void:
 	temp = load("res://items/characters/golem/golem_effect_5.tres")
 	temp.text_key = "new_effect_no_heal"
 	
+	# Jack
+	temp = load("res://items/characters/jack/jack_effect_0.tres")
+	temp.value = 120 # 125 (Damage vs Bosses)
+	temp = load("res://items/characters/jack/jack_effect_3.tres")
+	temp.value = 180 # 175 (Enemy HP)
+	
 	# King
 	temp = load("res://items/characters/king/king_effect_1.tres")
 	temp.value = 20 	# 25 (Damage%)
@@ -2094,6 +2074,8 @@ func _ready()->void:
 	temp.value = 125 # 200 (Pickup Range)
 	
 	# Speedy
+	temp = load("res://items/characters/speedy/speedy_data.tres")
+	temp.banned_items.push_back("item_barricade")
 	temp = load("res://items/characters/speedy/speedy_effect_1.tres")
 	temp.value = 20  # 30 (Speed)
 	temp = load("res://items/characters/speedy/speedy_effect_4.tres")
@@ -2105,7 +2087,7 @@ func _ready()->void:
 	
 	# Vagabond
 	temp = load("res://items/characters/vagabond/vagabond_data.tres")
-	temp.banned_items = [ "item_focus" ]
+	temp.banned_items.push_back("item_focus")
 	
 	# Wildling
 	temp = load("res://items/characters/wildling/wildling_data.tres")
@@ -2261,6 +2243,7 @@ func _ready()->void:
 	# Chunky
 	temp = load("res://items/characters/chunky/chunky_data.tres")
 	temp.banned_items.push_back("item_fin")
+	temp.banned_items.push_back("item_jetpack")
 	temp_2 = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
@@ -2332,8 +2315,6 @@ func _ready()->void:
 	
 	# Hunter
 	temp = load("res://items/characters/hunter/hunter_data.tres")
-	temp_2 = load("res://weapons/melee/screwdriver/1/screwdriver_data.tres")
-	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/melee/knife/1/knife_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
