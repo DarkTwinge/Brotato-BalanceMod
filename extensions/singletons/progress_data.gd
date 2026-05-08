@@ -85,6 +85,8 @@ func check_for_available_dlcs() -> void :
 							print(unit.unit_scene.get_path())
 							if unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/stargazer/stargazer.tscn":
 								unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
+							elif unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/scaled_stargazer/scaled_stargazer.tscn":
+								unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/scaled_stargazer.tscn")
 							elif unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/pufferfish/pufferfish.tscn":
 								unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/pufferfish.tscn")
 							elif unit.unit_scene.get_path() == "res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid.tscn":
@@ -92,6 +94,8 @@ func check_for_available_dlcs() -> void :
 				for unit in zone.endless_enemy_scenes:
 					if unit.get_path() == "res://dlcs/dlc_1/enemies/stargazer/stargazer.tscn":
 						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/stargazer.tscn")
+					elif unit.get_path() == "res://dlcs/dlc_1/enemies/scaled_stargazer/scaled_stargazer.tscn":
+						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/scaled_stargazer.tscn")
 					elif unit.get_path() == "res://dlcs/dlc_1/enemies/pufferfish/pufferfish.tscn":
 						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/pufferfish.tscn")
 					elif unit.get_path() == "res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid.tscn":
@@ -651,7 +655,9 @@ func check_for_available_dlcs() -> void :
 		temp_2 = load("res://weapons/melee/claw/1/claw_data.tres")
 		temp.starting_weapons.push_back(temp_2)		
 		temp_2 = load("res://weapons/melee/chopper/1/chopper_data.tres")
-		temp.starting_weapons.push_back(temp_2)				
+		temp.starting_weapons.push_back(temp_2)
+		temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
+		temp.starting_weapons.push_back(temp_2)
 		
 		# Hiker
 		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")

@@ -6,5 +6,5 @@ func init(zone_min_pos: Vector2, zone_max_pos: Vector2, players_ref: Array = [],
 	
 	# Waves 17-19
 	if RunData.current_wave >= 17 and RunData.current_wave <= 19:
-		max_stats.health = round(max_stats.health * 1.15) as int
+		max_stats.health = round(max_stats.health * 1.2) as int
 		current_stats.health = max_stats.health

@@ -1,4 +1,4 @@
-class_name NewStargazer
+class_name NewScaled_Stargazer
 extends Enemy
 
 export (Resource) var angry_sound
@@ -7,7 +7,7 @@ onready var _on_triggered_movement_behavior = $OnTriggeredMovementBehavior
 
 var boost_args: BoostArgs = BoostArgs.new()
 
-var _target_lung
+var _target_lung: NewSpiky_Lung
 var _signals_connected: = false
 
 
@@ -16,11 +16,9 @@ func init(zone_min_pos: Vector2, zone_max_pos: Vector2, p_players_ref: Array = [
 
 	var _e = entity_spawner_ref.connect("enemy_respawned", self, "on_enemy_respawned")
 	_on_triggered_movement_behavior.init(self)
-	##boost_args.hp_boost = 150
-	boost_args.hp_boost = 200
+	boost_args.hp_boost = 150
 	boost_args.damage_boost = 25
-	##boost_args.speed_boost = 250
-	boost_args.speed_boost = 280
+	boost_args.speed_boost = 250
 
 
 func respawn() -> void :
@@ -46,7 +44,7 @@ func die(args: = Utils.default_die_args) -> void :
 
 
 func on_enemy_respawned(enemy: Entity) -> void :
-	if not dead and enemy is Enemy and is_instance_valid(enemy) and enemy.enemy_id == "iron_lung" and enemy.source_spawner == self:
+	if not dead and enemy is Enemy and is_instance_valid(enemy) and enemy.enemy_id == "spiky_lung" and enemy.source_spawner == self:
 		_target_lung = enemy
 		_movement_behavior.add_lung(enemy)
 
@@ -56,15 +54,13 @@ func on_enemy_respawned(enemy: Entity) -> void :
 		_signals_connected = true
 
 
-func on_target_lung_died(entity: Entity, _die_args:Entity.DieArgs) -> void :
+func on_target_lung_died(entity: Entity, _die_args: Entity.DieArgs) -> void :
 	_clean_up_signals()
 	if not dead and not entity.is_full:
 		get_angry()
 
 
 func on_target_lung_became_full() -> void :
-	# Moved sfx play over here so it only plays on entering vats, and increased volume
-	##SoundManager2D.play(angry_sound, global_position, 18, 0.1, true)
 	_clean_up_signals()
 	if not dead:
 		get_angry()

@@ -1117,8 +1117,14 @@ func _ready()->void:
 	temp.damage = 27			# 30
 	
 	# Circular Saw
+	temp = load("res://weapons/melee/circular_saw/2/circular_saw_2_stats.tres")
+	temp.crit_chance = 0.1	# 0.05
+	temp = load("res://weapons/melee/circular_saw/3/circular_saw_3_stats.tres")
+	temp.crit_chance = 0.15	# 0.1
 	temp = load("res://weapons/melee/circular_saw/4/circular_saw_4_data.tres")
-	temp.value = 151		 # 173
+	temp.value = 151				# 173
+	temp = load("res://weapons/melee/circular_saw/4/circular_saw_4_stats.tres")
+	temp.crit_chance = 0.25	# 0.2
 	
 	# Claw
 	temp = load("res://weapons/melee/claw/4/claw_4_data.tres")
@@ -1662,6 +1668,20 @@ func _ready()->void:
 	temp = load("res://weapons/ranged/potato_thrower/4/potato_thrower_4_stats.tres")
 	temp.accuracy = 1.0			# 0.9
 	
+	# Railgun
+	temp = load("res://weapons/ranged/rail_gun/1/rail_gun_1_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_dodge", 0.25 ] ]		# 0.8, 0.3
+	temp = load("res://weapons/ranged/rail_gun/2/rail_gun_2_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_dodge", 0.3 ] ]			# 0.8, 0.35
+	temp = load("res://weapons/ranged/rail_gun/3/rail_gun_3_data.tres")
+	temp.value = 76					# 80
+	temp = load("res://weapons/ranged/rail_gun/3/rail_gun_3_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_dodge", 0.35 ] ]		# 0.9, 0.4
+	temp = load("res://weapons/ranged/rail_gun/4/rail_gun_4_data.tres")
+	temp.value = 139				# 160
+	temp = load("res://weapons/ranged/rail_gun/4/rail_gun_4_stats.tres")
+	temp.scaling_stats = [ [ "stat_ranged_damage", 1.0 ], [ "stat_dodge", 0.4 ] ]			# 1.0, 0.45
+	
 	# Revolver
 	temp = load("res://weapons/ranged/revolver/1/revolver_data.tres")
 	temp.value = 18					# 20
@@ -1894,6 +1914,8 @@ func _ready()->void:
 	temp.value = 10  # 15 (HP Regen)
 	temp = load("res://items/characters/bull/bull_effect_4.tres")
 	temp.text_key = "new_effect_explode_on_hit"
+	temp = load("res://items/characters/bull/bull_explosion_stats.tres")
+	temp.scaling_stats = [ [ "stat_melee_damage", 2.5 ], [ "stat_ranged_damage", 2.5 ], [ "stat_elemental_damage", 2.5 ] ]	# 3.0x3
 	
 	# Crazy
 	temp = load("res://items/characters/crazy/crazy_data.tres")
@@ -1941,6 +1963,8 @@ func _ready()->void:
 	temp.effects.push_back(temp_2) # Re-add other Damage types still at -50%
 	
 	# Entrepreneur
+	temp = load("res://items/characters/entrepreneur/entrepreneur_data.tres")
+	temp.banned_items.push_back("item_piggy_bank")
 	temp = load("res://items/characters/entrepreneur/entrepreneur_effect_0.tres")
 	temp.value = -20	# -25
 	
@@ -2093,7 +2117,16 @@ func _ready()->void:
 	temp = load("res://items/characters/wildling/wildling_data.tres")
 	temp_2 = load("res://items/characters/wildling/wildling_effect_2.tres")
 	temp.effects.erase(temp_2) # Remove starting Stick
-
+	
+	# Wounded
+	temp = load("res://items/characters/wounded/wounded_data.tres")
+	temp.banned_items.push_back("item_barricade")
+	# These items are banned individually, but banning the item groups is cleaner and also makes Candy Bag not give garbage stats
+	temp.banned_item_groups.push_back("hp_regeneration")
+	temp.banned_item_groups.push_back("lifesteal")
+	temp.banned_item_groups.push_back("lifesteal_and_hp_regeneration")
+	temp.banned_item_groups.push_back("consumable_heal")
+	temp.banned_item_groups.push_back("armor")
 
 	## OTHER CHARACTER TEXT TWEAKS ##
 	temp = load("res://items/characters/arms_dealer/arms_dealer_effect_1b.tres")
@@ -2242,7 +2275,6 @@ func _ready()->void:
 	
 	# Chunky
 	temp = load("res://items/characters/chunky/chunky_data.tres")
-	temp.banned_items.push_back("item_fin")
 	temp.banned_items.push_back("item_jetpack")
 	temp_2 = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
@@ -2311,11 +2343,6 @@ func _ready()->void:
 	# Golem
 	temp = load("res://items/characters/golem/golem_data.tres")
 	temp_2 = load("res://weapons/melee/fighting_stick/1/fighting_stick_data.tres")
-	temp.starting_weapons.push_back(temp_2)
-	
-	# Hunter
-	temp = load("res://items/characters/hunter/hunter_data.tres")
-	temp_2 = load("res://weapons/melee/knife/1/knife_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
 	# Jack

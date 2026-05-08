@@ -548,9 +548,6 @@ Flute Wave 1 kill rate sucks big time [tho not necessarily problem if there are 
 will o wisp: maybe gives random of the 4 primary damage stats?  if it could randomly be one non-Elemental for the run that could also be cute.
 
 
-IF NOT DONE IN OFFICIAL:
-Piggy for Entre? [is it usually still value from a crate?  I guess not because they have higher recycle rate, or?]
-
 
 Other fix-if-unfixed in main:
 	Look into Harpoon damage reduction getting stuck ON
@@ -584,9 +581,6 @@ maybe -1 internal cooldown for crossbow all tiers?
 maybe drop Claw price very slightly 14/.. to make it easier to fill out early
 	should do some mid/late game damage comparisons with Fist for the cost of stats put in; it's okay if earlygame is worse if lategame is stronger.
 
-
-spikey shield may want additional nerf (in addition to small price increase), maybe reduce all scaling a bit? otherwise it's base damage I guess
-	Tho don't over-nerf scaling; you want it to be decently strong at 25 armor and kinda bad at 10 armor, probably?
 
 
 candy bag: roll to see if enemy damage is increased; little jestery laugh sfx when it is?  20% or 25% chance of +15% enemy damage.
@@ -636,8 +630,6 @@ Relic maybe down in cost and Armor to 2
 Is Wave Info not counting +Enemy Damage e.g. Starfish?  (kinda seemed accurate tho but math isn't as expected, hmm.)
 
 
-brick t3/t4 mat drops {prolly gonna be in base game shortly so just accept it there}
-
 Make structures pushing in further from the edge when you have fewer total structures, so a tech buy of a blue turret or med turret or whatever doesn't sit in the corner all sad.  (Slowly pushes in less based on total structure count?  ideally does not include landmines/screwdrivers/wander bot/bot-o-mine/clockwork wasp, but would include +1 for Pocket Factory
 
 {If Lucky becomes weak could try to figure out a way to give their ability some base damage to cover the Luck reductions}
@@ -645,29 +637,17 @@ Make structures pushing in further from the edge when you have fewer total struc
 
 Tea not counting up in its tooltip?
 
-rename junkies
-
 jousting maybe 18/24/32 damage progression
 
 [If Fresh Meat reworked, un-restricted from Wounded]
 
 Could just remove Baby Elephant or remake
 
-Check if Nightmare increasing enemy speed makes eggs hatch faster too (or in reverse, does Snail make them slower)
 
 
-{Remove fin ban from Chunky if it's actually in vanilla properly}
-{Verify Book tagged for Ele}
-{Remove Hunter=Knife starter}
 {Verify Explorer doesn't get way too many trees now}
-{Add Barricade to Wounded restricted list
-How sensible is Railgun starter for Hunter, Ranger
-{Doc MOth banned on Golem, Druid now; probably did it directly rather than categories, so fix that}
-Does Pile of Books want to have its Cursed version toned back down
+How sensible is the Railgun starter for Hunter, Ranger
 
-
-Maybe re-do Wounded restricted list, so it actually uses the item groups, which would be applicable for the Candy Bag no-useless-stats effect
-	If they don't: Add Barricade, remove Mouse
 
 Wil-o-Wisp could maybe increase your lowest of the 4 damage types? (Cute since it also works with burn turrets)
 	or random, or a random fixed one when the item is offered
@@ -690,12 +670,11 @@ Wand
 	- **Wand:** Cooldown 0.87/0.78/0.70/0.53 -> 0.83/0.77/0.68/0.53 _[The slight cooldown buff lets you get 1 extra kill on Wave 1.]_
 	
 
-Monitor: Flute, Sword, Power Fist, Medical Gun, Cacti Club, Potato Thrower, Thunder Sword, Plank (may still want a tiny explosion size increase, or further scaling), Flaming Knuckles
+Monitor: Flute, Sword, Power Fist, Medical Gun, Cacti Club, Potato Thrower, Thunder Sword, Plank (may still want a tiny explosion size increase, or further scaling), Flaming Knuckles, Brick
 
 Knife Price 15/31/61/122 -> 10/22/45/91
 	Damage 6/9/12/20 -> 9/13/18/25
 	Cooldown 27/22/18/13 -> 25/21/17/12
-Brick Tier 3/4 Mat Drops  60/120 -> 75/200
 Screwdriver
 	Range 125 -> 135
 	Crit Damage 2.0(All) -> 2.0/2.15/2.3/2.5
@@ -716,3 +695,40 @@ Has Saw been left behind
 >pile of books  price also dropped from 70 to 60 alongside the other buffs; monitor if too much
 >Tier-4 Power Fist went all the way up to 80 damage, I had it at 70
 >Flute is still expensive but let's see how the cooldown buffs feels
+-> monitor CZ wave 16 in nightmare; my additionls probably don't mess things up too much, but see if it feels extra difficult
+
+
+
+-----
+Railgun nerf dodge scaling
+Cacti Club tiering 2/3 is weird
+Generalist maybe start Railgun (esp if change ranged damage scaling higher)
+
+
+
+
+killing enemy means burn doesn't spread with Snake sometimes, but them works again if you restart??
+
+
+
+Check if Nightmare increasing enemy speed makes eggs hatch faster too (or in reverse, does Snail make them slower)
+
+
+
+make hourglass actually unique
+	simply check if you have a broken hourglass and if so remove hourglass from the item pool before it starts rolling items?
+
+
+update Readme blurbs with all the changes
+
+Railgun:
+Cooldown 52/49/47/45
+Damage 10/15/20/35  (13/19/25/41 after 5sec)  {16/23/30/47 after 10sec}
+	RangedDam Scaling 0.8/0.8/0.9/1.0
+	Dodge scaling 0.3/0.35/0.4/0.45
+	Increase Every 5sec 3/4/5/6
+Piercing 1/1/2/3
+	Piercing Reduction 0.5/0.35/0.35/0.25
+Crit Damage 1.5/1.75/2.0/2.25
+Max Range 300
+

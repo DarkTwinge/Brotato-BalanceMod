@@ -1,5 +1,5 @@
 # Overview
-More items are worth using and fewer choices are overpowered. Range and Luck stats are better. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is similar, with the easiest runs made modestly harder and the hardest runs made a bit easier.
+More items are worth using and fewer choices are overpowered. Range and Luck stats are better; Armor is weaker. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is similar, with the easiest runs made modestly harder and the hardest runs made a bit easier.
 
 Below is a summary of major changes you should know about. (The detailed exact changes are further below: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog)
 
@@ -17,16 +17,14 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 
 ### Weapons
 * Primitive set bonus is worse; Blunt set bonus is better. Gun set bonus changed to Attack Speed in order to make the Range stat more relevant.
-* Hand partially reworked to make Tier-3/4 worth buying.
-* Screwdriver partially reworked+buffed so it cares more about Crit.
-* Sharp Tooth reworked to only have one Set and to be stronger overall.
-* Minigun, Hammer, and Sledge now have Knockback Piercing, meaning their Knockback is more effective against resistant enemies like Chargers.
+* Sharp Tooth reworked to only have one Set and is stronger overall.
 * Sickle removed from the game.
-* Most Tier-4 weapons are cheaper (slightly buffs Luck & mixed weapon builds). Other weapon prices slightly tweaked for more logical/consistent progression.
-* Spear, Thief Dagger, & Spiky Shield are nerfed; Mace & Anchor are buffed.
-* Ghost Flint, Hatchet, Laser Gun, Obliterator, Plank, Plasma Sledge, Potato Thrower, Scissors, Sword, Wand, Cacti Club, Hammer, and War Hammer receive minor buffs.
-* SMG, Fist, Icicle, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, and Revolver receive minor nerfs.
-* Chopper, Harpoon Gun, and Sniper Gun get minor buffs+nerfs.
+* Tier-4 weapons are cheaper (slightly buffs Luck & mixed weapon builds). Other weapon prices slightly tweaked for more logical/consistent progression.
+* Potato Thrower added to the Blunt set to work better as a starting weapon.
+* Spear & Spiky Shield are nerfed; Mace, Anchor, & War Hammer are buffed.
+* Laser Gun, Obliterator, Plasma Sledge, Scissors, Sword, Circular Saw, and Hammer receive minor buffs.
+* SMG, Thief Dagger, Railgun, Fist, Icicle, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, Jousting Lance, Stick, and Revolver receive minor nerfs.
+* Chopper, Harpoon Gun, Screwdriver, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
 Tons of items receive small buffs or nerfs: overall more items are useful in more situations, and the strongest give less power for their cost. Note that the goal is not to make everything equally strong; there is still plenty of variance and build-specific decision-making. Some highlights:
@@ -34,14 +32,14 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Tardigrade is no longer wasted by self-damage.
 * Candle is cheaper & reduces enemy damage. White Flag is cheaper & reduces max enemies.
 * Fresh Meat removed.
-* Chameleon reworked: now gives Luck.
-* Utility Crit items work better as speculative picks: Pile of Books is Blue Tier & Eyepatch comes with more Crit.
-* Tyler buffed; Bot-o-mine nerfed and moved to Tier-3. Catling Gun & Bonk Dog nerfed.
-* Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine) are a little worse (but still strong).
+* Chameleon reworked: now gives Luck. Barricade substantially buffed.
+* Eyepatch works better as a speculative pick (comes with more Crit). Pencil now also has +2 Crit Chance.
+* Bot-o-mine nerfed and moved to Tier-3. Catling Gun & Bonk Dog slightly nerfed.
+* Early economy items (Fertilizer, Coupon, Bag, Dangerous Bunny, Recycling Machine, Lure) are a little worse (but still strong).
 * Purple delayed-value items (Wheat, Blood Donation, Bowler Hat, Vigilante Ring, Starfish) are better (as you have much less time to profit from them).
 * Power Generator now reduces your HP as it powers up.
-* Fairy gives less HP Regen and gives negative HP for Tier-4s instead of negative HP Regen.
-* Ghost Outfit significantly buffed. Wandering Bot and Lucky Coin significantly cheaper. Hedgehog, Duct Tape, Sausage, and Bone Dice cheaper. Saltwater more impactful.
+* Fairy gives less HP Regen and gives negative HP for Tier-4s instead of negative HP Regen. Goblet & Medikit less powerful.
+* Ghost Outfit significantly buffed; Landmines buffed. Celery Tea less punishing. Wandering Bot, Lucky Coin, and Sunken Bell significantly cheaper. Hedgehog, Lumberjack Shirt, Sausage, and Bone Dice cheaper. Fruit Basket, Saltwater, Cauldron, Small Fish, and Penguin more impactful.
 * Ricochet is now friendlier with already-piercing weapons.
 * Heavy Bullets now stronger overall but lowers Accuracy.
 
@@ -53,19 +51,22 @@ As with items, the goal is not for characters to be equal strength. The focus is
 * Mage can better run an Engineering build (turrets + Sausage) and also handles Gun builds better (extra Sausage). Engineer can better combo with Elemental Damage.
 * Lucky and Speedy now care more about raising their thematic stats. Soldier cares more about Pickup Range.
 * Crazy now works with Crossbows properly; Brawler works with Claw properly.
-* One-armed and Baby receive moderate buffs. Hiker, Fisher, and Farmer get minor buffs.
-* Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Explorer, Demon, King, Mutant, Gladiator, Engineer, Entrepreneur, and Brawler receive nerfs.
+* Fisher, Hiker, Baby, One-armed, and Farmer get modest buffs.
+* Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Entrepreneur, Explorer, Demon, King, Mutant, Gladiator, Engineer, Sick, and Brawler receive nerfs.
 * Most automatic starting weapons (e.g. Wildling, Crazy) are removed, making your chosen starter more meaningful.
+* Shops offers fewer completely worthless items, and starting weapons are more varied & appropriate.
 
 ### Enemies & Waves
-* Late-game Elites have 15% more health.
+* Late-game Elites have 20% more health.
 * (DLC) Pufferfish now spawn 4 projectiles when killed by melee (instead of 0).
-* (DLC) Stargazers are now stronger when you kill their Incubators first.
+* (DLC) Stargazers are now stronger when you kill their Incubators first, and make a sound upon entering an Incubator.
 * (DLC) Spider Crab Elite summons harder to deal with. Turtle Elite attacks sooner and is tankier.
 * (DLC) Guaranteed Seapigs now spawn on the Crash Zone map, letting you opt into Curse.
+* Vampire Squids (DLC) are more threatening; Fly enemies have more HP late game.
+* Gobbler gains more HP as it evolves but doesn't slow down as much.
 * Hivemind/Colossus Elite slightly nerfed.
 * Mantis Elite tweaked to be more unique and slightly harder. Butcher Elite attacks are harder to run from.
-* Crash Zone: Wave 14 slightly easier. Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder and helping enemy/material synergies. Wave 14/15 Horde Waves scarier.
+* Crash Zone: Wave 14 slightly easier. Wave 16 harder. Wave 12 slightly harder. Wave 20 has additional small enemies, making it slightly harder but helping enemy/material synergies. Wave 14/15 Horde Waves scarier.
 * Knockback a bit more effective against resistant enemies.
 
 # Support Me
@@ -183,7 +184,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Snowball:** Price 50->43
 * **Spicy Sauce:** Explosion Size 125% -> 140%; Base Crit Chance 0% -> 1%; Now tagged for 'consumables' instead of 'luck'; (Clarified effect of having multiple copies)
 * **Tentacle:** Price 35->39
-* **Tyler:** Engineering & Elemental Scaling 90% -> 100% _[Almost all my buffs are now vanilla, so I only bump the scaling slightly now.]_
+* **Tyler:** Engineering & Elemental Scaling 90% -> 100% _[All my other buffs are now vanilla, so I only bump the scaling slightly now.]_
 * **Wheelbarrow:** Price 40->38
 * **Whetstone:** Price 40->42
 * **White Flag:** Price 40->30; Harvesting 5 -> 6; Now also reduces the Enemy Limit before despawning begins (100->80 for single-player) _[Aiming to give another way for reduced enemies to actually be a good thing by making swarms of enemies, especially Hordes, less dense.]_
@@ -195,6 +196,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fish Hook:** Price 35->38
 * **Jerky:** Price 50->57
 * **Pearl:** Price 60->52; Chance for free Pearl in crate 3% -> 4%; Limit 20 -> 15
+* **Pile of Books (Cursed):** Bonus Crit Chance & Engineering from Curse reduced to slightly above normal Curse levels. (This item was a special exception where Curse gave extra benefits, but now it's been buffed and most of its cost/value is in the stats directly, so the big bonus no longer makes sense.)
 * **Saltwater:** Extra Speed When Hit 10% -> 15%
 * **Spyglass:** Price 30->32
 * **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
@@ -291,6 +293,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Melee
 * **Chopper:** Base Damage 6/12/18/30 -> 7/12/17/27 _[The new vanilla Chopper focuses its power heavily on the Tier-4 version and this smooths out the curve a smidge.]_
+* **Circular Saw:** Crit Chance 5%/10%/20% -> 10%/15%/25%
 * **Fist:** Damage 8/16/32/64 -> 7/14/28/56; Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.63
 * **Flaming Brass Knuckles:** Cooldown 0.78/0.73/0.69/0.59 -> 0.79/0.74/0.71/0.63
 * **Ghost Flint:** Tier-1 Damage 6 -> 7
@@ -325,6 +328,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Nuclear Launcher:** Cooldown 2.12 -> 2.20; Base Damage 60/120 -> 50/100; Range 800 -> 650; Ranged Scaling 100%/100% -> 125%/125%; Elemental Scaling 100%/100% -> 150%/150% _[Similar strength in Elemental builds, a touch weaker otherwise.]_
 - **Obliterator:** Projectile Hitbox Width +25%; Tier-3 Range 800 -> 700
 - **Potato Thrower:** Added to the Blunt Weapon Set _[Blunt Set allows it to find some synergy options when picked as a starting weapon.]_
+- **Railgun:** Dodge Damage Scaling 30%/35%/40%/45% -> 25%/30%/35%/40%; Ranged Damage Scaling 80%/80%/90%/100% -> 100%(All)
 - **Revolver:** Price 20/34/70/130 -> 18/36/68/125; Range 450 -> 425; Big Reload Cooldown 2.07s/1.93s/1.80s/1.67s -> 2.30s/2.15s/2.00s/1.85s _[About 5% slower attack rate overall.]_
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
 - **SMG:** Internal Cooldown 4/4/4/3 -> 5/5/5/4; (Firing SFX slightly quieter) _[In practice, ~8% worse cooldown at 0% Attack Speed, but will end up the same with more Attack Speed. Breakpoint before Attack Speed usefulness plateaus is now 67% for Tiers 1-3 and 51% for Tier-4. (Still also has a spike at 201% for all Tiers.)]_
@@ -332,7 +336,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 75%/85%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
 
-* **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Obliterator 127/255 -> 122/218; Particle Accelerator: 144/289 -> 130/232; Potato Thrower: 36/69/139 -> 33/64/114. Blunderbuss: 45/95/192 -> 46/90/160; Flute: Price 20/45/80/165 -> 20/42/80/150; Javelin: 18/36/66/140 -> 18/36/68/125
+* **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Obliterator 127/255 -> 122/218; Particle Accelerator: 144/289 -> 130/232; Potato Thrower: 36/69/139 -> 33/64/114; Railgun: 20/40/80/160 -> 20/40/76/139. Blunderbuss: 45/95/192 -> 46/90/160; Flute: Price 20/45/80/165 -> 20/42/80/150; Javelin: 18/36/66/140 -> 18/36/68/125
 * **Other Tier-4 Price Reductions:** Chain-gun: 300->265; Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 260; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Mini-gun 255 -> 225; Nuclear Launcher: 289 -> 251; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 91 -> 81
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
@@ -340,15 +344,15 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
 * **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
-* **Bull:** Starting HP Regen 15 -> 10; Can no longer be offered Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
-* **Chunky**: Can no longer be offered Doc Moth, Jet Pack, or Fin
+* **Bull:** Starting HP Regen 15 -> 10; Explosion Damage Scaling 300% -> 250%; Can no longer be offered Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
+* **Chunky**: Can no longer be offered Doc Moth or Jet Pack
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
 * **Cyborg:** Now makes a distinct sound effect when switching from Ranged Damage to Engineering mode
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regen 5 -> 3
 * **Engineer:** No longer starts with a Wrench; Starting Engineering 10 -> 6; Elemental Damage Penalty -50% -> -20% _[Allows Engineer to lean into a mixed Engineering+Elemental build if desired, and makes more sense for Plank as a starting weapon.]_
-* **Entrepreneur:** Shop Prices -25% -> -20%
+* **Entrepreneur:** Shop Prices -25% -> -20%; Can no longer be offered Piggy Bank.
 * **Explorer:** Starting Trees: 12 -> 11
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to early Harvesting than most, and one that is most relevant for their weaker, non-Pruner builds.]_
 * **Fisher:** Extra HP 5 -> 8
@@ -371,6 +375,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Streamer:** Now also favored to find Stand-still items.
 * **Vagabond:** Can no longer be offered Focus.
 * **Wildling:** No longer starts with a Stick.
+* **Wounded:** Can no longer be offered Barricade.
 * _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
 * **Captain:** No longer favored to find XP Gain items. _[Their benefit is only about average, and Barnacle especially is sad for Captain.]_
@@ -385,7 +390,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ## Enemies
 ### Elites
-* All Elites on Waves 17-19 have an additional 15% health.
+* All Elites on Waves 17-19 have an additional 20% health.
 
 #### Crash Zone
 * **Hivemind/Colossus:** Phase 2 Cooldown 0.9s -> 1.02s _[Gives a touch more breathing room during the rapid onslaught of Phase 2.]_
@@ -412,6 +417,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
 + **Stargazer:** Base Speed 100 -> 115; Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 280%; SFX is now louder and always plays when a vat is entered (but not when you just destroy a vat) _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
++ **Scaled Stargazer:** SFX is now a deeper growl compared to regular Stargazers, is louder, and always plays when a vat is entered (but not when you just destroy a vat)
 + **Narwhal:** Knockback Resistance 90% -> 87%
 + **Vampire Squid:** Initial Cooldown 1.17s -> 1.02s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 7; Minimum Spawn Distance From Player +120 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
@@ -443,7 +449,6 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth, Hatchet
 * **Golem:** Added Quarterstaff
-* **Hunter:** Added Knife
 * **Jack:** Removed Shuriken
 * **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle
 * **Masochist:** Added Hatchet
@@ -473,7 +478,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Dwarf:** Added Circular Saw
 * **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin
-* **Gangster:** Added Claw, Chopper
+* **Gangster:** Added Claw, Chopper, Lightning Shiv
 * **King:** Added Blunderbuss, Harpoon Gun, Spoon
 * **Hiker:** Added Slingshot, Medical Gun
 * **Mage:** Added Spoon
@@ -494,6 +499,7 @@ You might also enjoy my FTL Balance Mod: https://www.darktwinge.com/ftl-balance/
 * Piggy Bank Reminder: https://steamcommunity.com/sharedfiles/filedetails/?id=3005196583
 * Revamped Icons: https://steamcommunity.com/sharedfiles/filedetails/?id=3003721761
 * Advanced Statistics: https://steamcommunity.com/sharedfiles/filedetails/?id=3025488976
+* Improved Tooltips: https://steamcommunity.com/sharedfiles/filedetails/?id=3019195689
 
 # Thanks To
 WL, Inschato, ArosRising, Hyphen-ated, Pasha, Lady Lynn, and everyone else that's assisted with feedback, suggestions, or coding!

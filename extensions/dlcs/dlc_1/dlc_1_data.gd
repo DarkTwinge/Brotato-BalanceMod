@@ -59,6 +59,13 @@ func curse_item(item_data: ItemParentData, player_index: int, turn_randomization
 				orig_result.effects.erase(effect)
 				break
 			i = i + 1
+	# Makes the bonus stat boost for Pile of Books only x1.5 instead of x3
+	elif orig_result.my_id == "item_pile_of_books":
+		for effect in orig_result.effects:
+			print(effect.key)
+			print(effect.value)
+			if effect.key == "stat_crit_chance" or effect.key == "stat_engineering":
+				effect.value = effect.value * 0.7
 	
 	return orig_result as ItemParentData
 

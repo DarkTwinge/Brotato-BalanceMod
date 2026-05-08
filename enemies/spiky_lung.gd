@@ -1,14 +1,14 @@
-class_name NewIronLung
+class_name NewSpiky_Lung
 extends Enemy
 
-export (Resource) var lung_angry_sound
+export (Resource) var spiky_lung_angry_sound
 
 signal became_full
 
 var is_full: bool = false
 
 onready var detection_zone = $DetectionZone
-var sprite_full = preload("res://dlcs/dlc_1/enemies/iron_lung/iron_lung_full.png")
+var sprite_full = preload("res://dlcs/dlc_1/enemies/spiky_lung/spiky_lung_full.png")
 
 var _original_texture: Texture
 
@@ -33,7 +33,7 @@ func _on_AttackBehavior_wanted_to_spawn_an_enemy(enemy_scene: PackedScene, at_po
 
 
 func _on_DetectionZone_body_entered(body):
-	if not is_full and not dead and body is Enemy and is_instance_valid(body) and not body.dead and body.enemy_id == "stargazer":
+	if not is_full and not dead and body is Enemy and is_instance_valid(body) and not body.dead and body.enemy_id == "scaled_stargazer":
 		is_full = true
 		sprite.texture = sprite_full
 		_animation_player.playback_speed *= 2
@@ -43,7 +43,7 @@ func _on_DetectionZone_body_entered(body):
 		body.call_deferred("die")
 		emit_signal("became_full")
 		### Anger sound now plays here instead of in the Stargazer code
-		SoundManager2D.play(lung_angry_sound, global_position, 18, 0.1, true)
+		SoundManager2D.play(spiky_lung_angry_sound, global_position, 18, 0.1, true)
 		##
 
 		if body.get_charmed_by_player_index() != - 1:
