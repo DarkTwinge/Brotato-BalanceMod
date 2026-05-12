@@ -7,7 +7,7 @@ onready var _on_triggered_movement_behavior = $OnTriggeredMovementBehavior
 
 var boost_args: BoostArgs = BoostArgs.new()
 
-var _target_lung: NewSpiky_Lung
+var _target_lung
 var _signals_connected: = false
 
 
@@ -38,7 +38,7 @@ func _clean_up_signals() -> void :
 		_signals_connected = false
 
 
-func die(args: = Utils.default_die_args) -> void :
+func die(args: = Entity.DieArgs.new()) -> void :
 	.die(args)
 	_clean_up_signals()
 

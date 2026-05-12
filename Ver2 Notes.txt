@@ -640,12 +640,12 @@ Tea not counting up in its tooltip?
 jousting maybe 18/24/32 damage progression
 
 [If Fresh Meat reworked, un-restricted from Wounded]
+Possibly remove/alter Butterfly instead of Fresh Meat
 
 Could just remove Baby Elephant or remake
 
 
 
-{Verify Explorer doesn't get way too many trees now}
 How sensible is the Railgun starter for Hunter, Ranger
 
 
@@ -700,7 +700,6 @@ Has Saw been left behind
 
 
 -----
-Railgun nerf dodge scaling
 Cacti Club tiering 2/3 is weird
 Generalist maybe start Railgun (esp if change ranged damage scaling higher)
 
@@ -719,8 +718,6 @@ make hourglass actually unique
 	simply check if you have a broken hourglass and if so remove hourglass from the item pool before it starts rolling items?
 
 
-update Readme blurbs with all the changes
-
 Railgun:
 Cooldown 52/49/47/45
 Damage 10/15/20/35  (13/19/25/41 after 5sec)  {16/23/30/47 after 10sec}
@@ -732,3 +729,32 @@ Piercing 1/1/2/3
 Crit Damage 1.5/1.75/2.0/2.25
 Max Range 300
 
+
+Wave 9 fancy squid before any reg squid is weird
+Campfire Fog boost too much
+
+Puffer 'pop' noise delayed sometimes? inconsistent
+regular puffers should also pop
+
+
+check wave 15 abyss if they made a weird gap in the spawns in the last 10 seconds
+did wave 14 have fewer walruses?
+
+soldier being tagged stand-still kinda weird, 5% of all blues are Coral
+
+
+
+Riposte - make an explosion
+
+
+
+check if inflation increase on nightmare is still in
+
+
+
+Metal Detector - showing weirdly high gains on Builder, does jump up at end of wave, tooltip is wrong OR it does actually count with Builder Turret, may be Improved Tooltips off.  (or Harvesting for some weird reason??)
+
+wave 19 etc. gob of enemies kinda ehhhh
+
+
+check environmental bullet scaling, early super high?

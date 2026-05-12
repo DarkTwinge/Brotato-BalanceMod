@@ -163,9 +163,9 @@ func get_random_primary_stats() -> int:
 
 
 # Debug stuff
-#func reset(restart:bool = false)->void :
+#func reset(restart:bool = false)-> void :
 #	.reset(restart)
-#	current_wave = 16
+#	current_wave = 17
 #	invulnerable = true
 #	temp = load("res://weapons/ranged/double_barrel_shotgun/4/double_barrel_shotgun_4_data.tres")
 #	players_data[0].weapons.push_back(temp)

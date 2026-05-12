@@ -656,8 +656,6 @@ func check_for_available_dlcs() -> void :
 		temp.starting_weapons.push_back(temp_2)		
 		temp_2 = load("res://weapons/melee/chopper/1/chopper_data.tres")
 		temp.starting_weapons.push_back(temp_2)
-		temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
-		temp.starting_weapons.push_back(temp_2)
 		
 		# Hiker
 		temp = load("res://dlcs/dlc_1/characters/hiker/hiker_data.tres")

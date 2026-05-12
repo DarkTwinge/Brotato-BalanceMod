@@ -274,7 +274,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Potato:** Price 95->100
 * **Regeneration Potion:** HP Regen 3 -> 4
 * **Retromation's Hoodie:** +2% Attack Speed for every 1% Dodge --> +3% Attack Speed for every 2% Dodge
-* **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
+* **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Railgun, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
 * **Robot Arm:** Price 100->92
 * **Scapegoat:** Price 110->100
 * **Spider:** Price 110->102; Attack Speed Per Different Weapon 6% -> 8%; Damage 12% -> 8%
@@ -440,7 +440,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby:** Added Ghost Axe; Removed Taser
 * **Chunky:** Added Potato Thrower
 * **Crazy:** Added Crossbow _[Which now works with their starting Range.]_; Removed Sharp Tooth (no longer Precise)
-* **Cryptid:** Added Flute
+* **Cryptid:** Added Flute, Railgun
 * **Cyborg:** Added Medical Gun; Removed Crossbow, Pistol
 * **Demon:** Added Shuriken, Potato Thrower
 * **Engineer:** Removed Hammer
@@ -449,8 +449,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Generalist:** Added Medical Gun; Removed Lighting Shiv
 * **Gladiator:** Removed Sharp Tooth, Hatchet
 * **Golem:** Added Quarterstaff
-* **Jack:** Removed Shuriken
-* **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle
+* **Jack:** Added Quarterstaff; Removed Shuriken
+* **King:** Added Cacti Club, Chopper, Flaming Brass Knuckles, Icicle, Wand
 * **Masochist:** Added Hatchet
 * **Mage:** Added Wrench, Cacti Club
 * **Mutant:** Added Chopper, Hatchet, Ghost Flint; Removed Ghost Axe
@@ -478,7 +478,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Dwarf:** Added Circular Saw
 * **Entrepreneur:** Added Brick
 * **Explorer:** Added Lute, Javelin
-* **Gangster:** Added Claw, Chopper, Lightning Shiv
+* **Gangster:** Added Claw, Chopper
 * **King:** Added Blunderbuss, Harpoon Gun, Spoon
 * **Hiker:** Added Slingshot, Medical Gun
 * **Mage:** Added Spoon

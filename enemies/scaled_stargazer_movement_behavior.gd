@@ -1,10 +1,10 @@
 class_name NewScaledStargazerMovementBehavior
 extends TargetRandPosMovementBehavior
 
-var lung: NewSpiky_Lung = null
+var lung = null
 
 
-func add_lung(p_lung: NewSpiky_Lung) -> void :
+func add_lung(p_lung) -> void :
 	_current_target = p_lung.global_position
 	lung = p_lung
 

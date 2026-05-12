@@ -1073,6 +1073,14 @@ func _ready()->void:
 	temp.bounce_dmg_reduction = 0.3 # 0.5	
 	temp = load("res://weapons/ranged/icicle/4/icicle_4_stats.tres")
 	temp.bounce_dmg_reduction = 0.3 # 0.5	
+	temp = load("res://weapons/ranged/rail_gun/1/rail_gun_1_stats.tres")
+	temp.bounce_dmg_reduction = 0.3 # 0.5
+	temp = load("res://weapons/ranged/rail_gun/2/rail_gun_2_stats.tres")
+	temp.bounce_dmg_reduction = 0.3 # 0.5
+	temp = load("res://weapons/ranged/rail_gun/3/rail_gun_3_stats.tres")
+	temp.bounce_dmg_reduction = 0.3 # 0.5
+	temp = load("res://weapons/ranged/rail_gun/4/rail_gun_4_stats.tres")
+	temp.bounce_dmg_reduction = 0.3 # 0.5
 	temp = load("res://entities/structures/turret/laser/laser_turret_stats.tres")
 	temp.bounce_dmg_reduction = 0.3 # 0.5
 	
@@ -2287,6 +2295,11 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
 	temp.starting_weapons.erase(temp_2)
 	
+	# Cryptid
+	temp = load("res://items/characters/cryptid/cryptid_data.tres")
+	temp_2 = load("res://weapons/ranged/rail_gun/1/rail_gun_1_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	
 	# Cyborg
 	temp = load("res://items/characters/cyborg/cyborg_data.tres")
 	temp_2 = load("res://weapons/ranged/medical_gun/1/medical_gun_data.tres")
@@ -2347,6 +2360,8 @@ func _ready()->void:
 	
 	# Jack
 	temp = load("res://items/characters/jack/jack_data.tres")
+	temp_2 = load("res://weapons/melee/fighting_stick/1/fighting_stick_data.tres")
+	temp.starting_weapons.push_back(temp_2)
 	# Remove
 	temp_2 = load("res://weapons/ranged/shuriken/1/shuriken_data.tres")
 	temp.starting_weapons.erase(temp_2)	
@@ -2362,6 +2377,8 @@ func _ready()->void:
 	temp_2 = load("res://weapons/melee/cactus_mace/2/cactus_mace_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	temp_2 = load("res://weapons/ranged/icicle/2/icicle_2_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/ranged/wand/2/wand_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	
 	# Lich
