@@ -229,6 +229,9 @@ func check_for_available_dlcs() -> void :
 		temp = load("res://dlcs/dlc_1/items/goldfish/goldfish_data.tres")
 		temp.value = 16   # 23
 		
+		temp = load("res://dlcs/dlc_1/items/lighthouse/effects/lighthouse_effect_2.tres")
+		temp.value = 30		# 100
+		
 		temp = load("res://dlcs/dlc_1/items/mirror/mirror_data.tres")
 		temp.value = 57		# 60
 		
@@ -253,6 +256,10 @@ func check_for_available_dlcs() -> void :
 		temp.value = 105		# 110
 		temp = load("res://dlcs/dlc_1/items/krakens_eye/effects/krakens_eye_effect_0.tres")
 		temp.text_key = "new_effect_chance_explode_on_hit"
+		
+		temp = load("res://dlcs/dlc_1/items/lantern/effects/lantern_effect_2.tres")
+		temp.value = 30			# 75
+		
 
 		# Ricochet-related tweaks
 		temp = load("res://dlcs/dlc_1/weapons/ranged/blunderbuss/2/blunderbuss_2_stats.tres")

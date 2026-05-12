@@ -1,5 +1,5 @@
 # Overview
-More items are worth using and fewer choices are overpowered. Range and Luck stats are better; Armor is weaker. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate and detailed. Overall difficulty is similar, with the easiest runs made modestly harder and the hardest runs made a bit easier.
+More items are worth using; fewer choices are overpowered. Range and Luck stats are better; Armor is weaker. Mixed-weapon builds are easier to manage and more build styles are viable; Tier-4 weapons are cheaper. Several tweaks to make things feel better to use and encourage more varied gameplay. Tooltips are more accurate/detailed. Difficulty is similar, with the easiest runs made modestly harder and the hardest runs made a bit easier.
 
 Below is a summary of major changes you should know about. (The detailed exact changes are further below: https://github.com/DarkTwinge/Brotato-BalanceMod/#full-changelog)
 
@@ -7,19 +7,19 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 
 ## Change Summary
 ### Mechanics
-* Easier to have mixed-weapon builds: The chances of being offered one of the exact weapons you already have is higher the more weapon types you have. Additionally, shop weapon set favoring is now based on how many of that set you have (so a single off-set weapon doesn't impact your weapon pool as much).
+* Easier to have mixed-weapon builds: Odds for being offered an exact weapon you already have is higher the more weapon types you have. Additionally, shop weapon set favoring is now based on how many of that set you have (so a single off-set weapon doesn't impact your weapon pool as much).
 * Armor is slightly less effective (~7% worse). Fewer items give negative Dodge.
 * Range gained/lost from level-ups & items is ~15% higher.
 * Other level-ups: Tier 2-4 Luck is stronger; Tier-1 Harvesting dropped to 4; weaker Tier-4 level-ups are more worthwhile.
 * Horde Waves give ~8% fewer materials.
-* Enemies can now drop partial material amounts instead of all or nothing (average amount is the same).
+* Enemies can now drop partial material amounts instead of all or nothing (same average amount).
 * Several tooltips cleaned up to be more accurate, hidden mechanics are detailed, & character descriptions take up less room. Guaranteed level-ups are color-coded. Cyborg's transition has unique SFX. Tooltips show explosion sizes.
 
 ### Weapons
-* Primitive set bonus is worse; Blunt set bonus is better. Gun set bonus changed to Attack Speed in order to make the Range stat more relevant.
+* Primitive set bonus is worse; Blunt set bonus is better. Gun set bonus changed to Attack Speed (making your Range stat more relevant).
 * Sharp Tooth reworked to only have one Set and is stronger overall.
 * Sickle removed from the game.
-* Tier-4 weapons are cheaper (slightly buffs Luck & mixed weapon builds). Other weapon prices slightly tweaked for more logical/consistent progression.
+* Tier-4 weapons are cheaper (slightly buffs Luck & mixed weapon builds). Other weapon prices slightly tweaked for more logical progression.
 * Potato Thrower added to the Blunt set to work better as a starting weapon.
 * Spear & Spiky Shield are nerfed; Mace, Anchor, & War Hammer are buffed.
 * Laser Gun, Obliterator, Plasma Sledge, Scissors, Sword, Circular Saw, and Hammer receive minor buffs.
@@ -42,6 +42,7 @@ Tons of items receive small buffs or nerfs: overall more items are useful in mor
 * Ghost Outfit significantly buffed; Landmines buffed. Celery Tea less punishing. Wandering Bot, Lucky Coin, and Sunken Bell significantly cheaper. Hedgehog, Lumberjack Shirt, Sausage, and Bone Dice cheaper. Fruit Basket, Saltwater, Cauldron, Small Fish, and Penguin more impactful.
 * Ricochet is now friendlier with already-piercing weapons.
 * Heavy Bullets now stronger overall but lowers Accuracy.
+* Fog reduction from thematic items reduced (so one item doesn't eliminate Fog's impact by itself).
 
 ### Characters
 As with items, the goal is not for characters to be equal strength. The focus is instead on making the easiest options less 'free', as well as tweaks to make decisions more interesting and characters more variable.
@@ -53,8 +54,8 @@ As with items, the goal is not for characters to be equal strength. The focus is
 * Crazy now works with Crossbows properly; Brawler works with Claw properly.
 * Fisher, Hiker, Baby, One-armed, and Farmer get modest buffs.
 * Masochist, Knight, Doctor, Loud, Renegade, Bull, Cryptid, Entrepreneur, Explorer, Demon, King, Mutant, Gladiator, Engineer, Sick, and Brawler receive nerfs.
-* Most automatic starting weapons (e.g. Wildling, Crazy) are removed, making your chosen starter more meaningful.
 * Shops offers fewer completely worthless items, and starting weapons are more varied & appropriate.
+* Most forced starting weapons (e.g. Wildling, Crazy) are removed, making your chosen starter more meaningful.
 
 ### Enemies & Waves
 * Late-game Elites have 20% more health.
@@ -71,6 +72,7 @@ As with items, the goal is not for characters to be equal strength. The focus is
 
 # Support Me
 Tune into my stream where I play a wide variety of indie games: https://www.twitch.tv/darktwinge
+Check out my VODs Channel for past Brotato content: https://www.youtube.com/@DarkTwingeVODs
 
 If you'd like to directly support my ability to make and maintain mods like this, you can do so on Patreon: http://www.patreon.com/DarkTwinge or directly: https://paypal.me/DarkTwinge
 
@@ -151,7 +153,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blood Leech:** Price 45->38
 * **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%
 * **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->60; Laser Damage 10 -> 9; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75%
-* **Campfire:** Price 40->39
+* **Campfire:** Price 40->39; Fog Visibility +50% -> +20%
 * **Catling Gun:** Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
 * **Celery Tea:** Price 35->31; Extra Enemy HP +100% -> +70%
 * **Clockwork Wasp:** Price 45->46
@@ -211,7 +213,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Barricade:** Price 75->63; Armor While Not Moving 8 -> 10; Knockback 3 -> 4; Speed -5% -> -3%
 * **Blood Donation:** Price 50->40 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->70; Luck 15 -> 21
-* **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed _[Now more reasonable to take this primarily for the safety benefit.]_
+* **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed; Fog Visibility +25% -> +15% _[Now more reasonable to take this primarily for the safety benefit.]_
 * **Candy Bag:** Price 70->74; Random Stats Gained 8 -> 5 & No longer gives useless stats; Extra Elite Chance +10% --> Enemy Damage Next Wave +25% _[The extra elite effect was too high-variance, meaning the item was never worth taking for high-winrate players. It also sucked to hit stats your character literally couldn't use, so the system that prevents useless items now also blocks useless Candy stats.]_
 * **Chameleon:** Price 70->47; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
 * **Community Support:** Price 75->70 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
@@ -249,7 +251,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Crystal:** Price 65->52; Engineering -2 --> Max HP -2 _[Engineering builds rarely care about Attack Speed anyway, so it gets an appropriate real downside while being cheaper to compensate.]_
 * **Goblet:** Price 70->69; Chance of heal per kill 15% -> 12%
 * **Goldfish:** Price 23->16 _[I'd prefer a more interesting buff if I have time to create one, but this will help a weak item for now.]_
-* **Greek Fire:** Price 100->105
+* **Lighthouse:** Fog Visibility +100% -> +30%
 * **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
 * **Sunken Bell:** Price 65->40; Explosion Size 600% -> 750%
@@ -263,6 +265,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Focus:** Price 110->104; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
 * **Gobbler's Hat:** Dodge -10% -> -5%; Additional Downside of -2 Armor
+* **Greek Fire:** Price 100->105; Fog Visibility +75% -> +20%
 * **Heavy Bullets:** Price 100->95; Range +10 --> Crit Chance +5%; Crit Chance -5% --> Accuracy -25%; (Replaced 'Range' tag with 'Crit Chance') _[The Ranged Weapons section below also covers some Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
 * **Hourglass:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
 * **Jet Pack:** Price 100->96; HP -5 -> -3
@@ -283,6 +286,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Ashes:** Range 100 -> 80
 * **Axolotl:** Price 130->115
 * **Kraken's Eye:** Price 110->105
+* **Lantern:** Fog Visibility +75% -> +30%
 * **Sifd's Relic (Cursed):** Base Additional Dodge 10% -> 5% _[The Armor increasing from Curse is already strong, so the additional Dodge is now a solid ~9% instead of bananas ~18%.]_
 
 ## Weapons

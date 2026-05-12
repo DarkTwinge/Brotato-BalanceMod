@@ -480,6 +480,8 @@ func _ready()->void:
 
 	temp = load("res://items/all/campfire/campfire_data.tres")
 	temp.value = 39   # 40
+	temp = load("res://items/all/campfire/campfire_effect_4.tres")
+	temp.value = 20		# 50 (Fog reduction)
 
 	temp = load("res://entities/units/pet/catling_gun/catling_gun_weapon_stats.tres")
 	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ] ]	# 0.6
@@ -689,6 +691,8 @@ func _ready()->void:
 	temp = load("res://items/all/candle/candle_effect_4.tres")
 	temp.key = "stat_attack_speed"
 	temp.value = -4  # -5 (Damage -> Attack Speed)
+	temp = load("res://items/all/candle/candle_effect_5.tres")
+	temp.value = 15		# 25 (Fog)
 
 	# Candy Bag
 	temp = load("res://items/all/candy_bag/candy_bag_data.tres")
@@ -933,6 +937,8 @@ func _ready()->void:
 	# Greek Fire
 	temp = load("res://items/all/greek_fire/greek_fire_data.tres")
 	temp.value = 105	# 100
+	temp = load("res://items/all/greek_fire/effects/greek_fire_effect_1.tres")
+	temp.value = 20		# 75
 	
 	# Heavy Bullets
 	temp = load("res://items/all/heavy_bullets/heavy_bullets_data.tres")
