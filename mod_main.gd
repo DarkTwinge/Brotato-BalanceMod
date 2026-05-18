@@ -30,6 +30,9 @@ func _init(modLoader = ModLoader):
 	# Now applies Brawler's +AttackSpeed to Claw 
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/weapon_service.gd")
 	
+	# Re-adds text for Inflation increase to Nightmare's hidden attribute
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/text.gd")
+		
 	# Bricks no longer break Wave 1
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "weapons/weapon.gd")
 	
@@ -218,8 +221,22 @@ func _ready()->void:
 #		for unit in zone.endless_enemy_scenes:
 #			if unit.unit_scene.get_path() == "res://entities/units/enemies/evil_mob/evil_mob.tscn":
 #				unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/evil_mob.tscn")
-
-
+	
+	
+	# Magician
+	temp = load("res://entities/units/enemies/junkie/junkie_item.tres")
+	temp.name = "BM_JUNKIE_NAME"
+	# Dread Magician
+	temp = load("res://entities/units/enemies/dire_junkie/dire_junkie_item.tres")
+	temp.name = "BM_DIRE_JUNKIE_NAME"
+	# Wizard Hat
+	temp = load("res://entities/units/enemies/spawner/spawner_item.tres")
+	temp.name = "BM_SPAWNER_NAME"
+	temp.behaviour_description = "BM_SPAWNER_BEHAVIOUR_DESCRIPTION"
+	# Puffy Wizard Hat
+	temp = load("res://entities/units/enemies/bloated_spawner/bloated_spawner_item.tres")
+	temp.name = "BM_BLOATED_SPAWNER_NAME"
+	temp.behaviour_description = "BM_BLOATED_SPAWNER_BEHAVIOUR_DESCRIPTION"
 	
 	### WAVE SPAWNS - CRASH ZONE ###
 	# Wave 12
@@ -2505,4 +2522,30 @@ func _ready()->void:
 	temp = load("res://items/characters/wildling/wildling_data.tres")
 	# Remove
 	temp_2 = load("res://weapons/melee/sharp_tooth/1/sharp_tooth_data.tres")
+	temp.starting_weapons.erase(temp_2)
+	
+	# Wounded
+	temp = load("res://items/characters/wounded/wounded_data.tres")
+	temp_2 = load("res://weapons/melee/claw/1/claw_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/melee/lightning_shiv/1/lightning_shiv_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/melee/spear/1/spear_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/ranged/crossbow/1/crossbow_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/ranged/shuriken/1/shuriken_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	temp_2 = load("res://weapons/ranged/revolver/1/revolver_data.tres")
+	temp.starting_weapons.push_back(temp_2)
+	# Remove
+	temp_2 = load("res://weapons/melee/spiky_shield/1/spiky_shield_data.tres")
+	temp.starting_weapons.erase(temp_2)
+	temp_2 = load("res://weapons/melee/chopper/1/chopper_data.tres")
+	temp.starting_weapons.erase(temp_2)
+	temp_2 = load("res://weapons/melee/fist/1/fist_data.tres")
+	temp.starting_weapons.erase(temp_2)
+	temp_2 = load("res://weapons/melee/fighting_stick/1/fighting_stick_data.tres")
+	temp.starting_weapons.erase(temp_2)
+	temp_2 = load("res://weapons/ranged/smg/1/smg_data.tres")
 	temp.starting_weapons.erase(temp_2)

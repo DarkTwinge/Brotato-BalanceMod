@@ -361,7 +361,6 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to early Harvesting than most, and one that is most relevant for their weaker, non-Pruner builds.]_
 * **Fisher:** Extra HP 5 -> 8
 * **Gladiator:** -30 Luck -> -40
-* **Golem:** Can no longer be offered Doc Moth
 * **Jack:** Damage Vs Elites/Bosses 125% -> 120%; Extra Enemy HP 175% -> 180%
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
@@ -469,6 +468,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Vampire:** Added Cacti Club
 * **Well-rounded:** Added Ghost Axe; Removed Ghost Flint
 * **Wildling:** Removed Sharp Tooth _[Doesn't benefit from Wildling's ability.]_
+* **Wounded:** Added Claw, Lightning Shiv, Crossbow, Shuriken, Revolver; Removed Spiky Shield, Chopper, Fist, Quarterstaff, SMG
 #### DLC
 * **Baby:** Added Lute, Brick; Removed Flute
 * **Buccaneer:** Added Plank, Wrench, Revolver

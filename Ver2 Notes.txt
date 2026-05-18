@@ -748,13 +748,16 @@ Riposte - make an explosion
 
 
 
-check if inflation increase on nightmare is still in
-
-
-
 Metal Detector - showing weirdly high gains on Builder, does jump up at end of wave, tooltip is wrong OR it does actually count with Builder Turret, may be Improved Tooltips off.  (or Harvesting for some weird reason??)
 
 wave 19 etc. gob of enemies kinda ehhhh
 
 
 check environmental bullet scaling, early super high?
+
+
+remove SMG nerf?
+
+testing atkspd stuff -- check settings on live vs ide, see if any of the visual or whatever settings may affect anything
+
+verify tier-2 wrench/burn turret are working properly e.g. scaling off engineering as they should
