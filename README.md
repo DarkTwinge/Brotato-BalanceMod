@@ -386,6 +386,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Can no longer be offered Doc Moth _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell or Improved Tools.
+* **Gangster:** Early Elites do less damage (see below).
 * **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
 * **Pacifist:** Can no longer be offered Whistle or Bot-o-mine.
 * **Sailor:** Dodge Cap 20% -> 25%; Can now be offered Dodge items. _[While Dodge is still not good on Sailor, it is usable enough that the items don't need to be completely unavailable.]_
@@ -393,6 +394,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ## Enemies
 ### Elites
+* Adjusted early Elite damage to have a cleaner progression. Compared to vanilla: Waves 1-8 do 20% less damage; Waves 9-11 do 5% more damage; Wave 12 does 10% more damage; Wave 13 does 5% less damage. _[A recent vanilla change reduces Wave 9-12 Elite damage by 25%, but this ignores Gangster, meaning a Wave 8 Elite did the same damage as one on Wave 11.]_
 * All Elites on Waves 17-19 have an additional 20% health.
 
 #### Crash Zone
