@@ -23,7 +23,7 @@ _Note: Altered/New descriptions will currently not display for non-English langu
 * Potato Thrower added to the Blunt set to work better as a starting weapon.
 * Spear & Spiky Shield are nerfed; Mace, Anchor, & War Hammer are buffed.
 * Laser Gun, Obliterator, Plasma Sledge, Scissors, Sword, Circular Saw, and Hammer receive minor buffs.
-* SMG, Thief Dagger, Railgun, Fist, Icicle, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, Jousting Lance, Stick, and Revolver receive minor nerfs.
+* Railgun, Fist, Icicle, Lightning Shiv, Flaming Brass Knuckles, Chain-gun, Nuclear Launcher, Jousting Lance, Stick, and Revolver receive minor nerfs.
 * Chopper, Harpoon Gun, Screwdriver, and Sniper Gun get minor buffs+nerfs.
 
 ### Items
@@ -101,6 +101,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ## Items
 ### Tier-1
 * **Alien Tongue:** Price 25->22; Knockback +1 -> +2
+* **Baby Elephant:** Price 22->18
 * **Baby Gecko:** Range 10 -> 12
 * **Bag:** Price 15->19
 * **Beanie:** Range -6 -> -7
@@ -127,6 +128,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Mutation:** Price 25->24; Knockback -3 -> -2
 * **Pencil:** Price 8->9; Now also gives +2% Crit Chance (and is tagged for Crit Chance)
 * **Propeller Hat:** Price 28->25
+* **Ratzilla:** Price 30->25
 * **Scar:** Price 25->24; Range -8 -> -11
 * **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Price reduction helps encourage mixed builds.]_
 * **Sharp Bullet:** Knockback -3 -> -2
@@ -264,7 +266,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Extra Stomach:** Price 100->105; Now tagged for 'consumables' instead of 'luck'.
 * **Focus:** Price 110->104; Attack Speed penalty per weapon -3% -> -4%
 * **Gnome:** Melee Damage 10 -> 12; Elemental Damage 10 -> 8; Range -20 -> -25
-* **Gobbler's Hat:** Dodge -10% -> -5%; Additional Downside of -2 Armor
+* **Gobbler's Hat:** Price 130->110; Speed -15% -> -8%; Dodge -10% -> -5%; Additional Downside of -2 Armor; Materials Dropped +70% -> +50% _[A less-extreme version that's still a massive income increase but a bit more takeable in a serious run.]_
 * **Greek Fire:** Price 100->105; Fog Visibility +75% -> +20%
 * **Heavy Bullets:** Price 100->95; Range +10 --> Crit Chance +5%; Crit Chance -5% --> Accuracy -25%; (Replaced 'Range' tag with 'Crit Chance') _[The Ranged Weapons section below also covers some Accuracy tweaks that're primarily relevant if you have Heavy Bullets.]_
 * **Hourglass:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
@@ -312,7 +314,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Spiky Shield:** Price 15/31/61/122 -> 17/34/66/120; Damage Scaling From Armor 80%/100%/130%/170% -> 75%/100%/125%/150% (Vanilla partially implemented this nerf, but it's still strong with the full reduction.)
 * **Stick:** Base Damage 8/9/10/12 -> 7/8/10/17; Tier-4 Damage-Per-Stick 10 -> 9 _[Tier-4 has the same damage with 6 sticks but is stronger with fewer sticks, giving more room to switch your build out of Sticks if desired.]_
 * **Sword:** Tier-4 Cooldown 0.98s -> 0.91s
-* **Thief Dagger:** Base Damage 6/12/18/30 -> 5/10/16/26; Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
+* **Thief Dagger:** Knockback 2 -> 0 (All Tiers); Tier-4 Crit Chance 40% -> 35%
 #### DLC
 * **Anchor:** Price 48/90/175 -> 39/74/133; Tier-4 Damage Scaling From Curse 125% -> 140%
 * **Brick:** Can no longer break during Wave 1; Breaking SFX slightly louder
@@ -335,7 +337,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Railgun:** Dodge Damage Scaling 30%/35%/40%/45% -> 25%/30%/35%/40%; Ranged Damage Scaling 80%/80%/90%/100% -> 100%(All)
 - **Revolver:** Price 20/34/70/130 -> 18/36/68/125; Range 450 -> 425; Big Reload Cooldown 2.07s/1.93s/1.80s/1.67s -> 2.30s/2.15s/2.00s/1.85s _[About 5% slower attack rate overall.]_
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
-- **SMG:** Internal Cooldown 4/4/4/3 -> 5/5/5/4; (Firing SFX slightly quieter) _[In practice, ~8% worse cooldown at 0% Attack Speed, but will end up the same with more Attack Speed. Breakpoint before Attack Speed usefulness plateaus is now 67% for Tiers 1-3 and 51% for Tier-4. (Still also has a spike at 201% for all Tiers.)]_
+- **SMG:** (Firing SFX slightly quieter)
 - **Sniper Gun:** Price 115/245 -> 108/191; Range 800/1000 -> 600/700; Ranged Damage Scaling 100%(All) -> 250%/350%; Tier-4 Crit Chance 20% -> 25% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much base Range that adding more is irrelevant.]_
 #### DLC
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 75%/85%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
@@ -345,6 +347,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
+* **Artificer:** Can no longer be offered Baby Elephant or Cyberball
 * **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
 * **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
@@ -377,6 +380,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2; Can no longer be offered Barricade.
 * **Streamer:** Now also favored to find Stand-still items.
 * **Vagabond:** Can no longer be offered Focus.
+* **Vampire:** Consumable Healing -100 -> -20 _[Allows healing from Elite Crates.]_
 * **Wildling:** No longer starts with a Stick.
 * **Wounded:** Can no longer be offered Barricade.
 * _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
@@ -384,6 +388,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Captain:** No longer favored to find XP Gain items. _[Their benefit is only about average, and Barnacle especially is sad for Captain.]_
 * **Chef:** Can no longer be offered Eyes Surgery.
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
+* **Diver:** Now starts with +10% Crit Chance
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Can no longer be offered Doc Moth _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell or Improved Tools.
 * **Gangster:** Early Elites do less damage (see below).
@@ -411,6 +416,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Standard Enemies
 + **Gobbler:** Base HP 5 -> 1; Speed range for each evolution 300-400/175-275/50-150 -> 320-400/200-280/80-160; HP increase upon evolution 50% -> 75%
 + **Fly:** Base HP 15 -> 1; HP Per Wave 4 -> 9 _[Similar HP early, more HP late.]_
++ **Dread Magician (Nightmare):** Base HP 15 -> 2; HP Per Wave 8 -> 5 _[This gives them slightly less HP than regular Magicians, rewarding careful play more; they still have more Speed, double the projectiles, and spawn in groups of 5 instead of 3.]_
 + **Tentacle:** Item Crate Drop Chance 2% -> 3%
 + **Small Charger:** Knockback Resistance 80% -> 75%
 + **Small Viking Charger:** Knockback Resistance 80% -> 75%
@@ -435,11 +441,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wave 15:** Helmet Spawns 114 -> 95
 * **Wave 16:** 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->725) _[Aiming to make them less trivially smashed by melee quickly]_; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
 * **(DLC) Wave 16:** One of the added Flies is replaced with a Pufferfish.
-* **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also potentially makes things a bit harder, especially for Ranged builds).
+* **Wave 18 (Nightmare):** Corrupted Buffer spawns 3.5x8 -> 2x8 _[Something you can more strategically play around instead of being a mess you can't really control.]_
+* **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also makes things a bit harder, especially for Ranged builds).
+* **Wave 20 (Nightmare):** Puffy Wizard Hat spawns 1x7 -> 1x9 (with earlier spawns); Added 3 immediate Infected Slasher Eggs that spawn on the edge of the map.
 * **Wave 14 & 15 Hordes:** Added 4 single Magician spawns alongside 4 single Wizard Hats (Spawners) spread out over the last ~1/2 of the wave; Made the added Helmets in the 2nd half spawn on the edges of the map (with slightly fewer Helmets spawned); Made the Horde additions identical for 14 & 15; Removed one group of Basic Aliens to make more room for the others. _[Aiming to make these Horde waves feel as threatening as Elite fights are.]_
 ### Wave Spawns: The Abyss
 * **Wave 4:** The Lamprey now appears on Danger Level 1+ instead of only DL5. _[This is a way to learn the enemy pattern more safely instead of having to take Bait.]_
 * **Wave 13:** Stargazer spawn timing 30s -> 28s; Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
+* **Nightmare, Wave 10:** 9 single Walrus spawns over each of the final 9 seconds -> Two groups of 3 Walrus spawn at 9 seconds and 7 seconds _[Fixes the spawns so Jack doesn't get all of them, and front-loads them a little more to be slightly more threatening.]_
 
 ## Starting Weapons
 * **Baby:** Added Ghost Axe; Removed Taser

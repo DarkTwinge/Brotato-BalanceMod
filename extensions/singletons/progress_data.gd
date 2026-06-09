@@ -70,7 +70,12 @@ func check_for_available_dlcs() -> void :
 
 		temp = load("res://dlcs/dlc_1/enemies/goblin_shark/goblin_shark_stats.tres")
 		temp.base_drop_chance = 0.02					# 0.01
+
+		# Vamp Squid
+		temp = load("res://dlcs/dlc_1/zones/abyss/017/unit_1.tres")
+		temp.additional_min_distance_from_player = 120.0		# 0.0
 		
+	
 		## DESCRIPTION TWEAKS ##
 		temp = load("res://dlcs/dlc_1/enemies/pufferfish/pufferfish_item.tres")
 		temp.behaviour_description = "NEW_PUFFERFISH_BEHAVIOUR_DESCRIPTION"
@@ -100,6 +105,14 @@ func check_for_available_dlcs() -> void :
 						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/pufferfish.tscn")
 					elif unit.get_path() == "res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid.tscn":
 						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/vampire_squid.tscn")
+		
+		# Wave 10, Nightmare
+		temp = load("res://dlcs/dlc_1/zones/abyss/010/d6_group_2.tres")
+		temp.repeating = 1					# 10
+		temp.repeating_interval = 2	# 1
+		temp = load("res://dlcs/dlc_1/zones/abyss/010/d6_unit_2.tres")
+		temp.min_number = 3					# 1
+		temp.max_number = 3					# 1 ( Turns ~8 seconds of a Walrus every second into two spawns of 3)
 		
 		# Wave 13 - Spawn single Egglord and Stargazer sooner
 		temp = load("res://dlcs/dlc_1/zones/abyss/013/d5_group_1.tres")
@@ -134,10 +147,7 @@ func check_for_available_dlcs() -> void :
 		temp = load("res://dlcs/dlc_1/zones/abyss/004/d5_group_1.tres")
 		temp.min_difficulty = 1
 		
-		
-		# Vamp Squid
-		temp = load("res://dlcs/dlc_1/zones/abyss/017/unit_1.tres")
-		temp.additional_min_distance_from_player = 120.0		# 0.0
+
 		
 		### ITEMS ###
 		# Items: Tier-1 #
@@ -452,6 +462,11 @@ func check_for_available_dlcs() -> void :
 		temp.text_key = "new_effect_gain_stat_end_of_wave"
 		temp = load("res://dlcs/dlc_1/characters/creature/effects/creature_effect_4.tres")
 		temp.text_key = "new_effect_gain_stat_end_of_wave"
+		
+		# Diver
+		temp = load("res://dlcs/dlc_1/characters/diver/diver_data.tres")
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/diver-starting-crit.tres")
+		temp.effects.insert(3,temp_2)
 		
 		# Druid
 		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")

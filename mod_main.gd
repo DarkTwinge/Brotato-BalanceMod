@@ -203,6 +203,11 @@ func _ready()->void:
 	temp = load("res://entities/units/enemies/lamprey/lamprey_stats.tres")
 	temp.knockback_resistance = 0.93			# 0.95
 	
+	# Dread Magician (Nightmare)
+	temp = load("res://entities/units/enemies/dire_junkie/dire_junkie_stats.tres")
+	temp.health = 2												# 15 (Reg Magician is 5)
+	temp.health_increase_each_wave = 5.0	# 8.0 (Reg. Magician is 5.0)
+	
 	# Gobbler
 	temp = load("res://entities/units/enemies/evil_mob/evil_mob.tres")
 	temp.health = 1												# 5
@@ -277,12 +282,23 @@ func _ready()->void:
 	temp.min_repeating_interval = 3 # (1)
 	temp.spawn_timing = 22				  # 32
 	
+	# Wave 18 (Nightmare)
+	# Corrupted Buffers
+	temp = load("res://zones/zone_1/018/d6_unit_2.tres")
+	temp.min_number = 2							# 3
+	temp.max_number = 2							# 4
+	
 	# Wave 20
 	temp = load("res://zones/zone_1/020/wave_20.tres")
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/wave20_basic.tres")
 	temp.groups_data.push_back(temp_2)
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/wave20_fin.tres")
 	temp.groups_data.push_back(temp_2)
+	# Wave 20 (Nightmare)
+	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/CZ-wave20_nm_egg.tres")
+	temp.groups_data.push_back(temp_2)
+	temp = load("res://zones/zone_1/020/d6_group_1.tres")
+	temp.repeating_interval = 13		# 15
 
 	# Wave 14 & 15 Horde (Crash Zone)
 ##	# Basics 26x4 & Chasers 26x4 -> 0 & 0 for Wave 14/15
@@ -308,10 +324,13 @@ func _ready()->void:
 
 	## TIER-1 ITEMS ##
 	temp = load("res://items/all/alien_tongue/alien_tongue_data.tres")
-	temp.value = 22  # 25
+	temp.value = 22		# 25
 	temp = load("res://items/all/alien_tongue/alien_tongue_effect_2.tres")
-	temp.value = 2  # 1 (Knockback)	
-
+	temp.value = 2		# 1 (Knockback)	
+	
+	temp = load("res://items/all/baby_elephant/baby_elephant_data.tres")
+	temp.value = 18		# 22
+	
 	temp = load("res://items/all/baby_gecko/baby_gecko_effect_0.tres")
 	temp.value = 12   # 10 (Range)
 
@@ -412,15 +431,18 @@ func _ready()->void:
 	temp.effects.push_back(temp_2) # Added +2% Crit
 	
 	temp = load("res://items/all/propeller_hat/propeller_hat_data.tres")
-	temp.value = 25  # 28
-
+	temp.value = 25		# 28
+	
+	temp = load("res://items/all/ratzilla/ratzilla.tres")
+	temp.value = 25		# 30
+	
 	temp = load("res://items/all/scar/scar_data.tres")
-	temp.value = 24  # 25
+	temp.value = 24		# 25
 	temp = load("res://items/all/scar/scar_effect_2.tres")
-	temp.value = -11 # -8 (Range)
+	temp.value = -11	# -8 (Range)
 	
 	temp = load("res://items/all/scared_sausage/scared_sausage_data.tres")
-	temp.value = 20  # 25
+	temp.value = 20		# 25
 	temp = load("res://items/all/scared_sausage/scared_sausage_effect_1.tres")
 	temp.text_key = "NEW_EFFECT_BURN_CHANCE"
 	
@@ -946,8 +968,13 @@ func _ready()->void:
 	
 	# Gobbler's Hat
 	temp = load("res://items/all/evil_hat/evil_hat.tres")
+	temp.value = 110	# 130
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/gobbler_hat-armor_malus.tres")
 	temp.effects.push_back(temp_2) # -2 Armor
+	temp = load("res://items/all/evil_hat/evil_hat_effect_0.tres")
+	temp.value = 50				# 70 (+Mat Drops)
+	temp = load("res://items/all/evil_hat/evil_hat_effect_1.tres")
+	temp.value = -8				# -15 (Speed)
 	temp = load("res://items/all/evil_hat/evil_hat_effect_2.tres")
 	temp.value = -5		# -10 (Dodge)
 	
@@ -1482,19 +1509,19 @@ func _ready()->void:
 	# Thief Dagger
 	temp = load("res://weapons/melee/dagger/1/dagger_stats.tres")
 	temp.knockback = 0			# 2
-	temp.damage = 5					# 6
+#	temp.damage = 5					# 6
 	temp = load("res://weapons/melee/dagger/2/dagger_2_stats.tres")
 	temp.knockback = 0			# 2
-	temp.damage = 10				# 12
+#	temp.damage = 10				# 12
 	temp = load("res://weapons/melee/dagger/3/dagger_3_stats.tres")
 	temp.knockback = 0			# 2
-	temp.damage = 16				# 18
+#	temp.damage = 16				# 18
 	temp = load("res://weapons/melee/dagger/4/dagger_4_data.tres")
 	temp.value = 95					# 105
 	temp = load("res://weapons/melee/dagger/4/dagger_4_stats.tres")
 	temp.knockback = 0			# 2
 	temp.crit_chance = 0.35	# 0.4
-	temp.damage = 26				# 30
+#	temp.damage = 26				# 30
 	
 	# Thunder Sword
 	temp = load("res://weapons/melee/thunder_sword/4/thunder_sword_4_data.tres")
@@ -1771,20 +1798,20 @@ func _ready()->void:
 	
 	# SMG
 	temp = load("res://weapons/ranged/smg/1/smg_stats.tres")
-	temp.cooldown = 5				# 4
+#	temp.cooldown = 5				# 4
 	temp.sound_db_mod = -11	# -10
 	temp = load("res://weapons/ranged/smg/2/smg_2_stats.tres")
-	temp.cooldown = 5				# 4
+#	temp.cooldown = 5				# 4
 	temp.accuracy = 0.74		# 0.75
 	temp.sound_db_mod = -11	# -10
 	temp = load("res://weapons/ranged/smg/3/smg_3_stats.tres")
-	temp.cooldown = 5				# 4
+#	temp.cooldown = 5				# 4
 	temp.accuracy = 0.77		# 0.80
 	temp.sound_db_mod = -11	# -10
 	temp = load("res://weapons/ranged/smg/4/smg_4_data.tres")
 	temp.value = 133				# 149
 	temp = load("res://weapons/ranged/smg/4/smg_4_stats.tres")
-	temp.cooldown = 4				# 3	
+#	temp.cooldown = 4				# 3	
 	temp.accuracy = 0.80		# 0.85
 	temp.sound_db_mod = -11	# -10
 	
@@ -1910,6 +1937,11 @@ func _ready()->void:
 	
 
 	## CHARACTERS ##
+	# Artificer
+	temp = load("res://items/characters/artificer/artificer_data.tres")
+	temp.banned_items.push_back("item_baby_elephant")
+	temp.banned_items.push_back("item_cyberball")
+	
 	# Baby
 	temp = load("res://items/characters/baby/baby_data.tres")
 	temp.wanted_tags = [  ]	# Had XP Gain
@@ -1922,7 +1954,7 @@ func _ready()->void:
 	temp = load("res://items/characters/beast_master/beast_master_data.tres")
 	temp.banned_item_groups.push_back("range_and_attack_speed")
 	temp.banned_item_groups.push_back("attack_speed")
-	temp.banned_items.push_back("item_spider")	
+	temp.banned_items.push_back("item_spider")
 	
 	# Brawler
 	temp = load("res://items/characters/brawler/brawler_effect_1.tres")
@@ -2143,6 +2175,10 @@ func _ready()->void:
 	# Vagabond
 	temp = load("res://items/characters/vagabond/vagabond_data.tres")
 	temp.banned_items.push_back("item_focus")
+	
+	# Vampire
+	temp = load("res://items/characters/vampire/effects/vampire_effect_2e.tres")
+	temp.value = -20				# -100 (Consumable Heal)
 	
 	# Wildling
 	temp = load("res://items/characters/wildling/wildling_data.tres")

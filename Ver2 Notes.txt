@@ -730,17 +730,13 @@ Crit Damage 1.5/1.75/2.0/2.25
 Max Range 300
 
 
-Wave 9 fancy squid before any reg squid is weird
-Campfire Fog boost too much
-
-Puffer 'pop' noise delayed sometimes? inconsistent
-regular puffers should also pop
 
 
 check wave 15 abyss if they made a weird gap in the spawns in the last 10 seconds
 did wave 14 have fewer walruses?
 
 soldier being tagged stand-still kinda weird, 5% of all blues are Coral
+-> incentive to maybe move Chameleon to blue
 
 
 
@@ -748,16 +744,53 @@ Riposte - make an explosion
 
 
 
-Metal Detector - showing weirdly high gains on Builder, does jump up at end of wave, tooltip is wrong OR it does actually count with Builder Turret, may be Improved Tooltips off.  (or Harvesting for some weird reason??)
-
 wave 19 etc. gob of enemies kinda ehhhh
 
 
 check environmental bullet scaling, early super high?
 
 
-remove SMG nerf?
-
-testing atkspd stuff -- check settings on live vs ide, see if any of the visual or whatever settings may affect anything
-
 verify tier-2 wrench/burn turret are working properly e.g. scaling off engineering as they should
+
+
+should -Enemies reduce spawns from Wizard Hats?
+	(Like how it IS reduced on Blobfish, those still has a minimum; same formula, prolly min 2 reg 3 dread version)
+
+Anyhting weird with Flamethrower vs Horned Flys?  (Tau thought it wasn't as bad against them as it was supposed to be)
+
+New blobfish, should it move towards player a touch slower?  (or slightly more HP)
+
+Artificer - possibly Restrict: Alien Eyes, Catling, Rat, Baby with a Beard as well 
+
+
+Ball & Chain text should specify Weapons & Structures affected, not just weapons.
+
+
+Firemane (and reg Anenome?) -- projectiles should vanish when they die
+
+Greek Fire bugged to activate on any hit that would apply burning, not just the burning itself
+Barricade + Stone Skin bugged to restore HP
+Harpoon Gun: make its damage reduction not apply to Elites/Bosses
+
+
+Diver Possibilities
+	debuff duration could be 4s instead of 3s
+	Could be something like 300->250 range buff and 250->200 enemy HP
+	Could start with 10% Crit Chance
+	
+
+
+Remove Baby Elephant?
+
+
+Ab W12: Shielded Egglayer is a 1-2 spawn and should be 1 fixed?
+Ab W14: less of a progression (Walrus -> Narwhal) than the original?
+CZ-7: Changed the Charger group into two groups?
+Ab-14: Elite/Horde also removes the added spooky enemies; maybe should remove less, or?
+	Also true for Ab-11 Viperfish adds,
+	Also true for CZ-12 Tentacle adds
+Ab-9 Brainy Squid kinda weird instead of VampSquid; also do Brainys need stat altering since Vamp is changed, or?
+Ab-17/18 too similar?
+
+CZ-14: fewer Dire Magicians [maybe not now with the nerf plan]
+CZ-18: Could give the stronger Buffers a longer delay (currently reducing the count)
