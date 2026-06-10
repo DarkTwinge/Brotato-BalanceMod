@@ -601,8 +601,11 @@ func _ready()->void:
 	temp = load("res://items/all/missile/missile_effect_1.tres")
 	temp.value = 11  # 10 (Damage%)
 	
+	temp = load("res://items/all/piggy_bank/piggy_bank_data.tres")
+	temp.value = 38		# 40
+	
 	temp = load("res://items/all/pocket_factory/pocket_factory_data.tres")
-	temp.value = 70  # 75
+	temp.value = 70		# 75
 	temp_2 = load("res://items/all/tree/tree_effect_1.tres")
 	temp.effects.insert(1,temp_2)
 	
@@ -836,6 +839,7 @@ func _ready()->void:
 	temp.effects.push_back(temp_2) # -1 HP per 6% Speed
 
 	temp = load("items/all/rip_and_tear/rip_and_tear_data.tres")
+	temp.value = 61		# 65
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/rip_sauce_clarify_effect.tres")
 	temp.effects.append(temp_2)
 	temp = load("items/all/rip_and_tear/rip_and_tear_stats.tres")

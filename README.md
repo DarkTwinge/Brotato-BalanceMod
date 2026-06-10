@@ -175,6 +175,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Metal Detector:** Damage -5% -> -4%
 * **Metal Plate:** Price 40->45
 * **Missile:** Damage 10% -> 11%
+* **Piggy Bank:** Price 40->38
 * **Pocket Factory:** Price 75->70; Now comes with +1 Tree Stat (same as buying one Tree item) _[Makes it less reliant on finding Trees.]_
 * **Pumpkin:** Price 40->35; -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect. Limit stops it from showing up in endless if you've already maxed the possible value.]_
 * **Recycling Machine:** No Downside --> -1 HP Regen
@@ -233,7 +234,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Plastic Explosive:** Price 60->51
 * **Poisonous Tonic:** Range 15 -> 27
 * **Power Generator:** Price 65->59; -5% Damage --> -1 Max HP Per 6% Speed
-* **Rip and Tear:** (Clarified effect of having multiple copies)
+* **Rip and Tear:** Price 65->61; Base Crit Chance 0% -> 1%; (Clarified effect of having multiple copies)
 * **Shackles:** Price 80->88; Range 80 -> 88
 * **Shmoop:** Price 60->61; 2 HP Regen --> 2% Lifesteal; (Now tagged for Lifesteal instead of HP Regen)
 * **Statue:** Price 60->54

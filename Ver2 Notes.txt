@@ -779,8 +779,11 @@ Diver Possibilities
 	Could start with 10% Crit Chance
 	
 
-
 Remove Baby Elephant?
+
+
+Bucaneer being favored to find Cute Monkey and Baby Elephant is awkward
+
 
 
 Ab W12: Shielded Egglayer is a 1-2 spawn and should be 1 fixed?
@@ -794,3 +797,36 @@ Ab-17/18 too similar?
 
 CZ-14: fewer Dire Magicians [maybe not now with the nerf plan]
 CZ-18: Could give the stronger Buffers a longer delay (currently reducing the count)
+
+
+
+Currently Banned Upgrades:
+Chunky - Speed
+Cyborg banned_upgrades = [ "upgrade_melee_damage", "upgrade_elemental_damage" ]
+Golem banned_upgrades = [ "upgrade_hp_regeneration", "upgrade_lifesteal" ]
+Hunter banned_upgrades = [ "upgrade_harvesting" ]
+Mage banned_upgrades = [ "upgrade_melee_damage", "upgrade_ranged_damage" ]
+Techonomage banned_upgrades = [ "upgrade_melee_damage", "upgrade_ranged_damage" ]
+Wounded banned_upgrades = [ "upgrade_armor", "upgrade_max_hp", "upgrade_hp_regeneration", "upgrade_lifesteal" ]
+Sailor banned_upgrades = [ "upgrade_harvesting" ]
+
+
+~WOULD HAVE TO ADD~
+Vampire: HP Regen
+Sick: HP Regen
+Ranger: Melee Damage
+Pacifist: Engineering
+Knight: Harvesting, Ranged Damage
+Gladiator: Ranged Damage
+Ghost: Armor
+Cryptid: Lifesteal
+Chunky: Lifesteal
+Bull: Lifesteal, Attack Speed, Range
+Brawler: Ranged Damage
+Beastmaster: Attack Speed, Range
+Druid: Lifesteal, HP Regen
+Chef: Elemental Damage
+
+
+
+Reduce damage of the snake environmental projectiles
