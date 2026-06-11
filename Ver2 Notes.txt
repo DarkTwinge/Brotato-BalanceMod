@@ -830,3 +830,11 @@ Chef: Elemental Damage
 
 
 Reduce damage of the snake environmental projectiles
+
+
+	
+Prob reduce Horned Spitter damage
+
+
+
+A little unfortunate that Wounded iframes are minimum (0.2s); feels like they should get the normal 0.4s?

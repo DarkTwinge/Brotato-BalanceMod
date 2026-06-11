@@ -30,9 +30,6 @@ func _init(modLoader = ModLoader):
 	# Now applies Brawler's +AttackSpeed to Claw 
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/weapon_service.gd")
 	
-	# Re-adds text for Inflation increase to Nightmare's hidden attribute
-	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "singletons/text.gd")
-		
 	# Bricks no longer break Wave 1
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "weapons/weapon.gd")
 	
@@ -199,6 +196,10 @@ func _ready()->void:
 	temp = load("res://entities/units/enemies/slasher/slasher_stats.tres")
 	temp.knockback_resistance = 0.87			# 0.9
 	
+	# Mad Slasher (NM)
+	temp = load("res://entities/units/enemies/mad_slasher/mad_slasher_stats.tres")
+	temp.knockback_resistance = 0.87			# 0.9	
+	
 	# Lamprey Fish
 	temp = load("res://entities/units/enemies/lamprey/lamprey_stats.tres")
 	temp.knockback_resistance = 0.93			# 0.95
@@ -207,6 +208,12 @@ func _ready()->void:
 	temp = load("res://entities/units/enemies/dire_junkie/dire_junkie_stats.tres")
 	temp.health = 2												# 15 (Reg Magician is 5)
 	temp.health_increase_each_wave = 5.0	# 8.0 (Reg. Magician is 5.0)
+	
+	# Corrupted Buffer (Nightmare)
+	temp = load("res://entities/units/enemies/corrupted_buffer/corrupted_buffer_stats.tres")
+	temp.damage_increase_each_wave = 0.7	# 1.0
+	
+	# 
 	
 	# Gobbler
 	temp = load("res://entities/units/enemies/evil_mob/evil_mob.tres")
@@ -244,6 +251,12 @@ func _ready()->void:
 	temp.behaviour_description = "BM_BLOATED_SPAWNER_BEHAVIOUR_DESCRIPTION"
 	
 	### WAVE SPAWNS - CRASH ZONE ###
+	# Wave 4 (Nightmare)
+	temp = load("res://zones/zone_1/004/d1_group_1.tres")
+	temp.max_difficulty = 9999	# 5
+	temp = load("res://zones/zone_1/004/d6_group_horned_fly.tres")
+	temp.spawn_timing = 20			# 15
+	
 	# Wave 12
 	temp = load("res://zones/zone_1/012/d1_group_1.tres") # Healers
 	temp_2 = load("res://zones/zone_1/012/unit_2.tres")
@@ -320,6 +333,10 @@ func _ready()->void:
 ##	temp.wave_units_data.erase(temp_2)
 ##	# (Leaving only 28x6.5 Fins)
 	
+	
+	# (Hardcoded)
+	temp = load("res://items/difficulties/6-Nightmare/difficulty_6_effect_9.tres")
+	temp.text_key = "NEW_SHOP_INFLATION"
 
 
 	## TIER-1 ITEMS ##
@@ -510,10 +527,9 @@ func _ready()->void:
 	temp.cooldown = 30		# 28
 
 	temp = load("res://items/all/bot_o_mine/bot_o_mine.tres")
-	temp.value = 60				# 55
+	temp.value = 58				# 55
 	temp.tier = 2					# 1
 	temp = load("res://entities/units/pet/bot_o_mine/bot_o_mine_weapon_stats.tres")
-	temp.damage = 9				# 10
 	temp.cooldown = 40		# 32
 	temp.scaling_stats = [ [ "stat_engineering", 0.75 ] ]	# 1.0
 
@@ -931,6 +947,7 @@ func _ready()->void:
 	# Esty's Couch
 	temp = load("res://items/all/estys_couch/estys_couch_data.tres")
 	temp.value = 90		# 100
+	temp.tags = [ "stat_hp_regeneration" ]	# Removed HP
 	
 	# Explosive Shells
 	temp = load("res://items/all/explosive_shells/explosive_shells_effect_1.tres")
@@ -2347,6 +2364,7 @@ func _ready()->void:
 	# Chunky
 	temp = load("res://items/characters/chunky/chunky_data.tres")
 	temp.banned_items.push_back("item_jetpack")
+	temp.banned_items.push_back("item_estys_couch")
 	temp_2 = load("res://weapons/ranged/potato_thrower/2/potato_thrower_2_data.tres")
 	temp.starting_weapons.push_back(temp_2)
 	

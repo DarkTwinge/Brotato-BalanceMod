@@ -154,7 +154,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Black Belt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->38
 * **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%
-* **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->60; Laser Damage 10 -> 9; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75%
+* **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->58; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75%
 * **Campfire:** Price 40->39; Fog Visibility +50% -> +20%
 * **Catling Gun:** Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
 * **Celery Tea:** Price 35->31; Extra Enemy HP +100% -> +70%
@@ -353,7 +353,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
 * **Bull:** Starting HP Regen 15 -> 10; Explosion Damage Scaling 300% -> 250%; Can no longer be offered Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
-* **Chunky**: Can no longer be offered Doc Moth or Jet Pack
+* **Chunky**: Can no longer be offered Esty's Couch, Doc Moth, or Jet Pack
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
 * **Cyborg:** Now makes a distinct sound effect when switching from Ranged Damage to Engineering mode
@@ -365,6 +365,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to early Harvesting than most, and one that is most relevant for their weaker, non-Pruner builds.]_
 * **Fisher:** Extra HP 5 -> 8
 * **Gladiator:** -30 Luck -> -40
+* **Golem:** Can no longer be offered Esty's Couch
 * **Jack:** Damage Vs Elites/Bosses 125% -> 120%; Extra Enemy HP 175% -> 180%
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
 * **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
@@ -376,12 +377,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **One-armed:** Now gains a 3-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that especially helps some of their worst starters like Shuriken.]_; Can no longer be offered Spider; Can no longer be offered lower-tier versions of your equipped weapon _[Very minor; swapping weapons is slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
-* **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage).
+* **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage); Can no longer be offered Esty's Couch
 * **Soldier:** 200% Pickup Range -> 125% _[Gives them some reason to care about Pickup Range items.]_
 * **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2; Can no longer be offered Barricade.
 * **Streamer:** Now also favored to find Stand-still items.
 * **Vagabond:** Can no longer be offered Focus.
-* **Vampire:** Consumable Healing -100 -> -20 _[Allows healing from Elite Crates.]_
+* **Vampire:** Consumable Healing -100 -> -20 _[Allows healing from Elite Crates.]_; Can no longer be offered Esty's Couch
 * **Wildling:** No longer starts with a Stick.
 * **Wounded:** Can no longer be offered Barricade.
 * _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
@@ -390,10 +391,11 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Chef:** Can no longer be offered Eyes Surgery.
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
 * **Diver:** Now starts with +10% Crit Chance
-* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Can no longer be offered Doc Moth _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
+* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Can no longer be offered Doc Moth or Esty's Couch _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell or Improved Tools.
 * **Gangster:** Early Elites do less damage (see below).
 * **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
+* **Ogre:** No longer favored to find Esty's Couch more often
 * **Pacifist:** Can no longer be offered Whistle or Bot-o-mine.
 * **Sailor:** Dodge Cap 20% -> 25%; Can now be offered Dodge items. _[While Dodge is still not good on Sailor, it is usable enough that the items don't need to be completely unavailable.]_
 * **Sick:** Can no longer be offered Crystal.
@@ -417,26 +419,31 @@ If you'd like to directly support my ability to make and maintain mods like this
 ### Standard Enemies
 + **Gobbler:** Base HP 5 -> 1; Speed range for each evolution 300-400/175-275/50-150 -> 320-400/200-280/80-160; HP increase upon evolution 50% -> 75%
 + **Fly:** Base HP 15 -> 1; HP Per Wave 4 -> 9 _[Similar HP early, more HP late.]_
-+ **Dread Magician (Nightmare):** Base HP 15 -> 2; HP Per Wave 8 -> 5 _[This gives them slightly less HP than regular Magicians, rewarding careful play more; they still have more Speed, double the projectiles, and spawn in groups of 5 instead of 3.]_
 + **Tentacle:** Item Crate Drop Chance 2% -> 3%
++ **Dread Magician (Nightmare):** Base HP 15 -> 2; HP Per Wave 8 -> 5 _[This gives them slightly less HP than regular Magicians, rewarding careful play more; they still have more Speed, double the projectiles, and spawn in groups of 5 instead of 3.]_
++ **Corrupted Buffer (Nightmare):** Damage Increase Per Wave 1.0 -> 0.7 _[This is a support enemy, they shouldn't be doing real damage on their own.]_
 + **Small Charger:** Knockback Resistance 80% -> 75%
 + **Small Viking Charger:** Knockback Resistance 80% -> 75%
 + **Tall Bruiser:** Knockback Resistance 90% -> 87%
 + **Tall Armored Bruiser:** Knockback Resistance 90% -> 87%
 + **Hatched Slasher:** Knockback Resistance 90% -> 87%
++ **Mad Slasher (Nightmare):** Knockback Resistance 90% -> 87%
 + **Lamprey Fish:** Knockback Resistance 95% -> 93%
 + _[The base game mostly implemented my knockback tweaks, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
 + **Stargazer:** Base Speed 100 -> 115; Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 280%; SFX is now louder and always plays when a vat is entered (but not when you just destroy a vat) _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
-+ **Scaled Stargazer:** SFX is now a deeper growl compared to regular Stargazers, is louder, and always plays when a vat is entered (but not when you just destroy a vat)
++ **Scaled Stargazer (Nightmare):** SFX is now a deeper growl compared to regular Stargazers, is louder, and always plays when a vat is entered (but not when you just destroy a vat)
 + **Narwhal:** Knockback Resistance 90% -> 87%
 + **Vampire Squid:** Initial Cooldown 1.17s -> 1.02s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 7; Minimum Spawn Distance From Player +120 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
++ **Cool Walrus (Nightmare):** Knockback Resistance 90% -> 87%
 + **Goblin Shark:** Fruit Drop Chance 1% -> 2%
++ **Scaled Goblin Shark (Nightmare):** Fruit Drop Chance 1% -> 2%
 
 ### Wave Spawns: Crazh Zone
 * **(DLC) Waves 3, 6, and 13:** Now have guaranteed Seapig spawns (similar to Waves 4, 5, and 16 on The Abyss), giving more opportunity to opt into Curse on this map.
+* **Wave 4 (Nightmare):** The first two Horned Flys (of eight total) are now Regular Flys.
 * **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
 * **Wave 14:** Helmet Spawns 108 -> 85; Basics spawn earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
 * **Wave 15:** Helmet Spawns 114 -> 95
@@ -444,7 +451,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **(DLC) Wave 16:** One of the added Flies is replaced with a Pufferfish.
 * **Wave 18 (Nightmare):** Corrupted Buffer spawns 3.5x8 -> 2x8 _[Something you can more strategically play around instead of being a mess you can't really control.]_
 * **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also makes things a bit harder, especially for Ranged builds).
-* **Wave 20 (Nightmare):** Puffy Wizard Hat spawns 1x7 -> 1x9 (with earlier spawns); Added 3 immediate Infected Slasher Eggs that spawn on the edge of the map.
+* **Wave 20 (Nightmare):** Puffy Wizard Hat spawns 1x7 -> 1x9 (with earlier spawns); Added 3 immediate Infected Slasher Eggs that spawn on the edge of the map, and another 3 after 11 seconds.
 * **Wave 14 & 15 Hordes:** Added 4 single Magician spawns alongside 4 single Wizard Hats (Spawners) spread out over the last ~1/2 of the wave; Made the added Helmets in the 2nd half spawn on the edges of the map (with slightly fewer Helmets spawned); Made the Horde additions identical for 14 & 15; Removed one group of Basic Aliens to make more room for the others. _[Aiming to make these Horde waves feel as threatening as Elite fights are.]_
 ### Wave Spawns: The Abyss
 * **Wave 4:** The Lamprey now appears on Danger Level 1+ instead of only DL5. _[This is a way to learn the enemy pattern more safely instead of having to take Bait.]_

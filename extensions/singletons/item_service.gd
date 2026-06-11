@@ -8,6 +8,7 @@ func _ready() -> void :
 	item_groups["attack_speed"] = ["item_crystal", "item_coffee", "item_community_support", "item_retromations_hoodie", "item_statue"]
 	item_groups["dodge"].erase("item_chameleon")
 	item_groups["lifesteal_and_hp_regeneration"].push_back("item_doc_moth")
+	item_groups["hp_regeneration"].push_back("item_estys_couch")
 
 
 # Replace original weapon-set-favoring pool with a weighted pool based on how many of the weapon you have

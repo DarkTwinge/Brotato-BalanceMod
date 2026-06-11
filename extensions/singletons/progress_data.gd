@@ -59,6 +59,9 @@ func check_for_available_dlcs() -> void :
 		temp.health = 45											# 40
 		temp.knockback_resistance = 0.87			# 0.9
 		
+		temp = load("res://dlcs/dlc_1/enemies/cool_walrus/cool_walrus_stats.tres")
+		temp.knockback_resistance = 0.87			# 0.9
+		
 		temp = load("res://dlcs/dlc_1/enemies/narwhal/narwhal_stats.tres")
 		temp.knockback_resistance = 0.87			# 0.9
 		
@@ -69,6 +72,9 @@ func check_for_available_dlcs() -> void :
 		temp.health_increase_each_wave = 7.0	# 5.0
 
 		temp = load("res://dlcs/dlc_1/enemies/goblin_shark/goblin_shark_stats.tres")
+		temp.base_drop_chance = 0.02					# 0.01
+		
+		temp = load("res://dlcs/dlc_1/enemies/scaled_goblin_shark/scaled_goblin_shark_stats.tres")
 		temp.base_drop_chance = 0.02					# 0.01
 
 		# Vamp Squid
