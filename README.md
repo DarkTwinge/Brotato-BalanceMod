@@ -114,7 +114,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Duct Tape:** Price 20->18
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
 * **Fresh Meat:** Removed from the game. _[Having three separate tier-1 items that give +2% Lifesteal is unnecessary.]_
-* **Gentle Alien:** Price 30->33
+* **Gentle Alien:** Price 30->32
 * **Glasses:** Range 20 -> 22
 * **Gummy Berserker:** Price 25->24; Range 25 -> 30
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
@@ -137,7 +137,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Tree:** Price 15->16
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%); Speed -3% -> -2%
 * **Weird Food:** Price 20->24; Dodge -2% --> Speed -2%
-* **Weird Ghost:** Starting HP Next Wave -100% -> -90% (which now also goes down when cursed)
+* **Weird Ghost:** Price 12->11; Starting HP Next Wave -100% -> -90% (which now also goes down further when cursed)
 #### DLC
 * **Corrupted Shard:** Price 12->15; Curse 1 -> 2; Damage 3% -> 4% _[Now a bit more of an actual entry-point into Curse rather than incidental.]_
 * **Feather:** Price 18->19
@@ -157,7 +157,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->58; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75%
 * **Campfire:** Price 40->39; Fog Visibility +50% -> +20%
 * **Catling Gun:** Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
-* **Celery Tea:** Price 35->31; Extra Enemy HP +100% -> +70%
+* **Celery Tea:** Price 35->32; Extra Enemy HP +100% -> +60%
 * **Clockwork Wasp:** Price 45->46
 * **Cog:** Damage -4% -> -1% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_
 * **Cyclops Worm:** Range -12 -> -16
@@ -263,6 +263,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Diploma:** XP Gain +50% -> +60%
 * **Esty's Couch:** Price 100->90
 * **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; Damage -15% -> Armor -1 _[Lets it fit in more reasonably with mixed builds, and gives a little more emphasis on the more-unique size factor rather than just damage.]_
+* **Explosive Turret:** Accuracy 60% -> 65%
 * **Exoskeleton:** Price 90->95
 * **Extra Stomach:** Price 100->105; Now tagged for 'consumables' instead of 'luck'.
 * **Focus:** Price 110->104; Attack Speed penalty per weapon -3% -> -4%
@@ -280,7 +281,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Potato:** Price 95->100
 * **Regeneration Potion:** HP Regen 3 -> 4
 * **Retromation's Hoodie:** +2% Attack Speed for every 1% Dodge --> +3% Attack Speed for every 2% Dodge
-* **Ricochet:** Damage -25% -> -20%; All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Railgun, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
+* **Ricochet:** All weapons that naturally pierce now have a default bounce damage of 70% instead of 50% (Crossbow, Shotgun, Laser Gun, Pistol, Shredder, Minigun, Obliterator, Chain-gun, Gatling Laser, Flamethrower, Icicle, Railgun, Laser Turret; Blunderbuss, Harpoon Gun, Javelin). _[In vanilla, it's a red-tier item that only works on ranged weapons to begin with, but then still ends up worthless on weapons like Shotgun and Shredder making it overly niche.]_
 * **Robot Arm:** Price 100->92
 * **Scapegoat:** Price 110->100
 * **Spider:** Price 110->102; Attack Speed Per Different Weapon 6% -> 8%; Damage 12% -> 8%
@@ -319,6 +320,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 #### DLC
 * **Anchor:** Price 48/90/175 -> 39/74/133; Tier-4 Damage Scaling From Curse 125% -> 140%
 * **Brick:** Can no longer break during Wave 1; Breaking SFX slightly louder
+* **Hiking Pole:** Steps Needed For Range Increase 70/60/50/40 -> 60/55/50/40
 * **Mace:** Price 46/92/185 -> 30/59/105; Cooldown 1.39/1.31/1.23 -> 1.28/1.16/1.06
 * **Sickle:** Removed from the game. _[Scaling with Harvesting leads to an item that is going to be overly strong or overly weak with little in-between.]_
 * **War Hammer:** Cooldown 2.11/1.95 -> 2.0/1.7; Crit Damage 1.5x -> 1.75x
@@ -352,7 +354,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
 * **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
-* **Bull:** Starting HP Regen 15 -> 10; Explosion Damage Scaling 300% -> 250%; Can no longer be offered Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
+* **Bull:** Starting HP Regen 15 -> 10; Explosion Damage Scaling 300% -> 250%; Can no longer be offered Triangle of Power, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Chunky**: Can no longer be offered Esty's Couch, Doc Moth, or Jet Pack
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
@@ -372,7 +374,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Loud:** -3 Harvesting per Wave -> -5; Damage 30% -> 25%
 * **Lucky:** 100 Starting Luck -> 60; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat.]_
 * **Mage:** Now gets a 2nd Sausage when starting with non-Elemental weapons; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
-* **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5
+* **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5; Can no longer be offered Triangle of Power or Crystal
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
 * **One-armed:** Now gains a 3-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that especially helps some of their worst starters like Shuriken.]_; Can no longer be offered Spider; Can no longer be offered lower-tier versions of your equipped weapon _[Very minor; swapping weapons is slightly easier.]_
 * **Ranger:** No longer starts with a Pistol.
@@ -384,7 +386,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Vagabond:** Can no longer be offered Focus.
 * **Vampire:** Consumable Healing -100 -> -20 _[Allows healing from Elite Crates.]_; Can no longer be offered Esty's Couch
 * **Wildling:** No longer starts with a Stick.
-* **Wounded:** Can no longer be offered Barricade.
+* **Wounded:** Can no longer be offered Barricade or Duct Tape.
 * _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
 * **Captain:** No longer favored to find XP Gain items. _[Their benefit is only about average, and Barnacle especially is sad for Captain.]_
@@ -396,7 +398,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Gangster:** Early Elites do less damage (see below).
 * **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
 * **Ogre:** No longer favored to find Esty's Couch more often
-* **Pacifist:** Can no longer be offered Whistle or Bot-o-mine.
+* **Pacifist:** Now also favored to find Dodge items; Can no longer be offered Whistle or Bot-o-mine.
 * **Sailor:** Dodge Cap 20% -> 25%; Can now be offered Dodge items. _[While Dodge is still not good on Sailor, it is usable enough that the items don't need to be completely unavailable.]_
 * **Sick:** Can no longer be offered Crystal.
 
@@ -406,7 +408,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 * All Elites on Waves 17-19 have an additional 20% health.
 
 #### Crash Zone
-* **Hivemind/Colossus:** Phase 2 Cooldown 0.9s -> 1.02s _[Gives a touch more breathing room during the rapid onslaught of Phase 2.]_
+* **Bosses (Predator/Invoker):** HP Per Wave 750 -> 875 _[Now the same HP as the Abyss Bosses have.]_
+* **Colossus:** Phase 2 Cooldown 0.9s -> 1.02s _[Gives a touch more breathing room during the rapid onslaught of Phase 2.]_
 * **Mantis:** Time Before First Attack 2s -> 1.75s; Phase 2 Cooldown 1.33s -> 1.25s; Phase 2 Charge Duration 0.7s -> 0.85s; Phase 2 Charge Speed 800 -> 740 (Total Distance 560 -> 629) _[Differentiates Mantis and Rhino more.]_
 * **Butcher:** Phase 2 & 3 Max Range increased _[Makes it so you can't so easily get out of range of the slashes; most relevant for Explorer.]_
 * **Rhino:** Base Speed 250 -> 275
@@ -417,11 +420,13 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Turtle:** Time Before First Attack 2s -> 0.5s; HP Per Wave 700 -> 750; Base Armor 3 -> 1; Armor Per Wave 0.5 -> 0.75 _[Similar armor early, more armor later. Also means its armor is more reasonable if Gangster sees it very early. HP is now the same as normal Elites.]_
 
 ### Standard Enemies
-+ **Gobbler:** Base HP 5 -> 1; Speed range for each evolution 300-400/175-275/50-150 -> 320-400/200-280/80-160; HP increase upon evolution 50% -> 75%
++ **Gobbler:** Base HP 5 -> 1; Speed range for each evolution 300-400/175-275/50-150 -> 320-400/200-280/80-160; HP increase upon evolution 50% -> 75%; Ugly Tooth no longer applies slow to Gobblers (they are already unaffected by Snail)
 + **Fly:** Base HP 15 -> 1; HP Per Wave 4 -> 9 _[Similar HP early, more HP late.]_
 + **Tentacle:** Item Crate Drop Chance 2% -> 3%
++ **Horned Spitter (Nightmare):** Projectile Speed 600->550; Minimum Range 0->150 _[Let's you approach melee range a little more safely, especially if you back them into an edge.]_
 + **Dread Magician (Nightmare):** Base HP 15 -> 2; HP Per Wave 8 -> 5 _[This gives them slightly less HP than regular Magicians, rewarding careful play more; they still have more Speed, double the projectiles, and spawn in groups of 5 instead of 3.]_
 + **Corrupted Buffer (Nightmare):** Damage Increase Per Wave 1.0 -> 0.7 _[This is a support enemy, they shouldn't be doing real damage on their own.]_
++ **Looter:** Knockback Resistance 0% -> 30% _[Makes high knockback less of a downside when trying to kill Loot Goblins.]_
 + **Small Charger:** Knockback Resistance 80% -> 75%
 + **Small Viking Charger:** Knockback Resistance 80% -> 75%
 + **Tall Bruiser:** Knockback Resistance 90% -> 87%

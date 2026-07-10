@@ -55,6 +55,9 @@ func _init(modLoader = ModLoader):
 	
 	# Extra HP for Waves 17-19 Elites
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/enemies/boss/boss.gd")
+	
+	# Ugly Tooth ignores Gobbler
+	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/enemies/enemy.gd")
 		
 	#y New Padding Effect
 	#y New Couch Negative Speed Effect
@@ -167,6 +170,12 @@ func _ready()->void:
 	temp = load("res://entities/units/enemies/rhino/rhino_stats.tres")
 	temp.speed = 275 	# 250
 	
+	# CZ Bosses
+	temp = load("res://entities/units/enemies/predator/predator_stats.tres")
+	temp.health_increase_each_wave = 875.0	# 750.0
+	temp = load("res://entities/units/enemies/invoker/invoker_stats.tres")
+	temp.health_increase_each_wave = 875.0	# 750.0
+	
 	# Fly
 	temp = load("res://entities/units/enemies/fly/fly_stats.tres")
 	temp.health = 1												# 15
@@ -213,7 +222,9 @@ func _ready()->void:
 	temp = load("res://entities/units/enemies/corrupted_buffer/corrupted_buffer_stats.tres")
 	temp.damage_increase_each_wave = 0.7	# 1.0
 	
-	# 
+	# Looter
+	temp = load("res://entities/units/enemies/looter/looter_stats.tres")
+	temp.knockback_resistance = 0.3				# 0.0
 	
 	# Gobbler
 	temp = load("res://entities/units/enemies/evil_mob/evil_mob.tres")
@@ -221,14 +232,17 @@ func _ready()->void:
 	temp.speed = 360											# 350
 	temp.speed_randomization = 40					# 50
 	
+	
 	# Replace Gobbler with my version
 	for zone in ZoneService.zones:
 		for wave in zone.waves_data:
 			for group in wave.groups_data:
 				for unit in group.wave_units_data:
-					print(unit.unit_scene.get_path())
+					#print(unit.unit_scene.get_path())
 					if unit.unit_scene.get_path() == "res://entities/units/enemies/evil_mob/evil_mob.tscn":
 						unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/evil_mob.tscn")
+					if unit.unit_scene.get_path() == "res://entities/units/enemies/horned_spitter/horned_spitter.tscn":
+						unit.unit_scene = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/horned_spitter.tscn")
 ##TODO
 #		for unit in zone.endless_enemy_scenes:
 #			if unit.unit_scene.get_path() == "res://entities/units/enemies/evil_mob/evil_mob.tscn":
@@ -251,6 +265,10 @@ func _ready()->void:
 	temp.behaviour_description = "BM_BLOATED_SPAWNER_BEHAVIOUR_DESCRIPTION"
 	
 	### WAVE SPAWNS - CRASH ZONE ###
+	# Gobbler minimum wave = 3 --- Doesn't work
+#	temp = load("res://zones/zone_1/000_all/group_3.tres")
+#	temp.min_wave = 3						# 0
+	
 	# Wave 4 (Nightmare)
 	temp = load("res://zones/zone_1/004/d1_group_1.tres")
 	temp.max_difficulty = 9999	# 5
@@ -390,7 +408,7 @@ func _ready()->void:
 	temp.can_be_looted = false
 	
 	temp = load("res://items/all/gentle_alien/gentle_alien_data.tres")
-	temp.value = 33	 #30
+	temp.value = 32	 #30
 	
 	temp = load("res://items/all/glasses/glasses_effect_1.tres")
 	temp.value = 22  # 20 (Range)
@@ -487,6 +505,8 @@ func _ready()->void:
 	temp = load("res://items/all/weird_food/weird_food_effect_3.tres")
 	temp.key = "stat_speed"	# Dodge
 	
+	temp = load("res://items/all/weird_ghost/weird_ghost_data.tres")
+	temp.value = 11		# 12
 	temp = load("res://items/all/weird_ghost/weird_ghost_effect_2.tres")
 	temp.value = -90	# -100  !!! If changed, also change in dlc_1_data
 	temp.effect_sign = 3 # 1
@@ -543,9 +563,9 @@ func _ready()->void:
 	temp.cooldown = 60		# 55
 
 	temp = load("res://items/all/celery_tea/celery_tea_data.tres")
-	temp.value = 31   # 35
+	temp.value = 32   # 35
 	temp = load("res://items/all/celery_tea/effects/celery_tea_effect_1.tres")
-	temp.value = 70		# 100 (Extra Enemy HP)
+	temp.value = 60		# 100 (Extra Enemy HP)
 
 	temp = load("res://items/all/clockwork_wasp/clockwork_wasp_data.tres")
 	temp.value = 46   # 45
@@ -959,6 +979,8 @@ func _ready()->void:
 	temp.value = -1   # -15 Damage% -> -1 Armor
 	
 	# Explosive Turret
+	temp = load("res://entities/structures/turret/rocket/rocket_turret_stats.tres")
+	temp.accuracy = 0.65	# 0.6
 	temp = load("res://items/all/turret_rocket/turret_rocket_data.tres")
 	## THIS TOOLTIP IS HARDCODED
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/explosive_turret_size_text.tres")
@@ -1076,8 +1098,6 @@ func _ready()->void:
 	# Ricochet & adjacent changes
 	temp = load("res://items/all/ricochet/ricochet_effect_1.tres")
 	temp.text_key = "new_effect_bouncing"
-	temp = load("res://items/all/ricochet/ricochet_effect_2.tres")
-	temp.value = -20 # -25 (Damage%)
 	temp = load("res://weapons/ranged/chain_gun/4/chain_gun_4_stats.tres")
 	temp.bounce_dmg_reduction = 0.3 # 0.5
 	temp = load("res://weapons/ranged/crossbow/1/crossbow_stats.tres")
@@ -1994,6 +2014,7 @@ func _ready()->void:
 	temp.banned_item_groups.push_back("range_and_attack_speed")
 	temp.banned_item_groups.push_back("attack_speed")
 	temp.banned_items.push_back("item_spider")
+	temp.banned_items.push_back("item_triangle_of_power")
 	temp = load("res://items/characters/bull/bull_effect_2.tres")
 	temp.value = 10  # 15 (HP Regen)
 	temp = load("res://items/characters/bull/bull_effect_4.tres")
@@ -2129,6 +2150,9 @@ func _ready()->void:
 	temp.value = -33   # -50 (Engineering Modifications)
 	
 	# Masochist
+	temp = load("res://items/characters/masochist/masochist_data.tres")
+	temp.banned_items.push_back("item_crystal")
+	temp.banned_items.push_back("item_triangle_of_power")
 	temp = load("res://items/characters/masochist/masochist_effect_3.tres")
 	temp.value = 15   # 20 (HP Regen)
 	temp = load("res://items/characters/masochist/masochist_effect_4.tres")
@@ -2150,6 +2174,7 @@ func _ready()->void:
 	# Pacifist
 	temp = load("res://items/characters/pacifist/pacifist_data.tres")
 	temp.banned_items = [ "item_whistle", "item_bot_o_mine" ]
+	temp.wanted_tags.push_back("stat_dodge")
 	
 	# Ranger
 	temp = load("res://items/characters/ranger/ranger_data.tres")
@@ -2209,6 +2234,7 @@ func _ready()->void:
 	# Wounded
 	temp = load("res://items/characters/wounded/wounded_data.tres")
 	temp.banned_items.push_back("item_barricade")
+	temp.banned_items.push_back("item_duct_tape")
 	# These items are banned individually, but banning the item groups is cleaner and also makes Candy Bag not give garbage stats
 	temp.banned_item_groups.push_back("hp_regeneration")
 	temp.banned_item_groups.push_back("lifesteal")

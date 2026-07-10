@@ -81,6 +81,9 @@ func check_for_available_dlcs() -> void :
 		temp = load("res://dlcs/dlc_1/zones/abyss/017/unit_1.tres")
 		temp.additional_min_distance_from_player = 120.0		# 0.0
 		
+		# Looting Pig
+		temp = load("res://dlcs/dlc_1/enemies/looting_pig/looting_pig_stats.tres")
+		temp.knockback_resistance = 0.3				# 0.0
 	
 		## DESCRIPTION TWEAKS ##
 		temp = load("res://dlcs/dlc_1/enemies/pufferfish/pufferfish_item.tres")
@@ -333,6 +336,10 @@ func check_for_available_dlcs() -> void :
 		temp.value = 210		# 242
 		
 		# Hiking Pole
+		temp = load("res://dlcs/dlc_1/weapons/melee/hiking_stick/1/hiking_stick_effect_0.tres")
+		temp.value2 = 60.0	# 70.0
+		temp = load("res://dlcs/dlc_1/weapons/melee/hiking_stick/2/hiking_stick_2_effect_0.tres")
+		temp.value2 = 55.0	# 60.0
 		temp = load("res://dlcs/dlc_1/weapons/melee/hiking_stick/4/hiking_stick_4_data.tres")
 		temp.value = 120		# 130
 		

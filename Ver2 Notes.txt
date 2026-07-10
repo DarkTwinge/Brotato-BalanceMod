@@ -536,7 +536,7 @@ Any new weapons should at least have their tier-4 pricing adjusted
 
 maybe re-look at the bonus odds of finding matches for mixed builds sometime to see if I want a different rework direction
 
-possibly could make sense for Gobbler to ignore Slow effects (Tooth, Snail)?
+Gobbler no appear on Wave 2
 
 x-hit threshold for killing Eggs and Iron Lungs like with trees?
 
@@ -573,6 +573,7 @@ Does Community Support count charmed enemies?
 
 Mummy hurtbox could be smaller; Anglerfish hurtbox could be bigger
 	[haven't audited all enemies by any means, probably a few other oddballs]
+	Kinda seems like Viperfish might be weird, could be because of their growing effect?
 
 some consideration to kill Snake, maybe tack its effect on to a purple or something
 wisp could reduce spread
@@ -606,9 +607,6 @@ Could also restrict Focus on Curious or Gladiator, but prolly okay
 
 Does Arms Dealer 1st shop get weighted based on previous weapons
 Look into how Pets scale with speed - Rats go nyyooooom
-
-AdvStats - Loot Aliens spawned less than killed -- maybe Whistle?
-	NOT Whistle; Gobbler maybe?
 
 
 Fireball goes thru enemies even without pierce but only visual
@@ -732,9 +730,6 @@ Max Range 300
 
 
 
-check wave 15 abyss if they made a weird gap in the spawns in the last 10 seconds
-did wave 14 have fewer walruses?
-
 soldier being tagged stand-still kinda weird, 5% of all blues are Coral
 -> incentive to maybe move Chameleon to blue
 
@@ -754,9 +749,9 @@ verify tier-2 wrench/burn turret are working properly e.g. scaling off engineeri
 
 
 should -Enemies reduce spawns from Wizard Hats?
-	(Like how it IS reduced on Blobfish, those still has a minimum; same formula, prolly min 2 reg 3 dread version)
+	(Like how it IS reduced on Blobfish, those still have a minimum; same formula, prolly min 2 reg 3 dread version)
 
-Anyhting weird with Flamethrower vs Horned Flys?  (Tau thought it wasn't as bad against them as it was supposed to be)
+Anything weird with Flamethrower vs Horned Flys?  (Tau thought it wasn't as bad against them as it was supposed to be)
 
 New blobfish, should it move towards player a touch slower?  (or slightly more HP)
 
@@ -794,6 +789,8 @@ Ab-14: Elite/Horde also removes the added spooky enemies; maybe should remove le
 	Also true for CZ-12 Tentacle adds
 Ab-9 Brainy Squid kinda weird instead of VampSquid; also do Brainys need stat altering since Vamp is changed, or?
 Ab-17/18 too similar?
+	One could be more Kraken focused perhaps, tho that's stepping on W15 some
+	
 
 CZ-14: fewer Dire Magicians [maybe not now with the nerf plan]
 CZ-18: Could give the stronger Buffers a longer delay (currently reducing the count)
@@ -833,8 +830,89 @@ Reduce damage of the snake environmental projectiles
 
 
 	
-Prob reduce Horned Spitter damage
-
 
 
 A little unfortunate that Wounded iframes are minimum (0.2s); feels like they should get the normal 0.4s?
+
+
+Tier-1/2 Luck items scarce so hard to do e.g. Chopper builds around or such?  (Analyze and maybe add 1 more)
+	Could even retool Baby Elephant as more focused on giving the Luck stat
+	Could consider Luck + Damage%
+
+Bug: Explosions don't apply Knockback  (only the other attribvutes are transfered in PlayerExplosion.set_damage(), not Knockback)
+
+make Hand go up in Knockback with Tier
+
+
+should Drill be Tool instead of Precise?
+One-armed could maybe get Grenade Launcher starter too?
+
+
+
+Candy Bag could be reverted now that earlier Elites do reduced damage?
+
+
+Bug: Lootworm Tooltip Counts Incorrectly with Buccaneer
+Coupon tooltip uses different rounding than the actual savings, and counts multiple coupons weirdly
+Danger Bunny tooltip should track the highest reroll, not the lowest
+Spyglass tooltip also wrong?
+
+How miserable is Techno-Pruner
+
+Doc Moth could just be moved to purple
+
+Treasure Map prolly should come with Luck or be 25% [Tweak Cursed adjustment if it comes with Luck]
+
+Robot Arm could maybe use some love or partial rework
+
+Is there some reason Gobbler's Hat isn't giving XP??? (Saw a run with earlyish Hat that only neded at Level23)
+
+
+
+
+check wave 15 abyss if they made a weird gap in the spawns in the last 10 seconds
+did wave 14 have fewer walruses?
+
+
+Do something with my CZ W16 changes + Nightmare, prob just keep mine and reduce the Nightmare stuff some?
+
+
+Prolly start Wave 9 with regular VampSquids at least; Wave 17 being Stargazers now seems weird
+	Earlier first regular Stargazer if not already, then maybe an Enhanced one on W13?
+	An earlier Kraken?
+Slightly lower HP for Enhanced Iron Lungs probably
+
+Stats-wise CZ W6 NM looks like too much
+	NM Abyss W6, W9, and a little W8 looking sus too
+	^ But W19-20 potentially too easy for both maps
+Abyss-18 could be a touch harder
+
+Abyss-14-NM starts with a weird gap in vanilla
+Wave 15 abyss NM seems kinda empty at the end?
+
+Abyss-7 NM could spawn the Healer slightly sooner (1-2s) maybe?
+Infected Eggs could be a touch more HP but take an extra second to hatch if that makes sense?
+
+CZ-8 NM maybe have one Mummy?  (or 6, instead of some of the eggs?)
+
+Make Corrupted Buffer buff amount the same (check Stonefish too); this should be consistent across all
+
+
+Could look to make some of the misc. so-so damage items (pets, cyberball, etc.) have higher base damages and maybe less scaling, to make them better for splashing
+
+Lucky could restrict Improved Tools
+
+{Baby could alternatively be 12 Harvest and +100% XP Cost and still hit their early-level goals while making their gimmick easier to lean into}
+
+Bonk Dog could get slightly better explosion hits?  A little bigger explosion maybe?
+	could even look at tweaking its targeting; if it didn't prioritize seapigs that'd be nice
+
+Would it possible to make Pocket Factory add Tree to your favored item pool for the run?
+
+Hiker could just be 6 mats per 10 steps instead of 5
+
+Ball & Chain tooltip should mention structures, pets [verify it affects structures]
+	Or instead make it not affect that stuff?
+	
+
+Does Snail get overwritten by buffed enemies or Elites that change their Speed and such? (Since it doesn't apply to Gobbler...)
