@@ -783,7 +783,8 @@ func _ready()->void:
 	temp.value = 5		# 8
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
-	temp.value = 47		# 70
+	temp.tier = 1			# 2
+	temp.value = 51		# 70
 	temp.tags = [ "stat_dodge", "stand_still", "stat_luck" ]
 	temp = load("res://items/all/chameleon/chameleon_effect_0.tres")
 	temp.value = 4		# 3 (Dodge)
@@ -1590,28 +1591,28 @@ func _ready()->void:
 	temp.additional_cooldown_multiplier = 104.0 # 60.0
 	
 	# Crossbow
-	temp = load("res://weapons/ranged/crossbow/1/crossbow_stats.tres")
-	temp.max_range = 325   # 350
-	temp.cooldown = 47     # 50
-	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.09 ] ]
+#	temp = load("res://weapons/ranged/crossbow/1/crossbow_stats.tres")
+#	temp.max_range = 325   # 350
+#	temp.cooldown = 47     # 50
+#	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.09 ] ]
 	temp = load("res://weapons/ranged/crossbow/2/crossbow_data_2.tres")
 	temp.value = 32	  		 # 34
-	temp = load("res://weapons/ranged/crossbow/2/crossbow_stats_2.tres")
-	temp.max_range = 325   # 350
+#	temp = load("res://weapons/ranged/crossbow/2/crossbow_stats_2.tres")
+#	temp.max_range = 325   # 350
 	# (Cooldown 50)
 	# (Scaling 10%)
 	temp = load("res://weapons/ranged/crossbow/3/crossbow_data_3.tres")
 	temp.value = 61	  		 # 62
-	temp = load("res://weapons/ranged/crossbow/3/crossbow_stats_3.tres")
-	temp.max_range = 325   # 350
-	temp.cooldown = 52     # 50
-	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.11 ] ]
+#	temp = load("res://weapons/ranged/crossbow/3/crossbow_stats_3.tres")
+#	temp.max_range = 325   # 350
+#	temp.cooldown = 52     # 50
+#	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.11 ] ]
 	temp = load("res://weapons/ranged/crossbow/4/crossbow_data_4.tres")
 	temp.value = 107  		 # 132
-	temp = load("res://weapons/ranged/crossbow/4/crossbow_stats_4.tres")
-	temp.max_range = 325   # 350
-	temp.cooldown = 54     # 50
-	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.12 ] ]
+#	temp = load("res://weapons/ranged/crossbow/4/crossbow_stats_4.tres")
+#	temp.max_range = 325   # 350
+#	temp.cooldown = 54     # 50
+#	temp.scaling_stats = [ [ "stat_ranged_damage", 0.5 ], [ "stat_range", 0.12 ] ]
 	
 	# Double-barrel Shotgun
 	temp = load("res://weapons/ranged/double_barrel_shotgun/1/double_barrel_shotgun_stats.tres")

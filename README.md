@@ -218,7 +218,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Bowler Hat:** Price 75->70; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed; Fog Visibility +25% -> +15% _[Now more reasonable to take this primarily for the safety benefit.]_
 * **Candy Bag:** Price 70->74; Random Stats Gained 8 -> 5 & No longer gives useless stats; Extra Elite Chance +10% --> Enemy Damage Next Wave +25% _[The extra elite effect was too high-variance, meaning the item was never worth taking for high-winrate players. It also sucked to hit stats your character literally couldn't use, so the system that prevents useless items now also blocks useless Candy stats.]_
-* **Chameleon:** Price 70->47; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from.]
+* **Chameleon:** Tier 3 -> Tier 2; Price 70->51; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from. This also gives a second stand-still item at tier-2, as well as another Luck item at Tier 1-2 where they're lacking.]
 * **Community Support:** Price 75->70 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->65
 * **Fairy:** Price 85->88; 1 HP Regen Per 1 Unique Tier-1 Item --> 2 HP Regen Per 3 Unique Tier-1 Items (Tooltip shows a counter for how many items needed for the next stat increase); -3 HP Regen Per 1 Unique Tier-4 Item --> -3 Max HP Per 1 Unique Tier-4 Item
@@ -330,7 +330,6 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Ranged
 - **Chain-gun:** Long Reload Cooldown 2.04s -> 3.51s; Accuracy 80% -> 65%
-- **Crossbow:** Range Scaling 10%(All) -> 9%/10%/11%/12%; Cooldown 1.13(All) -> 1.08/1.13/1.17/1.20; Range 350 -> 325 _[Lower initial cooldown helps its Wave 1-3 performance. Better scaling makes higher tiers actually worth building, while the worsening cooldown offsets this in a thematically appropriate way.]_
 - **Double-barrel Shotgun:** (Firing SFX slightly quieter)
 - **Icicle:** Range 400 -> 350; Cooldown 1.03/0.95/0.87/0.70 -> 1.05/0.97/0.88/0.72; Knockback 5 -> 3
 - **Laser Gun:** Tier-1 Cooldown 1.98 -> 1.95; Ranged Damage Scaling 400%/450%/500%/600% -> 400%/500%/600%/700% _[Cooldown tweak allows 1 extra shot during Wave 1.]_
@@ -341,7 +340,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Revolver:** Price 20/34/70/130 -> 18/36/68/125; Range 450 -> 425; Big Reload Cooldown 2.07s/1.93s/1.80s/1.67s -> 2.30s/2.15s/2.00s/1.85s _[About 5% slower attack rate overall.]_
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
 - **SMG:** (Firing SFX slightly quieter)
-- **Sniper Gun:** Price 115/245 -> 108/191; Range 800/1000 -> 600/700; Ranged Damage Scaling 100%(All) -> 250%/350%; Tier-4 Crit Chance 20% -> 25% _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much base Range that adding more is irrelevant.]_
+- **Sniper Gun:** Price 115/245 -> 108/191; Ranged Damage Scaling 100%(All) -> 250%/350%; Tier-4 Crit Chance 20% -> 25%; Range 800/1000 -> 600/700;  _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much base Range that adding more is irrelevant.]_
 #### DLC
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 75%/85%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
 
@@ -439,12 +438,13 @@ If you'd like to directly support my ability to make and maintain mods like this
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
 + **Stargazer:** Base Speed 100 -> 115; Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 280%; SFX is now louder and always plays when a vat is entered (but not when you just destroy a vat) _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
 + **Scaled Stargazer (Nightmare):** SFX is now a deeper growl compared to regular Stargazers, is louder, and always plays when a vat is entered (but not when you just destroy a vat)
-+ **Narwhal:** Knockback Resistance 90% -> 87%
++ **Spiky Lung:** Base HP 10 -> 5
 + **Vampire Squid:** Initial Cooldown 1.17s -> 1.02s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 7; Minimum Spawn Distance From Player +120 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
 + **Cool Walrus (Nightmare):** Knockback Resistance 90% -> 87%
 + **Goblin Shark:** Fruit Drop Chance 1% -> 2%
 + **Scaled Goblin Shark (Nightmare):** Fruit Drop Chance 1% -> 2%
++ **Narwhal:** Knockback Resistance 90% -> 87%
 
 ### Wave Spawns: Crazh Zone
 * **(DLC) Waves 3, 6, and 13:** Now have guaranteed Seapig spawns (similar to Waves 4, 5, and 16 on The Abyss), giving more opportunity to opt into Curse on this map.

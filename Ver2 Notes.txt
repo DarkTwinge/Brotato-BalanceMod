@@ -438,7 +438,6 @@ Snowball idea: When you obtain Melee or Ranged Damage, also gain +1 (+2?) Elemen
 and/or: Ice Cube could be a higher amount (25%?), but only apply the damage increase to non-Elemental (or vice-versa, non-Elemental buffing Elemental)
 
 
-Chameleon could be blue
 Honey (but probably messes Ranged Damage distribution?)
 maaaybe Shmoop
 Wandering Bot
@@ -622,13 +621,14 @@ Seashell + Javelin may work negatively with each other?? (because of every x pro
 
 
 Nail, Frozen Heart, Padding still kinda weird
-Relic maybe down in cost and Armor to 2
+Sifd's Relic maybe down in cost and Armor to 2
 
 
 Is Wave Info not counting +Enemy Damage e.g. Starfish?  (kinda seemed accurate tho but math isn't as expected, hmm.)
 
 
 Make structures pushing in further from the edge when you have fewer total structures, so a tech buy of a blue turret or med turret or whatever doesn't sit in the corner all sad.  (Slowly pushes in less based on total structure count?  ideally does not include landmines/screwdrivers/wander bot/bot-o-mine/clockwork wasp, but would include +1 for Pocket Factory
+	-> entity_spawner line 549, tho the *2.5 multiplier seems interpretted a little weird; could be overshooting because I was testing on Old?
 
 {If Lucky becomes weak could try to figure out a way to give their ability some base damage to cover the Luck reductions}
 
@@ -699,6 +699,7 @@ Has Saw been left behind
 
 -----
 Cacti Club tiering 2/3 is weird
+	might lower base damage and bump up Ranged Scaling even more
 Generalist maybe start Railgun (esp if change ranged damage scaling higher)
 
 
@@ -730,8 +731,6 @@ Max Range 300
 
 
 
-soldier being tagged stand-still kinda weird, 5% of all blues are Coral
--> incentive to maybe move Chameleon to blue
 
 
 
@@ -751,14 +750,10 @@ verify tier-2 wrench/burn turret are working properly e.g. scaling off engineeri
 should -Enemies reduce spawns from Wizard Hats?
 	(Like how it IS reduced on Blobfish, those still have a minimum; same formula, prolly min 2 reg 3 dread version)
 
-Anything weird with Flamethrower vs Horned Flys?  (Tau thought it wasn't as bad against them as it was supposed to be)
-
 New blobfish, should it move towards player a touch slower?  (or slightly more HP)
 
 Artificer - possibly Restrict: Alien Eyes, Catling, Rat, Baby with a Beard as well 
 
-
-Ball & Chain text should specify Weapons & Structures affected, not just weapons.
 
 
 Firemane (and reg Anenome?) -- projectiles should vanish when they die
@@ -773,8 +768,6 @@ Diver Possibilities
 	Could be something like 300->250 range buff and 250->200 enemy HP
 	Could start with 10% Crit Chance
 	
-
-Remove Baby Elephant?
 
 
 Bucaneer being favored to find Cute Monkey and Baby Elephant is awkward
@@ -835,7 +828,7 @@ Reduce damage of the snake environmental projectiles
 A little unfortunate that Wounded iframes are minimum (0.2s); feels like they should get the normal 0.4s?
 
 
-Tier-1/2 Luck items scarce so hard to do e.g. Chopper builds around or such?  (Analyze and maybe add 1 more)
+Tier-1 Luck items scarce -
 	Could even retool Baby Elephant as more focused on giving the Luck stat
 	Could consider Luck + Damage%
 
@@ -880,7 +873,6 @@ Do something with my CZ W16 changes + Nightmare, prob just keep mine and reduce 
 Prolly start Wave 9 with regular VampSquids at least; Wave 17 being Stargazers now seems weird
 	Earlier first regular Stargazer if not already, then maybe an Enhanced one on W13?
 	An earlier Kraken?
-Slightly lower HP for Enhanced Iron Lungs probably
 
 Stats-wise CZ W6 NM looks like too much
 	NM Abyss W6, W9, and a little W8 looking sus too
@@ -890,7 +882,6 @@ Abyss-18 could be a touch harder
 Abyss-14-NM starts with a weird gap in vanilla
 Wave 15 abyss NM seems kinda empty at the end?
 
-Abyss-7 NM could spawn the Healer slightly sooner (1-2s) maybe?
 Infected Eggs could be a touch more HP but take an extra second to hatch if that makes sense?
 
 CZ-8 NM maybe have one Mummy?  (or 6, instead of some of the eggs?)
@@ -911,8 +902,10 @@ Would it possible to make Pocket Factory add Tree to your favored item pool for 
 
 Hiker could just be 6 mats per 10 steps instead of 5
 
-Ball & Chain tooltip should mention structures, pets [verify it affects structures]
+Ball & Chain tooltip should mention structures, pets
 	Or instead make it not affect that stuff?
 	
 
 Does Snail get overwritten by buffed enemies or Elites that change their Speed and such? (Since it doesn't apply to Gobbler...)
+
+Should Fins really have as high of a fruit+crate drop chance?  (Think Chasers may have it too?)
