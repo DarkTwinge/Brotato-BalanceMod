@@ -217,7 +217,6 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blood Donation:** Price 50->40 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->70; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed; Fog Visibility +25% -> +15% _[Now more reasonable to take this primarily for the safety benefit.]_
-* **Candy Bag:** Price 70->74; Random Stats Gained 8 -> 5 & No longer gives useless stats; Extra Elite Chance +10% --> Enemy Damage Next Wave +25% _[The extra elite effect was too high-variance, meaning the item was never worth taking for high-winrate players. It also sucked to hit stats your character literally couldn't use, so the system that prevents useless items now also blocks useless Candy stats.]_
 * **Chameleon:** Tier 3 -> Tier 2; Price 70->51; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from. This also gives a second stand-still item at tier-2, as well as another Luck item at Tier 1-2 where they're lacking.]
 * **Community Support:** Price 75->70 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->65
@@ -422,9 +421,9 @@ If you'd like to directly support my ability to make and maintain mods like this
 + **Gobbler:** Base HP 5 -> 1; Speed range for each evolution 300-400/175-275/50-150 -> 320-400/200-280/80-160; HP increase upon evolution 50% -> 75%; Ugly Tooth no longer applies slow to Gobblers (they are already unaffected by Snail)
 + **Fly:** Base HP 15 -> 1; HP Per Wave 4 -> 9 _[Similar HP early, more HP late.]_
 + **Tentacle:** Item Crate Drop Chance 2% -> 3%
-+ **Horned Spitter (Nightmare):** Projectile Speed 600->550; Minimum Range 0->150 _[Let's you approach melee range a little more safely, especially if you back them into an edge.]_
-+ **Dread Magician (Nightmare):** Base HP 15 -> 2; HP Per Wave 8 -> 5 _[This gives them slightly less HP than regular Magicians, rewarding careful play more; they still have more Speed, double the projectiles, and spawn in groups of 5 instead of 3.]_
-+ **Corrupted Buffer (Nightmare):** Damage Increase Per Wave 1.0 -> 0.7 _[This is a support enemy, they shouldn't be doing real damage on their own.]_
++ **Horned Spitter (Nightmare):** Projectile Speed 600->550; Minimum Range 0->160 _[Let's you approach melee range a little more safely, especially if you back them into an edge.]_
++ **Dread Magician (Nightmare):** Base HP 15 -> 2; HP Per Wave 8 -> 5 _[This gives them slightly less HP than regular Magicians, rewarding careful play more; they still have more Speed, double the projectiles, and spawn in groups of 5 instead of 3. Also less punishing for random damage sources such as Pets and Structures.]_
++ **Corrupted Buffer (Nightmare):** Damage Increase Per Wave 1.0 -> 0.7 _[This is a support enemy, they shouldn't be doing real contact damage on their own.]_
 + **Looter:** Knockback Resistance 0% -> 30% _[Makes high knockback less of a downside when trying to kill Loot Goblins.]_
 + **Small Charger:** Knockback Resistance 80% -> 75%
 + **Small Viking Charger:** Knockback Resistance 80% -> 75%
@@ -436,8 +435,8 @@ If you'd like to directly support my ability to make and maintain mods like this
 + _[The base game mostly implemented my knockback tweaks, but it still felt difficult for Knockback to be impactful so I go a small step further.]_
 #### DLC
 + **Pufferfish:** Now fires 4 projectiles when killed by a melee hit _[This was the original behavior in beta. It means they are no longer irrelevant for a melee build, while still giving you safe angles to approach from.]_
-+ **Stargazer:** Base Speed 100 -> 115; Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 280%; SFX is now louder and always plays when a vat is entered (but not when you just destroy a vat) _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
-+ **Scaled Stargazer (Nightmare):** SFX is now a deeper growl compared to regular Stargazers, is louder, and always plays when a vat is entered (but not when you just destroy a vat)
++ **Stargazer:** Base Speed 100 -> 115; Boosted HP (When you destroy their Incubator) 150% -> 200%; Boosted Speed 250% -> 280%; SFX is now louder and always plays when a vat is entered (but not when you destroy a vat) _[Makes it more of a downside to kill the Incubator first, rewarding careful play.]_
++ **Scaled Stargazer (Nightmare):** SFX is now a deeper growl compared to regular Stargazers, is louder, and always plays when a vat is entered (but not when you destroy a vat)
 + **Spiky Lung:** Base HP 10 -> 5
 + **Vampire Squid:** Initial Cooldown 1.17s -> 1.02s; Fireballs fired before longer cooldown 3 -> 4; HP Per Wave 5 -> 7; Minimum Spawn Distance From Player +120 _[This is a pretty rare and unique enemy; I want it to feel like a bigger threat while still leaving its HP relatively low.]
 + **Walrus:** Base HP 40 -> 45; Knockback Resistance 90% -> 87%
@@ -446,22 +445,27 @@ If you'd like to directly support my ability to make and maintain mods like this
 + **Scaled Goblin Shark (Nightmare):** Fruit Drop Chance 1% -> 2%
 + **Narwhal:** Knockback Resistance 90% -> 87%
 
-### Wave Spawns: Crazh Zone
+### Wave Spawns: Crash Zone
 * **(DLC) Waves 3, 6, and 13:** Now have guaranteed Seapig spawns (similar to Waves 4, 5, and 16 on The Abyss), giving more opportunity to opt into Curse on this map.
 * **Wave 4 (Nightmare):** The first two Horned Flys (of eight total) are now Regular Flys.
+* **Wave 6 (Nightmare):** The starting group of Eggs now spawn exactly 2 instead of randomly 2 or 3.
 * **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
 * **Wave 14:** Helmet Spawns 108 -> 85; Basics spawn earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
 * **Wave 15:** Helmet Spawns 114 -> 95
 * **Wave 16:** 2 Flies added to each group of Helmets + Buffers (28 total); Helmet Groups a bit more spread out (500->725) _[Aiming to make them less trivially smashed by melee quickly]_; 2 additional groups of 1 Bruiser + 1 Armored Bruiser spawn, and they show up 10 seconds earlier (18 -> 22 total)
 * **(DLC) Wave 16:** One of the added Flies is replaced with a Pufferfish.
+* **Wave 16 (Nightmare):** Horned Flys now only spawn every 2 seconds during the last ~15s of the wave instead of every 1 second.
 * **Wave 18 (Nightmare):** Corrupted Buffer spawns 3.5x8 -> 2x8 _[Something you can more strategically play around instead of being a mess you can't really control.]_
 * **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also makes things a bit harder, especially for Ranged builds).
 * **Wave 20 (Nightmare):** Puffy Wizard Hat spawns 1x7 -> 1x9 (with earlier spawns); Added 3 immediate Infected Slasher Eggs that spawn on the edge of the map, and another 3 after 11 seconds.
 * **Wave 14 & 15 Hordes:** Added 4 single Magician spawns alongside 4 single Wizard Hats (Spawners) spread out over the last ~1/2 of the wave; Made the added Helmets in the 2nd half spawn on the edges of the map (with slightly fewer Helmets spawned); Made the Horde additions identical for 14 & 15; Removed one group of Basic Aliens to make more room for the others. _[Aiming to make these Horde waves feel as threatening as Elite fights are.]_
 ### Wave Spawns: The Abyss
 * **Wave 4:** The Lamprey now appears on Danger Level 1+ instead of only DL5. _[This is a way to learn the enemy pattern more safely instead of having to take Bait.]_
+* **Wave 9 (Nightmare):** The first two Brainy Squids are now regular Vampire Squids.
+* **Wave 10 (Nightmare):** 9 single Walrus spawns over each of the final 9 seconds -> Two groups of 3 Walrus spawn at 9 seconds and 7 seconds _[Fixes the spawns so Jack doesn't get all of them, and front-loads them a little more to be slightly more threatening.]_
 * **Wave 13:** Stargazer spawn timing 30s -> 28s; Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
-* **Nightmare, Wave 10:** 9 single Walrus spawns over each of the final 9 seconds -> Two groups of 3 Walrus spawn at 9 seconds and 7 seconds _[Fixes the spawns so Jack doesn't get all of them, and front-loads them a little more to be slightly more threatening.]_
+* **Wave 14 (Nightmare):** Added 3 Walrus spawns during the first 10 seconds so it's no longer so empty to start. _[Nightmare removes the D5 Walrus spawns during this period and replaces them with nothing.]_
+
 
 ## Starting Weapons
 * **Baby:** Added Ghost Axe; Removed Taser

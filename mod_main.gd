@@ -275,6 +275,10 @@ func _ready()->void:
 	temp = load("res://zones/zone_1/004/d6_group_horned_fly.tres")
 	temp.spawn_timing = 20			# 15
 	
+	# Wave 6 (NM)
+	temp = load("res://zones/zone_1/006/d6_unit_1.tres")
+	temp.max_number = 2					# 3
+	
 	# Wave 12
 	temp = load("res://zones/zone_1/012/d1_group_1.tres") # Healers
 	temp_2 = load("res://zones/zone_1/012/unit_2.tres")
@@ -312,6 +316,9 @@ func _ready()->void:
 	temp.repeating_interval = 5     # 3
 	temp.min_repeating_interval = 3 # (1)
 	temp.spawn_timing = 22				  # 32
+	# Wave 16 (Nightmare)
+	temp = load("res://zones/zone_1/016/d6_group_1.tres")
+	temp.min_repeating_interval = 2	# 1 (Horned Flys)
 	
 	# Wave 18 (Nightmare)
 	# Corrupted Buffers
@@ -773,14 +780,14 @@ func _ready()->void:
 	temp.value = 15		# 25 (Fog)
 
 	# Candy Bag
-	temp = load("res://items/all/candy_bag/candy_bag_data.tres")
-	temp.value = 74		# 70
-	temp_2 = load("res://items/all/candy_bag/candy_bag_effect_1.tres")
-	temp.effects.erase(temp_2) # Remove elite spawn chance
-	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/candy_bag-enemy_damage.tres")
-	temp.effects.push_back(temp_2) # Add 25% extra enemy damage for one wave
-	temp = load("res://items/all/candy_bag/candy_bag_effect_0.tres")
-	temp.value = 5		# 8
+#	temp = load("res://items/all/candy_bag/candy_bag_data.tres")
+#	temp.value = 74		# 70
+#	temp_2 = load("res://items/all/candy_bag/candy_bag_effect_1.tres")
+#	temp.effects.erase(temp_2) # Remove elite spawn chance
+#	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/candy_bag-enemy_damage.tres")
+#	temp.effects.push_back(temp_2) # Add 25% extra enemy damage for one wave
+#	temp = load("res://items/all/candy_bag/candy_bag_effect_0.tres")
+#	temp.value = 5		# 8
 	
 	temp = load("res://items/all/chameleon/chameleon_data.tres")
 	temp.tier = 1			# 2

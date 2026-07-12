@@ -159,6 +159,17 @@ func check_for_available_dlcs() -> void :
 		temp = load("res://dlcs/dlc_1/zones/abyss/004/d5_group_1.tres")
 		temp.min_difficulty = 1
 		
+		# Wave 9 (NM)
+		temp = load("res://dlcs/dlc_1/zones/abyss/009/wave_9.tres")
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/DLC-NM-Wave9-VampSquidGroup.tres")
+		temp.groups_data.push_back(temp_2)
+		temp = load("res://dlcs/dlc_1/zones/abyss/009/d6_group_brainy_squid.tres")
+		temp.spawn_timing = 24			# 10
+		
+		# Wave 14 (Nightmare)
+		temp = load("res://dlcs/dlc_1/zones/abyss/014/wave_14.tres")
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/DLC-NM-Wave14-EarlyWalrus.tres")
+		temp.groups_data.push_back(temp_2)
 
 		
 		### ITEMS ###

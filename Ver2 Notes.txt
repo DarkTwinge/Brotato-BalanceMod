@@ -254,8 +254,6 @@ var item_curse_chance = stepify(abs(Utils.get_curse_factor(value, chance * 100.0
 
 ~~What does Harpoon Riccochet look like
 
-14-Abyss might still have a pretty empty spot early on that's weird?
-
 blunderbuss tooltip should clarify 1 per mat
 
 ~(other hp regen tweak possibilities if needed)~
@@ -780,14 +778,14 @@ CZ-7: Changed the Charger group into two groups?
 Ab-14: Elite/Horde also removes the added spooky enemies; maybe should remove less, or?
 	Also true for Ab-11 Viperfish adds,
 	Also true for CZ-12 Tentacle adds
-Ab-9 Brainy Squid kinda weird instead of VampSquid; also do Brainys need stat altering since Vamp is changed, or?
 Ab-17/18 too similar?
 	One could be more Kraken focused perhaps, tho that's stepping on W15 some
-	
+	Or Shouldn't 17 be a Squid Wave, expanding on what it already had going?
 
 CZ-14: fewer Dire Magicians [maybe not now with the nerf plan]
 CZ-18: Could give the stronger Buffers a longer delay (currently reducing the count)
 
+CZ-20: Mummies?
 
 
 Currently Banned Upgrades:
@@ -822,8 +820,6 @@ Chef: Elemental Damage
 Reduce damage of the snake environmental projectiles
 
 
-	
-
 
 A little unfortunate that Wounded iframes are minimum (0.2s); feels like they should get the normal 0.4s?
 
@@ -840,9 +836,6 @@ make Hand go up in Knockback with Tier
 should Drill be Tool instead of Precise?
 One-armed could maybe get Grenade Launcher starter too?
 
-
-
-Candy Bag could be reverted now that earlier Elites do reduced damage?
 
 
 Bug: Lootworm Tooltip Counts Incorrectly with Buccaneer
@@ -864,7 +857,7 @@ Is there some reason Gobbler's Hat isn't giving XP??? (Saw a run with earlyish H
 
 
 check wave 15 abyss if they made a weird gap in the spawns in the last 10 seconds
-did wave 14 have fewer walruses?
+
 
 
 Do something with my CZ W16 changes + Nightmare, prob just keep mine and reduce the Nightmare stuff some?
@@ -874,17 +867,17 @@ Prolly start Wave 9 with regular VampSquids at least; Wave 17 being Stargazers n
 	Earlier first regular Stargazer if not already, then maybe an Enhanced one on W13?
 	An earlier Kraken?
 
-Stats-wise CZ W6 NM looks like too much
 	NM Abyss W6, W9, and a little W8 looking sus too
 	^ But W19-20 potentially too easy for both maps
 Abyss-18 could be a touch harder
+14: the scaled goblins are removed if elite is present; probably a smaller group should still exist with the Elite?  (kinda weird for group sizing e.g. Jack; may want to compare HP of Elite and all the goblins)
 
-Abyss-14-NM starts with a weird gap in vanilla
+
 Wave 15 abyss NM seems kinda empty at the end?
 
 Infected Eggs could be a touch more HP but take an extra second to hatch if that makes sense?
 
-CZ-8 NM maybe have one Mummy?  (or 6, instead of some of the eggs?)
+CZ-8 NM maybe have one-two Mummy?  
 
 Make Corrupted Buffer buff amount the same (check Stonefish too); this should be consistent across all
 
@@ -908,4 +901,4 @@ Ball & Chain tooltip should mention structures, pets
 
 Does Snail get overwritten by buffed enemies or Elites that change their Speed and such? (Since it doesn't apply to Gobbler...)
 
-Should Fins really have as high of a fruit+crate drop chance?  (Think Chasers may have it too?)
+Should Fin Aliens really have as high of a fruit+crate drop chance?  (Think Chasers may have it too?)
