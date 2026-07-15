@@ -855,9 +855,9 @@ Is there some reason Gobbler's Hat isn't giving XP??? (Saw a run with earlyish H
 
 
 
-
+Wave 15 abyss NM seems kinda empty at the end?
 check wave 15 abyss if they made a weird gap in the spawns in the last 10 seconds
-
+	May be Horde and/or Elite specific
 
 
 Do something with my CZ W16 changes + Nightmare, prob just keep mine and reduce the Nightmare stuff some?
@@ -872,8 +872,6 @@ Prolly start Wave 9 with regular VampSquids at least; Wave 17 being Stargazers n
 Abyss-18 could be a touch harder
 14: the scaled goblins are removed if elite is present; probably a smaller group should still exist with the Elite?  (kinda weird for group sizing e.g. Jack; may want to compare HP of Elite and all the goblins)
 
-
-Wave 15 abyss NM seems kinda empty at the end?
 
 Infected Eggs could be a touch more HP but take an extra second to hatch if that makes sense?
 
@@ -893,8 +891,6 @@ Bonk Dog could get slightly better explosion hits?  A little bigger explosion ma
 
 Would it possible to make Pocket Factory add Tree to your favored item pool for the run?
 
-Hiker could just be 6 mats per 10 steps instead of 5
-
 Ball & Chain tooltip should mention structures, pets
 	Or instead make it not affect that stuff?
 	
@@ -902,3 +898,15 @@ Ball & Chain tooltip should mention structures, pets
 Does Snail get overwritten by buffed enemies or Elites that change their Speed and such? (Since it doesn't apply to Gobbler...)
 
 Should Fin Aliens really have as high of a fruit+crate drop chance?  (Think Chasers may have it too?)
+
+
+
+W14-Abyss w/ Elite: nothing?  Not even D5 Walrii?  too much removed?
+Firemanes in any late waves at all?
+W-18-Abyss switch to more Stargaze focus, less Super Goblin
+
+W-13-end deadzone maybe?
+
+Do Candy Elites ignore the wave-specific enemy remval stuff?
+
+W20-CZ: Could try spawning some new Buffers at edges right when Eggs would spawn?

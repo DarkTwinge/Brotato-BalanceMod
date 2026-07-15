@@ -520,8 +520,10 @@ func check_for_available_dlcs() -> void :
 		temp.effects.erase(temp_2)		#	Remove -5 Speed
 		temp_2 = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_2.tres")
 		temp.effects.erase(temp_2)		# Remove +Speed Mod
-		temp = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_1.tres")
-		temp.value2 = 75							# 80 (Steps per HP)
+#		temp = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_1.tres")
+#		temp.value2 = 75							# 80 (Steps per HP)
+		temp = load("res://dlcs/dlc_1/characters/hiker/effects/hiker_effect_0.tres")
+		temp.value = 6								# 5
 		
 		## OTHER CHARACTER TEXT TWEAKS ##
 		# Builder

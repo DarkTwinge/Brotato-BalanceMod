@@ -1836,6 +1836,14 @@ func _ready()->void:
 	temp.value = 111				# 122
 	temp = load("res://weapons/ranged/shredder/4/shredder_4_effect.tres")
 	temp.key = "new_effect_explode"	
+	temp = load("res://weapons/ranged/shredder/1/shredder_stats.tres")
+	temp.sound_db_mod = -10	# -8
+	temp = load("res://weapons/ranged/shredder/2/shredder_2_stats.tres")
+	temp.sound_db_mod = -10	# -8
+	temp = load("res://weapons/ranged/shredder/3/shredder_3_stats.tres")
+	temp.sound_db_mod = -10	# -8
+	temp = load("res://weapons/ranged/shredder/4/shredder_4_stats.tres")
+	temp.sound_db_mod = -10	# -8
 	
 	# Shuriken
 	temp = load("res://weapons/ranged/shuriken/4/shuriken_4_data.tres")
@@ -2024,10 +2032,11 @@ func _ready()->void:
 	temp.banned_items.push_back("item_spider")
 	temp.banned_items.push_back("item_triangle_of_power")
 	temp = load("res://items/characters/bull/bull_effect_2.tres")
-	temp.value = 10  # 15 (HP Regen)
+	temp.value = 10			# 15 (HP Regen)
 	temp = load("res://items/characters/bull/bull_effect_4.tres")
 	temp.text_key = "new_effect_explode_on_hit"
 	temp = load("res://items/characters/bull/bull_explosion_stats.tres")
+	temp.damage = 25		# 30
 	temp.scaling_stats = [ [ "stat_melee_damage", 2.5 ], [ "stat_ranged_damage", 2.5 ], [ "stat_elemental_damage", 2.5 ] ]	# 3.0x3
 	
 	# Crazy
@@ -2231,6 +2240,8 @@ func _ready()->void:
 	temp.banned_items.push_back("item_focus")
 	
 	# Vampire
+	temp = load("res://items/characters/vampire/vampire_data.tres")
+	temp.banned_items.push_back("item_tardigrade")
 	temp = load("res://items/characters/vampire/effects/vampire_effect_2e.tres")
 	temp.value = -20				# -100 (Consumable Heal)
 	

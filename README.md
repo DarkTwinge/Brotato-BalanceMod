@@ -217,6 +217,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blood Donation:** Price 50->40 _[The primary 'cost' is the damage, so the material cost should be lower.]_
 * **Bowler Hat:** Price 75->70; Luck 15 -> 21
 * **Candle:** Price 65->42; Added Effect: -5% Enemy Damage; Elemental Damage 4 -> 2; -5% Damage --> -4% Attack Speed; Fog Visibility +25% -> +15% _[Now more reasonable to take this primarily for the safety benefit.]_
+* **Candy Bag:** No longer gives useless stats _[Uses the same mechanic that prevents e.g. Ghost from being offered Armor items.]_
 * **Chameleon:** Tier 3 -> Tier 2; Price 70->51; 20% Dodge While Standing Still --> 50 Luck While Standing Still; Dodge 3% -> 4%; (Now also tagged for Luck) _[Reworked because Dodge really wants to be reliably capped at 60% to be good, so inconsistent Dodge is extremely hard to get real value from. This also gives a second stand-still item at tier-2, as well as another Luck item at Tier 1-2 where they're lacking.]
 * **Community Support:** Price 75->70 _[The amount of actual Attack Speed granted is less than most people expect it to be.]_
 * **Crown:** Price 70->65
@@ -338,6 +339,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Railgun:** Dodge Damage Scaling 30%/35%/40%/45% -> 25%/30%/35%/40%; Ranged Damage Scaling 80%/80%/90%/100% -> 100%(All)
 - **Revolver:** Price 20/34/70/130 -> 18/36/68/125; Range 450 -> 425; Big Reload Cooldown 2.07s/1.93s/1.80s/1.67s -> 2.30s/2.15s/2.00s/1.85s _[About 5% slower attack rate overall.]_
 - **Rocket Launcher:** Range 500/550/600 -> 500(All)
+- **Shredder:** (Firing SFX slightly quieter)
 - **SMG:** (Firing SFX slightly quieter)
 - **Sniper Gun:** Price 115/245 -> 108/191; Ranged Damage Scaling 100%(All) -> 250%/350%; Tier-4 Crit Chance 20% -> 25%; Range 800/1000 -> 600/700;  _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much base Range that adding more is irrelevant.]_
 #### DLC
@@ -352,7 +354,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
 * **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
-* **Bull:** Starting HP Regen 15 -> 10; Explosion Damage Scaling 300% -> 250%; Can no longer be offered Triangle of Power, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
+* **Bull:** Starting HP Regen 15 -> 10; Base Damage 30 -> 25; Explosion Damage Scaling 300% -> 250%; Can no longer be offered Triangle of Power, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
 * **Chunky**: Can no longer be offered Esty's Couch, Doc Moth, or Jet Pack
 * **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
 * **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
@@ -382,7 +384,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2; Can no longer be offered Barricade.
 * **Streamer:** Now also favored to find Stand-still items.
 * **Vagabond:** Can no longer be offered Focus.
-* **Vampire:** Consumable Healing -100 -> -20 _[Allows healing from Elite Crates.]_; Can no longer be offered Esty's Couch
+* **Vampire:** Consumable Healing -100 -> -20 _[Allows healing from Elite Crates.]_; Can no longer be offered Tardigrade or Esty's Couch
 * **Wildling:** No longer starts with a Stick.
 * **Wounded:** Can no longer be offered Barricade or Duct Tape.
 * _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
@@ -394,7 +396,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Can no longer be offered Doc Moth or Esty's Couch _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell or Improved Tools.
 * **Gangster:** Early Elites do less damage (see below).
-* **Hiker:** Steps Per HP 80 -> 75; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items _[Streamlines the awkwardness with Speed, resulting in a minor buff overall.]_
+* **Hiker:** Gold Per 10 Steps 5 -> 6; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items
 * **Ogre:** No longer favored to find Esty's Couch more often
 * **Pacifist:** Now also favored to find Dodge items; Can no longer be offered Whistle or Bot-o-mine.
 * **Sailor:** Dodge Cap 20% -> 25%; Can now be offered Dodge items. _[While Dodge is still not good on Sailor, it is usable enough that the items don't need to be completely unavailable.]_
