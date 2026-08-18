@@ -118,6 +118,11 @@ func check_for_available_dlcs() -> void :
 					elif unit.get_path() == "res://dlcs/dlc_1/enemies/vampire_squid/vampire_squid.tscn":
 						unit = load("res://mods-unpacked/DarkTwinge-BalanceMod/enemies/vampire_squid.tscn")
 		
+		# Wave 7, NM
+		temp = load("res://dlcs/dlc_1/zones/abyss/007/wave_7.tres")
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/DLC-NM-Wave7-FinalWalrusGroup.tres")
+		temp.groups_data.push_back(temp_2)		
+		
 		# Wave 10, Nightmare
 		temp = load("res://dlcs/dlc_1/zones/abyss/010/d6_group_2.tres")
 		temp.repeating = 1					# 10
@@ -170,6 +175,16 @@ func check_for_available_dlcs() -> void :
 		temp = load("res://dlcs/dlc_1/zones/abyss/014/wave_14.tres")
 		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/waves/DLC-NM-Wave14-EarlyWalrus.tres")
 		temp.groups_data.push_back(temp_2)
+		temp = load("res://dlcs/dlc_1/zones/abyss/014/d6_group_2.tres")
+		temp.prevent_if_elite = false		# true
+		temp.prevent_if_horde = false		# true
+		temp.spawn_timing = 11					# 10
+		temp.repeating_interval = 14		# 15
+		
+		# Wave 18 (NM)
+		temp = load("res://dlcs/dlc_1/zones/abyss/018/d6_unit_2_scaled_anemone.tres")
+		temp.min_number = 2		# 1
+		temp.max_number = 2		# 1
 
 		
 		### ITEMS ###
@@ -244,7 +259,8 @@ func check_for_available_dlcs() -> void :
 		
 		temp = load("res://dlcs/dlc_1/items/treasure_map/treasure_map_data.tres")
 		temp.tags = [ "stat_luck", "exploration" ]	# Luck only -> Luck & Explore
-
+		temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/treasure_map-luck.tres")
+		temp.effects.insert(0,temp_2)		# Adds 4 Luck to Map
 
 		# Items: Tier-3 #
 		temp = load("res://dlcs/dlc_1/items/crystal/crystal_data.tres")
@@ -272,9 +288,9 @@ func check_for_available_dlcs() -> void :
 		temp.value = 68		# 75
 		
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/sunken_bell_data.tres")
-		temp.value = 40		# 65
+		temp.value = 42		# 65
 		temp = load("res://dlcs/dlc_1/items/sunken_bell/effects/sunken_bell_effect_0.tres")
-		temp.scale = 7.5	# 6.0
+		temp.scale = 7.0	# 6.0
 		temp.text_key = "new_effect_explode_when_below_hp"
 		
 
@@ -420,11 +436,14 @@ func check_for_available_dlcs() -> void :
 		
 		# Flute
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_data.tres")
+		temp.value = 18					# 20
 		temp.add_to_chars_as_starting = [ "character_lucky", "character_glutton", "character_renegade", "character_jack", "character_golem", "character_soldier", "character_demon" ] 	# Removed Baby
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/2/flute_2_data.tres")
-		temp.value = 42					# 45
+		temp.value = 40					# 45
+		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/3/flute_3_data.tres")
+		temp.value = 79					# 80
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/4/flute_4_data.tres")
-		temp.value = 150				# 165
+		temp.value = 149				# 165
 
 		temp = load("res://dlcs/dlc_1/weapons/ranged/flute/1/flute_effect_0.tres")
 		temp.text_key = "new_effect_charm_below_hp_no_scaling"
@@ -474,7 +493,8 @@ func check_for_available_dlcs() -> void :
 		
 		# Chef
 		temp = load("res://dlcs/dlc_1/characters/chef/chef_data.tres")
-		temp.banned_items = [ "item_eyes_surgery" ]
+		temp.banned_items.push_back("item_eyes_surgery")
+		temp.banned_upgrades.push_back("upgrade_elemental_damage")
 		
 		# Creature
 		temp = load("res://dlcs/dlc_1/characters/creature/creature_data.tres")
@@ -497,6 +517,8 @@ func check_for_available_dlcs() -> void :
 		
 		# Druid
 		temp = load("res://dlcs/dlc_1/characters/druid/druid_data.tres")
+		temp.banned_upgrades.push_back("upgrade_lifesteal")
+		temp.banned_upgrades.push_back("upgrade_hp_regeneration")
 		temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_0.tres")
 		temp.effects.erase(temp_2)		# Remove +5 Starting HP
 		temp_2 = load("res://dlcs/dlc_1/characters/druid/effects/druid_effect_1.tres")

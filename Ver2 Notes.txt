@@ -177,7 +177,7 @@ BM-Lute shouldn't do extra damage itself from the Lute bonus
 ~~~
 Engineer halving explosion damage is kinda weird
 
-map could come with a little luck
+
 
 prisoner elite -- 2nd phase either too much delay between attacks or doesn't attack from far enough away
 prisoner range for phase 2/3 probably too low; explorer easily stays away
@@ -797,9 +797,7 @@ Mage banned_upgrades = [ "upgrade_melee_damage", "upgrade_ranged_damage" ]
 Techonomage banned_upgrades = [ "upgrade_melee_damage", "upgrade_ranged_damage" ]
 Wounded banned_upgrades = [ "upgrade_armor", "upgrade_max_hp", "upgrade_hp_regeneration", "upgrade_lifesteal" ]
 Sailor banned_upgrades = [ "upgrade_harvesting" ]
-
-
-~WOULD HAVE TO ADD~
+~ADDED~
 Vampire: HP Regen
 Sick: HP Regen
 Ranger: Melee Damage
@@ -814,6 +812,14 @@ Brawler: Ranged Damage
 Beastmaster: Attack Speed, Range
 Druid: Lifesteal, HP Regen
 Chef: Elemental Damage
+
+
+NM CZ-12 could be a little harder
+	I already add a handful of Mummies to D5; could also move up NM Tentacles to start sooner
+NM CZ-17 could be modestly harder
+NM-Abyss 18 slightly harder, and 20 slightly harder too
+NM-Abyss-4 could be toned down slightly?  (from stats, but unsure in practice)
+check Wave 14 tweaks given the new despawn setup
 
 
 
@@ -845,9 +851,6 @@ Spyglass tooltip also wrong?
 
 How miserable is Techno-Pruner
 
-Doc Moth could just be moved to purple
-
-Treasure Map prolly should come with Luck or be 25% [Tweak Cursed adjustment if it comes with Luck]
 
 Robot Arm could maybe use some love or partial rework
 
@@ -865,12 +868,11 @@ Do something with my CZ W16 changes + Nightmare, prob just keep mine and reduce 
 
 Prolly start Wave 9 with regular VampSquids at least; Wave 17 being Stargazers now seems weird
 	Earlier first regular Stargazer if not already, then maybe an Enhanced one on W13?
-	An earlier Kraken?
+	An earlier Kraken?  (single one on like 8 or 10 or 13 seems good)
 
 	NM Abyss W6, W9, and a little W8 looking sus too
 	^ But W19-20 potentially too easy for both maps
 Abyss-18 could be a touch harder
-14: the scaled goblins are removed if elite is present; probably a smaller group should still exist with the Elite?  (kinda weird for group sizing e.g. Jack; may want to compare HP of Elite and all the goblins)
 
 
 Infected Eggs could be a touch more HP but take an extra second to hatch if that makes sense?
@@ -902,11 +904,51 @@ Should Fin Aliens really have as high of a fruit+crate drop chance?  (Think Chas
 
 
 W14-Abyss w/ Elite: nothing?  Not even D5 Walrii?  too much removed?
+	re-added Cool Walrii; monitor
 Firemanes in any late waves at all?
 W-18-Abyss switch to more Stargaze focus, less Super Goblin
 
 W-13-end deadzone maybe?
+W-13-Abyss could also bring in more Stargazers than D5? (tho stats-wise seems hard enough, assumedly some other additions)
 
 Do Candy Elites ignore the wave-specific enemy remval stuff?
 
 W20-CZ: Could try spawning some new Buffers at edges right when Eggs would spawn?
+
+
+Turret damage reporting broken
+	which mods?
+	
+Diplocalus Ab-W13 is weird, since it's after you already see the Shielded ones; probably should be a Shielded one if noting else (use BalMod timing not vanilla)
+
+Stargazers entering Vat could set Vat HP to percentage of their current HP?  (Since it's weird to hurt one a lot then it enters vat at fullish hp)
+
+Engineering scaling up Damage% could be an item option for half-Engineering type builds
+
+--Vampire bug Maxx had: armor from low hp wasn't registering immediately.  May have been caused by Tau's cooldown fix?
+
+
+Does Catling not fire during the first few seconds of a wave?
+
+Ricochet limit Max 1 or 2?
+
+Artificer could ban Ratling, Cyberball etc
+
+
+Base damage of Added Damage effects buffed some in general
+
+
+Dwarf could just remove Dodge malus
+
+
+14-15 Horde crash zone -- new despawn makes easier
+
+End of Wave 15-Abyss still weird (with Elite at least)
+	not too obvious just watching it; probably around 7-10s left could use a little more?
+
+Beastmaster pets could eat mats to grow like Builder
+
+
+Scepter could maybe be just enough faster at tier-1 to get $1 on Wave 1?
+
+knockback resist for squids?

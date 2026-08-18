@@ -115,7 +115,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Fertilizer:** Price 15->17; Harvesting 8 -> 7
 * **Fresh Meat:** Removed from the game. _[Having three separate tier-1 items that give +2% Lifesteal is unnecessary.]_
 * **Gentle Alien:** Price 30->32
-* **Glasses:** Range 20 -> 22
+* **Glasses:** Price 20->21; Range 20 -> 25
 * **Gummy Berserker:** Price 25->24; Range 25 -> 30
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->23
@@ -147,14 +147,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ### Tier-2
 * **Acid:** Price 65->63
-* **Alien Eyes:** Price 50->46; No Downside --> -8 Range
+* **Alien Eyes:** Price 50->47; Base Damage 1 -> 3; No Downside --> -8 Range
 * **Bait:** Price 25->26
 * **Banner:** Range 20 -> 25
 * **Blindfold:** Price 45->42; Range -15 -> -18
 * **Black Belt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->38
 * **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%
-* **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->58; Laser Internal Cooldown 32 -> 40; Laser Engineering Scaling 100% -> 75%
+* **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->57; Laser Internal Cooldown 32 -> 35; Laser Engineering Scaling 100% -> 75%
 * **Campfire:** Price 40->39; Fog Visibility +50% -> +20%
 * **Catling Gun:** Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
 * **Celery Tea:** Price 35->32; Extra Enemy HP +100% -> +60%
@@ -162,13 +162,14 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Cog:** Damage -4% -> -1% _[This penalty usually doesn't matter much for an Engineering build anyway, so this makes it less punishing to splash.]_
 * **Cyclops Worm:** Range -12 -> -16
 * **Dangerous Bunny:** Price 30->34
+* **Doc Moth:** Tier 2 -> Tier 3
 * **Energy Bracelet:** Crit Chance 4% -> 5%
 * **Fruit Basket:** Price 45->58; Fruit Drop Chance 1% -> 2%; HP Regen -3 -> Damage -6%; Limit 4 -> 3
 * **Gambling Token:** Dodge 8% -> 9%
 * **Ice Cube:** Price 50->46
-* **Incendiary Turret:** Price 40->39; Engineering Scaling 33% -> 35% _[Better rounding.]_
+* **Incendiary Turret:** Price 40->38; Engineering Scaling 33% -> 35% _[Better rounding.]_
 * **Leather Vest:** Price 45->49
-* **Little Frog:** Price 45->37; Pickup Range +20% -> +30%
+* **Little Frog:** Price 45->35; Pickup Range +20% -> +30%
 * **Little Muscley Dude:** Range -15 -> -18
 * **Lure:** Price 34->41
 * **Medal:** Price 55->62; Crit Chance -4% -> -3%
@@ -178,7 +179,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Piggy Bank:** Price 40->38
 * **Pocket Factory:** Price 75->70; Now comes with +1 Tree Stat (same as buying one Tree item) _[Makes it less reliant on finding Trees.]_
 * **Pumpkin:** Price 40->35; -2% Damage --> No Downside; Now also gives +15% Bounce damage (only relevant for Ricochet); No Limit -> Limit 8 _[This item's real effect is less than people expect. Limit stops it from showing up in endless if you've already maxed the possible value.]_
-* **Recycling Machine:** No Downside --> -1 HP Regen
+* **Recycling Machine:** Price 35->32; No Downside --> -1 HP Regen
 * **Reinforced Steel:** Engineering 3 -> 4
 * **Riposte:** Price 40->34
 * **Ritual:** Price 60->57
@@ -204,7 +205,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Pile of Books (Cursed):** Bonus Crit Chance & Engineering from Curse reduced to slightly above normal Curse levels. (This item was a special exception where Curse gave extra benefits, but now it's been buffed and most of its cost/value is in the stats directly, so the big bonus no longer makes sense.)
 * **Saltwater:** Extra Speed When Hit 10% -> 15%
 * **Spyglass:** Price 30->32
-* **Treasure Map:** Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky)
+* **Treasure Map:** Added Effect: 4 Luck; Now also tagged for 'Exploration' (Cryptid/Explorer/Lucky); (No longer adds extra Luck when Cursed)
 
 ### Tier-3
 * **Adrenaline:** 50% Chance to Heal 5 HP -> 50% Chance to Heal 7 HP
@@ -257,7 +258,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Lighthouse:** Fog Visibility +100% -> +30%
 * **Mirror:** Price 60->57
 * **Starfish:** Price 75->68
-* **Sunken Bell:** Price 65->40; Explosion Size 600% -> 750%
+* **Sunken Bell:** Price 65->42; Explosion Size 600% -> 700%
 
 ### Tier-4
 * **Diploma:** XP Gain +50% -> +60%
@@ -344,20 +345,21 @@ If you'd like to directly support my ability to make and maintain mods like this
 - **Sniper Gun:** Price 115/245 -> 108/191; Ranged Damage Scaling 100%(All) -> 250%/350%; Tier-4 Crit Chance 20% -> 25%; Range 800/1000 -> 600/700;  _[Given that it's in the Gun Set, it should at least passably scale from Ranged Damage and fit into a Gun build - even with these scaling amounts, it still scales worse than a Pistol. Meanwhile it's a weapon that scales off Range, so it shouldn't have so much base Range that adding more is irrelevant.]_
 #### DLC
 - **Harpoon Gun:** Melee Damage Scaling 100%(All) -> 75%/85%/100%; Piercing 3/4/5 -> 3/4/6; Max Range 800/850/900 -> 750/825/900; Price 50/105/220 -> 46/90/160 _[Better differentiates the tiers while nerfing the powerful lower-tier scaling a bit.]_
+- **Flute:** Price 20/45/80/165 -> 18/40/79/149
 
-* **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Obliterator 127/255 -> 122/218; Particle Accelerator: 144/289 -> 130/232; Potato Thrower: 36/69/139 -> 33/64/114; Railgun: 20/40/80/160 -> 20/40/76/139. Blunderbuss: 45/95/192 -> 46/90/160; Flute: Price 20/45/80/165 -> 20/42/80/150; Javelin: 18/36/66/140 -> 18/36/68/125
+* **Additional Price Adjustments:** Crossbow: 16/34/62/132 -> 16/32/61/107; Fireball: 36/66/140 -> 36/68/125; Icicle: 18/36/66/140 -> 18/36/68/125; Obliterator 127/255 -> 122/218; Particle Accelerator: 144/289 -> 130/232; Potato Thrower: 36/69/139 -> 33/64/114; Railgun: 20/40/80/160 -> 20/40/76/139. Blunderbuss: 45/95/192 -> 46/90/160; Javelin: 18/36/66/140 -> 18/36/68/125
 * **Other Tier-4 Price Reductions:** Chain-gun: 300->265; Double Barrel Shotgun: 149 -> 133; Flamethrower: 207 -> 185; Gatling Laser: 290 -> 260; Ghost Scepter: 122 -> 111; Grenade Launcher: 212 -> 191; Laser Gun: 122 -> 111; Medical Gun: 122 -> 111; Mini-gun 255 -> 225; Nuclear Launcher: 289 -> 251; Pistol: 91 -> 81; Rocket Launcher: 207 -> 185; Shredder: 122 -> 111; Shuriken: 105 -> 95; Slingshot: 122 -> 111; SMG: 149 -> 133; Sniper Gun: 245 -> 205; Taser: 122 -> 111; Wand: 91 -> 81
 * **Other Minor Accuracy Tweaks** (mostly only relevant if Accuracy is lowered by Heavy Bullets or Eyepatch): Medical Gun 0.9(Tier1-3)->1.0(All); SMG 0.7/0.75/0.8/0.85->0.7/0.74/0.77/0.8; Mini-gun 0.85/1.0 -> 0.8/1.0; Shotgun 0.9/0.95/1.0/1.0->0.9(All); Potato Thrower 0.9(All)->1.0(All); Rocket Launcher 0.8/0.9/1.0 -> 0.9(All) _[For reference, Revolver is 0.9(All), and most other unlisted weapons are 1.0(All).]_
 
 ## Characters
 * **Artificer:** Can no longer be offered Baby Elephant or Cyberball
 * **Baby:** Harvesting 12 -> 15; XP Required to Level Up +130% -> +120%; No longer favored to find XP Gain items _[The extra Harvesting allows them to get their first Level-ups after Waves 1 and 2 much more reliably.]_
-* **Beast Master:** Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
-* **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
-* **Bull:** Starting HP Regen 15 -> 10; Base Damage 30 -> 25; Explosion Damage Scaling 300% -> 250%; Can no longer be offered Triangle of Power, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
-* **Chunky**: Can no longer be offered Esty's Couch, Doc Moth, or Jet Pack
-* **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Crossbow Set giving some Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
-* **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 11; No longer favored to find Lumberjack Shirt
+* **Beast Master:** Can no longer be offered Range or Attack Speed levelup options; Can no longer be offered Crystal, Coffee, Community Support, Retromation's Hoodie, Statue, Banner, Gummy Berserker, Seashell, or Spider
+* **Brawler:** Range Modifications now reduced by 50%; Range -50 -> -140 (-70); Unarmed Attack Speed Bonus 50% -> 40%; Now applies their +AttackSpeed Bonus to weapons that scale with Attack Speed (Claw); Can no longer be offered Ranged Damage levelup options; Can no longer be offered Catling Gun _[In addition to directly nerfing a strong character, the idea here is to make being really close-ranged more of a requirement, giving the character a more unique feel.]_
+* **Bull:** HP Regen Modifications +50% -> +33%; Max HP +20 -> +15; Starting HP Regen 15 -> 12; Base Damage 30 -> 25; Explosion Damage Scaling 300% -> 250%; Can no longer be offered Attack Speed, Range, or Lifesteal levelup options; Can no longer be offered Triangle of Power, Retromation's Hoodie, Statue, Banner, Gummy Berserker, or Spider
+* **Chunky**: Can no longer be offered Lifesteal levelup options; Can no longer be offered Esty's Couch, Doc Moth, or Jet Pack
+* **Crazy:** No longer starts with a Knife; Now applies their +Range Bonus to weapons that scale with Range (Crossbow & Sniper Rifle); Starting Dodge -30% -> -15% _[If this isn't going to be -100%, it might as well be an amount you can pull out of the deficit if you really want to, especially with Claw & Crossbow Sets giving Dodge]_; Starting Ranged Damage -10 -> -15 _[Prevents Crossbows from being overly strong]_; Starting Engineering -10 -> -15 _[To complete the pattern]_
+* **Cryptid:** Bonus XP/Gold Per Living Tree 12 -> 10; No longer favored to find Lumberjack Shirt; Can no longer be offered  Lifesteal levelup options
 * **Cyborg:** Now makes a distinct sound effect when switching from Ranged Damage to Engineering mode
 * **Demon:** Materials to 1 HP Ratio 13 -> 14
 * **Doctor:** Harvesting 5 -> 0; Starting HP Regen 5 -> 3
@@ -366,39 +368,40 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Explorer:** Starting Trees: 12 -> 11
 * **Farmer:** Now starts with a Garden _[A flavorful buff to a character that's more impacted by nerfs to early Harvesting than most, and one that is most relevant for their weaker, non-Pruner builds.]_
 * **Fisher:** Extra HP 5 -> 8
-* **Gladiator:** -30 Luck -> -40
+* **Ghost:** ; Can no longer be offered Armor levelup options
+* **Gladiator:** -30 Luck -> -40; Can no longer be offered Ranged Damage levelup options
 * **Golem:** Can no longer be offered Esty's Couch
 * **Jack:** Damage Vs Elites/Bosses 125% -> 120%; Extra Enemy HP 175% -> 180%
 * **King:** Now only gives Attack Speed and Damage for every *different* tier-4 weapon; Bonus Attack Speed & Damage 25% -> 20%
-* **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor
+* **Knight:** 2 Melee Damage per 1 Armor -> 3 Melee Damage per 2 Armor; Can no longer be offered Harvesting or Ranged Damage levelup options
 * **Loud:** -3 Harvesting per Wave -> -5; Damage 30% -> 25%
 * **Lucky:** 100 Starting Luck -> 60; Luck Modifications +25% -> +40%; Attack Speed -60% -> -50%; (Luck stat slightly better and slightly easier to come by)  _[This makes you care more about actually raising Lucky's Luck stat.]_
 * **Mage:** Now gets a 2nd Sausage when starting with non-Elemental weapons; -50% Engineering Mods -> -33% _[Vanilla partially adapted this change, but -50% is still oppressive for making this alt build work, while -33% is more in the 'hard-but-manageable' range.]_
 * **Masochist:** HP Regen 20 -> 15; Armor 8 -> 5; Can no longer be offered Triangle of Power or Crystal
 * **Mutant:** XP Needed For Level-up 66% -> 60% _[Evens things back out a bit now that +XP items are actually strong on this character.]_
 * **One-armed:** Now gains a 3-Set bonus for whichever weapon they have equipped (except for Legendary) _[A specialized buff to a difficult character that especially helps some of their worst starters like Shuriken.]_; Can no longer be offered Spider; Can no longer be offered lower-tier versions of your equipped weapon _[Very minor; swapping weapons is slightly easier.]_
-* **Ranger:** No longer starts with a Pistol.
+* **Pacifist:** Now also favored to find Dodge items; Can no longer be offered Engineering levelup options; Can no longer be offered Whistle or Bot-o-mine.
+* **Ranger:** No longer starts with a Pistol; Can no longer be offered Melee Damage levelup options.
 * **Renegade:** Additional Malus: +2% Items Price at the end of each wave. _[Renegade's early game is moderately challenging, while their late game tends to be quite easy. This ramps up the shop costs over time, which leaves the early game fairly similar but makes the later game less trivial.]_
-* **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage); Can no longer be offered Esty's Couch
+* **Sick:** Starting Lifesteal 25% -> 20%; No longer favored to find Lifesteal items; Can now find Tardigrade (as it now ignores self-damage); Can no longer be offered HP Regeneration levelup options; Can no longer be offered Esty's Couch
 * **Soldier:** 200% Pickup Range -> 125% _[Gives them some reason to care about Pickup Range items.]_
 * **Speedy:** Starting Speed 30% -> 20% _[More room to meaningfully increase from where you start]_; Starting Armor -3 -> -2; Can no longer be offered Barricade.
 * **Streamer:** Now also favored to find Stand-still items.
 * **Vagabond:** Can no longer be offered Focus.
-* **Vampire:** Consumable Healing -100 -> -20 _[Allows healing from Elite Crates.]_; Can no longer be offered Tardigrade or Esty's Couch
+* **Vampire:** Consumable Healing -100 -> -20 _[Allows healing from Elite Crates.]_; Can no longer be offered HP Regeneration levelup options; Can no longer be offered Tardigrade or Esty's Couch
 * **Wildling:** No longer starts with a Stick.
 * **Wounded:** Can no longer be offered Barricade or Duct Tape.
 * _[Initial weapon removals (Crazy, Ranger, Wildling, Engineer) make those characters more varied by making the starting weapon choice matter more, preventing the default fall-back option.]_
 ### DLC
 * **Captain:** No longer favored to find XP Gain items. _[Their benefit is only about average, and Barnacle especially is sad for Captain.]_
-* **Chef:** Can no longer be offered Eyes Surgery.
+* **Chef:** Can no longer be offered Elemental Damage levelup options; Can no longer be offered Eyes Surgery.
 * **Creature:** No longer scales weapon damage with Curse; Now increases cursed equipment strength based on how much Curse stat you have; Now has higher minimum curse strength (-20% to +30% instead of -30% to +30%) _[This makes the character less about simply being OP with fast weapons and instead leans into curse in a more unique way.]_
 * **Diver:** Now starts with +10% Crit Chance
-* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Can no longer be offered Doc Moth or Esty's Couch _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
+* **Druid:** Max HP +5 -> No Extra HP; 33% Chance for any fruit to give +1 Luck -> 100% Chance for poisoned fruit to give +2 Luck; Can no longer be offered Lifesteal or HP Regeneration levelup options; Can no longer be offered Doc Moth or Esty's Couch _[This gives a risk/reward element to the poisoned fruit, making them a more unique aspect to interact with.]_
 * **Dwarf:** Can no longer be offered Seashell or Improved Tools.
 * **Gangster:** Early Elites do less damage (see below).
 * **Hiker:** Gold Per 10 Steps 5 -> 6; Starting Speed -5% -> No Penalty; Speed Modifications +10% -> No Bonus; Can no longer be offered Stand-still Items
 * **Ogre:** No longer favored to find Esty's Couch more often
-* **Pacifist:** Now also favored to find Dodge items; Can no longer be offered Whistle or Bot-o-mine.
 * **Sailor:** Dodge Cap 20% -> 25%; Can now be offered Dodge items. _[While Dodge is still not good on Sailor, it is usable enough that the items don't need to be completely unavailable.]_
 * **Sick:** Can no longer be offered Crystal.
 
@@ -423,7 +426,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 + **Gobbler:** Base HP 5 -> 1; Speed range for each evolution 300-400/175-275/50-150 -> 320-400/200-280/80-160; HP increase upon evolution 50% -> 75%; Ugly Tooth no longer applies slow to Gobblers (they are already unaffected by Snail)
 + **Fly:** Base HP 15 -> 1; HP Per Wave 4 -> 9 _[Similar HP early, more HP late.]_
 + **Tentacle:** Item Crate Drop Chance 2% -> 3%
-+ **Horned Spitter (Nightmare):** Projectile Speed 600->550; Minimum Range 0->160 _[Let's you approach melee range a little more safely, especially if you back them into an edge.]_
++ **Horned Spitter (Nightmare):** Projectile Speed 600 -> 550; Minimum Range 0 -> 165; Movement Speed 200 -> 190 _[Lets you approach melee range a little more safely, especially if you back them into an edge.]_
 + **Dread Magician (Nightmare):** Base HP 15 -> 2; HP Per Wave 8 -> 5 _[This gives them slightly less HP than regular Magicians, rewarding careful play more; they still have more Speed, double the projectiles, and spawn in groups of 5 instead of 3. Also less punishing for random damage sources such as Pets and Structures.]_
 + **Corrupted Buffer (Nightmare):** Damage Increase Per Wave 1.0 -> 0.7 _[This is a support enemy, they shouldn't be doing real contact damage on their own.]_
 + **Looter:** Knockback Resistance 0% -> 30% _[Makes high knockback less of a downside when trying to kill Loot Goblins.]_
@@ -451,6 +454,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **(DLC) Waves 3, 6, and 13:** Now have guaranteed Seapig spawns (similar to Waves 4, 5, and 16 on The Abyss), giving more opportunity to opt into Curse on this map.
 * **Wave 4 (Nightmare):** The first two Horned Flys (of eight total) are now Regular Flys.
 * **Wave 6 (Nightmare):** The starting group of Eggs now spawn exactly 2 instead of randomly 2 or 3.
+* **(DLC) Wave 7 (Nightmare):** Added an additional Walrus that spawns with 8 seconds left.
 * **Wave 12:** Mummy Spawns 10 -> 16 _[For comparison, Wave 11 averages 32.5 Mummies.]_
 * **Wave 14:** Helmet Spawns 108 -> 85; Basics spawn earlier (Makes the first ~15s a bit less empty, total 120->130 Basics); Single Magician Spawns 1-2 x6 -> 1-1 x6 _[Removes the variance which removes the chance for an especially unlucky wave, and makes it so _most_ of the fireball hurlers come from the Wizard Hats which you have more control over.]_
 * **Wave 15:** Helmet Spawns 114 -> 95
@@ -459,14 +463,15 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Wave 16 (Nightmare):** Horned Flys now only spawn every 2 seconds during the last ~15s of the wave instead of every 1 second.
 * **Wave 18 (Nightmare):** Corrupted Buffer spawns 3.5x8 -> 2x8 _[Something you can more strategically play around instead of being a mess you can't really control.]_
 * **Wave 20:** Added additional Basics (5 every 5s = 80 total) and Fins (5 every 6s = 65 total), primarily to help out effects which are based on enemy/material counts (but also makes things a bit harder, especially for Ranged builds).
-* **Wave 20 (Nightmare):** Puffy Wizard Hat spawns 1x7 -> 1x9 (with earlier spawns); Added 3 immediate Infected Slasher Eggs that spawn on the edge of the map, and another 3 after 11 seconds.
+* **Wave 20 (Nightmare):** Puffy Wizard Hat spawns 1x7 -> 1x9 (with earlier spawns); Added 4 immediate Infected Slasher Eggs that spawn on the edge of the map, and another 4 after 11 seconds.
 * **Wave 14 & 15 Hordes:** Added 4 single Magician spawns alongside 4 single Wizard Hats (Spawners) spread out over the last ~1/2 of the wave; Made the added Helmets in the 2nd half spawn on the edges of the map (with slightly fewer Helmets spawned); Made the Horde additions identical for 14 & 15; Removed one group of Basic Aliens to make more room for the others. _[Aiming to make these Horde waves feel as threatening as Elite fights are.]_
 ### Wave Spawns: The Abyss
 * **Wave 4:** The Lamprey now appears on Danger Level 1+ instead of only DL5. _[This is a way to learn the enemy pattern more safely instead of having to take Bait.]_
 * **Wave 9 (Nightmare):** The first two Brainy Squids are now regular Vampire Squids.
-* **Wave 10 (Nightmare):** 9 single Walrus spawns over each of the final 9 seconds -> Two groups of 3 Walrus spawn at 9 seconds and 7 seconds _[Fixes the spawns so Jack doesn't get all of them, and front-loads them a little more to be slightly more threatening.]_
+* **Wave 10 (Nightmare):** 9 single Walrus spawns over each of the final 9 seconds -> Two groups of 3 Walrus spawn at 9 seconds and 7 seconds _[Fixes the spawns so Jack doesn't get all of them, and front-loads them to be slightly more threatening.]_
 * **Wave 13:** Stargazer spawn timing 30s -> 28s; Egglord spawn timing 40s -> 34s _[Spawns the one egg-layer earlier so it shows up soon enough to matter.]_
-* **Wave 14 (Nightmare):** Added 3 Walrus spawns during the first 10 seconds so it's no longer so empty to start. _[Nightmare removes the D5 Walrus spawns during this period and replaces them with nothing.]_
+* **Wave 14 (Nightmare):** Added 3 Walrus spawns during the first 10 seconds so it's no longer so empty to start. _[Nightmare removes the D5 Walrus spawns during this period and replaces them with nothing.]_ The 4 Cool Walrus spawns are now also present during Horde and Elite waves. Cool Walrus spawn timing slightly tweaked (the first one 1s later; third and fourth slightly earlier). _[Vanilla makes this wave *easier* than D5, because it removes a bunch of Walrus spawns and replaces them with nothing.]_
+* **Wave 18 (Nightmare):** Firemane Anenomes now spawn in groups of 2 instead of 1. (1x3 spawns -> 2x3)
 
 
 ## Starting Weapons

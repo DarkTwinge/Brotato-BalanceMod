@@ -222,6 +222,10 @@ func _ready()->void:
 	temp = load("res://entities/units/enemies/corrupted_buffer/corrupted_buffer_stats.tres")
 	temp.damage_increase_each_wave = 0.7	# 1.0
 	
+	# Horned Spitter (NM)
+	temp = load("res://entities/units/enemies/horned_spitter/horned_spitter_stats.tres")
+	temp.speed = 190											# 200
+	
 	# Looter
 	temp = load("res://entities/units/enemies/looter/looter_stats.tres")
 	temp.knockback_resistance = 0.3				# 0.0
@@ -233,7 +237,7 @@ func _ready()->void:
 	temp.speed_randomization = 40					# 50
 	
 	
-	# Replace Gobbler with my version
+	# Replace Gobbler & Horned Spitter with my version
 	for zone in ZoneService.zones:
 		for wave in zone.waves_data:
 			for group in wave.groups_data:
@@ -417,8 +421,10 @@ func _ready()->void:
 	temp = load("res://items/all/gentle_alien/gentle_alien_data.tres")
 	temp.value = 32	 #30
 	
+	temp = load("res://items/all/glasses/glasses_data.tres")
+	temp.value = 21		# 20
 	temp = load("res://items/all/glasses/glasses_effect_1.tres")
-	temp.value = 22  # 20 (Range)
+	temp.value = 25		# 20 (Range)
 	
 	temp = load("res://items/all/gummy_berserker/gummy_berserker_data.tres")
 	temp.value = 24		# 25
@@ -525,9 +531,11 @@ func _ready()->void:
 	temp.value = 63   # 65
 
 	temp = load("res://items/all/alien_eyes/alien_eyes_data.tres")
-	temp.value = 46		# 50
+	temp.value = 47		# 50
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/alien_eyes_range_malus.tres")
 	temp.effects.push_back(temp_2) # -8 Range
+	temp = load("res://items/all/alien_eyes/alien_eyes_stats.tres")
+	temp.damage = 3		# 1
 	
 	temp = load("res://items/all/bait/bait_data.tres")
 	temp.value = 26		# 25
@@ -554,10 +562,10 @@ func _ready()->void:
 	temp.cooldown = 30		# 28
 
 	temp = load("res://items/all/bot_o_mine/bot_o_mine.tres")
-	temp.value = 58				# 55
+	temp.value = 57				# 55
 	temp.tier = 2					# 1
 	temp = load("res://entities/units/pet/bot_o_mine/bot_o_mine_weapon_stats.tres")
-	temp.cooldown = 40		# 32
+	temp.cooldown = 35		# 32
 	temp.scaling_stats = [ [ "stat_engineering", 0.75 ] ]	# 1.0
 
 	temp = load("res://items/all/campfire/campfire_data.tres")
@@ -585,6 +593,9 @@ func _ready()->void:
 	
 	temp = load("res://items/all/dangerous_bunny/dangerous_bunny_data.tres")
 	temp.value = 34   # 30
+
+	temp = load("res://items/all/doc_moth/doc_moth.tres")
+	temp.tier = 2					# 1
 	
 	temp = load("res://items/all/energy_bracelet/energy_bracelet_effect_1.tres")
 	temp.value = 5    # 4 (Crit Chance)
@@ -612,7 +623,7 @@ func _ready()->void:
 	
 	# Incendiary Turret
 	temp = load("res://items/all/turret_flame/turret_flame_data.tres")
-	temp.value = 39		# 40
+	temp.value = 38		# 40
 	temp = load("res://items/all/turret_flame/turret_flame_burning_data.tres")
 	temp.scaling_stats = [ [ "stat_engineering", 0.35 ] ]		# 0.33
 	
@@ -620,7 +631,7 @@ func _ready()->void:
 	temp.value = 49		# 45
 
 	temp = load("res://items/all/little_frog/little_frog_data.tres")
-	temp.value = 37		# 45
+	temp.value = 35		# 45
 	temp = load("res://items/all/little_frog/little_frog_effect_1.tres")
 	temp.value = 30		# 20 (Pickup Range)
 	
@@ -661,6 +672,7 @@ func _ready()->void:
 	temp.effects.push_back(temp_2) # Add +15% Bounce Damage
 
 	temp = load("res://items/all/recycling_machine/recycling_machine_data.tres")
+	temp.value = 32		# 35
 	temp_2 = load("res://mods-unpacked/DarkTwinge-BalanceMod/effects/recycling_machine_malus.tres")
 	temp.effects.push_back(temp_2) # -1 HP Regen
 	temp = load("res://items/all/recycling_machine/recycling_machine_effect_1.tres")
@@ -2012,12 +2024,16 @@ func _ready()->void:
 	temp.banned_item_groups.push_back("range_and_attack_speed")
 	temp.banned_item_groups.push_back("attack_speed")
 	temp.banned_items.push_back("item_spider")
+	temp.banned_items.push_back("item_seashell")
+	temp.banned_upgrades.push_back("upgrade_attack_seed")
+	temp.banned_upgrades.push_back("upgrade_range")
 	
 	# Brawler
 	temp = load("res://items/characters/brawler/brawler_effect_1.tres")
 	temp.value = 40		# 50 (Unarmed AtkSpd Bonus)
 	temp = load("res://items/characters/brawler/brawler_data.tres")
 	temp.banned_items.push_back("item_catling_gun")
+	temp.banned_upgrades.push_back("upgrade_ranged_damage")
 	temp_2 = load("res://items/characters/brawler/brawler_effect_4.tres")
 	temp.effects.erase(temp_2)
 	temp.effects.push_back(temp_2)
@@ -2031,13 +2047,24 @@ func _ready()->void:
 	temp.banned_item_groups.push_back("attack_speed")
 	temp.banned_items.push_back("item_spider")
 	temp.banned_items.push_back("item_triangle_of_power")
+	temp.banned_upgrades.push_back("upgrade_lifesteal")
+	temp.banned_upgrades.push_back("upgrade_attack_seed")
+	temp.banned_upgrades.push_back("upgrade_range")
+	temp = load("res://items/characters/bull/bull_effect_1.tres")
+	temp.value = 15					# 20 (HP)
 	temp = load("res://items/characters/bull/bull_effect_2.tres")
-	temp.value = 10			# 15 (HP Regen)
+	temp.value = 12			# 15 (HP Regen)
+	temp = load("res://items/characters/bull/bull_effect_3b.tres")
+	temp.value = 33			# 50 (HP Regen Mod)
 	temp = load("res://items/characters/bull/bull_effect_4.tres")
 	temp.text_key = "new_effect_explode_on_hit"
 	temp = load("res://items/characters/bull/bull_explosion_stats.tres")
 	temp.damage = 25		# 30
 	temp.scaling_stats = [ [ "stat_melee_damage", 2.5 ], [ "stat_ranged_damage", 2.5 ], [ "stat_elemental_damage", 2.5 ] ]	# 3.0x3
+	
+	# Chunky
+	temp = load("res://items/characters/chunky/chunky_data.tres")
+	temp.banned_upgrades.push_back("upgrade_lifesteal")
 	
 	# Crazy
 	temp = load("res://items/characters/crazy/crazy_data.tres")
@@ -2054,8 +2081,9 @@ func _ready()->void:
 	temp = load("res://items/characters/cryptid/cryptid_data.tres")
 	temp.wanted_tags.erase("exploration")
 	temp.wanted_tags.push_back("exploration_cryptid")
+	temp.banned_upgrades.push_back("upgrade_lifesteal")
 	temp = load("res://items/characters/cryptid/cryptid_effect_1.tres")
-	temp.value = 11 # 12 (Harvesting per Tree)
+	temp.value = 10 # 12 (Harvesting per Tree)
 	temp.text_key = "new_effect_cryptid"
 	temp = load("res://items/characters/cryptid/cryptid_effect_3.tres")
 	temp.text_key = "new_effect_temp_stat_on_dodge"
@@ -2107,13 +2135,19 @@ func _ready()->void:
 	temp.value = 8		# 5 (HP)
 	
 	# Gladiator
+	temp = load("res://items/characters/gladiator/gladiator_data.tres")
+	temp.banned_upgrades.push_back("upgrade_ranged_damage")
 	temp = load("res://items/characters/gladiator/gladiator_effect_5.tres")
 	temp.value = -40  # -30
 
 	# Glutton
 	temp = load("res://items/characters/glutton/glutton_effect_2.tres")
 	temp.text_key = "new_effect_explode_on_consumable"
-
+	
+	# Ghost
+	temp = load("res://items/characters/ghost/ghost_data.tres")
+	temp.banned_upgrades.push_back("upgrade_armor")
+	
 	# Golem
 	temp = load("res://items/characters/golem/golem_effect_5.tres")
 	temp.text_key = "new_effect_no_heal"
@@ -2133,6 +2167,9 @@ func _ready()->void:
 	temp.text_key = "BM_EFFECT_UNIQUE_TIER_IV_WEAPON_BONUS"	
 	
 	# Knight
+	temp = load("res://items/characters/knight/knight_data.tres")
+	temp.banned_upgrades.push_back("upgrade_harvesting")
+	temp.banned_upgrades.push_back("upgrade_ranged_damage")
 	temp = load("res://items/characters/knight/knight_effect_1.tres")
 	temp.value = 3		# 2
 	temp.nb_stat_scaled = 2 # 1 (2 melee per 1 armor -> 3 melee per 2 armor)
@@ -2192,9 +2229,11 @@ func _ready()->void:
 	temp = load("res://items/characters/pacifist/pacifist_data.tres")
 	temp.banned_items = [ "item_whistle", "item_bot_o_mine" ]
 	temp.wanted_tags.push_back("stat_dodge")
+	temp.banned_upgrades.push_back("upgrade_engineering")
 	
 	# Ranger
 	temp = load("res://items/characters/ranger/ranger_data.tres")
+	temp.banned_upgrades.push_back("upgrade_melee_damage")
 	temp_2 = load("res://items/characters/ranger/ranger_effect_3.tres")
 	temp.effects.erase(temp_2) # Remove starting Pistol
 	temp = load("res://items/characters/ranger/ranger_effect_5.tres")
@@ -2216,6 +2255,7 @@ func _ready()->void:
 	temp = load("res://items/characters/sick/sick_data.tres")
 	temp.wanted_tags = [  ]	# Had Lifesteal
 	temp.banned_items = [ "item_weird_ghost", "item_crystal" ] # removed Tardigrade, added Crystal
+	temp.banned_upgrades.push_back("upgrade_hp_regeneration")
 	temp = load("res://items/characters/sick/sick_effect_2.tres")
 	temp.value = 20					# 25 (Lifesteal)
 	
@@ -2242,6 +2282,7 @@ func _ready()->void:
 	# Vampire
 	temp = load("res://items/characters/vampire/vampire_data.tres")
 	temp.banned_items.push_back("item_tardigrade")
+	temp.banned_upgrades.push_back("upgrade_hp_regeneration")
 	temp = load("res://items/characters/vampire/effects/vampire_effect_2e.tres")
 	temp.value = -20				# -100 (Consumable Heal)
 	

@@ -1,14 +1,13 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://zones/wave_unit_data.gd" type="Script" id=1]
-[ext_resource path="res://entities/units/enemies/infected_slasher_egg/infected_slasher_egg.tscn" type="PackedScene" id=2]
+[ext_resource path="res://dlcs/dlc_1/enemies/walrus/walrus.tscn" type="PackedScene" id=2]
 
 [resource]
 script = ExtResource( 1 )
 type = 1
 unit_scene = ExtResource( 2 )
-unit_scene_name = "slasher_egg.tscn"
-min_number = 4
-max_number = 4
+min_number = 1
+max_number = 1
 spawn_chance = 1.0
 additional_min_distance_from_player = 0.0
