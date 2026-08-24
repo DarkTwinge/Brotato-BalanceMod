@@ -120,7 +120,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Head Injury:** Damage 6% -> 7%; -8 Range --> -2% Speed _[Swapped downside with Helmet so that this doesn't mirror Cyclops worm so directly.]_
 * **Hedgehog:** Price 30->23
 * **Helmet:** Price 15->19; -2% Speed --> -10 Range _[Swapped downside with Head Injury so that Injury doesn't mirror Cyclops Worm so directly and so Helmet doesn't mirror Warrior's Helm.]_
-* **Landmines:** Spawn Frequency Every 12 seconds -> Every 10 seconds; Explosion Size 175% -> 190%
+* **Landmines:** Base Damage 10 -> 12; Spawn Frequency Every 12 seconds -> Every 10 seconds; Explosion Size 175% -> 190%
 * **Lemonade:** Price 15->16
 * **Lens:** Range -5 -> -10
 * **Lost Duck:** Luck 8 -> 9
@@ -130,11 +130,12 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Propeller Hat:** Price 28->25
 * **Ratzilla:** Price 30->25
 * **Scar:** Price 25->24; Range -8 -> -11
-* **Scared Sausage:** Price 25->20; Tooltip now mentions hidden mechanic of improving natural burn _[Price reduction helps encourage mixed builds.]_
-* **Sharp Bullet:** Knockback -3 -> -2
+* **Scared Sausage:** Price 25->20; (Tooltip now mentions hidden mechanic of improving natural burn) _[Price reduction helps encourage mixed builds.]_
+* **Sharp Bullet:** Price 25->24; Knockback -3 -> -2
 * **Snake:** Price 25->23; No Limit -> Limit 3 _[Makes it so they no longer show up once you have as many as you need.]_
 * **Terrified Onion:** Price 15->12
 * **Tree:** Price 15->16
+* **Turret:** Base Damage 10 -> 12
 * **Ugly Tooth:** Slow Per Hit 5% -> 7% (Still maxes at 20%); Speed -3% -> -2%
 * **Weird Food:** Price 20->24; Dodge -2% --> Speed -2%
 * **Weird Ghost:** Price 12->11; Starting HP Next Wave -100% -> -90% (which now also goes down further when cursed)
@@ -153,7 +154,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Blindfold:** Price 45->42; Range -15 -> -18
 * **Black Belt:** XP Gain +25% -> +30%
 * **Blood Leech:** Price 45->38
-* **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%
+* **Bonk Dog:** Primary Attack Internal Cooldown 28 -> 30; Primary Attack Melee Damage Scaling 60% -> 50%; No longer targets Seapigs with its dash attack
 * **Bot-o-mine:** Tier 2 -> Tier 3; Price 55->57; Laser Internal Cooldown 32 -> 35; Laser Engineering Scaling 100% -> 75%
 * **Campfire:** Price 40->39; Fog Visibility +50% -> +20%
 * **Catling Gun:** Internal Cooldown 55 -> 60; Ranged Damage Scaling 60% -> 50%
@@ -264,7 +265,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 * **Diploma:** XP Gain +50% -> +60%
 * **Esty's Couch:** Price 100->90
 * **Explosive Shells:** Explosion Damage +60% -> +45%; Explosion Size +15% -> +20%; Damage -15% -> Armor -1 _[Lets it fit in more reasonably with mixed builds, and gives a little more emphasis on the more-unique size factor rather than just damage.]_
-* **Explosive Turret:** Accuracy 60% -> 65%
+* **Explosive Turret:** Base Damage 25 -> 28; Accuracy 60% -> 65%
 * **Exoskeleton:** Price 90->95
 * **Extra Stomach:** Price 100->105; Now tagged for 'consumables' instead of 'luck'.
 * **Focus:** Price 110->104; Attack Speed penalty per weapon -3% -> -4%
@@ -407,7 +408,7 @@ If you'd like to directly support my ability to make and maintain mods like this
 
 ## Enemies
 ### Elites
-* Adjusted early Elite damage to have a cleaner progression. Compared to vanilla: Waves 1-8 do 20% less damage; Waves 9-11 do 5% more damage; Wave 12 does 10% more damage; Wave 13 does 5% less damage. _[A recent vanilla change reduces Wave 9-12 Elite damage by 25%, but this ignores Gangster, meaning a Wave 8 Elite did the same damage as one on Wave 11.]_
+* Adjusted early Elite damage to have a cleaner progression. Compared to vanilla: Waves 1-8 do 15% less damage; Waves 9-11 do 10% more damage; Wave 12 does 15% more damage; Wave 13 does 5% less damage. _[A recent vanilla change reduces Wave 9-12 Elite damage by 25%, but this ignores Gangster, meaning a Wave 8 Elite did the same damage as one on Wave 11.]_
 * All Elites on Waves 17-19 have an additional 20% health.
 
 #### Crash Zone

@@ -10,8 +10,8 @@ func init(zone_min_pos: Vector2, zone_max_pos: Vector2, players_ref: Array = [],
 		current_stats.health = max_stats.health
 	
 	if (RunData.current_wave <= 11):
-		reset_damage_stat( - 20)
-	elif (RunData.current_wave == 12):
 		reset_damage_stat( - 15)
+	elif (RunData.current_wave == 12):
+		reset_damage_stat( - 10)
 	elif (RunData.current_wave == 13):
 		reset_damage_stat( - 5)

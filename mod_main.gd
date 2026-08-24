@@ -54,6 +54,7 @@ func _init(modLoader = ModLoader):
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/player/player.gd")
 	
 	# Extra HP for Waves 17-19 Elites
+	# Elite Damage tweaks for Waves 2-13
 	ModLoaderMod.install_script_extension(BALMOD_DIR_E + "entities/units/enemies/boss/boss.gd")
 	
 	# Ugly Tooth ignores Gobbler
@@ -454,6 +455,8 @@ func _ready()->void:
 	## THIS TOOLTIP IS HARDCODED
 	temp = load("res://items/all/landmines/landmine_exploding_effect.tres")
 	temp.scale = 1.9	# 1.75
+	temp = load("res://items/all/landmines/landmine_stats.tres")
+	temp.damage = 12	# 10
 	
 	temp = load("res://items/all/lemonade/lemonade_data.tres")
 	temp.value = 16		# 15
@@ -494,6 +497,8 @@ func _ready()->void:
 	temp = load("res://items/all/scared_sausage/scared_sausage_effect_1.tres")
 	temp.text_key = "NEW_EFFECT_BURN_CHANCE"
 	
+	temp = load("res://items/all/sharp_bullet/sharp_bullet_data.tres")
+	temp.value = 24		# 25
 	temp = load("res://items/all/sharp_bullet/sharp_bullet_effect_4.tres")
 	temp.value = -2		# -3
 	
@@ -507,6 +512,9 @@ func _ready()->void:
 	temp = load("res://items/all/tree/tree_data.tres")
 	temp.tags.push_back("exploration_cryptid")
 	temp.value = 16		# 15
+	
+	temp = load("res://entities/structures/turret/turret_stats.tres")
+	temp.damage = 12	# 10
 	
 	temp = load("res://items/all/ugly_tooth/ugly_tooth_effect_1.tres")
 	temp.value = 7		# 5
@@ -1000,6 +1008,7 @@ func _ready()->void:
 	
 	# Explosive Turret
 	temp = load("res://entities/structures/turret/rocket/rocket_turret_stats.tres")
+	temp.damage = 28			# 25
 	temp.accuracy = 0.65	# 0.6
 	temp = load("res://items/all/turret_rocket/turret_rocket_data.tres")
 	## THIS TOOLTIP IS HARDCODED

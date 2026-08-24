@@ -89,7 +89,6 @@ Jack starting with Candle+Flag
 
 
 ~~~
-BalMod SMG breakpoints: 1-26-51-67
 Each 5 points of +Enemy Damage% is about the same as -1 Armor
 13%/51% for Hiker HP
 
@@ -119,7 +118,7 @@ Could have Mom/Monk have lower HP scaling?
 make Monk phase 1 move a bit faster but keep their reduced hp?
 
 more ranged set options for better mixing and more varied vaga options?
-
+	Railgun helped this some
 
 
 Consider re-buffing Croc a little bit; Phase 2 might be too easy now
@@ -130,8 +129,6 @@ Watch if Mom is even hard any more
 
 
 Goldfish could give free reroll, or make the next shop's items cheaper [would be moderately hard; could probably make a new effect type and replace `func fill_shop_items` to apply the discount right before the goldfish breaks, using an else to run the shop code normally so it doesn't go twice\
-
-Gangster: Controller down on items can go over to stats not weapons from rightmost only
 
 
 Tier-4 Brick could give you a Tier-1 Brick when it breaks
@@ -148,13 +145,9 @@ maybe add new turret, prob blue tier
 
 
 
-
 ~~~~~
 ogre - too many waves with plankton/fins/shrimp
-Red Screwdriver w/ Ball & Chain showed Cooldown of 0.73
 
-
-super-speed on wall edge sometimes
 
 
 maybe something else with -hp regen
@@ -201,7 +194,6 @@ cauldron uptime
 	(verify negative curse doesn't break things)
 
 
-Does Shuriken want a small buff to its early game? (could cost slightly less? tho already pretty cheap.)
 
 Padding could maybe have both the hp per saved mats AND the hp per mats left on ground effects?  With a small -AtkSpd?
 
@@ -216,15 +208,13 @@ Gladiator maybe could go to -50 Luck?
 
 Still consider revert early-exact-weapon changes and perhaps making them set instead
 
-bug with 3rd shop slot moving up -- mirror and other modifier things e.g. curious, fairy
-
 ~
 (reported bug: Rip & Tear is currently scaling with Frozen Heart.)
 Reported-Turrets don't benefit from Eyepatch
 ~~
 
 
-	Build Turret "base stats" -> base attributes" ?
+Builder Turret "base stats" -> base attributes" ?
 Baby/Techno/Captain (/more?) -- XP _needed_ to level up?
 "the end of a wave" -> end of wave (Creature...)
 
@@ -266,10 +256,8 @@ butterfly could be slightly cheaper as a 'boost lifesteal slightly' angle
 
 
 
-could slightly reducing the damage of a wave 11/12 elite be sensible? (keep in mind gangster for lower waves or whatever)
 
-
-
+{Pre Med Gun buffs in APNG}
 ~~~ Medical Gun testing vs SMG
 50% Dmg, 10 Ranged Damage, Wave 16 Abyss
 2x Red, 2x Purple, 2x Blue Medical Gun: 228hp (includes the 5 HP Regen = 17hp)
@@ -426,8 +414,6 @@ Possibly Plank out of Elemental set
 
 Tier-1/Tier-4 text blurbs could be color-coded for the color of the item tiers
 
-Riposte could reset melee weapon cooldowns on dodge instead?  (would be Tier 3 or 4 then probably and might need some minus stats, but cute idea)
-
 
 
 Will'o'Wisp -- Why? Snowball also exists??
@@ -448,9 +434,6 @@ Mouse
 Crystal
 Tardigrade
 
-Adrenaline could give 1-2 more Dodge?
-
-
 
 Ranger tagged for Range is weird, tho is important for Crossbow viability
 
@@ -465,12 +448,10 @@ Streamer almost wants 3 more starters to go 2nd row full?
 
 
 clarify druid's "higher chance" in descript if possible?
-
 Explorer text - MANY more trees spawn [cryptid too assumedly]
 
 Reported:
-UI - Technomage opnly shows 1 turret when they start with 2
-End screen indexing bug for controller
+UI - Technomage only shows 1 turret when they start with 2
 Controller cursor should default to the reroll button when you ban to create a freeroll
 Bug: Buffers/Spitters (the 'stay at distance from player logic pattern?" match player speed after getting hit with harpoon gun sometimes
 
@@ -498,7 +479,6 @@ What to do about the Sword/Vorpal situation. . .
 
 
 
-Sometimes going down (controller) on right-most item will move it over to Speed instead of down to weapons. (no ban, no lock button), repeatable if you move into the weapon from the stats area; sometimes to the ban of the item to its left, also bad
 
 ~~ Wishlist of new features ~~
 * Whistle should count how many extra Loot Goblins it creates.
@@ -603,10 +583,10 @@ Bug:  Cursed Hourglass not going to right HP?
 Could also restrict Focus on Curious or Gladiator, but prolly okay
 
 Does Arms Dealer 1st shop get weighted based on previous weapons
+
 Look into how Pets scale with speed - Rats go nyyooooom
 
 
-Fireball goes thru enemies even without pierce but only visual
 
 Should Ghost Scepter tier-1 cooldown  be slightly lower for its starting weapon viability?
 How bad is Sick+Scepter  [Also Chunky, Streamer, Golem, Cryptid, Lich, Builder, Druid, (Apprentice, Creature, Ghost) ; Could add to King]
@@ -615,7 +595,6 @@ Generalist could have starters: Pruner, Rock
 Other Vaga starter considerations: might remove Hand; add Pruner, Spoon
 Add Shiv starter to Explorer?  How bad early
 
-Seashell + Javelin may work negatively with each other?? (because of every x projectile)
 
 
 Nail, Frozen Heart, Padding still kinda weird
@@ -639,7 +618,6 @@ jousting maybe 18/24/32 damage progression
 Possibly remove/alter Butterfly instead of Fresh Meat
 
 Could just remove Baby Elephant or remake
-
 
 
 How sensible is the Railgun starter for Hunter, Ranger
@@ -683,14 +661,10 @@ Minigun
 	- **Minigun:** Base Damage 1/3 -> 2/4; Now has 25%/35% Knockback Piercing (more effective against resistant enemies); Price 127/255 -> 108/191 _[Often a more-expensive but worse SMG in vanilla, this gives it some unique utility. Build additional Knockback to really notice the effect.]_
 
 
-Eval Rail Gun
-
 
 
 Has Saw been left behind
->pile of books  price also dropped from 70 to 60 alongside the other buffs; monitor if too much
 >Tier-4 Power Fist went all the way up to 80 damage, I had it at 70
->Flute is still expensive but let's see how the cooldown buffs feels
 -> monitor CZ wave 16 in nightmare; my additionls probably don't mess things up too much, but see if it feels extra difficult
 
 
@@ -703,8 +677,6 @@ Generalist maybe start Railgun (esp if change ranged damage scaling higher)
 
 
 
-killing enemy means burn doesn't spread with Snake sometimes, but them works again if you restart??
-
 
 
 Check if Nightmare increasing enemy speed makes eggs hatch faster too (or in reverse, does Snail make them slower)
@@ -715,28 +687,11 @@ make hourglass actually unique
 	simply check if you have a broken hourglass and if so remove hourglass from the item pool before it starts rolling items?
 
 
-Railgun:
-Cooldown 52/49/47/45
-Damage 10/15/20/35  (13/19/25/41 after 5sec)  {16/23/30/47 after 10sec}
-	RangedDam Scaling 0.8/0.8/0.9/1.0
-	Dodge scaling 0.3/0.35/0.4/0.45
-	Increase Every 5sec 3/4/5/6
-Piercing 1/1/2/3
-	Piercing Reduction 0.5/0.35/0.35/0.25
-Crit Damage 1.5/1.75/2.0/2.25
-Max Range 300
 
 
-
-
-
-
-
+Riposte could reset melee weapon cooldowns on dodge instead?  (would be Tier 3 or 4 then probably and might need some minus stats, but cute idea)
 Riposte - make an explosion
 
-
-
-wave 19 etc. gob of enemies kinda ehhhh
 
 
 check environmental bullet scaling, early super high?
@@ -755,10 +710,6 @@ Artificer - possibly Restrict: Alien Eyes, Catling, Rat, Baby with a Beard as we
 
 
 Firemane (and reg Anenome?) -- projectiles should vanish when they die
-
-Greek Fire bugged to activate on any hit that would apply burning, not just the burning itself
-Barricade + Stone Skin bugged to restore HP
-Harpoon Gun: make its damage reduction not apply to Elites/Bosses
 
 
 Diver Possibilities
@@ -817,13 +768,17 @@ Chef: Elemental Damage
 NM CZ-12 could be a little harder
 	I already add a handful of Mummies to D5; could also move up NM Tentacles to start sooner
 NM CZ-17 could be modestly harder
-NM-Abyss 18 slightly harder, and 20 slightly harder too
+	Cap the Mummy+Buffer group at D5, and use one with more Mummies + Corrupted Buffer(s) for NM.  Prolly also then delete the vanilla Corrupted Buffers added?
+NM-Abyss 18 slightly harder, 
+NM-Abyss-20 slightly harder too
+	Prolly start the Scaled Stargazers sooner, possibly replace the normal ones?
 NM-Abyss-4 could be toned down slightly?  (from stats, but unsure in practice)
+	probably okay to leave as is
 check Wave 14 tweaks given the new despawn setup
 
 
 
-Reduce damage of the snake environmental projectiles
+Reduce damage of the snaking environmental projectile pattern
 
 
 
@@ -834,8 +789,6 @@ Tier-1 Luck items scarce -
 	Could even retool Baby Elephant as more focused on giving the Luck stat
 	Could consider Luck + Damage%
 
-Bug: Explosions don't apply Knockback  (only the other attribvutes are transfered in PlayerExplosion.set_damage(), not Knockback)
-
 make Hand go up in Knockback with Tier
 
 
@@ -844,10 +797,24 @@ One-armed could maybe get Grenade Launcher starter too?
 
 
 
+Greek Fire bugged to activate on any hit that would apply burning, not just the burning itself
+Barricade + Stone Skin bugged to restore HP
+Harpoon Gun: make its damage reduction not apply to Elites/Bosses
+Bug: Explosions don't apply Knockback  (only the other attribvutes are transfered in PlayerExplosion.set_damage(), not Knockback)
 Bug: Lootworm Tooltip Counts Incorrectly with Buccaneer
 Coupon tooltip uses different rounding than the actual savings, and counts multiple coupons weirdly
 Danger Bunny tooltip should track the highest reroll, not the lowest
 Spyglass tooltip also wrong?
+(untested/verified) killing enemy means burn doesn't spread with Snake sometimes, but them works again if you restart??
+Seashell + Javelin may work negatively with each other?? (because of every x projectile)
+Fireball goes thru enemies even without pierce but only visual
+(UI frustration bug-adjacent) Sometimes going down (controller) on right-most item will move it over to Speed instead of down to weapons. (no ban, no lock button), repeatable if you move into the weapon from the stats area; sometimes to the ban of the item to its left, also bad
+	Gangster: Controller down on items can go over to stats not weapons from rightmost only
+	bug with 3rd shop slot moving up -- mirror and other modifier things e.g. curious, fairy
+super-speed on wall edge sometimes
+Doc Moth tracks Torture healing in tooltip despite not affecting it?
+
+
 
 How miserable is Techno-Pruner
 
@@ -883,13 +850,32 @@ Make Corrupted Buffer buff amount the same (check Stonefish too); this should be
 
 
 Could look to make some of the misc. so-so damage items (pets, cyberball, etc.) have higher base damages and maybe less scaling, to make them better for splashing
+	baby elephant
+	Baby With Beard
+	blazemander
+	bonk dog
+	bot o mine
+	catling
+	cyberball
+	explosive turret
+	incendiary turret
+	Kraken's eye?
+	landmines
+	laser turret
+	ratzilla
+	rip & tear
+	riposte
+	spicy sauce
+	(sunken bell)
+	turret
+	tyler
+	
 
 Lucky could restrict Improved Tools
 
 {Baby could alternatively be 12 Harvest and +100% XP Cost and still hit their early-level goals while making their gimmick easier to lean into}
 
 Bonk Dog could get slightly better explosion hits?  A little bigger explosion maybe?
-	could even look at tweaking its targeting; if it didn't prioritize seapigs that'd be nice
 
 Would it possible to make Pocket Factory add Tree to your favored item pool for the run?
 
@@ -915,6 +901,8 @@ Do Candy Elites ignore the wave-specific enemy remval stuff?
 
 W20-CZ: Could try spawning some new Buffers at edges right when Eggs would spawn?
 
+Might be good to change the Wave 16CZ Flies to Horned for D5, but not doubled-up on NM so much
+
 
 Turret damage reporting broken
 	which mods?
@@ -925,18 +913,17 @@ Stargazers entering Vat could set Vat HP to percentage of their current HP?  (Si
 
 Engineering scaling up Damage% could be an item option for half-Engineering type builds
 
---Vampire bug Maxx had: armor from low hp wasn't registering immediately.  May have been caused by Tau's cooldown fix?
+--Vampire bug Maxx had: armor from low hp wasn't registering immediately. 
 
-
-Does Catling not fire during the first few seconds of a wave?
 
 Ricochet limit Max 1 or 2?
 
 Artificer could ban Ratling, Cyberball etc
 
 
-Base damage of Added Damage effects buffed some in general
-
+Increase Cyberball base damage (4ish?) via custom script for it; still maybe delete Baby Elephant
+	WL said "If you just want 1 base damage, you could add something like 1% damage scaling from level. Otherwise you'd probably have to hard code it or create your own chance_stat_damage_effect that also allows base damage and then handle that."
+	prolly making a diff version of change_stat_damage_effect.gd ?
 
 Dwarf could just remove Dodge malus
 
@@ -950,5 +937,10 @@ Beastmaster pets could eat mats to grow like Builder
 
 
 Scepter could maybe be just enough faster at tier-1 to get $1 on Wave 1?
+	Cooldown 47->45 prolly does it (test); would them want to drop tier 2 from 44 to 43 prob.
 
 knockback resist for squids?
+
+Sharp Tooth could be reworked to still be Primitive+Precise (since nothing else is), but not scale with Lifesteal and kinda work with both mixed Primitive and Precise sets?
+
+Prisoner - try adding initial_cooldown to their 3rd? attack.  also check max-range; does non-max make regular fights more interesting or just make explorer randomly easier?
